@@ -63,8 +63,8 @@
       ],
       "settings": {
         "allow_transparent_header": true,
-        "image": "shopify://shop_images/SweatandTonic_Wellness_home.png",
-        "img_mobile": "shopify://shop_images/hero.jpg",
+        "image": "shopify://shop_images/SweatandTonic_Wellness_home_2.png",
+        "img_mobile": "shopify://shop_images/hero_2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -114,7 +114,7 @@
           "type": "class",
           "settings": {
             "image": "shopify://shop_images/Tonic_Spa_Pool_Sweat_and_Tonic_fafe547d-eacd-419b-a747-0262c24bd602.png",
-            "img_mobile": "shopify://shop_images/Tonic_Spa_Pool_Sweat_and_Tonic_fafe547d-eacd-419b-a747-0262c24bd602.png",
+            "img_mobile": "shopify://shop_images/Tonic_Spa_Pool_Sweat_and_Tonic_fafe547d-eacd-419b-a747-0262c24bd602_1.png",
             "title": "POOL & HYDROTHERAPY",
             "desc": "<p>Rejuvenate and unwind in our 50 ft. saltwater lap pool, infrared sauna, all-season patio, and more.</p>",
             "button_label": "BOOK NOW",
@@ -126,7 +126,7 @@
           "type": "class",
           "settings": {
             "image": "shopify://shop_images/Massage_therapy_spa.png",
-            "img_mobile": "shopify://shop_images/Massage_therapy_spa.png",
+            "img_mobile": "shopify://shop_images/Massage_therapy_spa_1.png",
             "title": "HIGH-TOUCH SERVICES",
             "desc": "<p>Self-care, inside and out.</p>",
             "button_label": "EXPLORE SERVICES",
@@ -138,7 +138,7 @@
           "type": "class",
           "settings": {
             "image": "shopify://shop_images/RedLightTherapy_TonicSpa.png",
-            "img_mobile": "shopify://shop_images/RedLightTherapy_TonicSpa.png",
+            "img_mobile": "shopify://shop_images/RedLightTherapy_TonicSpa_1.png",
             "title": "BIOHACKING",
             "desc": "<p>Elevate your wellness game with  high-tech biohacking and recovery.</p>",
             "button_label": "BOOK NOW",
@@ -175,7 +175,6 @@
           "settings": {
             "serviceType": "Health service",
             "serviceLocation": "Front/Spadina (The Well)",
-            "image": "shopify://shop_images/Acupuncture.png",
             "heading": "ACUPUNCTURE",
             "detail": "<p>Enhance mental clarity, increase energy, reduce pain and tension, address sleep issues, and many more health concerns.</p>",
             "location_lbl_dk": "Locations Available",
@@ -197,7 +196,6 @@
           "settings": {
             "serviceType": "Health service",
             "serviceLocation": "Front/Spadina (The Well)",
-            "image": "shopify://shop_images/Chiropractor.jpg",
             "heading": "CHIROPRACTOR",
             "detail": "<p>Move better, alleviate and prevent pain, and improve overall functioning. Diagnose and treat issues with your spine, muscles, joints, and nervous system health.</p>",
             "location_lbl_dk": "Locations Available",
@@ -219,7 +217,6 @@
           "settings": {
             "serviceType": "Biohacking",
             "serviceLocation": "Yonge/Shuter,Front/Spadina (The Well)",
-            "image": "shopify://shop_images/CompressionTherapy_TonicSpa.jpg",
             "heading": "COMPRESSION THERAPY",
             "detail": "<p>Recover, reshape, rejuvenate. Zip into the Ballancer Pro, a state-of-the-art compression therapy system that delivers lymphatic drainage technology to countour your body, accelerate recovery, detox, and improve circulation in a 20-minute session.</p>",
             "location_lbl_dk": "Locations Available",
@@ -242,7 +239,6 @@
           "settings": {
             "serviceType": "Biohacking",
             "serviceLocation": "Yonge/Shuter,Front/Spadina (The Well)",
-            "image": "shopify://shop_images/Cryotherapy_9af674af-879b-483d-adff-37776eba623a.png",
             "heading": "CRYOTHERAPY",
             "detail": "<p>Biohack and chill. Step into our -130°C cryochamber to promote recovery, reduce inflammation, boost your mood, energy & metabolism, and burn calories.</p>",
             "location_lbl_dk": "Locations Available",
@@ -264,7 +260,6 @@
           "settings": {
             "serviceType": "Health service",
             "serviceLocation": "Front/Spadina (The Well)",
-            "image": "shopify://shop_images/DexaScan_cc5c1287-1952-42e5-87d1-c780ca7f7722.png",
             "heading": "DEXA SCAN",
             "detail": "<p>Gain accurate and detailed insights into your body composition with full-body imaging to help you improve your health, fitness goals, and physical well-being.</p>",
             "location_lbl_dk": "Locations Available",
@@ -286,7 +281,6 @@
           "settings": {
             "serviceType": "Health service",
             "serviceLocation": "Front/Spadina (The Well),Virtual sessions",
-            "image": "shopify://shop_images/Dietetics_c3861b66-2b0a-4434-9381-74d96ef17ccd.png",
             "heading": "DIETETICS",
             "detail": "<p>Find food freedom and develop an abundant relationship with food that supports your physical, mental, and emotional wellbeing.</p>",
             "location_lbl_dk": "Locations Available",
@@ -308,7 +302,6 @@
           "settings": {
             "serviceType": "High touch,Aesthetic",
             "serviceLocation": "Front/Spadina (The Well)",
-            "image": "shopify://shop_images/Sweat_and_Tonic_-_facial.png",
             "heading": "FACIALS & SKIN CARE",
             "detail": "<p>Reveal your skin’s natural radiance with our specialized, high-tech treatments that will leave you with a luminous glow and feeling refreshed.</p>",
             "location_lbl_dk": "Locations Available",
@@ -330,7 +323,6 @@
           "settings": {
             "serviceType": "Biohacking",
             "serviceLocation": "Front/Spadina (The Well)",
-            "image": "shopify://shop_images/HotandColdTherapyTonicSpSweatandTonic.jpg",
             "heading": "HOT & COLD THERAPY",
             "detail": "<p>Relax & reinvigorate in Toronto's first and only private four-person dual infrared and tradtional high-heat sauna and cold plunge suite.</p>",
             "location_lbl_dk": "Locations Available",
@@ -352,7 +344,6 @@
           "settings": {
             "serviceType": "Biohacking",
             "serviceLocation": "Yonge/Shuter,Front/Spadina (The Well)",
-            "image": "shopify://shop_images/InfraredSauna_TonicSpa.png",
             "heading": "INFRARED SAUNA",
             "detail": "<p>Relax muscles, relieve tension and detoxify from the inside out.</p>",
             "location_lbl_dk": "Locations Available",
@@ -374,7 +365,6 @@
           "settings": {
             "serviceType": "Biohacking,Health service",
             "serviceLocation": "Front/Spadina (The Well)",
-            "image": "shopify://shop_images/IVTherapy_1062c4c8-80cf-44d7-90c7-033c9cc884d0.png",
             "heading": "VITAMIN IV THERAPY",
             "detail": "<p>Supercharge your body with personalized intravenous tonics carefully formulated to optimize your health.</p>",
             "location_lbl_dk": "Locations Available",
@@ -396,7 +386,6 @@
           "settings": {
             "serviceType": "High touch",
             "serviceLocation": "Yonge/Shuter,Front/Spadina (The Well)",
-            "image": "shopify://shop_images/Massage_Cupping_Tonic_spa.jpg",
             "heading": "MASSAGE THERAPY",
             "detail": "<p>Relax and recover. Discover our range of massage therapy from RMTs designed to soothe, relieve tension, balance your mind and body, and aid in athletic recovery.</p>",
             "location_lbl_dk": "Locations Available",
@@ -418,7 +407,6 @@
           "settings": {
             "serviceType": "All,Aesthetic",
             "serviceLocation": "Front/Spadina (The Well)",
-            "image": "shopify://shop_images/Tonic_Spa_-_Microneedling_webpage.png",
             "heading": "MICRONEEDLING",
             "detail": "<p>Minimize pores, improve elasticity, and achieve smoother, more radiant skin with our advanced Dp4™ microneedling treatment</p>",
             "location_lbl_dk": "Locations Available",
@@ -440,7 +428,6 @@
           "settings": {
             "serviceType": "Health service",
             "serviceLocation": "Front/Spadina (The Well)",
-            "image": "shopify://shop_images/Naturopathy_9d9ef24d-3dea-456f-b63f-131ac635becf.png",
             "heading": "NATUROPATHY",
             "detail": "<p>The art and science of disease diagnosis, treatment, and prevention using natural therapies.</p>",
             "location_lbl_dk": "Locations Available",
@@ -462,7 +449,6 @@
           "settings": {
             "serviceType": "Health service",
             "serviceLocation": "Yonge/Shuter,Front/Spadina (The Well)",
-            "image": "shopify://shop_images/Physiotherapy_73dd1b9b-6bb9-4503-a95e-e6043c1918d4.png",
             "heading": "PHYSIOTHERAPY",
             "detail": "<p>Restore and maintain optimal physical function, treat and prevent injuries, and address other aches and pains.</p>",
             "location_lbl_dk": "Locations Available",
@@ -506,7 +492,6 @@
           "settings": {
             "serviceType": "Biohacking",
             "serviceLocation": "Front/Spadina (The Well)",
-            "image": "shopify://shop_images/RedLightTherapy.png",
             "heading": "RED LIGHT THERAPY",
             "detail": "<p>Recover & rejuvenate in the TheraLight 360+ and experience the most advanced full-body photobiomodulation system.</p>",
             "location_lbl_dk": "Locations Available",
@@ -528,7 +513,6 @@
           "settings": {
             "serviceType": "Biohacking",
             "serviceLocation": "Yonge/Shuter",
-            "image": "shopify://shop_images/Somadome_0ee2a8ad-3ee1-4ca5-921e-4ac8cbc232b3.png",
             "heading": "SOMADOME MEDITATION",
             "detail": "<p>Recharge, restore and achieve balance through a technology-enhanced guided meditation in only 20 minutes.<br/>Unlimited member access only.</p>",
             "location_lbl_dk": "Locations Available",
@@ -580,7 +564,6 @@
         "column_4jWJTh": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/TonicHouse_party_2014x1105_3_f0d38410-a460-4aa4-85fe-bfbe587a43ee.jpg",
             "title": "Yonge / Shuter",
             "text": "",
             "link_label": "VIEW FAQs",
@@ -590,7 +573,6 @@
         "column_Qg9XWQ": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/TonicHouse_party_2014x1105_2.jpg",
             "title": "the well",
             "text": "",
             "link_label": "",
@@ -601,7 +583,6 @@
           "type": "column",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Frame_13.jpg",
             "title": "the well",
             "text": "",
             "link_label": "",
@@ -612,7 +593,6 @@
           "type": "column",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/TonicHouse_party_2014x1105_3_f0d38410-a460-4aa4-85fe-bfbe587a43ee.jpg",
             "title": "the well",
             "text": "",
             "link_label": "",
@@ -623,7 +603,6 @@
           "type": "column",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/TonicHouse_party_2014x1105_2.jpg",
             "title": "the well",
             "text": "",
             "link_label": "",
@@ -634,7 +613,6 @@
           "type": "column",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/TonicHouse_party_2014x1105_2.jpg",
             "title": "the well",
             "text": "",
             "link_label": "",
@@ -703,8 +681,6 @@
       ],
       "settings": {
         "allow_transparent_header": false,
-        "image": "shopify://shop_images/Frame_5999_1.jpg",
-        "img_mobile": "shopify://shop_images/Frame_5988_dca22be5-d3ad-407a-aca5-f6c2bc9701f9.jpg",
         "image_overlay_opacity": 20,
         "image_height": "small",
         "desktop_content_position": "bottom-right",
