@@ -107,6 +107,8 @@
       ],
       "settings": {
         "allow_transparent_header": false,
+        "image": "shopify://shop_images/SweatandTonic_HIITYongeShuter_studio.png",
+        "img_mobile": "shopify://shop_images/SweatandTonic_HIITYongeShuter_studio_1.png",
         "image_overlay_opacity": 60,
         "image_height": "adapt",
         "show_text_box": false,
