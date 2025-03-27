@@ -74,11 +74,12 @@
     "classes-work": {
       "type": "classes-work",
       "settings": {
+        "image": "shopify://shop_images/TheWell_HIIT.jpg",
         "title": "HIIT",
         "sub_title": "AT SWEAT AND TONIC",
         "description": "Move through three stations of weights, treadmill, and boxing or floor work to build strength, target your assets, and transform your body.",
         "button_title": "EXPLORE HIIT",
-        "button_link": "shopify://pages/hiit-studio",
+        "button_link": "shopify://products/s-t-half-zip",
         "class_style": "155+",
         "class_style_name": "CLASSES WEEKLY",
         "instructors": "8",
