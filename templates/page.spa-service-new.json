@@ -175,6 +175,7 @@
           "settings": {
             "serviceType": "Health service",
             "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/Acupuncture.png",
             "heading": "ACUPUNCTURE",
             "detail": "<p>Enhance mental clarity, increase energy, reduce pain and tension, address sleep issues, and many more health concerns.</p>",
             "location_lbl_dk": "Locations Available",
@@ -196,6 +197,7 @@
           "settings": {
             "serviceType": "Health service",
             "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/Chiropractor.jpg",
             "heading": "CHIROPRACTOR",
             "detail": "<p>Move better, alleviate and prevent pain, and improve overall functioning. Diagnose and treat issues with your spine, muscles, joints, and nervous system health.</p>",
             "location_lbl_dk": "Locations Available",
@@ -217,6 +219,7 @@
           "settings": {
             "serviceType": "Biohacking",
             "serviceLocation": "Yonge/Shuter,Front/Spadina (The Well)",
+            "image": "shopify://shop_images/CompressionTherapy_TonicSpa.jpg",
             "heading": "COMPRESSION THERAPY",
             "detail": "<p>Recover, reshape, rejuvenate. Zip into the Ballancer Pro, a state-of-the-art compression therapy system that delivers lymphatic drainage technology to countour your body, accelerate recovery, detox, and improve circulation in a 20-minute session.</p>",
             "location_lbl_dk": "Locations Available",
@@ -239,6 +242,7 @@
           "settings": {
             "serviceType": "Biohacking",
             "serviceLocation": "Yonge/Shuter,Front/Spadina (The Well)",
+            "image": "shopify://shop_images/Cryotherapy_9af674af-879b-483d-adff-37776eba623a.png",
             "heading": "CRYOTHERAPY",
             "detail": "<p>Biohack and chill. Step into our -130°C cryochamber to promote recovery, reduce inflammation, boost your mood, energy & metabolism, and burn calories.</p>",
             "location_lbl_dk": "Locations Available",
@@ -260,6 +264,7 @@
           "settings": {
             "serviceType": "Health service",
             "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/DexaScan_cc5c1287-1952-42e5-87d1-c780ca7f7722.png",
             "heading": "DEXA SCAN",
             "detail": "<p>Gain accurate and detailed insights into your body composition with full-body imaging to help you improve your health, fitness goals, and physical well-being.</p>",
             "location_lbl_dk": "Locations Available",
@@ -281,6 +286,7 @@
           "settings": {
             "serviceType": "Health service",
             "serviceLocation": "Front/Spadina (The Well),Virtual sessions",
+            "image": "shopify://shop_images/Dietetics_c3861b66-2b0a-4434-9381-74d96ef17ccd.png",
             "heading": "DIETETICS",
             "detail": "<p>Find food freedom and develop an abundant relationship with food that supports your physical, mental, and emotional wellbeing.</p>",
             "location_lbl_dk": "Locations Available",
@@ -302,6 +308,7 @@
           "settings": {
             "serviceType": "High touch,Aesthetic",
             "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/Sweat_and_Tonic_-_facial.png",
             "heading": "FACIALS & SKIN CARE",
             "detail": "<p>Reveal your skin’s natural radiance with our specialized, high-tech treatments that will leave you with a luminous glow and feeling refreshed.</p>",
             "location_lbl_dk": "Locations Available",
@@ -323,6 +330,7 @@
           "settings": {
             "serviceType": "Biohacking",
             "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/HotandColdTherapyTonicSpSweatandTonic.jpg",
             "heading": "HOT & COLD THERAPY",
             "detail": "<p>Relax & reinvigorate in Toronto's first and only private four-person dual infrared and tradtional high-heat sauna and cold plunge suite.</p>",
             "location_lbl_dk": "Locations Available",
@@ -344,6 +352,7 @@
           "settings": {
             "serviceType": "Biohacking",
             "serviceLocation": "Yonge/Shuter,Front/Spadina (The Well)",
+            "image": "shopify://shop_images/InfraredSauna_TonicSpa.png",
             "heading": "INFRARED SAUNA",
             "detail": "<p>Relax muscles, relieve tension and detoxify from the inside out.</p>",
             "location_lbl_dk": "Locations Available",
@@ -365,6 +374,7 @@
           "settings": {
             "serviceType": "Biohacking,Health service",
             "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/IVTherapy_1062c4c8-80cf-44d7-90c7-033c9cc884d0.png",
             "heading": "VITAMIN IV THERAPY",
             "detail": "<p>Supercharge your body with personalized intravenous tonics carefully formulated to optimize your health.</p>",
             "location_lbl_dk": "Locations Available",
@@ -386,6 +396,7 @@
           "settings": {
             "serviceType": "High touch",
             "serviceLocation": "Yonge/Shuter,Front/Spadina (The Well)",
+            "image": "shopify://shop_images/Massage_Cupping_Tonic_spa.jpg",
             "heading": "MASSAGE THERAPY",
             "detail": "<p>Relax and recover. Discover our range of massage therapy from RMTs designed to soothe, relieve tension, balance your mind and body, and aid in athletic recovery.</p>",
             "location_lbl_dk": "Locations Available",
