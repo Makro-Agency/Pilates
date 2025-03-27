@@ -263,6 +263,8 @@
         "cdab86f8-0a2a-43c0-94c7-7f3bfbc177e0": {
           "type": "class",
           "settings": {
+            "image": "shopify://shop_images/TheWellYoga_SweatandTonic.jpg",
+            "img_mobile": "shopify://shop_images/TheWellYoga_SweatandTonic_1.jpg",
             "title": "YOGA & PILATES",
             "desc": "<p>Inhale. Exhale. Here we flow.</p>",
             "button_label": "LEARN MORE",
