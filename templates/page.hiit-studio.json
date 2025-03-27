@@ -694,6 +694,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Lisa.png",
             "link_label": "LISA DAMLA",
             "link": "shopify://metaobjects/teammember/lisa-damla"
           }
@@ -702,6 +703,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Perez_03ba3e74-7ad2-4354-bcb9-04f82780bd44.png",
             "link_label": "PEREZ TIEKU",
             "link": "shopify://metaobjects/teammember/perez-tieku"
           }
