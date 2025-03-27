@@ -107,6 +107,8 @@
       ],
       "settings": {
         "allow_transparent_header": false,
+        "image": "shopify://shop_images/Claudia_ride.jpg",
+        "img_mobile": "shopify://shop_images/Claudia_ride_1.jpg",
         "image_overlay_opacity": 70,
         "image_height": "adapt",
         "show_text_box": false,
