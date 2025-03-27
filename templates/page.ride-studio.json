@@ -294,6 +294,8 @@
       ],
       "settings": {
         "allow_transparent_header": false,
+        "image": "shopify://shop_images/Nariko_ride.jpg",
+        "img_mobile": "shopify://shop_images/Nariko_ride_1.jpg",
         "image_overlay_opacity": 60,
         "image_height": "adapt",
         "desktop_content_alignment": "left",
