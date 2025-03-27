@@ -93,6 +93,7 @@
     "classes-work-2": {
       "type": "classes-work",
       "settings": {
+        "image": "shopify://shop_images/TheWell_ChromaYoga_SweatandTonic.jpg",
         "title": "YOGA & PILATES",
         "sub_title": "AT SWEAT AND TONIC",
         "description": "Find your breath and flow in our heated studios. Our movement experts will guide you through everything from Hot Yoga, to Pilates, to Yin & Calm.",
@@ -111,6 +112,7 @@
     "classes-work-3": {
       "type": "classes-work",
       "settings": {
+        "image": "shopify://shop_images/3_cfb53b00-86b6-4390-b8ef-762fd685caf5.png",
         "title": "RIDE",
         "sub_title": "AT SWEAT AND TONIC",
         "description": "Welcome to an unparalleled indoor cycling experience that combines the best from both metric and rhythm rides. You’ll race past your goals and get lost in the music.",
