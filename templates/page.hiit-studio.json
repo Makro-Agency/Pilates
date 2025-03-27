@@ -667,6 +667,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Baylee.png",
             "link_label": "BAYLEE JOY",
             "link": "shopify://metaobjects/teammember/baylee-joy"
           }
@@ -675,6 +676,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Dustin_a25365df-6d70-4dbe-8d06-2651c021daba.jpg",
             "link_label": "DUSTIN PYM",
             "link": "shopify://metaobjects/teammember/dustin-pym"
           }
@@ -683,6 +685,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Kaivan.png",
             "link_label": "KAIVAN SHIMI",
             "link": "shopify://metaobjects/teammember/kaivan-shimi"
           }
