@@ -749,6 +749,7 @@
         "5f339c27-a2d8-4ed9-9d14-fd9c115bad81": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/YongeShuter_Yoga2.jpg",
             "title": "YONGE / SHUTER",
             "text": "<p>Elevate your practice in our infrared-heated studio, providing warm and hot yoga, dynamic Pilates, and soothing restorative yoga & meditation classes. </p>",
             "address": "225 Yonge Street, Toronto ON M5B 1N8",
@@ -760,6 +761,7 @@
         "ab06944c-e56b-4aaa-962a-25c5bdcc7f46": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/SweatandTonic_YogaRestorative.png",
             "title": "FRONT / SPADINA (THE WELL)",
             "text": "<p>Find your flow in our infrared-heated studio, featuring warm and hot yoga & Pilates classes elevated by chromatic light systems and an immersive 445-inch projection screen.</p>",
             "address": "486 Front St W, Toronto, ON M5V 0V2",
