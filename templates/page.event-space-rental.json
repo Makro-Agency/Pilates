@@ -116,6 +116,7 @@
         "row_w49cDr": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/TonicHouse_Event.png",
             "caption": "",
             "heading": "COCKTAIL & BIRTHDAY PARTY VENUE",
             "text": "<p>Make your next celebration unforgettable. Tonic House is a premium venue accommodating up to 150 people, perfect for private events, birthday parties, cocktail, and holiday parties. We offer customizable options to suit every occasion, including live DJ, custom hand-crafted cocktails, and flexible catering & beverage services.</p>",
@@ -126,6 +127,7 @@
         "row_QEtYtB": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/BrandParnterships_SweatandTonic_FirstAidBeauty.png",
             "caption": "",
             "heading": "BRAND ACTIVATIONS & MEDIA EVENTS",
             "text": "<p>Make an impact. From product launches and community activations, to networking and VIP events, we'll work with you to create unique and innovative experiences and connect with the community.</p>",
@@ -136,6 +138,7 @@
         "row_XJiBKC": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/PRIVATE_RIDE_SWEAT_AND_TONIC.jpg",
             "caption": "",
             "heading": "PRIVATE YOGA, RIDE, AND HIIT CLASSES",
             "text": "<p>Sweat and socialize. Whether it's a celebratory occasion or corporate team building event, we've got everything you need to make your event extra special. Book a private & personalized HIIT, Ride, or Yoga class, and gather in Tonic House to unwind, mingle, and celebrate.</p>",
@@ -146,6 +149,7 @@
         "row_AjCAeL": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/SWEAT_AND_TONIC_PREMIUM_MEETING_SPACE_IN_DOWNTOWN_TORONTO.jpg",
             "caption": "",
             "heading": "PREMIUM MEETING SPACE IN DOWNTOWN TORONTO",
             "text": "<p>Collaborate, nurture creativity, and boost productivity. With complimentary WIFI, high definition projector & screen, light dimmers, motorized window shades, full AV connectivity & control, flexible catering options, and a cocktail bar, you can even take your event from day to night. Just bring you and your team, and we'll do the rest.</p>",
