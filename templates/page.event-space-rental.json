@@ -262,6 +262,7 @@
             "phone": "647-372-0225",
             "button_label": "",
             "button_link": "",
+            "image": "shopify://shop_images/tonic-house-banner.png",
             "feat_title": "LOCATION HIGHLIGHTS:",
             "feature_1": "100-person event capacity",
             "feature_2": "Complimentary WiFi, full AV including projector & screen",
@@ -279,7 +280,7 @@
             "phone": "647-477-1446",
             "button_label": "",
             "button_link": "",
-            "image": "shopify://shop_images/Tonic_House.jpg",
+            "image": "shopify://shop_images/Tonic_House_2.jpg",
             "feat_title": "LOCATION HIGHLIGHTS:",
             "feature_1": "150-person event capacity",
             "feature_2": "Complimentary Wi-Fi, full AV including projector & screen",
@@ -304,30 +305,35 @@
         "image_m93Q3N": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/SweatandTonicBrandActivationTonicHouse_63ae9448-59bf-436c-bd5e-261e889a4e3a.jpg",
             "heading": "BRAND ACTIVATION | FRONT/SPADINA"
           }
         },
         "image_gJikUw": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/SweatandTonicTonicHouseEventVogueWorkshopFunction.jpg",
             "heading": "WORKSHOP | FRONT/SPADINA"
           }
         },
         "image_F6YdWw": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Sweat_and_Tonic_Tonic_House_Patio.jpg",
             "heading": "TONIC HOUSE PATIO | FRONT/SPADINA"
           }
         },
         "image_cypNPc": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/SweatandTonicPanelEventFrontandSpadina.jpg",
             "heading": "SPEAKING EVENT | FRONT/SPADINA"
           }
         },
         "image_hDAtzr": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/TonicHouse_party_2014x1105_3_ec4ba307-e16a-4da0-93bf-dffa055566cd.png",
             "heading": "PANEL EVENT | YONGE/SHUTER"
           }
         },
