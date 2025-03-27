@@ -94,6 +94,7 @@
         "image_RHndkE": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/S_T_x_Liquid_I.V._January_Challenge_2025_-_Lisa.png",
             "title": "S& T x L'ORÉAL EVERPURE APRIL 21 CLASSES CHALLENGE",
             "desc": "<p>Download the S&T app to track your classes beginning April 1. Using your S&T class credits, 9 to 5 Sweat, or Unlimited membership, complete 21 classes in April to get a $25 S&T credit and enter our draw for one of two grand prizes!</p>",
             "location": "YONGE/SHUTER & FRONT/SPADINA",
@@ -105,6 +106,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/Sweat_and_Tonic_New_Year_Promotion_2025.png",
             "title": "20% OFF YOUR FIRST MONTH",
             "desc": "<p>Save 20% on your first month of a 9 to 5 Sweat, Unlimited, or Club Transcend membership.</p>",
             "location": "YONGE/SHUTER & FRONT/SPADINA",
@@ -116,6 +118,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/Tonic_Spa_Pool_Deck_Sweat_and_Tonic.png",
             "title": "POOL DECK MEMBERSHIP",
             "desc": "<p>Get your recovery in after your sweat with a Tonic Spa Pool deck membership starting at $50/month for Unlimited members.</p>",
             "location": "FRONT/SPADINA",
@@ -127,6 +130,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/6D554DE9-CD47-4BBD-8CD4-31451D164C2C.jpg",
             "title": "UPDATE TO MEMBERSHIP & CREDIT PRICES",
             "desc": "<p>Heads up! Our membership and credit prices are increasing on December 16.</p>",
             "location": "",
@@ -138,6 +142,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/HotColdTherapy_Sauna.png",
             "title": "PRIVATE HOT & COLD THERAPY SUITE",
             "desc": "<p>Now open at Tonic Spa</p>",
             "location": "FRONT/SPADINA",
@@ -149,6 +154,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/S_T_Event-83.jpg",
             "title": "HOLIDAY EVENT BOOKINGS",
             "desc": "<p>An extra special NYE - take your event from sweat to social in our full-service event space and cocktail bar.</p>",
             "location": "FRONT/SPADINA & YONGE/SHUTER",
