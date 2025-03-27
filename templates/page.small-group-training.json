@@ -236,6 +236,8 @@
       ],
       "settings": {
         "allow_transparent_header": false,
+        "image": "shopify://shop_images/SweatandTonic_PersonalTraining.png",
+        "img_mobile": "shopify://shop_images/SweatandTonic_PersonalTraining_1.png",
         "image_overlay_opacity": 80,
         "image_height": "adapt",
         "desktop_content_alignment": "left",
