@@ -312,6 +312,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/New_instructor_headshots_3.jpg",
             "link_label": "JORDAN SCHOLL",
             "link": "shopify://metaobjects/teammember/jordan-scholl"
           }
@@ -320,6 +321,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Katie.jpg",
             "link_label": "KATIE KUNST",
             "link": "shopify://metaobjects/teammember/katie-kunst"
           }
@@ -328,6 +330,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Nariko.jpg",
             "link_label": "NARIKO CHAFFE",
             "link": "shopify://metaobjects/teammember/nariko-chaffe"
           }
@@ -336,6 +339,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/RebeccaMoskob_RideInstructor.jpg",
             "link_label": "REBECCA MOSKOB",
             "link": "shopify://metaobjects/teammember/rebecca-moskob"
           }
@@ -344,6 +348,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/SamUshedo_RideInstructor.jpg",
             "link_label": "SAMANTHA USHEDO",
             "link": "shopify://metaobjects/teammember/samantha-ushedo"
           }
