@@ -1,0 +1,132 @@
+{{ 'team.css' | asset_url | stylesheet_tag: preload: true }}
+{%- assign placeholderImg = 'https://cdn.shopify.com/s/files/1/0277/8280/7635/files/user-pacleholder.png?v=1701148515' -%}
+
+{%- capture sizes -%}
+(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)
+{%- endcapture -%}
+
+{%- assign totalSpecialtags = "Yoga, Pilates, HIIT, Ride, Personal Training, " -%}
+{%- assign filterdTags = blank -%}
+
+{%- capture teamData -%}
+  {%- assign loading = 'eager' -%}
+  {%- assign fetchPriority = 'high' -%}
+  {%- for block in section.blocks -%}
+    {%- if forloop.index > 4 -%}
+      {%- assign loading = 'lazy' -%}
+      {%- assign fetchPriority = 'auto' -%}
+    {%- endif -%}
+    {%- if block.settings.name != blank -%}
+      <div class="box" data-tags="{{ block.settings.sp_tag | downcase }}">
+        <div class="team-box">
+          {%- if block.settings.image != blank -%}
+            <figure>
+              {{- block.settings.image | image_url: width: 533 | image_tag: loading: loading, fetchPriority: fetchPriority, widths: '165,360,533,720,940,1066', sizes: sizes -}}
+            </figure>
+          {%- else -%}
+            <div class="placeholder-img">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {%- endif -%}
+          {%- if block.settings.name != blank -%}
+            <h3 class="team-name">
+              {{ block.settings.name }} 
+              {% if block.settings.url != blank %}
+                <a href="{{ block.settings.url }}">{% render 'icon-right-arrow' %}</a>
+              {% endif %}
+            </h3>
+            {%- endif -%}
+          {%- if block.settings.sp_tag != blank -%}
+            <div class="team-info">{{ block.settings.sp_tag }}</div>
+            {%- assign totalSpecialtags = totalSpecialtags | append: block.settings.sp_tag | append: ', ' -%}
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+
+{%- assign filterdTags = totalSpecialtags | split: ", " | uniq -%}
+
+<div class="page-width">
+  
+  <div class="sec-head">
+    <h1 class="sec-title">{{ section.settings.page_title | default: page.title }}</h1>
+  </div>
+
+  {%- if teamData != blank -%}
+    <div class="team-list-box">
+      {%- if filterdTags[0] != blank -%}
+        <div class="tabs-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-team-filter-btn>
+          <button class="active btn" data-tags="all">Show All</button>
+          {%- for tag in filterdTags -%}
+            <button class="btn" data-tags="{{ tag | downcase }}">{{ tag }}</button>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+      <div id="parent" class="team-list{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-profile>
+        {{- teamData -}}
+      </div>
+    </div>
+  {%- endif -%}
+  
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Team",
+  "class": "team-main-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "page_title",
+      "default": "Team",
+      "label": "Page title",
+      "info": "If blank, default page title will be taken"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Member",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Member Name",
+          "label": "Name",
+          "info": "If blank, this member name will not show"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Member image",
+          "info": "500x500 .jpg recommended"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "default": "Name",
+          "label": "Member name",
+          "info": "If blank, this member will not show"
+        },
+        {
+          "type": "text",
+          "id": "sp_tag",
+          "label": "Speciality tag",
+          "info": "If multiple, add comma after each tag"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Url to navigate",
+          "info": "Select a metaobject for respective team member"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

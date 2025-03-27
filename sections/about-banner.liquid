@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="{{ 'about-banner.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'about-banner.css' | asset_url }}"></noscript>
+
+{% if section.settings.title != blank or section.settings.sub_title != blank %}
+<div class="banner-content-wrapper scroll-trigger animate--slide-in">
+    <div class="page-width">
+      <div class="sec-title">
+        {% if section.settings.sub_title != blank %}<span class="sub-titles">{{ section.settings.sub_title }}</span>{% endif %}
+        {% if section.settings.title != blank %}<h1 class="title">{{ section.settings.title }}</h1>{% endif %}
+      </div>
+    </div>
+</div>
+{% endif %}
+
+{% if section.settings.desktop_image != blank %}
+<div class="banner-media scroll-trigger animate--slide-in"{% if section.settings.allow_transparent_header %} allow-transparent-header{% endif %}>
+  <img width="" height="" class="desk-banner" src="{{ section.settings.desktop_image | image_url:width:1920 }}" />
+  {% if section.settings.mobile_image != blank %}
+    <img width="" height="" class="mob-banner" src="{{ section.settings.mobile_image | image_url:width:1024 }}" />
+  {% else %}
+    <img width="" height="" class="mob-banner" src="{{ section.settings.desktop_image | image_url:width:1920 }}" />
+  {% endif %}
+</div>
+{% endif %}
+
+
+{% schema %}
+{
+  "name": "About Banner",
+  "tag": "section",
+  "class": "section about-banner-wrapper",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "allow_transparent_header",
+      "label": "Allow transparent header",
+      "info": "This setting only applies when this section is the first one.",
+      "default": false
+    },
+    {
+      "type": "text",
+      "label": "Sub Title",
+      "id": "sub_title"
+    },
+    {
+      "type": "text",
+      "label": "Title",
+      "id": "title"
+    },
+    {
+      "type": "image_picker",
+      "label": "Desktop Image",
+      "id": "desktop_image"
+    },
+    {
+      "type": "image_picker",
+      "label": "Mobile Image",
+      "id": "mobile_image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Banner"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,412 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-faq",
+      "blocks": {
+        "fde5d15c-1b48-4e63-8376-5dc27552a9c0": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title": "GENERAL"
+          }
+        },
+        "f804dbd3-2f33-4699-b570-12a471f0be12": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What services are available?",
+            "detail": "<p>The following services at Tonic Spa are available for booking:</p><ul><li>Massage therapy</li><li>Lymphatic sculpting</li><li>Hot & Cold Therapy</li><li>Cryotherapy</li><li>Compression therapy</li><li>Red light therapy</li><li>IV therapy</li><li>DEXA scan</li><li>Chiropractic care</li><li>Acupucture (TCM)</li><li>Facials & body care, including Hydrafacials</li><li>Cosmetic injectables</li></ul><p>Massage therapy, cryotherapy, acupuncture, and lymphatic sculpting will continue to be available at our Yonge/Shuter location.</p>"
+          }
+        },
+        "04622fc8-c5c8-4154-b9e7-86fb12cc7999": {
+          "type": "que_ans",
+          "disabled": true,
+          "settings": {
+            "title": "How do I book a service?",
+            "detail": "<p>The pool deck, private hot & cold therapy suite, red light therapy, and lymphatic compression therapy can be booked with S&T class credits in the S&T app or <a href=\"https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48784\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48784\">online</a>.</p><p>Tonic Spa treatments can booked through the <a href=\"https://tonicspa.janeapp.com/locations/tonic-spa/book\" target=\"_blank\" title=\"https://tonicspa.janeapp.com/locations/tonic-spa/book\">Jane app</a>.</p>"
+          }
+        },
+        "88eef28f-11aa-41e2-96f1-65617d2b3755": {
+          "type": "title",
+          "settings": {
+            "title": "ACCOUNT & MEMBERSHIPS"
+          }
+        },
+        "f01c3501-f8e6-44b9-ab49-1b639a6ec3b8": {
+          "type": "que_ans",
+          "settings": {
+            "title": "I'm an Unlimited member - do I have any special benefits?",
+            "detail": "<p>As part of your membership benefits, Unlimited members can <strong>receive 10% off treatments at Tonic Spa (Front/Spadina)</strong>, including massage therapy, facials, chiropractic, DEXA, and biohacking treatments. Discount will be automatically applied at check-out following your visit, and you must have an active Unlimited membership at the time of service. Not valid for 9 to 5 Sweat and Club Transcend memberships.<br/><br/>Your eligibility will be confirmed and discount will be applied at service checkout.</p><p>Excludes dietetics, personal training, and follow-up chiropractic care appointments.</p>"
+          }
+        },
+        "9dad551d-422a-48dc-a6c4-0bbd82390389": {
+          "type": "que_ans",
+          "settings": {
+            "title": "How do I book a service?",
+            "detail": "<p>You can browse and book services at <a href=\"https://tonicspa.janeapp.com/\" target=\"_blank\" title=\"https://tonicspa.janeapp.com/\">tonicspa.janeapp.com</a>, including wellness & recovery treatments, and Personal Training.</p><p>Biohacking services like hot & cold therapy, red light therapy, compression therapy, and the pool deck can be booked with <a href=\"https://sweatandtonic.com/pages/reserve\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/reserve\">S&T credits</a>.</p>"
+          }
+        },
+        "167edd31-ca29-4a8a-9f25-293e736cae46": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Can I still book services at Yonge/Shuter?",
+            "detail": "<p>Yes! Wellness & recovery services at Yonge/Shuter can also be booked at <a href=\"https://tonicspa.janeapp.com/\" target=\"_blank\" title=\"https://tonicspa.janeapp.com/\">tonicspa.janeapp.com</a>.</p>"
+          }
+        },
+        "que_ans_gmLLUR": {
+          "type": "que_ans",
+          "disabled": true,
+          "settings": {
+            "title": "I purchased a pool pass during the pre-sale phase for Front/Spadina. Is there anything I need to do to activate my membership?",
+            "detail": "<p>No, your pool pass will automatically be activated on Saturday, April 20 and your billing cycle will begin on opening day, Monday, April 22. Your first month’s payment will be covered by your purchase during pre-sale, and you won’t be charged another payment until your second month.</p>"
+          }
+        },
+        "que_ans_LwVymP": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Who can purchase a pool membership?",
+            "detail": "<p>Pool memberships are available for purchase to the general public. Unlimited members receive a 50% discount.</p>"
+          }
+        },
+        "que_ans_mdyjqY": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Where can I purchase a pool membership?",
+            "detail": "<p>You can purchase a pool-pass add on in the S&T app or <a href=\"https://sweatandtonic.com/pages/pricing?_mt=%2Fbuy%2F48750\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/pricing?_mt=%2Fbuy%2F48750\">online</a> by selecting 'Tonic Spa Pool Deck' in the location drop down. This will be available at 5 PM on Saturday, April 20.</p>"
+          }
+        },
+        "que_ans_BGfCGU": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What’s the billing cycle for my pool membership? Is it synchronized with my fitness membership or will there be two charges?",
+            "detail": "<p>Your pool membership billing cycle begins on the date of purchase. Your fitness membership and pool membership are billed separately. </p>"
+          }
+        },
+        "que_ans_YEY8J6": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What is the minimum age allowed in the spa / pool deck?",
+            "detail": "<p>You must be 13 or older to use Sweat and Tonic services, including the spa and pool deck. Minors over the age of 16 may use our facilities only with the involvement of a parent or guardian.</p>"
+          }
+        },
+        "que_ans_7WEcgU": {
+          "type": "que_ans",
+          "disabled": true,
+          "settings": {
+            "title": "Can I keep my pool pass add-on if I cancel my Unlimited membership?",
+            "detail": "<p>No, in the event that you cancel your Unlimited Membership, you can no longer hold a pool pass add-on. As with Unlimited memberships, you will retain booking privileges until the end of the cycle for which you have paid, even if this means your pool access extends beyond the end of your Unlimited membership for a portion of time.</p>"
+          }
+        },
+        "que_ans_Nz466B": {
+          "type": "que_ans",
+          "disabled": true,
+          "settings": {
+            "title": "What’s the freeze policy for the pool pass add-on?",
+            "detail": "<p>You can not freeze your pool pass add-on independently of your Unlimited membership. When you freeze your Unlimited membership, your pool add-on will also automatically be frozen as well. Refer to S&T’s main <a href=\"https://sweatandtonic.com/pages/faq\"><span style=\"text-decoration:underline\">FAQs page</span></a> for details on how to put your Unlimited membership on hold and our freeze policy.</p>"
+          }
+        },
+        "635350c4-38d3-4070-ba90-3de500ef7e2e": {
+          "type": "title",
+          "settings": {
+            "title": "FACILITIES"
+          }
+        },
+        "que_ans_H7yxXX": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Are there lockers and washrooms available in the pool deck?",
+            "detail": "<p>The washrooms in Tonic Spa are available for pool deck guests. Pool showers are also available on the pool deck and all guests must shower before using any of the pool deck offerings. The locker and shower facilities in Tonic Spa are for guests who have booked a treatment at Tonic Spa only. Pool deck guests should use the Sweat and Tonic locker rooms adjacent to the Tonic Spa entry to store belongings, change, and shower with full amenities after using the pool.  </p>"
+          }
+        },
+        "27dc0198-aa20-4382-958c-a5184bfbcc13": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What does the pool deck include?",
+            "detail": "<p>The pool deck area includes a 50-ft saltwater lap pool, saltwater jetted hot tub, combined infrared & traditional electric sauna, rain showers, cold plunge showers, and all-season patio lounge.</p>"
+          }
+        },
+        "que_ans_Mxekee": {
+          "type": "que_ans",
+          "settings": {
+            "title": "How large is your sauna?",
+            "detail": "<p>The sauna at the pool deck is large enough to accommodate 20 people.</p><p>The sauna in our private hot & cold therapy suite accomodates up to 4 people.</p>"
+          }
+        },
+        "que_ans_LLbRQf": {
+          "type": "que_ans",
+          "settings": {
+            "title": "How hot is the sauna?",
+            "detail": "<p>The sauna is a combination of traditional electric heat and infrared heat and will be anywhere between 80 - 90 degrees Celsius.</p>"
+          }
+        },
+        "que_ans_RcnWJh": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What temperature is the pool?",
+            "detail": "<p>Our saltwater pool is kept at a temperature of approximately 30 degrees Celsius.</p>"
+          }
+        },
+        "title_FQrG4V": {
+          "type": "title",
+          "settings": {
+            "title": "POOL DECK BOOKING"
+          }
+        },
+        "7064720d-0420-40f1-803f-d9b0235d07ef": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Who has access to the pool deck?",
+            "detail": "<p>The pool is accessible to anyone who has an active Tonic Spa pool deck membership, Club Transcend members, and Tonic Spa guests with eligible treatments (massage therapy, facials, and Ayurveda rituals). The pool deck is also bookable with S&T class credits.</p>"
+          }
+        },
+        "c59ccd3b-4159-4933-b5a8-405abd2d353f": {
+          "type": "que_ans",
+          "settings": {
+            "title": "How does pool booking work?",
+            "detail": "<p>As with fitness classes at S&T, you can book a spot at the pool deck through the S&T app or online. To book, first select 'Tonic Spa Pool Deck' in the location drop down. Unlimited members with a pool add-on and Club Transcend members will have unlimited access to book. Each pool session is 60 minutes and on a first-come first served reservation basis. Back-to-back consecutive sessions cannot be booked. Booking goes live on Saturdays at 5 PM.</p>"
+          }
+        },
+        "que_ans_xryH4P": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What’s the difference between a Lane Swim and Free Flow booking?",
+            "detail": "<p>There are two lanes available for individual reservation as 'Lane Swim' time slots. Each lane swim session is 60 minutes in total length and includes 30 minutes of a private lane followed by 30 minutes of general “free flow” access to the pool deck where you can enjoy general use of the hydrotherapy circuits. Please be sure to start your session in the reserved lane to maximize use of the lane and general facilities.</p><p>General “free flow” sessions are 60 minutes, where you can enjoy all facilities in the pool deck and hydrotherapy circuits. Free flow sessions provide access to a shared use pool lane.</p><p>Both booking types include full access to the pool deck offerings including saltwater lap pool, saltwater jetted hot tub, combined infrared & traditional electric sauna, rain showers, cold plunge showers, and all-season patio lounge.</p>"
+          }
+        },
+        "que_ans_dPdq4P": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What does a reservation include?",
+            "detail": "<p>Both lane swimming and general session bookings include access to all facilities in the pool deck, including the pool, sauna, hot tub, cold plunge shower, and all-season patio. Lane reservations include 30 minutes of a private lane plus 30 minutes of general access to the other services. General “free flow” reservations include 60 minutes of general, shared use of the space.</p>"
+          }
+        },
+        "que_ans_RpciyE": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Can I bring a guest?",
+            "detail": "<p>Guests can purchase S&T class credits to book a pool deck session.</p>"
+          }
+        },
+        "que_ans_9LkifV": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Do I need to check in / check out?",
+            "detail": "<p>Yes, all guests are required to check in and check out at the Tonic Spa front desk. Please check in at the Tonic Spa front desk to receive a robe and slippers, and to access the pool deck. The Sweat and Tonic locker rooms are available to store belongings and change before and after using the pool. Please ensure to leave the pool deck at the end of your 60-minute session. Late check-outs will be charged $15. Return your slippers and robe at the Tonic Spa front desk. Unreturned slippers will be charged $75. Unreturned robes will be charged $50. </p>"
+          }
+        },
+        "que_ans_yCi89q": {
+          "type": "que_ans",
+          "settings": {
+            "title": "If I can’t make it, do I need to cancel my booking?",
+            "detail": "<p>Yes, as with fitness classes at S&T, you must cancel your booking at least 12 hours in advance. This ensures spots are available for other Sweat Fam members to book and are not held by guests who are unable to attend. You will be charged a $24 fee for no shows and $19 for late cancellations. For sessions booked with credits, you will lose a credit.</p>"
+          }
+        },
+        "que_ans_zrAPaB": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Can I arrive late, or end my session early?",
+            "detail": "<p>Yes, you can check in and check out at any time, as long as it’s within your 60-minute session.</p>"
+          }
+        },
+        "que_ans_k48c3H": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Are phones allowed on the pool deck?",
+            "detail": "<p>No, the pool deck is a phone-free space to ensure that the privacy of all guests is respected and to help you be fully present for your time in this oasis. Your phone will also thank you, as most devices don’t love wet or hot spaces.</p>"
+          }
+        },
+        "que_ans_jqjpPr": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What should I wear at the pool deck?",
+            "detail": "<p>Swimwear is recommended and athletic apparel is also suitable – whatever you’re comfortable swimming and relaxing in! Towels, robes and slippers are provided. No outdoor footwear is permitted. No nudity is permitted.</p>"
+          }
+        },
+        "que_ans_hiBKcq": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Can I bring food and drinks to the pool deck?",
+            "detail": "<p>No food or glassware is permitted at the pool deck. Drinks are permitted - you can bring your own plastic or metal water bottle, or purchase a Flow Water from Tonic Bar. We do not recommend bringing metal water bottles into the sauna, as they will get hot!</p>"
+          }
+        },
+        "que_ans_CNtnJ7": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What’s the recommended hydrotherapy circuit?",
+            "detail": "<p>Hot and cold therapy is a three-step relaxation ritual. It’s recommended to start with 10-20 minutes in the hot tub or sauna as a source of heat. Step two involves immediately exposing your body to cold water. You can do this via the pool or regular shower for a lower intensity experience, or use the cold plunge shower button to experience a rainfall of 6 degree Celsius cold therapy. The cold plunge shower will run for 30 seconds, but you’re welcome to step out at any time. Step three is all about rest and relaxation. Unwind on the all-season patio for 10-15 minutes to allow your elevated heart rate to settle. We recommend some deep breaths and slow movements to maximize the physical and mental benefits of this relaxation circuit.</p>"
+          }
+        },
+        "que_ans_nLRMRj": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Can I use the Tonic Spa Lounge when I book the pool deck?",
+            "detail": "<p>No, the Tonic Spa Lounge is reserved for guests who have booked a treatment at Tonic Spa only. </p>"
+          }
+        },
+        "3c88c7a8-87e2-447f-853b-29fde4997cba": {
+          "type": "text",
+          "settings": {
+            "title": "POOL DECK ETIQUETTE",
+            "title_1": "Be safe",
+            "detail_1": "For the health and safety of yourself and other guests, follow all posted regulations throughout the pool deck facilities. If you feel unwell, notify a staff member or use the emergency phone on the pool deck for assistance.",
+            "title_2": "Be kind",
+            "detail_2": "This is a shared space for the Sweat Fam. Keep voice levels to a whisper and respect the no-phone policy to ensure everyone can enjoy a peaceful and relaxing experience. Please be respectful of the people around you and help us collectively care for this wonderful place.",
+            "title_3": "Be clean",
+            "detail_3": "Help keep our shared space in tip-top shape for all to enjoy. Upon arrival, shower before using any of the Pool Deck offerings. This helps to keep our facilities clean and maximize the benefits of the various stations available. When using the sauna, please put a towel down before you sit or lay on the benches. This helps to keep the sauna clean and protect the natural materials.",
+            "title_4": "Be on time",
+            "detail_4": "Use the pool deck within your allotted time. You’re welcome to arrive anytime within your booking period, but please leave on time to allow our team to tidy before the next group arrives."
+          }
+        },
+        "title_aGEbAQ": {
+          "type": "title",
+          "settings": {
+            "title": "PRIVATE HOT & COLD THERAPY SUITE"
+          }
+        },
+        "que_ans_xhTVwL": {
+          "type": "que_ans",
+          "settings": {
+            "title": "HOW MUCH DOES A SESSION COST?",
+            "detail": "<p>A 50-min private Hot & Cold Therapy suite session for one person costs one (1) <a href=\"https://sweatandtonic.com/pages/pricing?_mt=%2Fbuy%2F48750\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/pricing?_mt=%2Fbuy%2F48750\">class credit</a>.</p><p>Additional guests can be added at $16/person, for a total of four people per booking. Additional guests can be added upon arrival at Tonic Spa.</p>"
+          }
+        },
+        "que_ans_rrzPpQ": {
+          "type": "que_ans",
+          "settings": {
+            "title": "HOW DO I BOOK A SESSION IN THE SUITE?",
+            "detail": "<p>You can book a session <a href=\"https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48784\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48784\">online </a>or in the S&T app. Select 'Tonic Spa Pool Deck and Hot & Cold Suite' in the location drop down to view the schedule.</p>"
+          }
+        },
+        "que_ans_geAPQG": {
+          "type": "que_ans",
+          "settings": {
+            "title": "ARRIVING FOR YOUR SESSION",
+            "detail": "<p>Arrive well hydrated and nourished - we do not recommend using the Hot & Cold Suite fasted or right after a heavy meal.</p><p>We recommend arriving at least 10 minutes prior to your session to ensure a smooth check-in process. Please remember to shower before entering the suite to prepare your body for the thermal experience.<br/><br/>Our Wellness Concierge will escort you to the suite and provide a personalized overview of the session, including etiquette guidelines and a brief introduction to the facilities. If this is your first time, our team will offer tips on maximizing the benefits of the cold plunge and your overall experience! Our goal is to ensure that from the moment you arrive until the moment you leave, every aspect of your visit is effortless and restorative.</p>"
+          }
+        },
+        "que_ans_HFhF4f": {
+          "type": "que_ans",
+          "settings": {
+            "title": "HOT & COLD PLUNGE ETIQUETTE",
+            "detail": "<ul><li>Please shower after sauna use and before entering cold plunge</li><li>Use a towel in the sauna</li><li>No food or glassware</li><li>Be considerate of your Sweat Fam relaxing in other treatment rooms - keep voices down</li></ul>"
+          }
+        },
+        "que_ans_CX4cbm": {
+          "type": "que_ans",
+          "settings": {
+            "title": "WHAT IS INCLUDED IN A SESSION?",
+            "detail": "<p>Your session includes exclusive access to our Private Hot & Cold Therapy suite. Upon arrival, you and your guests will be provided with pool robes and slides. You'll also have access to a digital audio library of guided meditations and plunges by Othership.</p>"
+          }
+        },
+        "que_ans_NcjwBT": {
+          "type": "que_ans",
+          "settings": {
+            "title": "CAN I BRING GUESTS?",
+            "detail": "<p>Yes! Each guest is $16, up to a total of four people per booking. Simply check in your guests upon arrival at Tonic Spa.</p>"
+          }
+        },
+        "que_ans_EHrpwG": {
+          "type": "que_ans",
+          "disabled": true,
+          "settings": {
+            "title": "I'M AN UNLIMITED MEMBER. CAN I USE MY GUEST CREDIT TO BOOK?",
+            "detail": "<p>Unlimited member guest credits are only valid for booking guests in group fitness classes (yoga, Pilates, HIIT, and ride classes).</p>"
+          }
+        },
+        "que_ans_QPHnEL": {
+          "type": "que_ans",
+          "settings": {
+            "title": "HOW HOT IS THE SAUNA?",
+            "detail": "<p>Our dual infrared and traditional electric sauna reaches 90 degrees Celsius - the hottest private four-person sauna in the city!</p>"
+          }
+        },
+        "que_ans_UdnYcR": {
+          "type": "que_ans",
+          "settings": {
+            "title": "HOW COLD IS THE COLD PLUNGE?",
+            "detail": "<p>Our state-of-the-art, custom-crafted 4-person cold plunge is chilled between 0-4 degrees Celsius.</p>"
+          }
+        },
+        "que_ans_TdkfL8": {
+          "type": "que_ans",
+          "settings": {
+            "title": "WHAT IS THE RECOMMENDED CIRCUIT?",
+            "detail": "<p>15-20 min sauna + 2-3 min cold plunge + repeat + 5 min warm-up</p>"
+          }
+        },
+        "que_ans_cMdhFT": {
+          "type": "que_ans",
+          "settings": {
+            "title": "HOW WILL I GET THE BEST RESULTS?",
+            "detail": "<p><strong>Practice regularly. </strong>More frequent cold plunge and sauna use, on its own or within contrast therapy, is associated with greater benefit.</p><p><strong>Be deliberate with your timing. </strong>How long you plunge will impact how you feel.</p><p><strong>Focus on breath. </strong>Intentional breathing patterns will help you get the most out of your experience.</p><p><strong>Stay hydrated. </strong>Make sure to replenish your water and electrolytes more frequently when sauna bathing.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "fde5d15c-1b48-4e63-8376-5dc27552a9c0",
+        "f804dbd3-2f33-4699-b570-12a471f0be12",
+        "04622fc8-c5c8-4154-b9e7-86fb12cc7999",
+        "88eef28f-11aa-41e2-96f1-65617d2b3755",
+        "f01c3501-f8e6-44b9-ab49-1b639a6ec3b8",
+        "9dad551d-422a-48dc-a6c4-0bbd82390389",
+        "167edd31-ca29-4a8a-9f25-293e736cae46",
+        "que_ans_gmLLUR",
+        "que_ans_LwVymP",
+        "que_ans_mdyjqY",
+        "que_ans_BGfCGU",
+        "que_ans_YEY8J6",
+        "que_ans_7WEcgU",
+        "que_ans_Nz466B",
+        "635350c4-38d3-4070-ba90-3de500ef7e2e",
+        "que_ans_H7yxXX",
+        "27dc0198-aa20-4382-958c-a5184bfbcc13",
+        "que_ans_Mxekee",
+        "que_ans_LLbRQf",
+        "que_ans_RcnWJh",
+        "title_FQrG4V",
+        "7064720d-0420-40f1-803f-d9b0235d07ef",
+        "c59ccd3b-4159-4933-b5a8-405abd2d353f",
+        "que_ans_xryH4P",
+        "que_ans_dPdq4P",
+        "que_ans_RpciyE",
+        "que_ans_9LkifV",
+        "que_ans_yCi89q",
+        "que_ans_zrAPaB",
+        "que_ans_k48c3H",
+        "que_ans_jqjpPr",
+        "que_ans_hiBKcq",
+        "que_ans_CNtnJ7",
+        "que_ans_nLRMRj",
+        "3c88c7a8-87e2-447f-853b-29fde4997cba",
+        "title_aGEbAQ",
+        "que_ans_xhTVwL",
+        "que_ans_rrzPpQ",
+        "que_ans_geAPQG",
+        "que_ans_HFhF4f",
+        "que_ans_CX4cbm",
+        "que_ans_NcjwBT",
+        "que_ans_EHrpwG",
+        "que_ans_QPHnEL",
+        "que_ans_UdnYcR",
+        "que_ans_TdkfL8",
+        "que_ans_cMdhFT"
+      ],
+      "settings": {
+        "title": "TONIC SPA FAQS",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

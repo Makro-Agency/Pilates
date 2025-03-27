@@ -1,0 +1,460 @@
+{{ 'spa-services-section.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign loadingType = 'lazy'
+  assign fetchPriorityType = 'auto'
+  assign full_width = '@media (min-width: 768px) calc(60vw - 80px), 100vw'
+  assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'  
+-%}
+
+{% if section.settings.top_padding_remove or section.settings.bottom_padding_remove %}
+  <style>
+    {% if section.settings.top_padding_remove %}
+      #shopify-section-{{ section.id }}.section-padding{
+        padding-top: 0 !important;
+      }
+    {% endif %}
+    
+    {% if section.settings.bottom_padding_remove %}
+      #shopify-section-{{ section.id }}.section-padding{
+        padding-bottom: 0 !important;
+      }
+    {% endif %}
+  </style>
+{% endif %}
+
+<div class="page-width">
+  <div class="spa-services-head">
+    <h2 class="h1">{{ section.settings.heading }}{% if section.blocks.size > 0 %} <span class="count">({{ section.blocks.size }})</span>{% endif %}</h2>
+    {%- for block in section.blocks -%}
+      {%- capture _location -%}
+        {{ _location | strip }}{%- if block.settings.location_filter != blank -%}{{- block.settings.location_filter | strip | replace:', ',',' -}}{% unless forloop.last %},{% endunless %}{%- endif -%}
+      {%- endcapture -%}
+      
+      {%- capture _type -%}
+        {{ _type | strip }}{%- if block.settings.serviceType != blank -%}{{- block.settings.serviceType | strip | replace:', ',',' -}}{% unless forloop.last %},{% endunless %}{%- endif -%}
+      {%- endcapture -%}
+    {%- endfor -%}
+    
+    {%- assign _location = _location | split: ',' | uniq -%}    
+    {%- assign _type = _type | split: ',' | uniq -%}
+    
+    <div class="head-right">
+      {% if _location != blank %}
+      <div class="select-div">
+        <div class="field-select-active"><span>Location</span></div>
+        <ul>
+          <li data-value="">All</li>
+          {%- for option in _location -%}
+            <li data-value="{{ option | strip | handle }}">{{ option }}</li>
+          {%- endfor -%}          
+        </ul>
+        <select name="location">
+          <option value="">Location</option>
+          {% for option in _location  %}
+            <option value="{{ option | strip | handle }}">{{ option }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      {% endif %}
+      
+      {% if _type != blank %}
+      <div class="select-div">
+        <div class="field-select-active"><span>Type of Service</span></div>
+        <ul>
+        {% unless _type contains 'All' or _type contains 'ALL'  %}
+          <li data-value="">All</li>{% endunless %}
+          {%- for option in _type -%}
+            <li data-value="{{ option | strip | handle }}">{{ option }}</li>
+          {%- endfor -%}          
+        </ul>
+        <select name="services">
+          <option value="">Type of service</option>
+          {% for option in _type %}
+            <option value="{{ option | strip | handle }}">{{ option }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      {% endif %}
+    </div>            
+  </div>
+
+  <div class="spa-services-list">
+    {%- for block in section.blocks -%}
+      {%- assign _loc = block.settings.location_filter | split:',' -%}
+      {%- capture locationFilter -%}{%- for _l in _loc -%}location_{{ _l | strip | handle }} {%- endfor -%}{%- endcapture -%}
+      {%- assign _sev = block.settings.serviceType | split:',' -%}
+      {%- capture serviceFilter -%}{%- for _s in _sev -%}type_{{ _s | strip | handle }} {%- endfor -%}{%- endcapture -%}
+      
+      <div class="spa-services-box {{ locationFilter | default:'location_' }} {{ serviceFilter | default:'type_' }}" {{ block.shopify_attributes }} data-location="" data-location="{{ block.settings.location_filter }}">
+        <div class="spa-services-row">        
+          <div class="spa-services-col left-col">
+            <h3>{{ block.settings.heading }}</h3>
+            {%- if block.settings.detail != blank -%}
+              <div class="text-wrap rte">
+                {{ block.settings.detail }}
+              </div>
+            {%- endif -%}
+            
+            <div class="services-contact-box large-up-hide">
+              {%- assign availDesk = '' -%}
+              {%- assign availMobi = '' -%}
+              {%- assign mobiAddress = '' -%}
+              {%- assign exclusiveTrue = false -%}
+              {% assign _count = 0 %}
+      
+              {%- for i in (1..4) -%}
+                {%- capture address_title %}address_title_{{ i }}{% endcapture -%}
+                {% assign address_title = block.settings[address_title] %}
+                {%- if address_title != blank -%}
+                  {%- assign _count = _count | plus: 1 -%} 
+                {% endif %}
+              {%- endfor -%}
+      
+              {%- for i in (1..4) -%}
+                {%- capture address_title %}address_title_{{ i }}{% endcapture -%}
+                {%- capture add_exclusive %}add_exclusive_{{ i }}{% endcapture -%}
+                {%- capture address %}address_{{ i }}{% endcapture -%}
+                {% assign address_title = block.settings[address_title] %}
+                {% assign add_exclusive = block.settings[add_exclusive] %}
+                {% assign address = block.settings[address] %}
+                {%- if exclusiveTrue == false and add_exclusive -%}
+                  {%- assign exclusiveTrue = true -%}
+                {% endif %}
+                
+                {% capture availDesk %}
+                  {{ availDesk }}
+                  {%- if address_title != blank and address != blank -%}                  
+                  <div class="inner-box">
+                    <h5>{{ address_title }}{% if add_exclusive %}<span class="exclusive-tag">Exclusive</span>{% endif %}</h5>
+                    <div class="text-wrap">{{ address }}</div>
+                  </div>
+                  {%- endif -%}
+                {% endcapture %}
+                
+                {% capture availMobi %}
+                  {{ availMobi }}
+                  {%- if address_title != blank -%}
+                    {%- if i > 1 -%}{% unless forloop.last %}<div class="and-icon">&</div>{% endunless %}{% endif %}                  
+                    <h5>{{ address_title }}{% if exclusiveTrue and  _count == i %}<span class="exclusive-tag">Exclusive</span>{% endif %}</h5> 
+                  {%- endif -%}
+                {% endcapture %}
+
+                {% capture mobiAddress %}
+                  {% if mobiAddress != blank %}{{ mobiAddress }}{% endif %}
+                  {% if address != blank %}{{ address }}{% endif %}
+                {% endcapture %}
+                
+              {%- endfor -%}
+      
+              {%- if availDesk != blank -%}
+              <h6>AVAILABLE AT:</h6>
+              <div class="services-contact-row">
+                {{ availDesk }}
+              </div>
+              
+              {%- endif -%}
+            </div>
+            
+            <div class="btn-row">
+              {%- if block.settings.button_text != blank -%}
+                <a href="{{ block.settings.button_link | default: '#' }}" class="button btn-big-width button--primary">{{ block.settings.button_text }}</a>
+              {%- endif -%}
+              {%- if block.settings.link_text != blank -%}
+                <a href="{{ block.settings.text_link | default: '#' }}" class="link global-link">{{ block.settings.link_text }}<span class="icon-wrap">{% render 'icon-link-arrow' %}</span></a>
+              {%- endif -%}
+            </div>
+          </div>        
+          <div class="spa-services-col right-col">
+            <div class="inner-row">
+              {%- if availDesk != blank -%}
+              <div class="inner-col services-contact-box inner-col-left medium-hide small-hide">
+                <h6>AVAILABLE AT:</h6>
+                {{ availDesk }}              
+              </div>
+              {%- endif -%}
+              <div class="inner-col inner-col-right">
+                <div class="img-box{% if block.settings.image == blank %} placeholder{% endif %}">
+                  {%- liquid
+                    assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio
+                    assign sizes = full_width
+                  -%}
+                  {% if block.settings.image != blank %}
+                    {{
+                      block.settings.image
+                      | image_url: width: 3840
+                      | image_tag:
+                        loading: loadingType,
+                        fetchPriority: fetchPriorityType,
+                        width: block.settings.image.width,
+                        height: image_height,
+                        class: '',
+                        sizes: sizes,
+                        widths: widths
+                    }}
+                  {% else %}
+                    {% capture heroAppare %}hero-apparel-{% cycle '1,2,3' %}{% endcapture %}
+                    {{ heroAppare | placeholder_svg_tag: 'placeholder-svg' }}
+                  {% endif %}                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+    $(document).on('click', function(event){
+      if( $('.spa-services-head .select-div.active').length > 0 && $(event.target).closest('.select-div').length == 0 ){
+        $('.spa-services-head .select-div.active').removeClass('active');
+      }
+    });
+    
+    $('.spa-services-head .select-div .field-select-active').click(function (event) {      
+      if( !$(this).closest('.select-div').hasClass('active') ){
+        $(this).closest('.select-div').siblings('.active').removeClass('active');
+        $(this).closest('.select-div').addClass('active');
+      }else{
+        $(this).closest('.select-div').removeClass('active');
+      }
+    });
+    
+    $('.spa-services-head .select-div ul li').click(function (event) {
+      $(this).closest('ul').find('.active').removeClass('active');
+      if( !$(this).hasClass('active') ){
+        let value = $(this).text();
+        $(this).addClass('active');
+        $(this).closest('.select-div').find('.field-select-active span').text(value);
+        let _select = $($(this).closest('.select-div').find('select'));
+        _select.val($(this).attr('data-value')).change();
+        let _triggerSelect = $(this).closest('.select-div').find('select')[0];
+        if( _triggerSelect ){
+          let clickEvent = new Event('change', { bubbles: true });
+          _triggerSelect.dispatchEvent(clickEvent);
+        }
+      }
+    });
+  });
+  if( document.querySelector('.select-div select[name="location"]') ){
+    document.querySelector('.select-div select[name="location"]').addEventListener("change", function(event){
+      var _this = this;
+      var _services = _this.closest('.head-right').querySelector('select[name="services"]') ? _this.closest('.head-right').querySelector('select[name="services"]').value : '';
+      _services = _services != '' ? `.type_${_services}`: '';
+      var _location = _this.value != '' ? `.location_${_this.value}`:'';
+      _location = _location+_services;
+      var _count = 0;
+      var _length = _this.closest('.page-width').querySelectorAll('.spa-services-list .spa-services-box').length;
+      
+      _this.closest('.page-width').querySelectorAll('.spa-services-list .spa-services-box.hidden').forEach(function(ele, index){
+        ele.classList.remove('hidden');
+      });
+      if( _location != '' ){
+        _this.closest('.page-width').querySelectorAll('.spa-services-list .spa-services-box:not('+_location+')').forEach(function(ele, index){
+          ele.classList.add('hidden');
+          _count = _count + 1;
+        });
+      }
+  
+      _count = _length - _count;
+      _count = _count < 0 ? 0 : _count;
+      _this.closest('.spa-services-head').querySelector('.h1 .count').innerText = `(${_count})`;
+    });
+  }
+
+  if( document.querySelector('.select-div select[name="services"]') ){
+    document.querySelector('.select-div select[name="services"]').addEventListener("change", function(event){
+      var _this = this;      
+      var _location = _this.closest('.head-right').querySelector('select[name="location"]') ? _this.closest('.head-right').querySelector('select[name="location"]').value : '';
+      _location = _location != '' ? `.location_${_location}`: '';
+      var _services = _this.value != '' ? `.type_${_this.value}`:'';
+      _services = _services+_location;
+      var _count = 0;
+      var _length = _this.closest('.page-width').querySelectorAll('.spa-services-list .spa-services-box').length;
+      
+      
+      _this.closest('.page-width').querySelectorAll('.spa-services-list .spa-services-box.hidden').forEach(function(ele, index){
+        ele.classList.remove('hidden');
+      });
+      if( _services != '' ){
+        _this.closest('.page-width').querySelectorAll('.spa-services-list .spa-services-box:not('+_services+')').forEach(function(ele, index){
+          ele.classList.add('hidden');
+          _count = _count + 1;
+        });
+      }
+  
+      _count = _length - _count;
+      _count = _count < 0 ? 0 : _count;    
+      _this.closest('.spa-services-head').querySelector('.h1 .count').innerText = `(${_count})`;
+    });
+  }
+</script>
+
+{% schema %}
+  {
+    "name": "Spa services section",
+    "class": "spa-services-section section-padding",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Heading",
+        "id": "heading",
+        "default": "ALL SERVICES"
+      },
+      {
+        "type": "header",
+        "content": "Section padding"
+      },
+      {
+        "type": "checkbox",
+        "id": "top_padding_remove",
+        "default": false,
+        "label": "Remove top padding"
+      },
+      {
+        "type": "checkbox",
+        "id": "bottom_padding_remove",
+        "default": false,
+        "label": "Remove bottom padding"
+      }
+    ],
+    "blocks":[
+      {
+        "type": "services",
+        "name": "Services block",
+        "settings":[
+          {
+            "type": "text",
+            "label": "Location for the filter",
+            "id": "location_filter"            
+          },
+          {
+            "type": "text",
+            "label": "Service type",
+            "id": "serviceType"
+          },
+          {
+            "type": "text",
+            "label": "Heading",
+            "id": "heading",
+            "default": "INFRARED SAUNA"
+          },
+          {
+            "type": "richtext",
+            "label": "Eter detail",
+            "id": "detail",
+            "default": "<p>Relax muscles, relieve tension and detoxify skin for a glowing complexion in one of our two infrared saunas<\/p>"
+          },
+          {
+            "type": "text",
+            "label": "Button",
+            "id": "button_text",
+            "default": "book now"
+          },
+          {
+            "type": "url",
+            "label": "Button link",
+            "id": "button_link"
+          },
+          {
+            "type": "text",
+            "label": "Link text",
+            "id": "link_text",
+            "default": "Learn More"
+          },
+          {
+            "type": "url",
+            "label": "Provide link for a text",
+            "id": "text_link"
+          },
+          {
+            "type": "header",
+            "content": "Available at"
+          },
+          {
+            "type": "text",
+            "label": "Address title 1",
+            "id": "address_title_1",
+            "default": "YONGE / SHUTER"
+          },
+          {
+            "type": "checkbox",
+            "label": "it's Exclusive?",
+            "id": "add_exclusive_1"            
+          },
+          {
+            "type": "richtext",
+            "label": "Address 1",
+            "id": "address_1",
+            "default": "<p>225 Yonge Street, Toronto ON M5B 1N8<\/p><p>647-372-0225<\/p>"
+          },
+          {
+            "type": "text",
+            "label": "Address title 2",
+            "id": "address_title_2",
+            "default": "YONGE / SHUTER"
+          },
+          {
+            "type": "checkbox",
+            "label": "it's Exclusive?",
+            "id": "add_exclusive_2"            
+          },
+          {
+            "type": "richtext",
+            "label": "Address 2",
+            "id": "address_2",
+            "default": "<p>225 Yonge Street, Toronto ON M5B 2N8<\/p><p>647-372-0225<\/p>"
+          },
+          {
+            "type": "text",
+            "label": "Address title 3",
+            "id": "address_title_3"
+          },
+          {
+            "type": "checkbox",
+            "label": "it's Exclusive?",
+            "id": "add_exclusive_3"            
+          },
+          {
+            "type": "richtext",
+            "label": "Address 3",
+            "id": "address_3"
+          },
+          {
+            "type": "text",
+            "label": "Address title 4",
+            "id": "address_title_4"
+          },
+          {
+            "type": "checkbox",
+            "label": "it's Exclusive?",
+            "id": "add_exclusive_4"            
+          },
+          {
+            "type": "richtext",
+            "label": "Address 4",
+            "id": "address_4"
+          },
+          {
+            "type": "header",
+            "content": "Image"
+          },
+          {
+            "type": "image_picker",
+            "label": "Upload image",
+            "id": "image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

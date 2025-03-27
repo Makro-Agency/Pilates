@@ -1,0 +1,295 @@
+<link rel="stylesheet" href="{{ 'section-multicolumn.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'store-locations.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'section-multicolumn.css' | asset_url }}"></noscript>
+<noscript><link rel="stylesheet" href="{{ 'store-locations.css' | asset_url }}"></noscript>
+
+{%- assign totalColumn = 0 -%}
+
+{%- capture content_data -%}
+  
+  {%- liquid
+    assign highest_ratio = 0
+    for block in section.blocks
+      if block.settings.image.aspect_ratio > highest_ratio
+        assign highest_ratio = block.settings.image.aspect_ratio
+      endif
+    endfor
+  -%}
+  
+  {%- for block in section.blocks -%}
+    
+    {%- assign empty_column = '' -%}
+    {%- if block.settings.image == blank -%}
+      {%- assign empty_column = ' multicolumn-list__item--empty' -%}
+    {%- endif -%}
+
+    {%- capture exclusive_services -%}
+      {%- for i in (1..6) -%}
+        {%- capture service_content %}service_{{i}}{% endcapture -%}
+        {%- assign services = block.settings[service_content] -%}
+        {%- if services != blank -%}
+          <li class="service_line">{% render 'icon-check-1' %} {{ services }}</li>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endcapture -%}
+
+    <div
+      id="Slide-{{ section.id }}-{{ forloop.index }}"
+      class="multicolumn-list__item store-locations-item grid__item{{ empty_column }}"
+      {{ block.shopify_attributes }}
+    >
+      <div class="multicolumn-card content-container">
+        
+        <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--full-width">
+          {%- if block.settings.image != blank -%}
+            <div class="media media--transparent media--portrait">
+              {%- liquid
+                assign number_of_columns = 2
+                assign number_of_columns_mobile = 1
+                assign grid_space_desktop = number_of_columns | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
+                assign grid_space_tablet = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
+                assign grid_space_mobile = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | divided_by: 2 | plus: 30 | append: 'px'
+                assign image_width = 1
+              -%}
+              {% capture sizes %}
+                (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - {{ grid_space_desktop }}) * {{ image_width }} /  {{ number_of_columns }}),
+                (min-width: 990px) calc((100vw - {{ grid_space_desktop }}) * {{ image_width }} / {{ number_of_columns }}),
+                (min-width: 750px) calc((100vw - {{ grid_space_tablet }}) * {{ image_width }} / {{ number_of_columns_mobile }}),
+                calc((100vw - {{ grid_space_mobile }}) * {{ image_width }} / {{ number_of_columns_mobile }})
+              {% endcapture %}
+              {{
+                block.settings.image
+                | image_url: width: 3000
+                | image_tag:
+                  loading: 'lazy',
+                  widths: '200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000',
+                  sizes: sizes,
+                  class: 'multicolumn-card__image'
+              }}
+            </div>
+            {%- assign totalColumn = totalColumn | plus: 1 -%}
+          {%- else -%} 
+            <div class="media media--transparent"  style="padding-bottom: 59%;">
+              {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+            </div>
+            {%- assign totalColumn = totalColumn | plus: 1 -%}
+          {%- endif -%}
+        </div>
+
+        <div class="multicolumn-card__info_wraper">
+          <div class="multicolumn-card__info">
+            {%- if block.settings.title != blank -%}
+              <h3 class="">{{ block.settings.title }}</h3>
+            {%- endif -%}
+            {%- if block.settings.desc != blank -%}
+              <div class="rte text-wrap">{{ block.settings.desc }}</div>
+            {%- endif -%}
+            {%- if block.settings.address != blank -%}
+              <div class="store-address">{{ block.settings.address }}</div>
+            {%- endif -%}
+            {%- if block.settings.phone != blank -%}
+              <div class="store-phone">{{ block.settings.phone }}</div>
+            {%- endif -%}
+          </div>
+          {%- if exclusive_services != blank -%}
+            <div class="multicolumn-card__services">
+              <div class="service-title h6">{{ 'Services include:' }}</div>
+              <ul class="service-title-wrap">{{ exclusive_services }}</ul>
+            </div>
+          {%- endif -%}
+        </div>
+    
+      </div>
+    </div>
+  {%- endfor -%}
+  
+{%- endcapture -%}
+
+
+
+{%- if content_data != blank -%}
+
+  {%- if section.settings.top_padding_remove or section.settings.bottom_padding_remove -%}
+    <style>
+      {% if section.settings.top_padding_remove %}
+        #shopify-section-{{ section.id }}.section-padding{
+          padding-top: 0 !important;
+        }
+      {% endif %}
+      
+      {% if section.settings.bottom_padding_remove %}
+        #shopify-section-{{ section.id }}.section-padding{
+          padding-bottom: 0 !important;
+        }
+      {% endif %}
+    </style>
+  {%- endif -%}
+  
+  <div class="multicolumn1 color-{{ section.settings.color_scheme }} gradient{% if section.settings.title == blank %} no-heading{% endif %}">
+    <div
+      class="isolate{% if settings.animations_reveal_on_scroll %} scroll--trigger animate-slide-in{% endif %}"
+      {% if settings.animations_reveal_on_scroll %}data-cascade{% endif %}
+    >
+      {%- unless section.settings.title == blank -%}
+        <div class="section-head">
+          <div class="page-width">
+            <h6 class="h6">{{- section.settings.title -}}</h6>
+          </div>
+        </div>
+      {%- endunless -%}
+  
+      {%- unless section.settings.full_width -%}<div class="page-width">{%- endunless -%}
+        <div class="slider-mobile-gutter">
+          <div
+            class="multicolumn-list contains-content-container grid grid--1-col-tablet-down grid--{{ totalColumn }}-col-desktop"
+            id="Slider-{{ section.id }}"
+            role="list"
+          >
+            {{ content_data }}
+          </div>
+        </div>
+      {%- unless section.settings.full_width -%}</div>{%- endunless -%}
+  
+    </div>
+  </div>
+{%- endif -%}
+
+
+
+{% schema %}
+{
+  "name": "Store locations",
+  "class": "section store-locations section-padding",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": true,
+      "label": "Make section full width?"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "default": "S&T LOCATIONS",
+      "label": "Heading"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "top_padding_remove",
+      "default": false,
+      "label": "Remove top padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_padding_remove",
+      "default": false,
+      "label": "Remove bottom padding"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "location",
+      "name": "Location card",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "THE WELL",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "desc",
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Qorem ipsum dolor sit amet.</p>",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "address",
+          "default": "486 Front St W, Toronto, ON M5V 0V2",
+          "label": "Address"
+        },
+        {
+          "type": "text",
+          "id": "phone",
+          "default": "647-372-0225",
+          "label": "Phone number"
+        },
+        {
+          "type": "header",
+          "content": "Exclusive services:"
+        },
+        {
+          "type": "text",
+          "id": "service_1",
+          "default": "Service 1",
+          "label": "Service 1"
+        },
+        {
+          "type": "text",
+          "id": "service_2",
+          "default": "Service 2",
+          "label": "Service 2"
+        },
+        {
+          "type": "text",
+          "id": "service_3",
+          "default": "Service 3",
+          "label": "Service 3"
+        },
+        {
+          "type": "text",
+          "id": "service_4",
+          "default": "Service 4",
+          "label": "Service 4"
+        },
+        {
+          "type": "text",
+          "id": "service_5",
+          "default": "Service 5",
+          "label": "Service 5"
+        },
+        {
+          "type": "text",
+          "id": "service_6",
+          "default": "Service 6",
+          "label": "Service 6"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Store locations",
+      "blocks": [
+        {
+          "type": "location"
+        },
+        {
+          "type": "location"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,45 @@
+.facets-wrapper { border-bottom: 1px solid rgba(0, 0, 0, 0.10); margin-bottom:40px; padding-top:20px; padding-bottom:20px; }
+
+.facets-wrapper .facets-container { padding:0; }
+.facets-wrapper .facets-container .facets__form { margin:0; }
+.facets-wrapper .facets-container #FacetFiltersForm {  display:flex; justify-content:space-between; }
+.facets-wrapper .facets-container #FacetFiltersForm .facet-filters { padding:0; }
+.facets-wrapper .facets-container #FacetFiltersForm .facet-filters .facet-filters__label { color: #000; font-size: 14px; font-style: normal; font-weight: 400; 
+    line-height: 150%; letter-spacing:0; margin-right:3px; text-transform:capitalize; }
+
+.facets-wrapper .facets-container #FacetFiltersForm .facet-filters .facet-filters__sort { color: #000; font-size: 14px; font-style: normal; font-weight: 400; 
+   line-height: 150%; letter-spacing:0; text-transform:capitalize; }
+.facets-wrapper .facets-container #FacetFiltersForm .facet-filters .facet-filters__sort:focus-visible,
+.facets-wrapper .facets-container #FacetFiltersForm .facet-filters .facet-filters__sort:focus-within,
+.facets-wrapper .facets-container #FacetFiltersForm .facet-filters .facet-filters__sort:focus { outline:none; box-shadow:none; border:none; }
+
+.facets-wrapper .facets-container #FacetFiltersForm .product-count { line-height:1; }
+.facets-wrapper .facets-container #FacetFiltersForm .product-count .product-count__text,
+.facets-wrapper .facets-container #FacetFiltersForm .product-count .product-count__text span { color: #000; font-size: 14px; font-style: normal; font-weight: 400; 
+  line-height: 150%; letter-spacing:0; }
+
+.product-grid-container .collection.loading { position: relative; }
+
+.collection .product-grid { row-gap: 80px; }
+
+.collection .product-grid .badge { font-size: 12px; font-style: normal; font-weight: 400; line-height: 150%; letter-spacing:0; border-radius:0; border: none; }
+
+
+@media screen and (max-width: 749px) {
+
+  .coll-list-main-wrapper { padding-top:0 !important; }
+
+  .facets-wrapper { margin-bottom:30px; padding-top: 30px; padding-bottom: 30px; }
+
+ .collection .product-grid { row-gap:40px; column-gap: 4px; }
+ .collection .product-grid .grid__item { width: calc((100% - 4px) / 2); } 
+  
+  
+}
+
+
+
+
+
+
+/* End */

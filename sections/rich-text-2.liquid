@@ -1,0 +1,179 @@
+{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
+  <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
+    <div class="rich-text__wrapper rich-text__wrapper--left{% if section.settings.full_width %} page-width{% endif %}">      
+        <div class="rich-text__blocks rich-text__blocks_true left">
+          <div class="rich-text__blocks_left">
+            {% if section.settings.subHeading != blank %}
+              <p class="rich-text__caption caption-with-letter-spacing caption-with-letter-spacing--large scroll-trigger animate--slide-in" data-cascade="" style="--animation-order: 1;">{{ section.settings.subHeading }}</p>
+            {% endif %}
+              
+            {% if section.settings.heading != blank %}
+              <h2 class="rich-text__heading uppercase rte inline-richtext h2 scroll-trigger animate--slide-in" data-cascade="" style="--animation-order: 2;">{{ section.settings.heading }}</h2>
+            {% endif %}
+          </div>
+          <div class="rich-text__blocks_right">
+            {% if section.settings.text != blank %}
+              <div class="rich-text__text rte scroll-trigger animate--slide-in" data-cascade="" style="--animation-order: 3;">
+                <p>{{ section.settings.text }}</p>
+              </div>
+            {% endif %}
+            <div
+              class="rich-text__buttons{% if section.settings.button_label != blank and section.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"              
+              {% if settings.animations_reveal_on_scroll %}
+                data-cascade
+                style="--animation-order: 4;"
+              {% endif %}
+            >
+              {%- if section.settings.button_label != blank -%}
+                <a
+                  {% if section.settings.button_link == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ section.settings.button_link }}"
+                  {% endif %}
+                  class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                >
+                  {{- section.settings.button_label | escape -}}
+                </a>
+              {%- endif -%}
+              {%- if section.settings.button_label_2 != blank -%}
+                <a
+                  {% if section.settings.button_link_2 == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ section.settings.button_link_2 }}"
+                  {% endif %}
+                  class="button{% if section.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                >
+                  {{- section.settings.button_label_2 | escape -}}
+                </a>
+              {%- endif -%}
+            </div>
+          </div>          
+        </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Rich text 2",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": true,
+      "label": "t:sections.rich-text.settings.full_width.label"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Inclusion for all",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subHeading",
+      "default": "Our Mission",
+      "label": "subHeading"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "default": "<p>Our purpose is to create a fitness &amp; wellness space and community where everyone is included and welcome. We encourage open communication, educational opportunities, embracing differences, and lifting each other up to ensure both team members and guests are respected, valued, safe, and supported. We are absolutely and actively against any form of racism, discrimination, harassment, or hate. Whether you work here, exercise here, or stop by for a snack, you are an important part of our Sweat Fam. At S&amp;T, we work with our community to collaborate together, elevate each other, and create a place to belong.</p>",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Button label",
+      "label": "t:sections.rich-text.blocks.buttons.settings.button_label_1.label",
+      "info": "t:sections.rich-text.blocks.buttons.settings.button_label_1.info"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.rich-text.blocks.buttons.settings.button_link_1.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_style_secondary",
+      "default": false,
+      "label": "t:sections.rich-text.blocks.buttons.settings.button_style_secondary_1.label"
+    },
+    {
+      "type": "text",
+      "id": "button_label_2",
+      "label": "t:sections.rich-text.blocks.buttons.settings.button_label_2.label",
+      "info": "t:sections.rich-text.blocks.buttons.settings.button_label_2.info"
+    },
+    {
+      "type": "url",
+      "id": "button_link_2",
+      "label": "t:sections.rich-text.blocks.buttons.settings.button_link_2.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_style_secondary_2",
+      "default": false,
+      "label": "t:sections.rich-text.blocks.buttons.settings.button_style_secondary_2.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
+  ],
+  "presets": [
+    {
+      "name": "Rich text 2"      
+    }
+  ]
+}
+{% endschema %}

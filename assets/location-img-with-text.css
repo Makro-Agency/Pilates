@@ -1,0 +1,61 @@
+.location-img-with-text-wrapper { width:100%; padding:150px 0; } 
+
+.location-img-with-text-wrapper .box-wrapper { display:flex;  justify-content:space-between; }
+.location-img-with-text-wrapper .box-wrapper .banner-content-wrapper { width:100%; max-width:40%; }
+
+.location-img-with-text-wrapper .box-wrapper .banner-content-wrapper .cont-part { display: flex; flex-flow: column; align-items: flex-start; }
+.location-img-with-text-wrapper .box-wrapper .banner-content-wrapper .cont-part .sec-title { margin:0; }
+.location-img-with-text-wrapper .box-wrapper .banner-content-wrapper .cont-part .sec-title .before-title { color: #000; font-size: 12px; font-style: normal; display: flex;
+   font-weight: 450; line-height: normal; letter-spacing: 0.24px; text-transform: uppercase; margin:0 0 40px 0; }
+.location-img-with-text-wrapper .box-wrapper .banner-content-wrapper .cont-part .sec-title .title { color:#000; font-size: 40px; font-style: normal; font-weight: 450; line-height: 100%;
+   text-transform: uppercase; margin:0 0 20px 0; }
+.location-img-with-text-wrapper .box-wrapper .banner-content-wrapper .cont-part .descriptions { width:100%; }
+.location-img-with-text-wrapper .box-wrapper .banner-content-wrapper .cont-part .descriptions,
+.location-img-with-text-wrapper .box-wrapper .banner-content-wrapper .cont-part .descriptions p { color: #000; font-size: 14px; font-style: normal; font-weight: 400; line-height: 150%; }
+.location-img-with-text-wrapper .box-wrapper .banner-content-wrapper .cont-part .descriptions p:first-child { margin-top:0; }
+.location-img-with-text-wrapper .box-wrapper .banner-content-wrapper .cont-part .descriptions p:last-child { margin-bottom:0; }
+
+.location-img-with-text-wrapper .box-wrapper .banner-content-wrapper .cont-part .cont-info { width:100%; display:flex; flex-flow:column; }
+.location-img-with-text-wrapper .box-wrapper .banner-content-wrapper .cont-part .cont-info span { display:flex; color: #000; font-size: 14px; font-style: normal; font-weight: 450; 
+    line-height: normal; letter-spacing: 0.28px; text-transform: uppercase; margin-top:25px; }
+.location-img-with-text-wrapper .box-wrapper .banner-content-wrapper .cont-part .cont-info span i { display:flex; width:26px; }
+
+.location-img-with-text-wrapper .box-wrapper .banner-content-wrapper .cont-part .contact-btn { display:flex; align-items:center; margin-top:40px; color: #C79D5B; font-size: 12px; 
+  font-style: normal; font-weight: 450; line-height: normal; letter-spacing: 0.24px; text-transform: uppercase; text-decoration:none; }
+.location-img-with-text-wrapper .box-wrapper .banner-content-wrapper .cont-part .contact-btn svg { width: 12px; height: auto; margin-left:10px; position:relative; top:-1px; }
+
+.location-img-with-text-wrapper .box-wrapper .media-wrapper { width:100%; max-width:45%; display:flex; }
+.location-img-with-text-wrapper .box-wrapper .media-wrapper img { width:100%; height: auto; object-fit: cover; }
+
+@media (max-width: 1023px) {
+    
+}
+
+
+@media (max-width: 749px) {
+
+  .location-img-with-text-wrapper { padding:80px 0; }
+  .location-img-with-text-wrapper .box-wrapper { display: flex; flex-flow: column-reverse; }
+  
+  .location-img-with-text-wrapper .box-wrapper .media-wrapper { width: auto; max-width: inherit; margin: 0 -20px; display: flex; }
+
+  .location-img-with-text-wrapper .box-wrapper .banner-content-wrapper { width:100%; max-width:100%; margin-top:40px; }
+  .location-img-with-text-wrapper .box-wrapper .banner-content-wrapper .cont-part .sec-title .before-title { margin: 0 0 30px; }
+  .location-img-with-text-wrapper .box-wrapper .banner-content-wrapper .cont-part .sec-title .title { font-size: 24px; font-style: normal; font-weight: 450; 
+      line-height: 100%; margin:0 0 10px 0; }
+
+  .location-img-with-text-wrapper .box-wrapper .banner-content-wrapper .cont-part .cont-info span { font-size: 12px; font-style: normal; font-weight: 450; 
+    line-height: normal; letter-spacing: 0.24px; margin-top:20px; }
+
+  .location-img-with-text-wrapper .box-wrapper .banner-content-wrapper .cont-part .contact-btn { font-size: 12px; font-style: normal; font-weight: 450; line-height: normal;
+     letter-spacing: 0.24px; }
+
+  .locations-wrapper .location-slide .slider-controls { display:none; }
+  .locations-wrapper .location-slide .swiper-slide { width:calc(100vw - 20px); }
+
+  .locations-wrapper .location-slide .swiper-slide img { width: 100%; height: 280px; object-fit: cover; }
+  
+}
+
+
+/* end */

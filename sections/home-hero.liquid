@@ -1,0 +1,788 @@
+{%- if section.index == 1 -%}
+  
+  {{- 'section-image-banner.css' | asset_url | stylesheet_tag: preload: true -}}
+  {{- 'home-hero.css' | asset_url | stylesheet_tag: preload: true -}}
+  
+  {%- assign loadingType = 'eager' -%}
+  {%- assign fetchPriorityType = 'high' -%}
+  
+{%- else -%}
+  
+  <link rel="stylesheet" href="{{ 'section-image-banner.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'home-hero.css' | asset_url }}" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="{{ 'section-image-banner.css' | asset_url }}"></noscript>
+  <noscript><link rel="stylesheet" href="{{ 'home-hero.css' | asset_url }}"></noscript>
+  
+  {%- assign loadingType = 'lazy' -%}
+  {%- assign fetchPriorityType = 'auto' -%}
+  
+{%- endif -%}
+
+{%- style -%}
+  #Banner-{{ section.id }}::after {
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+  }
+{%- endstyle -%}
+
+
+
+{%- liquid
+  assign full_width = '100vw'
+  assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+
+  if section.settings.image_behavior == 'ambient'
+    assign half_width = '60vw'
+    assign full_width = '120vw'
+    assign stacked_sizes = '(min-width: 750px) 60vw, 120vw'
+    assign widths = '450, 660, 900, 1320, 1800, 2136, 2400, 3600, 7680'
+  elsif section.settings.image_behavior == 'fixed' or section.settings.image_behavior == 'zoom-in'
+    assign half_width = '100vw'
+    assign stacked_sizes = '100vw'
+  else
+    assign half_width = '50vw'
+    assign stacked_sizes = '(min-width: 750px) 50vw, 100vw'
+  endif
+-%}
+
+
+
+{%- capture bannerBottomContent -%}
+  {%- for block in section.blocks -%}
+    
+    {%- if block.type == 'bottom_title' -%}
+      {%- if block.settings.title != blank -%}
+        <div class="col col-left">
+          <h2{% if block.settings.text_clr != blank and block.settings.text_clr != 'rgba(0,0,0,0)' %} style="color: {{ block.settings.text_clr }};"{% endif %}>
+            {{- block.settings.title -}}
+          </h2>
+        </div>
+      {%- endif -%}
+    {%- endif -%}
+    
+    {%- if block.type == 'bottom_links' -%}
+      <div class="col col-right">
+        <div class="link-ul">
+          {%- for i in (1..6) -%}
+            {%- capture link_label -%}link_label_{{i}}{%- endcapture -%}
+            {%- assign linkLabel = block.settings[link_label] -%}
+            {%- capture link_url -%}link_{{i}}{%- endcapture -%}
+            {%- assign linkUrl = block.settings[link_url] -%}
+            {%- if linkLabel != blank -%}
+              <div class="link-li">
+                <a {% if linkUrl == blank %}role="link" aria-disabled="true"{% else %}href="{{ linkUrl }}"{% endif %} class="link global-link"
+                  {%- if block.settings.link_clr != blank and block.settings.link_clr != 'rgba(0,0,0,0)' %} style="color: {{ block.settings.link_clr }};"{% endif -%}
+                  >{{- linkLabel -}}
+                  <span class="icon-wrap">{% render 'icon-link-arrow' %}</span>
+                </a>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endif -%}
+    
+  {%- endfor -%}
+{%- endcapture -%}
+
+
+{%- capture banner_video_content -%}
+  {%- if section.settings.video != null -%}
+    <div class="banner__media media{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      {%- if section.settings.cover_image != blank -%}
+        {%- liquid
+          assign image_height = section.settings.cover_image.width | divided_by: section.settings.cover_image.aspect_ratio
+          assign sizes = full_width
+        -%}
+        {{
+          section.settings.cover_image
+          | image_url: width: 3840
+          | image_tag:
+            loading: loadingType,
+            fetchPriority: fetchPriorityType,
+            width: section.settings.cover_image.width,
+            height: image_height,
+            sizes: sizes,
+            widths: widths
+        }}
+        <template>
+          {{
+            section.settings.video
+            | video_tag:
+              image_size: '1100x',
+              autoplay: true,
+              loop: true,
+              controls: false,
+              muted: true
+          }}
+        </template>
+      {%- else -%}
+        {{
+          section.settings.video
+          | video_tag:
+            image_size: '1400x',
+            autoplay: true,
+            loop: true,
+            controls: false,
+            loading: loadingType,
+            preload: 'auto',
+            muted: true
+        }}
+      {%- endif -%}
+    </div>
+  {%- elsif section.settings.video_url != null -%}
+    {%- assign loop = '&loop=1&muted=1&rel=0&controls=0&playlist=' | append: section.settings.video_url.id -%}
+    <div class="banner__media media{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      
+      {%- if section.settings.cover_image != blank -%}
+        
+        {%- liquid
+          assign image_height = section.settings.cover_image.width | divided_by: section.settings.cover_image.aspect_ratio
+          assign sizes = full_width
+        -%}
+        {{
+          section.settings.cover_image
+          | image_url: width: 3840
+          | image_tag:
+            loading: loadingType,
+            fetchPriority: fetchPriorityType,
+            width: section.settings.cover_image.width,
+            height: image_height,
+            sizes: sizes,
+            widths: widths
+        }}
+        {%- if section.settings.video_url.type == 'youtube' -%}
+          <template>
+            <iframe
+              src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?enablejsapi=1&modestbranding=1&autoplay=1{{ loop }}"
+              class="js-youtube"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            ></iframe>
+          </template>
+        {%- else -%}
+          <template>
+            <iframe
+              src="https://player.vimeo.com/video/{{ section.settings.video_url.id }}?autoplay=1{{ loop }}"
+              class="js-vimeo"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            ></iframe>
+          </template>
+        {%- endif -%}
+        
+      {%- else -%}
+
+        {%- if section.settings.video_url.type == 'youtube' -%}
+          <iframe
+            src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?enablejsapi=1&modestbranding=1&autoplay=1{{ loop }}"
+            class="js-youtube"
+            allow="autoplay; encrypted-media"
+            loading="{{ loadingType }}"
+            allowfullscreen
+          ></iframe>
+        {%- else -%}
+          <iframe
+            src="https://player.vimeo.com/video/{{ section.settings.video_url.id }}?autoplay=1{{ loop }}"
+            class="js-vimeo"
+            allow="autoplay; encrypted-media"
+            loading="{{ loadingType }}"
+            allowfullscreen
+          ></iframe>
+        {%- endif -%}
+        
+      {%- endif -%}
+
+    </div>
+  {%- endif -%}
+{%- endcapture -%}
+
+
+{%- capture banner_media_content -%}
+  {%- assign hasVideoPresent = false -%}
+  {%- assign isEmptyMedia = false -%}
+  {%- if section.settings.image == blank or section.settings.video == blank or section.settings.video_url == blank -%}
+    {%- assign isEmptyMedia = true -%}
+  {%- endif -%}
+    
+  {%- if section.settings.image != blank -%}
+    <div class="banner__media media{% if isEmptyMedia %} placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}{% if section.settings.img_mobile != blank %} small-hide{% endif %}">
+      {%- liquid
+        assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
+        assign sizes = full_width
+      -%}
+      {{
+        section.settings.image
+        | image_url: width: 3840
+        | image_tag:
+          loading: loadingType,
+          fetchPriority: fetchPriorityType,
+          width: section.settings.image.width,
+          height: image_height,
+          sizes: sizes,
+          widths: widths
+      }}
+    </div>
+  {%- elsif section.settings.video != null -%}
+    {%- assign hasVideoPresent = true -%}
+    {{- banner_video_content -}}
+  {%- elsif section.settings.video_url != null -%}
+    {%- assign hasVideoPresent = true -%}
+    {{- banner_video_content -}}
+  {%- else -%}
+    <div class="banner__media media placeholder{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}{% if section.settings.img_mobile != blank %} small-hide{% endif %}">
+      {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+    </div>
+  {%- endif -%}
+
+  {%- if section.settings.img_mobile != blank and hasVideoPresent == false -%}
+    <div class="banner__media media{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %} medium-hide large-up-hide">
+      {%- liquid
+        assign image_height_2 = section.settings.img_mobile.width | divided_by: section.settings.img_mobile.aspect_ratio
+          assign sizes = full_width
+      -%}
+      {{
+        section.settings.img_mobile
+        | image_url: width: 1100
+        | image_tag:
+          loading: loadingType,
+          fetchPriority: fetchPriorityType,
+          width: section.settings.img_mobile.width,
+          height: image_height_2,
+          sizes: sizes,
+          widths: widths
+      }}
+    </div>
+  {%- endif -%}
+{%- endcapture -%}
+ 
+
+
+<div
+  id="Banner-{{ section.id }}"
+  class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} {% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if section.settings.image_behavior != 'none' or section.settings.image_behavior != 'ambient' %} animate--paralex-effect{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+  {%- if section.settings.allow_transparent_header %} allow-transparent-header{% endif -%}
+>
+    {%- if banner_media_content != blank -%}
+      {{- banner_media_content -}}
+    {%- endif -%}
+  
+    <div class="banner__content_top banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
+      <div class="banner__box_top_wrap">
+        <div class="banner__box_top banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'heading' -%}
+                <h2
+                  class="banner__heading inline-richtext {{ block.settings.heading_size }}"
+                  {% if block.settings.text_clr != blank and block.settings.text_clr != 'rgba(0,0,0,0)' %}style="color: {{ block.settings.text_clr }};"{% endif %}
+                  {{ block.shopify_attributes }}
+                >
+                  {{ block.settings.heading }}
+                </h2>
+              {%- when 'text' -%}
+                <div class="banner__text rte {{ block.settings.text_style }}" 
+                  {% if block.settings.text_clr != blank and block.settings.text_clr != 'rgba(0,0,0,0)' %}style="color: {{ block.settings.text_clr }};"{% endif %}
+                  {{ block.shopify_attributes }}
+                >
+                  <p>{{ block.settings.text }}</p>
+                </div>
+              {%- when 'buttons' -%}
+                <div class="banner__buttons btn-clr--{{ block.id }}" {{ block.shopify_attributes }}>
+                  {%- assign btn_class = blank -%}
+                  {%- if block.settings.button_style == 'solid' -%}
+                    {%- assign btn_class = 'button btn-big-width button--primary' -%}
+                  {%- elsif block.settings.button_style == 'outline' -%}
+                    {%- assign btn_class = 'button btn-big-width button--secondary' -%}
+                  {%- else -%}
+                    {%- assign btn_class = 'link global-link' -%}
+                  {%- endif -%} 
+                  {%- if block.settings.button_label_1 != blank -%}
+                    <a
+                      {% if block.settings.button_link_1 == blank %}
+                        role="link" aria-disabled="true"
+                      {% else %}
+                        href="{{ block.settings.button_link_1 }}"
+                      {% endif %}
+                      class="{{ btn_class }}"
+                    >
+                      {{- block.settings.button_label_1 | escape -}}
+                      {%- if block.settings.button_style == 'link' -%}
+                        <span class="icon-wrap">{% render 'icon-link-arrow' %}</span>
+                      {%- endif -%}
+                    </a>
+                  {%- endif -%}
+                  {%- if block.settings.applies_color_scheme -%}
+                    {%- render 'button-dynamic-style', block: block -%}
+                  {%- endif -%}
+                </div>
+              
+            {%- endcase -%}
+          {%- endfor -%}
+        </div>
+      </div>
+
+      {%- if bannerBottomContent != blank -%}
+        <div class="banner__box_bottom banner__box content-container">
+          <div class="row">{{ bannerBottomContent }}</div>
+        </div>
+      {%- endif -%}
+      
+    </div>  
+
+</div>
+
+
+
+
+
+{% schema %}
+{
+  "name": "Hero banner",
+  "tag": "section",
+  "class": "section home-hero",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "allow_transparent_header",
+      "label": "Allow transparent header",
+      "info": "This setting only applies when this section is the first one.",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Image content"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Desktop image"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_mobile",
+      "label": "Mobile image"
+    },
+    {
+      "type": "header",
+      "content": "Video content"
+    },
+    {
+      "type": "paragraph",
+      "content": "Only works, if above image is not there. video is autoplay by default (autoplay didn't works with youtube)"
+    },
+    {
+      "type": "image_picker",
+      "id": "cover_image",
+      "label": "Cover image",
+      "info": "Add a cover image to enhance the optimized loading experience for the video."
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "A Shopify-hosted video",
+      "info": "MP4 video"
+    },
+    {
+      "type": "paragraph",
+      "content": "OR"
+    },
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "label": "Vimeo/Youtube video",
+      "accept": ["youtube", "vimeo"]
+    },
+    {
+      "type": "range",
+      "id": "image_overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "t:sections.image-banner.settings.image_overlay_opacity.label",
+      "default": 0
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_position",
+      "options": [
+        {
+          "value": "middle-left",
+          "label": "Left"
+        },
+        {
+          "value": "middle-center",
+          "label": "Center"
+        },
+        {
+          "value": "middle-right",
+          "label": "Right"
+        }
+      ],
+      "default": "middle-center",
+      "label": "t:sections.image-banner.settings.desktop_content_position.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_text_box",
+      "default": true,
+      "label": "t:sections.image-banner.settings.show_text_box.label"
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.image-banner.settings.desktop_content_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.image-banner.settings.desktop_content_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.image-banner.settings.desktop_content_alignment.options__3.label"
+        }
+      ],
+      "default": "center",
+      "label": "t:sections.image-banner.settings.desktop_content_alignment.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.animation.content"
+    },
+    {
+      "type": "select",
+      "id": "image_behavior",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.all.animation.image_behavior.options__1.label"
+        },
+        {
+          "value": "ambient",
+          "label": "t:sections.all.animation.image_behavior.options__2.label"
+        },
+        {
+          "value": "fixed",
+          "label": "t:sections.all.animation.image_behavior.options__3.label"
+        },
+        {
+          "value": "zoom-in",
+          "label": "t:sections.all.animation.image_behavior.options__4.label"
+        }
+      ],
+      "default": "none",
+      "label": "t:sections.all.animation.image_behavior.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.image-banner.settings.mobile.content"
+    },
+    {
+      "type": "select",
+      "id": "mobile_content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.image-banner.settings.mobile_content_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.image-banner.settings.mobile_content_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.image-banner.settings.mobile_content_alignment.options__3.label"
+        }
+      ],
+      "default": "center",
+      "label": "t:sections.image-banner.settings.mobile_content_alignment.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.image-banner.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Image banner",
+          "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "t:sections.all.heading_size.options__1.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__2.label"
+            },
+            {
+              "value": "h0",
+              "label": "t:sections.all.heading_size.options__3.label"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "color",
+          "id": "text_clr",
+          "default": "#fff",
+          "label": "Text color"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "t:sections.image-banner.blocks.text.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "default": "Give customers details about the banner image(s) or content on the template.",
+          "label": "t:sections.image-banner.blocks.text.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "body",
+              "label": "t:sections.image-banner.blocks.text.settings.text_style.options__1.label"
+            },
+            {
+              "value": "subtitle",
+              "label": "t:sections.image-banner.blocks.text.settings.text_style.options__2.label"
+            },
+            {
+              "value": "caption-with-letter-spacing",
+              "label": "t:sections.image-banner.blocks.text.settings.text_style.options__3.label"
+            }
+          ],
+          "default": "body",
+          "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
+        },
+        {
+          "type": "color",
+          "id": "text_clr",
+          "default": "#fff",
+          "label": "Text color"
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "name": "t:sections.image-banner.blocks.buttons.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Shop now",
+          "label": "Button label",
+          "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "Button link"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "options": [
+            {
+              "value": "solid",
+              "label": "Solid"
+            },
+            {
+              "value": "outline",
+              "label": "Outline"
+            },
+            {
+              "value": "link",
+              "label": "Link"
+            }
+          ],
+          "default": "link",
+          "label": "Button style"
+        },
+        {
+          "type": "header",
+          "content": "Button color scheme"
+        },
+        {
+          "type": "checkbox",
+          "id": "applies_color_scheme",
+          "default": false,
+          "label": "Apply below color?",
+          "info": "If not checked, default color will be applied"
+        },
+        {
+          "type": "color",
+          "id": "btn_text_clr",
+          "default": "#fff",
+          "label": "Button text color"
+        },
+        {
+          "type": "color",
+          "id": "btn_hvr_text_clr",
+          "default": "#fff",
+          "label": "Button hover text color"
+        },
+        {
+          "type": "color",
+          "id": "btn_bg_clr",
+          "default": "#fff",
+          "label": "Button background color",
+          "info": "This color will be only applies to solid button style"
+        },
+        {
+          "type": "color",
+          "id": "btn_hvr_bg_clr",
+          "default": "#fff",
+          "label": "Button hover background color",
+          "info": "This color will be only applies to solid button style"
+        }
+      ]
+    },
+    {
+      "type": "bottom_title",
+      "name": "Bottom title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "default": "TORONTO’S PREMIUM BOUTIQUE FITNESS & WELLNESS EXPERIENCE. ALL UNDER ONE ROOF.",
+          "label": "Bottom part title"
+        },
+        {
+          "type": "color",
+          "id": "text_clr",
+          "default": "#fff",
+          "label": "Text color"
+        }
+      ]
+    },
+    {
+      "type": "bottom_links",
+      "name": "Bottom links",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "color",
+          "id": "link_clr",
+          "default": "#fff",
+          "label": "Link color"
+        },
+        {
+          "type": "header",
+          "content": "Link content"
+        },
+        {
+          "type": "text",
+          "id": "link_label_1",
+          "default": "CLASSES",
+          "label": "Link 1 title"
+        },
+        {
+          "type": "url",
+          "id": "link_1",
+          "label": "Link 1 URL"
+        },
+        {
+          "type": "text",
+          "id": "link_label_2",
+          "default": "WELLNESS",
+          "label": "Link 2 title"
+        },
+        {
+          "type": "url",
+          "id": "link_2",
+          "label": "Link 2 URL"
+        },
+        {
+          "type": "text",
+          "id": "link_label_3",
+          "default": "TONIC HOUSE",
+          "label": "Link 3 title"
+        },
+        {
+          "type": "url",
+          "id": "link_3",
+          "label": "Link 3 URL"
+        },
+        {
+          "type": "text",
+          "id": "link_label_4",
+          "default": "CAFE & BAR",
+          "label": "Link 4 title"
+        },
+        {
+          "type": "url",
+          "id": "link_4",
+          "label": "Link 4 URL"
+        },
+        {
+          "type": "text",
+          "id": "link_label_5",
+          "default": "CLASSES",
+          "label": "Link 5 title"
+        },
+        {
+          "type": "url",
+          "id": "link_5",
+          "label": "Link 5 URL"
+        },
+        {
+          "type": "text",
+          "id": "link_label_6",
+          "default": "CLASSES",
+          "label": "Link 6 title"
+        },
+        {
+          "type": "url",
+          "id": "link_6",
+          "label": "Link 6 URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero banner",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "buttons"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

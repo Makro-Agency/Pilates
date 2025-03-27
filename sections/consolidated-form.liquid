@@ -1,0 +1,698 @@
+{{ 'corporate_reg.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+  .field.field-grp.select-drop-down {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    box-shadow: none;
+    border: 0;
+}
+  .field.consolidated:hover.field:after,
+  .field.consolidated:after {
+    box-shadow: none;
+}
+  .consolidated-container .form-wrapper .eligibility_create_form .field.field-grp .select-btn svg {
+    position: absolute;
+    right: 0;
+    top:unset;
+    transform: rotate(0) translateY(0);
+    bottom: 20px;
+}
+small.success_error.success, small.emp_success_error.success {
+    color: #07f007;
+    display: inline-block;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+  {% endstyle %}
+<div class="check-your-eligibility consolidated-container color-{{ section.settings.color_scheme }}" id="check-your-eligibility">
+  <div class="inner-wrapper">
+    <div class="form-wrapper">
+     
+      <div class="create-account-tab open">
+        <div class="status-box">
+          <h2 class="h2 form-main-title">
+            {{ section.settings.maintitle }}
+          </h2>
+          <div class="subtitle">{{ section.settings.subtitle }}</div>
+        </div>
+
+        <div class="eligibility_create_form">
+          <div id="eligibility_create_form-inner">
+             <div class="field field-grp select-drop-down consolidated">
+                 <p class="option-title">{{ section.settings.subtitle2 }}</p>
+                  <button type="button" class="select-btn">
+                    <span class="sBtn-text">Select an option</span>
+
+                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="Vector" d="M11 1L6 6L1 1" stroke="white"></path>
+                    </svg>
+
+                  </button>
+                  <ul class="options">
+                    <li class="option">
+                      <span class="option-text">Employee</span>
+                    </li>
+                    <li class="option">
+                      <span class="option-text">Employer</span>
+                    </li>
+                  </ul>
+                </div>
+            
+            <form
+              id="employee_form"
+              action="{{ section.settings.employee_form_url }}"
+              method="post"
+              class="isolate whole-sale-form em"
+              accept-charset="UTF-8"
+             enctype="text/plain"
+            >
+              
+           
+              <div class="form-group-wrapper">
+                 
+
+                
+                <div class="field field-grp">
+                    <label for="elcreate_name">First Name</label>
+
+                    <input
+                      type="text"
+                      name="fname"
+                      id="elcreate_name"
+                      class="input-field fname"
+                      placeholder="First Name"
+                    >
+                    <small class="fname_error"></small>
+                </div>
+
+                  <div class="field field-grp">
+                    <label for="elcreate_name">Last Name</label>
+
+                    <input
+                      type="text"
+                      name="lname"
+                      id="elcreate_name"
+                      class="input-field lname"
+                      placeholder="Last Name"
+                    >
+                    <small class="lname_error"></small>
+                </div>
+
+                 <div class="field field-grp">
+                    <label for="elcreate_name">Job Title</label>
+
+                    <input
+                      type="text"
+                      name="job-title"
+                      id="elcreate_name"
+                      class="input-field job_title"
+                      placeholder="Job Title"
+                    >
+                    <small class="job_error"></small>
+                </div>
+
+                 <div class="field field-grp">
+                    <label for="elcreate_name">Number of Employees Potentially Interested</label>
+
+                    <input
+                      type="text"
+                      name="empolyee-number"
+                      id="elcreate_name"
+                      class="input-field employees"
+                      placeholder="Number of Employees Potentially Interested"
+                    >
+                    <small class="emp_error"></small>
+                </div>
+
+                <div class="field field-grp">
+                    <label for="elcreate_message">Message</label>
+
+                    <input
+                      type="text"
+                      name="massage"
+                      id="elcreate_message"
+                      class="input-field message"
+                      placeholder="Message"
+                    >
+                    <small class="message_error"></small>
+                </div>
+                        
+              </div>
+               
+              <button
+                type="submit"
+                class="button button--submit button--primary button--full-width"
+                id="employee_form_submit"
+              >
+                Send form
+              </button>
+              <small class="success_error"></small>
+            </form>
+
+            <form
+              id="employer_form"
+              action="{{ section.settings.employer_form_url }}"
+              method="post"
+              class="isolate whole-sale-form em"
+              accept-charset="UTF-8"
+             enctype="text/plain"
+            >
+              
+           
+              <div class="form-group-wrapper">
+                 
+
+                
+                <div class="field field-grp">
+                    <label for="elcreate_name">First Name</label>
+
+                    <input
+                      type="text"
+                      name="fname"
+                      id="elcreate_name"
+                      class="input-field emp_fname"
+                      placeholder="First Name"
+                    >
+                    <small class="emp_fname_error"></small>
+                </div>
+
+                  <div class="field field-grp">
+                    <label for="elcreate_name">Last Name</label>
+
+                    <input
+                      type="text"
+                      name="lname"
+                      id="elcreate_name"
+                      class="input-field emp_lname"
+                      placeholder="Last Name"
+                    >
+                    <small class="emp_lname_error"></small>
+                </div>
+
+                 <div class="field field-grp">
+                    <label for="elcreate_name">Email Address</label>
+
+                    <input
+                      type="text"
+                      name="empolyee-email"
+                      id="elcreate_name"
+                      class="input-field emp_email"
+                      placeholder="Email Address"
+                    >
+                    <small class="emp_email_error"></small>
+                </div>
+
+                 <div class="field field-grp">
+                    <label for="elcreate_name">Employer Name</label>
+
+                    <input
+                      type="text"
+                      name="empolyee-name"
+                      id="elcreate_name"
+                      class="input-field emp_name"
+                      placeholder="Employer Name"
+                    >
+                    <small class="emp_name_error"></small>
+                </div>
+
+                 <div class="field field-grp">
+                  <div class="klaviyo_field">
+                    <label for="elcreate_name">Head of HR's First Name</label>
+
+                    <input
+                      type="text"
+                      name="empolyee-hr-fname"
+                      id="elcreate_name"
+                      class="input-field hr_fname"
+                      placeholder="Head of HR's First Name"
+                    >
+                    <small class="hr_fname_error"></small>
+                  </div>
+                </div>
+
+                 <div class="field field-grp">
+                    <label for="elcreate_name">Head of HR's Last Name</label>
+
+                    <input
+                      type="text"
+                      name="empolyee-hr-lname"
+                      id="elcreate_name"
+                      class="input-field hr_lname"
+                      placeholder="Head of HR's Last Name"
+                    >
+                    <small class="hr_lname_error"></small>
+                </div>
+
+                 <div class="field field-grp">
+                    <label for="elcreate_name">Head of HR's Email Address</label>
+
+                    <input
+                      type="text"
+                      name="empolyee-hr-email"
+                      id="elcreate_name"
+                      class="input-field hr_email"
+                      placeholder="Head of HR's Email Address"
+                    >
+                    <small class="hr_email_error"></small>
+                </div>
+<!-- 
+                 <div class="field field-grp">
+                  <div class="klaviyo_field">
+                    <label for="elcreate_name">Employer Name</label>
+
+                    <input
+                      type="text"
+                      name="empolyee-number"
+                      id="elcreate_name"
+                      class="input-field"
+                      required="required"
+                      placeholder="Employer Name"
+                    >
+                  </div>
+                </div> -->
+
+                <div class="field field-grp">
+                    <label for="elcreate_message">Message</label>
+
+                    <input
+                      type="text"
+                      name="massage"
+                      id="elcreate_message"
+                      class="input-field emp_message"
+                      placeholder="Message"
+                    >
+                    <small class="emp_message_error"></small>
+                </div>
+
+
+                
+                        
+              </div>
+                 
+              <button
+                type="submit"
+                class="button button--submit button--primary button--full-width"
+                id="employer_form_submit"
+              >
+                Send form
+              </button>
+              <small class="emp_success_error"></small>
+            </form>
+          </div>
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+  const validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
+
+   // ---------------- Handle dropdown menu -------------------
+   // ---------------- Handle dropdown menu -------------------
+const employee_form = document.querySelector("#employee_form");
+const employer_form = document.querySelector("#employer_form");
+
+// Initially display the employer form
+employer_form.style.display = 'none'; 
+employee_form.style.display = 'block'; // Hide the employee form initially
+
+const menu = document.querySelector(".select-drop-down");
+if (menu) {
+  const [selectBtn, sBtnText] = [menu.querySelector(".select-btn"), menu.querySelector(".sBtn-text")];
+
+  // Toggle the dropdown menu when the button is clicked
+  selectBtn.onclick = () => menu.classList.toggle("active");
+
+  // Loop through each option in the dropdown
+  menu.querySelectorAll(".option").forEach(option => {
+    option.onclick = () => {
+      const selectedText = option.querySelector(".option-text").innerText; // Get the inner text of the clicked option
+      sBtnText.innerText = selectedText; // Update the button text to the selected option
+
+      // Hide both forms initially
+      employee_form.style.display = 'none';
+      employer_form.style.display = 'none';
+
+      // Show the appropriate form based on the selected option
+      if (selectedText === 'Employee') {
+        employee_form.style.display = 'block'; // Show employee form
+      } else if (selectedText === 'Employer') {
+        employer_form.style.display = 'block'; // Show employer form
+      }
+
+      menu.classList.remove("active"); // Close the dropdown menu
+    };
+  });
+}
+
+  // employee form start
+$('.fname').on('blur', function() {
+    const firstName = $(this).val().trim();
+    const isEmpty = firstName === '';
+    const isValid = /^[A-Za-z]+$/.test(firstName);
+
+    if (isEmpty)
+        $('.fname_error').text("First name is required.");
+    else if (!isValid)
+        $('.fname_error').text("only letters are allowed.");
+    else
+      $('.fname_error').text('');
+      
+});
+
+$('.lname').on('blur', function() {
+    const lastName = $(this).val().trim();
+    const isEmpty = lastName === '';
+    const isValid = /^[A-Za-z]+$/.test(lastName);
+
+    if (isEmpty)
+        $('.lname_error').text("Last name is required.");
+    else if (!isValid)
+        $('.lname_error').text("only letters are allowed.");
+    else
+      $('.lname_error').text('');
+      
+});
+
+$('.job_title').on('blur', function() {
+    const jobTitle = $(this).val().trim();
+    const isEmpty = jobTitle === '';
+    const isValid = /^[A-Za-z\s-]+$/.test(jobTitle);
+
+    if (isEmpty)
+        $('.job_error').text("Job title is required.");
+    else if (!isValid)
+        $('.job_error').text("only letters are allowed.");
+    else
+      $('.job_error').text('');
+      
+});
+
+$('.employees').on('blur', function() {
+    const employees = $(this).val().trim();
+    const isEmpty = employees === '';
+    const isValid = /^[0-9]+$/.test(employees);
+
+    if (isEmpty)
+        $('.emp_error').text("No. of employees is required.");
+    else if (!isValid)
+        $('.emp_error').text("only numbers are allowed.");
+    else
+      $('.emp_error').text('');
+      
+});
+
+$('.message').on('blur', function() {
+    const message = $(this).val().trim();
+    const isEmpty = message === '';
+
+    if (isEmpty)
+        $('.message_error').text("Message is required.");
+    else
+      $('.message_error').text('');
+      
+});
+
+$('#employee_form').on('submit', function(e) {
+    e.preventDefault();
+    const firstName = $('.fname').val().trim();
+    const lastName = $('.lname').val().trim();
+    const jobTitle = $('.job_title').val().trim();
+    const employees = $('.employees').val().trim();
+    const message = $('.message').val().trim();
+    const url = "{{ section.settings.employee_form_url }}";
+    
+    if(firstName === '')
+      $('.fname_error').text("First name is required.");
+    else if(lastName === '')
+      $('.lname_error').text("Last name is required.");
+    else if(jobTitle === '')
+      $('.job_error').text("Job title is required.");
+    else if(employees === '')
+      $('.emp_error').text("No. of employees is required.");
+    else if(message === '')
+        $('.message_error').text("Message is required.");
+    else
+    {
+      $('.message_error, .emp_error, .job_error, .lname_error, .fname_error').text('');
+      // $('.success_error').text("Details Submitted.");
+      $.ajax({
+         type: "POST",
+         url: url,
+         data: $(this).serialize(),
+         success: function(response) {
+           console.log("Success ",response);
+           $('.success_error').addClass("success");
+           $('.success_error').text("The form has been sent successfully!");
+         },
+         error: function(xhr, status, error){
+           console.log("Error ",error);
+            $('.success_error').text("Something error");    
+         }
+       });
+    }
+      
+});
+  // employee form end
+
+  // employer form start
+
+$('.emp_fname').on('blur', function() {
+    const firstName = $(this).val().trim();
+    const isEmpty = firstName === '';
+    const isValid = /^[A-Za-z]+$/.test(firstName);
+    // const wordCount = fullName.length;
+  
+    if (isEmpty)
+        $('.emp_fname_error').text("First name is required.");
+    else if (!isValid)
+        $('.emp_fname_error').text("only letters are allowed.");
+    // else if (wordCount < 2 || wordCount > 20)
+    //     $('.emp_fname_error').text("Name must be between 2 and 20 words.");
+    else
+      $('.emp_fname_error').text('');
+      
+});
+
+$('.emp_lname').on('blur', function() {
+    const lastName = $(this).val().trim();
+    const isEmpty = lastName === '';
+    const isValid = /^[A-Za-z]+$/.test(lastName);
+    const wordCount = lastName.length;
+  
+    if (isEmpty)
+        $('.emp_lname_error').text("Last name is required.");
+    else if (!isValid)
+        $('.emp_lname_error').text("only letters are allowed.");
+     else if (wordCount < 2 || wordCount > 20)
+        $('.emp_lname_error').text("Name must be between 2 and 20 words.");
+    else
+      $('.emp_lname_error').text('');
+      
+});
+
+$('.emp_email').on('blur', function() {
+    const empEmail = $(this).val().trim();
+    const isEmpty = empEmail === '';
+    const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(empEmail);
+
+    if (isEmpty)
+        $('.emp_email_error').text("Email is required.");
+    else if (!isValid)
+        $('.emp_email_error').text("Email is not valid.");
+    else
+      $('.emp_email_error').text('');
+      
+});
+
+$('.emp_name').on('blur', function() {
+    const Name = $(this).val().trim();
+    const isEmpty = Name === '';
+    const isValid = /^[A-Za-z\s]+$/.test(Name);
+  
+
+    if (isEmpty)
+        $('.emp_name_error').text("Employer name is required.");
+    else if (!isValid)
+        $('.emp_name_error').text("only letters are allowed.");
+    else
+      $('.emp_name_error').text('');
+      
+});
+
+$('.hr_fname').on('blur', function() {
+    const firstName = $(this).val().trim();
+    const isEmpty = firstName === '';
+    const isValid = /^[A-Za-z]+$/.test(firstName);
+
+    if (isEmpty)
+        $('.hr_fname_error').text("HR's first name is required.");
+    else if (!isValid)
+        $('.hr_fname_error').text("only letters are allowed.");
+    else
+      $('.hr_fname_error').text('');
+      
+});
+
+$('.hr_lname').on('blur', function() {
+    const lastName = $(this).val().trim();
+    const isEmpty = lastName === '';
+    const isValid = /^[A-Za-z]+$/.test(lastName);
+
+    if (isEmpty)
+        $('.hr_lname_error').text("HR's last name is required.");
+    else if (!isValid)
+        $('.hr_lname_error').text("only letters are allowed.");
+    else
+      $('.hr_lname_error').text('');
+      
+});
+
+$('.hr_email').on('blur', function() {
+    const hrEmail = $(this).val().trim();
+    const isEmpty = hrEmail === '';
+    const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(hrEmail);
+
+    if (isEmpty)
+        $('.hr_email_error').text("HR's email is required.");
+    else if (!isValid)
+        $('.hr_email_error').text("HR's email is not valid.");
+    else
+      $('.hr_email_error').text('');
+      
+});
+
+$('.emp_message').on('blur', function() {
+    const message = $(this).val().trim();
+    const isEmpty = message === '';
+
+    if (isEmpty)
+        $('.emp_message_error').text("Message is required.");
+    else
+      $('.emp_message_error').text('');
+      
+});
+
+$('#employer_form').on('submit', function(e) {
+    e.preventDefault();
+    const firstName = $('.emp_fname').val().trim();
+    const lastName = $('.emp_lname').val().trim();
+    const email = $('.emp_email').val().trim();
+    const employerName = $('.emp_name').val().trim();
+    const hrFirstName = $('.hr_fname').val().trim();
+    const hrLastName = $('.hr_lname').val().trim();
+    const hrEmail = $('.hr_email').val().trim();
+    const message = $('.emp_message').val().trim();
+    const url = "{{ section.settings.employer_form_url }}";    
+    
+    if(firstName === '')
+      $('.emp_fname_error').text("First name is required.");
+    else if(lastName === '')
+      $('.emp_lname').text("Last name is required.");
+    else if(email === '' || validateEmail(email) == null )
+      $('.emp_email_error').text("Email is required.");
+    else if(employerName === '')
+      $('.emp_name_error').text("Employer name is required.");
+    else if(hrFirstName === '')
+      $('.hr_fname_error').text("HR's first name is required.");
+    else if(hrLastName === '')
+      $('.hr_lname_error').text("HR's last name is required.");
+    else if(hrEmail === '' || validateEmail(hrEmail) == null )
+      $('.hr_email_error').text("HR's email is required.");
+    else if(message === '')
+        $('.emp_message_error').text("Message is required.");
+    else
+    {
+      $('.emp_fname_error, .emp_lname, .emp_email_error, .emp_name_error, .hr_fname_error, .hr_lname_error, .hr_email_error, .emp_message_error').text('');
+      // $('.emp_success_error').text("Details Submitted.");
+      $.ajax({
+         type: "POST",
+         url: url,
+         data: $(this).serialize(),
+         success: function(response) {
+           console.log("response", response);
+          $('.emp_success_error').addClass("success");
+           $('.emp_success_error').text("The form has been sent successfully.");
+         },
+         error: function(xhr, status, error){
+           console.log("error", error);
+            $('.emp_success_error').text("Something error");    
+         }
+       });
+
+      
+    }
+      
+});
+
+  // employer  form end
+
+</script>
+
+{% schema %}
+  {
+    "name": "consolidated-form",
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "background-1"
+      },
+      {
+        "type": "text",
+        "id": "maintitle",
+        "label": "Main Title",
+        "default": "Consolidated Form"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Sub Title",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "type": "text",
+        "id": "subtitle2",
+        "label": "Option Title",
+        "default": "Are you an Employee or an Employer?"
+      },
+      {
+        "type": "header",
+        "content": "Employee Form"
+      },
+       {
+        "type": "url",
+        "id": "employee_form_url",
+        "label": "Employee Form URL"
+      },
+      {
+        "type": "header",
+        "content": "Employer Form"
+      },
+      {
+        "type": "url",
+        "id": "employer_form_url",
+        "label": "Employer Form URL"
+      }
+    ],
+    "presets": [
+      {
+        "name": "consolidated-form"
+      }
+    ]
+  }
+{% endschema %}

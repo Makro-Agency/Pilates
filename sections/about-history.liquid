@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="{{ 'about-history.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'about-history.css' | asset_url }}"></noscript>
+
+{% if section.settings.image != blank or section.settings.title != blank or section.settings.description != blank or section.settings.background_image_desktop != blank %}
+<div class="history-main-box">
+   <div class="page-width">    
+  
+      <div class="box-wrapper">
+
+        {% if section.settings.image != blank %}
+        <div class="media-box scroll-trigger animate--slide-in">
+          <img src="{{ section.settings.image | image_url:width:800 }}" width="" height="" />
+        </div>
+        {% endif %}
+
+        {% if section.settings.title != blank or section.settings.description != blank %}
+        <div class="content-box scroll-trigger animate--slide-in">
+          {% if section.settings.title != blank %}
+            <h2 class="sec-title">{{ section.settings.title }}</h2>
+          {% endif %}
+
+          {% if section.settings.description != blank %}
+          <div class="descriptions">
+            {{ section.settings.description }}
+          </div>          
+          {% endif %}
+        </div>
+        {% endif %}
+        
+      </div>
+
+     {% if section.settings.background_image_desktop != blank %}
+     <div class="sec-bg">
+       <img src="{{ section.settings.background_image_desktop | image_url:width:1000 }}" width="" height="" class="desk-view" />
+       {% if section.settings.background_image_mobile != blank %}
+         <img src="{{ section.settings.background_image_mobile | image_url:width:1000 }}" width="" height="" class="mobi-view" />
+       {% else %}
+         <img src="{{ section.settings.background_image_desktop | image_url:width:1000 }}" width="" height="" class="mobi-view" />
+       {% endif %}
+     </div>
+     {% endif %}
+     
+  </div>
+</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "About History",
+  "tag": "section",
+  "class": "section about-history-wrapper",
+  "settings": [
+    {
+      "type": "image_picker",
+      "label": "Image",
+      "id": "image"
+    },
+    {
+      "type": "text",
+      "label": "Title",
+      "id": "title"
+    },
+    {
+      "type": "html",
+      "label": "Description",
+      "id": "description"
+    },
+    {
+      "type": "image_picker",
+      "label": "Background Image Desktop",
+      "id": "background_image_desktop"
+    },
+    {
+      "type": "image_picker",
+      "label": "Background Image Mobile",
+      "id": "background_image_mobile"
+    }
+  ],
+  "presets": [
+    {
+      "name": "About History"
+    }
+  ]
+}
+{% endschema %}

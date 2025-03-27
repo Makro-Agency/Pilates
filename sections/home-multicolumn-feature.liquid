@@ -1,0 +1,131 @@
+{%- if section.index == 1 -%}
+  {{- 'section-multicolumn.css' | asset_url | stylesheet_tag: preload: true -}}
+  {{- 'home-banner-with-features.css' | asset_url | stylesheet_tag: preload: true -}}
+
+  {%- assign loadingType = 'eager' -%}
+  {%- assign fetchPriorityType = 'high' -%}
+
+{%- else -%}
+  <link rel="stylesheet" href="{{ 'section-multicolumn.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link
+    rel="stylesheet"
+    href="{{ 'home-banner-with-features.css' | asset_url }}"
+    media="print"
+    onload="this.media='all'"
+  >
+  <noscript><link rel="stylesheet" href="{{ 'section-multicolumn.css' | asset_url }}"></noscript>
+  <noscript><link rel="stylesheet" href="{{ 'home-banner-with-features.css' | asset_url }}"></noscript>
+
+  {%- assign loadingType = 'lazy' -%}
+  {%- assign fetchPriorityType = 'auto' -%}
+{%- endif -%}
+
+<div id="multifeatures_container" class="multifeatures_container">
+  <div class="multifeatures__inner-container">
+    <h3 class="title h3">{{ section.settings.title }}</h3>
+    <div class="multifeatures__row">
+      
+      {% for block in section.blocks %}
+        <div class="multifeatures__item">
+          <div class="multifeatures__image-wrapper">
+           <img src="{{ block.settings.img  | image_url }}" width="" height="" alt="{{ block.settings.title }}">
+          </div>
+          <div class="multifeatures__content-wrapper">
+            <div class="multifeatures__info">
+              <h4 class="h6">{{ block.settings.title }}</h4>
+              <div class="rte text-wrap">
+                <p>
+                  {{ block.settings.para }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      
+    </div>
+      <div class="welnessplan">
+        <div class="wellnessplan__text-wrapper">
+        <h4>{{ section.settings.wellness-title }}</h4>
+        </div>
+      
+        <div class="welnessplan__btn-column">
+        <a href="{{ section.settings.pdf-link }}" target="_blank" download>{{ section.settings.pdf-text }} <img src="https://cdn.shopify.com/s/files/1/0277/8280/7635/files/pdf-icon.svg?v=1725025958" alt=""></a>
+        </div>
+      </div>
+    {% comment %}
+    {% for block in section.blocks %}
+    <div class="multifeatures__row">
+      <div class="welnessplan">
+        <div class="wellnessplan__text-wrapper">
+        <h4>{{ block.settings.wellness-title }}</h4>
+        </div>
+      
+        <div class="welnessplan__btn-column">
+        <a href="{{ block.settings.pdf-link }}">{{ block.settings.pdf-btn-text }} svg</a>
+        </div>
+      </div>
+    </div>
+      {% endfor %}
+    {% endcomment %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Home Multicolumn Features",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title"
+    },
+      {
+          "type": "text",
+          "id": "wellness-title",
+          "label": "PDF Title"
+        },
+         {
+          "type": "text",
+          "id": "pdf-text",
+          "label": "PDF Link Text",
+           "default": "DOWNLOAD PDF"
+        },
+         {
+          "type": "url",
+          "id": "pdf-link",
+          "label": "PDF Link"
+        }
+  ],
+  "blocks": [
+    {
+      "type": "select",
+      "limit": 4,
+      "name": "Select Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Block Img"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Block Title"
+        },
+        {
+          "type": "textarea",
+          "id": "para",
+          "label": "Block Paragraph"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home Multicolumn Features"
+    }
+  ]
+}
+{% endschema %}

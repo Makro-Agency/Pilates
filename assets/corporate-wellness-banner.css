@@ -1,0 +1,273 @@
+.corporate-wellness-banner {
+  overflow: hidden;
+}
+
+.corporate-wellness-banner .banner__box .banner__heading+* {
+  margin-top: 15px;
+}
+
+.corporate-wellness-banner .banner__box>*+.banner__buttons {
+  margin-top: 40px;
+}
+
+.corporate-wellness-banner .banner__box_top {
+  max-width: 886px;
+}
+
+.corporate-wellness-banner .banner__content {
+  flex-wrap: wrap;
+}
+
+.corporate-wellness-banner .banner--adapt.banner,
+.corporate-wellness-banner .banner--adapt .banner__content_top {
+  min-height: calc(100vh + 200px);
+}
+
+.corporate-wellness-banner .banner__box_bottom .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.corporate-wellness-banner .banner__box_top {
+  transition: all 0.7s ease 0s;
+}
+
+.corporate-wellness-banner .banner__box_top,
+.corporate-wellness-banner .banner__box_bottom {
+  transition: all 0.7s ease 0s;
+}
+
+.corporate-wellness-banner .banner__box_bottom {
+  max-width: 100% !important;
+  width: 100%;
+  margin-top: auto !important;
+}
+
+.corporate-wellness-banner.active .banner__box_top {
+  transform: translateY(-150%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.corporate-wellness-banner .banner--adapt .banner__content_wrap {
+  width: 100%;
+}
+
+.corporate-wellness-banner .banner__box_top,
+.corporate-wellness-banner .banner__box_bottom {
+  transition: all 0.7s ease 0s;
+}
+
+.corporate-wellness-banner .banner__box_bottom {
+  max-width: 100% !important;
+  width: 100%;
+  margin-top: auto !important;
+}
+
+.corporate-wellness-banner .banner__box_bottom h2 {
+  color: #fff;
+  margin: 0;
+}
+
+.corporate-wellness-banner .banner__box_bottom .col {
+  max-width: 580px;
+  width: 100%;
+  text-align: left;
+}
+
+.corporate-wellness-banner .banner__box_bottom .col-right {
+  max-width: 400px;
+}
+
+.corporate-wellness-banner .banner__box_bottom .link {
+  color: #fff;
+}
+
+.corporate-wellness-banner .banner__box_bottom .link svg {
+  width: 16px;
+  height: 12px;
+  top: -3px;
+  margin-left: 12px;
+}
+
+.corporate-wellness-banner .banner__box_bottom .link path {
+  stroke-width: 2px;
+}
+
+.corporate-wellness-banner .banner__box_bottom .link-li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.banner__box_top_wrap {
+  min-height: calc(100vh - 10rem);
+  display: flex;
+  align-items: center;
+}
+
+body .corporate-wellness-banner .banner__box_top {
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.transparent_header main section.corporate-wellness-banner:first-child .banner__box {
+  margin-top: 0;
+}
+
+.template-index main:has(.corporate-wellness-banner .animate--paralex-effect video) .shopify-section:not(.corporate-wellness-banner),
+.template-index main:has(.corporate-wellness-banner .animate--paralex-effect iframe) .shopify-section:not(.corporate-wellness-banner) {
+  background-color: #fff;
+}
+
+.corporate-wellness-banner .animate--paralex-effect .banner__media video,
+.corporate-wellness-banner .animate--paralex-effect .banner__media iframe {
+  position: fixed !important;
+  z-index: -1;
+}
+
+.corporate-wellness-banner .animate--paralex-effect .banner__media iframe {
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  max-width: initial;
+}
+
+@media screen and (min-width: 750px) {
+  .corporate-wellness-banner .banner--desktop-transparent .banner__box {
+    padding: 0;
+  }
+
+  .corporate-wellness-banner .banner__box_bottom .col-left {
+    padding-right: 30px;
+  }
+
+  /* .corporate-wellness-banner .banner--desktop-transparent .banner__box_top{
+    max-width: 650px !important;
+  } */
+  .corporate-wellness-banner .banner__box-bottom_item {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .corporate-wellness-banner .animate--paralex-effect .banner__media iframe {
+    height: 300%;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .corporate-wellness-banner .banner__box_bottom .col {
+    max-width: 530px;
+  }
+
+  .corporate-wellness-banner .banner__box_bottom .col-right {
+    max-width: 300px;
+  }
+
+  .corporate-wellness-banner .banner__box_bottom .link {
+    font-size: 18px;
+  }
+
+  .corporate-wellness-banner .banner__box_bottom .link-li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .corporate-wellness-banner .banner__box_bottom .link {
+    font-size: 16px;
+  }
+
+  .corporate-wellness-banner .banner__box_bottom .col {
+    max-width: 440px;
+  }
+
+  .corporate-wellness-banner .banner__box_bottom .col-right {
+    max-width: 230px;
+  }
+
+  .corporate-wellness-banner .banner__box_bottom .link-li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .banner__content_top span.banner__subheading {
+    margin-bottom: 20px;
+  }
+
+  .banner__box-bottom_item p {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .corporate-wellness-banner .banner__box {
+    padding: 60px 20px;
+  }
+
+  .corporate-wellness-banner .banner__content {
+    align-items: flex-end;
+  }
+
+  .corporate-wellness-banner .banner__box>*+.banner__buttons {
+    margin-top: 40px;
+  }
+
+  .corporate-wellness-banner .banner__box_bottom .link {
+    font-size: 14px;
+  }
+
+  .corporate-wellness-banner .banner__box_bottom .row {
+    flex-direction: column;
+  }
+
+  .corporate-wellness-banner .banner__box_bottom .col {
+    max-width: 100%;
+  }
+
+  .corporate-wellness-banner .banner__box_bottom .col-right {
+    margin-top: 30px;
+  }
+
+  .banner__box_top_wrap {
+    align-items: flex-start;
+    margin-top: 50px;
+    min-height: auto;
+  }
+
+  .corporate-wellness-banner .banner__box_top,
+  .corporate-wellness-banner .banner__box_bottom {
+    transition: all 1s ease 0s;
+  }
+
+  .corporate-wellness-banner.active .banner__box_top {
+    transform: translateY(-100%);
+  }
+
+  body .corporate-wellness-banner .banner__box_top {
+    /* margin-bottom: 50px; */
+    margin-bottom: 100px;
+  }
+
+  .corporate-wellness-banner .banner__box_bottom {
+    max-width: 190px !important;
+    margin: 0 0 0 auto !important;
+  }
+  .corporate-wellness-banner .banner__box-bottom_item { bottom: 40px;left: auto;right: 0; }
+}
+
+@media screen and (min-height: 500px) and (max-width: 749px) {
+  .corporate-wellness-banner .animate--paralex-effect .banner__media iframe {
+    height: 500%;
+    top: -200%;
+    left: -200%;
+    width: 500%;
+  }
+}

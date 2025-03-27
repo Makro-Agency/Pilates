@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="{{ 'instagram.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'instagram.css' | asset_url }}"></noscript>
+
+{%- if section.settings.top_padding_remove or section.settings.bottom_padding_remove -%}
+  <style>
+    {% if section.settings.top_padding_remove %}
+      #shopify-section-{{ section.id }}.section-padding{
+        padding-top: 0 !important;
+      }
+    {% endif %}
+
+    {% if section.settings.bottom_padding_remove %}
+      #shopify-section-{{ section.id }}.section-padding{
+        padding-bottom: 0 !important;
+      }
+    {% endif %}
+  </style>
+{%- endif -%}
+
+  <div
+    class="section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll--trigger animate-slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+      data-cascade
+    {% endif %}
+  >
+    <div class="section-head-top">
+      {%- unless section.settings.title == blank and section.settings.sub_title == blank -%}
+        <div class="page-width">
+          <div class="section-head-wrap">
+              {%- unless section.settings.sub_title == blank -%}
+                <h6 class="h6">{{- section.settings.sub_title -}}</h6>
+              {%- endunless -%}
+              {%- unless section.settings.title == blank -%}
+                <h2 class="h2">{{- section.settings.title -}}</h2>
+              {%- endunless -%}
+          </div>
+        </div>
+      {%- endunless -%}
+    </div>
+
+    {%- if section.settings.html_code != blank -%}
+      <div class="page--width">{{ section.settings.html_code }}</div>
+    {%- endif -%}
+    
+  </div>
+
+
+
+{% schema %}
+{
+  "name": "Instagram",
+  "class": "section instagram--section section-padding",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "sub_title",
+      "default": "FOLLOW & TAG US TO SHOW HOW YOU SWEAT!",
+      "label": "Sub heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "default": "@SWEATANDTONIC",
+      "label": "Heading"
+    },
+    {
+      "type": "html",
+      "id": "html_code",
+      "label": "Instagram HTML code"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "top_padding_remove",
+      "default": false,
+      "label": "Remove top padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_padding_remove",
+      "default": false,
+      "label": "Remove bottom padding"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Instagram"
+    }
+  ]
+}
+{% endschema %}

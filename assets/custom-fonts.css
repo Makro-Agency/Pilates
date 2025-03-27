@@ -1,0 +1,126 @@
+/* @font-face {
+    font-family: 'Sailec';
+    src: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Sailec-Medium.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Sailec-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sailec';
+    src: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Sailec.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Sailec.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} */
+
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-Black.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-Black.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-BoldItalic.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-BoldItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-LightItalic.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-Light.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-BlackItalic.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-BlackItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-Bold.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-Bold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-Medium.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-MediumItalic.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-RegularItalic.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-Regular.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-Thin.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-ThinItalic.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/BrandonGrotesque-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}

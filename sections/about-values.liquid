@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="{{ 'about-values.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'about-values.css' | asset_url }}"></noscript>
+
+{% if section.settings.title != blank or section.settings.value_1 != blank or section.settings.value_2 != blank or section.settings.value_3 != blank or section.settings.value_4 != blank or section.settings.value_5 != blank %}
+<div class="page-width">
+    <div class="values-box">
+         {% if section.settings.title != blank %}
+           <h6 class="sub-title scroll-trigger animate--slide-in">{{ section.settings.title }}</h6>
+         {% endif %}
+         
+         {% if section.settings.value_1 != blank or section.settings.value_2 != blank or section.settings.value_3 != blank or section.settings.value_4 != blank or section.settings.value_5 != blank %}
+         <ul class="values-points scroll-trigger animate--slide-in">
+           {% if section.settings.value_1 != blank %}<li class="gloabLs">{{ section.settings.value_1 }}</li>{% endif %}
+           {% if section.settings.value_2 != blank %}<li class="gloabLs">{{ section.settings.value_2 }}</li>{% endif %}
+           {% if section.settings.value_3 != blank %}<li class="gloabLs">{{ section.settings.value_3 }}</li>{% endif %}
+           {% if section.settings.value_4 != blank %}<li class="gloabLs">{{ section.settings.value_4 }}</li>{% endif %}
+           {% if section.settings.value_5 != blank %}<li class="gloabLs">{{ section.settings.value_5 }}</li>{% endif %}
+         </ul> 
+         {% endif %}
+    </div>
+</div>
+{% endif %}
+ 
+
+{% schema %}
+{
+  "name": "About Values",
+  "tag": "section",
+  "class": "section about-values-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Title",
+      "id": "title"
+    },
+    {
+      "type": "text",
+      "label": "Value 1",
+      "id": "value_1"
+    },
+    {
+      "type": "text",
+      "label": "Value 2",
+      "id": "value_2"
+    },
+    {
+      "type": "text",
+      "label": "Value 3",
+      "id": "value_3"
+    },
+    {
+      "type": "text",
+      "label": "Value 4",
+      "id": "value_4"
+    },
+    {
+      "type": "text",
+      "label": "Value 5",
+      "id": "value_5"
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Values"
+    }
+  ]
+}
+{% endschema %}

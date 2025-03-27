@@ -1,0 +1,53 @@
+{{ 'section-main-page.css' | asset_url | stylesheet_tag }}
+{{ 'policies-page.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings.top_padding_remove or section.settings.bottom_padding_remove %}
+  <style>
+    {% if section.settings.top_padding_remove %}
+      #shopify-section-{{ section.id }}.section-padding{
+        padding-top: 0 !important;
+      }
+    {% endif %}
+    
+    {% if section.settings.bottom_padding_remove %}
+      #shopify-section-{{ section.id }}.section-padding{
+        padding-bottom: 0 !important;
+      }
+    {% endif %}
+  </style>
+{% endif %}
+
+<div class="page-width page-width--narrow">
+  <h1 class="main-page-title page-title {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+    {{ page.title | escape }}
+  </h1>
+  <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    {{ page.content }}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Accessibility policy page",
+  "tag": "section",
+  "class": "section policies-section section-padding accessibility-policy-page",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "top_padding_remove",
+      "default": false,
+      "label": "Remove top padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_padding_remove",
+      "default": false,
+      "label": "Remove bottom padding"
+    }
+  ]
+}
+{% endschema %}

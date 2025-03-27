@@ -1,0 +1,44 @@
+.overlay-banner .banner__box .banner__heading+* {
+  margin-top: 15px;
+}
+.overlay-banner .banner__box>*+.banner__buttons {
+  margin-top: 40px;
+}
+.overlay-banner .banner__box {
+  max-width: 600px;
+}
+.overlay-banner .banner__text+.banner__heading{
+  margin-top: 25px;
+}
+
+@media screen and (min-width: 750px){
+  .overlay-banner .banner--desktop-transparent .banner__box{
+    padding: 0;
+    min-width: auto;
+  }
+  .overlay-banner .banner__content {
+    padding: 5rem 6%;
+  }
+}
+@media screen and (max-width: 749px){
+  .overlay-banner .banner__box{
+    padding: 60px 20px;
+  }  
+  .overlay-banner .banner__buttons{
+    max-width: 100%;
+    width: 100%;
+  }
+  .overlay-banner .banner__buttons .button{
+    width: 100%;
+  }
+  .overlay-banner .banner__box>*+.banner__buttons, .overlay-banner .banner__text+.banner__heading{
+    margin-top: 30px;
+  }
+  .overlay-banner .banner__box {
+    max-width: 100%;
+  }
+  .overlay-banner .banner--content-align-mobile-center .banner__buttons .link{
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

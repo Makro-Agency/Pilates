@@ -1,0 +1,56 @@
+.hit-hero .banner__box .banner__heading+* {
+  margin-top: 15px;
+}
+.hit-hero .banner__box>*+.banner__buttons, .hit-hero .banner__box>*+* {
+  margin-top: 40px;
+}
+.hit-hero-info{
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+}
+.hit-hero-info-row{
+  max-width: 285px;
+  width: 100%;
+  margin-left: auto;
+}
+.hit-hero-info .link{
+  margin-top: 30px;
+}
+.hit-hero .banner--adapt.banner, 
+.hit-hero .banner--adapt .banner__content{
+  max-height: 100vh;
+  min-height: 600px;
+}
+
+@media screen and (min-width: 750px){
+  .hit-hero .banner--desktop-transparent .banner__box{
+    padding: 0;
+    /* max-width: 800px !important; */
+  }
+}
+@media screen and (max-width: 989px){
+  .hit-hero-info-row{
+    max-width: 170px;
+  }
+  .hit-hero-info .text-wrap{
+    font-size: 12px;
+  }
+  .hit-hero-info{
+    bottom: 40px;
+  }
+}
+@media screen and (max-width: 749px){
+  .hit-hero .banner__box{
+    padding: 60px 20px;
+  }
+  .hit-hero .banner__content{
+    align-items: flex-start;
+  }
+  .hit-hero .banner__box>*+.banner__buttons{
+    margin-top: 25px;
+  }
+  .hit-hero .banner__box>*+*{
+    margin-top: 20px;
+  }
+}

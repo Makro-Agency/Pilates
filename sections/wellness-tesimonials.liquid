@@ -1,0 +1,212 @@
+  {{- 'wellness-testimonial.css' | asset_url | stylesheet_tag: preload: true -}}
+{%- assign loadingType = 'lazy' -%}
+  {%- assign fetchPriorityType = 'auto' -%}
+  {%- liquid
+  assign full_width = '100vw'
+  assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+-%}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.55 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.55 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 770px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+<div class="testimonial-container swiper section-{{ section.id }}-padding">
+  <div class="section-heading">
+    <div class="heading-inner-wrapper">
+      {% if section.settings.title != blank %}
+      <h2 class="common-main-title h2">{{ section.settings.title }}</h2>
+        {% endif %}
+    </div>
+    <div class="navigation-wrapper">
+      <button class="prev-btn">
+        <span>
+          {% render 'icon-prev' %}
+        </span> 
+      </button>
+      <button class="next-btn">
+        <span>
+          {% render 'icon-next' %}
+        </span>
+      </button>
+      </div>
+  </div>  
+  <div class="row">
+    <div class="testimonial-inner-warpper">
+    <div class="swiper-wrapper">
+   {%- for block in section.blocks -%}
+       <div class="testmionial-items swiper-slide">
+      <div class="media-container">
+        {% if block.settings.enable_block_image %}
+      <div class="media-wrapper">
+     {% if block.settings.image != blank %}
+         {{
+              block.settings.image
+              | image_url: width: 1100
+              | image_tag:
+                loading: loadingType,
+                fetchPriority: fetchPriorityType,
+                width: widths,
+                height: 100,
+                sizes: sizes,
+                widths: widths
+            }}
+         {%- else -%}
+          <div class="media_placeholder">
+            {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+          </div>
+        {%- endif -%}
+      </div>
+        {% endif %}
+      </div>
+      <div class="content-item-container">
+        <div class="content-wrapper">
+          {% if block.settings.testimonial-title != blank %}
+          <h5 class="content-title h5">{{ block.settings.testimonial-title }}</h5>
+          {% endif %}
+           {% if block.settings.testimonial-desc != blank %}
+          <div class="description">
+            {{ block.settings.testimonial-desc }}
+          </div>
+          {% endif %}
+          
+         <div class="profile-info">
+           {% if block.settings.testimonial-name != blank %}
+           <h6 class="profile-name">{{ block.settings.testimonial-name }}</h6>
+           {% endif %}
+           {% if block.settings.testimonial-role != blank %}
+           <span class="designation-role">{{ block.settings.testimonial-role }}</span>
+           {% endif %}
+         </div>
+        </div>
+      </div>
+</div> 
+     
+      {% endfor %}
+    </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper("#shopify-section-{{ section.id }} .testimonial-container .testimonial-inner-warpper", {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        loop: false,
+        speed: 900,      
+        navigation: {
+          nextEl: "#shopify-section-{{ section.id }} .testimonial-container .next-btn",
+          prevEl: "#shopify-section-{{ section.id }} .testimonial-container .prev-btn",
+         },
+          breakpoints: {
+          769: {          
+            slidesPerView: 3,
+            spaceBetween: 0,
+          },
+            479: {          
+            slidesPerView: 2.3,
+            spaceBetween: 0,
+          },
+            320: {          
+            slidesPerView: 1.5,
+            spaceBetween: 0,
+          },
+        },
+      });
+  </script>
+{% schema %}
+  {
+    "name": "Wellness Testimonial",
+    "tag": "section",
+     "class": "section wellness-testimonial",
+     "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+    "settings": [
+        {
+      "type": "text",
+      "id": "title",
+      "label": "Section Heading",
+      "default": "Testimonial"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 40
+    }
+    ],
+     "blocks": [
+    {
+      "type": "column",
+      "name": "Testimonials",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_block_image",
+          "default": true,
+          "label": "Enable Image"
+        },
+        {
+       "type": "text",
+      "id": "testimonial-title",
+      "label": "Testimonial Title",
+      "default": "Great!!"
+        },
+        {
+          "type": "richtext",
+          "id": "testimonial-desc",
+          "default": "<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "testimonial-name",
+          "default": "Name",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "id": "testimonial-role",
+          "default": "Manager",
+          "label": "Position Name"
+        }
+      ]
+    }
+     ],
+    "presets": [
+    {
+      "name": "Wellness Testimonial",
+    }
+  ]
+  }
+{% endschema %}

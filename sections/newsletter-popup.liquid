@@ -1,0 +1,332 @@
+{{ 'newsletter-popup-section.css' | asset_url | stylesheet_tag }}
+
+ {%- capture section_settings -%} 
+  {
+    "delay_seconds": {{ section.settings.popup_delay | json }},
+    "show_only_home_page": {{ section.settings.show_only_on_index | json }},
+    "is_repeat_popup": {{ section.settings.show_popup_again | json }},
+    "repeat_popup_duration": {{ section.settings.popup_repeat_delay | json }}
+  }
+{%- endcapture -%}
+
+<div class="newsletter-popup-wrapper center color-{{ section.settings.color_scheme }} gradient isolate" data-section-settings='{{ section_settings }}'>
+  <a class="newsletter-popup-close" href="#" data-close>{% render 'icon-close-2' %}</a>
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+      
+      {%- when 'heading' -%}
+        <h2 class="inline-richtext {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+          {{- block.settings.heading -}}
+        </h2>
+  
+      {%- when 'paragraph' -%}
+        <div class="newsletter__subheading rte" {{ block.shopify_attributes }}>
+          {{- block.settings.text -}}
+        </div>
+      
+      {%- when 'email_form' -%}
+        <div class="newsletter-bb_form" {{ block.shopify_attributes }}>
+          <div id="bb_form">
+            <form method="post" action="https://microservices.brndbot.net/forms/answers" name="r1hpdc" id="bb_form_inner" data-newsletter-form>
+              <div id="alert"></div>
+              <div class="form-group-wrapper">
+                <div class="field field-grp">
+                  <label for="bb_first_name">First Name</label>
+                  <input type="text" name="bb_first_name" id="bb_first_name" class="input-field" required="required" placeholder="First Name" />
+                </div>
+                <div class="field field-grp">
+                  <label for="bb_last_name">Last Name</label>
+                  <input type="text" name="bb_last_name" id="bb_last_name" class="input-field" required="required" placeholder="Last Name" />
+                </div>
+              </div>
+              <div class="field field-grp">
+                <label for="bb_email">Email Address</label>
+                <input type="email" name="bb_email" id="bb_email" class="input-field" required="required" placeholder="Email Address" />
+              </div>
+              
+              <input type="hidden" name="bb_uuid" id="bb_uuid" value="53a73ff3-2f80-4f2f-86ab-ec2233d6b793" />
+              <button type="submit" class="button button--primary button--full-width" id="bb_submit">SIGN UP</button>
+            </form>
+          </div>
+          <!-- <script src="https://assets.brandbot.com/forms/embed/embed.js?id=r1hpdc"></script> -->
+        </div>
+
+      {%- when 'disclaimer_paragraph' -%}
+        <div class="newsletter_disclaimer_paragraph rte" {{ block.shopify_attributes }}>
+          {{- block.settings.text -}}
+        </div>
+      
+    {%- endcase -%}
+  {%- endfor -%}
+</div>
+
+
+{% javascript %}
+
+  document.addEventListener("DOMContentLoaded", () => {
+    //close popup function
+    let closeBtn = document.querySelector('.newsletter-popup-main [data-close]');
+    if(closeBtn){
+      closeBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        document.body.classList.remove('newsletter-open');
+        localStorage.setItem('popup:opened:time',new Date().getTime());
+        createCookie('theme:popup:opened', "true", 30);
+        deletePopup();
+      });
+    }
+
+    let popupForm = document.querySelector('.newsletter-popup-main [data-newsletter-form]');
+    if(popupForm){
+      popupForm.addEventListener('submit',function(){
+        localStorage.setItem('popup:opened:time',new Date().getTime());
+        createCookie('theme:popup:opened', "true", 30);
+      });
+    }
+    
+    newsletterInit();
+  });
+
+  function deletePopup(){
+    var element = document.querySelector(".newsletter-popup-wrapper");
+    if (element) {
+      element.parentNode.removeChild(element);
+      var scripts = document.querySelectorAll('script[src*="embed/embed.js"]');
+      scripts.forEach(function(script) {
+        script.parentNode.removeChild(script);
+      });
+      
+      // Create and append the new script element
+      let brandbotScript = document.createElement("script");
+      brandbotScript.setAttribute("src", "https://assets.brandbot.com/forms/embed/embed.js?id=r1hpdc");
+      document.body.appendChild(brandbotScript);
+
+    }
+  }
+  
+  function newsletterInit(){
+    let popupSettings = JSON.parse(document.querySelector('.newsletter-popup-main [data-section-settings]').dataset.sectionSettings || '{}');
+    
+    if(Object.keys(popupSettings).length){
+    
+      var isPopopOpend = readCookie('theme:popup:opened');
+      const now = new Date().getTime();
+      const delaySeconds = +popupSettings.delay_seconds*1000;
+      const isShowOnlyIndexPage = popupSettings.show_only_home_page;
+    
+      if (isPopopOpend || isPopopOpend == "true") {
+        //console.log('alredy opend >>');
+        //Popup close by customer or customer submited the form
+        //Cheked if repeat popup enable
+        //If enable, checked repeat popup duration
+        const isRepeatPopupEnable = popupSettings.is_repeat_popup;
+        if(isRepeatPopupEnable == false) return;
+
+        const cookieDuration = Number(popupSettings.repeat_popup_duration);
+        const getPoupopLastOpenTime = localStorage.getItem('popup:opened:time');
+        const calculatedDate = (+getPoupopLastOpenTime)+(cookieDuration*86400000);
+    
+        if(new Date().getTime() > calculatedDate){
+          //show popup again
+          //console.log('open agian >>');
+          setTimeout(() => {
+            if(isShowOnlyIndexPage){
+              if(document.body.classList.contains('template-index')){
+                document.body.classList.add('newsletter-open');
+                localStorage.setItem('popup:opened:time',new Date().getTime());
+                createCookie('theme:popup:opened', "true", 30);
+              }
+            }else{
+              document.body.classList.add('newsletter-open');
+              localStorage.setItem('popup:opened:time',new Date().getTime());
+              createCookie('theme:popup:opened', "true", 30);
+            }
+          }, delaySeconds);
+        }else{
+          //return from here
+          //console.log('time remain to open >>');
+          document.body.classList.remove('newsletter-open');
+          deletePopup();
+          return;
+        }
+    
+      }else{
+        //console.log('first time opend >>')
+        setTimeout(() => {
+          if(isShowOnlyIndexPage){
+            if(document.body.classList.contains('template-index')){
+              document.body.classList.add('newsletter-open');  
+            }
+          }else{
+            document.body.classList.add('newsletter-open');
+          }
+        }, delaySeconds);
+      }
+    }
+    
+  }
+
+  function createCookie(name,value,days) {
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime()+(days*24*60*60*1000));
+      var expires = "; expires="+date.toGMTString();
+    }
+    else var expires = "";
+    document.cookie = name+"="+value+expires+"; path=/";
+  }
+  
+  function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+  }
+  
+  function eraseCookie(name) {
+    createCookie(name,"",-1);
+  }
+  
+{% endjavascript %}
+
+
+{% schema %}
+{
+  "name": "Newsletter popup",
+  "tag": "section",
+  "class": "section newsletter-popup-main",
+  "enabled_on": {
+    "groups": ["header"]
+  },
+  "settings": [
+    {
+      "type": "range",
+      "id": "popup_delay",
+      "min": 3,
+      "max": 30,
+      "step": 1,
+      "unit": "sec",
+      "label": "Delay until the popup appears",
+      "default": 5
+    },
+    {
+      "type": "checkbox",
+      "id": "show_only_on_index",
+      "label": "Show only on home page",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_popup_again",
+      "label": "Repeat display of a popup",
+      "default": true,
+      "info": "This will display again when user close the pop-up or submit the form"
+    },
+    {
+      "type": "range",
+      "id": "popup_repeat_delay",
+      "min": 1,
+      "max": 30,
+      "step": 1,
+      "unit": "day",
+      "label": "Repeat display of a popup again after",
+      "default": 7
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.newsletter.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "LET’S GET CONNECTED",
+          "label": "t:sections.newsletter.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h3",
+              "label": "t:sections.all.heading_size.options__1.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__2.label"
+            },
+            {
+              "value": "h0",
+              "label": "t:sections.all.heading_size.options__3.label"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.all.heading_size.label"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "name": "t:sections.newsletter.blocks.paragraph.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Join our newsletter and be the first to receive the latest updates, offers, and invites.</p>",
+          "label": "t:sections.newsletter.blocks.paragraph.settings.paragraph.label"
+        }
+      ]
+    },
+    {
+      "type": "email_form",
+      "name": "t:sections.newsletter.blocks.email_form.name",
+      "limit": 1
+    },
+    {
+      "type": "disclaimer_paragraph",
+      "name": "Disclaimer",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>By submitting this form, you agree to receive news, special offers and other marketing emails from Sweat and Tonic. You can unsubscribe at any time. View our Terms and Privacy</p>",
+          "label": "Disclaimer text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Newsletter popup",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "email_form"
+        },
+        {
+          "type": "disclaimer_paragraph"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,110 @@
+.rich-text {
+  z-index: 1;
+}
+
+.rich-text__wrapper {
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 4rem / var(--font-body-scale));
+}
+
+.rich-text:not(.rich-text--full-width) .rich-text__wrapper {
+  margin: auto;
+  width: calc(100% - 8rem / var(--font-body-scale));
+}
+
+.rich-text__blocks {
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .rich-text__wrapper {
+    width: 100%;
+  }
+
+  .rich-text__wrapper--left {
+    justify-content: flex-start;
+  }
+
+  .rich-text__wrapper--right {
+    justify-content: flex-end;
+  }
+
+  .rich-text__blocks {
+    max-width: 50rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .rich-text__blocks {
+    max-width: 78rem;
+  }
+}
+
+.rich-text__blocks * {
+  overflow-wrap: break-word;
+}
+
+.rich-text__blocks > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.rich-text__blocks > * + * {
+  margin-top: 2rem;
+}
+
+.rich-text__blocks > * + a {
+  margin-top: 3rem;
+}
+
+.rich-text__buttons {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  max-width: 45rem;
+  word-break: break-word;
+}
+
+.rich-text__buttons--multiple > * {
+  flex-grow: 1;
+  min-width: 22rem;
+}
+
+.rich-text__buttons + .rich-text__buttons {
+  margin-top: 1rem;
+}
+
+.rich-text__blocks.left .rich-text__buttons {
+  justify-content: flex-start;
+}
+
+.rich-text__blocks.right .rich-text__buttons {
+  justify-content: flex-end;
+}
+
+
+.rich-text__caption { color: rgb(var(--color-foreground-2)); }
+.rich-text__text { color: rgba(var(--color-foreground), 1); }
+
+  .rich-text__blocks_left .rich-text__heading { margin-bottom: 0; margin-top: 0; }
+  .rich-text__blocks_left .rich-text__caption { margin: 0 0 40px;letter-spacing: 0.02em; }
+  .rich-text__blocks_right>*+* { margin-top: 2rem; }
+
+@media screen and (min-width: 750px) {
+  .rich-text__blocks_true { display: flex; width: 100%; max-width: 100%; justify-content: space-between; }
+    .rich-text__blocks_true .rich-text__blocks_left { max-width: 450px; width: 100%; }
+    .rich-text__blocks_true .rich-text__blocks_right { max-width: 670px; margin-top: 0; width: 100%; padding-left: 20px; }
+
+  @media screen and (max-width: 989px) {
+    .rich-text__blocks_true .rich-text__blocks_left, 
+    .rich-text__blocks_true .rich-text__blocks_right { max-width: 50%; }
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .rich-text__blocks_true .rich-text__blocks_right { margin-top: 20px; }
+  .rich-text__blocks_left .rich-text__caption { margin-bottom: 20px; }
+}

@@ -1,0 +1,96 @@
+<link rel="stylesheet" href="{{ 'about-dei.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'about-dei.css' | asset_url }}"></noscript>
+
+{% if section.settings.image_1 != blank or section.settings.image_2 != blank or section.settings.title != blank or section.settings.description != blank or section.settings.button_title != blank %}
+<div class="page-width">
+
+    {% if section.settings.image_1 != blank or section.settings.image_2 != blank %}
+    <div class="banner-media-box">
+      {% if section.settings.image_1 != blank %}
+      <div class="media-item scroll-trigger animate--slide-in">
+        <img width="" height="" src="{{ section.settings.image_1 | image_url:width:1000 }}" />
+      </div>
+      {% endif %}
+
+      {% if section.settings.image_2 != blank %}
+      <div class="media-item scroll-trigger animate--slide-in">
+        <img width="" height="" src="{{ section.settings.image_2 | image_url:width:1000 }}" />
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    {% if section.settings.title != blank or section.settings.description != blank or section.settings.button_title != blank %}
+    <div class="content-wrapper scroll-trigger animate--slide-in">
+
+      {% if section.settings.title != blank %}
+      <div class="sec-title">
+        <h2 class="title">{{ section.settings.title }}</h2>
+      </div>
+      {% endif %}
+
+      {% if section.settings.description != blank %}
+      <div class="descriptions">
+        <p>{{ section.settings.description }}</p>
+      </div>
+      {% endif %}
+
+      {% if section.settings.button_title != blank %}
+      <div class="btn-wrapper">
+        <a href="{% if section.settings.button_link != blank %}{{ section.settings.button_link }}{% else %}#{% endif %}" class="link global-link">{{ section.settings.button_title }} {% render 'icon-right-arrow-2' %}</a>
+      </div>
+      {% endif %}
+      
+    </div>
+    {% endif %}
+  
+</div>
+{% endif %}
+
+
+
+
+{% schema %}
+{
+  "name": "About DEI",
+  "tag": "section",
+  "class": "section about-dei-wrapper",
+  "settings": [ 
+    {
+      "type": "image_picker",
+      "label": "Image 1",
+      "id": "image_1"
+    },
+    {
+      "type": "image_picker",
+      "label": "Image 2",
+      "id": "image_2"
+    },
+    {
+      "type": "text",
+      "label": "Title",
+      "id": "title"
+    },
+    {
+      "type": "textarea",
+      "label": "Description",
+      "id": "description"
+    },
+    {
+      "type": "text",
+      "label": "Button Title",
+      "id": "button_title"
+    },
+    {
+      "type": "url",
+      "label": "Button Link",
+      "id": "button_link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "About DEI"
+    }
+  ]
+}
+{% endschema %}

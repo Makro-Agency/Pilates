@@ -1,0 +1,210 @@
+{{ 'section-image-slider.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+    
+  {% liquid
+    assign padding_top = section.settings.padding_top 
+    assign padding_bottom = section.settings.padding_bottom
+    assign padding_top_mobile = section.settings.padding_top | times: 0.75 | round: 0
+    assign padding_bottom_mobile = section.settings.padding_bottom | times: 0.75 | round: 0
+    if section.settings.padding_top > 140
+      assign padding_top = section.settings.padding_top 
+      assign padding_top_medium = section.settings.padding_top | times: 0.65 | round: 0
+      assign padding_top_mobile = section.settings.padding_top | times: 0.50 | round: 0
+    endif
+    if section.settings.padding_bottom > 140  
+      assign padding_bottom = section.settings.padding_bottom
+      assign padding_bottom_medium = section.settings.padding_bottom | times: 0.65 | round: 0  
+      assign padding_bottom_mobile = section.settings.padding_bottom | times: 0.50 | round: 0
+    endif
+  %}
+
+  {% capture mediumUP %}
+    {% if padding_top_medium != blank %}
+      padding-top: {{ padding_top_medium }}px;
+    {% endif %}
+    {% if padding_bottom_medium != blank %}
+      padding-bottom: {{ padding_bottom_medium }}px;
+    {% endif %}
+  {% endcapture %}{%- assign mediumUP = mediumUP | strip | strip_newlines -%}
+  
+  .section-{{ section.id }}-padding {
+    padding-top: {{ padding_top_mobile }}px;
+    padding-bottom: {{ padding_bottom_mobile }}px;
+  }
+  
+  {% if mediumUP != blank %}
+    @media screen and (min-width: 750px) {    
+      .section-{{ section.id }}-padding { {{ mediumUP }} }
+    }    
+    @media screen and (min-width: 1200px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {% else %}
+    @media screen and (min-width: 750px) {    
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {% endif %}
+{%- endstyle -%}
+
+<div class="secImgSlider color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="section__title title-wrapper title-wrapper--no-top-margin">
+      {%- assign uppercase = '' -%}
+      {%- if section.settings.enableUpperCase -%}
+        {%- assign uppercase = 'uppercase' -%}
+      {%- endif -%}
+      {%- if section.settings.subHeading != blank -%}
+        <h3 class="{{ uppercase }} sub-title h6{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">{{ section.settings.subHeading }}</h3>
+      {%- endif -%}
+      {%- if section.settings.heading != blank -%}
+        <h2 class="title {{ uppercase }} inline-richtext{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+    </div>    
+    <div class="swiper" data-grid--img-slider>
+      <div class="grid grid--secImgSlider grid--2-col-desktop grid--2-col-tablet grid--2-col swiper-wrapper">
+        {%- for block in section.blocks -%}
+        {% assign _image = block.settings.image %}
+        <div class="grid__item swiper-slide" {{ block.shopify_attributes }}>
+          <div class="media media--landscape{% if _image == blank %} placeholder{% endif %}">
+          {%- if _image != blank -%}
+            <img
+              srcset="
+                {%- if _image.width >= 165 -%}{{ _image | image_url: width: 165 }} 165w,{%- endif -%}
+                {%- if _image.width >= 360 -%}{{ _image | image_url: width: 360 }} 360w,{%- endif -%}
+                {%- if _image.width >= 533 -%}{{ _image | image_url: width: 533 }} 533w,{%- endif -%}
+                {%- if _image.width >= 720 -%}{{ _image | image_url: width: 720 }} 720w,{%- endif -%}
+                {%- if _image.width >= 940 -%}{{ _image | image_url: width: 940 }} 940w,{%- endif -%}
+                {%- if _image.width >= 1066 -%}{{ _image | image_url: width: 1066 }} 1066w,{%- endif -%}
+                {{ _image | image_url }} {{ _image.width }}w
+              "
+              src="{{ _image | image_url: width: 533 }}"
+              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 2 }}px, (min-width: 990px) calc((100vw - 130px) / 2), (min-width: 750px) calc((100vw - 120px) / 2), calc((100vw - 35px) / 2)"
+              alt="{{ _image.alt | escape }}"
+              class="motion-reduce"
+              {% unless lazy_load == false %}
+                loading="lazy"
+              {% endunless %}
+              width="{{ _image.width }}"
+              height="{{ _image.height }}"
+            >
+            {%- else -%}
+              {% capture heroAppare %}hero-apparel-{% cycle '1,2,3' %}{% endcapture %}
+              {{ heroAppare | placeholder_svg_tag: 'placeholder-svg' }}              
+            {%- endif -%}
+          </div>          
+          <div class="media_text">            
+            <h3 class="h5 uppercase">{{ block.settings.heading }}</h3>
+          </div>
+        </div>
+          {% else %}
+          {%- for i in (1..4) -%}
+          <div class="grid__item swiper-slide">
+            <div class="media media--landscape placeholder">
+              {% capture heroAppare %}hero-apparel-{% cycle '1,2,3' %}{% endcapture %}
+              {{ heroAppare | placeholder_svg_tag: 'placeholder-svg' }}
+            </div>          
+            <div class="media_text">            
+              <h3 class="h5 uppercase">Lorem ipsum dolor sit amet</h3>
+            </div>
+          </div>
+          {% endfor %}
+        {%- endfor -%}
+      </div>
+      <div class="swiper-button-prev"> </div>
+      <div class="swiper-button-next"> </div>
+    </div>    
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Image Slider",
+    "tag": "section",
+    "class": "section section-img-slider",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "background-1"
+      },
+      {
+        "type":"checkbox",
+        "label":"Enable text in uppercase for Heading/Sub heading",
+        "id":"enableUpperCase",
+        "default":true
+      },
+      {
+        "type":"text",
+        "label":"Sub heading",
+        "id":"subHeading",
+        "default":"our events"
+      },
+      {
+        "type":"text",
+        "label":"Heading",
+        "id":"heading",
+        "default":"Lorem ipsum dolor sit amet, consectetur adipiscing"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 200,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 200,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 100
+      }
+    ],
+    "blocks": [
+      {
+        "type":"image",
+        "name":"Image block",
+        "settings":[
+          {
+            "type":"image_picker",
+            "label":"Upload image",
+            "id":"image"
+          },
+          {
+            "type":"text",
+            "label":"Heading",
+            "id":"heading",
+            "default":"Lorem ipsum dolor sit amet"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

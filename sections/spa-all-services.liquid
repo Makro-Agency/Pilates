@@ -1,0 +1,404 @@
+{{ 'spa-all-services.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign loadingType = 'lazy'
+  assign fetchPriorityType = 'auto'
+  assign full_width = '@media (min-width: 768px) calc(60vw - 80px), 100vw'
+  assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+-%}
+
+{% if section.settings.top_padding_remove or section.settings.bottom_padding_remove %}
+  <style>
+    {% if section.settings.top_padding_remove %}
+      #shopify-section-{{ section.id }} .section-padding{
+        padding-top: 0 !important;
+      }
+    {% endif %}
+
+    {% if section.settings.bottom_padding_remove %}
+      #shopify-section-{{ section.id }} .section-padding{
+        padding-bottom: 0 !important;
+      }
+    {% endif %}
+  </style>
+{% endif %}
+
+
+
+{%- assign allServicesArray = blank -%}
+{%- assign allLocationsArray = blank -%}
+  
+{%- capture serviceCardData -%}
+  
+  {%- for block in section.blocks -%}
+    
+    {%- if block.settings.serviceType != blank -%}
+      {%- if block.settings.serviceType contains ',' -%}
+        {%- assign servicesArray = block.settings.serviceType | split: ',' -%}
+      {%- else -%}
+        {%- assign servicesArray = block.settings.serviceType | strip -%}
+      {%- endif -%}
+      {%- for service_type in servicesArray -%}
+        {%- assign allServicesArray = allServicesArray | append: service_type | append: ',' -%}
+      {%- endfor -%}
+    {%- endif -%}
+
+    {%- if block.settings.serviceLocation != blank -%}
+      {%- if block.settings.serviceLocation contains ',' -%}
+        {%- assign locationArray = block.settings.serviceLocation | split: ',' -%}
+      {%- else -%}
+        {%- assign locationArray = block.settings.serviceLocation | strip -%}
+      {%- endif -%}
+      {%- for location in locationArray -%}
+        {%- assign allLocationsArray = allLocationsArray | append: location | append: ',' -%}
+      {%- endfor -%}
+    {%- endif -%}
+
+    
+    {%- assign add_count = 0 -%}
+    {%- assign availAddress = blank -%}
+
+    <div class="spa-services-box" data-service-type="{{ block.settings.serviceType | downcase }}" data-location="{{ block.settings.serviceLocation | downcase }}">
+       <div class="spa-services-row">
+          
+          <div class="img-box{% if block.settings.image == blank %} placeholder{% endif %}">
+            {%- liquid
+              assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio
+              assign sizes = full_width
+            -%}
+            {% if block.settings.image != blank %}
+              {{
+                block.settings.image
+                | image_url: width: 1920
+                | image_tag:
+                  loading: loadingType,
+                  fetchPriority: fetchPriorityType,
+                  width: block.settings.image.width,
+                  height: image_height,
+                  sizes: sizes,
+                  widths: widths
+              }}
+            {% else %}
+              {% capture heroAppare %}hero-apparel-{% cycle '1,2,3' %}{% endcapture %}
+              {{ heroAppare | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+          </div>
+
+          <div class="spa-services-info">
+
+            {%- if block.settings.heading != blank or block.settings.detail != blank -%}
+              <div class="spa-services-info-top">
+                {%- if block.settings.heading != blank -%}
+                  <h3 class="h5">{{ block.settings.heading }}</h3>
+                {%- endif -%}
+                {%- if block.settings.detail != blank -%}
+                  <div class="text-wrap rte">
+                    {{- block.settings.detail -}}
+                    <a href="#" class="text-wrap-more hidden" description-read-more>Read More</a>
+                    <a href="#" class="text-wrap-less hidden" description-read-less>Read less</a>
+                  </div>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+
+            <div class="spa-services-info-bottom">
+              {%- for i in (1..3) -%}
+                {%- capture address_title %}address_title_{{ i }}{% endcapture -%}
+                {%- capture address %}address_{{ i }}{% endcapture -%}
+                {% assign address_title = block.settings[address_title] %}
+                {% assign address_desc = block.settings[address] %}
+
+                {%- capture availAddress -%}
+                  {%- if availAddress != blank -%}{{- availAddress -}}{%- endif -%}
+                  {%- if address_title != blank and address_desc != blank -%}
+                    {%- assign add_count = add_count | plus: 1 -%}
+                    <div class="inner-box">
+                      <h5>{{ address_title }}</h5>
+                      <div class="text-wrap">{{ address_desc }}</div>
+                    </div>
+                  {%- endif -%}
+                {%- endcapture -%}
+              {%- endfor -%}
+
+              {%- assign availAddress = availAddress | strip -%}
+
+              {%- if availAddress != blank -%}
+                <div class="services-contact-box">
+
+                  {%- if add_count > 1 -%} 
+                    <a href="#" class="location-link small-hide location-text-plural" data-location-link>{% render 'icon-location-2' %}{{ add_count }} {{ 'Locations Available' }}</a>
+                  {%- endif -%}
+
+                  {%- if add_count == 1 -%} 
+                    <a href="#" class="location-link small-hide location-text-singular" data-location-link>{% render 'icon-location-2' %}{{ add_count }} {{ 'Location Available' }}</a>
+                  {%- endif -%}
+                  
+
+                  <div class="services-location-info hover-box">
+                    <h6>AVAILABLE AT:</h6>
+                    <div class="services-contact-row">
+                      {{- availAddress -}}
+                    </div>
+                  </div>
+
+                  {%- if add_count > 1 -%} 
+                    <a href="#" class="location-link medium-hide large-up-hide location-text-plural" data-location-link>{% render 'icon-location-2' %}{{ add_count }} {{ 'Locations' }}</a>
+                  {%- endif -%}
+
+                  {%- if add_count == 1 -%} 
+                    <a href="#" class="location-link medium-hide large-up-hide location-text-singular" data-location-link>{% render 'icon-location-2' %}{{ 'Location' }}</a>
+                  {%- endif -%}
+
+                  
+                </div>
+              {%- endif -%}
+
+              <div class="btn-row">
+                <a href="{{ block.settings.button_link | default: '#' }}" class="button btn-big-width button--primary{% if block.settings.button_text == blank %} hide-link-btn{% endif %}">
+                  {{- block.settings.button_text -}}
+                </a>
+
+                <a href="{{ block.settings.text_link | default: '#' }}" class="link global-link{% if block.settings.link_text == blank %} hide-link-btn{% endif %}">
+                  {{- block.settings.link_text -}}
+                  <span class="icon-wrap">{% render 'icon-link-arrow' %}</span>
+                </a>
+                
+              </div>
+            </div>
+            
+          </div>
+       </div>
+    </div>
+    
+  {%- endfor -%}
+{%- endcapture -%}
+
+
+
+{%- assign seviceTypeException = section.settings.hideServiceType | downcase -%}
+{%- if seviceTypeException contains ',' -%}
+  {%- assign seviceTypeException = seviceTypeException | downcase | split: ',' -%}
+{%- endif -%}
+
+{%- assign servicesArray = allServicesArray | split: ',' | uniq -%}
+{%- assign locationsArray = allLocationsArray | split: ',' | uniq -%}
+
+<div class="section-padding color-{{ section.settings.color_scheme }} gradient" id="spaAllServices">
+  <div class="page-width">
+    <div class="spa-services-head{% if section.settings.filter_pos_reverse %} direction-reverse{% endif %}">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="h2 hidden">
+          {{- section.settings.heading -}}
+          {%- if section.blocks.size > 0 -%}
+            <sup class="count" total-service-count>({{ section.blocks.size }})</sup>
+          {%- endif -%}
+        </h2>
+      {%- endif %}
+
+      <div class="head-right">
+        {%- if servicesArray != blank -%}
+          <div class="services--options" data-service-options>
+            <ul>
+              <li data-value="" class="active">All types</li>
+              {%- for services in servicesArray -%}
+                {% assign downcaseServices = services | downcase %}
+                <li data-value="{{ services | downcase }}"{% if seviceTypeException contains downcaseServices %} class="hidden"{% endif %}>{{ services }}</li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- endif -%}
+
+        {%- if locationsArray != blank -%}
+          <div class="select-div" data-location-options>
+            <div class="field-select-active" data-selected-location><span>All locations</span></div>
+            <ul>
+              <li data-value="" class="active">All</li>
+              {%- for location in locationsArray -%}
+                <li data-value="{{ location | downcase }}">{{ location }}</li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- endif -%}
+      </div>
+      
+    </div>
+  </div>
+
+  {%- if serviceCardData != blank -%}
+    <div class="spa-services-list-div">
+      <div class="spa-services-list">{{ serviceCardData }}</div>
+    </div>
+  {%- endif -%}
+</div>
+
+
+
+
+{% schema %}
+{
+  "name": "All services",
+  "tag": "section",
+  "class": "spa-services-section spa-all-services",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading",
+      "default": "ALL SERVICES"
+    },
+    {
+      "type": "checkbox",
+      "id": "filter_pos_reverse",
+      "default": false,
+      "label": "Change filter direction to left"
+    },
+    {
+      "type": "text",
+      "label": "Add service type, that needs to be hide",
+      "id": "hideServiceType",
+      "info": "Add comma(,) if have multiple. do not add space after comma and srvice type (All)"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "top_padding_remove",
+      "default": false,
+      "label": "Remove top padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_padding_remove",
+      "default": false,
+      "label": "Remove bottom padding"
+    },
+    {
+    "type": "color_scheme",
+    "id": "color_scheme",
+    "label": "t:sections.all.colors.label",
+    "default": "background-1"
+    }
+  ],
+  "blocks":[
+    {
+      "type": "services",
+      "name": "Services block",
+      "settings":[
+        {
+          "type": "header",
+          "content": "Service filter"
+        },
+        {
+          "type": "text",
+          "label": "Service type",
+          "id": "serviceType",
+          "default": "All,Biohacking tech",
+          "info": "Add comma(,) if have multiple. do not add space after comma and srvice type (All)"
+        },
+        {
+          "type": "text",
+          "label": "Location name",
+          "id": "serviceLocation",
+          "default": "Yonge/Shuter,Front/Spadina (The Well)",
+          "info": "Add comma(,) if have multiple. do not add space after comma and location (All)"
+        },
+        {
+          "type": "header",
+          "content": "Service content"
+        },
+        {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "image"
+        },
+        {
+          "type": "text",
+          "label": "Heading",
+          "id": "heading",
+          "default": "INFRARED SAUNA"
+        },
+        {
+          "type": "richtext",
+          "label": "Description",
+          "id": "detail",
+          "default": "<p>Relax muscles, relieve tension and detoxify skin for a glowing complexion in one of our two infrared saunas<\/p>"
+        },
+        {
+          "type": "paragraph",
+          "content": "Location detailes"
+        },
+        {
+          "type": "text",
+          "label": "Location lable desktop",
+          "id": "location_lbl_dk",
+          "default": "Locations Available"
+        },
+        {
+          "type": "text",
+          "label": "Location lable mobile",
+          "id": "location_lbl_mb",
+          "default": "Location"
+        },
+        {
+          "type": "text",
+          "label": "Address title 1",
+          "id": "address_title_1",
+          "default": "YONGE / SHUTER"
+        },
+        {
+          "type": "richtext",
+          "label": "Address 1",
+          "id": "address_1",
+          "default": "<p>225 Yonge Street, Toronto ON M5B 1N8<\/p><p>647-372-0225<\/p>"
+        },
+        {
+          "type": "text",
+          "label": "Address title 2",
+          "id": "address_title_2",
+          "default": "YONGE / SHUTER"
+        },
+        {
+          "type": "richtext",
+          "label": "Address 2",
+          "id": "address_2",
+          "default": "<p>225 Yonge Street, Toronto ON M5B 2N8<\/p><p>647-372-0225<\/p>"
+        },
+        {
+          "type": "text",
+          "label": "Address title 3",
+          "id": "address_title_3"
+        },
+        {
+          "type": "richtext",
+          "label": "Address 3",
+          "id": "address_3"
+        },
+        {
+          "type": "text",
+          "label": "Button label",
+          "id": "button_text",
+          "default": "Book now"
+        },
+        {
+          "type": "url",
+          "label": "Button link",
+          "id": "button_link"
+        },
+        {
+          "type": "text",
+          "label": "Link label",
+          "id": "link_text",
+          "default": "Learn more"
+        },
+        {
+          "type": "url",
+          "label": "Provide link for a text",
+          "id": "text_link"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

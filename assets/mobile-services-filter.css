@@ -1,0 +1,324 @@
+/*-------------------mobile filter css-----------------------*/
+@media screen and (min-width: 990px) {
+  .mobile-service-filter {
+    display: none;
+  }
+}
+@media screen and (max-width: 989px) {
+  .mobile-service-filter {
+    padding: 15px 20px 15px 20px;
+    background: #000;
+    width: 100%;
+    z-index: 9;
+    position: sticky;
+    top: var(--header-height, 55px);
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  }
+  
+  .mobile-filter-summery {
+    border-radius: 2px;
+    border: 0px solid #fff;
+    background: none;
+    padding: 0px;
+    text-align: left;
+  }
+  .mobile-filter-summery .mobile-filter_open span {
+    color: #fff;
+    padding: 0 10px;
+    text-transform: capitalize;
+    letter-spacing: .24px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+  .mobile-filter-summery svg:not(.filter-right-icon) {
+    vertical-align: middle;
+    color: #ffffff;
+    height: 24px;
+    width: 24px;
+  }
+  .mobile-filter-summery svg.filter-right-icon {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform:translateY(-50%);
+  }
+  .mobile-filter-submenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: transparent;
+    pointer-events: none;
+  }
+  .mobile-service-filter.menu-opening .mobile-filter-submenu {
+    z-index: 100;
+  }
+  .filter-overlay {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    transition: all .3s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+  }
+  .menu-opening .filter-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  .mobile_filter_inner {
+    background-color: #000000;
+    width: 100%;
+    margin-left: auto;
+    height: 100%;
+    overflow-y: auto;
+    pointer-events: all;
+    transition: all .3s ease 0s;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: thin;
+    transform: translate(400px);
+    opacity: 0;
+  }
+  .mobile_filter_inner .mobile_filter-summery .label{
+    font-weight: 450;
+  }
+  .mobile-service-filter.menu-opening .mobile_filter_inner {
+    transform: translate(0);
+    opacity: 1;
+  }
+  .mobile-filter_close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 30px;
+    right: 20px;;
+    width: 2.2rem;
+    height: 2.2rem;
+    z-index: 101;
+    opacity: 0;
+  }
+  .menu-opening .mobile-filter_close {
+    opacity: 1;
+  }
+  h2.mobile-filter_heading {
+    margin: 0;
+    color: var(--White, #FFF);
+    font-family: "Brandon Grotesque";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 110%;
+    text-transform: uppercase;
+  }
+  .mobile_filter_header {
+    padding: 30px 20px;
+    position: sticky;
+    top: 0;
+    background: #000;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 1;
+  }
+  .mobile_filter_header svg {
+    width: 24px;
+    height: 24px;
+  }
+  .mobile_filter-summery {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    border-top: 1px solid #1A1A1A;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 100%;
+  }
+  .mobile-filter_main.has-submenu {
+    padding: 0 20px;
+  }
+  .mobile_filter_details .mobile-filter_arrow svg {
+    transition: .3s all;
+  }
+  .mobile_filter_details[data-tab="brand"] .mobile_sub_menu .mobile_facet_item:nth-child(10) ~ .mobile_facet_item {
+    display: none;
+  }
+  .mobile_filter_details[data-tab="brand"] .mobile_sub_menu.active_more .mobile_facet_item {
+    display: block !important;
+  }
+  .mobile_filter_details[data-tab="brand"] .show-less{
+    display:none;
+  }
+  .mobile_filter_details[data-tab="brand"] .mobile_sub_menu.active_more .show-less{
+    display:block;
+  }
+  .mobile_filter_details[data-tab="brand"] .mobile_sub_menu.active_more .show-more{
+    display:none;
+  }
+  .mobile_sub_menu ul {
+      list-style: none;
+      padding: 0 0 15px;
+  }
+  label.mobile-filter_label {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  .mobile-filter_label svg {
+      vertical-align: middle;
+  }
+  .mobile_sub_menu ul li {
+    padding: 0 0 15px;
+  }
+  .mobile_sub_menu ul li .filter_label {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 110%;
+  }
+  .mobile_sub_menu ul li .filter_label  span{
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .mobile_sub_menu ul li input.filter_checkbox, .mobile_sub_menu ul li input.filter_radio {
+    height: 18px;
+    width: 18px;
+    appearance: none;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+  }
+  .mobile_sub_menu ul li .filter_label:before{
+    position:absolute;
+    content: '';
+    height: 18px;
+    width: 18px;
+    left: 25px;
+    border-radius: 2px;
+    border: 1px solid #C79D5B;
+    background: #C79D5B;
+    z-index:0;
+    opacity: 0;
+    visibility: hidden;
+  }
+   .mobile_sub_menu ul li .filter_label:after{
+     position:absolute;
+    content: '';
+    height: 18px;
+    width: 18px;
+    left: 25px;
+    border-radius: 2px;
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' viewBox='0 0 16 15' fill='none'%3E%3Cg clip-path='url(%23clip0_5022_2590)'%3E%3Cpath d='M2.84375 8.4375L6.125 11.7188L13.625 4.21875' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_5022_2590'%3E%3Crect width='15' height='15' fill='white' transform='translate(0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    mask-repeat: no-repeat;
+    z-index:0;
+    mask-size: contain;
+     background-color: #000000;
+     opacity: 0;
+    visibility: hidden;
+   }
+  .mobile_sub_menu ul li.selected-item-mobile .filter_label:before,
+  .mobile_sub_menu ul li.selected-item-mobile .filter_label:after{
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .mobile_sub_menu ul li input.filter_checkbox[type=checkbox]:checked, .mobile_sub_menu ul li input.filter_radio[type=radio]:checked {
+    accent-color: #C79D5B;
+  }
+  .mobile_sub_menu {
+    display: none;
+  }
+  .mobile_filter_details.open-tab .mobile_sub_menu {
+      display: block;
+  }
+  .mobile_filter_details .mobile-filter_arrow svg {
+    width: 10px;
+    height: 10px;
+  }
+  .mobile_filter_details.open-tab .mobile-filter_arrow svg {
+    transform: rotate(180deg);
+  }
+  .mobile_filter_footer {
+    padding: 20px;
+    background: #000000;
+    border-top: 1px solid #1A1A1A;
+    bottom: 0;
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+    margin-top: auto;
+    gap: 0 10px;
+  }
+  .mobile_filter_footer button {
+    width: 48%;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: 10px 22px;
+    line-height: 100%;
+    border-radius: 2px;
+  }
+  .mobile_filter_footer .mobile-filter_clear {
+      background: #C79D5B;
+      border-color: #C79D5B;
+      color: #001424;
+  }
+  .mobile_facet_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mobile_facet_item {
+    width: 50%;
+  }
+  .mobile_sub_menu ul div.show-more,.mobile_sub_menu ul div.show-less {
+    color: #ED1C24;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100% !important;
+  }
+  .mobile_sub_menu ul div.show-more svg {
+    height: 10px;
+    width: 10px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .mobile_sub_menu ul div.show-more svg path {
+    stroke: currentColor;
+  }
+  .mobile_filter_details:last-child {
+    border-bottom: 1px solid #1A1A1A;
+    margin: 0 0 20px;
+  }
+  .mobile_filter_footer button svg {
+    margin-left: 10px;
+    vertical-align: top;
+  }
+  .mobile_filter_footer .mobile-filter_clear::after, .mobile_filter_footer .mobile-filter_clear::before { display: none; }
+
+  .audio-services .mobile-service-filter {
+    display: none;
+  }
+  .audio-services.active .mobile-service-filter { display: block; position: fixed; bottom: 0; padding: 20px;}
+}

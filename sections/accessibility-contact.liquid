@@ -1,0 +1,123 @@
+{{ 'section-main-page.css' | asset_url | stylesheet_tag }}
+{{ 'policies-page.css' | asset_url | stylesheet_tag }}
+{{ 'accessibility-contact.css' | asset_url | stylesheet_tag }}
+
+<div class="page-width page-width--narrow">
+  <div class="section-padding accessibility-contact-wrap">
+    <div class="policies-section">
+      <div class="rte scroll-trigger animate--slide-in">
+        {%- if section.settings.heading != blank -%}
+          <h3>{{ section.settings.heading }}</h3>
+        {%- endif -%}
+        {%- if section.settings.text != blank -%}
+          <p>{{ section.settings.text }}</p>
+        {%- endif -%}
+      
+        {%- if section.settings.email != blank or section.settings.telephone != blank or section.settings.address != blank -%}
+        <div class="row">
+          {%- if section.settings.email != blank -%}
+          <div class="col">
+            <div class="col-box">
+              <h6>EMAIL:</h6>
+              <p><a href="mailto:{{ section.settings.email }}" title="">{{ section.settings.email }}</a></p>  
+            </div>
+          </div>
+          {%- endif -%}
+        
+          {%- if section.settings.telephone != blank -%}
+          <div class="col">
+            <div class="col-box">
+              <h6>TELEPHONE:</h6>
+              <p><a href="tel:{{ section.settings.telephone }}" title="">{{ section.settings.telephone }}</a></p>
+            </div>
+          </div>
+          {%- endif -%}        
+        
+          {%- if section.settings.address != blank -%}
+          <div class="col">
+            <div class="col-box">
+              <h6>IN PERSON AT OUR FRONT DESK OR BY MAIL:</h6>
+              <p>{{ section.settings.address }}</p>  
+            </div>
+          </div>
+          {%- endif -%}
+        </div>
+        {%- endif -%}
+        
+      </div>
+    </div>
+    
+    {%- if section.settings.button_label != blank -%}
+      <div class="learn-more-wrap">
+        <a
+          {% if section.settings.button_link == blank %}
+            role="link" aria-disabled="true"
+          {% else %}
+            href="{{ section.settings.button_link }}"
+          {% endif %}
+          class="learn-more-link link global-link"
+        >
+          {{- section.settings.button_label | escape -}} <span class="icon-wrap">&nbsp;{% render 'icon-link-arrow' %}</span>
+        </a>        
+      </div>
+    {%- endif -%} 
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Accessibility contact",
+    "class": "accessibility-contact",
+    "settings": [
+      {
+        "type":"text",
+        "label":"Heading",
+        "id":"heading",
+        "default":"SWEAT AND TONIC CONTINUOUSLY STRIVES TO IMPROVE OUR GOODS, SERVICES, AND USER EXPERIENCE FOR ALL."
+      },
+      {
+        "type":"inline_richtext",
+        "label":"Text",
+        "id":"text",
+        "default":"This document is publicly available. A copy of our feedback policy and full accessibility policy can be requested in accessible formats via:"
+      },
+      {
+        "type":"text",
+        "label":"Enter Email",
+        "id":"email",
+        "default":"hello@sweatandtonic.com"
+      },
+      {
+        "type":"text",
+        "label":"Enter telephone",
+        "id":"telephone",
+        "default":"647-372-0225"
+      },
+      {
+        "type":"inline_richtext",
+        "label":"Enter address",
+        "id":"address",
+        "default":"225 Yonge Street, Toronto, ON M5B 1N8"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Link label",
+        "default": "Learn more about our AODA multi-year plan"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Provide link for label"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

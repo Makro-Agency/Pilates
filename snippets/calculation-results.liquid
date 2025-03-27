@@ -1,0 +1,658 @@
+<style>
+  .calculation-result-area p.error {
+      color: #f04949;
+  }
+</style>
+<div class="scroll-tab-inner-wrapper">
+  <div class="preview-area">
+       {% if section.settings.main-title-slide-5 != blank %}
+    <h2 class="title">{{ section.settings.main-title-slide-5 }}</h2>
+         {% endif %}
+    <div class="sub-text-wrapper"></div>
+    <div class="calc-input-wrapper">
+      <div class="calc-input-inner-wrapper">
+        <div class="input-ranges-wrapper">
+           {% if section.settings.employee-count-title-slide-5 != blank %}
+          <h5>{{ section.settings.employee-count-title-slide-5 }}</h5>
+             {% endif %}
+            <!-- <div class="input-ranges-container">
+              <div class="input-boxes selected" data-emp-numer="0-49"><span>0</span>-<span>49</span></div>
+              <div class="input-boxes" data-emp-numer="50-99"><span>50</span>-<span>99</span></div>
+              <div class="input-boxes" data-emp-numer="100-199"><span>100</span>-<span>199</span></div>
+              <div class="input-boxes" data-emp-numer="200+"><span>200+</span></div>
+            </div> -->
+          <div class="input-ranges-container">
+             
+          </div>
+          
+        </div>
+        <div class="input-slider-wrapper">
+          {% if section.settings.range-input-title-slide-5 != blank %}
+          <h5>{{ section.settings.range-input-title-slide-5}}</h5>
+            {% endif %}
+          <div class="input-slider-container">
+            <div class="input-wrapper">
+              <span class="before-range"></span>
+              <input id="range-input" class="range-input" value="10" min="0" max="100" step="15" type="range">
+              <span class="after-range"></span>
+              <span class="value-preview">10%</span>
+            </div>
+          </div>
+          <div class="input-slider-base"><span>0%</span><span>100%</span></div>
+        </div>
+        <div class="button-wrapper" id="calculate_result"><button>{{ section.settings.calculate_btn }}</button></div>
+      </div>
+    </div>
+  </div>
+  <div class="calculation-result-area">
+    <h5 class="h5">{{ section.settings.scenario_text }} <span id="range-num">50%</span> {{ section.settings.partner_subsidy_text }}</h5>
+    <p class="result-description"></p>
+    <p class="error"></p>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the metafield values and split them into arrays
+    const empEnrolled = '{{ shop.metafields.accentuate.estimated_number_of_employees_enrolled }}'.split(",");
+    const empPercentage = '{{ shop.metafields.accentuate.estimated_percentage }}'.replace("%", "");
+
+    // Get values for different employee ranges and percentages
+   const under49_n_0 = '{{ shop.metafields.accentuate.under49_employee__0 }}'.split('|');
+const under49_n_1 = '{{ shop.metafields.accentuate.under49_employee__1 }}'.split('|');
+const under49_n_2 = '{{ shop.metafields.accentuate.under49_employee__2 }}'.split('|');
+const under49_n_3 = '{{ shop.metafields.accentuate.under49_employee__3 }}'.split('|');
+const under49_n_4 = '{{ shop.metafields.accentuate.under49_employee__4 }}'.split('|');
+const under49_n_5 = '{{ shop.metafields.accentuate.under49_employee__5 }}'.split('|');
+const under49_n_6 = '{{ shop.metafields.accentuate.under49_employee__6 }}'.split('|');
+const under49_n_7 = '{{ shop.metafields.accentuate.under49_employee__7 }}'.split('|');
+const under49_n_8 = '{{ shop.metafields.accentuate.under49_employee__8 }}'.split('|');
+const under49_n_9 = '{{ shop.metafields.accentuate.under49_employee__9 }}'.split('|');
+const under49_n_10 = '{{ shop.metafields.accentuate.under49_employee__10 }}'.split('|');
+const under49_n_11 = '{{ shop.metafields.accentuate.under49_employee__11 }}'.split('|');
+const under49_n_12 = '{{ shop.metafields.accentuate.under49_employee__12 }}'.split('|');
+const under49_n_13 = '{{ shop.metafields.accentuate.under49_employee__13 }}'.split('|');
+const under49_n_14 = '{{ shop.metafields.accentuate.under49_employee__14 }}'.split('|');
+const under49_n_15 = '{{ shop.metafields.accentuate.under49_employee__15 }}'.split('|');
+const under49_n_16 = '{{ shop.metafields.accentuate.under49_employee__16 }}'.split('|');
+const under49_n_17 = '{{ shop.metafields.accentuate.under49_employee__17 }}'.split('|');
+const under49_n_18 = '{{ shop.metafields.accentuate.under49_employee__18 }}'.split('|');
+const under49_n_19 = '{{ shop.metafields.accentuate.under49_employee__19 }}'.split('|');
+const under49_n_20 = '{{ shop.metafields.accentuate.under49_employee__20 }}'.split('|');
+const under49_n_21 = '{{ shop.metafields.accentuate.under49_employee__21 }}'.split('|');
+const under49_n_22 = '{{ shop.metafields.accentuate.under49_employee__22 }}'.split('|');
+const under49_n_23 = '{{ shop.metafields.accentuate.under49_employee__23 }}'.split('|');
+const under49_n_24 = '{{ shop.metafields.accentuate.under49_employee__24 }}'.split('|');
+const under49_n_25 = '{{ shop.metafields.accentuate.under49_employee__25 }}'.split('|');
+const under49_n_26 = '{{ shop.metafields.accentuate.under49_employee__26 }}'.split('|');
+const under49_n_27 = '{{ shop.metafields.accentuate.under49_employee__27 }}'.split('|');
+const under49_n_28 = '{{ shop.metafields.accentuate.under49_employee__28 }}'.split('|');
+const under49_n_29 = '{{ shop.metafields.accentuate.under49_employee__29 }}'.split('|');
+const under49_n_30 = '{{ shop.metafields.accentuate.under49_employee__30 }}'.split('|');
+const under49_n_31 = '{{ shop.metafields.accentuate.under49_employee__31 }}'.split('|');
+const under49_n_32 = '{{ shop.metafields.accentuate.under49_employee__32 }}'.split('|');
+const under49_n_33 = '{{ shop.metafields.accentuate.under49_employee__33 }}'.split('|');
+const under49_n_34 = '{{ shop.metafields.accentuate.under49_employee__34 }}'.split('|');
+const under49_n_35 = '{{ shop.metafields.accentuate.under49_employee__35 }}'.split('|');
+const under49_n_36 = '{{ shop.metafields.accentuate.under49_employee__36 }}'.split('|');
+const under49_n_37 = '{{ shop.metafields.accentuate.under49_employee__37 }}'.split('|');
+const under49_n_38 = '{{ shop.metafields.accentuate.under49_employee__38 }}'.split('|');
+const under49_n_39 = '{{ shop.metafields.accentuate.under49_employee__39 }}'.split('|');
+const under49_n_40 = '{{ shop.metafields.accentuate.under49_employee__40 }}'.split('|');
+const under49_n_41 = '{{ shop.metafields.accentuate.under49_employee__41 }}'.split('|');
+const under49_n_42 = '{{ shop.metafields.accentuate.under49_employee__42 }}'.split('|');
+const under49_n_43 = '{{ shop.metafields.accentuate.under49_employee__43 }}'.split('|');
+const under49_n_44 = '{{ shop.metafields.accentuate.under49_employee__44 }}'.split('|');
+const under49_n_45 = '{{ shop.metafields.accentuate.under49_employee__45 }}'.split('|');
+const under49_n_46 = '{{ shop.metafields.accentuate.under49_employee__46 }}'.split('|');
+const under49_n_47 = '{{ shop.metafields.accentuate.under49_employee__47 }}'.split('|');
+const under49_n_48 = '{{ shop.metafields.accentuate.under49_employee__48 }}'.split('|');
+const under49_n_49 = '{{ shop.metafields.accentuate.under49_employee__49 }}'.split('|');
+const under49_n_50 = '{{ shop.metafields.accentuate.under49_employee__50 }}'.split('|');
+const under49_n_51 = '{{ shop.metafields.accentuate.under49_employee__51 }}'.split('|');
+const under49_n_52 = '{{ shop.metafields.accentuate.under49_employee__52 }}'.split('|');
+const under49_n_53 = '{{ shop.metafields.accentuate.under49_employee__53 }}'.split('|');
+const under49_n_54 = '{{ shop.metafields.accentuate.under49_employee__54 }}'.split('|');
+const under49_n_55 = '{{ shop.metafields.accentuate.under49_employee__55 }}'.split('|');
+const under49_n_56 = '{{ shop.metafields.accentuate.under49_employee__56 }}'.split('|');
+const under49_n_57 = '{{ shop.metafields.accentuate.under49_employee__57 }}'.split('|');
+const under49_n_58 = '{{ shop.metafields.accentuate.under49_employee__58 }}'.split('|');
+const under49_n_59 = '{{ shop.metafields.accentuate.under49_employee__59 }}'.split('|');
+const under49_n_60 = '{{ shop.metafields.accentuate.under49_employee__60 }}'.split('|');
+const under49_n_61 = '{{ shop.metafields.accentuate.under49_employee__61 }}'.split('|');
+const under49_n_62 = '{{ shop.metafields.accentuate.under49_employee__62 }}'.split('|');
+const under49_n_63 = '{{ shop.metafields.accentuate.under49_employee__63 }}'.split('|');
+const under49_n_64 = '{{ shop.metafields.accentuate.under49_employee__64 }}'.split('|');
+const under49_n_65 = '{{ shop.metafields.accentuate.under49_employee__65 }}'.split('|');
+const under49_n_66 = '{{ shop.metafields.accentuate.under49_employee__66 }}'.split('|');
+const under49_n_67 = '{{ shop.metafields.accentuate.under49_employee__67 }}'.split('|');
+const under49_n_68 = '{{ shop.metafields.accentuate.under49_employee__68 }}'.split('|');
+const under49_n_69 = '{{ shop.metafields.accentuate.under49_employee__69 }}'.split('|');
+const under49_n_70 = '{{ shop.metafields.accentuate.under49_employee__70 }}'.split('|');
+const under49_n_71 = '{{ shop.metafields.accentuate.under49_employee__71 }}'.split('|');
+const under49_n_72 = '{{ shop.metafields.accentuate.under49_employee__72 }}'.split('|');
+const under49_n_73 = '{{ shop.metafields.accentuate.under49_employee__73 }}'.split('|');
+const under49_n_74 = '{{ shop.metafields.accentuate.under49_employee__74 }}'.split('|');
+const under49_n_75 = '{{ shop.metafields.accentuate.under49_employee__75 }}'.split('|');
+const under49_n_76 = '{{ shop.metafields.accentuate.under49_employee__76 }}'.split('|');
+const under49_n_77 = '{{ shop.metafields.accentuate.under49_employee__77 }}'.split('|');
+const under49_n_78 = '{{ shop.metafields.accentuate.under49_employee__78 }}'.split('|');
+const under49_n_79 = '{{ shop.metafields.accentuate.under49_employee__79 }}'.split('|');
+const under49_n_80 = '{{ shop.metafields.accentuate.under49_employee__80 }}'.split('|');
+const under49_n_81 = '{{ shop.metafields.accentuate.under49_employee__81 }}'.split('|');
+const under49_n_82 = '{{ shop.metafields.accentuate.under49_employee__82 }}'.split('|');
+const under49_n_83 = '{{ shop.metafields.accentuate.under49_employee__83 }}'.split('|');
+const under49_n_84 = '{{ shop.metafields.accentuate.under49_employee__84 }}'.split('|');
+const under49_n_85 = '{{ shop.metafields.accentuate.under49_employee__85 }}'.split('|');
+const under49_n_86 = '{{ shop.metafields.accentuate.under49_employee__86 }}'.split('|');
+const under49_n_87 = '{{ shop.metafields.accentuate.under49_employee__87 }}'.split('|');
+const under49_n_88 = '{{ shop.metafields.accentuate.under49_employee__88 }}'.split('|');
+const under49_n_89 = '{{ shop.metafields.accentuate.under49_employee__89 }}'.split('|');
+const under49_n_90 = '{{ shop.metafields.accentuate.under49_employee__90 }}'.split('|');
+const under49_n_91 = '{{ shop.metafields.accentuate.under49_employee__91 }}'.split('|');
+const under49_n_92 = '{{ shop.metafields.accentuate.under49_employee__92 }}'.split('|');
+const under49_n_93 = '{{ shop.metafields.accentuate.under49_employee__93 }}'.split('|');
+const under49_n_94 = '{{ shop.metafields.accentuate.under49_employee__94 }}'.split('|');
+const under49_n_95 = '{{ shop.metafields.accentuate.under49_employee__95 }}'.split('|');
+const under49_n_96 = '{{ shop.metafields.accentuate.under49_employee__96 }}'.split('|');
+const under49_n_97 = '{{ shop.metafields.accentuate.under49_employee__97 }}'.split('|');
+const under49_n_98 = '{{ shop.metafields.accentuate.under49_employee__98 }}'.split('|');
+const under49_n_99 = '{{ shop.metafields.accentuate.under49_employee__99 }}'.split('|');
+const under49_n_100 = '{{ shop.metafields.accentuate.under49_employee__100 }}'.split('|');
+
+const empEnroll5099_n_0 = '{{ shop.metafields.accentuate.employee_enrolled_5099__0 }}'.split('|');
+const empEnroll5099_n_1 = '{{ shop.metafields.accentuate.employee_enrolled_5099__1 }}'.split('|');
+const empEnroll5099_n_2 = '{{ shop.metafields.accentuate.employee_enrolled_5099__2 }}'.split('|');
+const empEnroll5099_n_3 = '{{ shop.metafields.accentuate.employee_enrolled_5099__3 }}'.split('|');
+const empEnroll5099_n_4 = '{{ shop.metafields.accentuate.employee_enrolled_5099__4 }}'.split('|');
+const empEnroll5099_n_5 = '{{ shop.metafields.accentuate.employee_enrolled_5099__5 }}'.split('|');
+const empEnroll5099_n_6 = '{{ shop.metafields.accentuate.employee_enrolled_5099__6 }}'.split('|');
+const empEnroll5099_n_7 = '{{ shop.metafields.accentuate.employee_enrolled_5099__7 }}'.split('|');
+const empEnroll5099_n_8 = '{{ shop.metafields.accentuate.employee_enrolled_5099__8 }}'.split('|');
+const empEnroll5099_n_9 = '{{ shop.metafields.accentuate.employee_enrolled_5099__9 }}'.split('|');
+const empEnroll5099_n_10 = '{{ shop.metafields.accentuate.employee_enrolled_5099__10 }}'.split('|');
+const empEnroll5099_n_11 = '{{ shop.metafields.accentuate.employee_enrolled_5099__11 }}'.split('|');
+const empEnroll5099_n_12 = '{{ shop.metafields.accentuate.employee_enrolled_5099__12 }}'.split('|');
+const empEnroll5099_n_13 = '{{ shop.metafields.accentuate.employee_enrolled_5099__13 }}'.split('|');
+const empEnroll5099_n_14 = '{{ shop.metafields.accentuate.employee_enrolled_5099__14 }}'.split('|');
+const empEnroll5099_n_15 = '{{ shop.metafields.accentuate.employee_enrolled_5099__15 }}'.split('|');
+const empEnroll5099_n_16 = '{{ shop.metafields.accentuate.employee_enrolled_5099__16 }}'.split('|');
+const empEnroll5099_n_17 = '{{ shop.metafields.accentuate.employee_enrolled_5099__17 }}'.split('|');
+const empEnroll5099_n_18 = '{{ shop.metafields.accentuate.employee_enrolled_5099__18 }}'.split('|');
+const empEnroll5099_n_19 = '{{ shop.metafields.accentuate.employee_enrolled_5099__19 }}'.split('|');
+const empEnroll5099_n_20 = '{{ shop.metafields.accentuate.employee_enrolled_5099__20 }}'.split('|');
+const empEnroll5099_n_21 = '{{ shop.metafields.accentuate.employee_enrolled_5099__21 }}'.split('|');
+const empEnroll5099_n_22 = '{{ shop.metafields.accentuate.employee_enrolled_5099__22 }}'.split('|');
+const empEnroll5099_n_23 = '{{ shop.metafields.accentuate.employee_enrolled_5099__23 }}'.split('|');
+const empEnroll5099_n_24 = '{{ shop.metafields.accentuate.employee_enrolled_5099__24 }}'.split('|');
+const empEnroll5099_n_25 = '{{ shop.metafields.accentuate.employee_enrolled_5099__25 }}'.split('|');
+const empEnroll5099_n_26 = '{{ shop.metafields.accentuate.employee_enrolled_5099__26 }}'.split('|');
+const empEnroll5099_n_27 = '{{ shop.metafields.accentuate.employee_enrolled_5099__27 }}'.split('|');
+const empEnroll5099_n_28 = '{{ shop.metafields.accentuate.employee_enrolled_5099__28 }}'.split('|');
+const empEnroll5099_n_29 = '{{ shop.metafields.accentuate.employee_enrolled_5099__29 }}'.split('|');
+const empEnroll5099_n_30 = '{{ shop.metafields.accentuate.employee_enrolled_5099__30 }}'.split('|');
+const empEnroll5099_n_31 = '{{ shop.metafields.accentuate.employee_enrolled_5099__31 }}'.split('|');
+const empEnroll5099_n_32 = '{{ shop.metafields.accentuate.employee_enrolled_5099__32 }}'.split('|');
+const empEnroll5099_n_33 = '{{ shop.metafields.accentuate.employee_enrolled_5099__33 }}'.split('|');
+const empEnroll5099_n_34 = '{{ shop.metafields.accentuate.employee_enrolled_5099__34 }}'.split('|');
+const empEnroll5099_n_35 = '{{ shop.metafields.accentuate.employee_enrolled_5099__35 }}'.split('|');
+const empEnroll5099_n_36 = '{{ shop.metafields.accentuate.employee_enrolled_5099__36 }}'.split('|');
+const empEnroll5099_n_37 = '{{ shop.metafields.accentuate.employee_enrolled_5099__37 }}'.split('|');
+const empEnroll5099_n_38 = '{{ shop.metafields.accentuate.employee_enrolled_5099__38 }}'.split('|');
+const empEnroll5099_n_39 = '{{ shop.metafields.accentuate.employee_enrolled_5099__39 }}'.split('|');
+const empEnroll5099_n_40 = '{{ shop.metafields.accentuate.employee_enrolled_5099__40 }}'.split('|');
+const empEnroll5099_n_41 = '{{ shop.metafields.accentuate.employee_enrolled_5099__41 }}'.split('|');
+const empEnroll5099_n_42 = '{{ shop.metafields.accentuate.employee_enrolled_5099__42 }}'.split('|');
+const empEnroll5099_n_43 = '{{ shop.metafields.accentuate.employee_enrolled_5099__43 }}'.split('|');
+const empEnroll5099_n_44 = '{{ shop.metafields.accentuate.employee_enrolled_5099__44 }}'.split('|');
+const empEnroll5099_n_45 = '{{ shop.metafields.accentuate.employee_enrolled_5099__45 }}'.split('|');
+const empEnroll5099_n_46 = '{{ shop.metafields.accentuate.employee_enrolled_5099__46 }}'.split('|');
+const empEnroll5099_n_47 = '{{ shop.metafields.accentuate.employee_enrolled_5099__47 }}'.split('|');
+const empEnroll5099_n_48 = '{{ shop.metafields.accentuate.employee_enrolled_5099__48 }}'.split('|');
+const empEnroll5099_n_49 = '{{ shop.metafields.accentuate.employee_enrolled_5099__49 }}'.split('|');
+const empEnroll5099_n_50 = '{{ shop.metafields.accentuate.employee_enrolled_5099__50 }}'.split('|');
+const empEnroll5099_n_51 = '{{ shop.metafields.accentuate.employee_enrolled_5099__51 }}'.split('|');
+const empEnroll5099_n_52 = '{{ shop.metafields.accentuate.employee_enrolled_5099__52 }}'.split('|');
+const empEnroll5099_n_53 = '{{ shop.metafields.accentuate.employee_enrolled_5099__53 }}'.split('|');
+const empEnroll5099_n_54 = '{{ shop.metafields.accentuate.employee_enrolled_5099__54 }}'.split('|');
+const empEnroll5099_n_55 = '{{ shop.metafields.accentuate.employee_enrolled_5099__55 }}'.split('|');
+const empEnroll5099_n_56 = '{{ shop.metafields.accentuate.employee_enrolled_5099__56 }}'.split('|');
+const empEnroll5099_n_57 = '{{ shop.metafields.accentuate.employee_enrolled_5099__57 }}'.split('|');
+const empEnroll5099_n_58 = '{{ shop.metafields.accentuate.employee_enrolled_5099__58 }}'.split('|');
+const empEnroll5099_n_59 = '{{ shop.metafields.accentuate.employee_enrolled_5099__59 }}'.split('|');
+const empEnroll5099_n_60 = '{{ shop.metafields.accentuate.employee_enrolled_5099__60 }}'.split('|');
+const empEnroll5099_n_61 = '{{ shop.metafields.accentuate.employee_enrolled_5099__61 }}'.split('|');
+const empEnroll5099_n_62 = '{{ shop.metafields.accentuate.employee_enrolled_5099__62 }}'.split('|');
+const empEnroll5099_n_63 = '{{ shop.metafields.accentuate.employee_enrolled_5099__63 }}'.split('|');
+const empEnroll5099_n_64 = '{{ shop.metafields.accentuate.employee_enrolled_5099__64 }}'.split('|');
+const empEnroll5099_n_65 = '{{ shop.metafields.accentuate.employee_enrolled_5099__65 }}'.split('|');
+const empEnroll5099_n_66 = '{{ shop.metafields.accentuate.employee_enrolled_5099__66 }}'.split('|');
+const empEnroll5099_n_67 = '{{ shop.metafields.accentuate.employee_enrolled_5099__67 }}'.split('|');
+const empEnroll5099_n_68 = '{{ shop.metafields.accentuate.employee_enrolled_5099__68 }}'.split('|');
+const empEnroll5099_n_69 = '{{ shop.metafields.accentuate.employee_enrolled_5099__69 }}'.split('|');
+const empEnroll5099_n_70 = '{{ shop.metafields.accentuate.employee_enrolled_5099__70 }}'.split('|');
+const empEnroll5099_n_71 = '{{ shop.metafields.accentuate.employee_enrolled_5099__71 }}'.split('|');
+const empEnroll5099_n_72 = '{{ shop.metafields.accentuate.employee_enrolled_5099__72 }}'.split('|');
+const empEnroll5099_n_73 = '{{ shop.metafields.accentuate.employee_enrolled_5099__73 }}'.split('|');
+const empEnroll5099_n_74 = '{{ shop.metafields.accentuate.employee_enrolled_5099__74 }}'.split('|');
+const empEnroll5099_n_75 = '{{ shop.metafields.accentuate.employee_enrolled_5099__75 }}'.split('|');
+const empEnroll5099_n_76 = '{{ shop.metafields.accentuate.employee_enrolled_5099__76 }}'.split('|');
+const empEnroll5099_n_77 = '{{ shop.metafields.accentuate.employee_enrolled_5099__77 }}'.split('|');
+const empEnroll5099_n_78 = '{{ shop.metafields.accentuate.employee_enrolled_5099__78 }}'.split('|');
+const empEnroll5099_n_79 = '{{ shop.metafields.accentuate.employee_enrolled_5099__79 }}'.split('|');
+const empEnroll5099_n_80 = '{{ shop.metafields.accentuate.employee_enrolled_5099__80 }}'.split('|');
+const empEnroll5099_n_81 = '{{ shop.metafields.accentuate.employee_enrolled_5099__81 }}'.split('|');
+const empEnroll5099_n_82 = '{{ shop.metafields.accentuate.employee_enrolled_5099__82 }}'.split('|');
+const empEnroll5099_n_83 = '{{ shop.metafields.accentuate.employee_enrolled_5099__83 }}'.split('|');
+const empEnroll5099_n_84 = '{{ shop.metafields.accentuate.employee_enrolled_5099__84 }}'.split('|');
+const empEnroll5099_n_85 = '{{ shop.metafields.accentuate.employee_enrolled_5099__85 }}'.split('|');
+const empEnroll5099_n_86 = '{{ shop.metafields.accentuate.employee_enrolled_5099__86 }}'.split('|');
+const empEnroll5099_n_87 = '{{ shop.metafields.accentuate.employee_enrolled_5099__87 }}'.split('|');
+const empEnroll5099_n_88 = '{{ shop.metafields.accentuate.employee_enrolled_5099__88 }}'.split('|');
+const empEnroll5099_n_89 = '{{ shop.metafields.accentuate.employee_enrolled_5099__89 }}'.split('|');
+const empEnroll5099_n_90 = '{{ shop.metafields.accentuate.employee_enrolled_5099__90 }}'.split('|');
+const empEnroll5099_n_91 = '{{ shop.metafields.accentuate.employee_enrolled_5099__91 }}'.split('|');
+const empEnroll5099_n_92 = '{{ shop.metafields.accentuate.employee_enrolled_5099__92 }}'.split('|');
+const empEnroll5099_n_93 = '{{ shop.metafields.accentuate.employee_enrolled_5099__93 }}'.split('|');
+const empEnroll5099_n_94 = '{{ shop.metafields.accentuate.employee_enrolled_5099__94 }}'.split('|');
+const empEnroll5099_n_95 = '{{ shop.metafields.accentuate.employee_enrolled_5099__95 }}'.split('|');
+const empEnroll5099_n_96 = '{{ shop.metafields.accentuate.employee_enrolled_5099__96 }}'.split('|');
+const empEnroll5099_n_97 = '{{ shop.metafields.accentuate.employee_enrolled_5099__97 }}'.split('|');
+const empEnroll5099_n_98 = '{{ shop.metafields.accentuate.employee_enrolled_5099__98 }}'.split('|');
+const empEnroll5099_n_99 = '{{ shop.metafields.accentuate.employee_enrolled_5099__99 }}'.split('|');
+const empEnroll5099_n_100 = '{{ shop.metafields.accentuate.employee_enrolled_5099__100 }}'.split('|');
+
+// For empEnroll100_149
+const empEnroll100_149_n_0 = '{{ shop.metafields.accentuate.employee_enrolled_100149_0 }}'.split('|');
+const empEnroll100_149_n_10 = '{{ shop.metafields.accentuate.employee_enrolled_100149_10 }}'.split('|');
+const empEnroll100_149_n_20 = '{{ shop.metafields.accentuate.employee_enrolled_100149_20 }}'.split('|');
+const empEnroll100_149_n_30 = '{{ shop.metafields.accentuate.employee_enrolled_100149_30 }}'.split('|');
+const empEnroll100_149_n_40 = '{{ shop.metafields.accentuate.employee_enrolled_100149_40 }}'.split('|');
+const empEnroll100_149_n_50 = '{{ shop.metafields.accentuate.employee_enrolled_100149_50 }}'.split('|');
+const empEnroll100_149_n_60 = '{{ shop.metafields.accentuate.employee_enrolled_100149_60 }}'.split('|');
+const empEnroll100_149_n_70 = '{{ shop.metafields.accentuate.employee_enrolled_100149_70 }}'.split('|');
+const empEnroll100_149_n_80 = '{{ shop.metafields.accentuate.employee_enrolled_100149_80 }}'.split('|');
+const empEnroll100_149_n_90 = '{{ shop.metafields.accentuate.employee_enrolled_100149_90 }}'.split('|');
+const empEnroll100_149_n_100 = '{{ shop.metafields.accentuate.employee_enrolled_100149_100 }}'.split('|');
+
+const empEnroll150_200_n_0 = '{{ shop.metafields.accentuate.employee_enrolled_150200__0 }}'.split('|');
+const empEnroll150_200_n_10 = '{{ shop.metafields.accentuate.employee_enrolled_150200__10 }}'.split('|');
+const empEnroll150_200_n_20 = '{{ shop.metafields.accentuate.employee_enrolled_150200__20 }}'.split('|');
+const empEnroll150_200_n_30 = '{{ shop.metafields.accentuate.employee_enrolled_150200__30 }}'.split('|');
+const empEnroll150_200_n_40 = '{{ shop.metafields.accentuate.employee_enrolled_150200__40 }}'.split('|');
+const empEnroll150_200_n_50 = '{{ shop.metafields.accentuate.employee_enrolled_150200__50 }}'.split('|');
+const empEnroll150_200_n_60 = '{{ shop.metafields.accentuate.employee_enrolled_150200__60 }}'.split('|');
+const empEnroll150_200_n_70 = '{{ shop.metafields.accentuate.employee_enrolled_150200__70 }}'.split('|');
+const empEnroll150_200_n_80 = '{{ shop.metafields.accentuate.employee_enrolled_150200__80 }}'.split('|');
+const empEnroll150_200_n_90 = '{{ shop.metafields.accentuate.employee_enrolled_150200__90 }}'.split('|');
+const empEnroll150_200_n_100 = '{{ shop.metafields.accentuate.employee_enrolled_150200__100 }}'.split('|');
+
+
+    let rangeInput = document.getElementById('range-input');
+    const valuePreview = document.querySelector('.value-preview');
+
+    // Set initial display status for the result area
+    const resultArea = document.querySelector('.calculation-result-area');
+    resultArea.style.display = "none";
+
+    // Get the container div
+    const inputContainer = document.querySelector('.input-ranges-container');
+    rangeInput.setAttribute('step', empPercentage);
+
+    // Array to store the values of input boxes
+    const inputBoxValues = [];
+
+    // Variable to store the selected input box value
+    let selectedInputValue = '0-49';  // Default to '0-49'
+    let selectedRangeValue = '0';    // Default to 0%
+
+    // Pre-select the range input to 0% and update the value preview
+    rangeInput.value = selectedRangeValue;
+    valuePreview.textContent = `${selectedRangeValue}%`;
+
+    // Loop through each value and create a div element for each
+    empEnrolled.forEach(value => {
+        const inputBox = document.createElement('div');
+        inputBox.classList.add('input-boxes');
+
+        const inputBoxSpan = document.createElement('span');
+        inputBoxSpan.textContent = value.trim(); // trim() to remove any extra whitespace
+
+        inputBox.appendChild(inputBoxSpan);
+        inputContainer.appendChild(inputBox);
+
+        inputBoxValues.push(value.trim());
+
+        if (value.trim() === selectedInputValue) {
+            inputBox.classList.add('selected');  // Add 'selected' class to default value
+        }
+
+        inputBox.addEventListener('click', function() {
+            document.querySelectorAll('.input-boxes').forEach(box => box.classList.remove('selected'));
+            this.classList.add('selected');
+            selectedInputValue = this.querySelector('span').textContent;
+        });
+    });
+
+    rangeInput.addEventListener('input', function() {
+        selectedRangeValue = this.value;
+        valuePreview.textContent = `${selectedRangeValue}%`;
+    });
+
+    document.getElementById('calculate_result').addEventListener('click', function() {
+        console.log('Calculate button clicked');
+        console.log('Percentage:', empPercentage);
+        console.log('Input Box Values:', inputBoxValues);
+        console.log('Selected Input Value:', selectedInputValue);
+        console.log('Selected Range Value:', selectedRangeValue);
+
+        if (!selectedInputValue || !selectedRangeValue) {
+            document.querySelector('.error').style.display = "block";
+            document.querySelector('.error').textContent = "Please select an employee range and adjust the percentage.";
+            return;
+        }
+
+        let selectedData;
+        switch (selectedInputValue) {
+            case '0-49':
+                switch (selectedRangeValue) {
+    case '0': selectedData = under49_n_0; break;
+    case '1': selectedData = under49_n_1; break;
+    case '2': selectedData = under49_n_2; break;
+    case '3': selectedData = under49_n_3; break;
+    case '4': selectedData = under49_n_4; break;
+    case '5': selectedData = under49_n_5; break;
+    case '6': selectedData = under49_n_6; break;
+    case '7': selectedData = under49_n_7; break;
+    case '8': selectedData = under49_n_8; break;
+    case '9': selectedData = under49_n_9; break;
+    case '10': selectedData = under49_n_10; break;
+    case '11': selectedData = under49_n_11; break;
+    case '12': selectedData = under49_n_12; break;
+    case '13': selectedData = under49_n_13; break;
+    case '14': selectedData = under49_n_14; break;
+    case '15': selectedData = under49_n_15; break;
+    case '16': selectedData = under49_n_16; break;
+    case '17': selectedData = under49_n_17; break;
+    case '18': selectedData = under49_n_18; break;
+    case '19': selectedData = under49_n_19; break;
+    case '20': selectedData = under49_n_20; break;
+    case '21': selectedData = under49_n_21; break;
+    case '22': selectedData = under49_n_22; break;
+    case '23': selectedData = under49_n_23; break;
+    case '24': selectedData = under49_n_24; break;
+    case '25': selectedData = under49_n_25; break;
+    case '26': selectedData = under49_n_26; break;
+    case '27': selectedData = under49_n_27; break;
+    case '28': selectedData = under49_n_28; break;
+    case '29': selectedData = under49_n_29; break;
+    case '30': selectedData = under49_n_30; break;
+    case '31': selectedData = under49_n_31; break;
+    case '32': selectedData = under49_n_32; break;
+    case '33': selectedData = under49_n_33; break;
+    case '34': selectedData = under49_n_34; break;
+    case '35': selectedData = under49_n_35; break;
+    case '36': selectedData = under49_n_36; break;
+    case '37': selectedData = under49_n_37; break;
+    case '38': selectedData = under49_n_38; break;
+    case '39': selectedData = under49_n_39; break;
+    case '40': selectedData = under49_n_40; break;
+    case '41': selectedData = under49_n_41; break;
+    case '42': selectedData = under49_n_42; break;
+    case '43': selectedData = under49_n_43; break;
+    case '44': selectedData = under49_n_44; break;
+    case '45': selectedData = under49_n_45; break;
+    case '46': selectedData = under49_n_46; break;
+    case '47': selectedData = under49_n_47; break;
+    case '48': selectedData = under49_n_48; break;
+    case '49': selectedData = under49_n_49; break;
+    case '50': selectedData = under49_n_50; break;
+    case '51': selectedData = under49_n_51; break;
+    case '52': selectedData = under49_n_52; break;
+    case '53': selectedData = under49_n_53; break;
+    case '54': selectedData = under49_n_54; break;
+    case '55': selectedData = under49_n_55; break;
+    case '56': selectedData = under49_n_56; break;
+    case '57': selectedData = under49_n_57; break;
+    case '58': selectedData = under49_n_58; break;
+    case '59': selectedData = under49_n_59; break;
+    case '60': selectedData = under49_n_60; break;
+    case '61': selectedData = under49_n_61; break;
+    case '62': selectedData = under49_n_62; break;
+    case '63': selectedData = under49_n_63; break;
+    case '64': selectedData = under49_n_64; break;
+    case '65': selectedData = under49_n_65; break;
+    case '66': selectedData = under49_n_66; break;
+    case '67': selectedData = under49_n_67; break;
+    case '68': selectedData = under49_n_68; break;
+    case '69': selectedData = under49_n_69; break;
+    case '70': selectedData = under49_n_70; break;
+    case '71': selectedData = under49_n_71; break;
+    case '72': selectedData = under49_n_72; break;
+    case '73': selectedData = under49_n_73; break;
+    case '74': selectedData = under49_n_74; break;
+    case '75': selectedData = under49_n_75; break;
+    case '76': selectedData = under49_n_76; break;
+    case '77': selectedData = under49_n_77; break;
+    case '78': selectedData = under49_n_78; break;
+    case '79': selectedData = under49_n_79; break;
+    case '80': selectedData = under49_n_80; break;
+    case '81': selectedData = under49_n_81; break;
+    case '82': selectedData = under49_n_82; break;
+    case '83': selectedData = under49_n_83; break;
+    case '84': selectedData = under49_n_84; break;
+    case '85': selectedData = under49_n_85; break;
+    case '86': selectedData = under49_n_86; break;
+    case '87': selectedData = under49_n_87; break;
+    case '88': selectedData = under49_n_88; break;
+    case '89': selectedData = under49_n_89; break;
+    case '90': selectedData = under49_n_90; break;
+    case '91': selectedData = under49_n_91; break;
+    case '92': selectedData = under49_n_92; break;
+    case '93': selectedData = under49_n_93; break;
+    case '94': selectedData = under49_n_94; break;
+    case '95': selectedData = under49_n_95; break;
+    case '96': selectedData = under49_n_96; break;
+    case '97': selectedData = under49_n_97; break;
+    case '98': selectedData = under49_n_98; break;
+    case '99': selectedData = under49_n_99; break;
+    case '100': selectedData = under49_n_100; break;
+    default: selectedData = []; break;
+}
+
+                break;
+            case '50-99':
+                switch (selectedRangeValue) {
+    case '0': selectedData = empEnroll5099_n_0; break;
+    case '10': selectedData = empEnroll5099_n_10; break;
+    case '20': selectedData = empEnroll5099_n_20; break;
+    case '30': selectedData = empEnroll5099_n_30; break;
+    case '40': selectedData = empEnroll5099_n_40; break;
+    case '50': selectedData = empEnroll5099_n_50; break;
+    case '60': selectedData = empEnroll5099_n_60; break;
+    case '70': selectedData = empEnroll5099_n_70; break;
+    case '80': selectedData = empEnroll5099_n_80; break;
+    case '90': selectedData = empEnroll5099_n_90; break;
+    case '100': selectedData = empEnroll5099_n_100; break;
+    default: selectedData = []; break;
+}
+
+                break;
+            case '100-149':
+               switch (selectedRangeValue) {
+    case '0': selectedData = empEnroll100_149_n_0; break;
+    case '10': selectedData = empEnroll100_149_n_10; break;
+    case '20': selectedData = empEnroll100_149_n_20; break;
+    case '30': selectedData = empEnroll100_149_n_30; break;
+    case '40': selectedData = empEnroll100_149_n_40; break;
+    case '50': selectedData = empEnroll100_149_n_50; break;
+    case '60': selectedData = empEnroll100_149_n_60; break;
+    case '70': selectedData = empEnroll100_149_n_70; break;
+    case '80': selectedData = empEnroll100_149_n_80; break;
+    case '90': selectedData = empEnroll100_149_n_90; break;
+    case '100': selectedData = empEnroll100_149_n_100; break;
+    default: selectedData = []; break;
+}
+
+                break;
+            case '150-200':
+               switch (selectedRangeValue) {
+    case '0': selectedData = empEnroll150_200_n_0; break;
+    case '10': selectedData = empEnroll150_200_n_10; break;
+    case '20': selectedData = empEnroll150_200_n_20; break;
+    case '30': selectedData = empEnroll150_200_n_30; break;
+    case '40': selectedData = empEnroll150_200_n_40; break;
+    case '50': selectedData = empEnroll150_200_n_50; break;
+    case '60': selectedData = empEnroll150_200_n_60; break;
+    case '70': selectedData = empEnroll150_200_n_70; break;
+    case '80': selectedData = empEnroll150_200_n_80; break;
+    case '90': selectedData = empEnroll150_200_n_90; break;
+    case '100': selectedData = empEnroll150_200_n_100; break;
+    default: selectedData = []; break;
+}
+
+                break;
+            default:
+                selectedData = [];
+                break;
+        }
+
+        if (selectedData.length > 0) {
+            resultArea.style.display = "block";
+
+            const [firstValue = 'N/A', secondValue = 'N/A', thirdValue = 'N/A', fourthValue = 'N/A', fifthValue = 'N/A'] = selectedData.map(v => v.trim());
+
+            document.getElementById('range-num').textContent = `${selectedRangeValue}%`;
+            document.querySelector('.result-description').innerHTML = `<p>{{ shop.metafields.accentuate.after_results_textarea }}</p> <p>{{ shop.metafields.accentuate.after_results_textarea2 }}</p>`;
+
+           // document.querySelector('.result-description').innerHTML = `
+           //      By participating in the Corporate Membership Plan at Sweat and Tonic, employees of your company save
+           //      <span>${firstValue}%</span> which is the equivalent of <span>$${secondValue}</span> per month or
+           //      <span>$${thirdValue}</span> per year. The Corporate Membership Plan costs the employer <span>$${fourthValue}</span> per employee, per month or
+           //      <span>$${fifthValue}</span> per employee per year.
+           //  `;
+        } else {
+            resultArea.style.display = "none";
+        }
+
+        document.querySelector('.error').style.display = "none";
+    });
+});
+
+</script>
+
+<!--
+  <script>
+  // Variables to store the selected employee range and slider percentage
+  let selectedEmpNumber = null; // No default range
+  let selectedRangePercentage = null; // No default percentage
+
+  // Flags to check if both selections have been made
+  let isEmpRangeSelected = false;
+  let isSliderValueSelected = false;
+
+  // Example values for calculations
+  const baseCostPerEmployee = 50; // Base cost per employee per month
+
+  // Define different costs based on employee range
+  const costRanges = {
+    '0-49': baseCostPerEmployee,
+    '50-99': baseCostPerEmployee * 0.9, // Example: 10% discount
+    '100-199': baseCostPerEmployee * 0.8, // Example: 20% discount
+    '200+': baseCostPerEmployee * 0.7 // Example: 30% discount
+  };
+
+  // Function to calculate savings and costs
+  function calculateValues(empRange, percentage) {
+    let savingsPercent = 0;
+    let monthlySavings = 0;
+    let yearlySavings = 0;
+    let monthlyCost = costRanges[empRange] || baseCostPerEmployee;
+    let yearlyCost = monthlyCost * 12;
+
+
+    // Calculate savings percentage based on slider value
+    if (percentage > 0) {
+      savingsPercent = percentage * 0.5; // Example: 50% subsidy on the percentage value
+      monthlySavings = (monthlyCost * (savingsPercent / 100)).toFixed(2);
+      yearlySavings = (yearlyCost * (savingsPercent / 100)).toFixed(2);
+    }
+
+    return {
+      savingsPercent,
+      monthlySavings,
+      yearlySavings,
+      costPerMonth: monthlyCost.toFixed(2),
+      costPerYear: yearlyCost.toFixed(2),
+    };
+  }
+
+  // Function to update the result display
+  function updateResults() {
+    console.log('updateResults called');
+    if (!isEmpRangeSelected || !isSliderValueSelected) {
+      document.querySelector('.calculation-result-area').style.display = "block";
+      document.querySelector('.error').innerHTML = "Please select an employee range and adjust the percentage.";
+      return;
+    }
+
+
+    const { savingsPercent, monthlySavings, yearlySavings, costPerMonth, costPerYear } = calculateValues(selectedEmpNumber, selectedRangePercentage);
+
+    // Update the result description area
+    console.log(`Selected slider percentage: ${selectedRangePercentage}%`);
+    document.querySelector('#range-num').innerHTML = `${selectedRangePercentage}%`
+    document.querySelector('.result-description').innerHTML = `
+      By participating in the Corporate Membership Plan at Sweat and Tonic, employees of your company save
+      <span>${savingsPercent.toFixed(2)}%</span> which is the equivalent of <span>$${monthlySavings}</span> per month or <span>$${yearlySavings}</span>
+      per year. The Corporate Membership Plan costs the employer <span>$${costPerMonth}</span> per employee, per month or
+      <span>$${costPerYear}</span> per employee per year.`;
+
+    // Display the results area and hide the error
+    document.querySelector('.calculation-result-area').style.display = "block";
+    document.querySelector('.error').innerHTML = '';
+  }
+
+  // Select all elements with the class 'input-boxes'
+  const inputBoxes = document.querySelectorAll('.input-boxes');
+
+  // Set default state of the results area
+  document.querySelector('.calculation-result-area').style.display = "none";
+
+  // Loop through each box and add a click event listener
+  inputBoxes.forEach(box => {
+    box.addEventListener('click', function() {
+      // Get the value of the data-emp-numer attribute (employee range)
+      selectedEmpNumber = this.getAttribute('data-emp-numer');
+      isEmpRangeSelected = true; // Mark that an employee range has been selected
+      console.log(`Selected employee range: ${selectedEmpNumber}`);
+
+      // Highlight the selected box
+      document.querySelectorAll('.input-boxes').forEach(box => box.classList.remove('selected'));
+      this.classList.add('selected');
+
+      // Remove the error message if present
+      document.querySelector('.error').innerHTML = '';
+    });
+  });
+
+  // Get the slider element
+  const rangeInput = document.getElementById('range-input');
+
+  // Update the selected range percentage when the slider value changes
+  rangeInput.addEventListener('input', function() {
+    selectedRangePercentage = this.value;
+    isSliderValueSelected = true; // Mark that the slider value has been selected
+    document.querySelector('.value-preview').innerText = `${selectedRangePercentage}%`;
+    console.log(`Slider percentage: ${selectedRangePercentage}`);
+  });
+
+  // Add event listener to the calculate button
+  document.getElementById('calculate_result').addEventListener('click', function() {
+    console.log('Calculate button clicked');
+    // Update results based on the selected range and current slider value
+    updateResults();
+  });
+
+  </script>
+-->

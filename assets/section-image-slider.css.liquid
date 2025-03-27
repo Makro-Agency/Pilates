@@ -1,0 +1,81 @@
+.section-img-slider .section__title { max-width: 600px; margin-bottom: 70px; }
+.section-img-slider .sub-title { color: rgba(var(--color-foreground-2), 1); margin-top: 0; margin-bottom: 30px; line-height: 1.42; }
+
+.grid--secImgSlider {
+  --grid-desktop-horizontal-spacing: 20px;--grid-desktop-vertical-spacing: 20px;flex-wrap: nowrap;max-width: 1320px;
+    margin-bottom: 0; }
+
+.section-img-slider {
+  overflow: hidden;
+}
+
+.grid--secImgSlider .grid__item {
+  position: relative;
+}
+
+.grid--secImgSlider .media_text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 1;
+  width: calc(100% - 40px);
+}
+
+.media.media--landscape {
+}
+
+.grid--secImgSlider .media {}
+
+.grid--secImgSlider .media:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 60%, rgb(0 0 0 / 40%) 100%);
+  z-index: 1;
+}
+
+.grid--secImgSlider .media_text h3 {
+  color: #fff;
+  margin: 0;
+}
+
+.swiper.swiper-initialized[data-grid--img-slider] {
+  overflow: unset; }
+.swiper-initialized[data-grid--img-slider] .grid--secImgSlider { gap: 0; }
+.swiper-initialized[data-grid--img-slider] .grid--secImgSlider .grid__item { 
+  max-width: 100%; }
+body [data-grid--img-slider] .swiper-button-next,
+body [data-grid--img-slider] .swiper-button-prev {
+  background-position-x: 20px; }
+
+.secImgSlider .swiper-button-next { right: -25px; }
+.secImgSlider .swiper-button-prev { left: -25px; }
+
+@media(max-width: 1199px){
+  body .swiper-button-next,
+  body .swiper-button-prev { height: 40px; width: 40px; }
+  body .swiper-button-next { right: 15px; }
+  body .swiper-button-prev { left: 15px; }
+  
+  body [data-grid--img-slider] .swiper-button-next,
+  body [data-grid--img-slider] .swiper-button-prev {
+    background-position-x: 16px; }
+}
+@media(max-width: 749px){
+  .section-img-slider .section__title { margin-bottom: 40px; }
+  .section-img-slider .sub-title { margin-bottom: 20px; }
+  
+  .grid--secImgSlider .grid__item { width: 100%; max-width: 98%; }
+
+  .secImgSlider .swiper-button-next { right: 0px; }
+  .secImgSlider .swiper-button-prev { left: 0px; }
+  
+  .grid--secImgSlider .media_text { padding: 10px 10px; width: calc(100% - 20px); }
+  .grid--secImgSlider .media_text h3 { font-size: 15px; }
+  /* body [data-grid--img-slider] .swiper-button-next, 
+  body [data-grid--img-slider] .swiper-button-prev { display: none; } */
+}

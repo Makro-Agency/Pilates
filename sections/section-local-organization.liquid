@@ -1,0 +1,250 @@
+{{ 'section-local-organization.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+    
+  {% liquid
+    assign padding_top = section.settings.padding_top 
+    assign padding_bottom = section.settings.padding_bottom
+    assign padding_top_mobile = section.settings.padding_top | times: 0.75 | round: 0
+    assign padding_bottom_mobile = section.settings.padding_bottom | times: 0.75 | round: 0
+    if section.settings.padding_top > 140
+      assign padding_top = section.settings.padding_top 
+      assign padding_top_medium = section.settings.padding_top | times: 0.65 | round: 0
+      assign padding_top_mobile = section.settings.padding_top | times: 0.50 | round: 0
+    endif
+    if section.settings.padding_bottom > 140  
+      assign padding_bottom = section.settings.padding_bottom
+      assign padding_bottom_medium = section.settings.padding_bottom | times: 0.65 | round: 0  
+      assign padding_bottom_mobile = section.settings.padding_bottom | times: 0.50 | round: 0
+    endif
+  %}
+
+  {% capture mediumUP %}
+    {% if padding_top_medium != blank %}
+      padding-top: {{ padding_top_medium }}px;
+    {% endif %}
+    {% if padding_bottom_medium != blank %}
+      padding-bottom: {{ padding_bottom_medium }}px;
+    {% endif %}
+  {% endcapture %}{%- assign mediumUP = mediumUP | strip | strip_newlines -%}
+  
+  .section-{{ section.id }}-padding {
+    padding-top: {{ padding_top_mobile }}px;
+    padding-bottom: {{ padding_bottom_mobile }}px;
+  }
+  
+  {% if mediumUP != blank %}
+    @media screen and (min-width: 750px) {    
+      .section-{{ section.id }}-padding { {{ mediumUP }} }
+    }    
+    @media screen and (min-width: 1200px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {% else %}
+    @media screen and (min-width: 750px) {    
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {% endif %}
+{%- endstyle -%}
+
+<div class="secLocalOrgani color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="page-width">
+      {%- assign uppercase = '' -%}
+      {%- if section.settings.enableUpperCase -%}
+        {%- assign uppercase = 'uppercase' -%}
+      {%- endif -%}
+    <div class="section__title title-wrapper title-wrapper--no-top-margin center">
+      {%- if section.settings.subHeading != blank -%}
+        <h3 class="{{ uppercase }} sub-title h6{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">{{ section.settings.subHeading }}</h3>
+      {%- endif -%}
+      {%- if section.settings.heading != blank -%}
+        <h2 class="title {{ section.settings.heading_size }} {{ uppercase }} inline-richtext{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+    </div>
+    <div class="grid grid--secLocalOrgani grid--gapless grid--3-col-desktop grid--2-col-tablet grid--1-col">
+      {%- for block in section.blocks -%}
+      <div class="grid__item" {{ block.shopify_attributes }}>
+        {% capture content %}
+          {% assign _image = block.settings.icon %}
+          {% assign _image_width = _image.width | divided_by: _image.height | times: 70 %}
+          <div class="img-wraper">
+            {% if _image != blank %}
+              <img
+                srcset="{{ _image | image_url: height: 70 }} {{ _image_width }}w"              
+                sizes="{{ _image_width }}px"
+                alt="{{ _image.alt | escape }}"
+                class="motion-reduce"
+                {% unless lazy_load == false %}
+                  loading="lazy"
+                {% endunless %}
+                width="{{ _image_width }}"
+                height="20"
+              />
+            {% else %}            
+              {% capture heroAppare %}hero-apparel-{% cycle '1,2,3' %}{% endcapture %}
+              {{ heroAppare | placeholder_svg_tag: 'placeholder-svg' | replace:'"placeholder-svg"','"placeholder-svg" height="20"' }}
+            {% endif %}
+          </div>
+          {% if block.settings.heading != blank %}
+          <div class="text-content">
+            <h5 class="uppercase">{{ block.settings.heading }}</h5>
+            {% if block.settings.url_text != blank %}
+            <span class="link global-link" {% if block.settings.url == blank %}role="link" aria-disabled="true"{% else %}{% endif %}>
+              {{ block.settings.url_text }}
+              <span class="icon-wrap">{% render 'icon-link-arrow' %}</span>
+            </span>
+            {%- endif -%}
+          </div>
+          {%- endif -%}
+        {% endcapture %}
+        {% if block.settings.url != blank %}
+        <a class="link global-link" target="_blank" href="{{ block.settings.url }}">
+          {{ content }}
+        </a>
+        {% else %}
+          {{ content }}
+        {% endif %}
+      </div>
+      {%- else -%}
+        {% for i in (1..6) %}
+          <div class="grid__item">
+            <div class="img-wraper">
+              {% capture heroAppare %}hero-apparel-{% cycle '1,2,3' %}{% endcapture %}
+              {{ heroAppare | placeholder_svg_tag: 'placeholder-svg' | replace:'"placeholder-svg"','"placeholder-svg" height="20"' }}
+            </div>
+            <div class="text-content">
+              <h5 class="uppercase">Lorem ipsum dolor</h5>
+              <a class="link global-link" role="link" aria-disabled="true">
+                visit
+                <span class="icon-wrap">{% render 'icon-link-arrow' %}</span>
+              </a>
+            </div>
+          </div>
+        {%- endfor -%}
+      {%- endfor -%}
+    </div>    
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Local organization",
+    "tag": "section",
+    "class": "section section-local-organization",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "background-1"
+      },
+      {
+        "type":"checkbox",
+        "label":"Enable text in uppercase for Heading/Sub heading",
+        "id":"enableUpperCase",
+        "default":true
+      },
+      {
+        "type":"text",
+        "label":"Sub heading",
+        "id":"subHeading",
+        "default":"Supporting our community"
+      },
+      {
+        "type":"text",
+        "label":"Heading",
+        "id":"heading",
+        "default":"Learn more about some of the local organizations we’ve partnered with in the past year:"
+      },
+      {
+        "type":"select",
+        "label":"Heading size",
+        "id":"heading_size",
+        "options":[
+          {
+            "label": "Small",
+            "value": "h4"
+          },
+          {
+            "label": "Medium",
+            "value": "h3"
+          },
+          {
+            "label": "Large",
+            "value": ""
+          }
+        ],
+        "default": ""
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 200,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 200,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 100
+      }
+    ],
+    "blocks": [
+      {
+        "type":"icon",
+        "name":"Icon block",
+        "settings":[
+          {
+            "type":"image_picker",
+            "label":"Upload icon here",
+            "id":"icon"
+          },
+          {
+            "type":"text",
+            "label":"Heading",
+            "id":"heading",
+            "default":"Egale Canada"
+          },
+          {
+            "type":"text",
+            "label":"Link text",
+            "id":"url_text",
+            "default":"Visit"
+          },
+          {
+            "type":"url",
+            "label":"Provide link",
+            "id":"url"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

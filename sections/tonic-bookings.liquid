@@ -1,0 +1,179 @@
+<link rel="stylesheet" href="{{ 'tonic-bookings.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'tonic-bookings.css' | asset_url }}"></noscript>
+
+{% if section.settings.bottom_padding_remove %}
+      #shopify-section-{{ section.id }}.section-padding{
+        padding-bottom: 0 !important;
+      }
+    {% endif %}
+{%- capture tonicBookingContent -%}
+  {%- for block in section.blocks -%}
+    {%- if block.type == 'event' -%}
+      
+      {%- if block.settings.image != blank -%}
+        <div class="book-item swiper-slide">
+          <div class="media-box">
+            {{ block.settings.image | image_url: width: 900 | image_tag: loading: 'lazy', widths: '180, 375, 550, 750, 1100', sizes: '50vw' }}
+          </div>
+          {%- if block.settings.title != blank or block.settings.address != blank or block.settings.phone != blank -%}
+            <div class="info-wrapper">
+              {%- if block.settings.title != blank -%}
+                <h3 class="item-title">{{ block.settings.title }}</h3>
+              {%- endif -%}
+              {%- if block.settings.address != blank -%}
+                <span class="address">{{ block.settings.address }}</span>
+              {%- endif -%}
+              {%- if block.settings.phone != blank -%}
+                <span class="phone">{{ block.settings.phone }}</span>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
+    {%- endif -%}
+      
+  {%- endfor -%}
+{%- endcapture -%}
+
+
+<div class="page-width">
+  <div class="sec-head{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+
+    {%- if section.settings.sub_heading != blank or section.settings.heading != blank -%}
+      <div class="left-part">
+        {%- if section.settings.sub_heading != blank -%}
+          <span class="sub-title">{{ section.settings.sub_heading }}</span>
+        {%- endif -%}
+        {%- if section.settings.heading != blank -%}
+          <h2 class="title">{{ section.settings.heading }}</h2>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+    
+    <div class="right-part">
+      {%- if section.settings.description != blank -%}
+        <div class="texts">{{ section.settings.description }}</div>
+      {%- endif -%}
+      {%- if section.settings.btn_label != blank -%}
+       <a 
+         {%- if section.settings.btn_link == blank %}
+          role="link" aria-disabled="true"
+        {% else %}
+          href="{{ section.settings.btn_link }}"
+        {% endif -%}
+         class="button btn-small-width button--primary"
+         >
+        {{- section.settings.btn_label -}}
+        </a>
+      {%- endif -%}
+    </div>  
+    
+  </div>
+
+
+  {%- if tonicBookingContent != blank -%}
+    {%- capture section_settings -%} 
+    {
+      "enable_desktop_slider": {{ section.settings.desktop_slider | json }},
+      "enable_mobile_slider": {{ section.settings.mobile_slider | json }}
+    }
+    {%- endcapture -%}
+    <div class="bookings-list swiper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}" data-section-settings='{{ section_settings }}' {% if section.settings.desktop_slider or section.settings.mobile_slider %}data-slider-ele{% endif %}>
+      <div class="book-wrapper-element{% if section.settings.desktop_slider or section.settings.mobile_slider %} swiper-wrapper{% endif %}{% if section.settings.desktop_slider %} has-desk-slider{% endif %}{% if section.settings.mobile_slider %} has-mbl-slider{% endif %}">{{ tonicBookingContent }}</div>
+      <div class="tonic-booking-button-prev{% if section.settings.mobile_slider == false %} small-hide{% endif %}{% if section.settings.desktop_slider == false %} medium-hide large-up-hide{% endif %}"><img src="https://cdn.shopify.com/s/files/1/0277/8280/7635/files/right-round-arrow.svg?v=1701761525" /></div>
+      <div class="tonic-booking-button-next{% if section.settings.mobile_slider == false %} small-hide{% endif %}{% if section.settings.desktop_slider == false %} medium-hide large-up-hide{% endif %}"><img src="https://cdn.shopify.com/s/files/1/0277/8280/7635/files/right-round-arrow.svg?v=1701761525" /></div>
+    </div>
+  {%- endif -%}
+  
+  
+</div>
+ 
+
+
+{% schema %}
+{
+  "name": "Tonic Bookings",
+  "tag": "section",
+  "class": "section tonic-bookings-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "Sub heading",
+      "default": "EVENT SPACE RENTAL"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Private event bookings"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Looking for an exclusive space for your next event? Tonic House is also available for private rentals. Whether it’s a special celebration, a corporate event, or a wellness workshop, our versatile and fully-licensed spaces can be tailored to suit your needs.</p>"
+    },
+    {
+      "type": "text",
+      "id": "btn_label",
+      "label": "Button label",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "btn_link",
+      "label": "Button link"
+    },
+    {
+      "type": "checkbox",
+      "id": "desktop_slider",
+      "label": "Swipe on desktop?",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_slider",
+      "label": "Swipe on mobile?",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "event",
+      "name": "Event",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Yonge / Shuter"
+        },
+        {
+          "type": "text",
+          "id": "address",
+          "label": "Address",
+          "default": "225 Yonge Street, Toronto ON M5B 1N8"
+        },
+        {
+          "type": "text",
+          "id": "phone",
+          "label": "Phone",
+          "default": "647-372-0225"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tonic Bookings"
+    }
+  ]
+}
+{% endschema %}

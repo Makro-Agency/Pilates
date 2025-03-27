@@ -1,0 +1,56 @@
+.classes-hero .banner__box .banner__heading+* {
+  margin-top: 15px;
+}
+.classes-hero .banner__box>*+.banner__buttons, .classes-hero .banner__box>*+* {
+  margin-top: 40px;
+}
+.classes-hero-info{
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+}
+.classes-hero-info-row{
+  max-width: 285px;
+  width: 100%;
+  margin-left: auto;
+}
+.classes-hero-info .link{
+  margin-top: 30px;
+}
+.classes-hero .banner--adapt.banner, 
+.classes-hero .banner--adapt .banner__content{
+  max-height: 100vh;
+  min-height: 600px;
+}
+
+@media screen and (min-width: 750px){
+  .classes-hero .banner--desktop-transparent .banner__box{
+    padding: 0;
+    /* max-width: 800px !important; */
+  }
+}
+@media screen and (max-width: 989px){
+  .classes-hero-info-row{
+    max-width: 170px;
+  }
+  .classes-hero-info .text-wrap{
+    font-size: 12px;
+  }
+  .classes-hero-info{
+    bottom: 40px;
+  }
+}
+@media screen and (max-width: 749px){
+  .classes-hero .banner__box{
+    padding: 60px 20px;
+  }
+  .classes-hero .banner__content{
+    align-items: flex-start;
+  }
+  .classes-hero .banner__box>*+.banner__buttons{
+    margin-top: 25px;
+  }
+  .classes-hero .banner__box>*+*{
+    margin-top: 20px;
+  }
+}

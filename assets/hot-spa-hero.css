@@ -1,0 +1,130 @@
+.banner__text p svg {
+    vertical-align: middle;
+}
+.banner__text p {
+    font-weight: 500;
+    font-size: 12px;
+}
+.template--hot-spa .home-hero .banner__content {
+  min-height: 100vh;
+  padding: 40px;
+}
+.template--hot-spa .home-hero .banner__content .banner__text p{
+  font-weight: 450;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+}
+.template--hot-spa .banner__box_top_wrap {
+  min-height: 100%;
+  justify-content: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+.template--hot-spa .home-hero .banner--desktop-transparent .banner__box {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  position: unset;
+  display: flex;
+}
+.template--hot-spa .home-hero .banner__box>*+.banner__buttons{
+  position: absolute;
+  left: 0;
+  bottom:0;
+  max-width: 305px;
+}
+.template--hot-spa .home-hero .banner__box>*+.banner__buttons {
+  margin-top: 50px;
+}
+.template--hot-spa .home-hero .banner--desktop-transparent .banner__box>*:not(.banner__buttons){
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.template--hot-spa .home-hero .banner--desktop-transparent .banner__box .banner__heading {
+  max-width: 500px;
+  font-weight: 420;
+  letter-spacing: 0;
+}
+.template--hot-spa .banner__content_top a.button.button--secondary {
+  border: none;
+  padding: 0;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 16.8px */
+  text-transform: initial;
+  text-align: left;
+}
+.template--hot-spa .banner__content::after {
+    content: '';
+    width: 8px;
+    height: 19px;
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%228%22%20height%3D%2219%22%20viewBox%3D%220%200%208%2019%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M7%2015L4%2018M4%2018L0.999999%2015M4%2018L4%200.5%22%20stroke%3D%22white%22%20stroke-width%3D%221.2%22%2F%3E%3C%2Fsvg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 70px;
+    top: auto;
+}
+
+@media only screen and (min-width: 992px) {
+  .banner__heading {
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 990px){
+  .template--hot-spa .banner__content_top a.button.button--secondary {
+    text-align: center;
+  }
+  .template--hot-spa .home-hero .banner__box>*+.banner__buttons {
+    position: relative;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .template--hot-spa .home-hero .banner--desktop-transparent .banner__box .banner__heading {
+  font-size: 40px;
+  font-weight: 420;
+  line-height: 90%;
+  letter-spacing: -0.8px;
+    padding: 0 3px;
+  }
+  body.template--hot-spa .home-hero .banner__box_top {
+    /* margin-bottom: 60%; */
+    margin-bottom: 0%;
+  }
+  body.template--hot-spa .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  body.template--hot-spa.transparent_header main {
+    margin-top: -77px;
+  }
+  .template--hot-spa .banner__content:after { bottom: 40px; opacity: 0;visibility: hidden;}
+  .template--hot-spa .drawer-classes-btns {display: none;}
+  .template--hot-spa .home-hero .banner--desktop-transparent .banner__box {
+  justify-content: flex-start;
+  padding-left: 0;
+  padding-right: 0;
+  }
+  .template--hot-spa .home-hero .banner__box>*+.banner__buttons {
+    position: absolute;
+    max-width: 230px;
+  }
+  .template--hot-spa .banner__content_top a.button.button--secondary {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .template--hot-spa .home-hero .banner__box .banner__heading+.banner__text {
+    margin-top: 40px;
+  }
+  .template--hot-spa .home-hero .banner__content {
+    padding: 50px 20px 40px 20px;
+  }
+}

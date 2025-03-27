@@ -1,0 +1,23 @@
+{%- assign desc = product.description | split: '<strong>' -%}
+{%- assign i = desc.size | minus: 1 -%}
+
+<div class="pro-accordion-block" data-accrodion-block>
+  
+  {%- for arr in (1..i) -%}
+    {%- assign desc_1 = desc[arr] | split: '</strong>' -%}
+    {%- if desc_1[0] != blank and desc_1[1] != blank -%}
+      <div class="accordion-box">
+        <a href="#" class="pro-accordion-title" data-accrodion-tab>{{ desc_1[0] }} {% render 'down-icon' %}</a>
+        <div class="panel">{{ desc_1[1] }}</div>
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
+  
+  {%- if block.settings.title != blank and block.settings.content != blank -%}
+    <div class="accordion-box">
+      <a href="#" class="pro-accordion-title" data-accrodion-tab>{{ block.settings.title }} {% render 'down-icon' %}</a>
+      <div class="panel">{{ block.settings.content }}</div>
+    </div>
+  {%- endif -%}
+  
+</div>

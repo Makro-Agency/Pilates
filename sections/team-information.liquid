@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="{{ 'team-information.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'team-information.css' | asset_url }}"></noscript>
+
+<div class="page-width">
+  <div class="sec-box">
+    <div class="heading-sec">
+      {% if metaobject.about_team_member.value != blank %}
+        <span class="head-slogan">About {{ metaobject.name.value | split:" " | first }}</span>
+        <h2 class="sec-title">{{ metaobject.about_team_member.value }}</h2>
+      {% endif %}
+    </div>
+
+    <div class="content-sec">
+      {% for entry in metaobject.more_information.value %}
+        {% if entry != blank and entry != "||" and entry != "" %}
+          {% assign title = entry | split:"||" | first %}
+          {% assign content = entry | split:"||" | last %}
+        <div class="con-item">
+           <h5>{{ title }}</h5>
+           <div class="texts">
+             <p>{{ content }}</p>
+           </div> 
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Team Information",
+  "tag": "section",
+  "class": "section team-information-wrapper",
+  "settings": [    
+  ],
+  "presets": [
+    {
+      "name": "Team Information"
+    }
+  ]
+}
+{% endschema %}

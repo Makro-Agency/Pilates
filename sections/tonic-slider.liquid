@@ -1,0 +1,66 @@
+{%- capture tonicGallery -%}
+  {%- assign imgCount = 0 -%}
+  {%- for block in section.blocks -%}
+    {%- if block.type == 'gallery' -%}
+      
+      {%- if block.settings.image != blank  -%}
+        {%- assign imgCount = imgCount | plus: 1 -%}
+        <div class="swiper-slide">
+          {%- assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio -%}
+          {{ block.settings.image | image_url: width: 1500 | image_tag: loading: 'lazy', widths: '375, 550, 750, 1100, 1500, 1780, 2000', width: block.settings.image.width,
+            height: image_height, sizes: '100vw' }}
+        </div>
+      {%- endif -%}
+
+    {%- endif -%}
+      
+  {%- endfor -%}
+{%- endcapture -%}
+
+
+{%- if tonicGallery != blank -%}
+  
+  <link rel="stylesheet" href="{{ 'tonic-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="{{ 'tonic-slider.css' | asset_url }}"></noscript>
+
+  <div class="slider-main-box{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+    <div class="swiper tonic-slides" data-tonic-slider>
+      <div class="swiper-wrapper">{{ tonicGallery }}</div>
+      {%- if imgCount > 1 -%}
+        <div class="swiper-pagination"></div>
+        <div class="tonic-button-prev">{% render 'slide-left-arrow' %}</div>
+        <div class="tonic-button-next">{% render 'slide-right-arrow' %}</div>
+      {%- endif -%}
+    </div>
+  </div>
+  
+{%- endif -%}
+
+
+
+{% schema %}
+{
+  "name": "Tonic Slider",
+  "tag": "section",
+  "class": "section tonic-slider-wrapper",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "gallery",
+      "name": "Gallery",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tonic Slider"
+    }
+  ]
+}
+{% endschema %}

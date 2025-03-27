@@ -1,0 +1,107 @@
+<link rel="stylesheet" href="{{ 'services-faq.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'services-faq.css' | asset_url }}"></noscript>
+
+
+{%- if section.settings.top_padding_remove or section.settings.bottom_padding_remove -%}
+  <style>
+    {% if section.settings.top_padding_remove %}
+      #shopify-section-{{ section.id }}.section-padding{
+        padding-top: 0 !important;
+      }
+    {% endif %}
+    
+    {% if section.settings.bottom_padding_remove %}
+      #shopify-section-{{ section.id }}.section-padding{
+        padding-bottom: 0 !important;
+      }
+    {% endif %}
+  </style>
+{%- endif -%}
+
+
+<div class="page-width">
+  <div class="row">
+
+    {%- if section.settings.title != blank -%}
+      <div class="col col-left">
+        <div class="section-head">
+          <h2 class="h1">{{ section.settings.title }}</h2>
+        </div>
+      </div>
+    {%- endif -%}
+    
+    <div class="col col-right">
+      <div class="services-faq-accordion">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.question != blank and block.settings.ans != blank -%}
+            <div class="accordion-box">
+              <div class="accordion-title h5" data-class-item><span>{{ block.settings.question }}</span> {% render 'icon-close-2' %}</div>
+              <div class="panel" data-class-content>
+                <div class="text-wrap">{{ block.settings.ans }}</div>
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "FAQ",
+    "class": "services-faq section-padding",
+    "settings": [
+      {
+        "type": "html",
+        "id": "title",
+        "label": "Section title",
+        "default": "HAVE ANY <br/> QUESTIONS?"
+      },
+      {
+        "type": "header",
+        "content": "Section padding"
+      },
+      {
+        "type": "checkbox",
+        "id": "top_padding_remove",
+        "default": false,
+        "label": "Remove top padding"
+      },
+      {
+        "type": "checkbox",
+        "id": "bottom_padding_remove",
+        "default": false,
+        "label": "Remove bottom padding"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "faq",
+        "name": "FAQ",
+        "settings": [
+          {
+            "type": "text",
+            "id": "question",
+            "label": "Question",
+            "default": "HOW TO PREPARE FOR A SESSION AT SOMADOME?"
+          },
+          {
+            "type": "richtext",
+            "id": "ans",
+            "label": "Answer",
+            "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

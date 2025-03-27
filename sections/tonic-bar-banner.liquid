@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="{{ 'tonic-bar-banner.css' | asset_url }}">
+<noscript><link rel="stylesheet" href="{{ 'tonic-bar-banner.css' | asset_url }}"></noscript>
+
+<div class="page-width">
+  <div class="banner-content-wrapper">
+    <div class="sec-title">{% if section.settings.head != blank %}<h2 class="title">{{ section.settings.head }}</h2>{% endif %}</div>
+    <div class="descriptions">{{ section.settings.text }}</div>      
+  </div>
+</div>
+{% if section.settings.image != blank %}
+<div class="banner-media">
+  {% capture deskClass -%}{% if section.settings.mobimage != blank %}small-hide{% endif %}{%- endcapture %}
+  {{
+    section.settings.image
+    | image_url: width: 3600
+    | image_tag:
+      loading: "eager",
+      fetchPriority: "high",
+      width: section.settings.image.width,
+      height: section.settings.image.height,
+      sizes: "100vw",
+      widths: "450, 660, 900, 1320, 1800, 2100, 2400, 3600",
+      class: deskClass,
+      alt: section.settings.image.alt
+  }}
+  {% if section.settings.mobimage != blank %}
+    {{
+      section.settings.mobimage
+      | image_url: width: 900
+      | image_tag:
+        loading: "eager",
+        fetchPriority: "high",
+        width: section.settings.mobimage.width,
+        height: section.settings.mobimage.height,
+        sizes: "100vw",
+        widths: "450, 660, 900",
+        class: 'large-up-hide medium-hide',
+        alt: section.settings.mobimage.alt
+    }}
+  {% endif %}
+</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Tonic Bar Banner",
+  "tag": "section",
+  "class": "section tonic-bar-banner-wrapper",
+  "settings": [
+    {
+      "type":"text",
+      "id":"head",
+      "label":"Heading",
+      "default":"dine & Drink"
+    },
+    {
+      "type":"richtext",
+      "id":"text",
+      "label":"Text",
+      "default":"<p>From your morning coffee and post-workout recovery, to your grab & go lunch and afternoon pick-me-up, we've got what fuels you.</p>"
+    },
+    {
+      "type":"image_picker",
+      "id":"image",
+      "label":"Image"
+    },
+    {
+      "type":"image_picker",
+      "id":"mobimage",
+      "label":"Mobile Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tonic Bar Banner"
+    }
+  ]
+}
+{% endschema %}

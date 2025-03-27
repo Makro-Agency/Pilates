@@ -1,0 +1,412 @@
+<link rel="stylesheet" href="{{ 'section-contact-form.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'event-contact.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'section-contact-form.css' | asset_url }}"></noscript>
+<noscript><link rel="stylesheet" href="{{ 'event-contact.css' | asset_url }}"></noscript>
+
+
+
+<style>
+  {%- if section.settings.top_padding_remove or section.settings.bottom_padding_remove -%}
+    {% if section.settings.top_padding_remove %}
+      #shopify-section-{{ section.id }}.section-padding{
+        padding-top: 0 !important;
+      }
+    {% endif %}
+    
+    {% if section.settings.bottom_padding_remove %}
+      #shopify-section-{{ section.id }}.section-padding{
+        padding-bottom: 0 !important;
+      }
+    {% endif %}
+  {%- endif -%}
+
+  {%- assign text_color_left = blank -%}
+  {%- assign sub_color_left = blank -%}
+  {% if section.settings.text_color_left != blank and section.settings.text_color_left != 'rgba(0,0,0,0)' %}
+    {%- assign text_color_left = section.settings.text_color_left -%}
+  {% endif %}
+  {% if section.settings.sub_color_left != blank and section.settings.sub_color_left != 'rgba(0,0,0,0)' %}
+    {%- assign sub_color_left = section.settings.sub_color_left -%}
+  {% endif %}
+  .event-contact .leftBGPart.leftBGPart-{{ section.id }} { background-color: {{ section.settings.bg_color_left }}; }
+  .event-contact .leftBGPart.leftBGPart-{{ section.id }} h6 { color: {{ sub_color_left | default: text_color_left }}; }
+  .event-contact .leftBGPart { color: {{ text_color_left }}; }
+  .event-contact .leftBGPart.leftBGPart-{{ section.id }} .button--secondary { --color-button: {{ text_color_left | color_to_rgb | replace:'rgb(' | replace:')' }}; --color-button-text: {{ text_color_left | color_to_rgb | replace:'rgb(' | replace:')' }}; }
+</style>
+
+
+<div class="color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="contact grid grid--gapless grid--1-col grid--2-col grid--1-col-tablet-down _page-width _page-width--narrow{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    <div class="grid__item leftBGPart leftBGPart-{{ section.id }}">
+      <div class="left-top-text">
+        {% if section.settings.subheading_left != blank %}<h6 class="uppercase">{{ section.settings.subheading_left }}</h6>{% endif %}
+        {% if section.settings.heading_left != blank %}<h2 class="h2">{{ section.settings.heading_left }}</h2>{% endif %}
+        {% if section.settings.text_left != blank %}<div class="text-wrap">{{ section.settings.text_left }}</div>{% endif %}
+      </div>
+
+      {%- if section.settings.p_name or section.settings.p_tagline or section.settings.p_mail -%}
+        <div class="left-bottom-text">
+        {%- if section.settings.p_name != blank -%}<h3 class="text-name">{{ section.settings.p_name }}</h3>{%- endif -%}
+        {%- if section.settings.p_tagline != blank -%}  <div class="text-post">{{ section.settings.p_tagline }}</div>{%- endif -%}
+        {%- if section.settings.p_mail != blank -%}<a class="text-email" href="mailto:{{ section.settings.p_mail }}">{{ section.settings.p_mail }}</a>{%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+
+    <div class="grid__item rightContactPart{% if section.settings.show_current_activity_dropdown == false %} hide-activity-dropdown{% endif %}">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="title uppercase title-wrapper--no-top-margin inline-richtext h3">
+          {{ section.settings.heading }}
+        </h2>
+      {%- endif -%}  
+
+      {{ section.settings.embed-form }}
+      
+      {% comment %}
+      {% render 'embed-form',section:section %}
+      
+      <form id="" class="isolate event_contact_form" method="post" action="{{ section.settings.btn_url }}">
+        <div class="contact__fields">
+          <div class="field field-grp">
+            <input
+              class="input-field"
+              type="text"
+              id="ContactForm-first_name"
+              name="first-name"
+              aria-required="true"
+              required
+              placeholder="{{ 'templates.contact.form.first_name' | t }}*"
+            >
+            <div class="error-msg">This field is required</div>
+          </div>
+          <div class="field field-grp">
+            <input
+              class="input-field"
+              type="text"
+              id="ContactForm-last_name"
+              name="last-name"
+              aria-required="true"
+              required
+              placeholder="{{ 'templates.contact.form.last_name' | t }}*"
+            >
+            <div class="error-msg">This field is required</div>
+          </div>
+        </div>
+        <div class="contact__fields">
+          <div class="field field-grp">
+            <input
+              class="input-field"
+              type="email"
+              id="ContactForm-email"
+              class="field__input"
+              spellcheck="false"
+              autocapitalize="off"
+              name="email"
+              aria-required="true"
+              required
+              placeholder="{{ 'templates.contact.form.email' | t }}*"
+            >
+            <div class="error-msg">Enter valid email address</div>
+          </div>
+
+          <div class="field field-grp">
+            <input
+              class="input-field" 
+              type="tel"
+              id="ContactForm-phone"
+              class="field__input"
+              pattern="[0-9\-]*"
+              name="phone"
+              placeholder="{{ 'templates.contact.form.phone' | t }}"
+            >
+          </div>
+        </div>
+
+        <div class="field field-grp">
+          <input
+            class="input-field"
+            type="text"
+            id="ContactForm-company"
+            placeholder="Company"
+            name="company"
+          >
+        </div>
+
+        <div class="field field-grp">
+          <select class="input-field" name="occasion" id="Occasion">
+            <option value="Occasion 1">Occasion 1</option>
+            <option value="Occasion 2">Occasion 2</option>
+            <option value="Occasion 3">Occasion 3</option>
+            <option value="Occasion 4">Occasion 4</option>
+          </select>
+        </div>
+
+        <div class="contact__fields">
+          <div class="field field-grp">
+            <input
+              class="input-field input-field-date"
+              type="date"
+              id="ContactForm-date"
+              placeholder="Event Date"
+              name="event-date"
+              min="{{ 'now' | date: '%Y-%m-%d' }}"
+            >
+          </div>
+
+          <div class="field field-grp">
+            <input
+              class="input-field"
+              type="number"
+              id="ContactForm-guests"
+              min="1"
+              placeholder="Number of guests"
+              name="guests"
+            >
+          </div>
+        </div>
+        
+        <div class="field field-grp">
+          <textarea
+            rows="10"
+            id="ContactForm-body"
+            class="text-area input-field"
+            placeholder="Additional notes"
+            name="notes"
+          ></textarea>
+        </div>
+        <div class="field field-grp field-checkbox">
+          <input class="input-checkbox-field" type="checkbox" id="ContactForm-offer" name="receive special offers and promotions">
+          <label for="ContactForm-offer">Sign me up to receive special offers, promotions & updates from S&T.</label>
+        </div>
+        {%- if section.settings.btn_label != blank -%}
+          <div class="contact__button">
+            <button type="submit" class="button button--primary" data-form-submit>{{- section.settings.btn_label -}}</button>
+          </div>
+        {%- endif -%}
+        <div class="success-msg hidden">
+          {{ section.settings.success_msg | default: "Thanks for inquiring. Your entry is submitted, and we'll reach out to you soon." }}
+        </div>
+      </form>
+      {% endcomment %}
+    </div>
+  </div>
+</div>
+
+
+{% javascript %}
+
+  document.addEventListener('DOMContentLoaded', function(){
+    const submitFormBtn = document.querySelector('.event-contact .event_contact_form [data-form-submit]');
+    if(submitFormBtn){
+      submitFormBtn.addEventListener('click',function(e){
+        e.preventDefault();
+        const inquiryForm = document.querySelector('.event-contact .event_contact_form');
+        validateForm(inquiryForm);
+      });
+    }
+  });
+
+  function validateForm(form){
+    if(!form) return;
+    const requiredFormField = [...form.querySelectorAll('input[required]')];
+    let errorCount = 0;
+    if(requiredFormField.length){
+      requiredFormField.forEach(field => {
+        const fieldValue = field.value.trim();
+        const fieldType = field.getAttribute('type');
+        field.closest('.field').classList.remove('error-active');
+        if(!fieldValue.length){
+          field.closest('.field').classList.add('error-active');
+          errorCount += 1;
+        }else if(fieldType == 'email'){
+          const isValidEmail = validateEmail(field.value.trim(),field);
+          if(!isValidEmail) errorCount += 1;
+        }
+      });
+    }
+    if(errorCount === 0){
+     formSubmit(form);
+    }else{
+      return false;
+    }
+  }
+
+  function validateEmail(email,field) {
+    let mailRegularExpresion = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+    if (mailRegularExpresion) return true;    
+    field.closest('.field').classList.add('error-active');
+  }
+
+  function formSubmit(form){
+    if(!form) return;
+    const actionURL = form.getAttribute('action');
+    if(!actionURL) return;
+    
+    const formData = new FormData(form);
+
+    const dataSendToHook = async () => {
+      let formDataObject = {
+        method: 'POST',
+        headers: { "Accept": "application/json" },
+        body: formData
+      };
+      const response = await fetch(actionURL, formDataObject);
+      if (!response.ok) {
+        console.log('%cHTTP error! status:','color: red; font-size: 14px; font-weight: 700', response.status);
+        console.log('%cSomething went wrong, please refresh the page and try again..!!','color: red; font-size: 12px; font-weight: 700');
+        return;
+      }
+      const data = await response.json();
+      form.reset();
+      if(form.querySelector('.contact__button')) form.querySelector('.contact__button').classList.add('hidden');
+      if(form.querySelector('.success-msg')) form.querySelector('.success-msg').classList.remove('hidden');
+      console.log('%cForm submited success >>','color: green; font-size: 12px; font-weight: 700', data);
+    }
+    dataSendToHook();
+  }
+  
+{% endjavascript %}
+
+
+
+{% schema %}
+{
+  "name": "t:sections.contact-form.name",
+  "tag": "section",
+  "class": "section event-contact",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Left part"
+    },
+    {
+      "type": "paragraph",
+      "content": "----------------------"
+    },
+    {
+      "type": "color",
+      "id": "bg_color_left",
+      "label": "Select background color",
+      "default":"#26221B"
+    },
+    {
+      "type": "color",
+      "id": "text_color_left",
+      "label": "Select text color",
+      "default":"#fff"
+    },
+    {
+      "type": "color",
+      "id": "sub_color_left",
+      "label": "Select subheading color",
+      "default":"#c79d5b"
+    },
+    {
+      "type": "text",
+      "id": "subheading_left",
+      "default": "Ready to sweat?",
+      "label": "Sub heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading_left",
+      "default": "LET’S GET YOU IN",
+      "label": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "text_left",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "p_name",
+      "label": "Person name",
+      "default": "SARAH TRAN"
+    },
+    {
+      "type": "text",
+      "id": "p_tagline",
+      "label": "Person tagline",
+      "default": "Events & Sales Manager"
+    },
+    {
+      "type": "text",
+      "id": "p_mail",
+      "label": "Person email",
+      "default": "sarah@sweatandtonic.com"
+    },
+    {
+      "type": "header",
+      "content": "Right part"
+    },
+    {
+      "type": "paragraph",
+      "content": "----------------------"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Contact form",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "btn_label",
+      "default": "Submit event inquiry",
+      "label": "Button label"
+    },
+    {
+      "type": "text",
+      "id": "btn_url",
+      "label": "Form webhook URL"
+    },
+    {
+      "type": "richtext",
+      "id": "success_msg",
+      "label": "Success message",
+      "default": "<p>Thanks for inquiring. Your entry is submitted, and we'll reach out to you soon.</p>"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "top_padding_remove",
+      "default": false,
+      "label": "Remove top padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_padding_remove",
+      "default": false,
+      "label": "Remove bottom padding"
+    },
+    {
+      "type": "header",
+      "content": "Embed Form"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_current_activity_dropdown",
+      "label": "Show current activity dropdown",
+      "default": false
+    },
+    {
+      "type": "html",
+      "id": "embed-form",
+      "label": "Add Embeded Form Html"
+    }
+  ]
+}
+{% endschema %}

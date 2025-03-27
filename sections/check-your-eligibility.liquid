@@ -1,0 +1,1035 @@
+{{ 'corporate_reg.css' | asset_url | stylesheet_tag }}
+{% style %}
+ 
+  small.invalid_success_error.success,
+  small.valid_success_error.success {
+    color: #07f007;
+     display: inline-block;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.benifits-items.hide {
+    display: none;
+}
+{% endstyle %}
+<div class="check-your-eligibility color-{{ section.settings.color_scheme }}" id="check-your-eligibility">
+  <div class="inner-wrapper">
+    <div class="form-wrapper">
+      <div class="form-tab-1 open">
+        {% if section.settings.main-sub-title != blank %}
+          <div class="subtitle">{{ section.settings.main-sub-title }}</div>
+        {% endif %}
+        {% if section.settings.main-title != blank %}
+          <h2 class="h2 form-main-title">{{ section.settings.main-title }}</h2>
+        {% endif %}
+        {% if section.settings.caption-text != blank %}
+          <div class="form-description">
+            <p><br>{{ section.settings.caption-text }}</p>
+          </div>
+        {% endif %}
+        <form method="post" action="/" name="r1hpdc" id="check_eligibility" data-newsletter-form>
+          <div class="alert"></div>
+          <div class="form-group-wrapper">
+            <div class="field field-grp">
+              <label for="cr_work_email">Your Work Email</label>
+              <input type="text" name="cr_email" id="cr_email" class="input-field" required="required" placeholder="Your Work Email or Your Company Name">
+              <span class="msgs"></span>
+            </div>
+            <!-- <span class="divider">Or</span>
+            <div class="field field-grp">
+              <label for="cr_company_name">Your Company Name</label>
+              <input type="text" name="cr_company_name" id="cr_company_name" class="input-field" required="required" placeholder="Your Company Name">
+            </div> -->
+          </div>
+          <small class="emailval_err"></small>
+          <button type="button" class="button button--primary button--full-width" id="cr_submit">
+            <span class="span-text">Check</span>
+            <span class="loader hidden" id="loadingSpinner"></span>
+            <!-- <div class="loading-overlay__spinner" id="loadingSpinner">
+              <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+              </svg>
+          </div> -->
+          </button>
+           <p class="msg_box"></p>
+        </form>
+      </div>
+      <div class="form-tab-2">
+        <div class="status-box">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+              <path d="M31 5L10.375 25L1 15.9091" stroke="#C79D5B" stroke-width="1.2"></path>
+            </svg>
+          </span>
+          <h2 class="h2 form-main-title">
+            <!-- commented by Lok -->
+            <!-- The <span class="valid_data"></span> you provided is eligible for the Sweat & Tonic benefit -->
+           Congratulations - your <span class="eligibility_type"></span> is already enrolled! 
+            <!-- The <span class="eligibility_type"></span> you provided is eligible for the Sweat & Tonic benefit -->
+          </h2>
+        </div>
+        <div class="subtitle" id="name_of_validation">RBC Canada</div>
+        <h4 class="h4 benifits-title">{{ section.settings.benefits-title }}</h4>
+        <div class="benifits-container">
+          <div class="benifits-items">
+            <span class="discount-title item-title">Membership Discount</span>
+            <span class="discount-value value" id="mem-discount">18%</span>
+          </div>
+          <div class="benifits-items">
+            <span class="discount-title item-title">S&T Shop discount</span>
+            <span class="discount-value value" id="st-discount">10%</span>
+          </div>
+          <div class="benifits-items">
+            <span class="discount-title item-title">Guest Credits/month</span>
+            <span class="discount-value value" id="guest-credit">5</span>
+          </div>
+          <div class="benifits-items">
+            <span class="discount-title item-title">Personal training/month</span>
+            <span class="discount-value value" id="pers-traning">4</span>
+          </div>
+          <div class="benifits-items">
+            <span class="discount-title item-title">Pool access</span>
+            <span class="discount-value value" id="pool-access">Unlimited</span>
+          </div>
+        </div>
+        <div class="signup-box">
+          {% if section.settings.how_to_access != blank %}<h5 class="h5">{{ section.settings.how_to_access }}</h5>{% endif %}
+          <ul>
+            {% if section.settings.htw_item1 != blank %}
+            <li>{{ section.settings.htw_item1 }}</li>
+              {% endif %}
+            {% if section.settings.htw_item2 != blank %}
+            <li>{{ section.settings.htw_item2 }}</li>
+              {% endif %}
+          </ul>
+          <button class="button btn-big-width button--secondary" id="connect_account">{{ section.settings.connect-btn }}</button>
+        </div>
+        <span class="link global-link check-different">
+          {% render 'left-arrow' %}Check Another <span class="valid_data_btn"></span>
+        </span>
+      </div>
+      <div class="form-tab-3 create-account-tab">
+        <div class="status-box">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+              <path d="M31 5L10.375 25L1 15.9091" stroke="#C79D5B" stroke-width="1.2"></path>
+            </svg>
+          </span>
+          <h2 class="h2 form-main-title">
+            Congratulations - your <span class="eligibility_type"></span> is already enrolled! 
+            <!-- The <span class="eligibility_type"></span> you provided is eligible for the Sweat & Tonic benefit -->
+          </h2>
+          {% if section.settings.subtitle-form3 != blank %}<div class="subtitle">{{ section.settings.subtitle-form3 }}</div> {% endif %}
+        </div>
+
+        <div class="eligibility_create_form">
+          <div id="eligibility_create_form-inner">
+            <form
+              id="valid_eligible_form"
+              action="{{ section.settings.form_action_url }}"
+              method="post"
+              class="isolate whole-sale-form"
+              accept-charset="UTF-8"
+              enctype="text/plain"
+            >
+              
+              <div class="alert" id="alert3"></div>
+              <div class="form-group-wrapper">
+                <div class="field field-grp klaviyo_field_group">
+                  <div class="klaviyo_field">
+                    <label for="elcreate_name">Your Name</label>
+
+                    <input
+                      type="text"
+                      name="fullname"
+                      id="elcreate_name"
+                      class="input-field full_name"
+                      placeholder="Your Name"
+                    >
+                    <small class="full_name_error"></small>
+                  </div>
+                </div>
+
+                <div class="field field-grp klaviyo_field_group">
+                  <div class="klaviyo_field _email">
+                    <label for="elcreate_email">Email Address</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="elcreate_email"
+                      class="input-field email_address"
+                      placeholder="Your E-Mail"
+                    >
+                    <small class="email_address_error"></small>
+                  </div>
+                </div>
+                <div class="field field-grp klaviyo_field_group">
+                  <div class="klaviyo_field">
+                    <label for="elcreate_message">Message</label>
+
+                    <input
+                      type="text"
+                      name="massage"
+                      id="elcreate_message"
+                      class="input-field message"
+                      placeholder="Message"
+                    >
+                    <small class="message_error"></small>
+                  </div>
+                </div>
+                <!-- <div class="field field-grp select-drop-down">
+                  <div class="klaviyo_field">
+                    <select
+                      name="contact[reason]"
+                      id="contact_reason"
+                      class="input-field select-btn"
+                      required
+                    >
+                      
+                     <div class="option"> <option value="new-to-sweat-n-tonic">New to Sweat & Tonic</option></div>
+                     <div class="option"> <option value="connecting-account">Connecting Account</option></div>
+                    </select>
+                  </div>
+                </div> -->
+              <div class="field field-grp select-option">
+              <p>Do you have an account with Sweat and Tonic?</p>
+              <div class="field-select-radio">
+                <label>
+                  <input type="radio" name="has_account" value="Yes" checked> Yes
+                </label>
+                <label>
+                  <input type="radio" name="has_account" value="No"> No
+                </label>
+              </div>
+            </div>
+            
+            <div class="field field-grp select-option">
+              <p>Do you have an existing membership with Sweat and Tonic?</p>
+              <div class="field-select-radio">
+                <label>
+                  <input type="radio" name="has_membership" value="Yes" checked> Yes
+                </label>
+                <label>
+                  <input type="radio" name="has_membership" value="No" > No
+                </label>
+              </div>
+            </div>
+
+                <!-- <div class="field field-grp select-drop-down">
+                  <button type="button" class="select-btn">
+                    <span class="sBtn-text">Select an option</span>
+
+                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="Vector" d="M11 1L6 6L1 1" stroke="white"></path>
+                    </svg>
+
+                  </button>
+                  <ul class="options">
+                    <li class="option">
+                      <span class="option-text">New to Sweat & Tonic</span>
+                    </li>
+                    <li class="option">
+                      <span class="option-text">Connecting Account</span>
+                    </li>
+                  </ul>
+                </div> -->
+                        
+              </div>
+              <div class="klaviyo_messages">
+                <div class="success_message" style="display:none;"></div>
+                <div class="error_message" style="display:none;"></div>
+              </div>
+               
+              <button
+                type="submit"
+                class="button button--submit button--primary button--full-width"
+                id="valid_eligible_form_submit"
+              >
+                Create Account
+              </button>
+               <small class="valid_success_error"></small>
+            </form>
+          </div>
+        </div>
+        <span class="link global-link check-different" id="check3">
+          {% render 'left-arrow' %}Check Another <span class="valid_data_btn"></span>
+        </span>
+      </div>
+      <div class="form-tab-4 create-account-tab not-eligible ">
+        <div class="status-box">
+          <h2 class="h2 form-main-title">
+             Your <span class="eligibility_type"></span>  is eligible to join the program! 
+            <!-- Your <span class="eligibility_type"></span> isn't eligible for the Sweat and Tonic perk just yet -->
+          </h2>
+          {% if section.settings.subtitle-form4 != blank %}
+          <div class="subtitle">
+           {{ section.settings.subtitle-form4 }}
+          </div>
+            {% endif %}
+        </div>
+
+        <div class="eligibility_create_form">
+          <div id="eligibility_create_form-inner">
+            <form
+              id="invalid_eligible_form"
+              action="{{ section.settings.form_action_url2 }}"
+              method="post"
+              class="isolate whole-sale-form"
+              accept-charset="UTF-8"
+              enctype="text/plain"
+            >
+              <div class="alert" id="alert4"></div>
+              <div class="form-group-wrapper">
+                <div class="field field-grp">
+                  <label for="not_elcreate_name">Your Name*</label>
+                  <input
+                    type="text"
+                    name="fullname"
+                    id="not_elcreate_name"
+                    class="input-field self_name"
+                    placeholder="Your Name*"
+                  >
+                  <small class="self_name_error"></small>
+                </div>
+
+                <div class="field field-grp">
+                  <label for="not_elcreate_email">Your E-Mail*</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="not_elcreate_email"
+                    class="input-field self_email"
+                    placeholder="Your E-Mail*"
+                  >
+                  <small class="self_email_error"></small>
+                </div>
+                <div class="field field-grp">
+                  <label for="not_elcreate_hr_email">HR E-Mail</label>
+                  <input
+                    type="email"
+                    name="hr-email"
+                    id="not_elcreate_hr_email"
+                    class="input-field hr_email"
+                    placeholder="HR E-Mail"
+                  >
+                  <small class="hr_email_error"></small>
+                </div>
+                <div class="field field-grp">
+                  <label for="not_elcreate_company_name">Your Company Name*</label>
+                  <input
+                    type="text"
+                    name="message"
+                    id="not_elcreate_company_name"
+                    class="input-field company_name"
+                    placeholder="Your Company Name*"
+                  >
+                  <small class="company_name_error"></small>
+                </div>
+              </div>
+              
+              <button
+                type="submit"
+                class="button button--submit button--primary button--full-width"
+                id="invalid_eligible_form_submit"
+              >
+                <span class="span-text">Send form</span>
+                <span class="loader hidden" id="loadingSpinner"></span>
+              </button>
+              <small class="invalid_success_error"></small>
+            </form>
+          </div>
+        </div>
+        <span class="link global-link check-different" id="check4">
+          {% render 'left-arrow' %}Check Another <span class="valid_data_btn"></span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% comment %}
+<!-- {{ shop.metafields.accentuate.Sweatandtonic }} -->
+<!-- {{ shop.metafields.accentuate.company_membership_ }} -->
+{% endcomment %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+ 
+
+   var EmailsArrayMeta = '';
+    {% for validemail in shop.metafields.accentuate.Sweatandtonic %}
+      {% if validemail != blank %}
+        if(EmailsArrayMeta == ''){
+          EmailsArrayMeta = '{{ validemail }}';
+        }else{
+          EmailsArrayMeta = EmailsArrayMeta +  ',' + '{{ validemail }}';
+        }
+      {% endif %}
+    {% endfor %}
+
+     var CompanyArrayMeta = '';
+    {% for comapnyarray in shop.metafields.accentuate.Flexifloor %}
+      {% if comapnyarray != blank %}
+        if(CompanyArrayMeta == ''){
+          CompanyArrayMeta = '{{ comapnyarray }}';
+        }else{
+          CompanyArrayMeta = CompanyArrayMeta +  ',' + '{{ comapnyarray }}';
+        }
+      {% endif %}
+    {% endfor %}
+    
+     var stDiscountMeta = '';
+    {% for st in shop.metafields.accentuate.st_shop_discount %}
+        {% if st %}
+            {% if forloop.first %}
+                stDiscountMeta = '{{ st }}';
+            {% else %}
+                stDiscountMeta = stDiscountMeta + ',' + '{{ st }}';
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+
+      var perTrainingMeta = '';
+    {% for pt in shop.metafields.accentuate.personal_trainingmonth %}
+        {% if pt %}
+            {% if forloop.first %}
+                perTrainingMeta = '{{ pt }}';
+            {% else %}
+                perTrainingMeta = perTrainingMeta + ',' + '{{ pt }}';
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+  
+    
+ var poolAccessMeta = '';
+    {% for pa in shop.metafields.accentuate.pool_access %}
+        {% if pa %}
+            {% if forloop.first %}
+                poolAccessMeta = '{{ pa }}';
+            {% else %}
+                poolAccessMeta = poolAccessMeta + ',' + '{{ pa }}';
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    
+  var memDiscountMeta = '';
+    {% for md in shop.metafields.accentuate.sweattonic %}
+        {% if md %}
+            {% if forloop.first %}
+                memDiscountMeta = '{{ md }}';
+            {% else %}
+                memDiscountMeta = memDiscountMeta + ',' + '{{ md }}';
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+
+var guestCreditMeta = '';
+{% for gc in shop.metafields.accentuate.guest_creditsmonth %}
+    {% if gc %}
+        {% if forloop.first %}
+            guestCreditMeta = '{{ gc }}';
+        {% else %}
+            guestCreditMeta = guestCreditMeta + ',' + '{{ gc }}';
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+    
+      // console.log('EmailsArrayMeta', EmailsArrayMeta);
+      // console.log('CompanyArrayMeta', CompanyArrayMeta);
+      // console.log('perTrainingMeta', perTrainingMeta);
+      // console.log('stDiscountMeta', stDiscountMeta);
+      // console.log('poolAccessMeta', poolAccessMeta);
+      // console.log('memDiscountMeta', memDiscountMeta);
+      // console.log('guestCreditMeta', guestCreditMeta);
+
+      var validEmailsArray = EmailsArrayMeta.split(",");
+      var validCompanyArray = CompanyArrayMeta.split(",");
+      var guestCredit = guestCreditMeta.split(",");
+      var perTraining = perTrainingMeta.split(",");
+      var stDiscount = stDiscountMeta.split(",");
+      var poolAccess = poolAccessMeta.split(",");
+      var memDiscount = memDiscountMeta.split(",");
+
+    
+      {% comment %} console.log('validEmailsArray', validEmailsArray);
+      console.log('validCompanyArray', validCompanyArray);
+      console.log('CompanyArrayMeta', CompanyArrayMeta);
+      console.log('perTraining', perTraining);
+      console.log('stDiscount', stDiscount);
+      console.log('poolAccess', poolAccess);
+      console.log('memDiscount', memDiscount);
+      console.log('guestCredit', guestCredit); {% endcomment %}
+    
+    
+    // validEmailsArray.pop();
+    // validCompanyArray.pop();
+    
+    const errorMsg = document.querySelector('.msg_box');
+    const loadingSpinner = document.getElementById('loadingSpinner');
+    const connectAcc = document.querySelector('#connect_account');
+    const nameValidation = document.getElementById('name_of_validation');
+    // Get forms
+    const form4 = document.querySelector('.form-tab-4');
+    const form3 = document.querySelector('.form-tab-3');
+    const form2 = document.querySelector('.form-tab-2');
+    const form1 = document.querySelector('.form-tab-1');
+    {% comment %} loadingSpinner.style.display = 'none' {% endcomment %}
+
+    const validDataElements = document.querySelectorAll('.valid_data');
+    const validDataElBtn = document.querySelectorAll('.valid_data_btn');
+    
+    // Show the relevant form
+    function showForm(formToShow) {
+        [form1, form2, form3, form4].forEach(form => {
+            form.classList.toggle('open', form === formToShow);
+        });
+    }
+
+    // Event listeners for showing forms
+    document.querySelector('.check-different').addEventListener('click', () => {
+      errorMsg.innerHTML = ''; 
+      showForm(form1);
+      //loadingSpinner.style.display = 'none';
+    });
+    document.getElementById('check3').addEventListener('click', () => {
+      errorMsg.innerHTML = ''; 
+        showForm(form1);
+        //loadingSpinner.style.display = 'none';
+    });
+    document.getElementById('check4').addEventListener('click', () => {
+      errorMsg.innerHTML = ''; 
+        showForm(form1);
+        //loadingSpinner.style.display = 'none';
+    });
+    
+    // Event listener for the Connect Account button
+    connectAcc.addEventListener('click', function() {
+        form1.classList.remove('open');
+        form2.classList.remove('open');
+        form3.classList.add('open');
+        form4.classList.remove('open');
+    });
+
+    // Update additional fields
+    const personal_training = document.getElementById('pers-traning');
+    const mem_discount_v = document.getElementById('mem-discount');
+    const st_discount_v = document.getElementById('st-discount');
+    const guest_credit_v = document.getElementById('guest-credit');;
+    const pool_access_v = document.getElementById('pool-access');
+    
+    // Combine all arrays into one list of arrays (for possible future use)
+    const allArrays = [validEmailsArray, perTraining];
+
+    // Add event listener to the submit button
+    document.getElementById('cr_submit').addEventListener('click', function(event) {
+      
+        event.preventDefault(); // Prevent form submission
+     
+        event.target.closest('button').querySelector('.span-text').classList.add('hidden');
+        event.target.closest('button').querySelector('.loader').classList.remove('hidden');
+        setTimeout(function() {
+          event.target.closest('button').querySelector('.span-text').classList.remove('hidden');
+          event.target.closest('button').querySelector('.loader').classList.add('hidden');
+        }, 1500);
+        const email = document.getElementById('cr_email').value.trim().toLowerCase(); // Convert email to lowercase
+        // const companyName = document.getElementById('cr_company_name').value.trim().toLowerCase(); // Convert company name to lowercase
+    
+        // Check if the email or company name inputs are empty
+        if (!email) {
+          errorMsg.classList.remove('success'); // Add the error class
+          
+          errorMsg.classList.add('error'); // Add the error class
+          errorMsg.innerHTML = 'Please enter a valid email or company name.'; // Set the error message
+          
+          return; // Stop execution if both are empty
+        }
+        else if(/^\d+$/.test(email))
+        {
+          errorMsg.classList.remove('success'); // Add the error class
+          
+          errorMsg.classList.add('error'); // Add the error class
+          errorMsg.innerHTML = 'Please enter a valid email or company name.'; // Set the error message
+          
+          return; // Stop execution if both are empty
+        }
+    
+        let isEmailFound = false; // Flag to track if email is found
+        // let isCompanyNameFound = false; // Flag to track if company name is found
+        let matchedIndex = -1; // Store the index where the match is found
+    
+        var emails_array = [];
+        var email_domain = [];
+      
+        var comapny_array = [];
+      
+    
+        $.each(validEmailsArray,function(index,element){
+          var split_company_email = element.split('|');
+    
+          emails_array.push(split_company_email);
+          
+        })
+
+       $.each(validCompanyArray,function(index,element){
+          var split_company_name = element.split('|');
+    
+          comapny_array.push(split_company_name);
+          
+        })
+      
+    // console.log('comapny_array', comapny_array)
+
+      
+     
+      // console.log('array',emails_array)
+        $.each(emails_array,function(index,element){
+          var splitvalue = [];
+          
+          if(element.constructor == Array)
+          {
+            $.each(element,function(key,value){
+               splitvalue = value.split('@');
+            })
+          }
+          else
+            splitvalue = element.split('@');
+    
+           splitvalue.shift();
+           email_domain.push(splitvalue[0]);
+        })
+
+        if(email.includes('@'))
+        {
+          $.each(emails_array,function(index,element){
+            if(element.includes(email))
+            {
+              isEmailFound = true;
+              matchedIndex = index;
+            }
+            else
+            {
+              $.each(element,function(key,value){
+                if(value.includes(email))
+                {
+                  isEmailFound = true;
+                  matchedIndex = index;
+                }
+              })
+            }
+          })
+          
+          $(".eligibility_type").text('Email');
+          $(".valid_data_btn").text('Email');
+          
+        }
+        else if(email.includes('.'))
+        {
+          $.each(email_domain,function(index,element){
+            if(element == email)
+            {
+              isEmailFound = true;
+              matchedIndex = index;
+            }
+          })
+          $(".eligibility_type").text('Email');
+          $(".valid_data_btn").html('Email');
+          
+        }  
+        else
+        {
+          $.each(comapny_array,function(index,element){
+            // console.log('element Company Name', element);
+          
+                $.each(element,function(key,value){
+                   if(value.toLowerCase() == email){
+                   console.log('hello', element);
+                     
+                   isEmailFound = true;
+                    matchedIndex = index;
+                }
+                })
+                       
+              })
+          $(".eligibility_type").html('Company');
+          $(".valid_data_btn").html('Company');
+        }
+        
+        
+   
+        // Determine the company and training values from the matched index
+        const training = perTraining[matchedIndex] || null; // If no training data, set it to null
+        const mem_discount = memDiscount[matchedIndex] || null;
+        const guest_credit = guestCredit[matchedIndex] || null;
+        const pool_access = poolAccess[matchedIndex] || null;
+        const st_discount = stDiscount[matchedIndex] || null;
+      
+        const discountElements = [
+          { id: '#mem-discount', value: mem_discount },
+          { id: '#st-discount', value: st_discount },
+          { id: '#guest-credit', value: guest_credit },
+          { id: '#pers-traning', value: training },
+          { id: '#pool-access', value: pool_access }
+        ];
+        
+        // Loop through each discount element
+        $.each(discountElements, function(index, item) {
+          // Check if the discount value is null or empty
+          if (item.value == null || item.value === '') {
+            $(item.id).closest('.benifits-items').addClass('hide'); // Add 'hide' class if no data
+          } else {
+            $(item.id).closest('.benifits-items').removeClass('hide'); // Remove 'hide' class if data exists
+            $(item.id).html(item.value); // Update the div with the discount value
+          }
+        });
+      
+        // Handle the success cases
+        if (isEmailFound) {
+          personal_training.innerHTML = training;
+          pool_access_v.innerHTML = pool_access;
+          guest_credit_v.innerHTML = guest_credit;
+          st_discount_v.innerHTML = st_discount;
+          mem_discount_v.innerHTML = mem_discount;
+          
+          errorMsg.classList.remove('error'); // Add the error class
+          errorMsg.classList.add('success'); // Add the error class
+          errorMsg.innerHTML = '';
+          nameValidation.innerHTML = email;
+         
+          
+          loadingSpinner.style.display = 'block';
+          // showForm(form2);
+          setTimeout(() => {
+            showForm(form2);
+          }, 1000); 
+          
+          // Show success alert if the email is valid and include all values from the matched index
+          console.log(`Success! The email is valid. Email: ${email} Company: ${company} Training: ${training} email Domain: ${training}email Domain with at: ${training}`);
+        }  else {
+           setTimeout(() => {
+            showForm(form4);
+          }, 1000); 
+          
+       
+          // Display error message if neither is valid
+          errorMsg.classList.remove('success'); // Add the error class
+          errorMsg.classList.add('error'); // Add the error class
+          // errorMsg.innerHTML = 'Error! The entered email and/or company name do not match any valid entries.';
+        }
+    });
+
+
+    // ---------------- Handle dropdown menu -------------------
+    const menu = document.querySelector(".select-drop-down");
+    if (menu) {
+      const [selectBtn, sBtnText] = [menu.querySelector(".select-btn"), menu.querySelector(".sBtn-text")];
+
+      selectBtn.onclick = () => menu.classList.toggle("active");
+
+      menu.querySelectorAll(".option").forEach(option => {
+        option.onclick = () => {
+          sBtnText.innerText = option.querySelector(".option-text").innerText;
+          menu.classList.remove("active");
+        };
+      });
+    }
+
+  });
+
+// Valid eligible form start
+
+  
+$('.full_name').on('blur', function() {
+    const fullName = $(this).val().trim();
+    const isEmpty = fullName === '';
+    const isValid = /^[A-Za-z\s]+$/.test(fullName);
+    const wordCount = fullName.length; // Correct variable for word count
+
+    if (isEmpty)
+        $('.full_name_error').text("Name is required.");
+    else if (!isValid)
+        $('.full_name_error').text("only letters are allowed."); 
+    else if (wordCount < 2 || wordCount > 20)
+        $('.full_name_error').text("Name must be between 2 and 20 words.");
+    else
+      $('.full_name_error').text('');  
+});
+
+$('.email_address').on('blur', function() {
+    const Email = $(this).val().trim();
+    const isEmpty = Email === '';
+    const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(Email);
+
+    if (isEmpty)
+        $('.email_address_error').text("Email is required.");
+    else if (!isValid)
+        $('.email_address_error').text("Email is not valid.");
+    else
+      $('.email_address_error').text('');
+      
+});
+
+$('.message').on('blur', function() {
+    const message = $(this).val().trim();
+    const isEmpty = message === '';
+
+    if (isEmpty)
+        $('.message_error').text("Message is required.");
+    else
+      $('.message_error').text('');
+});
+
+$('#valid_eligible_form').on('submit', function(e) {
+    e.preventDefault();
+    const fullName = $('.full_name').val().trim();
+    const Email = $('.email_address').val().trim();
+    const message = $('.message').val().trim();
+    const url = "{{ section.settings.form_action_url }}";
+    
+    if(fullName === '')
+      $('.full_name_error').text("Name is required.");
+    else if(Email === '')
+      $('.email_address_error').text("Email is required.");
+    else if(message === '')
+        $('.message_error').text("Message is required.");
+    else
+    {
+      $('.full_name_error, .message_error, .email_address_error').text('');
+      // $('.valid_success_error').text("Details Submitted.");
+      $.ajax({
+         type: "POST",
+         url: url,
+         data: $(this).serialize(),
+         success: function(response) {
+           console.log("Success ",response);
+           $('.valid_success_error').addClass("success");
+           $('.valid_success_error').text("The form has been sent successfully!");
+         },
+         error: function(xhr, status, error){
+           console.log("Error ",error);
+            $('.valid_success_error').text("Something error");    
+         }
+       });
+    }
+      
+});
+// Valid eligible form end
+
+// Invalid eligible form start
+  
+$('.self_name').on('blur', function() {
+    const fullName = $(this).val().trim();
+    const isEmpty = fullName === '';
+    const isValid = /^[A-Za-z\s]+$/.test(fullName);
+    const wordCount = fullName.length; // Correct variable for word count
+
+    if (isEmpty)
+        $('.self_name_error').text("Name is required.");
+    else if (!isValid)
+        $('.self_name_error').text("only letters are allowed.");
+    else if (wordCount < 2 || wordCount > 20)
+        $('.self_name_error').text("Name must be between 2 and 20 words.");
+    else
+      $('.self_name_error').text('');  
+});  
+
+$('.self_email').on('blur', function() {
+    const Email = $(this).val().trim();
+    const isEmpty = Email === '';
+    const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(Email);
+
+    if (isEmpty)
+        $('.self_email_error').text("Email is required.");
+    else if (!isValid)
+        $('.self_email_error').text("Email is not valid.");
+    else
+      $('.self_email_error').text('');
+      
+});
+
+$('.hr_email').on('blur', function() {
+    const Email = $(this).val().trim();
+    const isEmpty = Email === '';
+    const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(Email);
+
+    // if (isEmpty)
+    //     $('.hr_email_error').text("Email is required.");
+    if (!isValid)
+        $('.hr_email_error').text("Email is not valid.");
+    else
+      $('.hr_email_error').text('');
+      
+});
+
+$('.company_name').on('blur', function() {
+    const companyName = $(this).val().trim();
+    const isEmpty = companyName === '';
+    const isValid = /^[A-Za-z]+$/.test(companyName);
+
+    if (isEmpty)
+        $('.company_name_error').text("Company name is required.");
+    else if (!isValid)
+        $('.company_name_error').text("only letters are allowed.");
+    else
+      $('.company_name_error').text('');  
+});
+
+$('#invalid_eligible_form').on('submit', function(e) {
+    e.preventDefault();
+    const selfName = $('.self_name').val().trim();
+    const selfEmail = $('.self_email').val().trim();
+    const hrEmail = $('.hr_email').val().trim();
+    const companyName = $('.company_name').val().trim();
+    const url = "{{ section.settings.form_action_url2 }}";
+
+    e.target.querySelector('button[id="invalid_eligible_form_submit"]').classList.add('hidden');
+    e.target.querySelector('.loader').classList.remove('hidden');
+    setTimeout(function() {
+      e.target.querySelector('button[id="invalid_eligible_form_submit"]').classList.remove('hidden');
+      e.target.querySelector('.loader').classList.add('hidden');
+    }, 1500);
+    
+    if(selfName === '')
+      $('.self_name_error').text("Name is required.");
+    else if(selfEmail === '')
+      $('.self_email_error').text("Email is required.");
+    // else if(hrEmail === '')
+    //   $('.hr_email_error').text("HR Email is required.");
+    else if(companyName === '')
+        $('.company_name_error').text("Company name is required.");
+    else
+    {
+      $('.self_name_error, .self_email_error, .hr_email_error, .company_name_error').text('');
+      // $('.invalid_success_error').text("Details Submitted.");
+      $.ajax({
+         type: "POST",
+         url: url,
+         data: $(this).serialize(),
+         success: function(response) {
+           console.log("Success ",response);
+           $('.invalid_success_error').addClass("success");
+           $('.invalid_success_error').text("The form has been sent successfully!");
+         },
+         error: function(xhr, status, error){
+           console.log("Error ",error);
+            $('.invalid_success_error').text("Something error");    
+         }
+       });
+    }
+      
+});
+  
+</script>
+
+<style>
+  .error {
+    border: 1px solid red;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Check Your Eligibility",
+  "settings": [
+
+    {
+    "type": "color_scheme",
+    "id": "color_scheme",
+    "label": "t:sections.all.colors.label",
+    "default": "background-1"
+  },
+    {
+      "type": "header",
+      "content": "Form 1"
+    },
+    {
+      "type": "text",
+      "id": "main-sub-title",
+      "label": "Main Subtitle",
+      "default": "for Employees"
+    },
+     {
+      "type": "text",
+      "id": "main-title",
+      "label": "Main Title",
+      "default": "Check Your Eligibility"
+    },
+     {
+      "type": "inline_richtext",
+      "id": "caption-text",
+      "label": "Caption Text",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero"
+    },
+     {
+      "type": "header",
+      "content": "Form 2"
+    },
+    {
+      "type": "text",
+      "id": "benefits-title",
+      "label": "Benefits Title",
+      "default": "Check Your Eligibility"
+    },
+     {
+      "type": "text",
+      "id": "how_to_access",
+      "label": "How To Access Benefits",
+      "default": "How to Access Benefits"
+    },
+     {
+      "type": "text",
+      "id": "htw_item1",
+      "label": "how to access text here",
+      "default": "Click to sign up or send a request to connect your existing Sweat & Tonic account"
+    },
+     {
+      "type": "text",
+      "id": "htw_item2",
+      "label": "how to access text here",
+      "default": "If you have already connected your account, you have already have access to all these benefits! See you soon."
+    },
+    {
+      "type": "text",
+      "id": "connect-btn",
+      "label": "Connect Account",
+      "default": "Connect Account"
+    },
+     {
+      "type": "header",
+      "content": "Form 3"
+    },
+     {
+      "type": "text",
+      "id": "subtitle-form3",
+      "label": "Sub Title",
+      "default": "Send a request to get Sweat & Tonic benefits"
+    },
+    {
+      "type": "url",
+      "id": "form_action_url",
+      "label": "Form URL For Eligible User"
+    },
+    {
+      "type": "header",
+      "content": "Form 4"
+    },
+     {
+      "type": "text",
+      "id": "subtitle-form4",
+      "label": "Sub Title",
+      "default": " Provide the following details to help your company get started, we've got plenty more in store for you"
+    },
+    {
+      "type": "url",
+      "id": "form_action_url2",
+      "label": "Form URL For Not ligible User"
+    },
+  ],
+  "presets": [
+    {
+    "name": "Check Your Eligibility",
+    }
+  ]
+}
+{% endschema %}

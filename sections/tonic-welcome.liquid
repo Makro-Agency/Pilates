@@ -1,0 +1,100 @@
+<link rel="stylesheet" href="{{ 'tonic-welcome.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'tonic-welcome.css' | asset_url }}"></noscript>
+
+{%- if section.settings.title != blank -%}
+  <div class="page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+    <div class="sec-head">
+      <h2 class="title">{{ section.settings.title }}</h2>  
+      {%- if section.settings.anchor_label != blank -%}
+        <a href="#" class="more-link link global-link" data-scroll-next>{{ section.settings.anchor_label }} {% render 'icon-link-arrow' %}</a> 
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%}
+
+
+{%- capture tonicFeatures -%}
+  {%- for block in section.blocks -%}
+    {%- if block.type == 'features' -%}
+      
+      {%- if block.settings.svg_code != blank or block.settings.title != blank or block.settings.desc != blank -%}
+        <div class="service-item">
+        {%- if block.settings.svg_code != blank -%}
+          <i class="icon">{{ block.settings.svg_code }}</i>
+        {%- endif -%}
+        {%- if block.settings.title != blank -%}
+          <h3 class="item-title">{{ block.settings.title }}</h3>
+        {%- endif -%}
+        {%- if block.settings.desc != blank -%}
+          <div class="texts">{{ block.settings.desc }}</div>
+        {%- endif -%}
+        </div>
+      {%- endif -%}
+
+    {%- endif -%}
+      
+  {%- endfor -%}
+{%- endcapture -%}
+
+
+{%- if tonicFeatures != blank -%}
+  <div class="services-box{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+    {{ tonicFeatures }}
+  </div>
+{%- endif -%}
+
+
+
+{% schema %}
+{
+  "name": "Tonic Welcome",
+  "tag": "section",
+  "class": "section tonic-welcome-wrapper",
+  "settings": [    
+    {
+      "type": "html",
+      "label": "Style title",
+      "id": "title",
+      "default": "Welcome to <span>Tonic House</span>, where innovation meets relaxation. With <span>multiple locations</span>, tonic house is more than a fitness club",
+      "info": "For adding color to the word, wrap word in the <span></span> tag"
+    },
+    {
+      "type": "text",
+      "label": "Anchor link label",
+      "id": "anchor_label",
+      "info": "This link will jump to below location section"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "features",
+      "limit": 4,
+      "name": "Features",
+      "settings": [
+        {
+          "type": "html",
+          "label": "SVG image code",
+          "id": "svg_code"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "SOCIALIZE"
+        },
+        {
+          "type": "richtext",
+          "id": "desc",
+          "label": "Description",
+          "default": "<p>Kick back, unwind and let the good vibes flow as you hang out with friends and fellow fitness fanatics in our welcoming space.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tonic Welcome"
+    }
+  ]
+}
+{% endschema %}

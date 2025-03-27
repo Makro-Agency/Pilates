@@ -1,0 +1,140 @@
+{{ 'section-main-page.css' | asset_url | stylesheet_tag }}
+{%- assign loadingType = 'lazy' -%}
+{%- assign fetchPriorityType = 'auto' -%}
+
+{%- liquid
+  assign full_width = '100vw'
+  assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'  
+-%}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="page-width _page-width--narrow section-{{ section.id }}-padding">
+  <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %} {% if template == 'page.book-buy' or page.handle == 'reserve' or page.handle == 'pricing' %}hidden{% endif %}">
+    {{ page.title | escape }}
+  </h1>
+  {%- assign book_classes = section.blocks | where: 'type','book_classes' -%}
+  {%- if book_classes.size > 0 and page.handle == 'reserve' -%}
+    {%- for block in book_classes -%}
+    {%- if block.settings.image != blank -%}
+    <div class="bookClassesImg">
+      <a target="_blank" href="{{ block.settings.url | default: '#' }}" rel="noopener">
+        <div class="media{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+          {%- liquid
+            assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio                        
+            assign sizes = full_width            
+            assign image_class = ''
+            if block.settings.image_mobile != blank
+              assign image_class = 'small-hide'
+            endif
+          -%}
+          {{
+            block.settings.image
+            | image_url: width: 3840
+            | image_tag:
+              loading: loadingType,
+              fetchPriority: fetchPriorityType,
+              width: block.settings.image.width,
+              height: image_height,
+              class: image_class,
+              sizes: sizes,
+              widths: widths
+          }}
+          {% if block.settings.image_mobile %}
+            {{
+              block.settings.image_mobile
+              | image_url: width: 750
+              | image_tag:
+                loading: loadingType,
+                fetchPriority: fetchPriorityType,
+                width: block.settings.image_mobile.width,
+                height: image_height,
+                class: 'large-up-hide medium-hide',
+                sizes: sizes,
+                widths: widths
+            }}
+          {% endif %}
+        </div>    
+      </a>      
+    </div>
+    {% endif %}
+    {%- endfor -%}
+  {% endif %}
+  <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    {{ page.content }}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-page.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks":[
+    {
+      "name":"BOOK CLASSES",
+      "type":"book_classes",
+      "limit":1,
+      "settings":[
+        {
+          "type": "paragraph",
+          "content": "This block only visible for the BOOK CLASSES page."
+        },
+        {
+          "type": "image_picker",
+          "label": "Upload Desktop image",
+          "id": "image"
+        },
+        {
+          "type": "image_picker",
+          "label": "Upload Mobile image",
+          "id": "image_mobile"
+        },
+        {
+          "type": "url",
+          "label": "Provide banner url",
+          "id": "url"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

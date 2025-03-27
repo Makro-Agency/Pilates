@@ -1,0 +1,418 @@
+.banner__content_top h2.banner__heading,
+.banner__content_top span.banner__subheading {
+    text-transform: uppercase;
+}
+.banner__content_top span.banner__subheading {
+    line-height: 20.02px;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 35px;
+}
+/* .banner__content_top a.button {
+    background: #C79D5B;
+}
+.banner__content_top a.button:after{
+   box-shadaw:none
+} */
+.banner__box-bottom_item {
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    max-width: 285px;
+    text-align: left;
+}
+.banner__box-bottom_item p {
+    line-height: 21px;
+    font-size: 14px;
+    color: #fff;
+}
+.banner__box-bottom_item a {
+    line-height: 17.16px;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.banner__bottom-btn-group {
+    display: flex;
+    align-items: center;
+}
+.banner__bottom-btn-group img {
+ margin: 0 10px
+}
+.banner__box_bottom .row .banner__box-bottom_item:last-child {
+    display: block;
+}
+.banner__box_bottom .row .banner__box-bottom_item {
+    display: none;
+}
+div#multifeatures_container {
+    background: #0D0D0D;
+  padding: 50px 0;
+}
+.multifeatures_container .multifeatures__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px 50px 80px 50px;
+}
+/* .multifeatures__item:last-child {
+    display: none;
+} */
+.multifeatures_container h3{
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 450;
+  color: #fff;
+  text-align:center;
+  text-transform: uppercase;
+}
+.multifeatures__item {
+    padding: 40px 100px 40px 35px;
+    border: 1px solid #23211E;
+}
+.multifeatures__content-wrapper h4 {
+  font-size:12px;
+  line-height: 17.16px;
+  font-weight: 450;
+  color:#fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.multifeatures__content-wrapper p {
+  font-size:14px;
+  line-height: 21px;
+  font-weight: 400;
+  color:#fff;
+}
+/* wellness plan  */
+.welnessplan {
+    background: #1b1b1b;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    padding: 13px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wellnessplan__text-wrapper h4 {
+    color: #fff;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.welnessplan__btn-column a {
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 17.16px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 11px 20px;
+    display: flex;
+    align-items: center;
+  cursor: pointer;
+}
+.welnessplan__btn-column a img {
+    margin: 0 5px;
+  width: 20px;
+  height: 20px;
+}
+#program-block-container a.button.btn-big-width.button--secondary:after {
+    box-shadow: none;
+}
+
+/* form css start  */
+ .check-your-eligibility .global-link a:not([href]) {
+  cursor: pointer !important;
+  }
+  .check-your-eligibility span.global-link path {
+  stroke: #fff;
+  }
+  span.link.global-link.check-different svg {
+  margin: 0 10px;
+  }
+  .klaviyo_field {
+  width: 100%;
+  }
+  .check-your-eligibility .alert, 
+  .check-your-eligibility p.msg_box.error{
+    color:#ff4545;
+  }
+  .check-your-eligibility p.msg_box.success {
+    color: #3de13d;
+    border: 1px solid #3de13d;
+}
+  div#c {
+    /* display: block !important; */
+    margin: 10px auto;
+}
+  .form-wrapper .button--primary:hover .check-your-eligibility .loader::before{
+    border: 2px solid #333;
+    
+  }
+  .check-your-eligibility .loader {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    /* position: absolute; */
+    animation: rotate 1s linear infinite;
+    display: block;
+    /* left: 55%; */
+    transition: .5s ease all;
+}
+  .check-your-eligibility .loader::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 2px solid #f6e2c4;
+    animation: prixClipFix 2s linear infinite;
+  transition: .5s ease all;
+    /* left: 17px; */
+}
+  @keyframes rotate {
+      100%   {transform: rotate(360deg)}
+    }
+  @keyframes prixClipFix {
+        0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+        25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+        50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+        75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+        100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+    }
+
+  /* new css */
+
+  .field.field-grp.select-option p {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+  .field.field-grp.select-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+.field.field-grp.select-option p {
+    font-size: 14px;
+    text-transform: math-auto;
+}
+.field.field-grp.select-option label {
+    display: flex;
+    text-transform: math-auto;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.field.field-grp.select-option .field-select-radio {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+.field.field-grp.select-option input[type="radio"]{
+    accent-color: #C79D5B;
+    width: 18px;
+    height: 18px;
+    margin: 0 8px 0px 0;
+  position:relative
+}
+.field.field-grp.select-option input[type="radio"]:checked:after {
+      position: unset;
+      border: unset;
+}
+.field.field-grp.select-option input[type="radio"]:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    background: #000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 1000%;
+    border: 1px solid;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+}
+.eligibility_create_form small {
+    font-size: 11px;
+    /* text-transform: capitalize; */
+    letter-spacing: 1px;
+    text-align: left;
+    color: #f14545;
+    font-weight: 500;
+}
+.check-different .valid_data_btn {
+    margin-left: 4px;
+}
+#eligibility_create_form-inner .field,
+form#invalid_eligible_form .field {
+    display: block;
+}
+button#connect_account:after,
+button#connect_account:hover:after {
+    box-shadow: none;
+}
+button#connect_account:hover {
+    background: #C79D5B;
+    border-color: #C79D5B;
+  color:#000;
+}
+div#eligibility_create_form-inner p.option-title {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+/* form css end here */
+.program_block_inner_wrapper .icon-wrapper.mbl-icon{
+  display:none;
+}
+@media only screen and (max-width: 1024px){
+  .multifeatures_container .multifeatures__row {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media screen and (max-width: 749px) {
+.program_block_inner_wrapper .icon-wrapper.desktop-icon{
+  display:none;
+}
+.program_block_inner_wrapper .icon-wrapper.mbl-icon{
+  display:block;
+}
+   .multifeatures_container .multifeatures__row {
+    grid-template-columns: 1fr;
+    padding: 20px 30px 80px 30px;
+}
+  .multifeatures__item {
+    padding: 30px;
+}
+  .banner__box-bottom_item {
+    bottom: 30px;
+}
+  .multifeatures_container h3 {
+    padding: 0 20px;
+  }
+  .welnessplan {
+    flex-direction: column;
+}
+    .wellnessplan__text-wrapper h4 {
+    font-size: 20px;
+    line-height: 24px;
+}
+  .welnessplan__btn-column {
+    width: 100%;
+  }
+      #multifeatures_container .welnessplan__btn-column a {
+        padding: 11px 25px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+  .welnessplan {
+    margin: 0 auto;
+    margin: 0px 20px;
+
+  flex-direction:column;
+  padding: 22px 20px;
+  width: calc(100% - 40px);
+  }
+
+}
+@media screen and (max-width: 425px) {
+
+ .welnessplan__btn-column a {
+        padding: 11px 25px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+        max-width: 310px;
+    }
+  .welnessplan__btn-column {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .wellnessplan__text-wrapper h4 {
+    /* font-size: 20px; */
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+        font-size: 20px;
+        margin: 0 0 25px;
+        letter-spacing: 1px;
+    }
+  .multifeatures__item {
+    padding: 20px;
+}
+  .banner__box-bottom_item {
+    bottom: 30px;
+    left: 20px;
+}
+  .multifeatures_container .multifeatures__row {
+    grid-template-columns: 1fr;
+  }
+  .welnessplan__btn-column a {
+    width: 100%;
+    justify-content: center;
+  }
+  .welnessplan__btn-column {
+     width: 100%;
+  }
+
+}
+.banner__box-bottom_item p {
+  max-width: 285px;
+  padding-right: 10px;
+}
+.banner__bottom-btn-group img {
+  width: 12px;
+  object-fit: contain;
+  height: 8px;
+}
+@media only screen and (max-width: 769px) {
+  .banner__heading {
+    line-height: 0.9em;
+  }
+    .banner__box-bottom_item p {
+    line-height: 150%;
+    font-size: 12px !important;
+    color: #fff;
+}
+}
+@media screen and (min-width: 750px) {
+  .banner__content {
+    padding: 0;
+  }
+  .banner__box-bottom_item {
+    bottom: 60px;
+    right: 70px;
+  }
+}
+@media only screen and (min-width: 1442px) {
+  .banner__box-bottom_item {
+    right: 27.5%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .banner__box-bottom_item {
+    bottom: 30px;
+    left: 0px;
+  }
+
+}
+.banner__content_top a.button {
+  min-height: 45px;
+}

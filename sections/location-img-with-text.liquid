@@ -1,0 +1,145 @@
+<link rel="stylesheet" href="{{ 'location-img-with-text.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'location-img-with-text.css' | asset_url }}"></noscript>
+{%- liquid
+  assign loadingType = 'lazy'
+  assign fetchPriorityType = 'auto'
+  assign full_width = '@media(min-width: 750px) calc(45vw - 40px), 100vw'
+  assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'  
+-%}
+
+<div class="page-width">
+
+  <div class="box-wrapper">
+    
+    <div class="banner-content-wrapper">
+
+        <div class="cont-part scroll-trigger animate--slide-in">
+              
+            {%- if section.settings.heading != blank -%}      
+            <div class="sec-title">              
+              {%- if section.settings.subHeading != blank -%}      
+                <span class="before-title">{{ section.settings.subHeading }}</span>
+              {%- endif -%}
+              <h2 class="title">{{ section.settings.heading }}</h2>
+            </div>
+            {%- endif -%}
+              
+            {%- if section.settings.detail != blank -%}      
+            <div class="descriptions">
+              {{ section.settings.detail }}              
+            </div>
+            {%- endif -%}
+              
+            {%- if section.settings.address != blank or section.settings.telephone != blank -%}
+            <div class="cont-info">
+              {%- if section.settings.telephone != blank -%}
+                <span><i>{% render 'icon-map' %}</i> {{ section.settings.address }}</span>
+              {%- endif -%}
+              {%- if section.settings.telephone != blank -%}
+                <span><i>{% render 'icon-call' %}</i> {{ section.settings.telephone }}</span>
+              {%- endif -%}
+            </div>
+            {%- endif -%}
+  
+            {%- if section.settings.url_text != blank -%}
+            <a
+              {% if section.settings.url == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ section.settings.url }}"
+              {% endif %} class="contact-btn link global-link">{{ section.settings.url_text }} {% render 'short-right-arrow' %}</a>
+            {%- endif -%}
+                          
+        </div>
+      
+    </div>
+    
+    <div class="media-wrapper{% if section.settings.image == blank %} placeholder{% endif %} scroll-trigger animate--slide-in">
+      {% if section.settings.image != blank %}
+        {%- liquid
+          assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
+          assign sizes = full_width
+        -%}
+        {{
+          section.settings.image
+          | image_url: width: 3840
+          | image_tag:
+            loading: loadingType,
+            fetchPriority: fetchPriorityType,
+            width: section.settings.image.width,
+            height: image_height,
+            class: '',
+            sizes: sizes,
+            widths: widths
+        }}        
+      {% else %}
+        {% capture heroAppare %}hero-apparel-{% cycle '1,2,3' %}{% endcapture %}
+        {{ heroAppare | placeholder_svg_tag: 'placeholder-svg' }}
+      {% endif %}      
+    </div>
+    
+  </div>
+  
+</div>
+
+ 
+{% schema %}
+{
+  "name": "Location img with Text",
+  "tag": "section",
+  "class": "section location-img-with-text-wrapper",
+  "settings": [
+    {
+      "type":"image_picker",
+      "label":"Upload image",
+      "id":"image"
+    },
+    {
+      "type":"text",
+      "label":"Sub heading",
+      "id":"subHeading",
+      "default":"Lorem ipsum dolor"
+    },
+    {
+      "type":"text",
+      "label":"Heading",
+      "id":"heading",
+      "default":"Silver Springs"
+    },
+    {
+      "type":"richtext",
+      "label":"Enter detail",
+      "id":"detail",
+      "default":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <\/p>"
+    },
+    {
+      "type":"text",
+      "label":"Enter an address",
+      "id":"address",
+      "default":"8710 Melrose Ave.West Hollywood, CA 90069"
+    },
+    {
+      "type":"text",
+      "label":"Enter a telephone number",
+      "id":"telephone",
+      "default":"647-372-0225"
+    },
+    {
+      "type":"text",
+      "label":"Enter a link text",
+      "id":"url_text",
+      "default":"learn more"
+    },
+    {
+      "type":"url",
+      "label":"Provide a link here",
+      "id":"url"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Location img with Text"
+    }
+  ]
+}
+{% endschema %}

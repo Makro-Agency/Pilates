@@ -1,0 +1,69 @@
+.team-information-wrapper { width:100%; padding:160px 0; }
+
+.team-information-wrapper .sec-box { display:flex; align-items:flex-start; justify-content:space-between;  }
+
+.team-information-wrapper .sec-box .heading-sec { width:100%; max-width:535px; }
+.team-information-wrapper .sec-box .heading-sec .head-slogan { color: #C79D5B; font-size: 12px;  font-weight: 450; line-height: normal; letter-spacing: 0.24px;
+    text-transform: uppercase; margin:0; }
+.team-information-wrapper .sec-box .heading-sec .sec-title { color: #C79D5B; font-size: 40px;  font-weight: 450; line-height: 40px; 
+  letter-spacing: -1.2px; text-transform: uppercase; margin:40px 0 0 0; }
+
+.team-information-wrapper .sec-box .content-sec { width:100%;  }
+.team-information-wrapper .sec-box .content-sec .con-item { width:100%; border-bottom:rgba(0,0,0,0.1) 1px solid; padding-bottom:32px; margin-bottom:32px; display:flex; flex-flow:column; }
+.team-information-wrapper .sec-box .content-sec .con-item h5 { color: #C79D5B;  font-weight: 450; line-height: normal;
+  letter-spacing: 0.24px; text-transform: uppercase; margin:0 0 10px 0; }
+.team-information-wrapper .sec-box .content-sec .con-item .texts { width:100%; }
+/* .team-information-wrapper .sec-box .content-sec .con-item .texts p { color: #000; font-size: 14px;  font-weight: 400; line-height: 150%;} */
+.team-information-wrapper .sec-box .content-sec .con-item .texts p:first-child { margin-top:0; }
+.team-information-wrapper .sec-box .content-sec .con-item .texts p:last-child { margin-bottom:0; }
+
+
+
+@media (min-width: 750px){
+  .team-information-wrapper .sec-box .content-sec, .team-information-wrapper .sec-box .heading-sec{
+    width: 50%;
+  }
+  .team-information-wrapper .sec-box .heading-sec{
+    padding-right: 40px;
+  }
+}
+@media (max-width: 1023px) {
+
+  .team-information-wrapper { padding:80px 0; }
+  .team-information-wrapper .sec-box .heading-sec .head-slogan { font-size: 11px; }
+  .team-information-wrapper .sec-box .heading-sec .sec-title { font-size: 22px; margin: 25px 0 0; line-height: 1.3; }
+
+  .team-information-wrapper .sec-box .content-sec .con-item { padding-bottom: 20px; margin-bottom: 20px; }  
+  /* .team-information-wrapper .sec-box .content-sec .con-item .texts p { font-size:13px; } */
+  
+}
+
+@media (max-width: 749px) {
+ 
+  .team-information-wrapper { padding: 50px 0 25px 0; }
+  .team-information-wrapper .sec-box { flex-flow: column; }
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end */

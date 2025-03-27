@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="{{ 'about-today.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'about-today.css' | asset_url }}"></noscript>
+
+{% if section.settings.title != blank or section.settings.description != blank or section.settings.background_image_desktop != blank %}
+<div class="today-main-box">
+   <div class="page-width">    
+
+     {% if section.settings.title != blank or section.settings.description != blank %}
+     <div class="box-wrapper scroll-trigger animate--slide-in">
+        <div class="content-box">
+          {% if section.settings.title != blank %}
+            <h2 class="sec-title">{{ section.settings.title }}</h2>
+          {% endif %}
+
+          {% if section.settings.description != blank %}
+          <div class="descriptions">
+            {{ section.settings.description }}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+
+     {% if section.settings.background_image_desktop != blank %}
+     <div class="sec-bg scroll-trigger animate--slide-in">
+       <img src="{{ section.settings.background_image_desktop | image_url:width:1920 }}" width="" height="" class="desk-view" />
+       {% if section.settings.background_image_mobile != blank %}
+         <img src="{{ section.settings.background_image_mobile | image_url:width:800 }}" width="" height="" class="mobi-view"  />
+       {% else %}
+         <img src="{{ section.settings.background_image_desktop | image_url:width:1920 }}" width="" height="" class="mobi-view"  />
+       {% endif %}
+     </div>
+     {% endif %}
+     
+  </div>
+</div>
+{% endif %}
+
+
+
+
+{% schema %}
+{
+  "name": "About Today",
+  "tag": "section",
+  "class": "section about-today-wrapper",
+  "settings": [ 
+    {
+      "type": "text",
+      "label": "Title",
+      "id": "title"
+    },
+    {
+      "type": "html",
+      "label": "Description",
+      "id": "description"
+    },
+    {
+      "type": "image_picker",
+      "label": "Background Image Desktop",
+      "id": "background_image_desktop"
+    },
+    {
+      "type": "image_picker",
+      "label": "Background Image Mobile",
+      "id": "background_image_mobile"
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Today"
+    }
+  ]
+}
+{% endschema %}

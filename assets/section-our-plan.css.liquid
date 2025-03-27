@@ -1,0 +1,38 @@
+.secOurPlan .page-width { display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap; }
+.secOurPlan .planInfo { padding-bottom: 35px; }
+.secOurPlan .planInfo,
+.secOurPlan .planSchedule { width: 100%; }
+@media only screen and (min-width: 990px){
+  .secOurPlan .page-width { flex-wrap: nowrap; }
+  .secOurPlan .planInfo { max-width: 355px; padding-right: 25px; padding-bottom: 0; }
+  .secOurPlan .planSchedule { max-width: 650px; }
+}
+@media only screen and (min-width: 1601px){
+  .secOurPlan .planInfo { max-width: 24.652778vw; padding-right: 1.73612vw; }
+  .secOurPlan .planSchedule { max-width: 45.1389vw; }
+}
+
+.planInfo h3,
+.planInfo h2 { margin: 0; }
+
+.planInfo h2 { line-height: 0.9; }
+.planInfo h3 { margin-bottom: 30px; }
+.planInfo h3,
+
+.plSche--item .left{ color: rgb(var(--color-foreground-2)); }
+
+.planInfo .rte { margin-top: 15px; color: rgba(var(--color-foreground), 1); }
+
+.plSche--item { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; border-top: 1px solid rgba(var(--color-foreground), 0.10); }
+.plSche--item>div { margin: 0; }
+.plSche--item .left { padding-right: 25px; }
+.plSche--item .right { letter-spacing: normal; line-height: 1.5; }
+
+@media only screen and (max-width: 749px){
+  .plSche--item .left { flex: 1 0 auto; padding-right: 15px; }
+  .plSche--item .right { line-height: 1.2;font-size: 18px; }  
+}
+@media only screen and (max-width: 374px){
+  .plSche--item .right { font-size: 14px; }
+  .plSche--item .left { font-size: 10px; }
+}

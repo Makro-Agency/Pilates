@@ -1,0 +1,794 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {}
+    },
+    "spa-hero": {
+      "type": "spa-hero",
+      "blocks": {
+        "3d295c9e-10b8-4397-b3c8-b08733efc0db": {
+          "type": "text",
+          "settings": {
+            "text": "WELLNESS & RECOVERY HUB AT SWEAT AND TONIC",
+            "text_style": "caption-with-letter-spacing",
+            "text_clr": "#ffffff"
+          }
+        },
+        "89ede07a-229a-4fd5-8064-eb065090ad93": {
+          "type": "heading",
+          "settings": {
+            "heading": "TONIC SPA",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "943f29ad-f020-4899-974b-20f586c4dd6a": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "BOOK A TREATMENT",
+            "button_link_1": "https://tonicspa.janeapp.com/",
+            "button_style": "solid",
+            "applies_color_scheme": true,
+            "btn_text_clr": "#000000",
+            "btn_hvr_text_clr": "#000000",
+            "btn_bg_clr": "#c79d5b",
+            "btn_hvr_bg_clr": "#ffffff"
+          }
+        },
+        "d41f6baf-924e-485e-ab85-303705a32897": {
+          "type": "spa_info",
+          "settings": {
+            "detail": "Relax, rejuvenate, and indulge in our diverse range of wellness services, treatments, and biohacking amenities.",
+            "link_text": "Learn More",
+            "url": "#spaAllServices",
+            "enableScroll": true
+          }
+        }
+      },
+      "block_order": [
+        "3d295c9e-10b8-4397-b3c8-b08733efc0db",
+        "89ede07a-229a-4fd5-8064-eb065090ad93",
+        "943f29ad-f020-4899-974b-20f586c4dd6a",
+        "d41f6baf-924e-485e-ab85-303705a32897"
+      ],
+      "settings": {
+        "allow_transparent_header": true,
+        "image": "shopify://shop_images/SweatandTonic_Wellness_home.png",
+        "img_mobile": "shopify://shop_images/hero.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "color_scheme": "accent-1",
+        "image_behavior": "none"
+      }
+    },
+    "home_banner_with_classes_KVbUmd": {
+      "type": "home-banner-with-classes",
+      "blocks": {
+        "c285b670-4e93-4c7f-8f10-7fc1c8454cb2": {
+          "type": "sub_heading",
+          "settings": {
+            "sub_heading": "TONIC SPA",
+            "text_clr": "#ffffff"
+          }
+        },
+        "template--16876982829276__507b5eac-7c67-422d-9ac6-7717d23ce0cf-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "WELLNESS & RECOVERY HUB",
+            "text_clr": "#ffffff"
+          }
+        },
+        "template--16876982829276__507b5eac-7c67-422d-9ac6-7717d23ce0cf-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "Where premium spa meets science-backed biohacking - integrate 360 degree wellness into your personal journey at Tonic Spa.",
+            "text_style": "body",
+            "text_clr": "#ffffff"
+          }
+        },
+        "template--16876982829276__507b5eac-7c67-422d-9ac6-7717d23ce0cf-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "BOOK A TREATMENT",
+            "button_link_1": "https://tonicspa.janeapp.com/",
+            "button_style": "solid",
+            "applies_color_scheme": false,
+            "btn_text_clr": "#000000",
+            "btn_hvr_text_clr": "#000000",
+            "btn_bg_clr": "#ffffff",
+            "btn_hvr_bg_clr": "#c79d5b"
+          }
+        },
+        "cdab86f8-0a2a-43c0-94c7-7f3bfbc177e0": {
+          "type": "class",
+          "settings": {
+            "image": "shopify://shop_images/Tonic_Spa_Pool_Sweat_and_Tonic_fafe547d-eacd-419b-a747-0262c24bd602.png",
+            "img_mobile": "shopify://shop_images/Tonic_Spa_Pool_Sweat_and_Tonic_fafe547d-eacd-419b-a747-0262c24bd602.png",
+            "title": "POOL & HYDROTHERAPY",
+            "desc": "<p>Rejuvenate and unwind in our 50 ft. saltwater lap pool, infrared sauna, all-season patio, and more.</p>",
+            "button_label": "BOOK NOW",
+            "button_link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48784",
+            "text_clr": "#ffffff"
+          }
+        },
+        "6978f5a6-526e-46d6-855a-8aed2047b5e8": {
+          "type": "class",
+          "settings": {
+            "image": "shopify://shop_images/Massage_therapy_spa.png",
+            "img_mobile": "shopify://shop_images/Massage_therapy_spa.png",
+            "title": "HIGH-TOUCH SERVICES",
+            "desc": "<p>Self-care, inside and out.</p>",
+            "button_label": "EXPLORE SERVICES",
+            "button_link": "https://tonicspa.janeapp.com/",
+            "text_clr": "#ffffff"
+          }
+        },
+        "d28fc801-526c-4e2c-8f4b-7f586b143721": {
+          "type": "class",
+          "settings": {
+            "image": "shopify://shop_images/RedLightTherapy_TonicSpa.png",
+            "img_mobile": "shopify://shop_images/RedLightTherapy_TonicSpa.png",
+            "title": "BIOHACKING",
+            "desc": "<p>Elevate your wellness game with  high-tech biohacking and recovery.</p>",
+            "button_label": "BOOK NOW",
+            "button_link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48784",
+            "text_clr": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "c285b670-4e93-4c7f-8f10-7fc1c8454cb2",
+        "template--16876982829276__507b5eac-7c67-422d-9ac6-7717d23ce0cf-heading-1",
+        "template--16876982829276__507b5eac-7c67-422d-9ac6-7717d23ce0cf-text-1",
+        "template--16876982829276__507b5eac-7c67-422d-9ac6-7717d23ce0cf-buttons-1",
+        "cdab86f8-0a2a-43c0-94c7-7f3bfbc177e0",
+        "6978f5a6-526e-46d6-855a-8aed2047b5e8",
+        "d28fc801-526c-4e2c-8f4b-7f586b143721"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "inverse",
+        "mobile_content_alignment": "left"
+      }
+    },
+    "spa-all-services": {
+      "type": "spa-all-services",
+      "blocks": {
+        "ee21d118-d816-472c-a9b6-1075c016dfbe": {
+          "type": "services",
+          "settings": {
+            "serviceType": "Health service",
+            "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/Acupuncture.png",
+            "heading": "ACUPUNCTURE",
+            "detail": "<p>Enhance mental clarity, increase energy, reduce pain and tension, address sleep issues, and many more health concerns.</p>",
+            "location_lbl_dk": "Locations Available",
+            "location_lbl_mb": "Location",
+            "address_title_1": "YONGE / SHUTER",
+            "address_1": "<p>225 Yonge Street, Toronto ON M5B 1N8</p><p>647-372-0225</p>",
+            "address_title_2": "FRONT / SPADINA (THE WELL)",
+            "address_2": "<p>486 Front Street W, Toronto ON M5V 0V2</p><p>647-477-0539</p>",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "BOOK NOW",
+            "button_link": "https://tonicspa.janeapp.com/locations/tonic-spa/book#/tcm-acupuncture",
+            "link_text": "LEARN MORE",
+            "text_link": "https://sweatandtonic.com/pages/acupuncture"
+          }
+        },
+        "services_MGERDD": {
+          "type": "services",
+          "settings": {
+            "serviceType": "Health service",
+            "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/Chiropractor.jpg",
+            "heading": "CHIROPRACTOR",
+            "detail": "<p>Move better, alleviate and prevent pain, and improve overall functioning. Diagnose and treat issues with your spine, muscles, joints, and nervous system health.</p>",
+            "location_lbl_dk": "Locations Available",
+            "location_lbl_mb": "Location",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "address_1": "<p>486 Front Street W, Toronto ON M5V 0V2</p><p>647-477-0539</p>",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "BOOK NOW",
+            "button_link": "https://tonicspa.janeapp.com/locations/tonic-spa/book#/chiropractic-care",
+            "link_text": "Learn more",
+            "text_link": "shopify://pages/chiropractor"
+          }
+        },
+        "c1ea4c2b-0cbc-4dc3-ba8b-630e6daa52c0": {
+          "type": "services",
+          "settings": {
+            "serviceType": "Biohacking",
+            "serviceLocation": "Yonge/Shuter,Front/Spadina (The Well)",
+            "image": "shopify://shop_images/CompressionTherapy_TonicSpa.jpg",
+            "heading": "COMPRESSION THERAPY",
+            "detail": "<p>Recover, reshape, rejuvenate. Zip into the Ballancer Pro, a state-of-the-art compression therapy system that delivers lymphatic drainage technology to countour your body, accelerate recovery, detox, and improve circulation in a 20-minute session.</p>",
+            "location_lbl_dk": "Locations Available",
+            "location_lbl_mb": "Location",
+            "address_title_1": "YONGE / SHUTER",
+            "address_1": "<p>225 Yonge Street, Toronto ON M5B 1N8</p>",
+            "address_title_2": "FRONT / SPADINA (THE WELL)",
+            "address_2": "<p>486 Front Street W, Toronto ON M5V 0V2</p><p>647-477-0539</p>",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "BOOK NOW",
+            "button_link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3FclassType%3D8645%2C8646%26locations%3D48784",
+            "link_text": "LEARN MORE",
+            "text_link": "https://sweatandtonic.com/pages/compression-therapy"
+          }
+        },
+        "976b4ad5-89d7-4a33-8792-b5a6a202b6a1": {
+          "type": "services",
+          "disabled": true,
+          "settings": {
+            "serviceType": "Biohacking",
+            "serviceLocation": "Yonge/Shuter,Front/Spadina (The Well)",
+            "image": "shopify://shop_images/Cryotherapy_9af674af-879b-483d-adff-37776eba623a.png",
+            "heading": "CRYOTHERAPY",
+            "detail": "<p>Biohack and chill. Step into our -130°C cryochamber to promote recovery, reduce inflammation, boost your mood, energy & metabolism, and burn calories.</p>",
+            "location_lbl_dk": "Locations Available",
+            "location_lbl_mb": "Location",
+            "address_title_1": "YONGE / SHUTER",
+            "address_1": "<p>225 Yonge Street, Toronto ON M5B 1N8</p><p>647-372-0225</p>",
+            "address_title_2": "FRONT / SPADINA (THE WELL)",
+            "address_2": "<p>486 Front Street W, Toronto ON M5V 0V2</p><p>647-477-0539</p>",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "BOOK NOW",
+            "button_link": "https://tonicspa.janeapp.com/",
+            "link_text": "LEARN MORE",
+            "text_link": "https://sweatandtonic.com/pages/cryotherapy"
+          }
+        },
+        "5ee5ef11-1a84-40ac-b6ad-41e750ce76f7": {
+          "type": "services",
+          "settings": {
+            "serviceType": "Health service",
+            "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/DexaScan_cc5c1287-1952-42e5-87d1-c780ca7f7722.png",
+            "heading": "DEXA SCAN",
+            "detail": "<p>Gain accurate and detailed insights into your body composition with full-body imaging to help you improve your health, fitness goals, and physical well-being.</p>",
+            "location_lbl_dk": "Locations Available",
+            "location_lbl_mb": "Location",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "address_1": "<p>486 Front Street W, Toronto ON M5V 0V2</p><p>647-477-0539</p>",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "BOOK NOW",
+            "button_link": "https://tonicspa.janeapp.com/locations/tonic-spa/book#/dexa-scan",
+            "link_text": "LEARN MORE",
+            "text_link": "https://sweatandtonic.com/pages/dexa-scan"
+          }
+        },
+        "aaba282a-25a9-4737-854d-bcbfa6e87067": {
+          "type": "services",
+          "settings": {
+            "serviceType": "Health service",
+            "serviceLocation": "Front/Spadina (The Well),Virtual sessions",
+            "image": "shopify://shop_images/Dietetics_c3861b66-2b0a-4434-9381-74d96ef17ccd.png",
+            "heading": "DIETETICS",
+            "detail": "<p>Find food freedom and develop an abundant relationship with food that supports your physical, mental, and emotional wellbeing.</p>",
+            "location_lbl_dk": "Locations Available",
+            "location_lbl_mb": "Location",
+            "address_title_1": "VIRTUAL SESSIONS",
+            "address_1": "<p>Now available</p>",
+            "address_title_2": "FRONT / SPADINA (THE WELL)",
+            "address_2": "<p>486 Front Street W, Toronto ON M5V 0V2</p><p>647-477-0539</p>",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "Book now",
+            "button_link": "https://tonicspa.janeapp.com/",
+            "link_text": "LEARN MORE",
+            "text_link": "https://sweatandtonic.com/pages/dietetics"
+          }
+        },
+        "4feec440-c0dd-4feb-9e9d-d2b1b92562b6": {
+          "type": "services",
+          "settings": {
+            "serviceType": "High touch,Aesthetic",
+            "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/Sweat_and_Tonic_-_facial.png",
+            "heading": "FACIALS & SKIN CARE",
+            "detail": "<p>Reveal your skin’s natural radiance with our specialized, high-tech treatments that will leave you with a luminous glow and feeling refreshed.</p>",
+            "location_lbl_dk": "Locations Available",
+            "location_lbl_mb": "Location",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "address_1": "<p>486 Front Street W, Toronto ON M5V 0V2</p><p>647-477-0539</p>",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "BOOK NOW",
+            "button_link": "https://tonicspa.janeapp.com/locations/tonic-spa/book#/hydrafacial",
+            "link_text": "Learn more",
+            "text_link": "https://sweatandtonic.com/pages/facials-skin-care"
+          }
+        },
+        "7ed4ccec-8250-4dcb-a53a-464b30b0e777": {
+          "type": "services",
+          "settings": {
+            "serviceType": "Biohacking",
+            "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/HotandColdTherapyTonicSpSweatandTonic.jpg",
+            "heading": "HOT & COLD THERAPY",
+            "detail": "<p>Relax & reinvigorate in Toronto's first and only private four-person dual infrared and tradtional high-heat sauna and cold plunge suite.</p>",
+            "location_lbl_dk": "Locations Available",
+            "location_lbl_mb": "Location",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "address_1": "<p>486 Front Street W, Toronto ON M5V 0V2</p>",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "BOOK NOW",
+            "button_link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48784",
+            "link_text": "LEARN MORE",
+            "text_link": "shopify://pages/private-hot-cold-therapy-suite"
+          }
+        },
+        "c3a2197b-6488-435e-a311-a064b151d08a": {
+          "type": "services",
+          "settings": {
+            "serviceType": "Biohacking",
+            "serviceLocation": "Yonge/Shuter,Front/Spadina (The Well)",
+            "image": "shopify://shop_images/InfraredSauna_TonicSpa.png",
+            "heading": "INFRARED SAUNA",
+            "detail": "<p>Relax muscles, relieve tension and detoxify from the inside out.</p>",
+            "location_lbl_dk": "Locations Available",
+            "location_lbl_mb": "Location",
+            "address_title_1": "YONGE / SHUTER",
+            "address_1": "<p>225 Yonge Street, Toronto ON M5B 1N8</p><p>Private saunas available</p>",
+            "address_title_2": "FRONT / SPADINA (THE WELL)",
+            "address_2": "<p>Coming soon</p>",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "BOOK NOW",
+            "button_link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3FclassType%3D8397%26locations%3D48717",
+            "link_text": "Learn More",
+            "text_link": "https://sweatandtonic.com/pages/sauna"
+          }
+        },
+        "588b1c94-bcec-4b17-90f4-0e74603a2389": {
+          "type": "services",
+          "settings": {
+            "serviceType": "Biohacking,Health service",
+            "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/IVTherapy_1062c4c8-80cf-44d7-90c7-033c9cc884d0.png",
+            "heading": "VITAMIN IV THERAPY",
+            "detail": "<p>Supercharge your body with personalized intravenous tonics carefully formulated to optimize your health.</p>",
+            "location_lbl_dk": "Locations Available",
+            "location_lbl_mb": "Location",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "address_1": "<p>486 Front Street W, Toronto ON M5V 0V2</p>",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "BOOK NOW",
+            "button_link": "https://tonicspa.janeapp.com/locations/tonic-spa/book#/iv-therapy",
+            "link_text": "",
+            "text_link": ""
+          }
+        },
+        "258f5bae-819a-4e01-a029-04680c92e6ef": {
+          "type": "services",
+          "settings": {
+            "serviceType": "High touch",
+            "serviceLocation": "Yonge/Shuter,Front/Spadina (The Well)",
+            "image": "shopify://shop_images/Massage_Cupping_Tonic_spa.jpg",
+            "heading": "MASSAGE THERAPY",
+            "detail": "<p>Relax and recover. Discover our range of massage therapy from RMTs designed to soothe, relieve tension, balance your mind and body, and aid in athletic recovery.</p>",
+            "location_lbl_dk": "Locations Available",
+            "location_lbl_mb": "Location",
+            "address_title_1": "YONGE / SHUTER",
+            "address_1": "<p>225 Yonge Street, Toronto ON M5B 1N8</p><p>647-372-0225</p>",
+            "address_title_2": "FRONT / SPADINA (THE WELL)",
+            "address_2": "<p>486 Front Street West, Toronto ON M5V 0V2</p><p>647-477-0539</p>",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "BOOK NOW",
+            "button_link": "https://tonicspa.janeapp.com/",
+            "link_text": "LEARN MORE",
+            "text_link": "shopify://pages/massage-therapy"
+          }
+        },
+        "services_38BFiR": {
+          "type": "services",
+          "settings": {
+            "serviceType": "All,Aesthetic",
+            "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/Tonic_Spa_-_Microneedling_webpage.png",
+            "heading": "MICRONEEDLING",
+            "detail": "<p>Minimize pores, improve elasticity, and achieve smoother, more radiant skin with our advanced Dp4™ microneedling treatment</p>",
+            "location_lbl_dk": "Locations Available",
+            "location_lbl_mb": "Location",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "address_1": "<p>486 Front Street W, Toronto ON M5V 0V2</p>",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "Book now",
+            "button_link": "https://tonicspa.janeapp.com/locations/tonic-spa/book#/dp4-microneedling",
+            "link_text": "Learn more",
+            "text_link": "https://sweatandtonic.com/pages/facials-skin-care"
+          }
+        },
+        "7a92c0ba-a3dc-4a8d-b57f-2dbce8f3ee52": {
+          "type": "services",
+          "settings": {
+            "serviceType": "Health service",
+            "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/Naturopathy_9d9ef24d-3dea-456f-b63f-131ac635becf.png",
+            "heading": "NATUROPATHY",
+            "detail": "<p>The art and science of disease diagnosis, treatment, and prevention using natural therapies.</p>",
+            "location_lbl_dk": "Locations Available",
+            "location_lbl_mb": "Location",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "address_1": "<p>486 Front Street W, Toronto ON M5V 0V2</p><p>647-477-0539</p>",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "BOOK NOW",
+            "button_link": "https://tonicspa.janeapp.com/locations/tonic-spa/book#/naturopathy",
+            "link_text": "",
+            "text_link": ""
+          }
+        },
+        "62beee29-2f75-4ecd-b6c4-7153408a6162": {
+          "type": "services",
+          "settings": {
+            "serviceType": "Health service",
+            "serviceLocation": "Yonge/Shuter,Front/Spadina (The Well)",
+            "image": "shopify://shop_images/Physiotherapy_73dd1b9b-6bb9-4503-a95e-e6043c1918d4.png",
+            "heading": "PHYSIOTHERAPY",
+            "detail": "<p>Restore and maintain optimal physical function, treat and prevent injuries, and address other aches and pains.</p>",
+            "location_lbl_dk": "Locations Available",
+            "location_lbl_mb": "Location",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "address_1": "<p>486 Front Street W, Toronto ON M5V 0V2</p><p>647-477-0539</p>",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "COMING SOON",
+            "button_link": "",
+            "link_text": "",
+            "text_link": ""
+          }
+        },
+        "9e92333c-1696-4094-a06f-9dc97da4fb29": {
+          "type": "services",
+          "settings": {
+            "serviceType": "Biohacking",
+            "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/Tonic_Spa_Pool_Deck_Sweat_and_Tonic.png",
+            "heading": "POOL & HYDROTHERAPY",
+            "detail": "<p>50 ft. saltwater lap pool, saltwater jetted hot tub, combined infrared & traditional electric sauna, rain & cold plunge showers, and all-season patio.</p>",
+            "location_lbl_dk": "Locations Available",
+            "location_lbl_mb": "Location",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "address_1": "<p>486 Front Street W, Toronto ON M5V 0V2</p>",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "BOOK NOW",
+            "button_link": "https://tonicspa.janeapp.com/",
+            "link_text": "",
+            "text_link": ""
+          }
+        },
+        "e4eba09f-bd3a-4889-9d21-e8d4009a12f4": {
+          "type": "services",
+          "settings": {
+            "serviceType": "Biohacking",
+            "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/RedLightTherapy.png",
+            "heading": "RED LIGHT THERAPY",
+            "detail": "<p>Recover & rejuvenate in the TheraLight 360+ and experience the most advanced full-body photobiomodulation system.</p>",
+            "location_lbl_dk": "Locations Available",
+            "location_lbl_mb": "Location",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "address_1": "<p>486 Front Street W, Toronto ON M5V 0V2</p><p>647-477-0539</p>",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "BOOK NOW",
+            "button_link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3FclassType%3D8646%26locations%3D48784",
+            "link_text": "Learn more",
+            "text_link": "shopify://pages/red-light-therapy"
+          }
+        },
+        "188ae94c-bc14-4188-bd62-1199bc872443": {
+          "type": "services",
+          "settings": {
+            "serviceType": "Biohacking",
+            "serviceLocation": "Yonge/Shuter",
+            "image": "shopify://shop_images/Somadome_0ee2a8ad-3ee1-4ca5-921e-4ac8cbc232b3.png",
+            "heading": "SOMADOME MEDITATION",
+            "detail": "<p>Recharge, restore and achieve balance through a technology-enhanced guided meditation in only 20 minutes.<br/>Unlimited member access only.</p>",
+            "location_lbl_dk": "Locations Available",
+            "location_lbl_mb": "Location",
+            "address_title_1": "YONGE / SHUTER",
+            "address_1": "<p>225 Yonge Street, Toronto ON M5B 1N8</p><p>Unlimited Member access only</p>",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "book now",
+            "button_link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3FclassType%3D5890%26locations%3D48717",
+            "link_text": "Learn more",
+            "text_link": "https://sweatandtonic.com/pages/somadome"
+          }
+        }
+      },
+      "block_order": [
+        "ee21d118-d816-472c-a9b6-1075c016dfbe",
+        "services_MGERDD",
+        "c1ea4c2b-0cbc-4dc3-ba8b-630e6daa52c0",
+        "976b4ad5-89d7-4a33-8792-b5a6a202b6a1",
+        "5ee5ef11-1a84-40ac-b6ad-41e750ce76f7",
+        "aaba282a-25a9-4737-854d-bcbfa6e87067",
+        "4feec440-c0dd-4feb-9e9d-d2b1b92562b6",
+        "7ed4ccec-8250-4dcb-a53a-464b30b0e777",
+        "c3a2197b-6488-435e-a311-a064b151d08a",
+        "588b1c94-bcec-4b17-90f4-0e74603a2389",
+        "258f5bae-819a-4e01-a029-04680c92e6ef",
+        "services_38BFiR",
+        "7a92c0ba-a3dc-4a8d-b57f-2dbce8f3ee52",
+        "62beee29-2f75-4ecd-b6c4-7153408a6162",
+        "9e92333c-1696-4094-a06f-9dc97da4fb29",
+        "e4eba09f-bd3a-4889-9d21-e8d4009a12f4",
+        "188ae94c-bc14-4188-bd62-1199bc872443"
+      ],
+      "settings": {
+        "heading": "ALL SERVICES",
+        "filter_pos_reverse": true,
+        "hideServiceType": "test",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false,
+        "color_scheme": "accent-1"
+      }
+    },
+    "spa-multicolumn": {
+      "type": "spa-multicolumn",
+      "blocks": {
+        "column_4jWJTh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/TonicHouse_party_2014x1105_3_f0d38410-a460-4aa4-85fe-bfbe587a43ee.jpg",
+            "title": "Yonge / Shuter",
+            "text": "",
+            "link_label": "VIEW FAQs",
+            "link": ""
+          }
+        },
+        "column_Qg9XWQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/TonicHouse_party_2014x1105_2.jpg",
+            "title": "the well",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iW88NP": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Frame_13.jpg",
+            "title": "the well",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_D4VpG3": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/TonicHouse_party_2014x1105_3_f0d38410-a460-4aa4-85fe-bfbe587a43ee.jpg",
+            "title": "the well",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_8tbkeh": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/TonicHouse_party_2014x1105_2.jpg",
+            "title": "the well",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UaAq6c": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/TonicHouse_party_2014x1105_2.jpg",
+            "title": "the well",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_4jWJTh",
+        "column_Qg9XWQ",
+        "column_iW88NP",
+        "column_D4VpG3",
+        "column_8tbkeh",
+        "column_UaAq6c"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "TONIC SPA",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "column_alignment": "left",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-1",
+        "top_padding_remove": true,
+        "bottom_padding_remove": false
+      }
+    },
+    "spa-image-banner": {
+      "type": "spa-image-banner",
+      "blocks": {
+        "text_RdYktc": {
+          "type": "text",
+          "settings": {
+            "text": "Your ticket to a higher self - explore Canada's most exclusive 360 wellness membership.",
+            "text_style": "body",
+            "text_clr": "#ffffff"
+          }
+        },
+        "heading_rRRGgr": {
+          "type": "heading",
+          "settings": {
+            "heading": "CLUB TRANSCEND",
+            "heading_size": "h2",
+            "text_clr": "#c79d5b"
+          }
+        },
+        "buttons_FbbWnb": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "LEARN MORE",
+            "button_link_1": "shopify://pages/club-transcend",
+            "button_style": "link",
+            "applies_color_scheme": false,
+            "btn_text_clr": "#ffffff",
+            "btn_hvr_text_clr": "#ffffff",
+            "btn_bg_clr": "#ffffff",
+            "btn_hvr_bg_clr": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "text_RdYktc",
+        "heading_rRRGgr",
+        "buttons_FbbWnb"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "image": "shopify://shop_images/Frame_5999_1.jpg",
+        "img_mobile": "shopify://shop_images/Frame_5988_dca22be5-d3ad-407a-aca5-f6c2bc9701f9.jpg",
+        "image_overlay_opacity": 20,
+        "image_height": "small",
+        "desktop_content_position": "bottom-right",
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "left"
+      }
+    },
+    "rich_text_2_yWXLGM": {
+      "type": "rich-text-2",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
+        "full_width": true,
+        "heading": "FAQS",
+        "subHeading": "TONIC SPA: WELLNESS & RECOVERY HUB",
+        "text": "<p>For more details on memberships, amenities, and services at Tonic Spa, please visit our FAQs or get in touch.</p>",
+        "button_label": "LEARN MORE",
+        "button_link": "shopify://pages/faq-tonic-spa",
+        "button_style_secondary": false,
+        "button_label_2": "GET IN TOUCH",
+        "button_link_2": "mailto:tonicspa@sweatandtonic.com",
+        "button_style_secondary_2": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "shogun-optimizer": {
+      "type": "shogun-optimizer",
+      "settings": {}
+    },
+    "rich_text_VFW4X3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4KyCwX": {
+          "type": "heading",
+          "settings": {
+            "heading": "FAQs",
+            "heading_size": "h2"
+          }
+        },
+        "text_wTcgwK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For more details on memberships, amenities, and services at Tonic Spa, please visit our FAQs or get in touch.</p>"
+          }
+        },
+        "button_pBqytF": {
+          "type": "button",
+          "settings": {
+            "button_label": "VIEW FAQ",
+            "button_link": "shopify://pages/faq-tonic-spa",
+            "button_style_secondary": false,
+            "button_label_2": "GET IN TOUCH",
+            "button_link_2": "mailto:tonicspa@sweatandtonic.com",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_4KyCwX",
+        "text_wTcgwK",
+        "button_pBqytF"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "shogun-helper",
+    "spa-hero",
+    "home_banner_with_classes_KVbUmd",
+    "spa-all-services",
+    "spa-multicolumn",
+    "spa-image-banner",
+    "rich_text_2_yWXLGM",
+    "shogun-optimizer",
+    "rich_text_VFW4X3"
+  ]
+}

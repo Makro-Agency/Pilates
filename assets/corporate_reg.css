@@ -1,0 +1,339 @@
+
+.check-your-eligibility .form-main-title{
+  font-size: 40px;  
+  font-weight: 450;
+  line-height: 150%;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 50px 0 0 0;
+}
+.check-your-eligibility .form-description p {
+  font-size: 12px;
+  font-size: inherit;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-bottom: 24px;
+}
+.form-tab-2 .signup-box {
+  margin-bottom: 0;
+}
+.check-your-eligibility .status-box svg {width:30px;height: 30px;}
+.eligibility_create_form  .field input.input-field {
+  width: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #fff;
+    border-radius: 0;
+}
+.form-wrapper .eligibility_create_form   .form-group-wrapper {
+  display: block;
+  padding: 0 0;
+}
+.form-wrapper .eligibility_create_form .field.field-grp .select-btn {
+  width: 100%;
+    padding: 15px 0;
+    background-color: transparent;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    color: #fff;
+    border-color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: capitalize;
+    text-align: left;
+  cursor: pointer;
+}
+.form-wrapper .eligibility_create_form .field.field-grp .select-btn  svg{
+  position: absolute;
+    right: 0;
+    top: 50%;
+    /* transform: rotate(0) translateY(-50%); */
+    transform: rotate(0) translateY(0%);
+}
+.form-wrapper .eligibility_create_form .field.field-grp.select-drop-down.active .select-btn  svg{
+  transform: rotate(180deg) translateY(0%)
+  /* transform: rotate(180deg) translateY(-50%) */
+}
+.form-wrapper .eligibility_create_form .field.field-grp .options {
+  position: absolute;
+    width: 100%;
+    text-align: left;
+  padding:0;
+      z-index: 1;
+    list-style: none;
+    background-color: #000;
+   font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: capitalize;
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  margin:5px 0;
+}
+.form-wrapper span.check-different,
+.form-wrapper a.check-different {
+  margin: 50px 0 0 0;
+}
+.check-your-eligibility .form-wrapper [class^="form-tab-"] {
+  display: none;
+}
+.check-your-eligibility .form-wrapper [class^="form-tab-"].open{
+  display:block;
+}
+.check-your-eligibility .create-account-tab  .subtitle{
+  text-transform: capitalize;
+  margin: 20px auto 0 auto;
+      opacity: 0.7;
+  max-width: 480px;
+}
+.check-your-eligibility .form-wrapper {
+  padding: 100px 0;
+}
+.check-your-eligibility .create-account-tab .form-main-title{
+  margin: 20px 0 0 0;
+}
+.form-wrapper .eligibility_create_form .field.field-grp.select-drop-down.active .options {
+  opacity: 1;
+  visibility: visible;
+}
+.form-wrapper .eligibility_create_form .field.field-grp .options .option {
+  padding: 12px 16px;
+    background-color: rgb(255 255 255 / 8%);
+  cursor:pointer;
+}
+.form-wrapper .eligibility_create_form .field.field-grp .options .option:hover {
+    background-color: rgb(255 255 255 / 11%);
+}
+.form-wrapper .eligibility_create_form  .form-group-wrapper .field-grp {
+  margin-top: 15px;
+}
+
+.eligibility_create_form label{
+  display: none;
+}
+.check-your-eligibility .subtitle {
+font-size: 12px;
+font-size: inherit;
+font-weight: 450;
+line-height: normal;
+letter-spacing: 0.24px;
+text-transform: uppercase;
+}
+.form-wrapper .form-group-wrapper {
+      padding: 0 0px;
+    display: flex;
+    align-items: center;
+  text-transform: uppercase;
+}
+.form-group-wrapper .field input.input-field {
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    font-size: 14px;
+    font-size: inherit;
+    font-weight: 400;
+    line-height: 150%;
+    color: #fff;
+    border-radius: 0;
+  padding: 15px 0 5px 0!important;
+  font-family: var(--font-body-family);
+}
+.form-group-wrapper .field input.input-field::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 0.4;
+}
+.form-group-wrapper .field label {
+    display: none;
+}
+.form-group-wrapper .field-grp {
+    margin-top: 0px;
+}
+.form-wrapper .button--primary {
+  background-color: #c79d5b;
+  margin: 40px 0 0 0;
+  min-height: 45px;
+}
+.form-wrapper .button--primary:hover {
+ background-color: rgba(var(--color-button), var(--alpha-button-background));
+}
+.form-wrapper {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+.form-wrapper .form-group-wrapper  .field:after {
+  opacity: 0;
+}
+.benifits-container {
+  margin-top: 40px;
+}
+.signup-box {
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 50px 0;
+}
+.signup-box{
+  text-align: left;
+}
+.signup-box ul li{
+  font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+  display: flex;
+  align-items: center;
+}
+.signup-box ul li:before {
+position: relative;
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.5;
+    margin-right: 15px
+}
+.signup-box h5{
+  font-size: 18px;
+font-style: normal;
+font-weight: 450;
+line-height: 150%; /* 27px */
+text-transform: uppercase;
+margin: 0 0 0 0;
+}
+.signup-box button{
+    border: 1px solid white;
+    background-color: transparent;
+    min-width: 165px;
+    padding: 0 20px;
+    color: var(--White, #FFF);
+    font-family: "Brandon Grotesque";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    min-height: 45px;
+}
+.signup-box ul {
+  padding: 0 0;
+  list-style: none;
+  margin: 15px 0 25px 0;
+}
+.benifits-container .benifits-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 0;
+  border: 1px solid #23211E;
+  border-width: 1px 0 1px 0;
+}
+.form-wrapper a.global-link svg {
+  fill: currentcolor;
+  margin: 0 8px 0 0;
+}
+
+.form-wrapper a.global-link svg path {
+  stroke: currentcolor;
+}
+span.item-title{
+  font-size: 12px;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+letter-spacing: 0.24px;
+text-transform: uppercase;
+}
+.check-your-eligibility .form-tab-2 .form-main-title {
+  margin: 10px 0 0 0
+}
+.benifits-container .benifits-items span.value{
+  color: #C79D5B;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+}
+.form-tab-2 .subtitle {
+  opacity: 0.7;
+}
+.status-box {
+  margin-bottom: 60px;
+}
+.form-wrapper .form-group-wrapper .divider {
+  padding: 0 25px;
+  font-size: 12px;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+letter-spacing: 0.24px;
+text-transform: uppercase;
+}
+.form-tab-2 .benifits-title {
+  letter-spacing:0;
+  text-transform: uppercase;
+  margin: 15px 0 0 0;
+}
+
+@media only screen and (max-width: 1441px) {
+  .form-wrapper {
+    max-width: 550px;
+  }
+}
+@media only screen and (max-width:769px) {
+  .signup-box {
+    padding: 24px 20px;}
+  .signup-box ul li:before {
+    margin-right: 15px;
+    min-height: 8px;
+    max-width: 8px;
+    max-height: 8px;
+    min-width: 8px;
+  }
+  .signup-box h5 {
+    font-size: 16px;
+  }
+  .check-your-eligibility .status-box svg {width:24px;height: 24px;}
+  .form-tab-2 .benifits-title {font-size: 16px;}
+  .form-wrapper span.check-different, .form-wrapper a.check-different {
+    margin: 40px 0 0;
+}
+  .form-wrapper .form-group-wrapper .divider {
+    padding: 25px;
+  }
+  .check-your-eligibility .form-main-title {
+    font-size: 20px;
+  }
+  .check-your-eligibility .form-main-title {
+    margin: 20px 0 0;
+  }
+  .form-wrapper .form-group-wrapper {
+    flex-direction: column;
+  }
+  .check-your-eligibility .form-wrapper {
+    padding: 80px 20px 40px 20px;
+  }
+  .status-box {
+    margin-bottom: 30px;
+  }
+  .benifits-container {
+    margin-top: 30px;
+  }
+  .signup-box{
+    margin: 40px 0;
+  }
+  .signup-box button {
+    width: 100%;
+  }
+}

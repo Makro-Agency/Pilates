@@ -1,0 +1,448 @@
+.spa-services-head {
+  margin-bottom: 40px;
+  align-items: center;
+  gap: 30px;
+}
+.spa-services-head h2, .spa-services-info h3, .spa-services-info h6, .spa-services-info h5{
+  margin: 0;
+}
+.spa-services-head .count {
+  color: #c79d5b;
+}
+.spa-services-head .select-div:not(:last-child){
+  margin-right: 40px;
+}
+.spa-services-head .select-div:after{
+  position: absolute;
+  content: "";
+  background-image: url(https://cdn.shopify.com/s/files/1/0277/8280/7635/files/chevron-down.svg?v=1709890573);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 14px;
+  width: 14px;
+  display: block;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.spa-services-head select {
+  display: none;
+}
+.spa-services-head .head-right {
+  flex: 1 0 0;
+  /* justify-content: flex-end; */
+  align-items: center;
+  width: 100%;
+}
+.spa-services-head .select-div {
+  position: relative;
+}
+.spa-services-info-top{
+  flex: 1 0 0;
+}
+.spa-services-head .select-div:not(.active) ul {
+  display: none;
+}
+.spa-services-head .select-div ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #000;
+  border-radius: 2px;
+  z-index: 1;
+  list-style: none;
+  font-size: 20px;
+  padding: 0;
+  font-size: 14px;
+}
+.spa-services-head .select-div ul {
+  max-height: 350px;
+  overflow-y: auto;
+  border: 1px solid rgb(255 255 255 / 30%);
+  overscroll-behavior: contain;
+}
+.spa-services-head .select-div ul li {
+  line-height: 1.5;
+  padding: 7px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.spa-services-head .select-div ul li:hover, .spa-services-head .select-div ul li.active {
+  background: #343434;
+}
+.spa-services-head .select-div .field-select-active {
+  line-height: 1.5;
+  padding: 5px 25px 5px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.spa-services-head .select-div .field-select-active span {
+  white-space-collapse: collapse;
+  text-wrap: nowrap;
+  width: 100%;
+  display: block;
+}
+.spa-services-head .select-div .field-select-active span, .spa-services-head .select-div .field-select-active{
+  overflow: hidden;
+}
+.spa-services-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.spa-services-box .img-box{
+  padding-top: 100%;
+  position: relative;
+  vertical-align: top;
+}
+.spa-services-box .img-box img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.spa-services-row{
+  height: 100%;
+}
+.spa-services-info{
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+}
+.spa-services-box .services-contact-box, .spa-services-box .btn-row{
+  margin-top: 40px;
+}
+.spa-services-box{
+  width: 25%;
+  border-right: 1px solid rgba(255, 255, 255, 0.10);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.spa-services-box, .spa-services-row{
+  display: flex;
+  flex-direction: column;
+}
+.spa-services-box .button--primary{
+  background-color: #c79d5b;
+}
+.spa-services-box .button--primary:hover{
+  background-color: #fff;
+}
+.spa-services-box .btn-row .link{
+  color: #c79d5b;
+  margin-left: 40px;
+}
+.spa-services-box .spa-services-info-top .text-wrap{
+  margin-top: 5px;
+}
+.spa-services-box .spa-services-info-top p{
+  overflow: hidden;
+  /* max-height: 96px; */
+}
+.spa-services-box .text-wrap p:nth-last-child(2){
+  margin-bottom: 0;
+}
+.spa-services-box .text-wrap-more{
+  font-size: 14px;
+  color: #fff;
+  margin-top: 5px;
+  display: inline-block;
+}
+.spa-services-box .text-wrap-more:hover{
+  color: #c79d5b;
+  text-decoration-thickness: 0.1rem;
+}
+.spa-services-box .location-link{
+  color: #646464;
+  font-size: 12px;
+  font-weight: 450;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.spa-services-box .location-link:hover{
+  color: #fff;
+}
+.spa-services-box .location-link svg{
+  margin-right: 10px;
+}
+.spa-services-box .services-contact-row .inner-box{
+  margin-top: 25px;
+}
+.spa-services-box .services-contact-row .inner-box h5{
+  font-size: 16px;
+}
+.spa-services-box .services-contact-row .text-wrap{
+  color: #646464;
+  font-size: 12px;
+  line-height: 100%;
+}
+.spa-services-box .services-contact-row .text-wrap p{
+  margin-top: 10px;
+}
+.spa-services-box .services-contact-box{
+  position: relative;
+}
+.spa-services-box .services-location-info.hover-box{
+  padding: 20px;
+  background-color: #26221B;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  margin-bottom: 0;
+  max-width: 270px;
+  width: 100%;
+}
+.services-location-info.hover-box{
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+.spa-services-box .location-link:hover+.services-location-info.hover-box{
+  visibility: visible;
+  opacity: 1;
+  margin-bottom: 10px;
+}
+.spa-services-list-title{
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #C79D5B;
+  margin: 0 0 27px;
+}
+.spa-services-box:not(.location-expand) .services-location-info:not(.hover-box){
+  display: none;
+}
+.spa-services-box.location-expand .location-link{
+  display: none;
+}
+.spa-services-list-div{
+  margin-bottom: 60px;
+}
+.spa-services-list-div:last-child{
+  margin-bottom: 0;
+}
+.spa-all-services .services--options{
+  margin-right: 40px;
+}
+.spa-all-services .services--options ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.spa-all-services .services--options ul li{
+  font-size: 12px;
+  font-weight: 450;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.spa-all-services .services--options ul li:hover{
+  border-color: #C79D5B;
+}
+.spa-all-services .services--options ul li:after{
+  position: absolute;
+  content: "";
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #C79D5B;
+  opacity: 0;
+  visibility: hidden;
+}
+.spa-all-services .services--options ul li.active:after{
+  opacity: 1;
+  visibility: visible;
+}
+.spa-services-info-bottom .hide-link-btn{
+  opacity: 0;
+  visibility: hidden;
+  display: inline-block;
+}
+.spa-services-box .btn-row{
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 750px){
+  .spa-services-head {
+    display: flex;
+    justify-content: space-between;
+  }
+  .spa-services-head .head-right{
+    display: flex;
+  }
+  .spa-services-head .select-div {
+    /* max-width: 250px;
+    width: 100%;
+    flex: 1 0 0; */
+    margin-left: auto;
+  }
+  .spa-services-head .select-div .field-select-active{
+    text-align: right;
+    width: max-content;
+  }
+  .spa-services-head .select-div ul{
+    left: auto;
+    right: 0;
+    width: max-content;
+  }
+}
+@media screen and (min-width: 1200px){
+  .spa-services-head.direction-reverse{
+    flex-direction: row-reverse;
+  }
+  .spa-services-head.direction-reverse .head-right{
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1699px){
+  .spa-services-box .btn-big-width {
+    min-width: auto;
+  }
+  .spa-services-box .btn-row .link{
+    margin-left: 20px;
+  }
+  .spa-services-info{
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 1439px){
+  .spa-services-box{
+    width: 33.33%;
+  }
+}
+@media screen and (max-width: 1199px){
+  .spa-services-info{
+    padding: 25px;
+  }
+  .spa-services-list-div{
+    margin-bottom: 50px;
+  }
+  .spa-services-head{
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .spa-services-box .button{
+    padding: 0 1.5rem;
+  }
+  .spa-services-info h3{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 959px){
+  .spa-services-box{
+    width: 50%;
+  }
+  .spa-services-box .services-contact-row .inner-box h5{
+    font-size: 14px;
+  }
+  .spa-services-head .select-div .field-select-active{
+    font-size: 14px;
+  }
+  .spa-services-head .select-div:not(:last-child) {
+    margin-right: 30px;
+  }
+  .spa-services-list-div{
+    margin-bottom: 40px;
+  }
+  .spa-services-info h3{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 749px){
+  .spa-services-info{
+    padding: 20px;
+  }
+  .spa-services-box .btn-row {
+    margin-top: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .spa-services-box .btn-big-width{
+    width: 100%;
+  }
+  .spa-services-box .btn-row .link {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .spa-services-box .services-contact-box, .spa-services-box .btn-row {
+    margin-top: 20px;
+  }
+  .spa-services-box .spa-services-info-top p{
+    /* max-height: 72px; */
+  }
+  .spa-services-box .btn-big-width {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .spa-services-head .select-div:not(:last-child) {
+    margin-right: 0;
+  }
+  .spa-services-head .select-div .field-select-active{
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    padding: 15px 40px 15px 20px;
+  }
+  .spa-services-head .select-div{
+    margin-top: 40px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .spa-services-head .select-div:not(:last-child){
+    border-right: 1px solid rgba(255, 255, 255, 0.10);
+  }
+  .spa-services-head .head-right{
+    margin-top: 20px;
+  }
+  .spa-services-head .select-div:after{
+    right: 15px;
+  }
+  .spa-all-services .services--options{
+    margin-right: 0;
+  }
+  .spa-services-head .select-div ul li{
+    padding: 10px 20px;
+  }
+  .spa-services-head{
+    margin-bottom: 0;
+  }
+  .spa-services-info h3{
+    font-size: 14px;
+  }
+  .spa-services-box .text-wrap-more{
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 374px){
+  .spa-services-info h3 {
+    font-size: 12px;
+  }
+  .spa-services-info {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,307 @@
+<link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'template-collection.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'pro-card.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'home-collection.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}"></noscript>
+<noscript><link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}"></noscript>
+<noscript><link rel="stylesheet" href="{{ 'template-collection.css' | asset_url }}"></noscript>
+<noscript><link rel="stylesheet" href="{{ 'pro-card.css' | asset_url }}"></noscript>
+<noscript><link rel="stylesheet" href="{{ 'home-collection.css' | asset_url }}"></noscript>
+
+
+
+{% if section.settings.top_padding_remove or section.settings.bottom_padding_remove %}
+  <style>
+    {% if section.settings.top_padding_remove %}
+      #shopify-section-{{ section.id }}.section-padding{
+        padding-top: 0 !important;
+      }
+    {% endif %}
+    
+    {% if section.settings.bottom_padding_remove %}
+      #shopify-section-{{ section.id }}.section-padding{
+        padding-bottom: 0 !important;
+      }
+    {% endif %}
+  </style>
+{% endif %}
+
+{%- assign btn_class = blank -%}
+{%- if section.settings.view_all_style == 'solid' -%}
+  {%- assign btn_class = 'button btn-small-width button--primary' -%}
+{%- elsif section.settings.view_all_style == 'outline' -%}
+  {%- assign btn_class = 'button btn-small-width button--secondary' -%}
+{%- else -%}
+  {%- assign btn_class = 'link global-link' -%}
+{%- endif -%} 
+
+
+{%- capture product_data -%}
+  {%- for block in section.blocks -%}
+    {%- assign product = block.settings.pick_product -%}
+    {%- if product != null -%}
+      <li class="grid__item">
+        {% render 'card-product',
+          card_product: product,
+          media_aspect_ratio: section.settings.image_ratio,
+          image_shape: 'default',
+          show_secondary_image: section.settings.show_secondary_image,
+          show_vendor: false,
+          show_rating: section.settings.show_rating,
+          show_quick_add: false,
+          section_id: section.id,
+        %}
+      </li>
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+
+{%- if product_data != blank -%}
+  <div class="color-{{ section.settings.color_scheme }} isolate gradient">
+    <div class="collection page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      
+      <div class="section-row">
+        
+        <div class="left-col">
+          <div class="collection__title title-wrapper title-wrapper--no-top-margin page--width">
+            {%- if section.settings.description != blank -%}
+              <div class="collection__description caption-with-letter-spacing body rte">
+                {{ section.settings.description -}}
+              </div>
+            {%- endif -%}
+            
+            {%- if section.settings.title != blank -%}
+              <h2 class="title inline-richtext heading-text {{ section.settings.heading_size }}">
+                {{ section.settings.title }}
+              </h2>
+            {%- endif -%}
+  
+            {%- if section.settings.button_label != blank -%}
+              <div class="collection__view-all small-hide">
+                <a
+                  {% if section.settings.button_link == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ section.settings.button_link }}"
+                  {% endif %}
+                  class="{{ btn_class }}"
+                  aria-label="{{ section.settings.button_label }}"
+                >
+                  {{- section.settings.button_label -}}
+                  {%- if section.settings.view_all_style == 'link' -%}
+                    <span class="icon-wrap">{% render 'icon-link-arrow' %}</span>
+                  {%- endif -%}
+                </a>
+              </div>
+            {%- endif -%}
+            
+          </div>
+        </div>
+  
+        <div class="right-col">
+          <div class="slider-mobile-gutter page--width page--width-desktop">
+            <ul
+              id="Slider-{{ section.id }}"
+              class="grid product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--2-col-desktop grid--2-col-tablet-down"
+              role="list"
+              aria-label="{{ 'general.slider.name' | t }}"
+            >
+              {{- product_data -}}
+            </ul>
+          </div>
+  
+          {%- if section.settings.button_label != blank -%}
+            <div class="collection__view-all medium-hide large-up-hide">
+              <a
+                {% if section.settings.button_link == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ section.settings.button_link }}"
+                {% endif %}
+                class="{{ btn_class }}"
+                aria-label="{{ section.settings.button_label }}"
+              >
+                {{- section.settings.button_label -}}
+                {%- if section.settings.view_all_style == 'link' -%}
+                  <span class="icon-wrap">{% render 'icon-link-arrow' %}</span>
+                {%- endif -%}
+              </a>
+            </div>
+          {%- endif -%}
+          
+        </div>
+      </div>    
+  
+    </div>
+  </div>
+{%- endif -%}
+
+
+{% schema %}
+{
+  "name": "Collection",
+  "tag": "section",
+  "class": "section home-collection section-padding",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "default": "Featured collection",
+      "label": "t:sections.featured-collection.settings.title.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "t:sections.featured-collection.settings.description.label"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Shop now",
+      "label": "Button label",
+      "info": "Leave the label blank to hide the button."
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "select",
+      "id": "view_all_style",
+      "label": "Button style",
+      "options": [
+        {
+          "value": "link",
+          "label": "t:sections.featured-collection.settings.view_all_style.options__1.label"
+        },
+        {
+          "value": "outline",
+          "label": "t:sections.featured-collection.settings.view_all_style.options__2.label"
+        },
+        {
+          "value": "solid",
+          "label": "t:sections.featured-collection.settings.view_all_style.options__3.label"
+        }
+      ],
+      "default": "solid"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "info": "t:sections.all.colors.has_cards_info",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.featured-collection.settings.header.content"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.featured-collection.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.featured-collection.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.featured-collection.settings.image_ratio.options__3.label"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.featured-collection.settings.image_ratio.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_secondary_image",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.show_secondary_image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rating",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.show_rating.label",
+      "info": "t:sections.featured-collection.settings.show_rating.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.featured-collection.settings.header_mobile.content"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "top_padding_remove",
+      "default": false,
+      "label": "Remove top padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_padding_remove",
+      "default": false,
+      "label": "Remove bottom padding"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "product",
+          "id": "pick_product",
+          "label": "Select product to show"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection",
+      "blocks": [
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

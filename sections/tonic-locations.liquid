@@ -1,0 +1,213 @@
+<link rel="stylesheet" href="{{ 'tonic-locations.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'tonic-locations.css' | asset_url }}"></noscript>
+
+
+{%- capture location_content -%}
+  {%- for block in section.blocks -%}
+    {%- if block.type == 'location' -%}
+      
+      <div class="loc-item">
+       <div class="content-box">    
+         {%- if block.settings.heading != blank -%}
+           <h3 class="item-title">{{ block.settings.heading }}</h3>
+         {%- endif -%}
+          {%- if block.settings.description != blank -%}
+            <div class="texts">{{ block.settings.description }}</div>
+          {%- endif -%}
+          {%- if block.settings.address != blank -%}
+            <span class="address">{{ block.settings.address }}</span>
+          {%- endif -%}
+          {%- if block.settings.phone != blank -%}
+            <span class="phone">{{ block.settings.phone }}</span>
+          {%- endif -%}
+          {%- if block.settings.button_label != blank -%}
+            <a
+              {% if block.settings.button_link == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ block.settings.button_link }}"
+              {% endif %}
+              class="more-link link global-link"
+              {{ block.shopify_attributes }}
+            >
+              {{- block.settings.button_label | escape -}}
+              <span class="icon-wrap">{% render 'icon-link-arrow' %}</span>
+            </a>
+          {%- endif -%}
+       </div>
+
+      {%- if block.settings.image != blank -%}
+        <div class="media-box">
+          {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+          {%- capture sizes -%}
+            (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+            (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+          {%- endcapture -%}
+          {{ block.settings.image | image_url: width: 1500 | image_tag: loading: 'lazy', sizes: sizes, widths: widths }}
+        </div>
+      {%- else -%}
+        <div class="media-box">
+          {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+      {%- endif -%}
+        
+       <div class="location-highlights">
+        {%- if block.settings.feat_title != blank -%}
+         <h4>{{ block.settings.feat_title }}</h4>
+        {%- endif -%}
+      
+         <ul class="highlight-points">
+          {%- for i in (1..5) -%}
+            {%- capture feature_id -%}feature_{{i}}{%- endcapture -%}
+            {%- assign features = block.settings[feature_id] -%}
+            {%- if features != blank -%}
+              <li>{% render 'icon-check-1' %} {{ features }}</li>
+            {%- endif -%}
+          {%- endfor -%}
+         </ul>
+       </div>
+        
+      </div>
+
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+
+<div class="page-width">
+
+  {%- if section.settings.caption != blank or section.settings.title != blank -%}
+    <div class="sec-head{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">     
+    {%- if section.settings.caption != blank -%}
+      <span class="sub-title">{{ section.settings.caption }}</span>
+    {%- endif -%}
+    {%- if section.settings.title != blank -%}
+      <h2 class="title">{{ section.settings.title }}</h2>
+    {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  {%- if location_content != blank -%}
+    <div class="locations-list{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">{{ location_content }}</div>
+  {%- endif -%}
+ 
+</div>
+ 
+
+
+{% schema %}
+{
+  "name": "Tonic Locations",
+  "tag": "section",
+  "class": "section topic-locations-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "caption",
+      "label": "Caption",
+      "default": "ALL LOCATIONS"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "DISCOVER YOUR PERFECT SPOT"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "location",
+      "name": "Location",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "YONGE / SHUTER",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "address",
+          "default": "225 Yonge Street, Toronto ON M5B 1N8",
+          "label": "Address"
+        },
+        {
+          "type": "text",
+          "id": "phone",
+          "default": "647-372-0225",
+          "label": "Phone"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Book now",
+          "label": "Button label",
+          "info": "Leave the label blank to hide the button."
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "header",
+          "content": "Location Features"
+        },
+        {
+          "type": "text",
+          "id": "feat_title",
+          "default": "LOCATION HIGHLIGHTS:",
+          "label": "Features title"
+        },
+        {
+          "type": "text",
+          "id": "feature_1",
+          "default": "Feature 1",
+          "label": "Features 1"
+        },
+        {
+          "type": "text",
+          "id": "feature_2",
+          "default": "Feature 2",
+          "label": "Features 2"
+        },
+        {
+          "type": "text",
+          "id": "feature_3",
+          "default": "Feature 3",
+          "label": "Features 3"
+        },
+        {
+          "type": "text",
+          "id": "feature_4",
+          "default": "Feature 4",
+          "label": "Features 4"
+        },
+        {
+          "type": "text",
+          "id": "feature_5",
+          "default": "Feature 5",
+          "label": "Features 5"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tonic Locations"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,456 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hit-hero": {
+      "type": "hit-hero",
+      "blocks": {
+        "3d295c9e-10b8-4397-b3c8-b08733efc0db": {
+          "type": "text",
+          "settings": {
+            "text": "INDOOR CYCLING AT SWEAT AND TONIC",
+            "text_style": "caption-with-letter-spacing",
+            "text_clr": "#ffffff"
+          }
+        },
+        "89ede07a-229a-4fd5-8064-eb065090ad93": {
+          "type": "heading",
+          "settings": {
+            "heading": "RIDE STUDIO",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "943f29ad-f020-4899-974b-20f586c4dd6a": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "BOOK CLASSES",
+            "button_link_1": "shopify://collections/all",
+            "button_style": "solid",
+            "applies_color_scheme": true,
+            "btn_text_clr": "#000000",
+            "btn_hvr_text_clr": "#000000",
+            "btn_bg_clr": "#c79d5b",
+            "btn_hvr_bg_clr": "#ffffff"
+          }
+        },
+        "1fe44382-9435-48ac-95f6-bf885137b352": {
+          "type": "description",
+          "settings": {
+            "desc": "<p>An unparalleled indoor cycling experience that incorporates the best from both metric and rhythm rides.</p>",
+            "anchor_label": "Learn More",
+            "anchor_link": "",
+            "text_clr": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "3d295c9e-10b8-4397-b3c8-b08733efc0db",
+        "89ede07a-229a-4fd5-8064-eb065090ad93",
+        "943f29ad-f020-4899-974b-20f586c4dd6a",
+        "1fe44382-9435-48ac-95f6-bf885137b352"
+      ],
+      "settings": {
+        "allow_transparent_header": true,
+        "image": "shopify://shop_images/TheWell_ride.jpg",
+        "img_mobile": "shopify://shop_images/TheWell_ride.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center"
+      }
+    },
+    "hit-banner-column": {
+      "type": "hit-banner-column",
+      "blocks": {
+        "2fc049c5-7369-409d-b14a-69872fa3a417": {
+          "type": "heading",
+          "settings": {
+            "heading": "VIBE OUT",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "d57f9c4c-bb8d-4416-994b-eb28dc4afba4": {
+          "type": "features",
+          "settings": {
+            "text_clr": "#ffffff",
+            "svg_1": "<svg viewbox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"1.152\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"><defs><style>.a{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;}</style></defs><circle class=\"a\" cx=\"18.5377\" cy=\"35.3781\" r=\"8.1219\"></circle><line class=\"a\" x1=\"26.6596\" y1=\"35.3781\" x2=\"26.6596\" y2=\"12.8341\"></line><path class=\"a\" d=\"M28.69,4.5h6.8637a2.03,2.03,0,0,1,2.03,2.03v4.2732a2.03,2.03,0,0,1-2.03,2.03H26.66a0,0,0,0,1,0,0V6.53A2.03,2.03,0,0,1,28.69,4.5Z\"></path></g></svg>",
+            "title_1": "RHYTHM & METRIC RIDES",
+            "desc_1": "<p>Lose yourself in the music and lights as you race towards your goals and challenge your mind and body.</p>",
+            "svg_2": "<svg fill=\"#ffffff\" viewbox=\"0 -3 38 38\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <title>bike</title> <path d=\"M29.998 28.197c-4.212 0-7.627-3.414-7.627-7.627 0-3.090 1.842-5.745 4.484-6.943l-1.014-2.283 0.165 0.399-6.944 9.321v1.869h1.017v1.018h-3.052v-1.018h1.018v-1.018l-2.877-0.27c-0.524 3.701-3.696 6.551-7.542 6.551-4.212 0.001-7.626-3.413-7.626-7.626 0-4.212 3.414-7.626 7.627-7.626 1.101 0 2.145 0.238 3.090 0.657l1.906-4.788-0.865-2.416c-0.38 0-0.734 0-1.017 0-0.954 0-0.699-1.017-0.699-1.017s0.063-0.89 0.763-0.89 0.699 0.636 1.843 0.636c1.095 0 2.669 0.317 2.669 0.317s0.699 0.953-0.635 0.953c-0.604 0-1.269 0-1.907 0l0.723 2.597h11.052l-0.868-1.973h-0.675v-1.016h4.067v1.017h-2.298l2.977 6.26c0.71-0.219 1.465-0.337 2.246-0.337 4.212 0 7.627 3.414 7.627 7.626-0.001 4.213-3.416 7.627-7.628 7.627zM7.627 13.96c-3.651 0-6.61 2.959-6.61 6.61s2.959 6.609 6.61 6.609c3.319 0 6.060-2.449 6.53-5.639l-5.294-0.545c-0.084 0.477-0.481 0.846-0.982 0.846-0.562 0-1.017-0.455-1.017-1.018 0-0.561 0.455-1.018 1.017-1.018 0.12 0 0.232 0.031 0.339 0.070l2.121-5.33c-0.829-0.372-1.746-0.585-2.714-0.585zM9.152 20.125l5.079 0.537c0.001-0.031 0.005-0.061 0.005-0.092 0-2.35-1.229-4.408-3.077-5.581l-2.007 5.136zM13.077 10.082l-1.543 3.948c2.225 1.332 3.719 3.759 3.719 6.541 0 0.066-0.008 0.133-0.010 0.199l1.726 0.182-3.892-10.87zM24.978 9.396v0.614h-11.12l4.050 10.839 7.687-10.065-0.617-1.388zM29.998 13.96c-0.637 0-1.251 0.095-1.834 0.264l2.374 5.424c0.482 0.078 0.858 0.48 0.858 0.984 0 0.562-0.455 1.018-1.017 1.018s-1.018-0.455-1.018-1.018c0-0.273 0.111-0.521 0.289-0.705l-2.384-5.372c-2.287 1.040-3.879 3.338-3.879 6.014 0 3.65 2.959 6.609 6.609 6.609s6.609-2.959 6.609-6.609-2.957-6.609-6.607-6.609z\"></path> </g></svg>",
+            "title_2": "STATE-OF-THE-ART EQUIPMENT",
+            "desc_2": "<p>Technogym Group Cycle Ride bikes utilize patented technology to blend precision with comfort.</p>",
+            "svg_3": "<svg viewbox=\"0 0 48 48\" id=\"b\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"1.344\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <defs> <style>.o{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;}</style> </defs> <g id=\"c\"> <line id=\"d\" class=\"o\" x1=\"13.1159\" y1=\"11.7737\" x2=\"13.1159\" y2=\"36.2263\"></line> <line id=\"e\" class=\"o\" x1=\"8.8039\" y1=\"16.8329\" x2=\"8.8039\" y2=\"31.1671\"></line> <line id=\"f\" class=\"o\" x1=\"4.5\" y1=\"21.4705\" x2=\"4.5\" y2=\"26.5295\"></line> <line id=\"g\" class=\"o\" x1=\"17.4569\" y1=\"16.8329\" x2=\"17.4569\" y2=\"31.1671\"></line> <line id=\"h\" class=\"o\" x1=\"21.9465\" y1=\"21.4705\" x2=\"21.9465\" y2=\"26.5295\"></line> </g> <g id=\"i\"> <line id=\"j\" class=\"o\" x1=\"34.6693\" y1=\"11.7737\" x2=\"34.6693\" y2=\"36.2263\"></line> <line id=\"k\" class=\"o\" x1=\"30.3573\" y1=\"16.8329\" x2=\"30.3573\" y2=\"31.1671\"></line> <line id=\"l\" class=\"o\" x1=\"26.0535\" y1=\"21.4705\" x2=\"26.0535\" y2=\"26.5295\"></line> <line id=\"m\" class=\"o\" x1=\"39.0104\" y1=\"16.8329\" x2=\"39.0104\" y2=\"31.1671\"></line> <line id=\"n\" class=\"o\" x1=\"43.5\" y1=\"21.4705\" x2=\"43.5\" y2=\"26.5295\"></line> </g> </g></svg>",
+            "title_3": "IMMERSIVE EXPERIENCE",
+            "desc_3": "<p>Custom-programmed lights, theatre-quality sound, and 266-inch projection screen create an immersive, energizing experience</p>",
+            "svg_4": "<svg viewbox=\"0 0 48 48\" id=\"a\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"#ffffff\" stroke=\"#ffffff\" stroke-width=\"1.296\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"><defs><style>.b{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;}</style></defs><circle class=\"b\" cx=\"24\" cy=\"24\" r=\"21.5\"></circle><polyline class=\"b\" points=\"30 10 14.9 11.8 8.9 25.8\"></polyline><line class=\"b\" x1=\"39.1\" y1=\"22.2\" x2=\"30\" y2=\"10\"></line><polyline class=\"b\" points=\"18 38 33.1 36.2 39.1 22.2\"></polyline><line class=\"b\" x1=\"8.9\" y1=\"25.8\" x2=\"18\" y2=\"38\"></line><polyline class=\"b\" points=\"39.1 22.2 27.7 15.4 14.9 11.8 14.6 25.1 18 38\"></polyline><polyline class=\"b\" points=\"18 38 29.6 31.6 39.1 22.2\"></polyline><polygon class=\"b\" points=\"29.6 31.6 14.6 25.1 27.7 15.4 29.6 31.6\"></polygon><line class=\"b\" x1=\"8.9\" y1=\"25.8\" x2=\"14.6\" y2=\"25.1\"></line><line class=\"b\" x1=\"27.7\" y1=\"15.4\" x2=\"30\" y2=\"10\"></line><line class=\"b\" x1=\"33.1\" y1=\"36.2\" x2=\"29.6\" y2=\"31.6\"></line></g></svg>",
+            "title_4": "DYNAMIC RIDE STYLES",
+            "desc_4": "<p>From pulse-pounding sprints to endurance challenges, every session is a unique fitness adventure</p>"
+          }
+        }
+      },
+      "block_order": [
+        "2fc049c5-7369-409d-b14a-69872fa3a417",
+        "d57f9c4c-bb8d-4416-994b-eb28dc4afba4"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "image": "shopify://shop_images/Claudia_ride.jpg",
+        "img_mobile": "shopify://shop_images/Claudia_ride.jpg",
+        "image_overlay_opacity": 70,
+        "image_height": "adapt",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "section_title_mobtop": true
+      }
+    },
+    "hit-classes": {
+      "type": "hit-classes",
+      "blocks": {
+        "704e6416-7383-410f-9de1-7ac0beeec85f": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "BEAT RIDE",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 2,
+            "dur_heading": "DURATION",
+            "duration": "45 min",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "All levels",
+            "detail": "<p>Lose yourself in the music & lights and let the beat be your guide as you work up a sweat in this high-energy, full-body ride.</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "https://www.sweatandtonic.com/reserve/",
+            "button_text_2": "",
+            "button_url_2": "shopify://pages/pricing"
+          }
+        },
+        "hit_box_Apaned": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "RAVE RIDE",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 2,
+            "dur_heading": "DURATION",
+            "duration": "45 min",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "All levels",
+            "detail": "<p>Nightclub or spin class? Get you a studio that can do both. Work up a sweat and feel the vibes in this full-body ride with a live DJ, glow sticks, and kicking beats.</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "https://www.sweatandtonic.com/reserve/",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "hit_box_i8rKMf": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "DRAG RIDE",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 2,
+            "dur_heading": "DURATION",
+            "duration": "45 min",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "All levels",
+            "detail": "<p>Celebrate self-expression, individuality, inclusivity, and the art of drag. Come as you are in this one-of-a-kind fitness experience that brings together a challenging full-body workout, high-energy drag performances, and more. Sweat, sing along, and ride to the beat as part of our proud and diverse community!</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "4fb95e56-cda7-408b-a55c-63a88396079d": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "CLUB RIDE",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 2,
+            "dur_heading": "DURATION",
+            "duration": "45 min",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "All levels",
+            "detail": "<p>Night club or spin class? Get you a studio that can do both. Build strength, increase endurance, and get in the zone as you work up a sweat in this perfect blend of power riding and rhythm.</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "https://www.sweatandtonic.com/reserve/",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "c280bdb2-65e1-4092-aced-67cacc1ff117": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "RISE & RIDE",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 2,
+            "dur_heading": "DURATION",
+            "duration": "45 min",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "All levels",
+            "detail": "<p>Ride into the sunrise in this energizing class that prepares both mind and body for the day ahead. The journey begins with guided meditation and breathwork on the bike designed to awaken and bring focus. As we ease in together, we'll pick up the pace and let the music guide us through a challenging and inspiring ride that will leave you feeling invigorated and ready to take on the day.</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "https://www.sweatandtonic.com/reserve/",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "a716f6c2-86fa-42e7-8de5-71a119a3d638": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "TRIPLE SWEAT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "90 min",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "All levels",
+            "detail": "<p>For the ultimate workout warrior, utilize all 3 studios in one 90-minute class. You’ll spend 30 minutes in each studio alongside fellow sweat addicts for a full-body, well-balanced and limit-pushing workout.</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "https://www.sweatandtonic.com/reserve/",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "704e6416-7383-410f-9de1-7ac0beeec85f",
+        "hit_box_Apaned",
+        "hit_box_i8rKMf",
+        "4fb95e56-cda7-408b-a55c-63a88396079d",
+        "c280bdb2-65e1-4092-aced-67cacc1ff117",
+        "a716f6c2-86fa-42e7-8de5-71a119a3d638"
+      ],
+      "settings": {
+        "subHeading": "EXPLORE CLASSES",
+        "heading": "RIDE CLASSES",
+        "detail": "<p>Sweat and Tonic leads an unparalleled indoor cycling experience that incorporates the best from both metric and rhythm rides. You’ll race past your goals and get lost in the music.</p>",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "hit-banner-row": {
+      "type": "hit-banner-row",
+      "blocks": {
+        "2fc049c5-7369-409d-b14a-69872fa3a417": {
+          "type": "heading",
+          "settings": {
+            "heading": "BENEFITS OF INDOOR CYCLING",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "816d62d0-da59-4074-9bf1-9c214ed815fe": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "RIDE WITH US",
+            "button_link_1": "https://www.sweatandtonic.com/reserve/",
+            "button_style": "solid",
+            "applies_color_scheme": true,
+            "btn_text_clr": "#000000",
+            "btn_hvr_text_clr": "#000000",
+            "btn_bg_clr": "#ffffff",
+            "btn_hvr_bg_clr": "#c79d5b"
+          }
+        },
+        "486c1659-7943-4d3f-a46d-0d16c16aa358": {
+          "type": "function",
+          "settings": {
+            "text_clr": "#ffffff",
+            "svg_1": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\">\n  <g clip-path=\"url(#clip0_1042_1892)\">\n    <path d=\"M3.75 15H8.4375L10.3125 12.1875L14.0625 17.8125L15.9375 15H18.75\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    <path d=\"M2.8125 11.25C2.8125 11.1715 2.8125 11.0941 2.8125 11.0156C2.8125 9.3373 3.47921 7.72772 4.66596 6.54096C5.85272 5.35421 7.4623 4.6875 9.14062 4.6875C11.7879 4.6875 14.0555 6.13008 15 8.4375C15.9445 6.13008 18.2121 4.6875 20.8594 4.6875C22.5377 4.6875 24.1473 5.35421 25.334 6.54096C26.5208 7.72772 27.1875 9.3373 27.1875 11.0156C27.1875 18.75 15 25.3125 15 25.3125C15 25.3125 10.0781 22.6641 6.49453 18.75\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  </g>\n  <defs>\n    <clippath id=\"clip0_1042_1892\">\n      <rect width=\"30\" height=\"30\" fill=\"currentColor\"></rect>\n    </clippath>\n  </defs>\n</svg>",
+            "title_1": "LOW-IMPACT CARDIO",
+            "desc_1": "<p>A high intensity but low-impact exercise that's easier on your joints, providing a safe and effective workout for all fitness levels.</p>",
+            "svg_2": "<svg width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.5882 15C21.5882 16.303 21.2018 17.5768 20.4779 18.6602C19.754 19.7437 18.7251 20.5881 17.5212 21.0867C16.3174 21.5854 14.9927 21.7159 13.7147 21.4616C12.4367 21.2074 11.2628 20.58 10.3414 19.6586C9.42003 18.7372 8.79256 17.5633 8.53836 16.2853C8.28415 15.0073 8.41462 13.6826 8.91326 12.4788C9.41191 11.2749 10.2563 10.246 11.3398 9.52208C12.4232 8.79816 13.697 8.41176 15 8.41176M21.5882 15C21.5882 13.2527 20.8941 11.5769 19.6586 10.3414C18.4231 9.10588 16.7473 8.41176 15 8.41176M21.5882 15H28.1765M15 8.41176V1.82353M24.3224 5.67765L19.6612 10.3388M24.3224 24.3224L19.6612 19.6612M15 28.1765V21.5882M5.67765 24.3224L10.3388 19.6612M1.82353 15H8.41176M5.67765 5.67765L10.3388 10.3388M14.9176 1H15.0824M24.8494 5.03529L24.9647 5.15059M29 14.9176V15.0824M24.9647 24.8494L24.8494 24.9647M15.0824 29H14.9176M5.15059 24.9647L5.03529 24.8494M1 15.0824V14.9176M5.03529 5.15059L5.15059 5.03529\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "title_2": "RELIEVE STRESS",
+            "desc_2": "<p>Channel stress into energy as you pedal through invigorating rides, offering a mental escape for a refreshed state of mind.</p>",
+            "svg_3": "<svg fill=\"#ffffff\" version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 32 32\" stroke=\"\" stroke-width=\"0.32\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xml:space=\"preserve\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <path id=\"yoga--04_1_\" d=\"M25.523,31.36c-0.018,0-0.035,0-0.053,0H1v-0.72h3.853c-0.191-0.226-0.331-0.494-0.407-0.79 c-0.133-0.517-0.059-1.052,0.211-1.508l7.483-12.48V10.36H4.5c-1.025,0-1.86-0.834-1.86-1.86S3.475,6.64,4.5,6.64h8.909 C12.917,6.045,12.64,5.293,12.64,4.5c0-1.853,1.507-3.36,3.36-3.36s3.36,1.507,3.36,3.36c0,0.793-0.278,1.545-0.77,2.14h8.91 c1.025,0,1.86,0.834,1.86,1.86s-0.835,1.86-1.86,1.86h-7.641l0.002,5.519l7.373,12.479c0.27,0.457,0.345,0.993,0.212,1.509 c-0.074,0.289-0.208,0.552-0.392,0.773H31v0.721h-5.424C25.559,31.36,25.541,31.36,25.523,31.36z M25.48,30.64h0.086 c0.205-0.007,0.411-0.063,0.6-0.175c0.291-0.171,0.498-0.447,0.583-0.777c0.085-0.331,0.037-0.673-0.134-0.964l-7.424-12.563 c-0.033-0.055-0.051-0.119-0.051-0.183L19.139,10c0-0.095,0.038-0.187,0.105-0.254c0.067-0.068,0.159-0.105,0.255-0.105H27.5 c0.629,0,1.14-0.512,1.14-1.14s-0.511-1.14-1.14-1.14h-9.842c-0.159,0-0.299-0.104-0.345-0.256s0.014-0.316,0.146-0.404 c0.739-0.492,1.181-1.314,1.181-2.2c0-1.456-1.184-2.64-2.64-2.64s-2.64,1.185-2.64,2.64c0,0.886,0.442,1.708,1.181,2.2 c0.132,0.088,0.191,0.252,0.146,0.404S14.5,7.36,14.342,7.36H4.5c-0.628,0-1.14,0.512-1.14,1.14S3.872,9.64,4.5,9.64h8 c0.199,0,0.36,0.161,0.36,0.36v5.961c0,0.065-0.018,0.129-0.051,0.185L5.276,28.71c-0.17,0.288-0.218,0.63-0.133,0.96 s0.292,0.606,0.583,0.778c0.291,0.17,0.632,0.218,0.963,0.134c0.33-0.085,0.606-0.292,0.778-0.583l6.263-10.052 c0.467-0.644,1.052-1.308,2.269-1.308c1.169,0,1.771,0.618,2.246,1.286l6.177,10.085C24.653,30.402,25.06,30.626,25.48,30.64z M7.893,30.64h16.093c-0.066-0.079-0.127-0.165-0.181-0.258l-6.16-10.059c-0.431-0.603-0.844-0.963-1.646-0.963 c-0.8,0-1.205,0.348-1.672,0.989L8.083,30.372C8.027,30.467,7.963,30.557,7.893,30.64z\"></path> <rect id=\"_Transparent_Rectangle\" style=\"fill:none;\" width=\"32\" height=\"32\"></rect> </g></svg>",
+            "title_3": "FULL-BODY WORKOUT",
+            "desc_3": "<p>Improve your endurance and sweat it out from head to toe while focusing on power, core strength, and technique for toned, leaner muscles.</p>",
+            "svg_4": "<svg fill=\"#ffffff\" viewbox=\"0 0 100 100\" id=\"Layer_1\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xml:space=\"preserve\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <g> <path d=\"M93.998,45.312c0-3.676-1.659-7.121-4.486-9.414c0.123-0.587,0.184-1.151,0.184-1.706c0-4.579-3.386-8.382-7.785-9.037 c0.101-0.526,0.149-1.042,0.149-1.556c0-4.875-3.842-8.858-8.655-9.111c-0.079-0.013-0.159-0.024-0.242-0.024 c-0.04,0-0.079,0.005-0.12,0.006c-0.04-0.001-0.079-0.006-0.12-0.006c-0.458,0-0.919,0.041-1.406,0.126 c-0.846-4.485-4.753-7.825-9.437-7.825c-5.311,0-9.632,4.321-9.632,9.633v65.918c0,6.723,5.469,12.191,12.191,12.191 c4.46,0,8.508-2.413,10.646-6.246c0.479,0.104,0.939,0.168,1.401,0.198c2.903,0.185,5.73-0.766,7.926-2.693 c2.196-1.927,3.51-4.594,3.7-7.51c0.079-1.215-0.057-2.434-0.403-3.638c3.796-2.691,6.027-6.952,6.027-11.621 c0-3.385-1.219-6.635-3.445-9.224C92.731,51.505,93.998,48.471,93.998,45.312z M90.938,62.999c0,3.484-1.582,6.68-4.295,8.819 c-2.008-3.196-5.57-5.237-9.427-5.237c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5c3.341,0,6.384,2.093,7.582,5.208 c0.41,1.088,0.592,2.189,0.521,3.274c-0.138,2.116-1.091,4.051-2.685,5.449c-1.594,1.399-3.641,2.094-5.752,1.954 c-0.594-0.039-1.208-0.167-1.933-0.402c-0.74-0.242-1.541,0.124-1.846,0.84c-1.445,3.404-4.768,5.604-8.465,5.604 c-5.068,0-9.191-4.123-9.191-9.191V16.399c0-3.657,2.975-6.633,6.632-6.633c3.398,0,6.194,2.562,6.558,5.908 c-2.751,1.576-4.612,4.535-4.612,7.926c0,0.829,0.672,1.5,1.5,1.5s1.5-0.671,1.5-1.5c0-3.343,2.689-6.065,6.016-6.13 c3.327,0.065,6.016,2.787,6.016,6.129c0,0.622-0.117,1.266-0.359,1.971c-0.057,0.166-0.084,0.34-0.081,0.515 c0.001,0.041,0.003,0.079,0.007,0.115c-0.006,0.021-0.01,0.035-0.01,0.035c-0.118,0.465-0.006,0.959,0.301,1.328 c0.307,0.369,0.765,0.569,1.251,0.538c0.104-0.007,0.208-0.02,0.392-0.046c3.383,0,6.136,2.753,6.136,6.136 c0,0.572-0.103,1.159-0.322,1.849c-0.203,0.635,0.038,1.328,0.591,1.7c2.434,1.639,3.909,4.329,4.014,7.242 c0,0.004-0.001,0.008-0.001,0.012c0,5.03-4.092,9.123-9.122,9.123s-9.123-4.093-9.123-9.123c0-0.829-0.672-1.5-1.5-1.5 s-1.5,0.671-1.5,1.5c0,6.685,5.438,12.123,12.123,12.123c2.228,0,4.31-0.615,6.106-1.668C89.88,57.539,90.938,60.212,90.938,62.999 z\"></path> <path d=\"M38.179,6.766c-4.684,0-8.59,3.34-9.435,7.825c-0.488-0.085-0.949-0.126-1.407-0.126c-0.04,0-0.079,0.005-0.12,0.006 c-0.04-0.001-0.079-0.006-0.12-0.006c-0.083,0-0.163,0.011-0.242,0.024c-4.813,0.253-8.654,4.236-8.654,9.111 c0,0.514,0.049,1.03,0.149,1.556c-4.399,0.655-7.785,4.458-7.785,9.037c0,0.554,0.061,1.118,0.184,1.706 c-2.827,2.293-4.486,5.738-4.486,9.414c0,3.159,1.266,6.193,3.505,8.463c-2.227,2.589-3.446,5.839-3.446,9.224 c0,4.669,2.231,8.929,6.027,11.621c-0.347,1.204-0.482,2.423-0.402,3.639c0.19,2.915,1.503,5.582,3.699,7.509 c2.196,1.928,5.015,2.879,7.926,2.693c0.455-0.03,0.919-0.096,1.4-0.199c2.138,3.834,6.186,6.247,10.646,6.247 c6.722,0,12.191-5.469,12.191-12.191V16.399C47.811,11.087,43.49,6.766,38.179,6.766z M44.811,82.317 c0,5.068-4.123,9.191-9.191,9.191c-3.697,0-7.02-2.2-8.464-5.604c-0.241-0.567-0.793-0.914-1.381-0.914 c-0.154,0-0.311,0.023-0.465,0.074c-0.724,0.235-1.338,0.363-1.933,0.402c-2.119,0.139-4.158-0.556-5.751-1.954 c-1.594-1.398-2.547-3.333-2.685-5.449c-0.076-1.16,0.125-2.336,0.598-3.495c0.007-0.017,0.005-0.036,0.011-0.053 c1.342-3.056,4.225-4.953,7.597-4.953c0.829,0,1.5-0.672,1.5-1.5s-0.671-1.5-1.5-1.5c-3.938,0-7.501,2.007-9.548,5.239 c-2.701-2.139-4.277-5.327-4.277-8.802c0-2.787,1.06-5.46,2.978-7.549c1.796,1.053,3.879,1.668,6.107,1.668 c6.685,0,12.123-5.438,12.123-12.123c0-0.829-0.671-1.5-1.5-1.5s-1.5,0.671-1.5,1.5c0,5.03-4.092,9.123-9.123,9.123 s-9.123-4.093-9.123-9.123c0-0.002-0.001-0.004-0.001-0.006c0.103-2.915,1.578-5.607,4.013-7.248 c0.553-0.372,0.793-1.064,0.591-1.699c-0.22-0.691-0.322-1.278-0.322-1.85c0-3.376,2.741-6.125,6.195-6.125 c0.007,0,0.015,0,0.022,0c0.103,0.014,0.206,0.027,0.311,0.034c0.485,0.03,0.948-0.171,1.254-0.542 c0.307-0.372,0.417-0.868,0.294-1.334c0-0.001-0.003-0.014-0.008-0.031c0.003-0.035,0.006-0.067,0.007-0.095 c0.005-0.18-0.022-0.359-0.081-0.529c-0.242-0.707-0.359-1.352-0.359-1.972c0-3.342,2.688-6.065,6.016-6.129 c3.328,0.065,6.016,2.787,6.016,6.13c0,0.829,0.671,1.5,1.5,1.5s1.5-0.671,1.5-1.5c0-3.391-1.861-6.35-4.612-7.926 c0.364-3.346,3.16-5.908,6.558-5.908c3.657,0,6.632,2.976,6.632,6.633V82.317z\"></path> </g> </g></svg>",
+            "title_4": "MIND & BODY SYNCHRONICITY",
+            "desc_4": "<p>Build mental resilience and foster a holistic approach to wellness. Aerobic exercise can help to improve cognitive function through vascular brain changes.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "2fc049c5-7369-409d-b14a-69872fa3a417",
+        "816d62d0-da59-4074-9bf1-9c214ed815fe",
+        "486c1659-7943-4d3f-a46d-0d16c16aa358"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "image": "shopify://shop_images/Nariko_ride.jpg",
+        "img_mobile": "shopify://shop_images/Nariko_ride.jpg",
+        "image_overlay_opacity": 60,
+        "image_height": "adapt",
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "section_title_mobtop": true
+      }
+    },
+    "hit-team": {
+      "type": "hit-team",
+      "blocks": {
+        "d8c76e3a-9682-4e98-ad54-de25dc96e3e2": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/New_instructor_headshots_3.jpg",
+            "link_label": "JORDAN SCHOLL",
+            "link": "shopify://metaobjects/teammember/jordan-scholl"
+          }
+        },
+        "344bccad-18c9-45fe-a9fa-30f6d5343214": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Katie.jpg",
+            "link_label": "KATIE KUNST",
+            "link": "shopify://metaobjects/teammember/katie-kunst"
+          }
+        },
+        "a746ac32-ac4e-4cf0-a968-b3c4d0a06e4d": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Nariko.jpg",
+            "link_label": "NARIKO CHAFFE",
+            "link": "shopify://metaobjects/teammember/nariko-chaffe"
+          }
+        },
+        "5fcac650-cebb-403f-b694-e8cb80d71fc5": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/RebeccaMoskob_RideInstructor.jpg",
+            "link_label": "REBECCA MOSKOB",
+            "link": "shopify://metaobjects/teammember/rebecca-moskob"
+          }
+        },
+        "2dd6497d-fb1f-42b9-aec9-c251fab4097a": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/SamUshedo_RideInstructor.jpg",
+            "link_label": "SAMANTHA USHEDO",
+            "link": "shopify://metaobjects/teammember/samantha-ushedo"
+          }
+        }
+      },
+      "block_order": [
+        "d8c76e3a-9682-4e98-ad54-de25dc96e3e2",
+        "344bccad-18c9-45fe-a9fa-30f6d5343214",
+        "a746ac32-ac4e-4cf0-a968-b3c4d0a06e4d",
+        "5fcac650-cebb-403f-b694-e8cb80d71fc5",
+        "2dd6497d-fb1f-42b9-aec9-c251fab4097a"
+      ],
+      "settings": {
+        "sub_title": "MEET THE TEAM",
+        "title": "RIDE INSTRUCTORS",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "background_style": "none",
+        "button_label": "SEE THE FULL TEAM",
+        "button_link": "shopify://pages/team",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "hit-multicolumn": {
+      "type": "hit-multicolumn",
+      "blocks": {
+        "5f339c27-a2d8-4ed9-9d14-fd9c115bad81": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/3_cfb53b00-86b6-4390-b8ef-762fd685caf5.png",
+            "title": "YONGE / SHUTER",
+            "text": "<p>Push past your limits with Technogym bikes, over 100 custom programmed lights, and theatre-quality sound.</p>",
+            "address": "225 Yonge Street, Toronto ON M5B 1N8",
+            "phone": "Studio capacity: 60 people",
+            "link_label": "see classes",
+            "link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48717"
+          }
+        },
+        "ab06944c-e56b-4aaa-962a-25c5bdcc7f46": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sweat_and_Tonic_Ride_Studio_Galaxy.jpg",
+            "title": "FRONT / SPADINA (THE WELL)",
+            "text": "<p>The highest capacity studio in Canada - work up a sweat in our mesmerizing ride studio, equipped with Technogym bikes, a 266-inch video projector, custom programmed lights and theatre-quality sound.</p>",
+            "address": "486 Front Street West, Toronto ON M5V 0V2",
+            "phone": "Studio capacity: 78 people",
+            "link_label": "see classes",
+            "link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48750"
+          }
+        }
+      },
+      "block_order": [
+        "5f339c27-a2d8-4ed9-9d14-fd9c115bad81",
+        "ab06944c-e56b-4aaa-962a-25c5bdcc7f46"
+      ],
+      "settings": {
+        "title": "S&T RIDE STUDIOS",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "event-contact": {
+      "type": "event-contact",
+      "disabled": true,
+      "settings": {
+        "bg_color_left": "#26221b",
+        "text_color_left": "#ffffff",
+        "sub_color_left": "#c79d5b",
+        "subheading_left": "Ready to sweat?",
+        "heading_left": "LET’S GET YOU IN",
+        "text_left": "",
+        "p_name": "SARAH TRAN",
+        "p_tagline": "Events & Sales Manager",
+        "p_mail": "sarah@sweatandtonic.com",
+        "heading": "Contact form",
+        "btn_label": "Submit event inquiry",
+        "btn_url": "",
+        "success_msg": "<p>Thanks for inquiring. Your entry is submitted, and we'll reach out to you soon.</p>",
+        "color_scheme": "",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false,
+        "show_current_activity_dropdown": false,
+        "embed-form": "<!-- Begin Connect Signup Form -->\n<link href=\"https://assets.brandbot.com/forms/embed/embed.css\" rel=\"stylesheet\" type=\"text/css\">\n<style type=\"text/css\">\n\t#bb_form .field.form-group:after {display: none;}\n\t#bb_form .field.form-group input[type=\"text\"],.contact #bb_form .field.form-group input[type=\"email\"],.contact #bb_form .field.form-group input[type=\"tel\"]{border: none;border-bottom: 1px solid rgba(0,0,0,.2);border-radius: unset;}\n\t#bb_form .form-group.with-label {flex-wrap: wrap;flex-direction: column;}\n\t#bb_form .form-group.with-label label{font-weight:400;}\n\t#bb_form .form-group.with-label input[type=checkbox]{margin-left: 20px;}\n</style>\n\n<div id=\"bb_form\">\n\t<form method=\"post\" action=\"https://microservices.brndbot.net/forms/answers\" name=\"ibbxy\" id=\"bb_form_inner\">\n\t\t<div id=\"alert\"></div>\n\t\t<div class=\"contact__fields\">\n\t\t\t<div class=\"field form-group no-label\">\n\t\t\t\t<label for=\"bb_first_name\">First Name</label>\n\t\t\t\t<input type=\"text\" name=\"bb_first_name\" id=\"bb_first_name\" class=\"form-control\" required=\"required\" placeholder=\"First Name\">\n\t\t\t</div>\n\t\t\t<div class=\"field form-group no-label\">\n\t\t\t\t<label for=\"bb_last_name\">Last Name</label>\n\t\t\t\t<input type=\"text\" name=\"bb_last_name\" id=\"bb_last_name\" class=\"form-control\" required=\"required\" placeholder=\"Last Name\">\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"field form-group no-label\">\n\t\t\t<label for=\"bb_email\">Email Address</label>\n\t\t\t<input type=\"email\" name=\"bb_email\" id=\"bb_email\" class=\"form-control\" required=\"required\" placeholder=\"Email Address\">\n\t\t</div>\n\t\t<div class=\"form-group\">\n\t\t\t<input type=\"hidden\" name=\"bb_uuid\" id=\"bb_uuid\" value=\"a4325c6c-fc7c-4b67-b8f2-c318441997f3\">\n\t\t\t<button type=\"submit\" class=\"button button--primary\" id=\"bb_submit\" style=\"background-color: #000000; border-color: #000000; color: white;\">RSVP NOW</button>\n\t\t</div>\n\t</form>\n</div>\n<script>window.jQuery || document.write('<scr'+'ipt src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></scr'+'ipt>') </script>\n<script src=\"https://assets.brandbot.com/forms/embed/embed.js?id=ibbxy\"></script>\n<!-- Ending Connect Signup Form -->"
+      }
+    }
+  },
+  "order": [
+    "hit-hero",
+    "hit-banner-column",
+    "hit-classes",
+    "hit-banner-row",
+    "hit-team",
+    "hit-multicolumn",
+    "event-contact"
+  ]
+}

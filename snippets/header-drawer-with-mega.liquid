@@ -1,0 +1,124 @@
+{%- assign quickBuyLinks = section.blocks | where: 'type', 'quick-menu' -%}
+
+{% assign isQuickByLinksVisible = false %}
+{%- if template == 'product' or template == 'collection' or template == 'cart' or template == 'landing' -%}
+  {% assign isQuickByLinksVisible = true %}
+{%- endif -%}
+
+{%- if quickBuyLinks[0] != blank and isQuickByLinksVisible -%}
+  {%- capture quickLinks -%}
+    {%- for link in quickBuyLinks[0].settings.menu_quick_links.links -%}
+      <li><a href="{{ link.url }}" class="h6">{{ link.title | escape }}</a></li>
+    {%- endfor -%}
+  {%- endcapture -%}
+{%- endif -%}
+
+
+<header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer_with_mega' %}desktop{% else %}tablet{% endif %}">
+  <div class="drawer-mega-icon">
+    {% render 'icon-hamburger-2' %}
+    {% render 'icon-close' %}
+  </div>
+
+  {%- if quickLinks != blank -%}
+    <div class="main-shop-menu shop-nav-header">
+      <ul>{{ quickLinks }}</ul>
+    </div>
+  {%- endif -%}
+  
+  <div class="drawer-mega-content">
+    
+    {%- if quickLinks != blank -%}
+      <div class="main-shop-menu">
+        <ul>{{ quickLinks }}</ul>
+      </div>
+    {%- endif -%}
+    
+    <div class="mega-nav-wrapper">
+      <ul class="menu-drawer__menu has-submenu list-menu" role="list">
+      {%- for link in section.settings.menu.links -%}
+        <li>
+          {%- if link.links != blank -%}
+            <a href="{{ link.url }}">
+              {{ link.title | escape }}
+            </a>
+            <ul>
+            {%- for childlink in link.links -%}
+              <li>
+                <a href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
+              </li>
+            {%- endfor -%}
+            </ul>
+          {%- else -%}
+            <a href="{{ link.url }}">
+              {{ link.title | escape }}
+            </a>
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+    </div>
+
+    <div class="drawer-classes-btns large-up-hide medium-hide">
+      <a href="https://shop.sweatandtonic.com/pages/reserve" class="button btn-small-width left-btn">book classes</a>
+      <a href="https://shop.sweatandtonic.com/pages/pricing" class="button btn-small-width right-btn">buy classes</a>
+    </div>
+
+    {% if section.settings.title != blank or section.settings.image_1 != blank or section.settings.image_2 != blank %}
+    <div class="mega-nav-content-wrapper">
+      {% if section.settings.title != blank %}<h3 class="cont-title">{{ section.settings.title }}</h3>{% endif %}
+      {% if section.settings.image_1 != blank or section.settings.image_2 != blank %}
+      <div class="cont-list">
+        {% if section.settings.image_1 != blank %}
+      	<div class="cont-item">
+      		<div class="item-media">
+              {{ section.settings.image_1 | image_url: width: 700 | image_tag: loading: 'lazy', widths: '150,300,450,600,700' }}
+            </div>
+            {% if section.settings.title_1 != blank or section.settings.button_1_title != blank %}
+      		<div class="cont-info">
+      			{% if section.settings.title_1 != blank %}<h3 class="item-title">{{ section.settings.title_1 }}</h3>{% endif %}
+      			{% if section.settings.button_1_title != blank %}<a href="{% if section.settings.button_1_link != blank %}{{ section.settings.button_1_link }}{% else %}#{% endif %}" class="more-link">{{ section.settings.button_1_title }} {% render 'icon-right-arrow-2' %}</a>{% endif %}
+      		</div>
+            {% endif %}
+      	</div>
+        {% endif %}
+
+        {% if section.settings.image_2 != blank %}
+      	<div class="cont-item">
+      		<div class="item-media">
+              {{ section.settings.image_2 | image_url: width: 700 | image_tag: loading: 'lazy', widths: '150,300,450,600,700' }}
+            </div>
+            {% if section.settings.title_2 != blank or section.settings.button_2_title != blank %}
+      		<div class="cont-info">
+      			{% if section.settings.title_2 != blank %}<h3 class="item-title">{{ section.settings.title_2 }}</h3>{% endif %}
+      			{% if section.settings.button_2_title != blank %}<a href="{% if section.settings.button_2_link != blank %}{{ section.settings.button_2_link }}{% else %}#{% endif %}" class="more-link">{{ section.settings.button_2_title }} {% render 'icon-right-arrow-2' %}</a>{% endif %}
+      		</div>
+            {% endif %}
+      	</div>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+    <div class="sec-overlay"></div>
+    {% endif %}
+    
+  </div>
+</header-drawer>
+
+
+<script>
+  document.querySelector('.drawer-mega-icon').addEventListener('click',function(e){
+    e.preventDefault();
+    if(this.closest('header-drawer').classList.contains('active')){
+      this.closest('header-drawer').classList.remove('active');
+    }else{
+      this.closest('header-drawer').classList.add('active');  
+    }
+  })
+  document.querySelector('.sec-overlay').addEventListener('click',function(e){
+    e.preventDefault();
+    if(this.closest('header-drawer').classList.contains('active')){
+      this.closest('header-drawer').classList.remove('active');
+    }
+  });
+</script>

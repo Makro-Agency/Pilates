@@ -1,0 +1,130 @@
+.popular-audio-experiences {
+  padding-top: 90px;
+  padding-bottom: 86px;
+  background: black;
+}
+.popular-audio-experiences .title-wrpper {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.popular-audio-experiences .title-wrpper .title {
+  margin-top: 0;
+}
+.popular-audio-experiences .nav-buttons {
+  display: flex;
+  gap: 50px;
+  cursor: pointer;
+}
+
+.audio-services.swiper.swiper-initialized {
+    padding-left: 40px;
+    padding-right: 12.963%;
+}
+
+.audio-services.swiper.swiper-initialized .audio-services-carousel {
+  padding:0;
+}
+
+.popular-audio-experiences .audio-services-carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  /* overflow-y: auto; */
+  scrollbar-width: none;
+  padding: 0 40px;
+}
+.popular-audio-experiences .audio-item {
+  position: relative;
+  min-width: 30%;
+  width: 30%;
+}
+.popular-audio-experiences .audio-item:first-child .audio-content {
+  border-left: 1px solid #1A1A1A;
+}
+.popular-audio-experiences .audio-item .audio-content {
+  border-bottom: 1px solid #1A1A1A;
+  border-right: 1px solid #1A1A1A;
+}
+.popular-audio-experiences .audio-item img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.popular-audio-experiences .audio-item > a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+.popular-audio-experiences .image-box {
+  position: relative;
+  cursor:pointer;
+  aspect-ratio: 5 / 6;
+}
+.popular-audio-experiences .image-box .icon {
+    position: absolute;
+    top: 15px;
+    left: 24px;
+}
+.popular-audio-experiences .audio-content {
+    padding: 30px;
+}
+.popular-audio-experiences .audio-content .audio-title {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0 0 12px;
+  font-weight: 500;
+}
+.popular-audio-experiences .spa-time {
+    color: #646464;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.popular-audio-experiences .spa-time span.ellips {
+    background: #C79D5B;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    opacity: 50%;
+}
+@media only screen and (max-width: 989px){
+  .popular-audio-experiences {
+    padding-block: 50px;
+  }
+  .popular-audio-experiences .image-box .icon {
+    top: 10px;
+    left: 10px;
+    font-size: 0;
+    line-height: 0;
+  }
+}
+@media only screen and (max-width: 749px){
+  .audio-services.swiper.swiper-initialized {
+    padding-inline: 0;
+  }
+  .popular-audio-experiences .title-wrpper {
+    padding-inline: 2rem;
+  }
+  .popular-audio-experiences {
+    padding-block: 87px;
+  }
+  .popular-audio-experiences .nav-buttons {
+    display: none;
+  }
+  .popular-audio-experiences .title-wrpper .title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .popular-audio-experiences .audio-content {
+    padding: 24px 20px;
+  }
+  .popular-audio-experiences .audio-content .audio-title { font-size: 16px}
+}

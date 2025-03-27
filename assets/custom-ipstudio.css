@@ -1,0 +1,70 @@
+/*
+* Hit team CSS
+*/
+/*.media>a>*:not(.zoom):not(.deferred-media__poster-button), */
+.block-image-link img,
+.media model-viewer {
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.media>a>img, .media>a>video, .media>a>iframe {
+    object-fit: cover;
+    object-position: center center;
+    transition: opacity .4s cubic-bezier(.25,.46,.45,.94);
+}
+
+
+/*
+* Event Page - image captions
+*/
+.multicolumn-caption-image .media-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    z-index: 1;
+    width: calc(100% - 40px);
+    height: auto !important;
+    top: initial !important;
+}
+
+.multicolumn-caption-image .media-text h3 {
+    color: #fff;
+    margin: 0;
+}
+
+/* Team members image card styles */
+.paragraph-styling-link span.team-link-text {
+    font-weight: 400;
+}
+
+.paragraph-styling-link span.team-link-text .first-para-link{
+    font-weight: 600;
+    display: block;
+}
+
+/*
+* Pages Extra padding removal from HIT Team section
+*/
+.hit-team ~ .hit-multicolumn {
+    padding-top: 0;
+}
+
+
+
+/* Tonic bar */
+.tonic-house-wrapper {
+  border-top: 0 !important;
+}
+
+/*
+Footer
+*/
+.col-newsletter a {
+    color: #fff;
+}

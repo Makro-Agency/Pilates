@@ -1,0 +1,290 @@
+{%- if section.index == 1 -%}
+  {{- 'section-multicolumn.css' | asset_url | stylesheet_tag: preload: true -}}
+  {{- 'program-blocks.css' | asset_url | stylesheet_tag: preload: true -}}
+
+  {%- assign loadingType = 'eager' -%}
+  {%- assign fetchPriorityType = 'high' -%}
+
+{%- else -%}
+  <link rel="stylesheet" href="{{ 'section-multicolumn.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link
+    rel="stylesheet"
+    href="{{ 'program-blocks.css' | asset_url }}"
+    media="print"
+    onload="this.media='all'"
+  >
+  <noscript><link rel="stylesheet" href="{{ 'section-multicolumn.css' | asset_url }}"></noscript>
+  <noscript><link rel="stylesheet" href="{{ 'program-blocks.css' | asset_url }}"></noscript>
+
+  {%- assign loadingType = 'lazy' -%}
+  {%- assign fetchPriorityType = 'auto' -%}
+{%- endif -%}
+
+<div id="program-block-container" class="program-block-container color-{{ section.settings.color_scheme }} gradient">
+  <div class="bg-image desktop-img">
+      {{ section.settings.desktop-bg-img | image_url: width: 1920 | image_tag }}
+    </div>
+  {% if section.settings.mob-bg-img !=blank %}
+  <div class="bg-image mobile-img">
+      {{ section.settings.mob-bg-img | image_url: width: 1920 | image_tag }}
+    </div>
+    {% endif %}
+  <div class="program-block__inner-container">
+    <div class="program-block__row">
+      <div class="section-heading-wrapper">
+        <div class="section-heading-inner">
+          {% if section.settings.sub-title %}
+          <div class="subtitle"><span>{{ section.settings.sub-title }}</span></div>
+            {% endif %}
+          {% if section.settings.title %}
+          <h3 class="title h2">{{ section.settings.title }}</h3>
+             {% endif %}
+          {% if section.settings.description-1 !=blank or  section.settings.description-2 !=blank  %}
+          <div class="description-wrapper">
+             {% if section.settings.description-1 !=blank %}
+          <p>{{ section.settings.description-1 }}</p>
+               {% endif %}
+              {% if section.settings.description-2 !=blank %}
+          <p>{{ section.settings.description-2 }}</p>
+            {% endif %}
+          </div>
+            {% endif %}
+          {%- assign btn_class = blank -%}
+         
+              {%- if section.settings.button_style-1 == 'solid' -%}
+                {%- assign btn_class = 'button btn-big-width button--primary' -%}
+              {%- elsif section.settings.button_style-1 == 'outline' -%}
+                {%- assign btn_class = 'button btn-big-width button--secondary' -%}
+              {%- else -%}
+                {%- assign btn_class = 'link global-link' -%}
+              {%- endif -%}
+          <div class="btn-wrapper">
+          <div class="btns">
+           
+          <a
+                  {% if section.settings.buton-link-1 == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ section.settings.buton-link-1 }}"
+                  {% endif %}
+                  class="{{ btn_class }}"
+                >
+                  {{- section.settings.button-text-1 | escape -}}
+                  {%- if section.settings.button-text-1 == 'link' -%}
+                    <span class="icon-wrap">{% render 'icon-link-arrow' %}</span>
+                  {%- endif -%}
+                </a>
+          </div>
+           {%- assign btn_class_second = blank -%}
+              {%- if section.settings.button_style-2 == 'solid' -%}
+                {%- assign btn_class_second = 'button btn-big-width button--primary' -%}
+              {%- elsif section.settings.button_style-2 == 'outline' -%}
+                {%- assign btn_class_second = 'button btn-big-width button--secondary' -%}
+              {%- else -%}
+                {%- assign btn_class_second = 'link global-link' -%}
+              {%- endif -%} 
+        <div class="btns">
+            <a
+                  {% if section.settings.buton-link-2 == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ section.settings.buton-link-2 }}"
+                  {% endif %}
+                  class="{{ btn_class_second }}"
+                >
+                  {{- section.settings.button-text-2 | escape -}}
+                  {%- if section.settings.button-text-2 == 'link' -%}
+                    <span class="icon-wrap">{% render 'icon-link-arrow' %}</span>
+                  {%- endif -%}
+                </a>
+        </div>
+          </div>
+        </div>
+      </div>
+      <div class="program_block_inner_wrapper">
+      {% for block in section.blocks %}
+        <div class="program-block__item">
+          <div class="program-block__icon-wrapper">
+            <div class="icon-wrapper desktop-icon">
+              {% if block.settings.svg-icon != blank %}
+              <span>
+                {{ block.settings.svg-icon }}
+              </span>
+                {% else %}
+                <span>
+               {% comment %}{{ 'svg-place-holder' | placeholder_svg_tag: 'placeholder-icon' }}{% endcomment %}
+                   {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              </span>
+              {% endif %}
+            </div>
+            <div class="icon-wrapper mbl-icon">
+              {% if block.settings.svg-icon-mbl != blank %}
+              <span>
+                {{ block.settings.svg-icon-mbl }}
+              </span>
+                {% else %}
+                <span>
+               {% comment %}{{ 'svg-place-holder' | placeholder_svg_tag: 'placeholder-icon' }}{% endcomment %}
+                   {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              </span>
+              {% endif %}
+            </div>
+          </div>
+          <div class="program-block__content-wrapper">
+            <div class="program-block__info">
+              <h4 class="h6 block-title">{{ block.settings.title }}</h4>
+              <div class="rte text-wrap">
+                <p>
+                  {{ block.settings.para }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Program Blocks",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "sub-title",
+      "default": "Sub Title",
+      "label": "Section Sub Title"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title"
+    },
+      {
+          "type": "inline_richtext",
+          "id": "description-1",
+          "label": "Main Description1"
+        },
+    {
+          "type": "inline_richtext",
+          "id": "description-2",
+          "label": "Main Description2"
+        },
+         {
+          "type": "text",
+          "id": "button-text-1",
+          "label": "Button Text"
+        },
+         {
+          "type": "url",
+          "id": "buton-link-1",
+          "label": "Button Link 1"
+        },
+    {
+          "type": "select",
+          "id": "button_style-1",
+          "options": [
+            {
+              "value": "solid",
+              "label": "Solid"
+            },
+            {
+              "value": "outline",
+              "label": "Outline"
+            },
+            {
+              "value": "link",
+              "label": "Link"
+            }
+          ],
+          "default": "link",
+          "label": "Button style1"
+        },
+        {
+          "type": "text",
+          "id": "button-text-2",
+          "label": "Button Text 2"
+        },
+         {
+          "type": "url",
+          "id": "buton-link-2",
+          "label": "Button Link 2"
+        },
+        {
+          "type": "select",
+          "id": "button_style-2",
+          "options": [
+            {
+              "value": "solid",
+              "label": "Solid"
+            },
+            {
+              "value": "outline",
+              "label": "Outline"
+            },
+            {
+              "value": "link",
+              "label": "Link"
+            }
+          ],
+          "default": "link",
+          "label": "Button style1"
+        },
+    {
+      "type":"image_picker",
+      "id":"desktop-bg-img",
+      "label": "Desktop Bg Image"
+    },
+    {
+      "type":"image_picker",
+      "id":"mob-bg-img",
+      "label": "Mobile Bg Image"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "select",
+      "limit": 4,
+      "name": "Select Block",
+      "settings": [
+        {
+          "type": "html",
+          "id": "svg-icon",
+          "label": "Desktop Icon",
+          "info": "Paste your svg code here"
+        },
+        {
+          "type": "html",
+          "id": "svg-icon-mbl",
+          "label": "Mobile Icon",
+          "info": "Paste your svg code here"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Block Title"
+        },
+        {
+          "type": "textarea",
+          "id": "para",
+          "label": "Block Paragraph"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Program Blocks"
+    }
+  ]
+}
+{% endschema %}

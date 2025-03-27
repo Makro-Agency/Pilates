@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="{{ 'tonic-bar-content.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'tonic-bar-content.css' | asset_url }}"></noscript>
+
+<div class="page-width">
+    <div class="banner-content-wrapper">
+      <div class="sec-title">
+        {% if section.settings.head != blank %}<h2 class="title">{{ section.settings.head }}</h2>{% endif %}
+        {% if section.settings.logo != blank or section.settings.subhead != blank %}
+        <div class="heding-cont">
+            {% if section.settings.logo != blank %}<img src="{{ section.settings.logo | img_url:"200x" }}" alt="{{ section.settings.logo.alt }}" />{% endif %}
+            {% if section.settings.subhead != blank %}<div class="text">{{ section.settings.subhead }}</div>{% endif %}
+        </div>
+        {% endif %}
+      </div>
+
+      {% if section.settings.text != blank or section.settings.btn != blank %}
+        <div class="descriptions">
+          {{ section.settings.text }}
+          {% if section.settings.btn != blank %}<a href="{{ section.settings.url | default:"#" }}" class="our-menu">{{ section.settings.btn }} {% render "right-arrow" %}</a>{% endif %}
+        </div>
+      {% endif %}
+
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Tonic Bar Content",
+  "tag": "section",
+  "class": "section tonic-bar-content-wrapper",
+  "settings": [
+    {
+      "type":"text",
+      "id":"head",
+      "label":"Heading",
+      "default":"TONIC bar"
+    },
+    {
+      "type":"image_picker",
+      "id":"logo",
+      "label":"Logo image"
+    },
+    {
+      "type":"text",
+      "id":"subhead",
+      "label":"SubHeading",
+      "default":"noun, one that stimulates, restores, refreshes, or invigorates"
+    },
+    {
+      "type":"richtext",
+      "id":"text",
+      "label":"text",
+      "default":"<p>Tailor-made and delicious smoothies, juices, boosters, bowls, healthy bites, coffee, and more to power you through your workday, fuel you through your workouts, and nourish your post-sweat recovery.</p>"
+    },
+    {
+      "type":"text",
+      "id":"btn",
+      "label":"Button label",
+      "default":"Check out our menu"
+    },
+    {
+      "type":"url",
+      "id":"url",
+      "label":"Url to navigate"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tonic Bar Content"
+    }
+  ]
+}
+{% endschema %}

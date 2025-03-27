@@ -1,0 +1,25 @@
+.about-values-wrapper { width:100%; margin:220px 0 !important; }
+.about-values-wrapper .values-box { display:flex; flex-flow:column; align-items: center; }
+.about-values-wrapper .values-box .sub-title { color: #000; text-align: center; font-size: 12px; font-style: normal; margin:0 0 40px 0;
+  font-weight: 450; line-height: normal; /*letter-spacing: 0.24px;*/ text-transform: uppercase; }
+
+.about-values-wrapper .values-box .values-points { margin:0; padding:0; text-align:center; }
+.about-values-wrapper .values-box .values-points li { margin:0; padding:0; list-style:none; color: #000; text-align: center; font-size: 32px;
+font-style: normal; font-weight: 450; line-height: 90%; /*letter-spacing: -0.64px;*/ text-transform: uppercase; }
+.about-values-wrapper .values-box .values-points li:not(:last-child) { margin-bottom:20px; }
+
+
+@media (max-width: 1023px) {
+
+  .about-values-wrapper { width:100%; margin:80px 0 120px 0 !important; }
+  .about-values-wrapper .values-box .values-points li { font-size: 24px; font-style: normal; font-weight: 450; line-height: 90%; /*letter-spacing: -0.48px;*/ }
+  
+}
+
+@media (max-width: 749px) {
+
+  .about-values-wrapper { width:100%; margin:40px 0 80px 0 !important; } 
+  
+}
+
+/* end */

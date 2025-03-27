@@ -1,0 +1,98 @@
+{{ 'section-our-purpose.css' | asset_url | stylesheet_tag }}
+
+<div class="secOurPurpose color-{{ section.settings.color_scheme }} gradient">
+  {%- if section.settings.heading -%}
+  <div class="title-wrapper title-wrapper--no-top-margin page-width">
+    <h2 class="title inline-richtext h1 scroll-trigger animate--slide-in">{{ section.settings.heading }}</h2>
+  </div>
+  {% endif %}
+  {%- if section.blocks.size > 0 -%}
+  <div class="grid grid--secOurPurpose grid--gapless grid--3-col-desktop grid--2-col-tablet grid--1-col">
+    {%- for block in section.blocks -%}
+      {%- assign uppercase = '' -%}
+      {%- if block.settings.enableUpperCase -%}
+        {%- assign uppercase = 'uppercase' -%}
+      {%- endif -%}
+      <div class="grid__item" {{ block.shopify_attributes }} >
+        <div class="card-OurPurpose">
+          <h6 class="{{ uppercase }}">{{ block.settings.subHeading }}</h6>
+          <h4 class="{{ uppercase }}">{{ block.settings.heading }}</h4>
+        </div>
+      </div>      
+    {%- endfor -%}
+  </div>
+  {% endif %}
+</div>
+
+{% schema %}
+  {
+    "name": "Our Purpose",
+    "tag": "section",
+    "class": "section section-our-purpose",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type":"text",
+        "label":"Section heading",
+        "id":"heading",
+        "default":"OUR PURPOSE PILLARS"
+      },
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "inverse"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"text",
+        "name":"Text block",
+        "settings":[
+          {
+            "type":"checkbox",
+            "label":"Enable text in uppercase",
+            "id":"enableUpperCase",
+            "default":true
+          },
+          {
+            "type":"text",
+            "label":"Sub heading",
+            "id":"subHeading",
+            "default":"Educate"
+          },
+          {
+            "type":"text",
+            "label":"Heading",
+            "id":"heading",
+            "default":"Help our team and community understand how to be inclusive and why it’s important"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Our Purpose",
+        "blocks": [
+          {
+            "type": "text"
+          },
+          {
+            "type": "text"
+          },
+          {
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

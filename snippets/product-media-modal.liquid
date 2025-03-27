@@ -1,0 +1,65 @@
+{% comment %}
+  Renders a product media modal. Also see 'product-media-gallery'
+
+  Accepts:
+  - product: {Object} Product liquid object
+  - variant_images: {Array} Product images associated with a variant
+
+  Usage:
+  {% render 'product-media-modal' %}
+{% endcomment %}
+
+<product-modal id="ProductModal-{{ section.id }}" class="product-media-modal">
+  <div
+    class="product-media-modal__dialog swiper"
+    role="dialog"
+    aria-label="{{ 'products.modal.label' | t }}"
+    aria-modal="true"
+    tabindex="-1"
+    data-media-modal-slider
+  >
+    <button
+      id="ModalClose-{{ section.id }}"
+      type="button"
+      class="product-media-modal__toggle"
+      aria-label="{{ 'accessibility.close' | t }}"
+    >
+      {% render 'icon-close' %}
+    </button>
+
+    <div
+      class="product-media-modal__content color-{{ settings.color_schemes | first }} gradient swiper-wrapper"
+      role="document"
+      aria-label="{{ 'products.modal.label' | t }}"
+      tabindex="0"
+    >
+      {% comment %}
+      {%- liquid
+        if product.selected_or_first_available_variant.featured_media != null
+          assign media = product.selected_or_first_available_variant.featured_media
+        endif
+      -%}
+      <div class="swiper-slide" data-index="0">
+        {%- render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: section.settings.hide_variants -%}
+      </div>
+      {% endcomment %}
+      
+      {%- for media in product.media -%}
+        {%- liquid
+          if section.settings.hide_variants and variant_images contains media.src or variant_images contains media.id
+            assign variant_image = true
+          else
+            assign variant_image = false
+          endif
+        -%}
+        <div class="swiper-slide" data-index="{{ forloop.index }}" data-media-id="{{ media.id }}">
+          {%- render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: variant_image -%}
+        </div>
+      {%- endfor -%}
+    </div>
+    {% if product.media.size > 1 %}
+      <div class="swiper-button-next"> </div>
+      <div class="swiper-button-prev"> </div>
+    {% endif %}
+  </div>
+</product-modal>

@@ -1,0 +1,103 @@
+.team-banner-wrapper { width:100%; }
+
+.team-banner-wrapper .banner-box { width:100%; display:flex; }
+
+.team-banner-wrapper .banner-box .team-info { width:100%; padding:40px 5rem 0 5rem; display: flex; flex-flow: column; }
+.team-banner-wrapper .banner-box .team-info .back-team { color: #000; font-size: 12px; font-style: normal; font-weight: 450; line-height: normal; gap:10px;
+  letter-spacing: 0.24px; text-transform: uppercase; display:flex; align-items:center; text-decoration:none; }
+.team-banner-wrapper .banner-box .team-info .back-team:hover { text-decoration:underline; }
+
+
+.team-banner-wrapper .banner-box .team-info .mem-details { display: flex; flex-flow: column; align-items: flex-start; margin-top:auto; margin-bottom:auto; }
+.team-banner-wrapper .banner-box .team-info .mem-details .team-title { color: #000; font-size: 60px; font-style: normal; font-weight: 420; line-height: 90%; 
+    letter-spacing: -1.2px; text-transform: uppercase; margin:0; }
+
+.team-banner-wrapper .banner-box .team-info .mem-details .team-slogan { color: #C79D5B; font-size: 20px; font-style: normal; font-weight: 450;
+  line-height: 90%; letter-spacing: -0.4px; text-transform: uppercase; margin-top:24px; }
+
+.team-banner-wrapper .banner-box .team-info .mem-details .book-case { margin-top:65px; border-radius: 2px; background: #000; text-decoration:none; display: flex;
+  min-width: 190px; height: 45px; padding: 0px 20px; justify-content: center; align-items: center; color: #FFF; font-size: 12px; font-style: normal;
+  font-weight: 450; line-height: normal; letter-spacing: 0.24px; text-transform: uppercase; }
+.team-banner-wrapper .banner-box .team-info .mem-details .book-case:hover { background: #C79D5B; color:#000; }
+
+.team-banner-wrapper .banner-box .team-info .mem-social { display:flex; align-items:center; border-top: 1px solid rgba(0, 0, 0, 0.05); padding:20px 5rem;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: #FFF; margin:0 -5rem; }
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item:not(.spotify) { display:flex; align-items:center; align-items:center; justify-content: center; border-radius: 30px;
+  border: 1px solid rgba(199, 157, 91, 0.40); background: #FFF; width: 40px; height: 40px; margin-right:14px; }
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item:not(.spotify):last-child { margin-right:0; }
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item:not(.spotify):hover { background:#000; border-color:#000; }    
+
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify { display:flex; align-items:center; color: #C79D5B; font-size: 12px; font-style: normal;
+   font-weight: 450; line-height: normal; letter-spacing: 0.24px; text-transform: uppercase; border-left:rgba(0,0,0,0.1) 1px solid; 
+   padding-left:40px; margin-left:40px; text-decoration:none; }
+
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify:first-child{
+  border-left:none;
+}
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify img { margin-right:10px; }
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.instagram img{
+  padding: 4px;
+  height: 35px;
+  width: 35px;
+}
+
+.team-banner-wrapper .banner-box .team-media { width:100%; display:flex; }
+.team-banner-wrapper .banner-box .team-media img { width:100%; height:100%; object-fit:cover; }
+
+
+@media (min-width: 750px){
+  .team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify:first-child{
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .team-banner-wrapper .banner-box .team-info, .team-banner-wrapper .banner-box .team-media{
+    width: 50%;
+  }
+}
+@media (max-width: 1023px) {
+
+  .team-banner-wrapper .banner-box .team-info .mem-details .team-title { font-size:40px; }
+  .team-banner-wrapper .banner-box .team-info .mem-details .team-slogan { font-size:16px; margin-top: 17px; }
+  
+  .team-banner-wrapper .banner-box .team-info .mem-social .soci-item:not(.spotify) { width: 30px; height: 30px; margin-right: 10px; }
+  .team-banner-wrapper .banner-box .team-info .mem-social .soci-item:not(.spotify) img { width: 55%; }
+  .team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify  { padding-left: 20px; margin-left: 20px; }  
+}
+
+@media (max-width: 749px) {
+
+  .team-banner-wrapper .banner-box { flex-flow:column; }
+  .team-banner-wrapper .banner-box .team-info { padding: 25px 3rem 0; }
+
+  .team-banner-wrapper .banner-box .team-info .back-team { font-size:10px; gap: 5px; }
+  .team-banner-wrapper .banner-box .team-info .back-team svg { width: 10px; height: auto; }
+
+  .team-banner-wrapper .banner-box .team-info .mem-details { margin-top:30px; }
+  .team-banner-wrapper .banner-box .team-info .mem-details .book-case { margin-top:30px; }
+  .team-banner-wrapper .banner-box .team-info .mem-details .team-title { font-size: 35px; }
+  .team-banner-wrapper .banner-box .team-info .mem-details .team-slogan { font-size: 14px; }
+  
+  .team-banner-wrapper .banner-box .team-info .mem-social { flex-wrap: wrap;  padding:20px 3rem; margin: 0 -3rem;  margin-top:40px;  }
+  .team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify { margin-top:10px; margin-left:-3px; padding-left:0; border:none; width: 100%;}
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end */

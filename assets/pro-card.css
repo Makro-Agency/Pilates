@@ -1,0 +1,30 @@
+
+.product-card-wrapper .card .card__content .card__information { padding:25px 0 0 0;  }
+.product-card-wrapper .card .card__content .card__information .card__heading { color: #000; font-size: 16px; font-style: normal; font-weight: 400; line-height: 150%; margin:0 0 5px 0; }
+.product-card-wrapper .card .card__content .card__information .price { margin:0; line-height: 1; }
+.product-card-wrapper .card .card__content .card__information .price * { letter-spacing:0; line-height: 1; }
+.product-card-wrapper .card .card__content .card__information .price .price__container .price__regular .price-item--regular { color: #000; font-size: 14px; font-style: normal;
+    font-weight: 500; line-height: 150%; }
+
+.product-card-wrapper .card .card__content .card__information .price.price--on-sale .price__container .price__sale .price-item--sale { color: #C79D5B;
+  font-size: 14px; font-style: normal; font-weight: 700; line-height: 150%; margin:0 2px 0 0; }
+.product-card-wrapper .card .card__content .card__information .price.price--on-sale .price__container .price__sale .price-item--regular { color: #000;
+  font-size: 12px; font-style: normal; font-weight: 400; line-height: 150%; text-decoration: line-through; }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 989px){
+  .product-card-wrapper .card .card__content .card__information { padding: 15px 0 0 0;  }
+  .product-card-wrapper .card .card__content .card__information .card__heading{line-height: 130%;}
+}
+
+
+
+
+/* end */

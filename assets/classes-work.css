@@ -1,0 +1,116 @@
+.classes-work-row{
+  display: flex;
+  flex-direction: column;
+}
+.banner-img+.classes-work-contect{
+ margin-top: 60px; 
+}
+.classes-work-contect .row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -40px;
+}
+.classes-work-contect .col{
+  width: 50%;
+  padding-left: 40px;
+}
+.classes-work-contect .classes-count-list .box{
+  color: rgba(0, 0, 0, 0.20);
+  padding-left: 20px;
+  width: 33.33%;
+}
+.classes-work-contect .classes-count-list{
+  margin-left: -20px;
+  display: flex;
+}
+.classes-work-contect .classes-count{
+  letter-spacing: -0.8px;
+  color: currentColor;
+}
+.classes-work-contect .classes-name{
+  margin: 5px 0 0;
+  color: currentColor;
+}
+.classes-work .banner-img{
+  position: relative;
+  padding-top: 45%;
+}
+.classes-work .banner-img img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+  object-fit: cover;
+}
+.classes-work-contect .col-right>*+*{
+  margin-top: 20px;
+}
+.classes-work-contect .col-right h2{
+  margin: 0;
+}
+.classes-work-contect .col-right h6{
+  margin: 10px 0 0;
+  opacity: 0.2;
+}
+.classes-work-contect .col-right .button{
+  margin: 40px 0 0;
+}
+.classes-work-contect .button .icon-wrap{
+  margin-left: 10px;
+  position: relative;
+  top: 1px;
+}
+
+@media screen and (max-width: 1199px){
+  .banner-img+.classes-work-contect{
+     margin-top: 50px; 
+  }
+}
+@media screen and (max-width: 989px){
+  .banner-img+.classes-work-contect{
+     margin-top: 40px; 
+  }
+}
+@media screen and (max-width: 749px){
+  .classes-work-row{
+    flex-direction: column-reverse;
+  }
+  .banner-img+.classes-work-contect{
+     margin: 0 0 40px; 
+  }
+  .classes-work-contect .col{
+    width: 100%;
+  }
+  .classes-work-contect .classes-count-list .box{
+    padding: 10px 15px;
+    color: currentColor;
+  }
+  .classes-work-contect .classes-count-list .box:not(:last-child){
+    border-right: 1px solid rgba(0, 0, 0, 0.10);
+  }
+  .classes-work-contect .classes-count-list{
+    margin-left: 0;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+  }
+  .classes-work-contect .classes-name{
+    font-size: 10px;
+  }
+  .classes-work-contect .col-right .button{
+    width: 100%;
+  }
+  .classes-work .banner-img{
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-top: 55%;
+  }
+  .classes-work{
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 374px){
+  .classes-work-contect .classes-count-list .box{
+    padding: 10px;
+  }
+}

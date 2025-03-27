@@ -1,0 +1,151 @@
+<link rel="stylesheet" href="{{ 'wellness-faq.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'wellness-faq.css' | asset_url }}"></noscript>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.55 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.55 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 770px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+    /* .wellness-content{
+      padding-left:50px;
+      padding-right:50px;
+      
+    } */
+    .section-boxes .box-items {
+    padding: 40px;
+    min-height: 155px;
+          /* max-width: 659px; */
+}
+    
+  }
+{%- endstyle -%}
+
+<div class="page-width section-{{ section.id }}-padding wellness-content" >
+  <div class="row">
+    <div class="col col-left">
+      <div class="section-boxes">
+        {% for block in section.blocks %}
+          <div class="box-items">
+            <h5 class="h5">{{ block.settings['box-title'] }}</h5>
+            <a
+              class="link global-link"
+              {% if block.settings['box-btn-link'] == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ block.settings.box-1-btn-link }}"
+              {% endif %}
+            >
+              {{ block.settings['box-link-text'] -}}
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11" fill="none">
+                  <path d="M8 1.5L12 5.5M12 5.5L8 9.5M12 5.5L0 5.5" stroke="currentcolor" stroke-width="1.5"/>
+                </svg></span
+            ></a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  // Initialize the accordion on document ready
+  $(document).ready(function() {
+    $(document).on('click', '#shopify-section-{{ section.id }}.wellness-faq [data-class-item]', function (e) {
+      e.preventDefault();
+      e.stopPropagation();  // Prevents event bubbling, just in case
+
+      var $this = $(this);
+      var $accordion = $this.closest('.wellness-faq-accordion');
+
+      // If the clicked item is already active, deactivate it and hide its content
+      if ($this.hasClass('active')) {
+        $this.removeClass('active');
+        $this.next('[data-class-content]').slideUp(450);
+      } else {
+        // Close all other open accordion content and deactivate other items
+        $accordion.find('[data-class-content]').slideUp(450);
+        $accordion.find('.active').removeClass('active');
+
+        // Activate the clicked item and show its content
+        $this.addClass('active');
+        $this.next('[data-class-content]').slideDown(450);
+      }
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Wellness Content",
+  "class": "wellness-faq",
+  "settings": [
+    {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 40
+      }
+      ],
+     "blocks": [
+       {
+         "type": "text",
+         "name": "Box Content",
+         "limit": 2,
+         "settings": [
+              {
+          "type": "textarea",
+          "id": "box-title",
+          "label": "Box title",
+          "default": "Box Title"
+        },
+        {
+          "type": "text",
+          "id": "box-link-text",
+          "label": "Box Button Text",
+          "default": "Box Button Text"
+        },
+        {
+          "type": "url",
+          "id": "box-btn-link",
+          "label": "Box Link"
+        },
+     ]
+   }
+ ],
+  "presets": [
+     {
+    "name": "Wellness Content"}
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

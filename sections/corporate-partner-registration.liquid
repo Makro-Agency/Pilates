@@ -1,0 +1,1195 @@
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  .vertical-scroll-tab{
+  cursor:pointer;
+  }
+  .scroll-tab-inner-wrapper {width: 100%;}
+  .vertical-scroll-tab .vertical-scroll-wrapper .title {
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  line-height:1.5em;
+  }
+  .vertical-scroll-tab .sub-title {
+  font-size: 12px;
+  font-weight: 450;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  }
+    .calc-input-wrapper .calc-input-inner-wrapper .button-wrapper button{
+      color: #0D0D0D;
+  font-family: "Brandon Grotesque";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+      min-height: 45px;
+    }
+  .vertical-scroll-tab {
+  text-align: center;
+  padding: 120px 20px;
+  padding-bottom: 0;
+  }
+  .vertical-scroll-tab  .vertical-scroll-wrapper{
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 25px;
+
+  }
+  .vertical-scroll-tab .vertical-scroll-wrapper .next-area .sub-text-wrapper,
+  .vertical-scroll-tab  .vertical-scroll-wrapper .top-title-subtitle {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.50);
+  }
+  .vertical-scroll-tab .vertical-scroll-wrapper .next-area .sub-text-wrapper strong,
+  .vertical-scroll-tab  .vertical-scroll-wrapper .top-title-subtitle strong,
+  .vertical-scroll-tab .vertical-scroll-wrapper .next-area .sub-text-wrapper span,
+  .vertical-scroll-tab  .vertical-scroll-wrapper .top-title-subtitle span {
+  color: #C79D5B;
+  font-weight: 450;
+  }
+  .vertical-scroll-tab .divider {
+  width: 1px;
+  height: 80px;
+  margin: 50px auto;
+  -webkit-mask-image: url('{{ 'dashed-line.png' | asset_url }}'); /* For WebKit browsers */
+  mask-image: url('{{ 'dashed-line.png' | asset_url }}'); /* For other browsers */
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: rgba(255, 255, 255, 0.4); /* Initial background color */
+  object-fit: cover;
+  display: block;
+  transition: 0.5s ease all;
+  animation: dashMove 5s linear infinite; /* Animation applied */
+  }
+
+  /* Define the keyframes for animation */
+  @keyframes dashMove {
+  0% {
+  mask-position: 0 0;
+  -webkit-mask-position: 0 0; /* For WebKit browsers */
+  background-color: rgba(255, 255, 255, 0.4); /* Initial background */
+  width: 1px; /* Starting width */
+  }
+  50% {
+  width: 1.2px; /* Mid-animation width adjustment */
+  background-color: rgba(255, 255, 255, 0.6); /* Change color halfway through */
+  }
+  100% {
+  mask-position: 0 100%;
+  -webkit-mask-position: 0 100%;
+  background-color: #fff; /* End background color */
+  width: 1.2px; /* Final width */
+  }
+  }
+
+  .vertical-scroll-tab .next-area{
+  opacity: 0.1;
+  cursor: pointer;
+  }
+  .vertical-scroll-tab .next-area>*:not(.next-tab-title) {
+  opacity: 0;
+  }
+  .vertical-scroll-tab .next-to-section .global-link svg {
+  width: 12px;
+  height: 8px;
+  }
+  .vertical-scroll-wrapper .scroll-tab {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  }
+  .next-to-section button {
+  color: #C79D5B;
+  font-size: 12px;
+  font-weight: 450;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  }
+  .scroll-tab-inner-wrapper .sub-text-wrapper .price span{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 100%; /* 24px */
+  text-transform: uppercase;
+  }
+  .scroll-tab-inner-wrapper .regular-price{
+  color: #FFF;
+  opacity: 0.7;
+  }
+  .scroll-tab-inner-wrapper .sale-price{
+  color: #C79D5B;
+  }
+  .scroll-tab-inner-wrapper .price {
+  margin-top: 10px;
+  }
+  .scroll-tab-inner-wrapper .sub-text-wrapper span.day-count {
+  color: rgba(255, 255, 255, 0.50);
+  }
+  .calc-input-inner-wrapper h5 {
+  color: #999;
+  font-size: 12px;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  margin: 0 0 16px 0 !important;
+  text-align: left;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  }
+  .calc-input-inner-wrapper >*:not(:last-child,:only-child) {margin-bottom: 40px;}
+  .input-ranges-wrapper   .input-ranges-container {
+  display: flex;
+  column-gap: 12px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 12px;
+  }
+  .input-ranges-container .input-boxes {
+  border: 1px solid #5C5C5C;
+  padding: 8px 20px;
+  color: #999;
+  min-width: 128px;
+  cursor: pointer;
+  flex: 1;
+  }
+
+  .calculation-result-area,
+  .calc-input-inner-wrapper {
+  max-width: 550px;
+  margin: 0 auto;
+  }
+  .input-ranges-container .input-boxes span {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 450;
+  color:#fff;
+  }
+  .input-ranges-container .input-boxes:hover,
+  .input-ranges-container .input-boxes.selected {
+  border: 1px solid #C79D5B;
+  }
+
+  .input-ranges-container .input-boxes.selected span{
+  color:#C79D5B;
+  }
+  .input-wrapper  #range-input {
+  width: 100%;
+  }
+  .input-slider-container .input-wrapper {
+  position: relative;
+  }
+  .value-preview {
+  position: absolute;
+  min-width: 43px;
+  height: 28px;
+  background-color: #C79D5B;
+  /* display: flex;
+  align-items: center; */
+  justify-content: center;
+  padding: 8px 10px;
+  z-index: 0;
+  color: #0D0D0D;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 100%;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  transition:.5s ease all;
+  border-radius: 2px;
+    top: 27px;
+    left: calc(0% - 21.5px + 7.5px);
+  }
+  /* .input-wrapper .value-preview {
+  margin-top: 8px;
+  transform: translateX(calc(-50% + 7.5px));
+
+  } */
+  .input-wrapper .value-preview:before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 9px;
+  background-color: #C79D5B;
+  bottom: calc(100% - 13px);
+  transform: rotate(45deg) translateX(-50%);
+  left: 50%;
+  z-index: -1;
+  }
+
+  .input-wrapper .before-range {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 50%;
+  pointer-events: none;
+  }
+  .input-wrapper .before-range {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border: 2px solid #C79D5B;
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  background-color: black;
+  transform: translateY(-50%);
+  z-index: 1;
+  }
+  .input-wrapper .after-range {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border: 2px solid #5C5C5C;
+  border-radius: 50%;
+  right: 0px;
+  top: 50%;
+  background-color: black;
+  transform: translateY(-50%);
+  z-index: 1;
+  pointer-events: none;
+  }
+  .button-wrapper button {
+  padding: 14px;
+  width: 100%;
+  background-color: #C79D5B;
+  border-width: 0;
+  color: #0D0D0D;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 30px;
+  cursor: pointer;
+  }
+  #range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background: #C79D5B;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  margin-top: -3px;
+  z-index: 2;
+  position: relative;
+  border: 2px solid transparent;
+
+  }
+  .input-slider-container .input-wrapper {
+  position: relative;
+  height: 12px;
+  }
+  .input-wrapper #range-input {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  padding-block: 0;
+  padding-inline: 0;
+  height: 2px;
+  top: -10px;
+  position: relative;
+  cursor: pointer;
+  transition: .5s ease all;
+  }
+  .input-slider-base {
+  display: flex;
+  justify-content: space-between;
+  }
+  .input-slider-base span {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; color: #5C5C5C;
+  margin: 16px 0 0 0;
+  }
+  .vertical-scroll-tab .vertical-scroll-wrapper  {
+  display: grid;
+  }
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab {
+  grid-area: 1/1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s linear, transform 0.2s linear,opacity 0.2s linear;
+  transform: translateY(20%);
+  justify-content: center;
+  align-items: center;
+  }
+  {% comment %} .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+  transition: all 0.5s linear, transform 0.5s 0.1s linear,opacity 0.5s 0.05s linear;
+  } {% endcomment %}
+  .calculation-result-area h5 {
+  margin: 0 0 0 0;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  }
+  .calculation-result-area .result-description{
+  font-size: 14px;
+  font-style: normal;
+  }
+  .calculation-result-area .result-description span {
+  color:#C79D5B
+  }
+  .calculation-result-area{
+  padding: 40px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 40px auto;
+  }
+  .vertical-scroll-tab .vertical-scroll-wrapper .title {
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .next-to-section.hide {
+  opacity:0;
+  visibility: hidden;
+    display:none;
+  }
+  /* Style for all browsers */
+  .range-input {
+  -webkit-appearance: none; /* Override default appearance */
+  appearance: none;
+  width: 300px;
+  height: 8px;
+  background: #ddd; /* Track color */
+  outline: none; /* Remove default outline */
+  border-radius: 5px;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+
+
+  .range-input::-webkit-slider-runnable-track {
+  /* background: linear-gradient(to right, #4CAF50 0%, #4CAF50 25%, #ddd 25%, #ddd 100%); */
+  height: 8px;
+  border-radius: 5px;
+  }
+  .next-to-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media only screen and (max-width: 992px){
+
+    .vertical-scroll-tab .vertical-scroll-wrapper .title {
+      max-width: 450px;
+  }
+    div#slide5 h2.title {
+      margin-bottom: 50px;
+  }
+  }
+  @media only screen and (max-width: 769px){
+    .calculation-result-area h5 {
+      font-size: 16px;
+    }
+    .calculation-result-area {
+      padding: 24px 20px;
+      width: calc(100% + 40px);
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+    .vertical-scroll-tab .vertical-scroll-wrapper {
+      margin-top: 30px;
+    }
+    .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab {
+     align-items: self-start;
+    }
+    .vertical-scroll-wrapper .border {
+      margin: 40px auto;
+    }
+   .next-to-section {
+        padding-bottom: 43px;
+      padding-top: 43px;
+    }
+  .vertical-scroll-wrapper .scroll-tab {
+  justify-content: center;
+  }
+  .vertical-scroll-tab .vertical-scroll-wrapper .title {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  }
+  .vertical-scroll-wrapper .scroll-tab {
+  min-height: 400px;
+  }
+  .scroll-tab-inner-wrapper .sub-text-wrapper .price span {
+  font-size: 16px;
+  }
+  .input-ranges-container .input-boxes {
+  min-width: 74px;
+  padding: 8px 14px;
+  }
+    .vertical-scroll-tab .vertical-scroll-wrapper .next-area .sub-text-wrapper,
+    .vertical-scroll-tab .vertical-scroll-wrapper .top-title-subtitle {
+  font-size: 12px;
+  font-weight: 450;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+    }
+    .vertical-scroll-tab .vertical-scroll-wrapper .title {
+      max-width: 350px;
+  }
+    div#slide5 h2.title {
+      margin-bottom: 50px;
+  }
+  }
+
+  .vertical-scroll-wrapper .border {
+  height: 80px;
+  width: 1px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 50%, transparent 50%),
+  linear-gradient(90deg, rgba(255, 255, 255, 0.4) 50%, transparent 50%),
+  linear-gradient(0deg, rgba(255, 255, 255, 0.4) 50%, transparent 50%),
+  linear-gradient(0deg, rgba(255, 255, 255, 0.4) 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 0px 0px, 0px 0px, 0px 0px, 1px 7px;
+  background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+  border-radius: 5px;
+  padding: 0;
+  font-size: 0;
+  margin: 50px auto;
+  }
+
+  .vertical-scroll-wrapper:hover .border {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, transparent 50%),
+  linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, transparent 50%),
+  linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, transparent 50%),
+  linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 0px 0px, 0px 0px, 0px 0px, 1px 7px;
+  background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+  border-radius: 5px;
+  padding: 0;
+  font-size: 0;
+  margin: 50px auto;
+  animation: dash 5s linear infinite;
+  }
+
+  @keyframes dash {
+  to {
+  background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+  }
+  }
+
+  .vertical-scroll-wrapper .scroll-nav {
+    display: none;
+  }
+  .vertical-scroll-wrapper .vertical-tab {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    visibility: hidden;
+    z-index: 1;
+  }
+  .vertical-scroll-wrapper .inner-sticky {
+    position: sticky;
+    height: calc(100vh - 110px);
+    width: 2px;
+    top: 100px;
+    position: sticky;
+    left: 0;
+    background: red;
+    overflow: hidden;
+  }
+  .vertical-scroll-wrapper .vertical-tab #progress-bar {
+    display: block;
+    height: 12rem;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab {
+    visibility: visible;
+    opacity: 1;
+    grid-area: unset;
+    transform: none;
+    /* will-change: opacity;
+    transition: opacity .3s linear; */
+    min-height: 1px;
+    align-items: center;
+    justify-content: center;
+  }
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.tab-sticky {
+    position: sticky;
+    top: 60px;
+  }
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.second{ top: 80px; }
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.third{ top: 100px; }
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.fourth{ top: 120px; }
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.fifth{ top: 140px; }
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.next-active,
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.passed-active {
+    opacity: 1;
+  }
+
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.inactive {
+    opacity: 1;
+    transition: background 0.6s linear 0.3s;
+  }
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.inactive .scroll-tab-inner-wrapper {
+    transition: opacity 0.6s linear 0.3s;
+  }
+  .vertical-scroll-tab .next-area {
+    height: 50px;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+  }
+
+  .vertical-scroll-tab .vertical-scroll-wrapper { max-width: 100%; gap: 20px; }
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab { background-color: rgb(20 19 19); background-color: rgb(0 0 0); padding-block: 20px 0;  border-radius: 25px; transition: background .3s linear; }
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab .scroll-tab-inner-wrapper { opacity: 0; transition: opacity .3s linear; max-width: 640px; will-change: opacity; }
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.inactive .scroll-tab-inner-wrapper,
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.next-active .scroll-tab-inner-wrapper { opacity: 1; }
+
+  {% comment %} .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.passed-active,
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.inactive.overlaped { background-color: rgba(26, 26, 26, 1); }
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.passed-active.second,
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.inactive.overlaped.second { background-color: rgb(19 17 17); }
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.passed-active.third,
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.inactive.overlaped.third { background-color: rgba(26, 26, 26, 1); }
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.passed-active.fourth,
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.inactive.overlaped.fourth { background-color: rgb(19 17 17); }   {% endcomment %}
+
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.inactive.overlaped { transition: background 0.3s linear; }
+  .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.inactive.overlaped .scroll-tab-inner-wrapper { opacity: 0; transition: opacity 0.3s linear; }
+
+  @media only screen and (min-width: 750px){
+    .vertical-scroll-tab .vertical-scroll-wrapper { gap: 30px; }
+    .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab {
+      min-height: var(--max-height, 440px);
+      padding-block: 30px;
+    }
+
+    .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.tab-sticky { top: 100px; }
+    .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.second{ top: 130px; }
+    .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.third{ top: 160px; }
+    .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.fourth{ top: 190px; }
+    .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab.fifth{ top: 220px; }
+  }
+  @media only screen and (max-width: 749px){
+    .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab { padding-inline: 20px; border-radius: 15px; }
+    .vertical-scroll-tab .vertical-scroll-wrapper .scroll-tab:last-child { padding-bottom: 20px;  }
+  }
+</style>
+<section class="color-{{ section.settings.color_scheme }}" id="contribution-calculator">
+  <div class="vertical-scroll-tab vertical-scroll-section">
+    {% if section.settings['main-sub-title'] != blank %}
+      <div class="sub-title">
+        <span>{{ section.settings['main-sub-title'] }}</span>
+      </div>
+    {% endif %}
+    <div class="vertical-scroll-wrapper">
+      <div class="vertical-tab">
+        <div class="inner-sticky">
+          <div class="inner" id="progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="scroll-tab active first" id="slide1">
+        <div class="scroll-tab-inner-wrapper">
+          <div class="preview-area">
+            {% if section.settings['main-title-slide-1'] != blank %}
+              <h2 class="title">{{ section.settings['main-title-slide-1'] }}</h2>
+            {% endif %}
+            {% if section.settings['caption-text-slide-1'] != blank %}
+              <div class="sub-text-wrapper">
+                <div class="top-title-subtitle">{{ section.settings['caption-text-slide-1'] }}</div>
+              </div>
+            {% endif %}
+          </div>
+          <div class="border">divider animated</div>
+          <!-- <span class="divider"></span> -->
+          <div class="next-area">
+            {% if section.settings['main-title-slide-2'] != blank %}
+              <h2 class="title next-tab-title">{{ section.settings['main-title-slide-2'] }}</h2>
+            {% endif %}
+            <div class="sub-text-wrapper">
+              {% if section.settings['caption-text-slide-2'] != blank %}
+                <div class="top-title-subtitle">
+                  <span class="day-count">{{ section.settings['caption-text-slide-2'] }}</span>
+                </div>
+              {% endif %}
+              <div class="price">
+                <span class="sale-price">{{ section.settings['sale-price'] }}</span>
+                <span class="regular-price">{{ section.settings['regular-price'] }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-tab second" id="slide2">
+        <div class="scroll-tab-inner-wrapper">
+          <div class="preview-area">
+            {% if section.settings['main-title-slide-2'] != blank %}
+              <h2 class="title next-tab-title">{{ section.settings['main-title-slide-2'] }}</h2>
+            {% endif %}
+            <div class="sub-text-wrapper">
+              <div class="top-title-subtitle">
+                <span class="day-count">{{ section.settings['caption-text-slide-2'] }}</span>
+              </div>
+              <div class="price">
+                <span class="sale-price">{{ section.settings['sale-price'] }}</span>
+                <span class="regular-price">{{ section.settings['regular-price'] }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="border">divider animated</div>
+          <!-- <span class="divider"></span> -->
+          <div class="next-area">
+            {% if section.settings['main-title-slide-3-1'] != blank %}
+              <h2 class="title next-tab-title">
+                {{ section.settings['main-title-slide-3-1'] }}
+                <br>
+                {{ section.settings['main-title-slide-3-2'] }}
+              </h2>
+            {% endif %}
+            {% if section.settings['caption-text-slide-3'] != blank %}
+              <div class="sub-text-wrapper">
+                <span class="inner-subtext step-3-subtext">{{ section.settings['caption-text-slide-3'] }}</span>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <div class="scroll-tab third" id="slide3">
+        <div class="scroll-tab-inner-wrapper">
+          <div class="preview-area">
+            {% if section.settings['main-title-slide-3-1'] != blank %}
+              <h2 class="title">
+                {{ section.settings['main-title-slide-3-1'] }}
+                <br>
+                {{ section.settings['main-title-slide-3-2'] }}
+              </h2>
+              <!--
+                <h2 class="title">{{ section.settings.main-title-slide-3 }} {{ section.settings.main-title-slide-3 }}</h2>
+              -->
+            {% endif %}
+            {% if section.settings['caption-text-slide-3'] != blank %}
+              <div class="sub-text-wrapper">
+                <div class="top-title-subtitle step-3-subtext">{{ section.settings['caption-text-slide-3'] }}</div>
+              </div>
+            {% endif %}
+            <div class="border">divider animated</div>
+            <!-- <span class="divider"></span> -->
+            <div class="next-area">
+              {% if section.settings['main-title-slide-4'] != blank %}
+                <h2 class="title next-tab-title">{{ section.settings['main-title-slide-4'] }}</h2>
+              {% endif %}
+              {% if section.settings['caption-text-slide-4'] != blank %}
+                <div class="sub-text-wrapper">
+                  <span class="inner-subtext step-3-subtext">{{ section.settings['caption-text-slide-4'] }}</span>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-tab fourth" id="slide4">
+        <div class="scroll-tab-inner-wrapper">
+          <div class="preview-area">
+            {% if section.settings['main-title-slide-4'] != blank %}
+              <h2 class="title">{{ section.settings['main-title-slide-4'] }}</h2>
+            {% endif %}
+            {% if section.settings['caption-text-slide-4'] != blank %}
+              <div class="sub-text-wrapper">
+                <div class="top-title-subtitle step-3-subtext">{{ section.settings['caption-text-slide-4'] }}</div>
+              </div>
+            {% endif %}
+            <div class="border">divider animated</div>
+            <!-- <span class="divider"></span> -->
+            <div class="next-area">
+              {% if section.settings['main-title-slide-5'] != blank %}
+                <h2 class="title next-tab-title">{{ section.settings['main-title-slide-5'] }}</h2>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-tab fifth" id="slide5">
+        {% render 'calculation-results' %}
+      </div>
+    </div>
+    {% if section.settings['bottom-sect-link-text'] != blank %}
+      <div class="next-to-section" id="next-to-section">
+        <button class="link global-link" href="{{ section.settings.bottom-sect-link }}">
+          {{ section.settings['bottom-sect-link-text'] }}
+          <span>{% render 'btn-down-arrow' %}</span>
+        </button>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<script>
+    let top_offerset = {};
+    {% comment %} window.addEventListener("load", function() {
+      const tabs = document.querySelectorAll('.scroll-tab');
+      const page = document.querySelector('.vertical-scroll-wrapper');
+      tabs.forEach((tab, index) => {      
+        top_offerset[index] = {
+          offsetTop : tab.offsetTop + page.offsetTop,
+          offsetHeight : tab.offsetTop + tab.offsetHeight + page.offsetTop
+        }      
+      });
+      console.log(top_offerset,'top_offerset');
+    }); {% endcomment %}
+    document.addEventListener("DOMContentLoaded", function() {
+      const page = document.querySelector('.vertical-scroll-wrapper');
+      const tabs = document.querySelectorAll('.scroll-tab');
+      const verticalTab = document.querySelector('.vertical-tab .inner-sticky');
+      const verticalTab_height = verticalTab.querySelector('.inner').clientHeight;
+      const innerProgress = document.getElementById('progress-bar');  
+      
+      let translateY = 0; 
+      let currentY = 0;
+      
+      
+      // Calculate the total height considering the parent's padding
+      const totalHeight = (page.offsetTop + page.scrollHeight);
+      const pagePaddingTop = parseInt(window.getComputedStyle(page).paddingTop, 10);
+  
+      let scrollDown = 0;
+      let max_height = 0;
+      if( window.innerWidth > 749 ){
+        tabs.forEach((tab, index) => { tab.clientHeight > max_height  && (max_height = tab.clientHeight ) });    
+        max_height > 0 && page.style.setProperty('--max-height', `${max_height}px`);
+      }
+  
+      tabs.forEach((tab, index) => {
+        // let reduce_size = index < tabs.length - 1 ? 60 : 0;
+        // top_offerset[index] = {
+        //   offsetTop : index > 0 ? tab.offsetTop + page.offsetTop - 60 : tab.offsetTop + page.offsetTop,
+        //   offsetHeight : tab.offsetTop + tab.offsetHeight + page.offsetTop - reduce_size
+        // }
+        top_offerset[index] = {
+          {% comment %} offsetTop : tab.offsetTop + page.offsetTop,
+          offsetHeight : tab.offsetTop + tab.offsetHeight + page.offsetTop {% endcomment %}
+          offsetTop : tab.offsetTop,
+          offsetHeight : tab.offsetTop + tab.offsetHeight
+        }
+        tab.classList.add('tab-sticky');
+      });
+      console.log(top_offerset);
+      if( page.offsetTop > window.scrollY ){
+        tabs[0].classList.add('inactive');
+      }else if ( page.offsetTop + page.offsetHeight >= window.scrollY ){
+        tabs[tabs.length - 1].classList.add('inactive');
+      }
+      
+      window.addEventListener('scroll', function() {
+          let scrollPosition = window.scrollY;
+  
+          let changes = false;
+          // Update the opacity of tabs
+          tabs.forEach((tab, index) => {
+              let top_obj = top_offerset[index];
+              let first_last_index = index == 0 || tabs.length == (index + 1) ? true : false;
+              let tabTop = top_obj.offsetTop;
+              
+              // scrollPosition2 = page.offsetTop > scrollPosition2 ? ( page.offsetTop - scrollPosition2 ) : ( scrollPosition2 - page.offsetTop ) ;
+              // scrollPosition2 += tabTop;
+              let tabTopHeight = top_obj.offsetHeight;
+  
+              {% comment %} tabTop = tab.offsetTop + page.offsetTop;
+              tabTopHeight = tab.offsetTop + tab.offsetHeight + page.offsetTop; {% endcomment %}
+              if( index - 1 >= 0 && index < tabs.length - 1 && !changes ){
+                changes = false;              
+              }
+              // if(tab.querySelector('.next-area') ){
+              //   if( scrollDown > scrollPosition ){
+              //     console.log('scroll up');                
+              //     tabTopHeight = tabTopHeight - tab.querySelector('.next-area').clientHeight - 200;
+              //     tabTop = tabTop - tab.querySelector('.next-area').clientHeight;
+              //   }else if( index < tabs.length - 1 ){
+              //     tabTopHeight = tabTopHeight - tab.querySelector('.next-area').clientHeight - 200;
+              //     tabTop = tabTop - tab.querySelector('.next-area').clientHeight;
+              //   }
+              // }
+              //tabTopHeight = first_last_index ? (tabTopHeight - (top_obj.offsetHeight/2)) : tabTopHeight;
+              let temp = 60;
+              if( index > 0 && index < tabs.length -1 ){
+                temp = temp * (index + 1);
+              }
+              {% comment %} console.log('index', index, top_obj.offsetTop);
+              console.log(scrollPosition);
+              console.log('--','tabTop', tabTop, scrollPosition >= tabTop);
+              console.log('---- < ', tabTopHeight, scrollPosition < tabTopHeight);
+              console.log(scrollPosition >= tabTop && scrollPosition < tabTopHeight);
+              console.log('----------------------------');             {% endcomment %}
+            
+              if ( scrollPosition >= tabTop && scrollPosition <= tabTopHeight) {
+                  tab.classList.add('inactive');
+                  console.log('1');
+                  tabs.forEach((tab_inner, iinner) => { 
+                    tab_inner.classList.remove('passed-active');
+                    tab_inner.classList.remove('next-active');
+                    tab.classList.remove('overlaped'); 
+                    tab.classList.remove('onview');
+                    
+                    if(tab_inner != tab ){                    
+                      tab_inner.classList.remove('inactive');
+                      
+                      if(scrollDown < scrollPosition){
+                        if( iinner > index ){
+                          tab_inner.classList.add('next-active')
+                        }else if( iinner < index ){
+                          tab_inner.classList.add('passed-active')
+                        }
+                      }else if(scrollDown > scrollPosition ){
+                        if( iinner > index ){
+                          tab_inner.classList.add('next-active')
+                        }else if( iinner < index ){
+                          tab_inner.classList.add('passed-active')
+                        }
+                      }
+                    }
+  
+                    // let reduce_size = iinner < tab_inner.length -1 ? 60 : 0;
+                    // top_offerset[iinner] = {
+                    //   offsetTop : iinner > 0 ? tab_inner.offsetTop - 60 : tab_inner.offsetTop,
+                    //   offsetHeight : tab_inner.offsetTop + tab_inner.offsetHeight - reduce_size
+                    // }
+                  });
+                  //console.log('asd');              
+              } else {
+                  // console.log('asd');
+                  // tab.classList.remove('inactive');
+              }
+            if( tab.classList.contains('inactive') ){            
+              let active_off_height = tab.offsetTop + tab.clientHeight + page.offsetTop;
+              if( tabs[index+1] ){
+                let active_next_off_top = tabs[index+1].offsetTop + page.offsetTop;
+                if( active_off_height > active_next_off_top ){
+                  let temp_diff = active_off_height - active_next_off_top;
+                  if( temp_diff > tab.clientHeight/1.1 ){
+                    tab.classList.add('overlaped');
+                    tabs[index+1].classList.add('onview');
+                  }
+                }
+              }
+            }
+            if( index + 1 == tabs.length ){
+              changes = false;
+              //console.log('top_offerset', top_offerset);
+            }
+          });
+  
+          // Update the progress bar based on the scroll position
+          const maxScroll = page.scrollHeight - verticalTab.offsetHeight - innerProgress.clientHeight;
+          let offsetScroll = scrollPosition - page.offsetTop;        
+          offsetScroll = scrollPosition >= page.offsetTop ? offsetScroll : 0;
+          
+          translateY = ((offsetScroll) / maxScroll) * (verticalTab.offsetHeight - verticalTab_height);        
+          //translateY = translateY - innerProgress.clientHeight;
+          //let progress = (scrollPosition / totalHeight) * window.innerHeight;
+          // innerProgress.style.transform = `translateY(${(progress * 0.07) - 7}rem)`; 
+          translateY = translateY < 0 ? 0 : translateY + innerProgress.clientHeight > verticalTab.clientHeight ? verticalTab.clientHeight - innerProgress.clientHeight : translateY;
+          //currentY = currentY > verticalTab.clientHeight ? verticalTab.clientHeight : currentY;
+          //console.log('translateY', translateY);
+          //innerProgress.style.transform = `translateY(${(translateY)}px)`; 
+          // Start the animation
+          requestAnimationFrame(animateProgress);
+          scrollDown = window.scrollY;
+      });  
+      
+      function animateProgress() {
+        // Gradually move currentY towards targetY      
+        currentY += (translateY - currentY) * 0.1;
+  
+        // Update the progress bar's transform property
+        innerProgress.style.transform = `translateY(${currentY}px)`;
+  
+        // Continue the animation if there's still a difference
+        if (Math.abs(translateY - currentY) > 0.1) {
+          requestAnimationFrame(animateProgress);
+        }
+      }
+    });
+</script>
+
+<script>
+  // next-to-section
+  document.getElementById('next-to-section').addEventListener('click', function () {
+    this.style.display = 'none'; // Corrected: Single dot for 'this.style'
+    document.getElementById('slide5').classList.add('active');
+    document.getElementById('slide1').style.display = 'none';
+    document.getElementById('slide2').style.display = 'none';
+    document.getElementById('slide3').style.display = 'none';
+    document.getElementById('slide4').style.display = 'none';
+  });
+
+  // Get the elements
+  const valuePreview = document.querySelector('.value-preview');
+  const rangeInput = document.getElementById('range-input');
+
+  // Function to update the position and value preview
+  function updateValuePreview() {
+    // Get the width of the value preview
+    const valuePrevieWidth = valuePreview.offsetWidth;
+    const valuePreviewHalfWidth = valuePrevieWidth / 2;
+    const valuePreviewHalfWidthWithPx = valuePreviewHalfWidth + 'px';
+
+    // Get the current range value
+    const rangeValue = rangeInput.value; // Use rangeInput.value directly
+
+    // Update the .value-preview span with the range value and a percentage symbol
+    valuePreview.textContent = rangeValue + '%';
+
+    // Calculate the percentage position within the slider range
+    const leftPosition = rangeValue; // Current range value in percentage
+
+    // Update the left position of the value-preview based on the range value
+    if (rangeValue == 0) {
+      // If range value is 0, position it with 7.5px added
+      valuePreview.style.left = `calc(${leftPosition}% - ${valuePreviewHalfWidthWithPx} + 7.5px)`;
+    } else if (rangeValue == 10) {
+      // Correctly use else if for the second condition
+      // If range value is greater than or equal to 10, position with 7.5px added
+      valuePreview.style.left = `calc(${leftPosition}% - ${valuePreviewHalfWidthWithPx} + 7.5px)`;
+    } else if (rangeValue == 20) {
+      // Correctly use else if for the second condition
+      // If range value is greater than or equal to 10, position with 7.5px added
+      valuePreview.style.left = `calc(20% - 17.5px)`;
+    } else if (rangeValue == 30) {
+      // Correctly use else if for the second condition
+      // If range value is greater than or equal to 10, position with 7.5px added
+      valuePreview.style.left = `calc(30% - 18.5px)`;
+    } else if (rangeValue == 80) {
+      // Correctly use else if for the second condition
+      // If range value is greater than or equal to 10, position with 7.5px added
+      valuePreview.style.left = `calc(80% - 26.5px)`;
+    } else if (rangeValue == 90) {
+      // Correctly use else if for the second condition
+      // If range value is greater than or equal to 10, position with 7.5px added
+      valuePreview.style.left = `calc(90% - 28.5px)`;
+    } else if (rangeValue == 100) {
+      // Correctly use else if for the second condition
+      // If range value is greater than or equal to 10, position with 7.5px added
+      valuePreview.style.left = `calc(${leftPosition}% - ${valuePreviewHalfWidthWithPx} - 7.5px)`;
+    } else {
+      // Otherwise, position it normally
+      valuePreview.style.left = `calc(${leftPosition}% - ${valuePreviewHalfWidthWithPx})`;
+    }
+
+    // Update the range input background
+    rangeInput.style.background = `linear-gradient(45deg, #C79D5B ${leftPosition}%, #5C5C5C 0%)`;
+  }
+
+  // Attach an event listener to the range input
+  rangeInput.addEventListener('input', updateValuePreview);
+  // Call the function initially to set the correct position
+  rangeInput.value = 0;
+  // Call the function initially to set the correct position
+  updateValuePreview();
+
+  //scroll animation
+  document.addEventListener('DOMContentLoaded', function () {
+    // Get all the scroll-tab elements
+    const tabs = document.querySelectorAll('.scroll-tab');
+    let currentIndex = 0;
+
+    // Add click event listener to the entire .vertical-scroll-tab section
+    document.querySelector('.vertical-scroll-tab').addEventListener('click', function () {
+      // Check if the last tab is already active
+      if (currentIndex === tabs.length - 1) {
+        return; // Do nothing if the last slide is active
+      }
+
+      // Remove 'active' class from the current tab
+      tabs[currentIndex].classList.remove('active');
+
+      // Increment the current index to move to the next tab
+      currentIndex++;
+
+      // Add the 'active' class to the next tab
+      tabs[currentIndex].classList.add('active');
+      if (currentIndex === tabs.length - 1) {
+        document.querySelector('.next-to-section').classList.add('hide'); // Add 'hide' class to '.next-to-section'
+      }
+    });
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+{% schema %}
+{
+  "name": "Corporate Registration",
+  "class": "section corporate-registration",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "text",
+      "id": "bottom-sect-link-text",
+      "label": "Bottom Section Text",
+      "default": "contribution calculator"
+    },
+    {
+      "type": "header",
+      "content": "Slide1"
+    },
+    {
+      "type": "text",
+      "id": "main-sub-title",
+      "label": "Main Subtitle",
+      "default": "How It Works"
+    },
+    {
+      "type": "text",
+      "id": "main-title-slide-1",
+      "label": "Slide 1 Title",
+      "default": "Register as a Corporate Partner of S&T"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "caption-text-slide-1",
+      "label": "Caption Text",
+      "default": "In less than <span>30</span> seconds"
+    },
+    {
+      "type": "header",
+      "content": "Slide2"
+    },
+    {
+      "type": "text",
+      "id": "main-title-slide-2",
+      "label": "Slide 2 Title",
+      "default": "Unlock Discounts for Employees"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "caption-text-slide-2",
+      "label": "Caption Text",
+      "default": "On day 1:"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "sale-price",
+      "label": "Sale Price",
+      "default": "$2251"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "regular-price",
+      "label": "Regular Price",
+      "default": "$275"
+    },
+    {
+      "type": "header",
+      "content": "Slide3"
+    },
+    {
+      "type": "text",
+      "id": "main-title-slide-3-1",
+      "label": "Slide 3 Title",
+      "default": "More Employees"
+    },
+    {
+      "type": "text",
+      "id": "main-title-slide-3-2",
+      "label": "Slide 3 Title",
+      "default": "Sign Up"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "caption-text-slide-3",
+      "label": "Caption Text",
+      "default": "<span>Increased</span> discounts for employees"
+    },
+    {
+      "type": "header",
+      "content": "Slide4"
+    },
+    {
+      "type": "text",
+      "id": "main-title-slide-4",
+      "label": "Slide 4 Title",
+      "default": "Employer Can Choose A Subsidy"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "caption-text-slide-4",
+      "label": "Caption Text",
+      "default": "Discount <span>grows</span> as more employees join"
+    },
+    {
+      "type": "header",
+      "content": "Slide5"
+    },
+    {
+      "type": "text",
+      "id": "main-title-slide-5",
+      "label": "Slide 5 Title",
+      "default": "Try a scenario for yourself:"
+    },
+    {
+      "type": "text",
+      "id": "employee-count-title-slide-5",
+      "label": "Employee Count Title",
+      "default": "Estimated Number of Employees enrolled:"
+    },
+    {
+      "type": "text",
+      "id": "range-input-title-slide-5",
+      "label": "Range Input Title",
+      "default": "Employer contribution to each membership:"
+    },
+    {
+      "type": "text",
+      "id": "calculate_btn",
+      "label": "Calculate button Text",
+      "default": "Calculate"
+    },
+    {
+      "type": "text",
+      "id": "scenario_text",
+      "label": "Scenario B: Text",
+      "default": "Scenario B:"
+    },
+    {
+      "type": "text",
+      "id": "partner_subsidy_text",
+      "label": "Partner Subsidy Text",
+      "default": "Partner Subsidy"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Corporate Registration"
+    }
+  ]
+}
+{% endschema %}

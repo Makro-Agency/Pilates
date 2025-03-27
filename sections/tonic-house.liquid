@@ -1,0 +1,161 @@
+<link rel="stylesheet" href="{{ 'tonic-house.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'tonic-house.css' | asset_url }}"></noscript>
+
+<div class="page-width">
+    {% if section.settings.image != blank %}
+    <div class="banner-media">
+      {% capture deskClass -%}{% if section.settings.mobimage != blank %}small-hide{% endif %}{%- endcapture %}
+      {{
+        section.settings.image
+        | image_url: width: 3600
+        | image_tag:
+          loading: "lazy",
+          width: section.settings.image.width,
+          height: section.settings.image.height,
+          sizes: "100vw",
+          widths: "450, 660, 900, 1320, 1800, 2100, 2400, 3600",
+          class: deskClass,
+          alt: section.settings.image.alt
+      }}
+      {% if section.settings.mobimage != blank %}
+        {{
+          section.settings.mobimage
+          | image_url: width: 900
+          | image_tag:
+            loading: "lazy",
+            width: section.settings.mobimage.width,
+            height: section.settings.mobimage.height,
+            sizes: "100vw",
+            widths: "450, 660, 900",
+            class: 'large-up-hide medium-hide',
+            alt: section.settings.mobimage.alt
+        }}
+      {% endif %}
+    </div>
+    {% endif %}
+
+   <div class="banner-content">
+
+     <div class="sec-head">
+        {% if section.settings.head != blank %}<h2 class="head-title">{{ section.settings.head }}</h2>{% endif %}
+        {% if section.settings.text != blank %}<div class="text">{{ section.settings.text }}</div>{% endif %}
+        {% if section.settings.btn != blank %}<a href="{{ section.settings.url | default:"#" }}" class="more-link">{{ section.settings.btn }} {% render 'right-arrow' %}</a>{% endif %}
+     </div>
+
+     {% if section.settings.r_image1 != blank or section.settings.r_image2 != blank or section.settings.r_text != blank %}
+     <div class="sec-description">
+       {% if section.settings.r_image1 != blank or section.settings.r_image2 != blank %}
+       <div class="sec-media">
+         {% if section.settings.r_image1 != blank %}
+           <div class="media-item">
+              {{
+                section.settings.r_image1
+                | image_url: width: 300
+                | image_tag:
+                  loading: "lazy",
+                  width: section.settings.r_image1.width,
+                  height: section.settings.r_image1.height,
+                  sizes: "100vw",
+                  widths: "150,300",
+                  alt: section.settings.r_image1.alt
+              }}
+           </div>
+         {% endif %}
+         {% if section.settings.r_image2 != blank %}
+           <div class="media-item">
+              {{
+                section.settings.r_image2
+                | image_url: width: 550
+                | image_tag:
+                  loading: "lazy",
+                  width: section.settings.r_image2.width,
+                  height: section.settings.r_image2.height,
+                  sizes: "100vw",
+                  widths: "300,550",
+                  alt: section.settings.r_image2.alt
+              }}
+           </div>
+         {% endif %}
+       </div>
+       {% endif %}
+       {% if section.settings.r_text != blank %}<div class="description">{{ section.settings.r_text }}</div>{% endif %}
+     </div>
+     {% endif %}
+     
+     
+   </div>
+  
+</div>
+
+
+{% schema %}
+{
+  "name": "Tonic House",
+  "tag": "section",
+  "class": "section tonic-house-wrapper",
+  "settings": [
+    {
+      "type":"image_picker",
+      "id":"image",
+      "label":"Image"
+    },
+    {
+      "type":"image_picker",
+      "id":"mobimage",
+      "label":"Mobile Image"
+    },
+    {
+      "type":"header",
+      "content":"Left part"
+    },
+    {
+      "type":"text",
+      "id":"head",
+      "label":"Heading",
+      "default":"TONIC House"
+    },
+    {
+      "type":"richtext",
+      "id":"text",
+      "label":"Text",
+      "default":"<p>Kick back like one of the bar’s original patrons, but this time after a workout. Head to Tonic House on the second floor to experience one of our handcrafted cocktails with friends, coworkers, and fellow sweat addicts.</p>"
+    },
+    {
+      "type":"text",
+      "id":"btn",
+      "label":"Button label",
+      "default":"Check out our full menu"
+    },
+    {
+      "type":"url",
+      "id":"url",
+      "label":"Url to navigate"
+    },
+    {
+      "type":"header",
+      "content":"Right part"
+    },
+    {
+      "type":"image_picker",
+      "id":"r_image1",
+      "label":"Image 1"
+    },
+    {
+      "type":"image_picker",
+      "id":"r_image2",
+      "label":"Image 2"
+    },
+    {
+      "type":"richtext",
+      "id":"r_text",
+      "label":"Text",
+      "default":"<p>Tonic Bar at Sweat and Tonic nods to the heritage of our building, which opened in 1947 as the Silver Rail – Toronto’s first cocktail bar.</p><p>As a throwback to our roots, we’ve incorporated design details reminiscent of the original space, including one barstool upholstered to match the original pink seating.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tonic House"
+    }
+  ]
+}
+{% endschema %}

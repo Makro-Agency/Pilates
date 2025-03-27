@@ -1,0 +1,50 @@
+.tonic-house-wrapper { width:100%; border-top:rgba(0,0,0,0.1) 1px solid; padding-top:50px; padding-bottom:120px; }
+
+.tonic-house-wrapper .banner-media { display:flex; }
+.tonic-house-wrapper .banner-media img { width:100%;height:100%; }
+
+.tonic-house-wrapper .banner-content { display:flex; width:100%; margin-top:60px; align-items:flex-start; justify-content:space-between; gap:50px; }
+.tonic-house-wrapper .banner-content .sec-head { width:100%; max-width:509px; }
+.tonic-house-wrapper .banner-content .sec-head .head-title { color: #000; font-size: 60px; font-style: normal; font-weight: 420; line-height: 90%; text-transform: uppercase; margin:0; }
+
+.tonic-house-wrapper .banner-content .sec-head .text { width:100%; margin-top:20px; }
+.tonic-house-wrapper .banner-content .sec-head .text p { color: #000;  font-style: normal; font-weight: 400; line-height: 150%; }
+.tonic-house-wrapper .banner-content .sec-head .text p:first-child { margin-top:0; }
+.tonic-house-wrapper .banner-content .sec-head .text p:last-child { margin-bottom:0; }
+
+.tonic-house-wrapper .banner-content .sec-head .more-link { display:flex; align-items:center; color: #000; font-size: 12px; margin-top:40px;
+  font-style: normal; font-weight: 450; line-height: normal; /*letter-spacing: 0.24px;*/ text-transform: uppercase; gap:10px; text-decoration:none; }
+.tonic-house-wrapper .banner-content .sec-head .more-link:hover { text-decoration:underline; }
+
+.tonic-house-wrapper .banner-content .sec-description { width:100%; max-width:420px; }
+.tonic-house-wrapper .banner-content .sec-description .sec-media { width:100%; display:flex; gap:20px; }
+.tonic-house-wrapper .banner-content .sec-description .sec-media .media-item { display:flex;width:50%; }
+.tonic-house-wrapper .banner-content .sec-description .sec-media .media-item img { width:100%;height:100%; }
+
+.tonic-house-wrapper .banner-content .sec-description .description { width:100%; margin-top:30px; }
+.tonic-house-wrapper .banner-content .sec-description .description p { color: #000;  font-style: normal; font-weight: 400; line-height: 150%; opacity: 0.5; }
+.tonic-house-wrapper .banner-content .sec-description .description p:first-child { margin-top:0; }
+.tonic-house-wrapper .banner-content .sec-description .description p:last-child { margin-bottom:0; }
+
+
+@media (max-width: 1023px) {
+
+   
+}
+
+@media (max-width: 749px) {
+
+  .tonic-house-wrapper { padding-top: 50px; padding-bottom: 50px; }
+  .tonic-house-wrapper .banner-content { margin-top: 30px; gap: 0; flex-flow: column; }
+  .tonic-house-wrapper .banner-content .sec-head .head-title { font-size: 40px; }
+  .tonic-house-wrapper .banner-content .sec-head .more-link { margin-top:20px; }
+
+  .tonic-house-wrapper .banner-content .sec-description { width: 100%; max-width: 100%; margin-top: 40px; }
+  
+}
+
+
+
+
+
+/* end */

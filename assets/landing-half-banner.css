@@ -1,0 +1,88 @@
+.background-none .multicolumn-card__image-wrapper {
+  margin-left: 0;
+  margin-right: 0;
+}
+.landing-half-banner .grid {
+  column-gap: 0;
+  row-gap: 0;
+}
+.landing-half-banner .multicolumn-list__item{
+  position: relative;
+}
+.landing-half-banner .multicolumn-card__info{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: #fff;
+}
+.landing-half-banner .content-align--top .multicolumn-card__info{
+  top: 0;
+}
+.landing-half-banner .content-align--center .multicolumn-card__info{
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.landing-half-banner .content-align--bottom .multicolumn-card__info{
+  bottom: 0;
+}
+.landing-half-banner .background-none .multicolumn-list .multicolumn-card__info{
+  padding: 40px;
+}
+.landing-half-banner .multicolumn-list h6, .landing-half-banner .multicolumn-list h3, .landing-half-banner .multicolumn-card__info .link{
+  color: currentcolor;
+}
+.landing-half-banner .multicolumn-list h3 {
+  line-height: 90%;
+  margin-top: 20px;
+}
+.landing-half-banner .multicolumn-list h6{
+  margin: 0;
+}
+.landing-half-banner .multicolumn-card__info .link{
+  margin-top: 40px;
+  z-index: 1;
+}
+.landing-half-banner .multicolumn-card__info .icon-wrap{
+  line-height: 1;
+  margin-left: 0;
+}
+.landing-half-banner .card-full-link{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+@media screen and (min-width: 990px){
+  .landing-half-banner .grid--2-col-desktop .grid__item {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 989px){
+  .landing-half-banner .multicolumn-card__info .link{
+    margin-top: 30px;
+  }
+  .landing-half-banner .background-none .multicolumn-list .multicolumn-card__info{
+    padding: 20px 30px;
+  }
+  .landing-half-banner .multicolumn-list h3 {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 749px){
+  .landing-half-banner .background-none .multicolumn-list .multicolumn-card__info{
+    padding: 20px;
+  }
+  .landing-half-banner .multicolumn-list:not(.slider) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="{{ 'team-banner.css' | asset_url }}" />
+<noscript><link rel="stylesheet" href="{{ 'team-banner.css' | asset_url }}"></noscript>
+
+
+ 
+<div class="banner-box">
+
+  <div class="team-info">
+    <a href="{{ section.settings.back | default:"/" }}" class="back-team">{% render 'left-arrow' %} Back to Team</a>
+    <div class="mem-details">
+      <h3 class="team-title">{{ metaobject.name.value }}</h3>
+      <span class="team-slogan">{% for cat in metaobject.category.value %}{{ cat }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
+      {% if metaobject.button_label.value != blank and metaobject.button_url.value != blank %}<a href="{{ metaobject.button_url.value }}" class="book-case">{{ metaobject.button_label.value }}</a>{% endif %}
+    </div>
+
+    <div class="mem-social">
+      {% if metaobject.facebook.value != blank %}
+      <a href="{{ metaobject.facebook.value }}" class="soci-item"><img src="https://cdn.shopify.com/s/files/1/0277/8280/7635/files/m-facebook.svg?v=1698314177" alt="Facebook" /></a>
+      {% endif %}
+    
+      {% if metaobject.tiktok.value != blank %}
+      <a href="{{ metaobject.tiktok.value }}" class="soci-item"><img src="https://cdn.shopify.com/s/files/1/0277/8280/7635/files/m-tiktok.svg?v=1698314177" alt="Tiktok" /></a>
+      {% endif %}
+    
+      {% if metaobject.instagram.value != blank %}
+      <a href="{{ metaobject.instagram.value }}" class="soci-item instagram spotify"><img stye="padding: 3px;height: 35px;width: 35px;" src="https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Frame_10.svg?v=1701929492" alt="Instagram" /> Connect with me</a>
+      {% endif %}
+    
+      {% if metaobject.spotify.value != blank %}
+      <a href="{{ metaobject.spotify.value }}" class="soci-item spotify"><img src="https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Frame_11.svg?v=1701930054" alt="Spotify" /> Follow me on Spotify</a>
+      {% endif %}
+    </div>
+  </div>
+  {% if metaobject.image.value != blank %}
+  <div class="team-media">    
+    {{ metaobject.image.value | image_url: width: 1200 | image_tag: loading: 'lazy', sizes: "50vw", widths: "375,500,750,900,1200", alt: metaobject.image.value.alt }}    
+  </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Team Banner",
+  "tag": "section",
+  "class": "section team-banner-wrapper",
+  "settings": [
+    {
+      "type":"url",
+      "id":"back",
+      "label":"Back to URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Team Banner"
+    }
+  ]
+}
+{% endschema %}

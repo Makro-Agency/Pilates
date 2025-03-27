@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="{{ 'about-our-mission.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'about-our-mission.css' | asset_url }}"></noscript>
+
+{% if section.settings.sub_title != blank or section.settings.title != blank or section.settings.description != blank %}
+<div class="page-width">    
+  
+    <div class="banner-content-wrapper scroll-trigger animate--slide-in">
+      {% if section.settings.sub_title != blank or section.settings.title != blank %}
+      <div class="sec-title">
+        {% if section.settings.sub_title != blank %}<span class="sub-title">{{ section.settings.sub_title }}</span>{% endif %}
+        {% if section.settings.title != blank %}<h2 class="title">{{ section.settings.title }}</h2>{% endif %}
+      </div>
+      {% endif %}
+
+      {% if section.settings.description != blank %}
+      <div class="descriptions">
+        <p>{{ section.settings.description }}</p>
+      </div>
+      {% endif %}
+      
+    </div>
+</div>
+{% endif %}
+
+
+
+{% schema %}
+{
+  "name": "About Our Mission",
+  "tag": "section",
+  "class": "section about-our-mission-wrapper",
+  "settings": [  
+    {
+      "type": "text",
+      "label": "Sub Title",
+      "id": "sub_title"
+    },
+    {
+      "type": "text",
+      "label": "Title",
+      "id": "title"
+    },
+    {
+      "type": "textarea",
+      "label": "Description",
+      "id": "description"
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Our Mission"
+    }
+  ]
+}
+{% endschema %}

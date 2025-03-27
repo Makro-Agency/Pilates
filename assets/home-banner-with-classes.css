@@ -1,0 +1,136 @@
+.banner-with-classes .banner__box .banner__heading+* {
+  margin-top: 15px;
+}
+.banner-with-classes .banner__box {
+  max-width: 600px;
+}
+.banner-with-classes .classes-lists-wrap{
+  width: 50%;
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  border-left: 1px solid rgba(255, 255, 255, 0.20);
+  display: flex;
+  flex-direction: column;
+}
+.banner-with-classes .banner__sub_heading+.banner__heading, .banner-with-classes .banner__box .banner__buttons{
+  margin-top: 30px;
+}
+.banner-with-classes .classes-list{
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 33.333%;
+  padding: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.20);
+  transition: all 0.3s ease 0s;
+}
+.banner-with-classes .classes-list .link{
+  margin-top: 40px;
+  transition: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+}
+.banner-with-classes .classes-list h5{
+  margin: 0 0 15px;
+}
+.banner-with-classes .classes-list h5,
+.banner-with-classes .classes-list .rte,
+.banner-with-classes .classes-list .link {
+  color: inherit;
+}
+.banner-with-classes .classes-list .link:after {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.banner-with-classes .classes-list:hover{
+  background-image: url(/cdn/shop/files/Rectangle_94.svg?v=1698990396);
+  background-repeat: repeat;
+  background-color: #fff;
+  color: #000;
+}
+.banner-with-classes .classes-list:hover h5, .banner-with-classes .classes-list:hover .rte, .banner-with-classes .classes-list:hover .link{
+  color: #000;
+}
+.banner-with-classes .banner__media{
+  transition: all 0.5s ease 0s;
+}
+.banner-with-classes .banner__media.active-img:not(.small-hide)~.banner__media{
+  opacity: 0;
+  visibility: hidden;
+}
+.banner-with-classes .classes-list .global-link{
+  position: static;
+}
+.banner-with-classes .classes-list .global-link:before{
+  display: none;
+}
+
+@media screen and (min-width: 750px){
+  .banner-with-classes .banner--desktop-transparent .banner__box{
+    padding: 0;
+    max-width: 580px !important;
+    min-width: auto;
+  }
+  .banner-with-classes .banner__content{
+    width: 50%;
+    margin-left: 0;
+  }
+  .banner-with-classes .classes-list:first-child{
+    border-top: none;
+  }
+  .banner-with-classes .classes-list:hover .link{
+    border-color: #C79D5B;
+  }
+  .banner-with-classes .classes-list .global-link svg {
+    transform: rotate(0deg);
+    transition: none;
+  }
+  
+  .banner-with-classes .banner__media:not(.medium-hide):not(.large-up-hide).active-img~.banner__media {
+    opacity: 0; visibility: hidden; }
+  
+}
+@media screen and (max-width: 989px){
+  .banner-with-classes .classes-list .link {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 749px){
+  .banner-with-classes .banner__box{
+    padding: 40px 20px;
+  }
+  .banner-with-classes .banner__content{
+    align-items: flex-end;
+  }
+  .banner-with-classes .banner__buttons{
+    max-width: 100%;
+    width: 100%;
+  }
+  .banner-with-classes .banner--desktop-transparent .banner__box{
+    max-width: 100% !important;
+  }
+  .banner-with-classes .classes-list{
+    padding: 20px;
+  }
+  .banner-with-classes .classes-list .link {
+    margin-top: 0;
+  }
+  .banner-with-classes .classes-lists-wrap{
+    width: 100%;
+    border: none;
+    margin-top: 150px;
+  }
+  .banner-with-classes .classes-list-box, .banner-with-classes .classes-list .link{
+    width: 100%;
+  }
+  .banner-with-classes .classes-list .icon-wrap{
+    margin-left: auto;
+  }
+}
+

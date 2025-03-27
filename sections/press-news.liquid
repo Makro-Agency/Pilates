@@ -1,0 +1,135 @@
+{%- assign totalYearsAdded = blank -%}
+
+{%- capture news_content -%}
+  {%- for block in section.blocks -%}
+    {%- if block.type == 'image' -%}
+      {%- if block.settings.logo != blank or block.settings.title != blank -%}
+        <div class="col" data-date="{{ block.settings.date | split: '.' | last }}">
+          <div class="press-box">
+            {%- if block.settings.logo != blank -%}
+              {{- block.settings.logo | image_url: width: 200 | image_tag: class:'news-logo-img', loading: 'lazy' -}}
+            {%- endif -%}
+            {%- if block.settings.title != blank -%}
+              <div class="press-text">{{ block.settings.title }}</div>
+            {%- endif -%}
+            {%- if block.settings.date != blank or block.settings.link_label != blank -%}
+              <div class="box-bottom">
+                {%- if block.settings.date != blank -%}
+                  <div class="box-date gloabLs">{{ block.settings.date }}</div>
+                  {%- assign year = block.settings.date | split: '.' | last -%}
+                  {%- assign totalYearsAdded = totalYearsAdded | append: year | append: ', ' -%}
+                {%- endif -%}
+                {%- if block.settings.link_label != blank -%}
+                  <a 
+                    {%- if block.settings.link == blank %}
+                      role="link" aria-disabled="true"
+                    {%- else %}
+                      href="{{ block.settings.link }}"
+                    {%- endif %}
+                    class="link global-link"
+                    >
+                    {{- block.settings.link_label -}}<span class="icon-wrap">{% render 'icon-link-arrow' %}</span>
+                  </a>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+{%- assign filterdYears = totalYearsAdded | split: ", " | uniq | sort | reverse -%}
+
+{%- if news_content != blank and section.settings.enable -%}
+  
+  <link rel="stylesheet" href="{{ 'press-news.css' | asset_url }}" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="{{ 'press-news.css' | asset_url }}"></noscript>
+  
+  <div class="press-news section-padding">    
+    <div class="page-width">
+      {%- if section.settings.title != blank -%}
+        <div class="section-head"><h2>{{ section.settings.title }}</h2></div>
+      {%- endif -%}
+      <div class="press-news-tabs">
+        {%- if filterdYears[0] != blank -%}
+          <div class="tab-btn" data-year-filter-btn>
+            <button class="btn active" data-year="all">All</button>
+            {%- for year in filterdYears -%}
+              <button class="btn" data-year="{{ year }}">{{ year }}</button>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+        <div class="press-news-row" data-news-col>{{ news_content }}</div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+
+
+{% schema %}
+  {
+    "name": "Press news",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "default": "IN THE NEWS",
+        "label": "Section title"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable",
+        "default": true,
+        "label": "Enable this section?"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "News",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Image logo",
+            "info": "170x50 .png recommended"
+          },
+          {
+            "type": "richtext",
+            "id": "title",
+            "default": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "label": "Title"
+          },
+          {
+            "type": "text",
+            "id": "date",
+            "default": "22.03.2022",
+            "label": "Date",
+            "info": "use this format only, DD.MM.YYYY"
+          },
+          {
+            "type": "text",
+            "id": "link_label",
+            "default": "Read more",
+            "label": "Link label"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

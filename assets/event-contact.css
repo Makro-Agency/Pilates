@@ -1,0 +1,247 @@
+.event-contact .rightContactPart, .event-contact .leftBGPart{
+  padding: 100px 5rem;
+}
+.event-contact .leftBGPart h2, .event-contact .text-name, .event-contact .text-email{
+  color: currentcolor;
+}
+.event-contact .leftBGPart{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.event-contact .leftBGPart:before {
+  background-image: url(bg_pattren.svg);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .1;
+  z-index: -1;
+  background-position: left top;
+}
+.event-contact .left-top-text h6{
+  margin: 0 0 40px;
+}
+.event-contact .leftBGPart h2{
+  margin: 0 0 25px;
+  max-width: 550px;
+}
+.event-contact .left-top-text .text-wrap{
+  max-width: 320px;
+}
+.event-contact .left-bottom-text .text-name{
+  margin: 0 0 8px;
+}
+.event-contact .left-bottom-text .text-post{
+  margin: 0 0 12px;
+  opacity: 0.6;
+}
+.left-bottom-text{
+  margin-top: 40px;
+}
+
+.field.field-grp:before, .field.field-grp:after{
+  display: none;
+}
+.field-grp .input-field{
+  padding: 15px 0 !important;
+}
+.event-contact .field input.input-field, .event-contact .field textarea.input-field{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  min-height: 56px;
+  background-color: transparent;
+}
+.event-contact .field select.input-field{
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  min-height: 56px;
+  background-color: transparent;
+}
+.event-contact .field select.input-field{
+  background-image: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Frame.svg?v=1697461221');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 17px;
+  
+  -webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+}
+.event-contact .field input.input-field-date, .event-contact .field select.input-field{
+ 
+}
+.event-contact .field textarea.input-field{
+  height: 80px;
+}
+/* .field-grp label{
+  display: none;
+} */
+.field-grp input.input-field::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+  opacity: 0.4;
+}
+.field-grp input.input-field::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+  opacity: 0.4;
+}
+.field-grp input.input-field:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+  opacity: 0.4;
+}
+.field-grp input.input-field:-moz-placeholder { /* Firefox 18- */
+  color: #000;
+  opacity: 0.4;
+}
+.field-grp textarea.input-field::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+  opacity: 0.4;
+}
+.field-grp textarea.input-field::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+  opacity: 0.4;
+}
+.field-grp textarea.input-field:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+  opacity: 0.4;
+}
+.field-grp textarea.input-field:-moz-placeholder { /* Firefox 18- */
+  color: #000;
+  opacity: 0.4;
+}
+.event-contact .field input.input-field-date::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+.field-grp .field__input:focus, 
+.field-grp .select__select:focus, 
+.event-contact .field.field-grp input:focus, 
+.event-contact .field-grp select:focus, 
+.field-grp .localization-form__select:focus.localization-form__select:after {
+  box-shadow: none;
+  outline: 0;
+  border-radius: 0;
+}
+.event-contact .rightContactPart .title{
+  margin-bottom: 40px;
+}
+.event-contact .event_contact_form .error-msg{
+  color: red;
+  display: none;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+}
+.event-contact .event_contact_form .field.error-active .error-msg{
+ display: block;
+}
+.field-checkbox{
+  position: relative;
+}
+.field-checkbox label{
+  padding-left: 30px;
+  cursor: pointer;
+}
+.field-checkbox input[type="checkbox"]{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  cursor: pointer;
+  vertical-align: -4px;
+  border: 1px solid rgba(0,0,0,0.4);
+  border-radius: 2px;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/8665019_check_mark_icon_b4699574-14e2-49c1-90be-7992f7ea2d23.svg?v=1698647635');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0;
+  margin: 0;
+}
+.field-checkbox input[type="checkbox"]:checked {
+  background-size: 75%;
+}
+.event_contact_form .success-msg{
+  color: green;
+  font-size: 16px;
+  border: 1px solid;
+  padding: 10px 15px;
+}
+.event_contact_form .success-msg p{
+  margin: 0;
+}
+
+#bb_form .form-group.with-label:has(select) label, #bb_form .form-group.with-label:has(input[type=checkbox]) label{padding: 0px 12px;}
+.event-contact .field:has(select) select.input-field{padding: 0px 12px;}
+.contact #bb_form .form-group.with-label:has(select){border-bottom: 1px solid rgba(0,0,0,.2);}
+
+
+/*
+.template--personal-training #bb_form .form-group:not(#id) { margin-bottom: 25px; }
+.template--personal-training #bb_form .form-group:not(#id):last-child { margin-bottom: 0; }
+.template--personal-training #bb_form .form-group:not(#id) .form-control { background: transparent; border-bottom: 1px solid rgba(var(--color-foreground),.2); box-shadow: none; padding: 0 0 15px; color: rgba(var(--color-foreground),1); margin: 0; border-width: 0 0 1px; }
+.template--personal-training #bb_form .form-group:not(#id) .form-control::-webkit-input-placeholder { opacity: 0; }
+.template--personal-training #bb_form .form-group:not(#id) select { font-size: 1.6rem; padding: 8px 0; background: transparent; border-width: 0 0 1px; }
+.template--personal-training #bb_form .form-group:not(#id)>div { font-size: 1.6rem; }
+*/
+
+
+#bb_form .form-group .btn { padding-right: 20px; padding-left: 20px; min-height: 46px; font-size: 14px; min-width: 190px; }
+
+.hide-activity-dropdown #bb_custom_what-is-your-current-activity-level{
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
+@media screen and (max-width: 1199px){
+  .event-contact .rightContactPart, .event-contact .leftBGPart{
+    padding: 80px 5rem;
+  }
+}
+@media screen and (max-width: 989px){
+  .event-contact .grid--2-col .grid__item {
+    width: 100%;
+  }
+  .event-contact .rightContactPart, .event-contact .leftBGPart{
+    padding: 60px 5rem;
+  }
+  .event-contact .rightContactPart .title {
+    margin-bottom: 30px;
+  }
+  
+}
+@media screen and (max-width: 749px){
+  .event-contact .rightContactPart, .event-contact .leftBGPart{
+    padding: 50px 1.5rem;
+  }
+  .event-contact .rightContactPart .title {
+    margin-bottom: 20px;
+  }
+  
+}

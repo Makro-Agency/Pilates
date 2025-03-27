@@ -1,0 +1,196 @@
+{{ 'section-accessibility-ST.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+    
+  {% liquid
+    assign padding_top = section.settings.padding_top 
+    assign padding_bottom = section.settings.padding_bottom
+    assign padding_top_mobile = section.settings.padding_top | times: 0.75 | round: 0
+    assign padding_bottom_mobile = section.settings.padding_bottom | times: 0.75 | round: 0
+    if section.settings.padding_top > 140
+      assign padding_top = section.settings.padding_top 
+      assign padding_top_medium = section.settings.padding_top | times: 0.65 | round: 0
+      assign padding_top_mobile = section.settings.padding_top | times: 0.50 | round: 0
+    endif
+    if section.settings.padding_bottom > 140  
+      assign padding_bottom = section.settings.padding_bottom
+      assign padding_bottom_medium = section.settings.padding_bottom | times: 0.65 | round: 0  
+      assign padding_bottom_mobile = section.settings.padding_bottom | times: 0.50 | round: 0
+    endif
+  %}
+
+  {% capture mediumUP %}
+    {% if padding_top_medium != blank %}
+      padding-top: {{ padding_top_medium }}px;
+    {% endif %}
+    {% if padding_bottom_medium != blank %}
+      padding-bottom: {{ padding_bottom_medium }}px;
+    {% endif %}
+  {% endcapture %}{%- assign mediumUP = mediumUP | strip | strip_newlines -%}
+  
+  .section-{{ section.id }}-padding {
+    padding-top: {{ padding_top_mobile }}px;
+    padding-bottom: {{ padding_bottom_mobile }}px;
+  }
+  
+  {% if mediumUP != blank %}
+    @media screen and (min-width: 750px) {    
+      .section-{{ section.id }}-padding { {{ mediumUP }} }
+    }    
+    @media screen and (min-width: 1200px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {% else %}
+    @media screen and (min-width: 750px) {    
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {% endif %}
+{%- endstyle -%}
+
+<div class="secAccessibilityST color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="secAcceST--left">
+      {%- assign uppercase = '' -%}
+      {%- if section.settings.enableUpperCase -%}
+        {%- assign uppercase = 'uppercase' -%}
+      {%- endif -%}
+      {%- if section.settings.subHeading != blank -%}
+        <h3 class="h6 {{ uppercase }}">{{ section.settings.subHeading }}</h3>
+      {% endif %}
+      {%- if section.settings.heading != blank -%}
+        <h2 class="h1 {{ uppercase }}">{{ section.settings.heading }}</h2>
+      {% endif %}
+    </div>
+    <div class="secAcceST--right">
+      {%- if section.settings.rightHeading != blank -%}
+        <h3 class="{{ uppercase }}">{{ section.settings.rightHeading }}</h3>
+      {% endif %}
+      {%- if section.settings.detail != blank -%}
+        <div class="rte">{{ section.settings.detail }}</div>
+      {% endif %}
+      {%- if section.settings.button_label != blank -%}
+        <a
+          {% if section.settings.button_link == blank %}
+            role="link" aria-disabled="true"
+          {% else %}
+            href="{{ section.settings.button_link }}"
+          {% endif %}
+          class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+        >
+          {{- section.settings.button_label | escape -}}
+        </a>
+      {%- endif -%}      
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Accessibility ST",
+    "tag": "section",
+    "class": "section section-accessibility-ST",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "inverse"
+      },
+      {
+        "type":"header",
+        "content":"Left Part"
+      },
+      {
+        "type":"checkbox",
+        "label":"Enable text in uppercase for Heading/Sub heading",
+        "id":"enableUpperCase",
+        "default":true
+      },
+      {
+        "type":"text",
+        "label":"Sub heading",
+        "id":"subHeading",
+        "default":"Sweat & Tonic"
+      },
+      {
+        "type":"text",
+        "label":"Heading",
+        "id":"heading",
+        "default":"ACCESSIBILITY AT Sweat & Tonic"
+      },
+      {
+        "type":"header",
+        "content":"Right Part"
+      },
+      {
+        "type":"text",
+        "label":"Heading",
+        "id":"rightHeading",
+        "default":"Accessibility for Ontarians with Disabilities Act (AODA) Policy"
+      },
+      {
+        "type":"richtext",
+        "label":"Enter detail",
+        "id":"detail",
+        "default":"<p>Sweat and Tonic is committed to providing an inclusive, accessible, and barrier-free environment for all persons with disabilities in a manner that is considerate of the respect, dignity and independence of individuals with disabilities.<\/p>"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "default": "Learn more",
+        "label": "Button label",
+        "info": "Leave the label blank to hide the button."
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "checkbox",
+        "id": "button_style_secondary",
+        "default": false,
+        "label": "Use outline button style"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 200,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 152
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 200,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 152
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

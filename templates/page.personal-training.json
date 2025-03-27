@@ -1,0 +1,665 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hit-hero": {
+      "type": "hit-hero",
+      "blocks": {
+        "3d295c9e-10b8-4397-b3c8-b08733efc0db": {
+          "type": "text",
+          "settings": {
+            "text": "PERSONAL TRAINING AT FRONT / SPADINA",
+            "text_style": "caption-with-letter-spacing",
+            "text_clr": "#ffffff"
+          }
+        },
+        "89ede07a-229a-4fd5-8064-eb065090ad93": {
+          "type": "heading",
+          "settings": {
+            "heading": "PERSONAL TRAINING",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "943f29ad-f020-4899-974b-20f586c4dd6a": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "BOOK A SESSION",
+            "button_link_1": "https://tonicspa.janeapp.com/locations/personal-training/book",
+            "button_style": "solid",
+            "applies_color_scheme": true,
+            "btn_text_clr": "#000000",
+            "btn_hvr_text_clr": "#000000",
+            "btn_bg_clr": "#c79d5b",
+            "btn_hvr_bg_clr": "#ffffff"
+          }
+        },
+        "1fe44382-9435-48ac-95f6-bf885137b352": {
+          "type": "description",
+          "settings": {
+            "desc": "<p>Transform your fitness journey with individualized, one-on-one coaching from our team of expert coaches in our state-of-the-art training space.</p>",
+            "anchor_label": "Learn More",
+            "anchor_link": "",
+            "text_clr": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "3d295c9e-10b8-4397-b3c8-b08733efc0db",
+        "89ede07a-229a-4fd5-8064-eb065090ad93",
+        "943f29ad-f020-4899-974b-20f586c4dd6a",
+        "1fe44382-9435-48ac-95f6-bf885137b352"
+      ],
+      "settings": {
+        "allow_transparent_header": true,
+        "image": "shopify://shop_images/BP_6.jpg",
+        "img_mobile": "shopify://shop_images/Sweat_and_Tonic_Personal_Training_Studio.jpg",
+        "image_overlay_opacity": 70,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center"
+      }
+    },
+    "hit-banner-column": {
+      "type": "hit-banner-column",
+      "blocks": {
+        "2fc049c5-7369-409d-b14a-69872fa3a417": {
+          "type": "heading",
+          "settings": {
+            "heading": "MOVE, EXPLORE, TRAIN",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "d57f9c4c-bb8d-4416-994b-eb28dc4afba4": {
+          "type": "features",
+          "settings": {
+            "text_clr": "#ffffff",
+            "svg_1": "<svg viewbox=\"0 0 64 64\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"1.8559999999999999\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"><circle cx=\"32\" cy=\"32\" r=\"16\"></circle><line x1=\"32\" y1=\"8\" x2=\"32\" y2=\"24\"></line><line x1=\"32\" y1=\"40\" x2=\"32\" y2=\"56\"></line><line x1=\"56\" y1=\"32\" x2=\"40\" y2=\"32\"></line><line x1=\"8\" y1=\"32\" x2=\"24\" y2=\"32\"></line></g></svg>",
+            "title_1": "PRECISION PLANS",
+            "desc_1": "<p>Bespoke programs that will help you fine tune your movement, overcome obstacles, and unlock new possibilities</p>",
+            "svg_2": "<svg viewbox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"#ffffff\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <defs> <style>.cls-1{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style> </defs> <g id=\"ic-sport-dumbbell\"> <line class=\"cls-1\" x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"></line> <line class=\"cls-1\" x1=\"5\" y1=\"10\" x2=\"5\" y2=\"14\"></line> <line class=\"cls-1\" x1=\"8\" y1=\"8\" x2=\"8\" y2=\"16\"></line> <line class=\"cls-1\" x1=\"16\" y1=\"8\" x2=\"16\" y2=\"16\"></line> <line class=\"cls-1\" x1=\"19\" y1=\"10\" x2=\"19\" y2=\"14\"></line> </g> </g></svg>",
+            "title_2": "STATE-OF-THE-ART EQUIPMENT",
+            "desc_2": "<p>Fully-loaded personal training studio outfitted with state-of-the-art Rogue Fitness and Technogym equipment</p>",
+            "svg_3": "<svg width=\"32\" height=\"22\" viewbox=\"0 0 32 22\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M11 16C11 15.0111 10.7068 14.0444 10.1573 13.2221C9.60794 12.3999 8.82705 11.759 7.91342 11.3806C6.99979 11.0022 5.99446 10.9031 5.02455 11.0961C4.05465 11.289 3.16373 11.7652 2.46447 12.4645C1.76521 13.1637 1.289 14.0546 1.09608 15.0245C0.90315 15.9945 1.00217 16.9998 1.3806 17.9134C1.75904 18.827 2.39991 19.6079 3.22215 20.1573C4.0444 20.7068 5.0111 21 6 21C7.32608 21 8.59785 20.4732 9.53554 19.5355C10.4732 18.5979 11 17.3261 11 16ZM16 21C15.0111 21 14.0444 20.7068 13.2221 20.1573C12.3999 19.6079 11.759 18.827 11.3806 17.9134C11.0022 16.9998 10.9031 15.9945 11.0961 15.0245C11.289 14.0546 11.7652 13.1637 12.4645 12.4645C13.1637 11.7652 14.0546 11.289 15.0245 11.0961C15.9945 10.9031 16.9998 11.0022 17.9134 11.3806C18.827 11.759 19.6079 12.3999 20.1573 13.2221C20.7068 14.0444 21 15.0111 21 16C21 17.3261 20.4732 18.5979 19.5355 19.5355C18.5979 20.4732 17.3261 21 16 21ZM26 21C25.0111 21 24.0444 20.7068 23.2221 20.1573C22.3999 19.6079 21.759 18.827 21.3806 17.9134C21.0022 16.9998 20.9031 15.9945 21.0961 15.0245C21.289 14.0546 21.7652 13.1637 22.4645 12.4645C23.1637 11.7652 24.0546 11.289 25.0245 11.0961C25.9945 10.9031 26.9998 11.0022 27.9134 11.3806C28.827 11.759 29.6079 12.3999 30.1573 13.2221C30.7068 14.0444 31 15.0111 31 16C31 17.3261 30.4732 18.5979 29.5355 19.5355C28.5979 20.4732 27.3261 21 26 21ZM11 11C10.0111 11 9.0444 10.7068 8.22215 10.1573C7.3999 9.60794 6.75904 8.82705 6.3806 7.91342C6.00217 6.99979 5.90315 5.99446 6.09608 5.02455C6.289 4.05465 6.76521 3.16373 7.46447 2.46447C8.16373 1.76521 9.05465 1.289 10.0246 1.09608C10.9945 0.90315 11.9998 1.00217 12.9134 1.38061C13.827 1.75904 14.6079 2.39991 15.1573 3.22215C15.7068 4.0444 16 5.0111 16 6C16 7.32608 15.4732 8.59785 14.5355 9.53554C13.5979 10.4732 12.3261 11 11 11ZM21 11C20.0111 11 19.0444 10.7068 18.2221 10.1573C17.3999 9.60794 16.759 8.82705 16.3806 7.91342C16.0022 6.99979 15.9031 5.99446 16.0961 5.02455C16.289 4.05465 16.7652 3.16373 17.4645 2.46447C18.1637 1.76521 19.0546 1.289 20.0245 1.09608C20.9945 0.90315 21.9998 1.00217 22.9134 1.38061C23.827 1.75904 24.6079 2.39991 25.1573 3.22215C25.7068 4.0444 26 5.0111 26 6C26 7.32608 25.4732 8.59785 24.5355 9.53554C23.5979 10.4732 22.3261 11 21 11Z\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "title_3": "DIVERSE EXPERTISE",
+            "desc_3": "<p>Diverse team of fitness & wellness coaches, mobility specialists, kinesiologists, athletes, and industry professionals</p>",
+            "svg_4": "<svg width=\"24\" height=\"32\" viewbox=\"0 0 24 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M1 9.33333H23M8.85714 16V9.33333H15.1429V18.6C15.1435 19.3009 14.9358 19.9841 14.5493 20.5526C14.1628 21.1211 13.6172 21.5459 12.99 21.7667L7.86714 23.5667C7.23997 23.7874 6.69437 24.2123 6.30788 24.7807C5.92139 25.3492 5.71369 26.0325 5.71429 26.7333V31M19.0714 31C16.391 28.4403 14.1289 25.4273 12.3771 22.0833M15.1429 4.33333C15.1429 4.9926 14.9585 5.63707 14.6132 6.18523C14.2678 6.7334 13.777 7.16064 13.2027 7.41293C12.6284 7.66522 11.9965 7.73124 11.3869 7.60262C10.7772 7.474 10.2172 7.15653 9.77767 6.69036C9.33813 6.22418 9.0388 5.63024 8.91753 4.98363C8.79626 4.33703 8.8585 3.66681 9.09638 3.05772C9.33425 2.44863 9.73708 1.92804 10.2539 1.56177C10.7708 1.1955 11.3784 1 12 1C12.8335 1 13.6329 1.35119 14.2223 1.97631C14.8117 2.60143 15.1429 3.44928 15.1429 4.33333Z\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "title_4": "TAILORED TRAINING",
+            "desc_4": "<p>Tailored one-on-on coaching for every body, from first-time movers to seasoned athletes.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "2fc049c5-7369-409d-b14a-69872fa3a417",
+        "d57f9c4c-bb8d-4416-994b-eb28dc4afba4"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "image": "shopify://shop_images/SweatandTonic_PersonalTraining.png",
+        "img_mobile": "shopify://shop_images/SweatandTonic_PersonalTraining.png",
+        "image_overlay_opacity": 80,
+        "image_height": "adapt",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "section_title_mobtop": true
+      }
+    },
+    "hit-multicolumn": {
+      "type": "hit-multicolumn",
+      "blocks": {
+        "5f339c27-a2d8-4ed9-9d14-fd9c115bad81": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/YongeShuter_hiitstudio.jpg",
+            "title": "YONGE / SHUTER",
+            "text": "",
+            "address": "225 Yonge Street, Toronto ON M5B 1N8",
+            "phone": "647-372-0225",
+            "link_label": "see classes",
+            "link": "shopify://collections/all"
+          }
+        },
+        "ab06944c-e56b-4aaa-962a-25c5bdcc7f46": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/sweat_and_tonic_Hiit_studio_it03_2023-11-07.jpg",
+            "title": "FRONT / SPADINA",
+            "text": "",
+            "address": "486 Front Street West, Toronto ON M5V 0V2",
+            "phone": "647-372-0225",
+            "link_label": "see classes",
+            "link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "5f339c27-a2d8-4ed9-9d14-fd9c115bad81",
+        "ab06944c-e56b-4aaa-962a-25c5bdcc7f46"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "S&T PERSONAL TRAINING STUDIOS",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "hit-banner-row": {
+      "type": "hit-banner-row",
+      "blocks": {
+        "2fc049c5-7369-409d-b14a-69872fa3a417": {
+          "type": "heading",
+          "settings": {
+            "heading": "BUILD FOUNDATIONS, GET STRONGER.",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "816d62d0-da59-4074-9bf1-9c214ed815fe": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "BOOK NOW",
+            "button_link_1": "https://tonicspa.janeapp.com/locations/personal-training/book",
+            "button_style": "solid",
+            "applies_color_scheme": true,
+            "btn_text_clr": "#000000",
+            "btn_hvr_text_clr": "#000000",
+            "btn_bg_clr": "#ffffff",
+            "btn_hvr_bg_clr": "#c79d5b"
+          }
+        },
+        "486c1659-7943-4d3f-a46d-0d16c16aa358": {
+          "type": "function",
+          "settings": {
+            "text_clr": "#ffffff",
+            "svg_1": "<svg viewbox=\"0 0 64 64\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"1.7920000000000003\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"><circle cx=\"32\" cy=\"32\" r=\"16\"></circle><line x1=\"32\" y1=\"8\" x2=\"32\" y2=\"24\"></line><line x1=\"32\" y1=\"40\" x2=\"32\" y2=\"56\"></line><line x1=\"56\" y1=\"32\" x2=\"40\" y2=\"32\"></line><line x1=\"8\" y1=\"32\" x2=\"24\" y2=\"32\"></line></g></svg>",
+            "title_1": "TAILORED PROGRAMS",
+            "desc_1": "<p>Whether you're a first-time mover or a seasoned athlete, our expert trainers will meet you wherever you are in your wellness journey.</p>",
+            "svg_2": "<svg viewbox=\"-0.5 0 25 25\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <path d=\"M7.05005 15.81L10.6201 12.11C10.8201 11.9 11.1501 11.91 11.3401 12.12L12.14 12.98C12.34 13.19 12.6701 13.19 12.8701 12.98L14.94 10.81\" stroke=\"#ffffff\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M16.88 12.86L16.95 9.41C16.95 9.1 16.7001 8.84 16.4001 8.84L12.9301 8.86\" stroke=\"#ffffff\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M12 22C17.2467 22 21.5 17.7467 21.5 12.5C21.5 7.25329 17.2467 3 12 3C6.75329 3 2.5 7.25329 2.5 12.5C2.5 17.7467 6.75329 22 12 22Z\" stroke=\"#ffffff\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> </g></svg>",
+            "title_2": "RESULTS-DRIVEN TRAINING",
+            "desc_2": "<p>Get 1-on-1 support from your favourite S&T trainers. Benefit from the knowledge and expertise of a certified fitness professional who can guide you on proper form, technique, and effective workout strategies.</p>",
+            "svg_3": "<svg viewbox=\"-0.5 0 25 25\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <path d=\"M8.96991 12.89C10.6599 12.89 12.0299 11.5558 12.0299 9.91C12.0299 8.2642 10.6599 6.93 8.96991 6.93C7.27992 6.93 5.90991 8.2642 5.90991 9.91C5.90991 11.5558 7.27992 12.89 8.96991 12.89Z\" stroke=\"#ffffff\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M12.93 13.1C14.37 14.18 15.32 15.84 15.42 17.72C15.43 17.91 15.27 18.07 15.08 18.07H2.84996C2.64996 18.07 2.48996 17.91 2.49996 17.72C2.60996 15.84 3.55997 14.18 5.00997 13.1\" stroke=\"#ffffff\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M11.03 12.11H11.02\" stroke=\"#ffffff\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M17.1299 14.56C18.2787 14.56 19.2099 13.6556 19.2099 12.54C19.2099 11.4244 18.2787 10.52 17.1299 10.52C15.9812 10.52 15.0499 11.4244 15.0499 12.54C15.0499 13.6556 15.9812 14.56 17.1299 14.56Z\" stroke=\"#ffffff\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> <path d=\"M20.3 15.13C20.99 15.84 21.44 16.79 21.5 17.83C21.51 17.97 21.4 18.07 21.26 18.07H17.38\" stroke=\"#ffffff\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path> </g></svg>",
+            "title_3": "DEDICATED COACHING",
+            "desc_3": "<p>Find genuine connection with your trainer and get the motivation and accountability you need in your unique fitness journey to achieve your goals.</p>",
+            "svg_4": "<svg width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.5882 15C21.5882 16.303 21.2018 17.5768 20.4779 18.6602C19.754 19.7437 18.7251 20.5881 17.5212 21.0867C16.3174 21.5854 14.9927 21.7159 13.7147 21.4616C12.4367 21.2074 11.2628 20.58 10.3414 19.6586C9.42003 18.7372 8.79256 17.5633 8.53836 16.2853C8.28415 15.0073 8.41462 13.6826 8.91326 12.4788C9.41191 11.2749 10.2563 10.246 11.3398 9.52208C12.4232 8.79816 13.697 8.41176 15 8.41176M21.5882 15C21.5882 13.2527 20.8941 11.5769 19.6586 10.3414C18.4231 9.10588 16.7473 8.41176 15 8.41176M21.5882 15H28.1765M15 8.41176V1.82353M24.3224 5.67765L19.6612 10.3388M24.3224 24.3224L19.6612 19.6612M15 28.1765V21.5882M5.67765 24.3224L10.3388 19.6612M1.82353 15H8.41176M5.67765 5.67765L10.3388 10.3388M14.9176 1H15.0824M24.8494 5.03529L24.9647 5.15059M29 14.9176V15.0824M24.9647 24.8494L24.8494 24.9647M15.0824 29H14.9176M5.15059 24.9647L5.03529 24.8494M1 15.0824V14.9176M5.03529 5.15059L5.15059 5.03529\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "title_4": "360-DEGREE WELLNESS",
+            "desc_4": "<p>Take your personal transformation to the next level. Integrate high-touch recovery services, high-tech biohacking amenities, pool, hydrotherapy, hot & cold therapy, and more into your training program.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "2fc049c5-7369-409d-b14a-69872fa3a417",
+        "816d62d0-da59-4074-9bf1-9c214ed815fe",
+        "486c1659-7943-4d3f-a46d-0d16c16aa358"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "image": "shopify://shop_images/7bf7be5d46c147b9f1ee72e1594a9d89.jpg",
+        "img_mobile": "shopify://shop_images/Frame_6085.jpg",
+        "image_overlay_opacity": 100,
+        "image_height": "adapt",
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "section_title_mobtop": true
+      }
+    },
+    "hit-classes": {
+      "type": "hit-classes",
+      "blocks": {
+        "b5d731e8-c501-4093-8d85-55abdda5bf21": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "ABS & ASSETS HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 2,
+            "dur_heading": "DURATION",
+            "duration": "50m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Intermediate +",
+            "detail": "<p>Fire up your glutes and core as you move through high intensity intervals that utilize heavy weights, resistance bands, and conditioning on the treadmill to tone, sculpt, and turn up the burn in all the right places.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "4fb95e56-cda7-408b-a55c-63a88396079d": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "BOOTY HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 2,
+            "dur_heading": "DURATION",
+            "duration": "50m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Intermediate +",
+            "detail": "<p>Grow, shape and strengthen one of the body’s biggest assets by grinding it out on the treadmill, weights, and resistance bands. Focus on form and technique to maximize every move. Get it right. Get it tight.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "shopify://pages/reserve",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "c280bdb2-65e1-4092-aced-67cacc1ff117": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "CORE HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 2,
+            "dur_heading": "DURATION",
+            "duration": "50m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Intermediate +",
+            "detail": "<p>Tone, shred and strengthen your core as you engage your abdominal muscles through treadmill, resistance band, and dumbbell stations. A strong, stable center will improve your balance, stability and improve the quality of your overall movement practice.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "f3f0b93c-d995-4fe7-8d41-8abb3d720bc9": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "PILATES HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 2,
+            "dur_heading": "DURATION",
+            "duration": "50m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Intermediate +",
+            "detail": "<p>Level up your Pilates practice. Slow down to raise the heat using treadmills, weights, and resistance bands in this full-body, lower impact workout that brings Pilates principles and movements to the HIIT Studio. With an emphasis on slow, controlled movements and longer holds to turn up the burn, you’ll get those muscles shaking, challenge your limits, and build strength, stamina and long, lean muscles. Slow, steady, and extra spicy.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "a716f6c2-86fa-42e7-8de5-71a119a3d638": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "TOP HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 2,
+            "dur_heading": "DURATION",
+            "duration": "50m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Intermediate +",
+            "detail": "<p>Your one-stop shop for sculpted abs, back, shoulders, and arms. Move through three stations of dumbbell, resistance band, and treadmill work that's expertly programmed to tone, shred, and strengthen everything above the belt. The ultimate 360 upper body workout.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "704e6416-7383-410f-9de1-7ac0beeec85f": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "BOX HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "50m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>HIIT the treadmill, boxing bag and weights as you get strong and shredded from top to bottom in this S&T signature 3-station, definition building class.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "",
+            "button_url_2": "shopify://pages/pricing"
+          }
+        },
+        "9341e57a-ca56-4c76-9088-0360e926d39c": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "LIFT HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "50m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>Get stronger and leaner with purpose and precision in this full-body-shredding weight-lifting sweat session. This strength class has a highly coached environment to take your physique and fitness to new heights.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "6198ef3c-e742-4196-9423-5408f950c6b9": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "DOUBLE SWEAT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "60m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>Two studios are better than one in this 60-minute class that incorporates Ride & HIIT in one dynamic full-body workout. Start in the Ride Studio where the music will guide you on a journey to challenge your endurance, build speed, and improve cardiovascular health. Then take it up to the HIIT Studio to use dumbbells, resistance bands, and treadmills to focus on core and upper body strength. Two times the sweat in 60 minutes - this is what we call the Power Hour.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "4dfd51f6-d80a-49fb-8aed-855f28370947": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "TRIPLE SWEAT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "1h 30m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>For the ultimate workout warrior, utilize all 3 studios in one 90-minute class. You’ll spend 30 minutes in each studio alongside fellow sweat addicts for a full-body, well-balanced and limit-pushing workout.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "b5d731e8-c501-4093-8d85-55abdda5bf21",
+        "4fb95e56-cda7-408b-a55c-63a88396079d",
+        "c280bdb2-65e1-4092-aced-67cacc1ff117",
+        "f3f0b93c-d995-4fe7-8d41-8abb3d720bc9",
+        "a716f6c2-86fa-42e7-8de5-71a119a3d638",
+        "704e6416-7383-410f-9de1-7ac0beeec85f",
+        "9341e57a-ca56-4c76-9088-0360e926d39c",
+        "6198ef3c-e742-4196-9423-5408f950c6b9",
+        "4dfd51f6-d80a-49fb-8aed-855f28370947"
+      ],
+      "disabled": true,
+      "settings": {
+        "subHeading": "BOOK YOUR SESSION",
+        "heading": "HOW TO BOOK",
+        "detail": "<p>1. Purchase a Personal Training credit pack online or in the S&T app.</p><p>2. Book your session online at <a href=\"https://booking.mangomint.com/sweattonic\" target=\"_blank\" title=\"https://booking.mangomint.com/sweattonic\">booking.mangomint.com/sweattonic</a></p><p>Personal Training is available at our Front / Spadina (The Well) location only.</p>",
+        "top_padding_remove": false,
+        "bottom_padding_remove": true
+      }
+    },
+    "hit-team": {
+      "type": "hit-team",
+      "blocks": {
+        "a746ac32-ac4e-4cf0-a968-b3c4d0a06e4d": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Dustin.png",
+            "link_label": "DUSTIN PYM, PRINCIPAL TRAINER | Strength & Conditioning to High-Level Athletics",
+            "link": "shopify://metaobjects/teammember/dustin-pym"
+          }
+        },
+        "d8c76e3a-9682-4e98-ad54-de25dc96e3e2": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Baylee.png",
+            "link_label": "BAYLEE JOY, PRINCIPAL TRAINER | Strength, Boxing, Pre / Post-natal, Mobility",
+            "link": "shopify://metaobjects/teammember/baylee-joy"
+          }
+        },
+        "5fcac650-cebb-403f-b694-e8cb80d71fc5": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Kaivan.png",
+            "link_label": "KAIVAN SHIMI, PRINCIPAL TRAINER | Bodybuilding, Strength & Conditioning, Functional Training",
+            "link": "shopify://metaobjects/teammember/kaivan-shimi"
+          }
+        },
+        "2e1b19c0-a987-4e2c-8c31-66fa8fe5c26a": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Al_PT.png",
+            "link_label": "AL ROBINSON | Pre / Post-natal, Weight Management, Sports-specific Training",
+            "link": ""
+          }
+        },
+        "01d483c9-77f4-4d59-9c8b-e28c3ebe9cde": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Alica_1.png",
+            "link_label": "ALICA HEVEROVÁ | Strength Training, Bikini Fitness Specialist, Athletic Training",
+            "link": ""
+          }
+        },
+        "344bccad-18c9-45fe-a9fa-30f6d5343214": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Bianca_PT.png",
+            "link_label": "BIANCA CELOTTI | Kinesiology, Mobility & Strength Specialist, Dancer",
+            "link": "shopify://metaobjects/teammember/bianca-celotti"
+          }
+        },
+        "76ae50d7-a3a0-4169-9901-766fed1c9e21": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Blair_Myers.jpg",
+            "link_label": "BLAIR MYERS | Pilates Instructor, Health Coach",
+            "link": "shopify://metaobjects/teammember/blair-myers"
+          }
+        },
+        "column_WD4YGX": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/JessicaPordelPersonalTrainingSweatandTonic.jpg",
+            "link_label": "JESSICA PORDEL | Strength Training, Ride, Conditioning",
+            "link": "shopify://metaobjects/teammember/jessica-pordel"
+          }
+        },
+        "bde0e166-a13a-4a17-9e76-57ed95b27d00": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Julian.jpg",
+            "link_label": "JULIAN HO | Functional Strength, Mobility Specialist, Running Biomechanics",
+            "link": "shopify://metaobjects/teammember/julian-ho"
+          }
+        },
+        "6730c83a-a260-471a-8ee8-bfbfd5d737dd": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Lauren_option_1.png",
+            "link_label": "LAUREN KINSIE | Glute Growth, Women's Fitness Specialist, Muscle Gain / Fat Loss",
+            "link": ""
+          }
+        },
+        "f422b455-0e0d-41ac-a50a-0b3ded18e8dc": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/team-24.png",
+            "link_label": "LISA DAMLA | HIIT, Core Training, Lower Body Focus",
+            "link": "shopify://metaobjects/teammember/lisa-damla"
+          }
+        },
+        "874164cd-29e9-48de-8416-6bd3f09dbcf2": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Nariko_PT.png",
+            "link_label": "NARIKO CHAFFE | Athletic Training, HIIT, Heavy Lifting",
+            "link": "shopify://metaobjects/teammember/nariko-chaffe"
+          }
+        },
+        "49b0974d-a0ba-493f-92d0-47dcf0950f10": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Nilo_PT.png",
+            "link_label": "NILO LIMA",
+            "link": ""
+          }
+        },
+        "5dd40758-8c1a-4474-b36f-b4ee5c0d0ec8": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Perez.png",
+            "link_label": "PEREZ TIEKU | Strength Training, Bodybuilding, Athletics",
+            "link": "shopify://metaobjects/teammember/perez-tieku"
+          }
+        },
+        "122423c0-375c-4bc5-a304-5a5a0c17e095": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/SweatandTonicAlignTankBlack.png",
+            "link_label": "RACHEL SCHICK",
+            "link": "shopify://metaobjects/teammember/rachel-schick"
+          }
+        },
+        "8817ae34-33c1-479a-a26c-fda837ce8258": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/RachelB_PT.png",
+            "link_label": "RACHEL BURNS | Martial Arts, Strength Training, Functional Movement",
+            "link": "shopify://metaobjects/teammember/rachel-burns"
+          }
+        },
+        "45f8ad56-71ed-4db5-b8c1-17f99207cd62": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Shaz_PT.png",
+            "link_label": "SHAZ KHAN | Physique Transformation, Strength Training, Boxing Coach",
+            "link": ""
+          }
+        },
+        "62839d0c-da64-4550-91dc-44d45566a753": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Steve_PT.png",
+            "link_label": "STEVE PARKHILL | Strength & Conditioning, Calisthenics",
+            "link": ""
+          }
+        },
+        "4fccfd3d-711d-4e9a-8dfd-ff440e85e6cb": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Will_PT.png",
+            "link_label": "WILL TSILKAS | Strength & Conditioning, Calisthenics",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "a746ac32-ac4e-4cf0-a968-b3c4d0a06e4d",
+        "d8c76e3a-9682-4e98-ad54-de25dc96e3e2",
+        "5fcac650-cebb-403f-b694-e8cb80d71fc5",
+        "2e1b19c0-a987-4e2c-8c31-66fa8fe5c26a",
+        "01d483c9-77f4-4d59-9c8b-e28c3ebe9cde",
+        "344bccad-18c9-45fe-a9fa-30f6d5343214",
+        "76ae50d7-a3a0-4169-9901-766fed1c9e21",
+        "column_WD4YGX",
+        "bde0e166-a13a-4a17-9e76-57ed95b27d00",
+        "6730c83a-a260-471a-8ee8-bfbfd5d737dd",
+        "f422b455-0e0d-41ac-a50a-0b3ded18e8dc",
+        "874164cd-29e9-48de-8416-6bd3f09dbcf2",
+        "49b0974d-a0ba-493f-92d0-47dcf0950f10",
+        "5dd40758-8c1a-4474-b36f-b4ee5c0d0ec8",
+        "122423c0-375c-4bc5-a304-5a5a0c17e095",
+        "8817ae34-33c1-479a-a26c-fda837ce8258",
+        "45f8ad56-71ed-4db5-b8c1-17f99207cd62",
+        "62839d0c-da64-4550-91dc-44d45566a753",
+        "4fccfd3d-711d-4e9a-8dfd-ff440e85e6cb"
+      ],
+      "settings": {
+        "sub_title": "MEET THE TEAM",
+        "title": "PERSONAL TRAINING COACHES",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "background_style": "none",
+        "button_label": "SEE THE FULL TEAM",
+        "button_link": "shopify://pages/team",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "event-contact": {
+      "type": "event-contact",
+      "settings": {
+        "bg_color_left": "#26221b",
+        "text_color_left": "#ffffff",
+        "sub_color_left": "#c79d5b",
+        "subheading_left": "GET IN TOUCH",
+        "heading_left": "INTERESTED IN 1-ON-1 COACHING?",
+        "text_left": "Let us know a bit about yourself and kick-start your journey!",
+        "p_name": "",
+        "p_tagline": "",
+        "p_mail": "hello@sweatandtonic.com",
+        "heading": "Contact form",
+        "btn_label": "Submit event inquiry",
+        "btn_url": "https://hooks.zapier.com/hooks/catch/16906339/38ewv6l/",
+        "success_msg": "<p>Thanks for inquiring. Your entry is submitted, and we'll reach out to you soon.</p>",
+        "color_scheme": "scheme-4c1a74af-8622-41b0-8be5-f4c2bac68732",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false,
+        "show_current_activity_dropdown": true,
+        "embed-form": "<!-- Begin Connect Signup Form -->\n<link href=\"https://assets.brandbot.com/forms/embed/embed.css\" rel=\"stylesheet\" type=\"text/css\">\n<style type=\"text/css\">\n        /* Add your own style overrides in your site stylesheet or in this style block.\n      We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\n        .contact #bb_form .field.form-group:after {display: none;}\n        .contact #bb_form .field.form-group input[type=\"text\"],.contact #bb_form .field.form-group input[type=\"email\"],.contact #bb_form .field.form-group input[type=\"tel\"]{border: none;border-bottom: 1px solid rgba(0,0,0,.2);border-radius: unset;}\n        .contact #bb_form .form-group.with-label {flex-wrap: wrap;flex-direction: column;}\n        .contact #bb_form .form-group label{font-weight:400;}\n      #bb_form .form-group.with-label input[type=checkbox]{margin-left: 20px;}\n</style>\n<div class=\"event-contact\">\n     <div id=\"bb_form\">\n             <form method=\"post\" action=\"https://microservices.brndbot.net/forms/answers\" name=\"zpc05\" id=\"bb_form_inner\">\n                     <div id=\"alert\"></div>\n\n\n                    <div class=\"contact__fields\">\n                          <div class=\"field form-group no-label\">\n                                  <label for=\"bb_first_name\">First Name</label>\n                                  <input type=\"text\" name=\"bb_first_name\" id=\"bb_first_name\" class=\"form-control input-field\" required=\"required\" placeholder=\"First Name\">\n                          </div>\n                          <div class=\"field form-group no-label\">\n                                  <label for=\"bb_last_name\">Last Name</label>\n                                  <input type=\"text\" name=\"bb_last_name\" id=\"bb_last_name\" class=\"form-control input-field\" required=\"required\" placeholder=\"Last Name\">\n                          </div>\n                    </div>\n\n\n                    <div class=\"contact__fields\">\n                          <div class=\"field form-group no-label\">\n                                  <label for=\"bb_email\">Email Address</label>\n                                  <input type=\"email\" name=\"bb_email\" id=\"bb_email\" class=\"form-control input-field\" required=\"required\" placeholder=\"Email Address\">\n                          </div>\n\n\n                          <div class=\"field form-group no-label\">\n                                  <label for=\"bb_phone\">Phone Number</label>\n                                  <input type=\"tel\" name=\"bb_phone\" id=\"bb_phone\" class=\"form-control input-field\" required=\"required\" placeholder=\"Phone Number\">\n                          </div>\n                    </div>\n\n\n                     <div class=\"field form-group with-label\">\n                             <label for=\"bb_custom_what-is-your-current-activity-level\">What is your current activity\n                                     level?</label>\n                             <div>\n                                   <select id=\"bb_custom_what-is-your-current-activity-level\" placeholder=\"bb_custom_what-is-your-current-activity-level\" name=\"bb_custom_what-is-your-current-activity-level\" class=\"input-field\">\n                                             <option value=\"Mostly sedentary - no exercise\">Mostly sedentary - no exercise</option>\n                                             <option value=\"Exercise 1 - 2 times a week\">Exercise 1 - 2 times a week</option>\n                                             <option value=\"Exercise 3 - 5 times a week\">Exercise 3 - 5 times a week</option>\n                                             <option value=\"Exercise every day\">Exercise every day</option>\n                                     </select>\n                              </div>\n                     </div>\n\n\n                     <div class=\"form-group\">\n                             <label for=\"bb_custom_what-are-you-looking-to-get-out-of-personal-training\">What are you looking\n                                     to get out of personal training?</label>\n                             <div>\n                                     <input id=\"bb_custom_what-are-you-looking-to-get-out-of-personal-training\" type=\"checkbox\" value=\"Improve general health / well being\"> Improve general\n                                     health / well being\n                             </div>\n                             <div>\n                                     <input id=\"bb_custom_what-are-you-looking-to-get-out-of-personal-training\" type=\"checkbox\" value=\"Get stronger / build muscle\"> Get stronger / build muscle\n                             </div>\n                             <div>\n                                     <input id=\"bb_custom_what-are-you-looking-to-get-out-of-personal-training\" type=\"checkbox\" value=\"Reduce pain\"> Reduce pain\n                             </div>\n                             <div>\n                                     <input id=\"bb_custom_what-are-you-looking-to-get-out-of-personal-training\" type=\"checkbox\" value=\"Recovery from injury\"> Recovery from injury\n                             </div>\n                             <div>\n                                     <input id=\"bb_custom_what-are-you-looking-to-get-out-of-personal-training\" type=\"checkbox\" value=\"Weight / fat loss\"> Weight / fat loss\n                             </div>\n                             <div>\n                                     <input id=\"bb_custom_what-are-you-looking-to-get-out-of-personal-training\" type=\"checkbox\" value=\"Sport-specific training\"> Sport-specific training\n                             </div>\n                             <div>\n                                     <input id=\"bb_custom_what-are-you-looking-to-get-out-of-personal-training\" type=\"checkbox\" value=\"Other\"> Other\n                             </div>\n                     </div>\n\n\n                     <div class=\"field form-group no-label\">\n                             <label for=\"bb_custom_what-have-you-been-doing-for-exercise-what-do-you-enjoy\">What have you been doing for exercise? What do you enjoy?</label>\n                             <input type=\"text\" name=\"bb_custom_what-have-you-been-doing-for-exercise-what-do-you-enjoy\" id=\"bb_custom_what-have-you-been-doing-for-exercise-what-do-you-enjoy\" class=\"form-control input-field\" placeholder=\"What have you been doing for exercise? What do you enjoy?\">\n                     </div>\n\n                     <div class=\"field form-group with-label\">\n                             <label for=\"bb_custom_sign-me-up-to-receive-special-offers-promotions-updates-from-st\">Sign me\n                                     up to receive special offers, promotions &amp; updates from S&amp;T.</label>\n                             <div>\n                                     <input id=\"bb_custom_sign-me-up-to-receive-special-offers-promotions-updates-from-st\" type=\"checkbox\" value=\"Sign up\"> Sign up\n                             </div>\n                     </div>\n                     <div class=\"form-group\">\n                             <input type=\"hidden\" name=\"bb_uuid\" id=\"bb_uuid\" value=\"a77b2f8e-b426-4156-a352-860a5d27786d\">\n                             <button type=\"submit\" class=\"button button--primary\" id=\"bb_submit\" style=\"background-color: #060606; border-color: #060606; color: white;\">GET IN\n                                     TOUCH</button>\n                     </div>\n             </form>\n     </div>\n</div>\n<script>window.jQuery || document.write('<scr' + 'ipt src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></scr' + 'ipt>') </script>\n<script src=\"https://assets.brandbot.com/forms/embed/embed.js?id=zpc05\"></script>\n<!-- Ending Connect Signup Form -->"
+      }
+    }
+  },
+  "order": [
+    "hit-hero",
+    "hit-banner-column",
+    "hit-multicolumn",
+    "hit-banner-row",
+    "hit-classes",
+    "hit-team",
+    "event-contact"
+  ]
+}

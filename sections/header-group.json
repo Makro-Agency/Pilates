@@ -1,0 +1,125 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "f3379ac4-a87c-4f04-aa79-b5edb88faf25": {
+          "type": "quick-menu",
+          "settings": {
+            "menu_quick_links": "quick-buy-links"
+          }
+        }
+      },
+      "block_order": [
+        "f3379ac4-a87c-4f04-aa79-b5edb88faf25"
+      ],
+      "settings": {
+        "logo_position": "top-center",
+        "hide-header": true,
+        "menu": "mega-menu",
+        "menu_type_desktop": "drawer_with_mega",
+        "title": "The best of boutique fitness & wellness under one roof",
+        "image_1": "shopify://shop_images/menu-1.png",
+        "title_1": "TRY 3 CLASSES FOR $60",
+        "button_1_title": "Get an intro pack",
+        "button_1_link": "shopify://pages/pricing",
+        "image_2": "shopify://shop_images/Retail-webmenu.png",
+        "title_2": "S&T SHOP",
+        "button_2_title": "Sweat in style",
+        "button_2_link": "https://sweatandtonic.com/pages/shop",
+        "sticky_header_type": "always",
+        "show_line_separator": true,
+        "color_scheme": "background-1",
+        "menu_color_scheme": "background-1",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "4d342184-db41-43d6-bbe3-503423044f05": {
+      "type": "newsletter-popup",
+      "blocks": {
+        "sections--16876983222492__4d342184-db41-43d6-bbe3-503423044f05-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "LET’S GET CONNECTED",
+            "heading_size": "h3"
+          }
+        },
+        "sections--16876983222492__4d342184-db41-43d6-bbe3-503423044f05-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Join our newsletter and be the first to receive the latest updates, offers, and invites.</p>"
+          }
+        },
+        "sections--16876983222492__4d342184-db41-43d6-bbe3-503423044f05-email_form-1": {
+          "type": "email_form",
+          "settings": {}
+        },
+        "sections--16876983222492__4d342184-db41-43d6-bbe3-503423044f05-disclaimer_paragraph-1": {
+          "type": "disclaimer_paragraph",
+          "settings": {
+            "text": "<p>By submitting this form, you agree to receive news, special offers and other marketing emails from Sweat and Tonic. You can unsubscribe at any time. View our <a href=\"/pages/terms-and-conditions\" title=\"TERMS & CONDITIONS\">Terms</a> and <a href=\"/pages/privacy-policy\" title=\"PRIVACY POLICY\">Privacy</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "sections--16876983222492__4d342184-db41-43d6-bbe3-503423044f05-heading-1",
+        "sections--16876983222492__4d342184-db41-43d6-bbe3-503423044f05-paragraph-1",
+        "sections--16876983222492__4d342184-db41-43d6-bbe3-503423044f05-email_form-1",
+        "sections--16876983222492__4d342184-db41-43d6-bbe3-503423044f05-disclaimer_paragraph-1"
+      ],
+      "settings": {
+        "popup_delay": 3,
+        "show_only_on_index": true,
+        "show_popup_again": true,
+        "popup_repeat_delay": 30,
+        "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae"
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "4d342184-db41-43d6-bbe3-503423044f05"
+  ]
+}

@@ -1,0 +1,417 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-faq",
+      "blocks": {
+        "3c88c7a8-87e2-447f-853b-29fde4997cba": {
+          "type": "text",
+          "settings": {
+            "title": "SWEAT ETIQUETTE",
+            "title_1": "Be present",
+            "detail_1": "We all love a good selfie and sweating with our besties, but it’s important to be present during class. Phones, conversations, doing your own personal workouts and going in and out of class can be unsafe and distracting for others. Class time is precious time, and magic happens when we all move together.",
+            "title_2": "Be kind",
+            "detail_2": "Show care and respect for your fellow Sweat Fam, and treat others the way you want to be treated. Lift each other up to ensure both team members and community members are respected, valued, safe, and supported. All love, no hate.",
+            "title_3": "Be clean",
+            "detail_3": "Practice good personal hygiene. Be considerate of those around you, and help keep our shared space in tip top shape for all to enjoy.",
+            "title_4": "Be on time",
+            "detail_4": "Out of respect and safety for your fellow classmates and the instructor, classes start on time and latecomers are not permitted. Arrive with enough time to store your belongings and get ready for class. Your studio time is a gift to yourself – make time for you!"
+          }
+        },
+        "title_zYcA3w": {
+          "type": "title",
+          "settings": {
+            "title": "GETTING HERE"
+          }
+        },
+        "que_ans_G9aRwm": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Where are you located?",
+            "detail": "<p>Our <strong>Yonge/Shuter</strong> location is at 225 Yonge Street, right across the street from the CF Toronto Eaton Centre, on the northeast corner of Yonge St and Shuter St.</p><p>Our <strong>Front/Spadina</strong> location is at 486 Front Street in The Well, on the 'Terrace Level' (level 2).</p>"
+          }
+        },
+        "que_ans_DkfcPE": {
+          "type": "que_ans",
+          "settings": {
+            "title": "How do I get to S&T at Front/Spadina (The Well)?",
+            "detail": "<p><strong>From parking level LG:</strong> Look for the Market Elevator lobby. Walk straight down the corridor out into the Grand Atrium. Make a right as you exit the doors, and take the 'West Av' elevator next to Shoppers Drug Mart to Terrace Level (TR). Turn right as you exit the elevator, head straight, and Sweat and Tonic will be on your right side.</p><p><strong>From parking level P3 or P5:</strong> Look for signs for BMO (West Av. elevators) or 8 Spadina (East Lane elevators), and take the elevator up to Terrace Level (TR). From East Lane elevators, turn right as you exit the elevator, continue to walk west, and Sweat and Tonic will be on your left (across the pedestrian bridge).<br/>From West Av. elevators, turn right as you exit the elevator, head straight, and Sweat and Tonic will be on your right side.</p><p><strong>From 8 Spadina Ave (Front/Spadina):</strong> Take the escalator from the Grand Atrium up to Terrace Level (level 2). Continue to walk straight (west) - Sweat and Tonic will be on your left (across the pedestrian bridge).</p><p><strong>From Front St. or Wellington St:</strong> Take the ‘West Ave’ elevator located next to Indigo on the ground level and head up to Terrace Level (TR). Turn right as you exit the elevator, head straight, and Sweat and Tonic will be on your right side.</p>"
+          }
+        },
+        "6beaa2ad-e3e7-4b02-9db6-25c2cae1a7bc": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Do you have dedicated parking?",
+            "detail": "<p>We do not have dedicated or validated parking, however, there are several paid public parking and transit options nearby.<br/><br/><strong>Yonge/Shuter: </strong>We're right across the street from the Queen St. TTC stop and from the Eaton Centre parking garage. There is also a Green P parking garage at Dundas Square and Victoria St, as well as more parking options on Victoria St.<br/><br/><strong>Front/Spadina (The Well): </strong>Public underground parking is available at The Well. There is one entrance located at 421 Wellington St. W, and another entrance located near 482 Front St. W. The Well is accessible by TTC streetcar from Spadina Ave, as well as King St.</p>"
+          }
+        },
+        "e491b7f7-2e86-42db-9739-797a6fbb5195": {
+          "type": "title",
+          "settings": {
+            "title": "CLASS CREDITS & MEMBERSHIPS"
+          }
+        },
+        "7064720d-0420-40f1-803f-d9b0235d07ef": {
+          "type": "que_ans",
+          "settings": {
+            "title": "How many credits does a class or service cost?",
+            "detail": "<p>1 credit</p>"
+          }
+        },
+        "d7696939-47e4-410d-9584-55d9659a7c55": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What services and offerings can I use credits for?",
+            "detail": "<p>You can use standard S&T credits for:</p><ul><li>Any yoga, Pilates, HIIT, and Ride classes</li><li>Small Group Training sessions at Front/Spadina</li><li>Sauna sessions at Yonge/Shuter</li><li>Pool deck sessions at Tonic Spa</li><li>Private Hot/Cold Therapy suite at Tonic Spa</li><li>Red Light Therapy at Tonic Spa</li><li>Lymphatic Compression Therapy at Tonic Spa</li></ul><p>Exceptions apply - certain credit types allow booking for specific services only, including but not limited to milestone credits or gifted credits.</p><p>Unlimited member guest credits are valid only for group fitness classes.<br/><br/>Additional products and services are available for purchase with credit card, including massages & wellness services, retail, café and bar items.</p>"
+          }
+        },
+        "ab3a0bf7-e7e2-4232-9cf4-65d41c889a85": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Can I use my credits to book classes or services for other people?",
+            "detail": "<p>Absolutely – the more the merrier! You can use class credits to book classes for a guest, and Unlimited members can use guest credits.<br/>As with all class reservations, our standard 12-hour no-show / late cancellation policy also applies to guest reservations. If your guest does not show up for class you booked for them, your account is subject to the no-show penalty as per our studio policy.</p>"
+          }
+        },
+        "4cdf833b-812d-4a9a-84a9-bc2b229a449d": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Do credits expire?",
+            "detail": "<p>Credits expire 3 months after purchase. Intro pack credits expire 1 month after purchase. Exceptions may apply, including Fundraiser Class Credits which expire at the conclusion of the fundraiser class / event.</p>"
+          }
+        },
+        "que_ans_J97CWR": {
+          "type": "que_ans",
+          "settings": {
+            "title": "I'm an Unlimited member. What can I use my guest credit for?",
+            "detail": "<p>Unlimited member guest credits are valid for booking guests in group fitness classes (yoga, Pilates, HIIT, and ride classes).</p>"
+          }
+        },
+        "03005134-1b24-4879-8a85-c338503355d3": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Are there membership contracts or initiation fees?",
+            "detail": "<p>Sweat easy - no initiation fees, no annual commitment with your membership, cancel anytime with no minimum notice periods. And as long as your membership remains active, your monthly rate is price-protected, forever and always. We like fun surprises only.</p>"
+          }
+        },
+        "df72df29-8093-40fa-83f3-c8def3f9bcfa": {
+          "type": "que_ans",
+          "settings": {
+            "title": "If I’m on a monthly membership, can I put my account on hold?",
+            "detail": "<p>Yes! Memberships can be frozen for a maximum of 14 days at a time every six months, and you can request your first freeze at any time after starting your membership. At the end of each freeze, 6 months must pass before you are eligible for another. Eligibility does not reset if you cancel and purchase a new membership. Your membership start date is the very first date you signed up for a membership.</p><p>This does not include involuntary freezes, such as studio closures. In the case of an injury, you can request to freeze your membership for the duration of the injury with a doctor’s note. In the case of pregnancy, you can request to freeze your membership for the duration of your pregnancy with a doctor’s note up to 12 months. You must provide a minimum of three (3) days’ notice to ensure your account is not automatically charged. Please contact us at <a href=\"mailto:hello@sweatandtonic.com\" target=\"_blank\">hello@sweatandtonic.com </a>to put your account on hold.</p>"
+          }
+        },
+        "3ba96673-528e-457a-8524-171c4ebf84ac": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Do you offer corporate rates or private bookings?",
+            "detail": "<p>Yes, we offer private classes and a corporate wellness program. To inquire, please reach out to our Corporate Sales & Events team at <a href=\"mailto:salesandevents@sweatandtonic.com\" target=\"_blank\" title=\"mailto:salesandevents@sweatandtonic.com\">salesandevents@sweatandtonic.com</a>.</p>"
+          }
+        },
+        "22e4de22-4b8c-4f02-a061-11408cf91e8a": {
+          "type": "que_ans",
+          "settings": {
+            "title": "How do I create an account / update my account information?",
+            "detail": "<p>You can create an account and update your information <a href=\"https://www.sweatandtonic.com/my-account/?_mt=%2Faccount%2Fcreate%3FredirectURL%3D%252Faccount\">online</a> or in the S&T app. One account is permitted per customer. For more information, visit our <a href=\"https://www.sweatandtonic.com/terms-and-conditions/\">Terms & Conditions</a>.</p>"
+          }
+        },
+        "que_ans_prKExh": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Can I share my membership or account?",
+            "detail": "<p>No, taking classes under an account that is not your own, modifying account information from one individual to another, creating multiple accounts, or allowing another individual to take classes on your membership is strictly prohibited.<br/><br/>Accounts found in conflict with this policy will be charged the full value of one-month’s membership and will be permanently banned from Sweat and Tonic.</p>"
+          }
+        },
+        "88eef28f-11aa-41e2-96f1-65617d2b3755": {
+          "type": "title",
+          "settings": {
+            "title": "CLASSES & STUDIO POLICIES"
+          }
+        },
+        "f01c3501-f8e6-44b9-ab49-1b639a6ec3b8": {
+          "type": "que_ans",
+          "settings": {
+            "title": "It’s my first visit! What do I need to know?",
+            "detail": "<p>Welcome – we can’t wait to meet you!  Please arrive 30 minutes prior to your first class so you can get familiar with the studios you’ll be in, and make sure you’re all set to get your sweat on!</p><p>During peak studio times, our team may not be able to step away from the front desk, but would be happy to provide a tour after class or at any other time at your convenience. </p><p>All you need to bring is a water bottle, workout clothes (or come dressed for movement), running shoes if you're taking a HIIT class, and any personal items you'd like (e.g., makeup, hair brush, shower slides). We provide complimentary sweat towels, yoga mats, cycling shoes, and boxing gloves, and our change rooms are stocked with bath towels, toiletries (shampoo, conditioner, body wash, face wash, and body lotion), and Dyson hairdryers.</p><p>We also sell everything except shoes in our retail shop, in case you forget something.</p><p>We provide lockers with built-in locks to your store your belongings (one locker permitted per guest).</p><p>Check out more <a href=\"https://sweatandtonic.com/pages/first-timers\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/first-timers\">hot tips here</a> prior to your first sweat!</p>"
+          }
+        },
+        "b847ba64-6c33-4d0d-9549-5cced3f8e822": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Do I have to book online in advance, or can I just show up?",
+            "detail": "<p>Booking online is recommended to ensure you secure a spot in class, but walk-ins are welcome, provided there are spots available in the class!</p>"
+          }
+        },
+        "e4fe30f0-e977-419f-8d79-0f1dc06ec885": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What time do I need to show up for class?",
+            "detail": "<p>If it’s your first visit, please arrive 30 minutes prior to class. If it’s not your first visit, please arrive a minimum of 10 minutes before class to make sure you’re all set for doors to open. If you are not checked in before your class start time, your spot will be opened up to guests on the waitlist and your account will be subject to a no show fee.</p>"
+          }
+        },
+        "13ea47b8-18dc-4449-adec-639f034e7805": {
+          "type": "que_ans",
+          "settings": {
+            "title": "If I arrive late, can I still take a class?",
+            "detail": "<p>Out of respect and safety for your fellow classmates and instructors, classes start on time. Doors will open 5 minutes prior to your class start time, and will remain open for 2 minutes after the class starts. Once the studio doors close, any other latecomers will not be allowed in. We are firm with this policy because opening the studio door once it’s been closed disturbs the flow of the class, and also puts guests who are stationed next to the door at risk of injury. Classes also begin with an introduction, including proper form and technique, that is required to be successful in the class. If you arrive late for your class, we would be happy to find a spot for you in the next class, if there are available spots. Your studio time is a gift to yourself – make time for you!</p>"
+          }
+        },
+        "f327a534-4931-43b9-808d-a10caa75f1ab": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What’s your cancellation policy?",
+            "detail": "<p>You must cancel class at least 12 hours in advance or you will lose a credit. For Unlimited and 9 to 5 Sweat memberships, you will be charged a $24 fee for no shows and $19 for any late cancellations. This includes switching time slots under the 12-hour notice time period. This is to prevent spots from being booked up and unattended in classes that otherwise would have been available for another guest to book, and to give those who are on the waitlists for our most popular classes a chance to get a spot in class. If you are unable to make it to class, we encourage you to cancel at least 12 hours in advance to avoid any charges, and so that your spot can be made available to another fellow Sweat Fam member. To cancel your booking, please access your account online or in our app. If you have any questions, please feel free to contact us at <a href=\"mailto:hello@sweatandtonic.com\" target=\"_blank\">hello@sweatandtonic.com</a>.</p><p></p>"
+          }
+        },
+        "70316a9b-847d-447a-9313-7d52ca66f24d": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What’s your refund policy?",
+            "detail": "<p>We do not allow refunds and do not accept refund requests for price adjustments.</p>"
+          }
+        },
+        "que_ans_VzY3bt": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Can I bring my phone into class?",
+            "detail": "<p>Use of a phone during active exercise is prohibited. Phones are not permitted in the yoga studio. You may bring your phone into the Ride and HIIT studios, but please be mindful of your Sweat Fam around you and be present. Your studio time is a gift to yourself – make time for you!</p><p>Please feel free to let your instructor know should you require your mobile device for accessibility or medical reasons.</p>"
+          }
+        },
+        "83dfdfe3-9459-4c30-bc14-42e274ce06ba": {
+          "type": "que_ans",
+          "settings": {
+            "title": "When do class schedules get released?",
+            "detail": "<p>Our class schedule opens up for booking every weekend. You can book classes up to two weeks in advance, every Saturday at 5 PM for Unlimited and 9 to 5 Sweat members, and Sunday at 5 PM for everyone else.</p>"
+          }
+        },
+        "7645ce0f-ffea-4e13-ae63-97cdd9c3bbf3": {
+          "type": "que_ans",
+          "settings": {
+            "title": "How does the waitlist work?",
+            "detail": "<p>Our waitlist is designed to move quickly and ensures that guests who want to take a class will have the best chance of getting into that class. As soon as a spot opens up, you will be <strong>automatically enrolled </strong>on a first come, first served basis, up to 10 minutes before class start time. If you do not wish or intend to take the class, we encourage you to remove yourself from the waitlist to avoid automatic enrolment and a penalty should you no longer be able to make it. You can remove yourself from the waitlist at anytime without penalty. Once you are enrolled, our standard no-show / late cancellation policy will apply. Removing yourself from the waitlist will allow other guests who are on the waitlist and able to make it to class the chance to get in. Expect waitlists to move quickly – if you can’t make it to class within 10 minutes of being notified, we recommend that you remove yourself from the waitlist.</p>"
+          }
+        },
+        "12b36bdf-f8c7-4c70-a6c5-67d3942a9ec1": {
+          "type": "que_ans",
+          "disabled": true,
+          "settings": {
+            "title": "How does express check-in for Unlimited members work?",
+            "detail": "<p>Express check-in is available for Unlimited members who are not checking in with a guest, and do not have any account inquiries or special requests. When you arrive at S&T for your HIIT or Yoga class, you can head straight to the studio to check in with our team member who will be situated by the studio doors. Express check-in opens 10 minutes before class start time. We still recommend arriving and checking in early to ensure you’re all ready for class!</p>"
+          }
+        },
+        "848afe71-f729-4582-a605-5eedb9841282": {
+          "type": "que_ans",
+          "disabled": true,
+          "settings": {
+            "title": "What is HIIT?",
+            "detail": "<p>HIIT, or High-Intensity Interval Training, is a form of interval training that combines cardiovascular exercise with alternating short periods of intense strength training. At S&T, we use 2 and 3-station training: treadmills, weight & resistance stations, and boxing stations. Explore all of our different <a href=\"https://www.sweatandtonic.com/classes/\" title=\"HIIT classes\">HIIT class styles here</a>.</p>"
+          }
+        },
+        "0c90dbed-c9e0-448d-8967-022bb2dd36a5": {
+          "type": "title",
+          "settings": {
+            "title": "CHECKING IN"
+          }
+        },
+        "60f81ea4-844e-4e74-b276-2fbbd44be5ab": {
+          "type": "que_ans",
+          "settings": {
+            "title": "How do I check in for class?",
+            "detail": "<p>There are three ways to check in for your class!</p><p><strong>1. Self check-in on the S&T app.</strong> If its your first visit, please check in at the front desk.</p><p><strong>2. Check in at studio doors.</strong> A S&T team member will be stationed in front of studio doors prior to class beginning. If you have any account inquiries, please visit the front desk.</p><p><strong>3. Check in at the front desk. </strong>Visit the front desk if this is your first visit, or if you have any account inquiries.</p>"
+          }
+        },
+        "c59ccd3b-4159-4933-b5a8-405abd2d353f": {
+          "type": "que_ans",
+          "settings": {
+            "title": "How does self check-in work?",
+            "detail": "<p>You can check yourself in for Yoga, HIIT & Ride classes, as well as sauna and Somadome sessions on the S&T app. Self check-in opens 30 minutes before your class start time, and closes 5 minutes before the class starts. For example, if your class starts at 12 PM, self check-in on the app will open at 11:30 AM, and close at 11:55 AM. After the window closes, you’ll need to check in for class at the front desk.</p>"
+          }
+        },
+        "que_ans_FUTk9g": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Self check-in policy",
+            "detail": "<p>Our standard no show and late cancellation policies apply.</p><p>You must attend a class that you’ve checked in for. Once you’ve checked in, make sure to head to the correct spot number you’ve booked!</p><p>Checking in and not attending class will result in double the no show fee ($24 x 2) for the first violation; the second violation will result in double the fee and a permanent ban from Sweat and Tonic.</p><p>Be considerate of your Sweat Fam - do not book overlapping classes or more classes than you intend to take. If you no longer wish to attend a class, please cancel reservations at least 12 hours in advance to ensure spots are not taken up that could have been available to someone else.</p>"
+          }
+        },
+        "05a40f69-e3df-4da1-9362-79a359552aaa": {
+          "type": "que_ans",
+          "settings": {
+            "title": "How do I use self check-in?",
+            "detail": "<p>Open your S&T app to view your upcoming reservations. If you are at S&T and within the self check-in window, you’ll see a ‘Check In’ button for the class you’re attending. You must have location access enabled on your phone, and be physically present within the S&T facility in order for self check-in to work.<br/><br/>Once you've checked in, you can head straight to the studio. For Ride, you can pick up your shoes from the self-service area next to the Ride studio.</p><p>As always, feel free to stop by the front desk if you have any questions or need assistance.</p>"
+          }
+        },
+        "167edd31-ca29-4a8a-9f25-293e736cae46": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Who can use self check-in?",
+            "detail": "<p>Self check-in is available to all customers who have booked classes with the S&T app or online, with the exception of first-time customers and accounts with unsigned waivers. If you’ve booked a class through ClassPass, please check in at the front desk.</p>"
+          }
+        },
+        "9dad551d-422a-48dc-a6c4-0bbd82390389": {
+          "type": "que_ans",
+          "disabled": true,
+          "settings": {
+            "title": "Can I still check in at the front desk?",
+            "detail": "<p>Yes – feel free to head to our front desk if you prefer to be checked in by a human and greeted with a smile! If you have any account inquiries, our front desk team will still be available to help.</p>"
+          }
+        },
+        "b6dc976d-ad1b-496c-ad57-098d79015d8a": {
+          "type": "title",
+          "settings": {
+            "title": "SERVICES & FACILITIES"
+          }
+        },
+        "53b9eede-d807-4755-a93e-7a642e287030": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Do you have showers? Do I need to bring my own towel?",
+            "detail": "<p>We’ve got it all – showers, towel service, toiletries, hair dryers, and other bathroom accessories.</p>"
+          }
+        },
+        "fa3b7eb5-4406-4d97-b977-ada64ccb4d3c": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Do I need to bring my own yoga mat, boxing gloves, or cycling shoes?",
+            "detail": "<p>No, we provide all of those for you at no additional cost. All you have to do is show up and get ready to sweat.</p>"
+          }
+        },
+        "0d913360-fe79-4169-a182-ce5dcdaa197e": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Who can access Tonic House?",
+            "detail": "<p>For the majority of the time, Tonic House is a lounge and workspace available to Unlimited members only by access card. Tonic House is also a space to host community and private events. These events will be posted outside of Tonic House and on our social channels. To book a private event at Tonic House, please email our Sales & Events team at <a href=\"mailto:salesandevents@sweatandtonic.com\" target=\"_blank\" title=\"mailto:salesandevents@sweatandtonic.com\">salesandevents@sweatandtonic.com</a>.</p><p>Plugging in for your workday or kicking back with your Sweat Fam in Tonic House? Please check out our <a href=\"https://sweatandtonic.com/pages/tonic-house-etiquette\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/tonic-house-etiquette\">house rules</a> to ensure a pleasant and productive environment for all to enjoy.</p>"
+          }
+        },
+        "8160d95d-d9f2-41e7-bde6-8f08cdef7f84": {
+          "type": "que_ans",
+          "settings": {
+            "title": "I am an Unlimited member. How do I get a Tonic House access card?",
+            "detail": "<p>You can pick up your access card at the front desk. There is a $10 deposit for Tonic House access cards. If you cancel your membership, you will need to return your card to receive your deposit back.<br/><br/>If you lose your access card or are an existing Unlimited member who did not originally leave a deposit, you are subject to a $10 charge for unreturned cards upon membership cancellation. Replacement fee for lost cards is $10.</p>"
+          }
+        },
+        "9f7bf4b8-6e33-46b8-9dab-402cb691f594": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What are 'XL' spots on the spot map when booking a class?",
+            "detail": "<p>Spots marked 'XL' in all three studios are suitable for everyone, but individuals who are taller than 6 ft. may find XL spots more comfortable.</p><p>Bikes in our Ride studio marked ‘XL’ are suitable for between 160 and 210 cm in height. XL bikes are equipped with a slightly more extended handlebar, which can be more comfortable to perform upper body movements for taller guests.</p><p>Floor spots marked 'XL' in Box HIIT at The Well have boxing bags that are hung higher.</p><p>Mats marked 'XL' in our yoga studio at The Well provide extra room behind your mat.</p>"
+          }
+        },
+        "que_ans_gCWn8c": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What is Tonic Spa?",
+            "detail": "<p>We offer recovery and wellness services at both our Yonge/Shuter and Front/Spadina locations. Tonic Spa is our 360 wellness and recovery hub at Front/Spadina that offers traditional recovery services along with high-tech biohacking treatments, a 50 ft. saltwater lap pool, sauna, hydrotherapies, and more. For more information, check out our <a href=\"https://sweatandtonic.com/pages/spa\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/spa\">Tonic Spa page</a> and <a href=\"https://sweatandtonic.com/pages/faq-tonic-spa\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/faq-tonic-spa\">Tonic Spa FAQs.</a></p>"
+          }
+        },
+        "2a090433-7c59-43de-b1da-327b4320a224": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Do you have private saunas?",
+            "detail": "<p>Yes, we have two private infrared saunas at our Yonge/Shuter location, and you can also bring guests! The small sauna fits up to two people, and the large sauna fits up to four people. It’s up to you how much space you want!</p><p>Our private Hot & Cold Therapy suite features a private four-person dual infrared and traditional electric high heat sauna and cold plunge.</p><p>Our sauna at the Tonic Spa Pool Deck at Front/Spadina is a shared sauna that accommodates up to 20 people.</p>"
+          }
+        },
+        "f0ef32be-f0e4-4f8c-b98a-637b3476fd3a": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What should I wear in the sauna?",
+            "detail": "<p>You’re welcome to wear whatever you feel most comfortable in. Common attire includes: swimwear, underwear, and athletic wear. Please put a towel down before relaxing in the sauna.</p>"
+          }
+        },
+        "4bb562d7-6573-47b8-9ce1-ec47b2c10fb0": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Do you accept cash?",
+            "detail": "<p>No, we are a cashless and mostly paperless facility.</p>"
+          }
+        },
+        "f7062d00-7e1c-4775-9311-2dd464625296": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Can I purchase items from Tonic Bar even if I don’t work out here?",
+            "detail": "<p>Absolutely – the more the merrier. Come on in!</p>"
+          }
+        },
+        "que_ans_PFQqn9": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Are you hiring?",
+            "detail": "<p>You can check our careers page to <a href=\"https://sweatandtonic.talentnest.com/en/jobs\" target=\"_blank\">view all current job openings</a>. We are always open to accepting applications for all positions, even if we don’t currently have open spots. Please send an introduction and a bit about what you’re looking for to <a href=\"mailto:hello@sweatandtonic.com\" target=\"_blank\">hello@sweatandtonic.com</a>.</p>"
+          }
+        },
+        "que_ans_P7NnGR": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Where can I store my belongings?",
+            "detail": "<p>We provide lockers with built-in locks, and several with built-in USB ports so you can charge up while you sweat it out!</p><p>S&T is not responsible for misplaced or lost property - all guests are responsible for their own belongings.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "3c88c7a8-87e2-447f-853b-29fde4997cba",
+        "title_zYcA3w",
+        "que_ans_G9aRwm",
+        "que_ans_DkfcPE",
+        "6beaa2ad-e3e7-4b02-9db6-25c2cae1a7bc",
+        "e491b7f7-2e86-42db-9739-797a6fbb5195",
+        "7064720d-0420-40f1-803f-d9b0235d07ef",
+        "d7696939-47e4-410d-9584-55d9659a7c55",
+        "ab3a0bf7-e7e2-4232-9cf4-65d41c889a85",
+        "4cdf833b-812d-4a9a-84a9-bc2b229a449d",
+        "que_ans_J97CWR",
+        "03005134-1b24-4879-8a85-c338503355d3",
+        "df72df29-8093-40fa-83f3-c8def3f9bcfa",
+        "3ba96673-528e-457a-8524-171c4ebf84ac",
+        "22e4de22-4b8c-4f02-a061-11408cf91e8a",
+        "que_ans_prKExh",
+        "88eef28f-11aa-41e2-96f1-65617d2b3755",
+        "f01c3501-f8e6-44b9-ab49-1b639a6ec3b8",
+        "b847ba64-6c33-4d0d-9549-5cced3f8e822",
+        "e4fe30f0-e977-419f-8d79-0f1dc06ec885",
+        "13ea47b8-18dc-4449-adec-639f034e7805",
+        "f327a534-4931-43b9-808d-a10caa75f1ab",
+        "70316a9b-847d-447a-9313-7d52ca66f24d",
+        "que_ans_VzY3bt",
+        "83dfdfe3-9459-4c30-bc14-42e274ce06ba",
+        "7645ce0f-ffea-4e13-ae63-97cdd9c3bbf3",
+        "12b36bdf-f8c7-4c70-a6c5-67d3942a9ec1",
+        "848afe71-f729-4582-a605-5eedb9841282",
+        "0c90dbed-c9e0-448d-8967-022bb2dd36a5",
+        "60f81ea4-844e-4e74-b276-2fbbd44be5ab",
+        "c59ccd3b-4159-4933-b5a8-405abd2d353f",
+        "que_ans_FUTk9g",
+        "05a40f69-e3df-4da1-9362-79a359552aaa",
+        "167edd31-ca29-4a8a-9f25-293e736cae46",
+        "9dad551d-422a-48dc-a6c4-0bbd82390389",
+        "b6dc976d-ad1b-496c-ad57-098d79015d8a",
+        "53b9eede-d807-4755-a93e-7a642e287030",
+        "fa3b7eb5-4406-4d97-b977-ada64ccb4d3c",
+        "0d913360-fe79-4169-a182-ce5dcdaa197e",
+        "8160d95d-d9f2-41e7-bde6-8f08cdef7f84",
+        "9f7bf4b8-6e33-46b8-9dab-402cb691f594",
+        "que_ans_gCWn8c",
+        "2a090433-7c59-43de-b1da-327b4320a224",
+        "f0ef32be-f0e4-4f8c-b98a-637b3476fd3a",
+        "4bb562d7-6573-47b8-9ce1-ec47b2c10fb0",
+        "f7062d00-7e1c-4775-9311-2dd464625296",
+        "que_ans_PFQqn9",
+        "que_ans_P7NnGR"
+      ],
+      "settings": {
+        "title": "FAQS",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

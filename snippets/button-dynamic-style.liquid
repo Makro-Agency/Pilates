@@ -1,0 +1,69 @@
+{%- comment -%}
+
+  This will only works with below button clss:
+  1. button--primary (solid button)
+  2. button--secondary (outline button)
+  3. global-link (link button)
+
+  Accepts:
+  - block: {Object} Sections block object (required)
+
+  Required:
+  - Must be add [btn-clr--{{ block.id }}] class to the button parent div
+
+  Usage:
+  {% render 'button-dynamic-style', block: block %}
+{%- endcomment -%}
+
+
+{%- style -%}
+
+  {% comment %}** FOR BUTTON TEXT COLOR **{% endcomment %}
+  {%- if block.settings.btn_text_clr != blank and block.settings.btn_text_clr != 'rgba(0,0,0,0)' -%}
+    .btn-clr--{{ block.id }} .button--primary{
+      color: {{block.settings.btn_text_clr}};
+    }
+    .btn-clr--{{ block.id }} .link{
+      color: {{block.settings.btn_text_clr}};
+    }
+    .btn-clr--{{ block.id }} .button--secondary:after,
+    .btn-clr--{{ block.id }} .button--secondary:before{
+      box-shadow: none;
+    }
+    .btn-clr--{{ block.id }} .button--secondary{
+      color: {{block.settings.btn_text_clr}};
+      border: 1px solid;
+    }
+  {%- endif -%}
+
+  {% comment %}** FOR BUTTON HOVER TEXT COLOR **{% endcomment %}
+  {%- if block.settings.btn_hvr_text_clr != blank and block.settings.btn_hvr_text_clr != 'rgba(0,0,0,0)' -%}
+    .btn-clr--{{ block.id }} .button--primary:hover{
+      color: {{block.settings.btn_hvr_text_clr}};
+    }
+    .btn-clr--{{ block.id }} .link:hover{
+      color: {{block.settings.btn_hvr_text_clr}};
+    }
+    .btn-clr--{{ block.id }} .button--secondary:hover:after,
+    .btn-clr--{{ block.id }} .button--secondary:hover:before{
+      box-shadow: none;
+    }
+    .btn-clr--{{ block.id }} .button--secondary:hover{
+      color: {{block.settings.btn_hvr_text_clr}};
+    }
+  {%- endif -%}
+
+  {% comment %}** FOR BUTTON BG COLOR **{% endcomment %}
+  {%- if block.settings.btn_bg_clr != blank and block.settings.btn_bg_clr != 'rgba(0,0,0,0)' -%}
+    .btn-clr--{{ block.id }} .button--primary{
+      background-color: {{block.settings.btn_bg_clr}};
+    }
+  {%- endif -%}
+
+  {% comment %}** FOR BUTTON HOVER BG COLOR **{% endcomment %}
+  {%- if block.settings.btn_hvr_bg_clr != blank and block.settings.btn_hvr_bg_clr != 'rgba(0,0,0,0)' -%}
+    .btn-clr--{{ block.id }} .button--primary:hover{
+      background-color: {{block.settings.btn_hvr_bg_clr}};
+    }
+  {%- endif -%}
+{%- endstyle -%}

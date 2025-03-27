@@ -1,0 +1,591 @@
+{%- if section.index == 1 -%}
+  
+  {{- 'section-image-banner.css' | asset_url | stylesheet_tag: preload: true -}}
+  {{- 'home-banner-with-classes.css' | asset_url | stylesheet_tag: preload: true -}}
+  
+  {%- assign loadingType = 'eager' -%}
+  {%- assign fetchPriorityType = 'high' -%}
+  
+{%- else -%}
+  
+  <link rel="stylesheet" href="{{ 'section-image-banner.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'home-banner-with-classes.css' | asset_url }}" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="{{ 'section-image-banner.css' | asset_url }}"></noscript>
+  <noscript><link rel="stylesheet" href="{{ 'home-banner-with-classes.css' | asset_url }}"></noscript>
+  
+  {%- assign loadingType = 'lazy' -%}
+  {%- assign fetchPriorityType = 'auto' -%}
+  
+{%- endif -%}
+
+{%- assign imgaeBlocks = section.blocks | where: 'type', 'class' -%}
+{%- if section.settings.image_height == 'adapt' and imgaeBlocks.first.settings.image != blank -%}
+ {%- if imgaeBlocks.first.settings.img_mobile != blank -%}
+    {%- assign imageObj = imgaeBlocks.first.settings.img_mobile -%}
+  {%- else -%}
+    {%- assign imageObj = imgaeBlocks.first.settings.image -%}
+  {%- endif -%}
+  
+  {%- style -%}
+    @media screen and (max-width: 749px) {
+      #Banner-{{ section.id }}::before,
+      #Banner-{{ section.id }} .banner__media::before,
+      #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
+        padding-bottom: {{ 1 | divided_by: imageObj.aspect_ratio | times: 100 }}%;
+        content: '';
+        display: block;
+      }
+    }
+
+    @media screen and (min-width: 750px) {
+      #Banner-{{ section.id }}::before,
+      #Banner-{{ section.id }} .banner__media::before {
+        padding-bottom: {{ 1 | divided_by: imgaeBlocks.first.settings.image.aspect_ratio | times: 100 }}%;
+        content: '';
+        display: block;
+      }
+    }
+  {%- endstyle -%}
+{%- endif -%}
+
+
+{%- style -%}
+  #Banner-{{ section.id }}::after {
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+  }
+{%- endstyle -%}
+
+
+
+{%- liquid
+  assign full_width = '100vw'
+  assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+-%}
+
+
+{%- capture classes_content -%}
+  {%- assign loopIndex = 0 -%}
+  {%- for block in section.blocks -%}
+    {%- if block.type == 'class' -%}
+
+      {%- assign loopIndex = loopIndex | plus: 1 -%}
+      
+      <div class="classes-list" {% if block.settings.text_clr != blank and block.settings.text_clr != 'rgba(0,0,0,0)' %}style="color: {{ block.settings.text_clr }};"{% endif %} data-name="{{ block.settings.title | handleize }}-{{ loopIndex }}">
+        <div class="classes-list-box">
+          {%- if block.settings.title != blank -%}
+            <h5 class="h4 small-hide">{{ block.settings.title }}</h5>
+          {%- endif -%}
+    
+          {%- if block.settings.desc != blank -%}
+            <div class="rte small-hide">{{ block.settings.desc }}</div>
+          {%- endif -%}
+    
+          {%- if block.settings.button_label != blank -%}
+            {%- if block.settings.button_link == blank -%}
+              <div class="link global-link" onclick="ScrollToServices()">
+                <span class="small-hide">{{- block.settings.button_label | escape -}}</span>
+                <span class="large-up-hide medium-hide">{{- block.settings.title -}}</span>            
+                <span class="icon-wrap">{% render 'icon-link-arrow' %}</span>
+              </div>
+            {%- else -%}
+              <a
+                {% if block.settings.button_link == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ block.settings.button_link }}"
+                {% endif %}
+                class="link global-link"
+              >
+                <span class="small-hide">{{- block.settings.button_label | escape -}}</span>
+                <span class="large-up-hide medium-hide">{{- block.settings.title -}}</span>            
+                <span class="icon-wrap">{% render 'icon-link-arrow' %}</span>
+              </a>
+            {%- endif -%}
+          
+          {%- endif -%}
+        </div>
+      </div>
+
+      {%- capture banner_images -%}
+        {%- if banner_images != blank -%}{{ banner_images }}{%- endif -%}
+        {%- if block.settings.image != blank -%}
+          <div class="banner__media media{% if block.settings.image == blank %} placeholder{% endif %}{% if loopIndex == 1 %} active-img{% endif %}{% if block.settings.img_mobile != blank %} small-hide{% endif %}" data-name="{{ block.settings.title | handleize }}-{{ loopIndex }}">
+            {%- liquid
+              assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio
+              assign sizes = full_width
+            -%}
+            {{
+              block.settings.image
+              | image_url: width: 3840
+              | image_tag:
+                loading: loadingType,
+                fetchPriority: fetchPriorityType,
+                width: block.settings.image.width,
+                height: image_height,
+                sizes: sizes,
+                widths: widths
+            }}
+          </div>
+        {%- else -%}
+          <div class="banner__media media placeholder{% if block.settings.img_mobile != blank %} small-hide{% endif %}" data-name="{{ block.settings.title | handleize }}-{{ loopIndex }}">
+            {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+          </div>
+        {%- endif -%}
+
+        {%- if block.settings.img_mobile != blank -%}
+          <div class="banner__media media{% if loopIndex == 1 %} active-img{% endif %} medium-hide large-up-hide" data-name="{{ block.settings.title | handleize }}-{{ loopIndex }}">
+            {%- liquid
+              assign image_height_2 = block.settings.img_mobile.width | divided_by: block.settings.img_mobile.aspect_ratio
+                assign sizes = full_width
+            -%}
+            {{
+              block.settings.img_mobile
+              | image_url: width: 1100
+              | image_tag:
+                loading: loadingType,
+                fetchPriority: fetchPriorityType,
+                width: block.settings.img_mobile.width,
+                height: image_height_2,
+                sizes: sizes,
+                widths: widths
+            }}
+          </div>
+        {%- endif -%}
+      {%- endcapture -%}
+
+    {%- endif -%}
+      
+  {%- endfor -%}
+{%- endcapture -%}
+
+
+<div
+  id="Banner-{{ section.id }}"
+  class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+  {%- if section.settings.allow_transparent_header %} allow-transparent-header{% endif -%}
+>
+  {%- if banner_images != blank -%}
+    <div class="classes-image-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      {{ banner_images }}
+    </div>
+  {%- endif -%}
+  
+  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} banner_mobile_content--top page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          
+          {%- when 'sub_heading' -%}
+            <h6 class="banner__sub_heading h6"
+              {% if block.settings.text_clr != blank and block.settings.text_clr != 'rgba(0,0,0,0)' %}style="color: {{ block.settings.text_clr }};"{% endif %}
+              {{ block.shopify_attributes }}
+              >
+              {{- block.settings.sub_heading -}}
+            </h6>
+      
+          {%- when 'heading' -%}
+            <h2 class="banner__heading h2"
+              {% if block.settings.text_clr != blank and block.settings.text_clr != 'rgba(0,0,0,0)' %}style="color: {{ block.settings.text_clr }};"{% endif %}
+              {{ block.shopify_attributes }}
+              >
+              {{ block.settings.heading }}
+            </h2>
+      
+          {%- when 'text' -%}
+            <div class="banner__text rte {{ block.settings.text_style }}"
+              {% if block.settings.text_clr != blank and block.settings.text_clr != 'rgba(0,0,0,0)' %}style="color: {{ block.settings.text_clr }};"{% endif %}
+              {{ block.shopify_attributes }}
+            >
+              <p>{{ block.settings.text }}</p>
+            </div>
+      
+          {%- when 'buttons' -%}
+            <div class="banner__buttons btn-clr--{{ block.id }}" {{ block.shopify_attributes }}>
+              {%- assign btn_class = blank -%}
+              {%- if block.settings.button_style == 'solid' -%}
+                {%- assign btn_class = 'button btn-small-width button--primary' -%}
+              {%- elsif block.settings.button_style == 'outline' -%}
+                {%- assign btn_class = 'button btn-big-width button--secondary' -%}
+              {%- else -%}
+                {%- assign btn_class = 'link global-link' -%}
+              {%- endif -%} 
+              {%- if block.settings.button_label_1 != blank -%}
+                <a
+                  {% if block.settings.button_link_1 == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ block.settings.button_link_1 }}"
+                  {% endif %}
+                  class="{{ btn_class }}"
+                >
+                  {{- block.settings.button_label_1 | escape -}}
+                  {%- if block.settings.button_style == 'link' -%}
+                    <span class="icon-wrap">{% render 'icon-link-arrow' %}</span>
+                  {%- endif -%}
+                </a>
+              {%- endif -%}
+              {%- if block.settings.applies_color_scheme -%}
+                {%- render 'button-dynamic-style', block: block -%}
+              {%- endif -%}
+            </div>
+      
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
+
+  {%- if classes_content != blank -%}
+    <div class="classes-lists-wrap color-{{ section.settings.color_scheme }}">{{ classes_content }}</div>
+  {%- endif -%}
+  
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Banner with classes",
+  "tag": "section",
+  "class": "section banner-with-classes",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "allow_transparent_header",
+      "label": "Allow transparent header",
+      "info": "This setting only applies when this section is the first one.",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "image_overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "t:sections.image-banner.settings.image_overlay_opacity.label",
+      "default": 0
+    },
+    {
+      "type": "select",
+      "id": "image_height",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.image-banner.settings.image_height.options__1.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.image-banner.settings.image_height.options__2.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.image-banner.settings.image_height.options__3.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.image-banner.settings.image_height.options__4.label"
+        }
+      ],
+      "default": "medium",
+      "label": "t:sections.image-banner.settings.image_height.label",
+      "info": "t:sections.image-banner.settings.image_height.info"
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_position",
+      "options": [
+        {
+          "value": "top-left",
+          "label": "Top"
+        },
+        {
+          "value": "middle-left",
+          "label": "Middle"
+        },
+        {
+          "value": "bottom-left",
+          "label": "Bottom"
+        }
+      ],
+      "default": "bottom-left",
+      "label": "t:sections.image-banner.settings.desktop_content_position.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_text_box",
+      "default": true,
+      "label": "t:sections.image-banner.settings.show_text_box.label"
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.image-banner.settings.desktop_content_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.image-banner.settings.desktop_content_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.image-banner.settings.desktop_content_alignment.options__3.label"
+        }
+      ],
+      "default": "center",
+      "label": "t:sections.image-banner.settings.desktop_content_alignment.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.image-banner.settings.mobile.content"
+    },
+    {
+      "type": "select",
+      "id": "mobile_content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.image-banner.settings.mobile_content_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.image-banner.settings.mobile_content_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.image-banner.settings.mobile_content_alignment.options__3.label"
+        }
+      ],
+      "default": "center",
+      "label": "t:sections.image-banner.settings.mobile_content_alignment.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.image-banner.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Image banner",
+          "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "color",
+          "id": "text_clr",
+          "default": "#fff",
+          "label": "Text color"
+        }
+      ]
+    },
+    {
+      "type": "sub_heading",
+      "name": "Sub heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "sub_heading",
+          "default": "FITNESS & WORKOUT",
+          "label": "Sub heading"
+        },
+        {
+          "type": "color",
+          "id": "text_clr",
+          "default": "#fff",
+          "label": "Text color"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "t:sections.image-banner.blocks.text.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "default": "Give customers details about the banner image(s) or content on the template.",
+          "label": "t:sections.image-banner.blocks.text.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "body",
+              "label": "t:sections.image-banner.blocks.text.settings.text_style.options__1.label"
+            },
+            {
+              "value": "subtitle",
+              "label": "t:sections.image-banner.blocks.text.settings.text_style.options__2.label"
+            },
+            {
+              "value": "caption-with-letter-spacing",
+              "label": "t:sections.image-banner.blocks.text.settings.text_style.options__3.label"
+            }
+          ],
+          "default": "body",
+          "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
+        },
+        {
+          "type": "color",
+          "id": "text_clr",
+          "default": "#fff",
+          "label": "Text color"
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "name": "t:sections.image-banner.blocks.buttons.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Shop now",
+          "label": "Button label",
+          "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "Button link"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "options": [
+            {
+              "value": "solid",
+              "label": "Solid"
+            },
+            {
+              "value": "outline",
+              "label": "Outline"
+            },
+            {
+              "value": "link",
+              "label": "Link"
+            }
+          ],
+          "default": "link",
+          "label": "Button style"
+        },
+        {
+          "type": "header",
+          "content": "Button color scheme"
+        },
+        {
+          "type": "checkbox",
+          "id": "applies_color_scheme",
+          "default": false,
+          "label": "Apply below color?",
+          "info": "If not checked, default color will be applied"
+        },
+        {
+          "type": "color",
+          "id": "btn_text_clr",
+          "default": "#fff",
+          "label": "Button text color"
+        },
+        {
+          "type": "color",
+          "id": "btn_hvr_text_clr",
+          "default": "#fff",
+          "label": "Button hover text color"
+        },
+        {
+          "type": "color",
+          "id": "btn_bg_clr",
+          "default": "#fff",
+          "label": "Button background color",
+          "info": "This color will be only applies to solid button style"
+        },
+        {
+          "type": "color",
+          "id": "btn_hvr_bg_clr",
+          "default": "#fff",
+          "label": "Button hover background color",
+          "info": "This color will be only applies to solid button style"
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "Classes",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Desktop image"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_mobile",
+          "label": "Mobile image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "YOGA",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "desc",
+          "default": "<p>Find your breath, flow, and turn up the heat!</p>",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "JOIN US",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "color",
+          "id": "text_clr",
+          "default": "#fff",
+          "label": "Text color"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner with classes",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "buttons"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

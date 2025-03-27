@@ -1,0 +1,204 @@
+<link rel="stylesheet" href="{{ 'classes-work.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'classes-work.css' | asset_url }}"></noscript>
+
+{% if section.settings.image != blank or section.settings.class_style != blank or section.settings.instructors != blank or section.settings.studios != blank or section.settings.title != blank or section.settings.sub_title != blank or section.settings.description != blank %}
+<div class="page-width">
+  <div class="classes-work-row">
+    {% if section.settings.image != blank %}
+    <div class="banner-img">
+      <img src="{{ section.settings.image | image_url:width:1920 }}" alt="" width="" height="">
+    </div>
+    {% endif %}
+
+    {% if section.settings.class_style != blank or section.settings.instructors != blank or section.settings.studios != blank or section.settings.title != blank or section.settings.sub_title != blank or section.settings.description != blank %}
+    <div class="classes-work-contect">
+      <div class="row">
+
+        {% if section.settings.class_style != blank or section.settings.instructors != blank or section.settings.studios != blank %}
+      	<div class="col col-left small-hide">
+          <div class="classes-count-list">
+            {% if section.settings.class_style != blank %}
+            <div class="box">
+              <div class="h2 classes-count">{{ section.settings.class_style }}</div>
+              <div class="h6 classes-name">{{ section.settings.class_style_name }}</div>	
+            </div>
+            {% endif %}
+
+            {% if section.settings.instructors != blank %}
+            <div class="box">
+              <div class="h2 classes-count">{{ section.settings.instructors }}</div>
+              <div class="h6 classes-name">{{ section.settings.instructors_name }}</div>	
+            </div>
+            {% endif %}
+
+            {% if section.settings.studios != blank %}  
+            <div class="box">
+              <div class="h2 classes-count">{{ section.settings.studios }}</div>
+              <div class="h6 classes-name">{{ section.settings.studios_name }}</div>	
+            </div>
+            {% endif %}
+          </div>
+      	</div>
+        {% endif %}
+        
+      	<div class="col col-right">
+          {% if section.settings.title != blank %}<h2>{{ section.settings.title }}</h2>{% endif %}
+          
+          {% if section.settings.sub_title != blank %}<h6>{{ section.settings.sub_title }}</h6>{% endif %}
+          
+          {% if section.settings.description != blank %}
+          <div class="text-wrap">
+            <p>{{ section.settings.description }}</p>
+          </div>
+          {% endif %}
+
+          {% if section.settings.class_style != blank or section.settings.instructors != blank or section.settings.studios != blank %}
+          <div class="classes-count-list medium-hide large-up-hide">
+            {% if section.settings.class_style != blank %}
+            <div class="box">
+              <div class="h2 classes-count">{{ section.settings.class_style }}</div>
+              <div class="h6 classes-name">{{ section.settings.class_style_name }}</div>	
+            </div>
+            {% endif %}
+
+            {% if section.settings.instructors != blank %}
+            <div class="box">
+              <div class="h2 classes-count">{{ section.settings.instructors }}</div>
+              <div class="h6 classes-name">{{ section.settings.instructors_name }}</div>	
+            </div>
+            {% endif %}
+
+            {% if section.settings.studios != blank %}
+            <div class="box">
+              <div class="h2 classes-count">{{ section.settings.studios }}</div>
+              <div class="h6 classes-name">{{ section.settings.studios_name }}</div>	
+            </div>
+            {% endif %}
+          </div>
+          {% endif %}
+
+          {% if section.settings.button_title != blank %}
+          <a href="{% if section.settings.button_link != blank %}{{ section.settings.button_link }}{% else %}#{% endif %}" title="" class="button btn-big-width button--primary">{{ section.settings.button_title }}<span class="icon-wrap">{% render 'icon-link-arrow' %}</span></a>
+          {% endif %}
+      	</div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+
+{%- if section.settings.top_padding_remove or section.settings.bottom_padding_remove -%}
+  <style>
+    {% if section.settings.top_padding_remove %}
+      #shopify-section-{{ section.id }}.section-padding{
+        padding-top: 0 !important;
+      }
+    {% endif %}
+    
+    {% if section.settings.bottom_padding_remove %}
+      #shopify-section-{{ section.id }}.section-padding{
+        padding-bottom: 0 !important;
+      }
+    {% endif %}
+  </style>
+{%- endif -%}
+
+
+{% schema %}
+  {
+    "name": "Classes work",
+    "class": "classes-work section-padding",
+    "settings": [
+      {
+        "type": "image_picker",
+        "label": "Image",
+        "id": "image"
+      },
+      {
+        "type": "text",
+        "label": "Title",
+        "id": "title"
+      },
+      {
+        "type": "text",
+        "label": "Sub Title",
+        "id": "sub_title"
+      },
+      {
+        "type": "textarea",
+        "label": "Description",
+        "id": "description"
+      },
+      {
+        "type": "text",
+        "label": "Button Title",
+        "id": "button_title"
+      },
+      {
+        "type": "url",
+        "label": "Button Link",
+        "id": "button_link"
+      },
+      {
+        "type": "header",
+        "content": "Left Number Content"
+      },
+      {
+        "type": "text",
+        "label": "Class Style",
+        "id": "class_style"
+      },
+      {
+        "type": "text",
+        "label": "Class Style title",
+        "id": "class_style_name",
+        "default":"CLASS STYLES"
+      },
+      {
+        "type": "text",
+        "label": "Instructors",
+        "id": "instructors"
+      },
+      {
+        "type": "text",
+        "label": "Instructors title",
+        "id": "instructors_name",
+        "default":"INSTRUCTORS"
+      },
+      {
+        "type": "text",
+        "label": "Studios",
+        "id": "studios"
+      },
+      {
+        "type": "text",
+        "label": "Studios title",
+        "id": "studios_name",
+        "default":"STUDIOS"
+      },
+      {
+        "type": "header",
+        "content": "Section padding"
+      },
+      {
+        "type": "checkbox",
+        "id": "top_padding_remove",
+        "default": false,
+        "label": "Remove top padding"
+      },
+      {
+        "type": "checkbox",
+        "id": "bottom_padding_remove",
+        "default": false,
+        "label": "Remove bottom padding"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

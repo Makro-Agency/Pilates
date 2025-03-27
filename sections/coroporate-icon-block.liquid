@@ -1,0 +1,147 @@
+<style>
+  .icon-block-item .block-icon-title {margin: 0 0 0 0;font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;}
+.icon-block-item >* {
+  display: inline-flex;
+    align-items: center;
+  }
+  .icon-block-item {
+    display: inline-flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  .icon-inner {
+    display: inline-flex;
+    align-items: center;
+  }
+    .icon-inner svg{
+    width: 24px;
+    height: 24px;
+  }
+  .icon-block-item .icon-wrap {margin-right: 20px;}
+  .icon-blocks-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    border: 1px solid #23211E;
+  }
+  .icon-block-item:not(:last-child,:only-child){
+    border-right: 1px solid #23211E;
+  }
+  @media screen and (max-width: 769px) {
+  .icon-blocks-inner {
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .icon-block-item:not(:last-child,:only-child) {
+    border-bottom: 1px solid #23211E;
+    border-right: none;
+}
+    .icon-block-item{
+       padding: 24px 40px;
+      justify-content: flex-start;
+    }
+   
+  }
+</style>
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 790px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+<div class="icon-blocks-wrapper color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
+  <div class="row page-width">
+  <div class="icon-blocks-inner">
+    {%- for block in section.blocks -%}
+    <div class="icon-block-item">
+      <div class="icon-wrap">
+      <span class="icon-inner">
+      {{ block.settings.icon-html }}
+      </span>
+    </div>
+  <div class="content-wrap">
+    <h5 class="h5 block-icon-title">
+      {{ block.settings.icon-text}}
+    </h5>
+  </div>
+    </div>
+    {% endfor%}
+    
+  </div>
+</div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Corporate Icon Block",
+    "tag": "section",
+    "class": "icon-block-section",
+    "settings": [
+      {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+       {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 40
+    }
+    ],
+     "blocks": [
+    {
+      "type": "column",
+      "name": "Icon Block",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "html",
+          "id": "icon-html",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "icon-text",
+          "label": "Icon Text"
+        }
+      ]
+    }
+     ],
+    "presets": [
+    {
+      "name": "Corporate Icon Block",
+    }
+  ]
+  }
+{% endschema %}

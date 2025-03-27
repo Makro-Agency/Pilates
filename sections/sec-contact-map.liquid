@@ -1,0 +1,287 @@
+{{ 'sec-contact-map.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width secConMap section-{{ section.id }}-padding">
+    <h1 class="main-page-title page-title {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      {{ section.settings.title | default: page.title | escape }}
+    </h1>
+    {%- if section.blocks.size > 0 -%}
+      {%- assign _tabs = section.blocks | where:'type','tab' -%}
+      <div class="wrapper">
+      {%- if section.blocks.size > 0 -%}
+        <div class="content">
+        {%- for block in _tabs -%}
+          
+          {%- capture tabWrapper -%}
+            {% if block.settings.contactDetail != blank or block.settings.hoursDetail != blank %}
+            <div class="contact-time">                            
+              {%- if block.settings.contactDetail != blank -%}
+              <div class="item tabContact">
+                <h6 class="ct-title">CONTACT</h6>
+                <div class="rte">
+                  {{  block.settings.contactDetail }}
+                </div>
+              </div>
+              {%- endif -%}
+              {%- if block.settings.hoursDetail != blank -%}
+                {%- assign hoursDetails = block.settings.hoursDetail | newline_to_br | split:'<br />' -%}
+                <div class="item tabTime">
+                  <h6 class="ct-title">HOURS</h6>
+                  <table>
+                  <tbody>
+                  {% for hd in hoursDetails %}
+                    {% assign temp_hd = hd | split:'_' %}
+                    <tr>
+                      <td class="h6">{{ temp_hd | first | strip }}</td>
+                      <td>{{ temp_hd | last | strip }}</td>
+                    </tr>
+                  {% endfor %}                  
+                  </tbody>
+                  </table>
+                </div>
+              {%- endif -%}
+            </div>
+            {% endif %}
+
+            {%- assign tabtLink = blank -%}
+            {%- assign tabtContent = blank -%}
+            {% for i in (1..5) %}
+              {%- capture tabTitle %}tabTitle_{{ i }}{% endcapture -%}
+              {%- capture tabDetail %}tabDetail_{{ i }}{% endcapture -%}
+              {%- assign tabTitle = block.settings[tabTitle] -%}
+              {%- assign tabDetail = block.settings[tabDetail] -%}
+
+              {%- if tabDetail != blank and tabTitle != blank -%}
+                {%- capture tabtLink -%}
+                  {{- tabtLink -}}                
+                  <div class="tabt-link-title h6{% if forloop.first %} active{% endif %}" data-id="{{ tabTitle | handle }}-{{ block.id }}-{{ i }}">{{ tabTitle }}</div>                
+                {%- endcapture -%}
+                {%- capture tabtContent -%}
+                  {{ tabtContent }}
+                  {%- if tabDetail != blank -%}
+                  <div class="tabt-content{% if forloop.first %} active{% endif %}" id="{{ tabTitle | handle }}-{{ block.id }}-{{ i }}">
+                    <div class="rte">{{ tabDetail }}</div>
+                  </div>
+                  {%- endif -%}
+                {%- endcapture -%}
+              {%- endif -%}
+            {% endfor %}
+            
+            {% if tabtLink != blank and tabtContent != blank %}  
+              <div class="tabtab">
+                <div class="tabt-links">
+                  {{ tabtLink }}
+                </div>
+                {{ tabtContent }}
+              </div>
+            {%- endif -%}
+            
+          {%- endcapture -%}{%- assign tabWrapper = tabWrapper | strip | strip_newlines -%}
+        
+          {% if tabWrapper != blank and block.settings.title != blank and block.settings.tabComeSoon == false %}
+            <div class="tab scMap-tab{% if forloop.first %} active{% endif %}" data-location="{{ block.settings.title | handleize }}-{{ forloop.index }}">
+              <h3 class="scMap-tab-title h3">{{ block.settings.title }} {%- render 'icon-close-2' -%}</h3>
+              <div class="tabWrapper">
+                {%- unless block.settings.tabComeSoon -%}
+                  {{ tabWrapper }}
+                {%- endunless -%}
+              </div>
+            </div>
+          {% elsif block.settings.title != blank and block.settings.tabComeSoon == true %}
+            <div class="tab scMap-tab{% if forloop.first %} active{% endif %}">
+              <h3 class="scMap-tab-title h3 comeSoon">{{ block.settings.title }} <span class="titleComeSoon h6">coming soon</span></h3>
+              <div class="tabWrapper"></div>
+            </div>
+          {% endif %}
+
+          {%- capture mapWrapper -%}
+            {%- if mapWrapper != blank -%}{{ mapWrapper }}{%- endif -%}
+            {% if block.settings.map_iframe != blank %}
+              <div class="map{% if forloop.first %} active{% endif %}" data-location="{{ block.settings.title | handleize }}-{{ forloop.index }}">{{ block.settings.map_iframe }}</div>
+            {% endif %}
+          {%- endcapture -%}
+        
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+      
+    {%- if mapWrapper != blank -%}
+      <div class="map-wrapper">{{ mapWrapper }}</div>
+    {%- endif -%}
+    
+    </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Contact us",
+    "tag": "section",
+    "class": "section sec-contact-map",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "background-1"
+      },
+      {
+        "type": "text",
+        "label": "Enter section title",
+        "id":"title",
+        "info":"If empty. It will take page title as default."
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 92
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 100
+      }
+    ],
+    "blocks":[
+      {
+        "type":"tab",
+        "name":"Tab block",
+        "settings":[
+          {
+            "type":"text",
+            "label":"Enter tab title",
+            "id":"title",
+            "default":"Tab title"
+          },
+          {
+            "type":"checkbox",
+            "label":"Enable tab comming soon",
+            "id":"tabComeSoon"
+          },
+          {
+            "type":"header",
+            "content":"Tab content"
+          },
+          {
+            "type":"paragraph",
+            "content":"Contact and Hours"
+          },
+          {
+            "type":"richtext",
+            "label":"Enter contact detail",
+            "id":"contactDetail",
+            "default":"<p>225 Yonge StreetToronto ONM5B 1N8<\/p><p>647-372-0225<\/p><p><a href=\"mailto:hello@sweatandtonic.com\">hello@sweatandtonic.com<\/a><\/p>"
+          },
+          {
+            "type":"textarea",
+            "label":"Enter hours detail",
+            "id":"hoursDetail",
+            "default":"MON – THURS_5:45 AM – 10 PM\nFRI_5:45 AM - 9 PM\nSAT_7 AM – 7:30 PM\nSUN_7:45 AM – 9 PM",
+            "info":"To show as a table. Enter day in new lines and make sure enter '_' in between day and hours. like 'MON – THURS_5:45 AM – 10 PM'"
+          },
+          {
+            "type":"paragraph",
+            "content":"Tabs"
+          },
+          {
+            "type":"text",
+            "label":"Enter tab 1 title",
+            "id":"tabTitle_1",
+            "default":"DRIVING"
+          },
+          {
+            "type":"richtext",
+            "label":"Enter tab 1 detail",
+            "id":"tabDetail_1",
+            "default":"<p>Detail<\/p>"
+          },
+          {
+            "type":"text",
+            "label":"Enter tab 2 title",
+            "id":"tabTitle_2",
+            "default":"WALKING"
+          },
+          {
+            "type":"richtext",
+            "label":"Enter tab 2 detail",
+            "id":"tabDetail_2",
+            "default":"<p>Detail<\/p>"
+          },
+          {
+            "type":"text",
+            "label":"Enter tab 3 title",
+            "id":"tabTitle_3",
+            "default":"TRANSIT"
+          },
+          {
+            "type":"richtext",
+            "label":"Enter tab 3 detail",
+            "id":"tabDetail_3",
+            "default":"<p>Detail<\/p>"
+          },
+          {
+            "type":"text",
+            "label":"Enter tab 4 title",
+            "id":"tabTitle_4"
+          },
+          {
+            "type":"richtext",
+            "label":"Enter tab 4 detail",
+            "id":"tabDetail_4"
+          },
+          {
+            "type":"text",
+            "label":"Enter tab 5 title",
+            "id":"tabTitle_5"
+          },
+          {
+            "type":"richtext",
+            "label":"Enter tab 5 detail",
+            "id":"tabDetail_5"
+          },
+          {
+            "type":"header",
+            "content":"MAP Content"
+          },
+          {
+            "type":"html",
+            "label":"Enter map iframe code here",
+            "id":"map_iframe"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

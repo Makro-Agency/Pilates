@@ -1,0 +1,791 @@
+{{ 'all-audio-experiences.css' | asset_url | stylesheet_tag }}
+
+<div class="all-audio-experiences all-audio-section">
+  {% if section.settings.title != blank %}
+  <div class="title-wrpper">
+    <h4 class="title h4" style="color: #ffffff;">{{ section.settings.title }}</h4>
+  </div>
+  {% endif %}
+
+  {% assign len = blank %}
+  {% assign deficult = blank %}
+  {% assign mood = blank %}
+  {% assign guide = blank %}
+  {% assign guidence = blank %}
+  {% for block in section.blocks %}
+    
+    {% assign get_handle = block.settings.experience-obj | split:'/' | last %}
+    {% assign get_experience_object = shop.metaobjects['experiences'][get_handle] %}
+
+    {% if get_experience_object.how_many_minutes.value != blank %}
+      {% if len != blank %}
+        {% assign len = len | append:',' | append:get_experience_object.how_many_minutes.value %}
+      {% else %}
+        {% assign len = get_experience_object.how_many_minutes.value %}
+      {% endif %}
+    {% endif %}
+
+    {% if get_experience_object.difficulty_level.value != blank %}
+      {% if deficult != blank %}
+        {% assign deficult = deficult | append:',' | append:get_experience_object.difficulty_level.value %}
+      {% else %}
+        {% assign deficult = get_experience_object.difficulty_level.value %}
+      {% endif %}
+    {% endif %}
+
+    {% if get_experience_object.mood.value != blank %}
+      {% if mood != blank %}
+        {% assign mood = mood | append:',' | append:get_experience_object.mood.value %}
+      {% else %}
+        {% assign mood = get_experience_object.mood.value %}
+      {% endif %}
+    {% endif %}
+
+    {% if get_experience_object.guide.value != blank %}
+      {% if guide != blank %}
+        {% assign guide = guide | append:',' | append:get_experience_object.guide.value %}
+      {% else %}
+        {% assign guide = get_experience_object.guide.value %}
+      {% endif %}
+    {% endif %}
+
+    {% if get_experience_object.guidance_level.value != blank %}
+      {% if guidence != blank %}
+        {% assign guidence = guidence | append:',' | append:get_experience_object.guidance_level.value %}
+      {% else %}
+        {% assign guidence = get_experience_object.guidance_level.value %}
+      {% endif %}
+    {% endif %}
+  
+    {% capture audio_grid %}
+      {{ audio_grid }}
+      {% assign minute_filter = get_experience_object.how_many_minutes.value | handleize %}
+      {% assign minute_filter = minute_filter | replace:'0','zero' | replace:'0','zero' | replace:'1','one' | replace:'2','two' | replace:'3','three' | replace:'4','four' | replace:'5','five' | replace:'6','six' | replace:'7','seven' | replace:'8','eight' | replace:'9','nine' %}
+      <div data-audio="{% if get_experience_object.audio.value != blank %}true{% else %}false{% endif %}" class="audio-item {{ minute_filter }} {{ get_experience_object.difficulty_level.value | handleize }} {{ get_experience_object.mood.value | handleize }} {{ get_experience_object.guide.value | handleize }} {{ get_experience_object.guidance_level.value | handleize }}">
+        {% comment %}<a href="/"></a>{% endcomment %}
+        <template>
+          <div>
+            <p class="therapy-type">{{ get_experience_object.sub_title.value }}</p>
+            <h2 class="therapy-name">{{ get_experience_object.title.value }}</h2>
+            <p class="description">{{ get_experience_object.description.value }}</p>
+            {% if get_experience_object.audio.value != blank %}
+            <audio id="audio" controls class="hidden">
+              <source src="{{ get_experience_object.audio.value }}" type="audio/mp3">
+              Your browser does not support the audio element.
+            </audio>
+            {% endif %}
+            <div class="details">
+                {% if get_experience_object.how_many_minutes.value != blank %}
+                <div class="detail-item">
+                    <span class="audio-type">LENGTH</span>
+                    <span>{{ get_experience_object.how_many_minutes.value }}</span>
+                </div>
+                {% endif %}
+  
+                {% if get_experience_object.difficulty_level.value != blank %}
+                <div class="detail-item">
+                    <span class="audio-type">DIFFICULTY LEVEL</span>
+                    <span>{{ get_experience_object.difficulty_level.value }}</span>
+                </div>
+                {% endif %}
+  
+                {% if get_experience_object.mood.value != blank %}
+                <div class="detail-item">
+                    <span class="audio-type">MOOD</span>
+                    <span>{{ get_experience_object.mood.value }}</span>
+                </div>
+                {% endif %}
+  
+                {% if get_experience_object.guide.value != blank %}
+                <div class="detail-item">
+                    <span class="audio-type">GUIDE</span>
+                    <span>{{ get_experience_object.guide.value }}</span>
+                </div>
+                {% endif %}
+  
+                {% if get_experience_object.guidance_level.value != blank %}
+                <div class="detail-item">
+                    <span class="audio-type">GUIDANCE LEVEL</span>
+                    <span>{{ get_experience_object.guidance_level.value }}</span>
+                </div>
+                {% endif %}
+            </div>
+            {% if get_experience_object.audio.value != blank %}
+            <div class="play-button" onclick="playAudio(this)">
+              <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100ZM42.5373 62.9258L64.9254 50L42.5373 37.0742V62.9258Z" fill="#C79D5B"></path>
+              </svg>
+            </div>
+            {% endif %}
+          </div>
+        </template>
+        <div class="image-box">
+          <img src="{{ get_experience_object.image.value | image_url: width: 300 }}" height="auto" width="auto" />
+          <div class="icon">{% render 'spa-icon' %}</div>
+        </div>
+        <div class="audio-content">
+          <h4 class="audio-title h5">{{ get_experience_object.title.value }}</h4>
+          {% assign check_size = get_experience_object.description.value | size %}
+          {% if check_size > 260 %}
+            <div class="description-more">
+              <P class="description read-more show-less">{{ get_experience_object.description.value }}</P>
+              <P class="description show-more hidden">{{ get_experience_object.description.value }}</P>
+              <span class="read-more link" onclick="readMore(this)">Read More</span>
+              <span class="read-less link hidden" onclick="readLess(this)">Read Less</span>
+            </div>
+          {% else %}
+            <P class="description">{{ get_experience_object.description.value }}</P>
+          {% endif %}
+          {% if get_experience_object.audio.value != blank %}
+          <audio id="audio" controls class="hidden">
+            <source src="{{ get_experience_object.audio.value }}" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          {% endif %}
+          <div class="spa-time"><span>{{ get_experience_object.how_many_minutes.value }}</span>  <span>{{ get_experience_object.difficulty_level.value }}</span></div>
+        </div>
+      </div>
+    {% endcapture %}
+  
+  {% endfor %}
+  
+  <div class="filter-services desktop-filter">
+    
+    {% if len != blank %}
+      {% assign len = len | split: "," | uniq | join: "," | split: "," %}
+      <div class="filter-items">
+        <div class="filter-summery">
+           <span class="label">Length</span>
+           <span class="icon-down">{% render 'filter-down-arrow' %}</span>
+         </div>
+        <div class="filter-submenu">
+          <ul>
+            {%- for len_item in len -%}
+              {% assign minute_filter = len_item | handleize %}
+              {% assign minute_filter = minute_filter | replace:'0','zero' | replace:'0','zero' | replace:'1','one' | replace:'2','two' | replace:'3','three' | replace:'4','four' | replace:'5','five' | replace:'6','six' | replace:'7','seven' | replace:'8','eight' | replace:'9','nine' %}
+              <li class="filter_li_item" data-title="Length" data-name="{{ minute_filter }}">{{ len_item }}</li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if deficult != blank %}
+      {% assign deficult = deficult | split: "," | uniq | join: "," | split: "," %}
+      <div class="filter-items">
+        <div class="filter-summery">
+           <span class="label">Difficulty Level</span>
+           <span class="icon-down">{% render 'filter-down-arrow' %}</span>
+         </div>
+        <div class="filter-submenu">
+          <ul>
+            {%- for deficult_item in deficult -%}
+              <li class="filter_li_item" data-title="Defficulty Level" data-name="{{ deficult_item | handleize }}">{{ deficult_item }}</li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if mood != blank %}
+      {% assign mood = mood | split: "," | uniq | join: "," | split: "," %}
+      <div class="filter-items">
+        <div class="filter-summery">
+           <span class="label">Mood</span>
+           <span class="icon-down">{% render 'filter-down-arrow' %}</span>
+         </div>
+        <div class="filter-submenu">
+          <ul>
+            {%- for mood_item in mood -%}
+              <li class="filter_li_item" data-title="Mood" data-name="{{ mood_item | handleize }}">{{ mood_item }}</li>
+            {%- endfor -%}  
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if guide != blank %}
+      {% assign guide = guide | split: "," | uniq | join: "," | split: "," %}
+      <div class="filter-items">
+        <div class="filter-summery">
+           <span class="label">Favorite Guide</span>
+           <span class="icon-down">{% render 'filter-down-arrow' %}</span>
+         </div>
+        <div class="filter-submenu">
+          <ul>
+            {%- for guide_item in guide -%}
+              <li class="filter_li_item" data-title="Favorite Guide" data-name="{{ guide_item | handleize }}">{{ guide_item }}</li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if guidence != blank %}
+      {% assign guidence = guidence | split: "," | uniq | join: "," | split: "," %}
+      <div class="filter-items">
+        <div class="filter-summery">
+           <span class="label">Guidance Level</span>
+           <span class="icon-down">{% render 'filter-down-arrow' %}</span>
+         </div>
+        <div class="filter-submenu">
+          <ul>
+            {%- for guidence_item in guidence -%}
+              <li class="filter_li_item" data-title="Guidance Level" data-name="{{ guidence_item | handleize }}">{{ guidence_item }}</li>
+            {%- endfor -%}  
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+  <div class="active_filter"></div>
+
+  {% render 'mobile-services-filter', len:len, deficult:deficult, mood:mood , guide:guide, guidence:guidence %}
+  
+  <div class="audio-services">
+    {{ audio_grid }}
+    {% render 'mobile-services-filter', button:true %}
+  </div>
+</div>
+
+<div class="backtotop">
+  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 10.5L8 3.5L15 10.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</div>
+
+<div class="audio-popup">
+  <div class="audio-popup-wrapper">
+    <div class="popup-overlay"></div>
+    <img src="https://cdn.shopify.com/s/files/1/0277/8280/7635/files/popup_Body_Scan_Ice_Bath.png?v=1721026190" alt="Meditation Image" class="background-image" height="auto" width="auto">
+    <div class="overlay">
+        <header>
+            <div class="logo"><img src="https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Vector_1.svg?v=1695363748" height="auto" width="auto"></div>
+            <div class="close-btn" onclick="closePopup(this)">{% render 'close-icon' %}</div>
+        </header>
+        <div class="content"></div>
+        <div class="pause-btn-wrapper">
+          
+          <div class="backward-button hidden">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="backward(this)">
+            <g opacity="0.8">
+            <path d="M0.372807 24.283L24.057 7.61634C24.3254 7.42687 24.6737 7.40406 24.9658 7.55494C25.2561 7.70494 25.4386 8.00581 25.4386 8.33301V23.9269L48.6184 7.62599C48.886 7.43915 49.2351 7.41459 49.5272 7.56546C49.8175 7.71634 50 8.01722 50 8.34441V41.6558C50 41.983 49.8175 42.2839 49.5272 42.4348C49.3991 42.4997 49.2605 42.5321 49.1228 42.5321C48.9456 42.5321 48.7693 42.4777 48.6184 42.3725L25.4386 26.0725V41.6663C25.4386 41.9935 25.2561 42.2944 24.9658 42.4453C24.8377 42.5111 24.6991 42.5435 24.5614 42.5435C24.3842 42.5435 24.207 42.4891 24.057 42.383L0.372807 25.7163C0.138596 25.5532 0 25.2848 0 24.9997C0 24.7146 0.138596 24.4462 0.372807 24.283Z" fill="#C79D5B"/></path>
+            </g>
+            </svg>
+          </div>
+          <div class="pause-button">
+            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="closePopup(this)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M100 50C100 77.6142 77.6142 100 50 100C22.3858 100 0 77.6142 0 50C0 22.3858 22.3858 0 50 0C77.6142 0 100 22.3858 100 50ZM39.5522 35.8209H47.0149V64.1791H39.5522V35.8209ZM60.4478 35.8209H52.9851V64.1791H60.4478V35.8209Z" fill="#C79D5B"></path>
+            </svg>
+          </div>
+          <div class="forward-button hidden">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="forward(this)">
+            <g opacity="0.8">
+            <path d="M49.6272 24.283L25.943 7.61634C25.6746 7.42687 25.3263 7.40406 25.0342 7.55494C24.7439 7.70494 24.5614 8.00581 24.5614 8.33301V23.9269L1.38158 7.62599C1.11404 7.43915 0.764912 7.41459 0.472807 7.56546C0.182456 7.71634 0 8.01722 0 8.34441V41.6558C0 41.983 0.182456 42.2839 0.472807 42.4348C0.600877 42.4997 0.739474 42.5321 0.877193 42.5321C1.05439 42.5321 1.2307 42.4777 1.38158 42.3725L24.5614 26.0725V41.6663C24.5614 41.9935 24.7439 42.2944 25.0342 42.4453C25.1623 42.5111 25.3009 42.5435 25.4386 42.5435C25.6158 42.5435 25.793 42.4891 25.943 42.383L49.6272 25.7163C49.8614 25.5532 50 25.2848 50 24.9997C50 24.7146 49.8614 24.4462 49.6272 24.283Z" fill="#C79D5B"/></path>
+            </g>
+            </svg>
+          </div>
+          
+        </div>
+        <div class="progressbar-wrapper">
+          <div class="progress">
+            <div class="progress-bar"></div>
+            <div class="fill-bar" width="0%"></div>
+          </div>
+          <div class="time-sound-bar">
+            <div class="time-bar">
+              <span class="time-elapsed">00:02:20</span>  / 
+              <span class="time-duration">1:20:00</span>
+            </div>
+            <div class="sound-bar">
+            <div class="sound-off" onclick="soundoff(this)">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.65002 1.75L18.65 18.25" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></path>
+              <path d="M6.65002 6.25V13.75" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></path>
+              <path d="M17.15 8.01953C17.6325 8.56736 17.8987 9.27233 17.8987 10.0023C17.8987 10.7324 17.6325 11.4373 17.15 11.9852" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></path>
+              <path d="M13.4 12.4748V18.9998L6.65002 13.7498H2.15002C1.95111 13.7498 1.76035 13.6708 1.61969 13.5301C1.47904 13.3895 1.40002 13.1987 1.40002 12.9998V6.9998C1.40002 6.80089 1.47904 6.61013 1.61969 6.46948C1.76035 6.32882 1.95111 6.2498 2.15002 6.2498H6.65002L7.2894 5.75293" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></path>
+              <path d="M9.66406 3.90531L13.4 1V8.01531" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></path>
+              </svg>
+            </div>
+            <div class="sound-icon" onclick="soundoff(this)">{% render 'sound-icon' %}</div>
+            <div class="sound-progress">
+                <div class="sound-progress-bar"></div>
+                <div class="sound-progress-bar-fill" width="100%"></div>
+                <input type="range" min="0" max="1" step="0.01" value="1" class="volu-value" style="opacity: 0;">
+            </div>
+          </div>
+          </div>
+        </div>
+      
+        <div class="recommended-audio all-audio-experiences hidden">
+          <div class="title-wrpper">
+            <h4 class="title h4" style="color: #ffffff;"> RECOMMENDED AUDIO EXPERIENCES</h4>
+          </div>
+          <div class="audio-services">
+            {% for block in section.blocks %}
+              {% assign get_handle = block.settings.experience-obj | split:'/' | last %}
+              {% assign get_experience_object = shop.metaobjects['experiences'][get_handle] %}
+              <div class="audio-item swiper-slide">
+                <!-- <a href="/"></a> -->
+                <template>
+                  <div>
+                    <p class="therapy-type">{{ get_experience_object.sub_title.value }}</p>
+                    <h2 class="therapy-name">{{ get_experience_object.title.value }}</h2>
+                    <p class="description">{{ get_experience_object.description.value }}</p>
+                    {% if get_experience_object.audio.value != blank %}
+                    <audio id="audio" controls class="hidden">
+                      <source src="{{ get_experience_object.audio.value }}" type="audio/mp3">
+                      Your browser does not support the audio element.
+                    </audio>
+                    {% endif %}
+                    <div class="details">
+                        {% if get_experience_object.how_many_minutes.value != blank %}
+                        <div class="detail-item">
+                            <span class="audio-type">LENGTH</span>
+                            <span>{{ get_experience_object.how_many_minutes.value }}</span>
+                        </div>
+                        {% endif %}
+        
+                        {% if get_experience_object.difficulty_level.value != blank %}
+                        <div class="detail-item">
+                            <span class="audio-type">DIFFICULTY LEVEL</span>
+                            <span>{{ get_experience_object.difficulty_level.value }}</span>
+                        </div>
+                        {% endif %}
+        
+                        {% if get_experience_object.mood.value != blank %}
+                        <div class="detail-item">
+                            <span class="audio-type">MOOD</span>
+                            <span>{{ get_experience_object.mood.value }}</span>
+                        </div>
+                        {% endif %}
+        
+                        {% if get_experience_object.guide.value != blank %}
+                        <div class="detail-item">
+                            <span class="audio-type">GUIDE</span>
+                            <span>{{ get_experience_object.guide.value }}</span>
+                        </div>
+                        {% endif %}
+        
+                        {% if get_experience_object.guidance_level.value != blank %}
+                        <div class="detail-item">
+                            <span class="audio-type">GUIDANCE LEVEL</span>
+                            <span>{{ get_experience_object.guidance_level.value }}</span>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% if get_experience_object.audio.value != blank %}
+                    <div class="play-button" onclick="playAudio(this)">
+                      <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100ZM42.5373 62.9258L64.9254 50L42.5373 37.0742V62.9258Z" fill="#C79D5B"></path>
+                      </svg>
+                    </div>
+                    {% endif %}
+                  </div>
+                </template>
+                <div class="image-box">
+                  <img src="{{ get_experience_object.image.value | image_url }}" height="auto" width="auto" />
+                  <div class="icon">{% render 'spa-icon' %}</div>
+                </div>
+                <div class="audio-content">
+                  <h4 class="audio-title h5">{{ get_experience_object.title.value }}</h4>
+                  <div class="spa-time">{{ get_experience_object.how_many_minutes.value }} <span class="ellips"></span> {{ get_experience_object.difficulty_level.value }}</div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+    </div>
+    
+  </div>
+</div>
+
+<script>
+  
+  document.querySelectorAll('.audio-item').forEach((popup_button) =>{
+    popup_button.querySelector('.image-box').addEventListener('click',function(){
+        if(document.querySelectorAll('.audio-item.active-audio').length > 0){
+          document.querySelector('.audio-item.active-audio').classList.remove('active-audio');
+        }
+        popup_button.classList.add('active-audio');
+        if(popup_button.nextElementSibling != null){
+          if(popup_button.nextElementSibling.getAttribute('data-audio') == 'true'){
+            document.querySelector('.audio-popup .pause-btn-wrapper .forward-button').classList.remove('hidden');
+          }else{
+            document.querySelector('.audio-popup .pause-btn-wrapper .forward-button').classList.add('hidden');
+          }
+          console.log('hasNext',popup_button.nextElementSibling.getAttribute('data-audio'));
+        }else{
+          document.querySelector('.audio-popup .pause-btn-wrapper .forward-button').classList.add('hidden');
+        }
+        if(popup_button.previousElementSibling != null){
+          if(popup_button.previousElementSibling.getAttribute('data-audio') == 'true'){
+            document.querySelector('.audio-popup .pause-btn-wrapper .backward-button').classList.remove('hidden');
+          }else{
+            document.querySelector('.audio-popup .pause-btn-wrapper .backward-button').classList.add('hidden');
+          }
+          console.log('hasPrev',popup_button.previousElementSibling.getAttribute('data-audio'));
+        }else{
+          document.querySelector('.audio-popup .pause-btn-wrapper .backward-button').classList.add('hidden');
+        }
+      
+        const content = document.createElement('div');
+        content.className = 'popup-inner';
+        content.appendChild(this.closest('.audio-item').querySelector('template').content.firstElementChild.cloneNode(true));
+        document.querySelector('.audio-popup .content').innerHTML = '';
+        document.querySelector('.audio-popup .content').appendChild(content);
+        document.querySelector('.audio-popup .audio-popup-wrapper img').src = popup_button.querySelector('.image-box img').src;
+        document.body.querySelector('.audio-popup').classList.add('open');
+        document.body.classList.add('popup-open');
+        if(document.querySelector('.audio-popup .audio-popup-wrapper .recommended-audio').classList.contains('hidden') == false){
+          document.querySelector('.audio-popup .audio-popup-wrapper .recommended-audio').classList.add('hidden');
+        }
+    });
+  });
+
+  document.querySelectorAll('.filter-items').forEach((filter_button) =>{
+    filter_button.addEventListener('click',function(e){
+
+      if(filter_button.classList.contains('open')){
+        filter_button.closest('.filter-services').querySelector('.filter-items.open').classList.remove('open');
+      }else{
+        if(filter_button.closest('.filter-services').querySelectorAll('.filter-items.open').length > 0){
+          filter_button.closest('.filter-services').querySelector('.filter-items.open').classList.remove('open'); 
+          filter_button.classList.add('open');
+        }
+        filter_button.classList.add('open');
+      }
+      
+    });
+  });
+
+  document.querySelectorAll('.all-audio-experiences .filter-services.desktop-filter .filter-items .filter-submenu li').forEach((li_item) => {
+    li_item.addEventListener('click',function(e){
+      
+      if(li_item.classList.contains('selected')){
+        li_item.classList.remove('selected');
+      }else{
+        li_item.classList.add('selected');
+      }
+      
+      var length = li_item.closest('ul').querySelectorAll('li.selected').length;
+      if(length > 0){
+        li_item.closest('.filter-items').classList.add('selected');
+        li_item.closest('.filter-items').querySelector('.filter-summery .label').innerHTML = li_item.getAttribute('data-title') + '<span> ('+length+')</span>';
+      }else{
+        li_item.closest('.filter-items').classList.remove('selected');
+        li_item.closest('.filter-items').querySelector('.filter-summery .label').innerHTML = li_item.getAttribute('data-title');
+      }
+      
+      filter();
+    })
+  });
+
+  function filter(){
+    var active_value = [];
+    var active_value_tags = [];
+    document.querySelectorAll('.filter-items.selected').forEach((selected_filter) => {
+      selected_filter.querySelectorAll('li.selected').forEach((selected_li) => {
+        var attr_val = selected_li.getAttribute('data-name'),name_val = selected_li.textContent;
+        active_value.push(selected_li.getAttribute('data-name'));
+        active_value_tags.push({attr_val,name_val});
+      })
+    });
+
+    //console.log(active_value,'active_value');
+
+    if(active_value.length > 0){
+     for(var x=0;x<active_value.length;x++){
+       if(x==0){
+         document.querySelector('.active_filter').innerHTML = '<div class="active_item" onclick="RemoveFilter(this)" data-title="'+active_value_tags[x].attr_val+'">'+active_value_tags[x].name_val+'<span>+</span></div>';
+       }else{
+         document.querySelector('.active_filter').innerHTML += '<div class="active_item" onclick="RemoveFilter(this)" data-title="'+active_value_tags[x].attr_val+'">'+active_value_tags[x].name_val+'<span>+</span></div>';
+       }
+     } 
+    }else{
+      document.querySelector('.active_filter').innerHTML = '';
+    }
+
+    if(active_value.length > 1){
+      var selector = '.'+active_value.join('.');
+    }else{
+      var selector = '.'+active_value;  
+    }
+  
+    if(active_value.length > 0){
+      document.querySelectorAll(selector).forEach((add_hide) => {
+        add_hide.classList.add('no-hide');
+      })
+      document.querySelectorAll('.all-audio-experiences.all-audio-section .audio-services .audio-item').forEach((hide_all) => {
+        hide_all.classList.remove('hidden');
+      })
+      document.querySelectorAll('.all-audio-experiences.all-audio-section .audio-services .audio-item').forEach((audio_hide_unhide) => {
+        if(audio_hide_unhide.classList.contains('no-hide') == false){
+          audio_hide_unhide.classList.add('hidden');
+        }
+      })
+      document.querySelectorAll('.all-audio-experiences.all-audio-section .audio-services .audio-item.no-hide').forEach((remove_hide) => {
+        remove_hide.querySelector('.image-box .icon').classList.add('hidden');
+        remove_hide.classList.remove('no-hide');
+      })
+    }else{
+      document.querySelectorAll('.all-audio-experiences.all-audio-section .audio-services .audio-item.hidden').forEach((audio_hide_unhide) => {
+        audio_hide_unhide.classList.remove('hidden');
+      })
+
+      document.querySelectorAll('.all-audio-experiences.all-audio-section .audio-services .image-box .icon.hidden').forEach((removeHideIcon) => {
+        removeHideIcon.classList.remove('hidden');
+      })
+    }  
+    
+    document.querySelector('.all-audio-section').scrollIntoView();
+    
+  }
+
+  function mobile_filter_apply(){
+    var active_value_mobile = [];
+    var active_value_mobile_tags = [];
+    document.querySelectorAll('.mobile-filter_main li.selected-item-mobile').forEach((mobile_filter_active) => {
+      var attr_val = mobile_filter_active.querySelector('div span').getAttribute('data-name'),name_val = mobile_filter_active.querySelector('div span').textContent;
+      active_value_mobile.push(mobile_filter_active.querySelector('div span').getAttribute('data-name'));
+      active_value_mobile_tags.push({attr_val,name_val});
+    })
+
+    if(active_value_mobile.length > 1){
+      var mobile_selector = '.'+active_value_mobile.join('.');
+    }else{
+      var mobile_selector = '.'+active_value_mobile;  
+    }
+
+    if(active_value_mobile.length > 0){
+      document.querySelectorAll(mobile_selector).forEach((add_hide) => {
+        add_hide.classList.add('no-hide');
+      })
+      document.querySelectorAll('.all-audio-experiences.all-audio-section .audio-services .audio-item').forEach((hide_all) => {
+        hide_all.classList.remove('hidden');
+      })
+      document.querySelectorAll('.all-audio-experiences.all-audio-section .audio-services .audio-item').forEach((audio_hide_unhide) => {
+        if(audio_hide_unhide.classList.contains('no-hide') == false){
+          audio_hide_unhide.classList.add('hidden');
+        }
+      })
+      document.querySelectorAll('.all-audio-experiences.all-audio-section .audio-services .audio-item.no-hide').forEach((remove_hide) => {
+        remove_hide.querySelector('.image-box .icon').classList.add('hidden');
+        remove_hide.classList.remove('no-hide');
+      })
+    }else{
+      document.querySelectorAll('.all-audio-experiences.all-audio-section .audio-services .audio-item.hidden').forEach((audio_hide_unhide) => {
+        audio_hide_unhide.classList.remove('hidden');
+      })
+
+      document.querySelectorAll('.all-audio-experiences.all-audio-section .audio-services .image-box .icon.hidden').forEach((removeHideIcon) => {
+        removeHideIcon.classList.remove('hidden');
+      })
+    }
+
+    console.log('data',active_value_mobile,active_value_mobile_tags);
+    document.querySelector('.all-audio-section').scrollIntoView();
+    document.querySelector('.mobile-service-filter').classList.remove('menu-opening');
+    
+  }
+
+  function mobile_filter_clear(){
+    document.querySelectorAll('.mobile-filter_main li.selected-item-mobile').forEach((mobile_filter_active) => {
+      mobile_filter_active.classList.remove('selected-item-mobile');
+      mobile_filter_active.querySelector('input').checked = false;
+    })
+    mobile_filter_apply();
+  }
+
+  function selectFilter(ele){
+    if(ele.closest('li').classList.contains('selected-item-mobile')){
+      ele.closest('li').classList.remove("selected-item-mobile");
+      ele.querySelector('input').checked = false;
+    }else{
+      ele.closest('li').classList.add("selected-item-mobile");
+      ele.querySelector('input').checked = true;
+    }
+  }
+
+  function playAudio(ele){
+
+
+    if(ele.closest('.audio-popup').querySelector('.audio-popup-wrapper .recommended-audio').classList.contains('hidden') == false){
+      ele.closest('.audio-popup').querySelector('.audio-popup-wrapper .recommended-audio').classList.add('hidden');
+    }
+    const audio_selector = ele.closest('.popup-inner').querySelector('audio');
+    ele.closest('.audio-popup').classList.add('play');
+    ele.closest('.audio-popup').querySelector('.progressbar-wrapper .time-sound-bar .time-duration').textContent = formatTime(audio_selector.duration);
+    ele.closest('.audio-popup').querySelector('.progressbar-wrapper .time-sound-bar .time-elapsed').textContent = formatTime(audio_selector.currentTime);
+    audio_selector.play();
+    ele.closest('.audio-popup').querySelector('.sound-progress-bar-fill').style.width = '100%';
+
+    audio_selector.addEventListener('ended', () => {
+      audio_selector.currentTime = 0;
+      ele.closest('.audio-popup').querySelector('.progressbar-wrapper .time-sound-bar .time-elapsed').textContent = formatTime(0);
+      ele.closest('.audio-popup').classList.remove('play');
+      if(ele.closest('.audio-popup').querySelectorAll('.audio-popup-wrapper .recommended-audio .audio-services .audio-item').length > 0){
+        ele.closest('.audio-popup').querySelector('.audio-popup-wrapper .recommended-audio').classList.remove('hidden');  
+      }
+    });
+
+    audio_selector.addEventListener('timeupdate', () => {
+      var Durationvalue = Math.floor((100 / audio_selector.duration) * audio_selector.currentTime) + '%';
+      ele.closest('.audio-popup').querySelector('.progressbar-wrapper .fill-bar').style.width = Durationvalue;
+      ele.closest('.audio-popup').querySelector('.progressbar-wrapper .time-sound-bar .time-elapsed').textContent = formatTime(audio_selector.currentTime);
+    });
+
+    ele.closest('.audio-popup').querySelector('.volu-value').addEventListener('input', () => {
+      audio_selector.volume = ele.closest('.audio-popup').querySelector('.volu-value').value;
+      ele.closest('.audio-popup').querySelector('.sound-progress-bar-fill').style.width = ele.closest('.audio-popup').querySelector('.volu-value').value.split('.')[1] + '%';
+    });
+  }
+
+  function closePopup(ele){
+    if(document.querySelectorAll('.audio-item.active-audio').length > 0){
+      document.querySelector('.audio-item.active-audio').classList.remove('active-audio');
+    }
+    if(ele.closest('.audio-popup.play')){
+      ele.closest('.audio-popup').classList.remove('play');
+      ele.closest('.audio-popup').querySelector('.popup-inner audio').pause();
+    }else{
+      ele.closest('.audio-popup').classList.remove('open');
+      document.body.classList.remove('popup-open');
+    }
+  }
+
+  // function forward(ele){
+  //   const audio_selector_ff = ele.closest('.overlay').querySelector('.popup-inner audio');
+  //   audio_selector_ff.currentTime = Math.min(audio_selector_ff.currentTime + 10, audio_selector_ff.duration);
+  // }
+
+  // function backward(ele){
+  //   const audio_selector__bk = ele.closest('.overlay').querySelector('.popup-inner audio');
+  //   audio_selector__bk.currentTime = Math.min(audio_selector__bk.currentTime - 10, audio_selector__bk.duration);
+  // }
+
+  function forward(ele){
+    if(document.querySelectorAll('.audio-item.active-audio').length > 0){
+      var next_ele = document.querySelector('.audio-item.active-audio').nextElementSibling;
+      document.querySelector('.audio-item.active-audio').classList.remove('active-audio');
+      ele.closest('.overlay').querySelector('header .close-btn').click();
+      ele.closest('.overlay').querySelector('header .close-btn').click();
+      console.log(next_ele)
+      next_ele.querySelector('.image-box').click();
+    }
+    
+    // const audio_selector_ff = ele.closest('.overlay').querySelector('.popup-inner audio');
+    // audio_selector_ff.playbackRate = Math.min(audio_selector_ff.playbackRate + 0.5, 4);
+  }
+
+  function backward(ele){
+    // const audio_selector__bk = ele.closest('.overlay').querySelector('.popup-inner audio');
+    // audio_selector__bk.playbackRate = Math.min(audio_selector__bk.playbackRate - 0.5, 2);
+    var Prev_ele = document.querySelector('.audio-item.active-audio').previousElementSibling;
+    document.querySelector('.audio-item.active-audio').classList.remove('active-audio');
+    ele.closest('.overlay').querySelector('header .close-btn').click();
+    ele.closest('.overlay').querySelector('header .close-btn').click();
+    console.log(Prev_ele)
+    Prev_ele.querySelector('.image-box').click();
+  }
+
+  function soundoff(ele){
+    const audio_selectormute = ele.closest('.overlay').querySelector('.popup-inner audio');
+    audio_selectormute.muted = !audio_selectormute.muted;
+    if(ele.closest('.sound-bar').classList.contains('active')){
+      ele.closest('.sound-bar').classList.remove('active');
+    }else{
+      ele.closest('.sound-bar').classList.add('active');
+    }
+  }
+  
+  function formatTime(seconds) {
+    const hours = Math.floor(seconds / 3600);
+    const min = Math.floor(seconds / 60);
+    const sec = Math.floor(seconds % 60);
+    return `${hours.toString().padStart(2, '0')}:${min.toString().padStart(2, '0')}:${sec.toString().padStart(2, '0')}`;
+  }
+
+  function readMore(ele){
+    // ele.closest('.description-more').querySelector('.description.read-more').classList.add('hidden');
+    // ele.closest('.description-more').querySelector('.description.show-more').classList.remove('hidden');
+    // ele.closest('.description-more').querySelector('.read-more.link').classList.add('hidden');
+    // ele.closest('.description-more').querySelector('.read-less.link').classList.remove('hidden');
+    ele.closest('.audio-item').querySelector('.image-box').click();
+  }
+
+  function readLess(ele){
+    ele.closest('.description-more').querySelector('.description.show-more').classList.add('hidden');
+    ele.closest('.description-more').querySelector('.description.read-more').classList.remove('hidden');
+    ele.closest('.description-more').querySelector('.read-less.link').classList.add('hidden');
+    ele.closest('.description-more').querySelector('.read-more.link').classList.remove('hidden');
+  }
+
+  function RemoveFilter(ele){
+    var remove_title = ele.getAttribute('data-title');
+    document.querySelector('.filter_li_item.selected[data-name="'+remove_title+'"]').classList.remove('selected');
+    var length = document.querySelector('.filter_li_item[data-name="'+remove_title+'"]').closest('ul').querySelectorAll('li.selected').length;
+    if(length > 0){
+      document.querySelector('.filter_li_item[data-name="'+remove_title+'"]').closest('.filter-items').classList.add('selected');
+      document.querySelector('.filter_li_item[data-name="'+remove_title+'"]').closest('.filter-items').querySelector('.filter-summery .label').innerHTML = document.querySelector('.filter_li_item[data-name="'+remove_title+'"]').getAttribute('data-title') + '<span> ('+length+')</span>';
+    }else{
+      document.querySelector('.filter_li_item[data-name="'+remove_title+'"]').closest('.filter-items').classList.remove('selected');
+      document.querySelector('.filter_li_item[data-name="'+remove_title+'"]').closest('.filter-items').querySelector('.filter-summery .label').innerHTML = document.querySelector('.filter_li_item[data-name="'+remove_title+'"]').getAttribute('data-title');
+    }
+    
+    filter();
+  }
+
+  // The below script is scroll to top functionality
+// Select the back to top button
+const backToTopButton = document.querySelector('.backtotop');
+
+// Show the button when the user scrolls down 200px or more
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 200) {
+    backToTopButton.style.display = 'flex';  // Show button
+  } else {
+    backToTopButton.style.display = 'none';   // Hide button when at the top
+  }
+});
+
+// Scroll to the top when the button is clicked
+backToTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'  // Smooth scroll to the top
+  });
+});
+
+  
+</script>
+{% schema %}
+  {
+    "name": "All Audio Experiences",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "experience",
+        "name": "experience",
+        "settings": [
+          {
+            "type": "url",
+            "id": "experience-obj",
+            "label": "Select experience"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "All Audio Experiences"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,273 @@
+{{ 'section-main-page.css' | asset_url | stylesheet_tag }}
+{{ 'main-faq.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="page-width _page-width--narrow section-{{ section.id }}-padding">
+  <div class="leftPart {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+    <h1 class="main-page-title page-title h1">
+      {{ section.settings.title | escape }}
+    </h1>
+    {% assign _firstLoop = false %}
+    <ul class="faq-sLink list-unstyled">
+      {%- for block in section.blocks -%}        
+        {%- if block.type == 'text' -%}
+        {% if _firstLoop == false %}{% assign _firstLoop = true %}{% endif %}
+        <li>
+          <a href="#faq-{{ block.id }}" class="link gloabLs{% if _firstLoop == false %} active{% endif %}" data-category="faq-{{ block.settings.title | handleize }}-{{ forloop.index }}" data-faq-category>{% render 'icon-right-arrow-2' %} {{ block.settings.title }}</a>
+        </li>
+        {% elsif block.type == 'title' %}
+        {% if _firstLoop == false %}{% assign _firstLoop = true %}{% endif %}
+        <li>
+          <a href="#faq-{{ block.id }}" class="link gloabLs{% if _firstLoop == false %} active{% endif %}" data-category="faq-{{ block.settings.title | handleize }}-{{ forloop.index }}" data-faq-category>{% render 'icon-right-arrow-2' %} {{ block.settings.title }}</a>
+        </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+  <div class="rightPart {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    {%- for block in section.blocks -%}
+      {% assign forloopIndex = forloop.index %}      
+      {% if block.type == 'text' %}
+        {% assign this_category = block.settings.title | handleize %}
+        <div class="faqBlock" {{ block.shopify_attributes }} data-category="faq-{{ this_category }}-{{ forloop.index }}" id="faq-{{ block.id }}">
+          <div class="faq-sTitle">
+            <h2 class="h3">{{ block.settings.title }}</h2>
+          </div>
+          
+          <div class="faq-sContent">
+            {%- for i in (1..4) -%}
+              {%- capture title %}title_{{ i }}{% endcapture -%}
+              {%- capture detail %}detail_{{ i }}{% endcapture -%}
+              {%- assign title = block.settings[title] -%}
+              {%- assign detail = block.settings[detail] -%}
+              {%- if title != blank or detail -%}
+              <div class="f-sCon--item">
+                <span class="h6">0{{ i }}</span>
+                <h4 class="h5">{{ title }}</h4>
+                <div class="rte">
+                  <p>{{ detail }}</p>
+                </div>
+              </div>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        </div>
+      {% elsif block.type == 'title' and block.settings.title != blank %}
+        {% assign this_category = block.settings.title | handleize %}        
+        <div class="faqBlock" {{ block.shopify_attributes }} data-category="faq-{{ this_category }}-{{ forloop.index }}" id="faq-{{ block.id }}">
+          <div class="faq-sTitle">
+            <h2 class="h3">{{ block.settings.title }}</h2>
+          </div>
+
+          <div class="faq-sQA">            
+          {%- for block in section.blocks -%}            
+            {% if forloop.index > forloopIndex %}
+              {% if block.type == 'que_ans' %}
+              <div class="tab" {{ block.shopify_attributes }}>
+                <h3 class="tab-title uppercase h5">{{ block.settings.title }} {%- render 'icon-plus-2' -%}</h3>
+                <div class="tabWrapper rte">
+                  {{ block.settings.detail }}
+                </div>
+              </div>
+              {% else %}
+                {% break %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          </div>
+        </div>        
+      {% endif %}
+    {% endfor %}
+    
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", (event) => {
+  $('.tab .tab-title').click(function (event) {
+    var _this = $(this);
+    if( $(this).parent().hasClass('active') ){     
+      $(this).next().slideUp(150, function () {
+        _this.parent().removeClass('active');
+      });
+    }else{
+      var _sibling = $(this).parent().siblings('.active');
+      $(_sibling).find('.tabWrapper').slideUp(250, function(){
+        $(_sibling).removeClass('active');
+      });      
+      $(this).next().slideDown(250, function(){
+        _this.parent().addClass('active');
+      });
+    }
+  });
+  $(document).on("click", "[data-faq-category]", function (e) {
+    //remove hidden class and set blank search input
+    e.preventDefault();
+    var header = $("sticky-header").outerHeight(true) || 0;
+    var id = $(this).attr("href");
+    $(`.faq-sLink a.active`).removeClass('active');
+    $(this).addClass('active');
+    $("html, body").stop();
+    $("html, body").animate({scrollTop: $(id).offset().top - header - 23},200);
+  });
+  $(window).scroll( debounce(function (e) {
+    var _scrolTop = $(this).scrollTop();
+    var header = $("sticky-header").outerHeight(true) || 0;
+    _scrolTop += header;    
+     $('.faqBlock').each(function(){
+       var _offsetTop = $(this).offset().top - header;
+       var _offsetTopHeight = _offsetTop + $(this).outerHeight(true);       
+       if( _scrolTop > (_offsetTop) ){
+         $(`.faq-sLink a.active`).removeClass('active');
+         $(`.faq-sLink a[href="#${ $(this).attr('id') }"]`).addClass('active');
+         return;
+       }
+     });
+  }, 110) );
+});
+</script>
+
+{% schema %}
+{
+  "name": "FAQ's",
+  "tag": "section",
+  "class": "section mainFaq",
+  "settings": [
+    {
+     "type":"text",
+      "label":"Section title",
+      "id":"title",
+      "default":"FAQS"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 100
+    }
+  ],
+  "blocks":[
+    {
+      "name":"Text",
+      "type":"text",
+      "settings":[
+        {
+          "type":"text",
+          "label":"Enter block Title",
+          "id":"title",
+          "default":"SWEAT ETIQUETTE"
+        },
+        {
+          "type":"text",
+          "label":"Enter title 1",
+          "id":"title_1",
+          "default":"Be present"
+        },
+        {
+          "type":"inline_richtext",
+          "label":"Enter detail 1",
+          "id":"detail_1",
+          "default":"We all love a good selfie and sweating with our besties, but it’s important to be present during class. Phones, conversations, doing your own personal workouts and going in and out of class can be unsafe and distracting for others. Class time is precious time, and magic happens when we all move together."
+        },
+        {
+          "type":"text",
+          "label":"Enter title 2",
+          "id":"title_2",
+          "default":"Be on time"
+        },
+        {
+          "type":"inline_richtext",
+          "label":"Enter detail 2",
+          "id":"detail_2",
+          "default":"Out of respect and safety for your fellow classmates and the instructor, classes start on time and latecomers are not permitted. Arrive with enough time to store your belongings and get ready for class. Your studio time is a gift to yourself – make time for you!"
+        },
+        {
+          "type":"text",
+          "label":"Enter title 3",
+          "id":"title_3",
+          "default":"Be clean"
+        },
+        {
+          "type":"inline_richtext",
+          "label":"Enter detail 3",
+          "id":"detail_3",
+          "default":"Practice good personal hygiene. Be considerate of those around you, and help keep our shared space in tip top shape for all to enjoy."
+        },
+        {
+          "type":"text",
+          "label":"Enter title 4",
+          "id":"title_4",
+          "default":"Be kind"
+        },
+        {
+          "type":"inline_richtext",
+          "label":"Enter detail 4",
+          "id":"detail_4",
+          "default":"Show care and respect for your fellow Sweat Fam, and treat others the way you want to be treated. Lift each other up to ensure both team members and community members are respected, valued, safe, and supported. All love, no hate."
+        }
+      ]
+    },
+    {
+      "name":"Title",
+      "type":"title",
+      "settings":[
+        {
+          "type":"text",
+          "label":"Enter faq Title",
+          "id":"title",
+          "default":"LOCATION & HOURS"
+        }
+      ]
+    },
+    {
+      "name":"Que/Ans",
+      "type":"que_ans",
+      "settings":[
+        {
+          "type":"text",
+          "label":"Enter Question",
+          "id":"title",
+          "default":"What are your hours?"
+        },
+        {
+          "type":"richtext",
+          "label":"Enter answer",
+          "id":"detail",
+          "default":"<p>We don’t have dedicated parking; however, there are lots of public parking and transit options nearby. We’re just across the street from the Queen St. stop and from the Eaton Centre parking garage. There is also a Green P parking garage at Dundas Square and Victoria St, as well as more parking options on Victoria St.</p>"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

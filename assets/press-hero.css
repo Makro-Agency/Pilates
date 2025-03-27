@@ -1,0 +1,107 @@
+.press-hero .banner__box .banner__heading+* {
+  margin-top: 15px;
+}
+.press-hero .banner__box>*+.banner__buttons {
+  margin-top: 40px;
+}
+.press-hero .banner__box {
+  max-width: 600px;
+}
+.press-hero .banner__text{
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: normal;
+}
+.press-hero .banner__text+.banner__heading{
+  margin-top: 40px;
+}
+.press-hero-logo{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.press-hero-logo h6{
+  color: #fff;
+  font-size: 12px;
+  font-weight: 450;
+  line-height: normal;
+  /*letter-spacing: 0.24px;*/
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+.press-hero-logo .row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.press-hero-logo .col{
+  width: 16.66%;
+  padding: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.20);
+}
+.press-hero-logo .col:not(:last-child){
+  border-right: 1px solid rgba(255, 255, 255, 0.20);
+}
+.press-hero-logo .col-box{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.press-hero-logo .col img{
+  width: 90px;
+  height: 40px;
+  object-fit: contain;
+}
+.press-hero .banner__box{
+  margin-bottom: 160px;
+}
+
+@media screen and (min-width: 750px){
+  .press-hero .banner--desktop-transparent .banner__box{
+    padding: 0;
+    /* max-width: 520px !important; */
+  }
+  .press-hero .press-hero-logo{
+    background: transparent;
+  }
+}
+@media screen and (max-width: 989px){
+  .press-hero-logo .col{
+    padding: 20px;
+  }
+  .press-hero-logo h6{
+    margin: 0 0 15px;
+  }
+  .press-hero-logo .col img{
+    width: 70px;
+    height: 30px;
+  }
+  .press-hero .banner__box {
+    margin-bottom: 105px;
+  }
+  .press-hero .banner__text+.banner__heading {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 749px){
+  .banner:not(.banner--mobile-bottom) .press-hero-logo{
+    background: transparent;
+  }
+  .press-hero .banner__box{
+    padding: 30px 20px;
+  }
+  .press-hero .banner__buttons{
+    max-width: 100%;
+    width: 100%;
+  }
+  .press-hero .banner__buttons .button{
+    width: 100%;
+  }
+  .press-hero-logo .col{
+    width: 33.33%;
+  }
+  .press-hero .banner__box {
+    margin-bottom: 175px;
+  }
+}

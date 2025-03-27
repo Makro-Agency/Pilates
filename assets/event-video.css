@@ -1,0 +1,14 @@
+.event-video .deferred-media__poster-button{
+  height: 80px;
+  width: 80px;
+}
+.event-video .deferred-media__poster-button:after{
+  position: absolute;
+  content: "";
+  top: -7px;
+  left: -7px;
+  bottom: -7px;
+  right: -7px;
+  border: 7px solid rgba(255,255,255,0.2);
+  border-radius: 50%;
+}

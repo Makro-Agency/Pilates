@@ -1,0 +1,15 @@
+.instagram--section{
+  background-image: url(https://shop.sweatandtonic.com/cdn/shop/files/Rectangle_94.svg?v=1698990396);
+  background-repeat: repeat;
+  background-position: center;
+}
+.instagram--section .section-head-top{
+  margin-bottom: 40px;
+}
+.instagram--section .section-head-wrap h6, 
+.instagram--section .section-head-wrap h2{
+  margin: 0;
+}
+.instagram--section .section-head-wrap h6+h2{
+  margin: 15px 0 0;
+}

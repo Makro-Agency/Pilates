@@ -1,0 +1,49 @@
+.policies-section .rte{
+  color: #26221B;
+}
+.policies-section .rte *+h2, 
+.policies-section .rte *+h3{
+  margin-top: 80px;
+}
+.policies-section h5, 
+.policies-section .h5{
+  margin-bottom: 10px;
+}
+.policies-section .rte a{
+  color: currentcolor;
+  text-decoration: underline;
+}
+.policies-section .rte a:hover{
+  text-decoration: none;
+}
+.policies-section .main-page-title {
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1199px){
+  .policies-section .rte *+h2, 
+  .policies-section .rte *+h3{
+    margin-top: 60px;
+  }
+  .policies-section .main-page-title {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 989px){
+  .policies-section .rte *+h2, 
+  .policies-section .rte *+h3{
+    margin-top: 50px;
+  }
+  .policies-section .main-page-title {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 749px){
+  .policies-section .rte *+h2, 
+  .policies-section .rte *+h3{
+    margin-top: 40px;
+  }
+  .policies-section .main-page-title {
+    margin-bottom: 30px;
+  }
+}

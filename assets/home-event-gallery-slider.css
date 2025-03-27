@@ -1,0 +1,172 @@
+.home-event-gallery-slider .section-head-top{
+  padding: 150px 0 40px;
+  background-image: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Rectangle_94.svg?v=1698990396');
+  background-repeat: repeat;
+  background-position: center;
+}
+.home-event-gallery-slider .title-wrap .h6, .home-event-gallery-slider .title-wrap .h2{
+  margin: 0
+}
+.home-event-gallery-slider .title-wrap .h6+.h2{
+  margin: 30px 0 0;
+}
+.home-event-gallery-slider .section-head-wrap{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.home-event-gallery-slider .swiper-arrows{
+  display: flex;
+}
+body .home-event-gallery-slider .swiper-arrow-btn{
+  position: static;
+  height: auto;
+  width: 20px;
+  border-radius: 0;
+  background: transparent;
+  background-image: none;
+  color: #000;
+  margin-top: 0;
+}
+.home-event-gallery-slider .swiper-button-next{
+  margin-left: 40px;
+}
+body .home-event-gallery-slider .swiper-arrow-btn.swiper-button-disabled{
+  opacity: 0.3;
+}
+.home-event-gallery-item .h5{
+  margin: 0;
+}
+.home-event-gallery-item .multicolumn-card__info {
+  padding: 20px 40px 40px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  border-top: none;
+}
+.home-event-gallery-item:not(:last-child) .multicolumn-card__info{
+  border-right: none;
+}
+.home-event-gallery-item .event-location-wrap{
+  font-weight: 450;
+  color: #B1B1B1;
+  text-transform: uppercase;
+  margin: 15px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.home-event-gallery-item .text-wrap{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  align-self: stretch;
+  overflow: hidden;
+}
+.home-event-gallery-slider .grid--4-col-desktop .grid__item{
+  max-width: 100%;
+}
+.home-event-gallery-item .media--portrait {
+  padding-bottom: 74%;
+}
+.home-event-gallery-item .multicolumn-card{
+  position: relative;
+}
+.home-event-gallery-item .event--link{
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  display: block;
+}
+
+.home-event-gallery-slider .multicolumn-list__item {
+  height: auto;
+}
+
+.home-event-gallery-slider .multicolumn-card {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.home-event-gallery-slider .multicolumn-card>* {
+  width: 100%;
+}
+
+.home-event-gallery-item .multicolumn-card__info {
+  position: relative;
+}
+
+.home-event-gallery-item .multicolumn-card__info:before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: -1px;
+  width: 1px;
+  height: 100%;
+  border-left: 1px solid rgba(0,0,0,.1);
+}
+
+@media screen and (min-width: 1200px){
+  .home-event-gallery-item .ev-location+.ev-date{
+    padding-left: 14px;
+    margin-left: 10px;
+    position: relative;
+  }
+  .home-event-gallery-item .ev-location+.ev-date:after{
+    position: absolute;
+    content: "•";
+    top: 45%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  .home-event-gallery-item .event-location-wrap{
+      flex-direction: row;
+  }
+}
+@media screen and (max-width: 1600px){
+  .home-event-gallery-item .multicolumn-card__info {
+    padding: 20px 20px 30px;
+  }
+}
+
+@media screen and (max-width: 1199px){
+  .home-event-gallery-slider .section-head-top{
+    padding: 100px 0 40px;
+  }
+  .home-event-gallery-item .ev-location+.ev-date{
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 989px){
+  .home-event-gallery-slider .section-head-top{
+    padding: 80px 0 40px;
+  }
+  .home-event-gallery-item .multicolumn-card__info {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 749px){
+  .home-event-gallery-slider .section-head-top{
+    padding: 60px 0 40px;
+  }
+  .home-event-gallery-slider .title-wrap .h2 br{
+    display: none;
+  }
+  .home-event-gallery-slider .multicolumn-list:not(.slider) {
+    padding-left: 0;
+  }
+  .home-event-gallery-slider .title-wrap .h6+.h2 {
+    margin: 20px 0 0;
+  }
+  .home-event-gallery-item .text-wrap{
+    margin-top: 5px;
+  }
+  .home-event-gallery-slider .btn-wrap{
+    margin-top: 40px;
+  }
+}

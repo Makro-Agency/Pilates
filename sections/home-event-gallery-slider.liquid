@@ -1,0 +1,302 @@
+<link rel="stylesheet" href="{{ 'section-multicolumn.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'home-event-gallery-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'section-multicolumn.css' | asset_url }}"></noscript>
+<noscript><link rel="stylesheet" href="{{ 'home-event-gallery-slider.css' | asset_url }}"></noscript>
+
+{%- assign totalColumn = 0 -%}
+
+{%- capture gallarySlide -%}
+  
+  {%- liquid
+    assign highest_ratio = 0
+    for block in section.blocks
+      if block.settings.image.aspect_ratio > highest_ratio
+        assign highest_ratio = block.settings.image.aspect_ratio
+      endif
+    endfor
+  -%}
+  
+  {%- for block in section.blocks -%}
+    
+    {%- assign empty_column = '' -%}
+    {%- if block.settings.image == blank -%}
+      {%- assign empty_column = ' multicolumn-list__item--empty' -%}
+    {%- endif -%}
+
+    <div
+      id="Slide-{{ section.id }}-{{ forloop.index }}"
+      class="swiper-slide multicolumn-list__item home-event-gallery-item grid__item{{ empty_column }}"
+      {{ block.shopify_attributes }}
+    >
+      <div class="multicolumn-card content-container">
+        {%- if block.settings.image != blank -%}
+          <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--full-width">
+            <div class="media media--transparent media--portrait">
+              {%- liquid
+                assign number_of_columns = 4
+                assign number_of_columns_mobile = 1
+                assign grid_space_desktop = number_of_columns | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
+                assign grid_space_tablet = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
+                assign grid_space_mobile = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | divided_by: 2 | plus: 30 | append: 'px'
+                assign image_width = 1
+              -%}
+              {% capture sizes %}
+                (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - {{ grid_space_desktop }}) * {{ image_width }} /  {{ number_of_columns }}),
+                (min-width: 990px) calc((100vw - {{ grid_space_desktop }}) * {{ image_width }} / {{ number_of_columns }}),
+                (min-width: 750px) calc((100vw - {{ grid_space_tablet }}) * {{ image_width }} / {{ number_of_columns_mobile }}),
+                calc((100vw - {{ grid_space_mobile }}) * {{ image_width }} / {{ number_of_columns_mobile }})
+              {% endcapture %}
+              {{
+                block.settings.image
+                | image_url: width: 3000
+                | image_tag:
+                  loading: 'lazy',
+                  widths: '200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000',
+                  sizes: sizes,
+                  class: 'multicolumn-card__image'
+              }}
+            </div>
+          </div>
+          {%- assign totalColumn = totalColumn | plus: 1 -%}
+        {%- endif -%}
+    
+        <div class="multicolumn-card__info">
+          {%- if block.settings.title != blank -%}
+            <h5 class="inline-richtext h5">{{ block.settings.title }}</h5>
+          {%- endif -%}
+          {%- if block.settings.desc != blank -%}
+            <div class="rte text-wrap">{{ block.settings.desc }}</div>
+          {%- endif -%}
+          {%- if block.settings.location != blank or block.settings.date != blank -%}
+            <div class="event-location-wrap h6">
+              {%- if block.settings.location != blank -%}
+                <span class="ev-location">Location: {{ block.settings.location }}</span>
+              {%- endif -%}
+              {%- if block.settings.date != blank -%}
+                <span class="ev-date">{{ block.settings.date }}</span>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        </div>
+        {%- if block.settings.link != blank -%}
+          <a class="link event--link" href="{{ block.settings.link }}"></a>
+        {%- endif -%}
+        
+      </div>
+    </div>
+  {%- endfor -%}
+  
+{%- endcapture -%}
+
+
+{%- if gallarySlide != blank -%}
+
+  {%- if section.settings.top_padding_remove or section.settings.bottom_padding_remove -%}
+    <style>
+      {% if section.settings.top_padding_remove %}
+        #shopify-section-{{ section.id }}.section-padding{
+          padding-top: 0 !important;
+        }
+      {% endif %}
+      
+      {% if section.settings.bottom_padding_remove %}
+        #shopify-section-{{ section.id }}.section-padding{
+          padding-bottom: 0 !important;
+        }
+      {% endif %}
+    </style>
+  {%- endif -%}
+  
+  <div class="multicolumn1 color-{{ section.settings.color_scheme }} gradient{% if section.settings.title == blank %} no-heading{% endif %}">
+    <div
+      class="section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll--trigger animate-slide-in{% endif %}"
+      {% if settings.animations_reveal_on_scroll %}data-cascade{% endif %}
+    >
+
+      <div class="section-head-top">
+        {%- unless section.settings.title == blank and section.settings.sub_title == blank -%}
+          <div class="page-width">
+            <div class="section-head-wrap">
+              <div class="title-wrap">
+                {%- unless section.settings.sub_title == blank -%}
+                  <h6 class="h6">{{- section.settings.sub_title -}}</h6>
+                {%- endunless -%}
+                {%- unless section.settings.title == blank -%}
+                  <h2 class="h2">{{- section.settings.title -}}</h2>
+                {%- endunless -%}
+              </div>
+              {%- if totalColumn > 4 -%}
+                <div class="swiper-arrows">
+                  <div class="swiper-button-prev small-hide swiper-arrow-btn">{% render 'icon-link-arrow-2' %}</div>
+                  <div class="swiper-button-next small-hide swiper-arrow-btn">{% render 'icon-link-arrow-2' %}</div>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endunless -%}
+      </div>
+      
+  
+      {%- unless section.settings.full_width -%}<div class="page-width">{%- endunless -%}
+        <div class="slider-mobile-gutter swiper image--{{ totalColumn }}-slide" data-home-event-gallery-slider>
+          <div
+            class="swiper-wrapper multicolumn-list contains-content-container grid--1-col-tablet-down grid--4-col-desktop"
+            id="Slider-{{ section.id }}"
+            role="list"
+          >
+            {{ gallarySlide }}
+          </div>
+        </div>
+      {%- unless section.settings.full_width -%}</div>{%- endunless -%}
+
+      {%- if section.settings.button_label != blank -%}
+        <div class="center medium-hide large-up-hide page-width btn-wrap">
+          <a
+            class="button button--primary button--full-width"
+            {% if section.settings.button_link == blank %}
+              role="link" aria-disabled="true"
+            {% else %}
+              href="{{ section.settings.button_link }}"
+            {% endif %}
+          >
+            {{- section.settings.button_label | escape -}}
+          </a>
+        </div>
+      {%- endif -%}
+
+  
+    </div>
+  </div>
+{%- endif -%}
+
+
+
+{% schema %}
+{
+  "name": "Event gallery",
+  "class": "section home-event-gallery-slider section-padding",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": true,
+      "label": "Make section full width?"
+    },
+    {
+      "type": "text",
+      "id": "sub_title",
+      "default": "UPCOMING EVENTS",
+      "label": "Sub heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Multicolumn",
+      "label": "t:sections.multicolumn.settings.title.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "Mobile layout"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Button label",
+      "label": "t:sections.multicolumn.settings.button_label.label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.multicolumn.settings.button_link.label"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "top_padding_remove",
+      "default": false,
+      "label": "Remove top padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_padding_remove",
+      "default": false,
+      "label": "Remove bottom padding"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "EVENT NAME #1",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "desc",
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Qorem ipsum dolor sit amet.</p>",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "location",
+          "default": "THE WELL",
+          "label": "Loction"
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "default": "SEP,29 — 7 pm",
+          "label": "Date"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Card link",
+          "info": "If added whole card is clickable"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Event gallery",
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,200 @@
+{{ 'mobile-services-filter.css' | asset_url | stylesheet_tag }}
+
+
+
+<div class="mobile-service-filter">
+    <div class="mobile-filter-summery">
+      <div class="mobile-filter_open" onclick="openPanel(this)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <g clip-path="url(#clip0_5022_1593)">
+        <path d="M9.75 9.75C10.9926 9.75 12 8.74264 12 7.5C12 6.25736 10.9926 5.25 9.75 5.25C8.50736 5.25 7.5 6.25736 7.5 7.5C7.5 8.74264 8.50736 9.75 9.75 9.75Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M15.75 18.75C16.9926 18.75 18 17.7426 18 16.5C18 15.2574 16.9926 14.25 15.75 14.25C14.5074 14.25 13.5 15.2574 13.5 16.5C13.5 17.7426 14.5074 18.75 15.75 18.75Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12 7.5H20.25" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3.75 7.5H7.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18 16.5H20.25" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3.75 16.5H13.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_5022_1593">
+        <rect width="24" height="24" fill="white"/>
+        </clipPath>
+        </defs>
+        </svg>
+        <span>Filters</span>
+        {% render 'mobile-filter-right-arrow' %}
+      </div> 
+      <span class="mobile-filter_close" onclick="closePanel(this)">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_2924_2670)">
+            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></path>
+            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></path>
+          </g>
+          <defs>
+            <clipPath id="clip0_2924_2670">
+              <rect width="18" height="18" fill="currentColor"/></rect>
+            </clipPath>
+          </defs>
+        </svg>
+      </span>
+    </div>
+
+    {% unless button %}
+    <div id="FiltersFormMobile" class="mobile-filter-submenu">
+      <div class="mobile_filter_inner">
+        <div class="mobile_filter_header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <g clip-path="url(#clip0_5022_1593)">
+        <path d="M9.75 9.75C10.9926 9.75 12 8.74264 12 7.5C12 6.25736 10.9926 5.25 9.75 5.25C8.50736 5.25 7.5 6.25736 7.5 7.5C7.5 8.74264 8.50736 9.75 9.75 9.75Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M15.75 18.75C16.9926 18.75 18 17.7426 18 16.5C18 15.2574 16.9926 14.25 15.75 14.25C14.5074 14.25 13.5 15.2574 13.5 16.5C13.5 17.7426 14.5074 18.75 15.75 18.75Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12 7.5H20.25" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3.75 7.5H7.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18 16.5H20.25" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3.75 16.5H13.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_5022_1593">
+        <rect width="24" height="24" fill="white"/>
+        </clipPath>
+        </defs>
+        </svg>
+          <h2 class="mobile-filter_heading">Filters</h2>
+        </div>
+        <div class="mobile-filter_main has-submenu">
+
+          {% if len != blank %}
+          <div class="mobile_filter_details open-tab" data-tab="length">
+            <div class="mobile_filter-summery" onclick="open_accordian(this)">
+             <span class="label">Length</span>
+             <span class="mobile-filter_arrow">
+               <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 2.5L6 7.5L1 2.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></path>
+               </svg>
+             </span>
+            </div>
+            <div class="mobile_sub_menu">
+              <ul>
+                {%- for len_item in len -%}
+                  {% assign mobile_minute_filter = len_item | handleize %}
+                  {% assign mobile_minute_filter = mobile_minute_filter | replace:'0','zero' | replace:'0','zero' | replace:'1','one' | replace:'2','two' | replace:'3','three' | replace:'4','four' | replace:'5','five' | replace:'6','six' | replace:'7','seven' | replace:'8','eight' | replace:'9','nine' %}
+                  <li>
+                    <div class="filter_label" onclick="selectFilter(this)" >
+                      <input id="filter1" class="filter_checkbox" type="checkbox" name="checkbox" value="Filter" data-gtm-form-interact-field-id="0">
+                      <span data-name="{{ mobile_minute_filter }}">{{ len_item }}</span>
+                    </div>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </div>
+          </div>
+          {% endif %}
+
+          {% if deficult != blank %}
+          <div class="mobile_filter_details" data-tab="Difficulty Level">
+            <div class="mobile_filter-summery" onclick="open_accordian(this)">
+             <span class="label">Difficulty Level</span>
+             <span class="mobile-filter_arrow">
+               <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 2.5L6 7.5L1 2.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></path>
+               </svg>
+             </span>
+            </div>
+            <div class="mobile_sub_menu">
+              <ul>
+                {%- for deficult_item in deficult -%}
+                <li>
+                  <div class="filter_label" onclick="selectFilter(this)">
+                    <input class="filter_checkbox" type="checkbox" name="checkbox" value="Filter" data-gtm-form-interact-field-id="0">
+                    <span data-name="{{ deficult_item | handleize }}">{{ deficult_item }}</span>
+                  </div>
+                </li>
+                {%- endfor -%}
+              </ul>
+            </div>
+          </div>
+          {% endif %}
+
+          {% if mood != blank %}
+          <div class="mobile_filter_details" data-tab="Mood">
+            <div class="mobile_filter-summery" onclick="open_accordian(this)">
+             <span class="label">Mood</span>
+             <span class="mobile-filter_arrow">
+               <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 2.5L6 7.5L1 2.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></path>
+               </svg>
+             </span>
+            </div>
+            <div class="mobile_sub_menu">
+              <ul>
+                {%- for mood_item in mood -%}
+                <li>
+                  <div class="filter_label" onclick="selectFilter(this)">
+                    <input class="filter_checkbox" type="checkbox" name="checkbox" value="Filter" data-gtm-form-interact-field-id="0">
+                    <span data-name="{{ mood_item | handleize }}">{{ mood_item }}</span>
+                  </div>
+                </li>
+                {%- endfor -%}
+              </ul>
+            </div>
+          </div>
+          {% endif %}
+
+          {% if guide != blank %}
+          <div class="mobile_filter_details" data-tab="Favorite Guide">
+            <div class="mobile_filter-summery" onclick="open_accordian(this)">
+             <span class="label">Favorite Guide</span>
+             <span class="mobile-filter_arrow">
+               <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 2.5L6 7.5L1 2.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></path>
+               </svg>
+             </span>
+            </div>
+            <div class="mobile_sub_menu">
+              <ul>
+                {%- for guide_item in guide -%}
+                <li>
+                  <div class="filter_label" onclick="selectFilter(this)">
+                    <input class="filter_checkbox" type="checkbox" name="checkbox" value="Filter" data-gtm-form-interact-field-id="0">
+                    <span data-name="{{ guide_item | handleize }}">{{ guide_item }}</span>
+                  </div>
+                </li>
+                {%- endfor -%}
+              </ul>
+            </div>
+          </div>
+          {% endif %}
+
+          {% if guidence != blank %}
+          <div class="mobile_filter_details" data-tab="Guidance Level">
+            <div class="mobile_filter-summery" onclick="open_accordian(this)">
+             <span class="label">Guidance Level</span>
+             <span class="mobile-filter_arrow">
+               <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 2.5L6 7.5L1 2.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></path>
+               </svg>
+             </span>
+            </div>
+            <div class="mobile_sub_menu">
+              <ul>
+                {%- for guidence_item in guidence -%}
+                <li>
+                  <div class="filter_label" onclick="selectFilter(this)">
+                    <input class="filter_checkbox" type="checkbox" name="checkbox" value="Filter" data-gtm-form-interact-field-id="0">
+                    <span data-name="{{ guidence_item | handleize }}">{{ guidence_item }}</span>
+                  </div>
+                </li>
+                {%- endfor -%}
+              </ul>
+            </div>
+          </div>
+          {% endif %}
+          
+        </div> 
+        <div class="mobile_filter_footer">
+          <button type="button" class="mobile-filter_apply button button--primary" onclick="mobile_filter_clear()">clear all</button>
+          <button type="button" class="mobile-filter_clear button button--secondary" onclick="mobile_filter_apply()">apply</button>
+        </div>
+      </div>
+    </div>
+    {% endunless %}
+  </div>
+      

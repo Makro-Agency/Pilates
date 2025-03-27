@@ -1,0 +1,110 @@
+<link rel="stylesheet" href="{{ 'about-commitments.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'about-commitments.css' | asset_url }}"></noscript>
+
+{% if section.settings.image != blank or section.settings.sub_title != blank or section.settings.title_1 != blank or section.settings.title_2 != blank or section.settings.title_3 != blank %}
+<div class="page-width">
+    <div class="cont-box-wrapper">
+      
+        {% if section.settings.image != blank %}
+        <div class="box-media scroll-trigger animate--slide-in">
+           <img width="" height="" src="{{ section.settings.image | image_url:width:1000 }}" />  
+        </div>
+        {% endif %}
+
+       <div class="content-wrapper scroll-trigger animate--slide-in">
+           
+          {% if section.settings.sub_title != blank %}
+            <span class="sub-title">{{ section.settings.sub_title }}</span>
+          {% endif %}
+          
+          {% if section.settings.title_1 != blank %}
+            <h3 class="sec-title">{{ section.settings.title_1 }}</h3>
+          {% endif %}
+          
+          {% if section.settings.description_1 != blank %}
+          <div class="descriptions">
+            <p>{{ section.settings.description_1 }}</p>
+          </div>
+          {% endif %}
+
+          {% if section.settings.title_2 != blank %}
+            <h3 class="sec-title">{{ section.settings.title_2 }}</h3>
+          {% endif %}
+          
+          {% if section.settings.description_2 != blank %}
+          <div class="descriptions">
+            <p>{{ section.settings.description_2 }}</p>
+          </div>
+          {% endif %}
+
+          {% if section.settings.title_3 != blank %}
+            <h3 class="sec-title">{{ section.settings.title_3 }}</h3>
+          {% endif %}
+          
+          {% if section.settings.description_3 != blank %}
+          <div class="descriptions">
+            <p>{{ section.settings.description_3 }}</p>
+          </div>
+          {% endif %}
+          
+       </div>
+    </div>
+</div>
+{% endif %}
+
+ 
+
+{% schema %}
+{
+  "name": "About Commitments",
+  "tag": "section",
+  "class": "section about-commitments-wrapper",
+  "settings": [
+    {
+      "type": "image_picker",
+      "label": "Image",
+      "id": "image"
+    },
+    {
+      "type": "text",
+      "label": "Sub Title",
+      "id": "sub_title"
+    },
+    {
+      "type": "text",
+      "label": "Title 1",
+      "id": "title_1"
+    },
+    {
+      "type": "textarea",
+      "label": "Description 1",
+      "id": "description_1"
+    },
+    {
+      "type": "text",
+      "label": "Title 2",
+      "id": "title_2"
+    },
+    {
+      "type": "textarea",
+      "label": "Description 2",
+      "id": "description_2"
+    },
+    {
+      "type": "text",
+      "label": "Title 3",
+      "id": "title_3"
+    },
+    {
+      "type": "textarea",
+      "label": "Description 3",
+      "id": "description_3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Commitments"
+    }
+  ]
+}
+{% endschema %}

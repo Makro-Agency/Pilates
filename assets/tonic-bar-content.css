@@ -1,0 +1,53 @@
+.tonic-bar-content-wrapper { width:100%; }
+
+.tonic-bar-content-wrapper .banner-content-wrapper {  width: 100%; display: flex; align-items: flex-start; justify-content: space-between; gap: 40px; padding:125px 0; }
+
+.tonic-bar-content-wrapper .banner-content-wrapper .sec-title { width:100%; max-width:443px; }
+.tonic-bar-content-wrapper .banner-content-wrapper .sec-title .title { color: #000; font-size: 60px; font-style: normal; font-weight: 420; line-height: 90%; 
+  text-transform: uppercase; margin:0; }
+
+.tonic-bar-content-wrapper .banner-content-wrapper .sec-title .heding-cont { width:100%; display:flex; align-items:flex-start; gap:17px; margin-top:18px; }
+.tonic-bar-content-wrapper .banner-content-wrapper .sec-title .heding-cont .text { color: #000; font-size: 12px; font-style: italic; font-weight: 400; line-height: 150%; opacity: 0.3; }
+
+.tonic-bar-content-wrapper .banner-content-wrapper .descriptions { line-height:1; width:100%; max-width:529px; }
+.tonic-bar-content-wrapper .banner-content-wrapper .descriptions p { color: #000;  font-style: normal; font-weight: 400; line-height: 150%; }
+.tonic-bar-content-wrapper .banner-content-wrapper .descriptions p:first-child { margin-top:0; }
+.tonic-bar-content-wrapper .banner-content-wrapper .descriptions p:last-child { margin-bottom:0; }
+
+.tonic-bar-content-wrapper .banner-content-wrapper .descriptions .our-menu { display:flex; align-items:center; color: #000; font-size: 12px; margin-top:20px;
+  font-style: normal; font-weight: 450; line-height: normal; /*letter-spacing: 0.24px;*/ text-transform: uppercase; gap:10px; text-decoration:none; }
+.tonic-bar-content-wrapper .banner-content-wrapper .descriptions .our-menu:hover { text-decoration:underline; }
+
+
+@media (max-width: 1023px) {
+
+  
+    
+}
+
+@media (max-width: 749px) {
+
+  .tonic-bar-content-wrapper .banner-content-wrapper { gap: 0; padding: 50px 0; flex-flow: column; }
+  .tonic-bar-content-wrapper .banner-content-wrapper .sec-title .title { font-size: 40px; }
+
+  .tonic-bar-content-wrapper .banner-content-wrapper .sec-title .heding-cont img { width: 130px; }
+
+  .tonic-bar-content-wrapper .banner-content-wrapper .descriptions { margin-top:30px; }
+     
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end */

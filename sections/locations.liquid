@@ -1,0 +1,522 @@
+<link rel="stylesheet" href="{{ 'locations.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'locations.css' | asset_url }}"></noscript>
+{%- liquid
+  assign loadingType = 'lazy'
+  assign fetchPriorityType = 'auto'
+  assign full_width = '100vw'
+  assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'  
+-%}
+
+{%- assign metaImageBlocks = page.metafields.st_location.location_image -%}
+{%- assign metaImageBlocksSize = metaImageBlocks | size -%}
+
+{%- for i in (1..metaImageBlocksSize) -%}
+  {%- liquid
+      assign heading = page.metafields.st_location.heading[forloop.index0]
+      assign detail = page.metafields.st_location.detail[forloop.index0]
+      assign adress = page.metafields.st_location.adress[forloop.index0]
+      assign telephone = page.metafields.st_location.telephone[forloop.index0]
+      assign url = page.metafields.st_location.url[forloop.index0]
+      assign services = page.metafields.st_location.services[forloop.index0]     
+      assign days_hours = page.metafields.st_location.days_hours[forloop.index0]
+  -%}
+  
+  <div class="location-main-item scroll-trigger animate--slide-in">
+    <div class="location-slider">
+      <div class="swiper location-slide">
+        <div class="swiper-wrapper">
+          {% assign _metaImageBlocks = page.metafields.st_location.location_image[forloop.index0] %}  
+          {%- for image in _metaImageBlocks -%}            
+            {% assign _width = image.width | times: 1 %}
+            <div class="swiper-slide meta">          
+              <img src="{{ image.src | append: '&transform=resize=' | append: '3840' }}" alt="{{ image.alt }}" 
+                srcset="{%- for _w in metaWidths -%}{% assign _wTemp = _w | times: 1 %}{%- if _width > _wTemp  -%}
+                        {{ image.src | append: '&transform=resize=' | append: _w }} {{ _w }}w{% unless forloop.last %}, {% endunless %}
+                        {%- endif -%}{%- endfor -%}"
+                  width="{{ image.width }}" height="{{ image.height }}" loading="{{ loadingType }}" fetchpriority="{{ fetchPriorityType }}" class="" sizes="{{ full_width }}" />          
+            </div>
+          {%- endfor -%}
+        </div>
+        {% if _metaImageBlocks.size > 1 %}
+        <div class="slider-controls">
+    
+          <div class="swiper-pagination"></div>
+          
+          <div class="nav-arrows">        
+             <div class="loca-button loca-button-prev">{% render 'long-icon-left' %}</div>
+             <div class="loca-button loca-button-next">{% render 'long-icon-right' %}</div>
+          </div>      
+          
+        </div>
+        {% endif %}
+        
+      </div>
+    </div>
+    <div class="location-cont-wrapper">
+      <div class="page-width">
+          <div class="main-box">
+            
+              <div class="cont-part">
+                {%- if heading != blank -%}
+                  <div class="sec-title">
+                    <h2 class="title">{{ heading }}</h2>
+                  </div>
+                {%- endif -%}
+                
+                {%- if detail != blank -%}          
+                  <div class="descriptions">
+                    {{ detail }}                  
+                  </div>
+                {%- endif -%}
+                
+                {%- if adress != blank or telephone != blank -%}
+                  <div class="cont-info">              
+                    {%- if adress != blank -%}
+                      <span class="gloabLs"><i>{% render 'icon-map' %}</i> {{ adress }}</span>
+                    {%- endif -%}
+                    {%- if telephone != blank -%}
+                      <span class="gloabLs"><i>{% render 'icon-call' %}</i> {{ telephone }}</span>
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+    
+                {%- if url != blank -%}
+                  <a href="{{ url }}" class="contact-btn link global-link">Send us a note {% render 'short-right-arrow' →%}</a> 
+                {%- endif -%}                                
+              </div>
+    
+              {%- if services != blank or days_hours != blank -%}
+              <div class="points-part">
+                {%- if services != blank -%}                
+                  <div class="point-box services-point">                  
+                    <h4 class="sec-title">Location highlights:</h4>
+                    {%- assign servicesPoint = services.html | newline_to_br | split:'<br />' -%}
+                    <ul class="points">
+                      {%- for points in servicesPoint -%}
+                        {%- assign _pointsTemp = points | strip -%}
+                        {%- if _pointsTemp != blank -%}
+                          <li><i>{% render 'icon-check-1' %}</i> {{ points }}</li>
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </ul>             
+                  </div>                
+                {%- endif -%}
+                
+                {%- if days_hours != blank -%}
+                  <div class="point-box open-days">                    
+                    <h4 class="sec-title">Open:</h4>                    
+                   {%- assign daysHours = days_hours.html | strip_html | newline_to_br | split:'<br />' -%}                  
+                    <ul class="open-times">
+                    {%- for dh in daysHours -%}
+                      {%- assign _d_hTemp = dh | strip -%}
+                      {%- if _d_hTemp != blank -%}
+                        {%- assign _d_hTemp = _d_hTemp | split:'_' -%}
+                        <li>
+                          <label>{{ _d_hTemp[0] }}</label>
+                          <span class="open-time">{{ _d_hTemp[1] }}</span>
+                        </li>
+                      {%- endif -%}
+                    {%- endfor -%}
+                    </ul>
+                  </div>
+                {%- endif -%}
+              </div>
+              {%- endif -%}          
+            
+          </div>
+      </div>
+    </div> 
+  </div>
+{% endfor %}
+
+
+
+
+{%- if metaImageBlocksSize == 0 -%}
+{%- assign imageBlocks = section.blocks | where: 'type','image' -%}
+{%- assign servicesBlocks = section.blocks | where: 'type','services' -%}
+{%- assign dayHoursBlocks = section.blocks | where: 'type','day_hours' -%}
+
+<div class="location-main-item">
+  <div class="location-slider">
+    <div class="swiper location-slide">
+      <div class="swiper-wrapper">
+        {%- for block in imageBlocks -%}
+          <div class="swiper-slide{% if block.settings.image == blank %} placeholder{% endif %}" {{ block.shopify_attributes }}>
+            {%- liquid
+              assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio
+              assign sizes = full_width
+            -%}
+            {% if block.settings.image != blank %}
+              {{
+                block.settings.image
+                | image_url: width: 3840
+                | image_tag:
+                  loading: loadingType,
+                  fetchPriority: fetchPriorityType,
+                  width: block.settings.image.width,
+                  height: image_height,
+                  class: '',
+                  sizes: sizes,
+                  widths: widths
+              }}
+            {% else %}
+              {% capture heroAppare %}hero-apparel-{% cycle '1,2,3' %}{% endcapture %}
+              {{ heroAppare | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+          </div>          
+        {%- else -%}
+          {%- for i in (1..8) -%}
+          <div class="swiper-slide placeholder">
+            {% capture heroAppare %}hero-apparel-{% cycle '1,2,3' %}{% endcapture %}
+            {{ heroAppare | placeholder_svg_tag: 'placeholder-svg' }}
+          </div>
+          {%- endfor -%}
+        {%- endfor -%}
+      </div>
+      
+      <div class="slider-controls">
+  
+        <div class="swiper-pagination"></div>
+        
+        <div class="nav-arrows">        
+           <div class="loca-button loca-button-prev">{% render 'long-icon-left' %}</div>
+           <div class="loca-button loca-button-next">{% render 'long-icon-right' %}</div>
+        </div>      
+        
+      </div>
+      
+    </div>
+  </div>
+  <div class="location-cont-wrapper">
+    <div class="page-width">
+        <div class="main-box">
+          
+            <div class="cont-part">
+              {%- if section.settings.heading != blank -%}
+                <div class="sec-title">
+                  <h2 class="title">{{ section.settings.heading }}</h2>
+                </div>
+              {%- endif -%}
+              
+              {%- if section.settings.detail != blank -%}          
+                <div class="descriptions">
+                  {{ section.settings.detail }}                  
+                </div>
+              {%- endif -%}
+              
+              {%- if section.settings.address != blank or section.settings.telephone != blank -%}
+                <div class="cont-info">              
+                  {%- if section.settings.address != blank -%}
+                    <span><i>{% render 'icon-map' %}</i> {{ section.settings.address }}</span>
+                  {%- endif -%}
+                  {%- if section.settings.telephone != blank -%}
+                    <span><i>{% render 'icon-call' %}</i> {{ section.settings.telephone }}</span>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+  
+              {%- if section.settings.url_text != blank -%}
+                <a 
+                  {% if section.settings.url == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ section.settings.url }}"
+                  {% endif %} class="contact-btn link global-link">{{ section.settings.url_text }} {% render 'short-right-arrow' %}</a> 
+              {%- endif -%}
+                              
+            </div>
+  
+            {%- if servicesBlocks.size > 0 or dayHoursBlocks.size > 0 -%}
+            <div class="points-part">
+              {%- if servicesBlocks.size > 0 -%}
+              {%- for block in servicesBlocks -%}
+                <div class="point-box services-point" {{ block.shopify_attributes }}>
+                {% if block.settings.heading != blank %}
+                  <h4 class="sec-title">{{ block.settings.heading }}</h4>
+                {% endif %}
+                {% if block.settings.services_point != blank %}
+                  {%- assign servicesPoint = block.settings.services_point | newline_to_br | split:'<br />' -%}
+                  <ul class="points">
+                    {%- for points in servicesPoint -%}
+                      <li><i>{% render 'icon-check-1' %}</i> {{ points }}</li>
+                    {%- endfor -%}
+                  </ul>
+                {% endif %}
+                </div>
+              {%- endfor -%}
+              {%- endif -%}
+              
+              {%- if dayHoursBlocks.size > 0 -%}
+              {%- for block in dayHoursBlocks -%}
+                <div class="point-box open-days" {{ block.shopify_attributes }}>
+                  {% if block.settings.heading != blank %}
+                    <h4 class="sec-title">{{ block.settings.heading }}</h4>
+                  {% endif %}
+  
+                  {%- capture dayHours -%}
+                    {%- for i in (1..7) -%}
+                      {%- capture day -%}day_{{ i }}{%- endcapture -%}
+                      {%- capture hours -%}hours_{{ i }}{%- endcapture -%}
+                      {%- assign day = block.settings[day] -%}
+                      {%- assign hours = block.settings[hours] -%}
+                      {%- if day != blank and hours != blank -%}
+                      <li>
+                        <label>{{ day }}</label>
+                        <span class="open-time">{{ hours }}</span>
+                      </li>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  {%- endcapture -%}
+                  {%- if dayHours != blank -%}
+                    <ul class="open-times">{{ dayHours }}</ul>
+                  {% endif %}
+                </div>
+              {%- endfor -%}
+              {%- endif -%}
+            </div>
+            {%- endif -%}          
+          
+        </div>
+    </div>
+  </div> 
+</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Locations",
+  "tag": "section",
+  "class": "section locations-wrapper",
+  "settings": [
+    {
+      "type":"text",
+      "label":"Heading",
+      "id":"heading",
+      "default":"Yonge / Shuter"
+    },
+    {
+      "type":"richtext",
+      "label":"Enter detail",
+      "id":"detail",
+      "default":"<p>Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent nostra, per inceptos himenaeos.<\/p>"
+    },
+    {
+      "type":"text",
+      "label":"Enter an address",
+      "id":"address",
+      "default":"225 Yonge Street, Toronto ON M5B 1N8"
+    },
+    {
+      "type":"text",
+      "label":"Enter a telephone number",
+      "id":"telephone",
+      "default":"647-372-0225"
+    },
+    {
+      "type":"text",
+      "label":"Enter a link text",
+      "id":"url_text",
+      "default":"Contact yonge / Shuter"
+    },
+    {
+      "type":"url",
+      "label":"Provide a link here",
+      "id":"url"
+    }
+  ],
+  "blocks":[
+    {
+      "type":"image",
+      "name":"Image block",
+      "settings":[
+        {
+          "type":"image_picker",
+          "label":"Upload image",
+          "id":"image"
+        }
+      ]
+    },
+    {
+      "type":"services",
+      "name":"service block",
+      "limit":1,
+      "settings":[
+        {
+          "type":"text",
+          "label":"Headig",
+          "id":"heading",
+          "default":"Services Available:"
+        },
+        {
+          "type":"textarea",
+          "label":"Enter services here",
+          "id":"services_point",
+          "default":"Service 1\nService 2\nService 3\nService 4\nService 5\nService 6\nService 7\nService 8",
+          "info":"To create a point enate each servies in a new line"
+        }
+      ]
+    },
+    {
+      "type":"day_hours",
+      "name":"Day & hours block",
+      "limit":1,
+      "settings":[
+        {
+          "type":"text",
+          "label":"Headig",
+          "id":"heading",
+          "default":"Open:"
+        },
+        {
+          "type":"paragraph",
+          "content":"Day and hours 1"
+        },
+        {
+          "type":"text",
+          "label":"Enter day",
+          "id":"day_1",
+          "default":"Monday – Thursday"
+        },
+        {
+          "type":"text",
+          "label":"Enter hours",
+          "id":"hours_1",
+          "default":"5:45 AM – 10 PM"
+        },
+        {
+          "type":"paragraph",
+          "content":"-----------------------"
+        },
+        {
+          "type":"paragraph",
+          "content":"Day and hours 2"
+        },
+        {
+          "type":"text",
+          "label":"Enter day",
+          "id":"day_2",
+          "default":"Friday"
+        },
+        {
+          "type":"text",
+          "label":"Enter hours",
+          "id":"hours_2",
+          "default":"5:45 AM – 9 PM"
+        },
+        {
+          "type":"paragraph",
+          "content":"-----------------------"
+        },
+        {
+          "type":"paragraph",
+          "content":"Day and hours 3"
+        },
+        {
+          "type":"text",
+          "label":"Enter day",
+          "id":"day_3",
+          "default":"Saturday"
+        },
+        {
+          "type":"text",
+          "label":"Enter hours",
+          "id":"hours_3",
+          "default":"7 AM – 7:30 PM"
+        },
+        {
+          "type":"paragraph",
+          "content":"-----------------------"
+        },
+        {
+          "type":"paragraph",
+          "content":"Day and hours 4"
+        },
+        {
+          "type":"text",
+          "label":"Enter day",
+          "id":"day_4",
+          "default":"Saturday"
+        },
+        {
+          "type":"text",
+          "label":"Enter hours",
+          "id":"hours_4",
+          "default":"7:45 AM – 9 PM"
+        },
+        {
+          "type":"paragraph",
+          "content":"-----------------------"
+        },
+        {
+          "type":"paragraph",
+          "content":"Day and hours 5"
+        },
+        {
+          "type":"text",
+          "label":"Enter day",
+          "id":"day_5"
+        },
+        {
+          "type":"text",
+          "label":"Enter hours",
+          "id":"hours_5"
+        },
+        {
+          "type":"paragraph",
+          "content":"-----------------------"
+        },
+        {
+          "type":"paragraph",
+          "content":"Day and hours 6"
+        },
+        {
+          "type":"text",
+          "label":"Enter day",
+          "id":"day_6"
+        },
+        {
+          "type":"text",
+          "label":"Enter hours",
+          "id":"hours_6"
+        },
+        {
+          "type":"paragraph",
+          "content":"-----------------------"
+        },
+        {
+          "type":"paragraph",
+          "content":"Day and hours 7"
+        },
+        {
+          "type":"text",
+          "label":"Enter day",
+          "id":"day_7"
+        },
+        {
+          "type":"text",
+          "label":"Enter hours",
+          "id":"hours_7"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Locations",
+      "blocks": [
+        {
+          "type": "services"
+        },
+        {
+          "type": "day_hours"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %} 
+  .locations-wrapper .location-slide .swiper-slide img { width:100%; height: auto; }
+{% endstylesheet %}
