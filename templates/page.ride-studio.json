@@ -382,7 +382,7 @@
         "5f339c27-a2d8-4ed9-9d14-fd9c115bad81": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/3_cfb53b00-86b6-4390-b8ef-762fd685caf5.png",
+            "image": "shopify://shop_images/3_cfb53b00-86b6-4390-b8ef-762fd685caf5_2.png",
             "title": "YONGE / SHUTER",
             "text": "<p>Push past your limits with Technogym bikes, over 100 custom programmed lights, and theatre-quality sound.</p>",
             "address": "225 Yonge Street, Toronto ON M5B 1N8",
@@ -394,6 +394,7 @@
         "ab06944c-e56b-4aaa-962a-25c5bdcc7f46": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Sweat_and_Tonic_Ride_Studio_Galaxy.jpg",
             "title": "FRONT / SPADINA (THE WELL)",
             "text": "<p>The highest capacity studio in Canada - work up a sweat in our mesmerizing ride studio, equipped with Technogym bikes, a 266-inch video projector, custom programmed lights and theatre-quality sound.</p>",
             "address": "486 Front Street West, Toronto ON M5V 0V2",
