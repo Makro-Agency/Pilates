@@ -131,6 +131,7 @@
     "classes-work-4": {
       "type": "classes-work",
       "settings": {
+        "image": "shopify://shop_images/Sweat_and_Tonic_Personal_Training_Studio_1.jpg",
         "title": "PERSONAL TRAINING",
         "sub_title": "AT SWEAT AND TONIC",
         "description": "Build foundations, get stronger, and push your limits. Whether you're a first-time mover or a seasoned athlete, our expert trainers will meet you wherever you are in your wellness journey through highly personalized one-on-one programs dedicated to your specific needs and goals.",
@@ -149,6 +150,7 @@
     "classes-work-5": {
       "type": "classes-work",
       "settings": {
+        "image": "shopify://shop_images/Sweat_and_Tonic_Personal_Training_Studio_Front_Spadna-II.png",
         "title": "SMALL GROUP TRAINING",
         "sub_title": "BY SWEAT AND TONIC",
         "description": "Private training, but make it teamwork. Get the best of both worlds in Small Group Training as you connect with your coach, gain confidence to move better in your favourite classes, and develop functional strength and mobility for everyday life",
