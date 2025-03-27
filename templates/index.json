@@ -166,6 +166,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/Red_Light_Therapy_Lisa_Tonic_Spa_f424c5c0-ef36-45f6-b577-8f940a1c2e5b.jpg",
             "title": "50% OFF RED LIGHT THERAPY w/ HYDRAFACIAL",
             "desc": "<p>Get 50% off a Theralight 360+ Red Light Therapy session when booked on the same day as your Hydrafacial®.</p>",
             "location": "Front/Spadina",
@@ -177,6 +178,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/Tonic_Spa_Pool_Deck_Sweat_and_Tonic_1.png",
             "title": "COMPLIMENTARY POOL MEMBERSHIP",
             "desc": "<p>New to Unlimited? Sign up for an Unlimited membership and get a complimentary month of pool access.</p>",
             "location": "Front/Spadina & Yonge/Shuter",
@@ -188,6 +190,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/6D554DE9-CD47-4BBD-8CD4-31451D164C2C_1.jpg",
             "title": "INTRO ONE WEEK UNLIMITED",
             "desc": "<p>Sign up for an Intro One-Week Unlimited pass and get $100 off your first month's membership.</p>",
             "location": "Front/Spadina & Yonge/Shuter",
