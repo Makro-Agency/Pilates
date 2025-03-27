@@ -661,6 +661,8 @@
       ],
       "settings": {
         "allow_transparent_header": false,
+        "image": "shopify://shop_images/SweatandTonic_Yoga_Odeta.png",
+        "img_mobile": "shopify://shop_images/Odeta_hotyoga_3x5_646957ff-72f5-4a45-a4b4-b49b357384d1.jpg",
         "image_overlay_opacity": 30,
         "image_height": "adapt",
         "desktop_content_alignment": "left",
