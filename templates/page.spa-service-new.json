@@ -589,6 +589,7 @@
         "column_Qg9XWQ": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/TonicHouse_party_2014x1105_2.jpg",
             "title": "the well",
             "text": "",
             "link_label": "",
@@ -599,6 +600,7 @@
           "type": "column",
           "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/Frame_13.jpg",
             "title": "the well",
             "text": "",
             "link_label": "",
@@ -609,6 +611,7 @@
           "type": "column",
           "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/TonicHouse_party_2014x1105_3_f0d38410-a460-4aa4-85fe-bfbe587a43ee_1.jpg",
             "title": "the well",
             "text": "",
             "link_label": "",
@@ -619,6 +622,7 @@
           "type": "column",
           "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/TonicHouse_party_2014x1105_2_1.jpg",
             "title": "the well",
             "text": "",
             "link_label": "",
@@ -629,6 +633,7 @@
           "type": "column",
           "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/TonicHouse_party_2014x1105_2_2.jpg",
             "title": "the well",
             "text": "",
             "link_label": "",
@@ -697,6 +702,8 @@
       ],
       "settings": {
         "allow_transparent_header": false,
+        "image": "shopify://shop_images/Frame_5999_1.jpg",
+        "img_mobile": "shopify://shop_images/Frame_5988_dca22be5-d3ad-407a-aca5-f6c2bc9701f9.jpg",
         "image_overlay_opacity": 20,
         "image_height": "small",
         "desktop_content_position": "bottom-right",
