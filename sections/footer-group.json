@@ -18,21 +18,21 @@
           "type": "link_list",
           "settings": {
             "heading": "JOIN US",
-            "menu": ""
+            "menu": "fitness"
           }
         },
         "bf572ea4-074e-4f4b-af7f-747a1395bc69": {
           "type": "link_list",
           "settings": {
             "heading": "EXPLORE",
-            "menu": ""
+            "menu": "tonic-house"
           }
         },
         "b46babd6-484b-4722-a044-0949aa6b111e": {
           "type": "link_list",
           "settings": {
             "heading": "ABOUT S&T",
-            "menu": ""
+            "menu": "about-s-t"
           }
         },
         "412e5442-a9b7-4405-ab60-e4fa6f417dd2": {
