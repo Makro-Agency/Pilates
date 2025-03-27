@@ -365,6 +365,8 @@
         "button_label": "LEARN MORE",
         "button_link": "shopify://pages/tonic-house",
         "button_style": "solid",
+        "image": "shopify://shop_images/Tonic_House.jpg",
+        "img_mobile": "shopify://shop_images/Tonic_House_1.jpg",
         "color_scheme": "background-1",
         "top_padding_remove": false,
         "bottom_padding_remove": true
