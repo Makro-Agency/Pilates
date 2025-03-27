@@ -60,7 +60,7 @@
       "settings": {
         "allow_transparent_header": true,
         "image": "shopify://shop_images/TheWell_ride.jpg",
-        "img_mobile": "shopify://shop_images/TheWell_ride.jpg",
+        "img_mobile": "shopify://shop_images/TheWell_ride_1.jpg",
         "image_overlay_opacity": 40,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -107,8 +107,6 @@
       ],
       "settings": {
         "allow_transparent_header": false,
-        "image": "shopify://shop_images/Claudia_ride.jpg",
-        "img_mobile": "shopify://shop_images/Claudia_ride.jpg",
         "image_overlay_opacity": 70,
         "image_height": "adapt",
         "show_text_box": false,
@@ -294,8 +292,6 @@
       ],
       "settings": {
         "allow_transparent_header": false,
-        "image": "shopify://shop_images/Nariko_ride.jpg",
-        "img_mobile": "shopify://shop_images/Nariko_ride.jpg",
         "image_overlay_opacity": 60,
         "image_height": "adapt",
         "desktop_content_alignment": "left",
@@ -312,7 +308,6 @@
           "type": "column",
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/New_instructor_headshots_3.jpg",
             "link_label": "JORDAN SCHOLL",
             "link": "shopify://metaobjects/teammember/jordan-scholl"
           }
@@ -321,7 +316,6 @@
           "type": "column",
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/Katie.jpg",
             "link_label": "KATIE KUNST",
             "link": "shopify://metaobjects/teammember/katie-kunst"
           }
@@ -330,7 +324,6 @@
           "type": "column",
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/Nariko.jpg",
             "link_label": "NARIKO CHAFFE",
             "link": "shopify://metaobjects/teammember/nariko-chaffe"
           }
@@ -339,7 +332,6 @@
           "type": "column",
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/RebeccaMoskob_RideInstructor.jpg",
             "link_label": "REBECCA MOSKOB",
             "link": "shopify://metaobjects/teammember/rebecca-moskob"
           }
@@ -348,7 +340,6 @@
           "type": "column",
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/SamUshedo_RideInstructor.jpg",
             "link_label": "SAMANTHA USHEDO",
             "link": "shopify://metaobjects/teammember/samantha-ushedo"
           }
@@ -394,7 +385,6 @@
         "ab06944c-e56b-4aaa-962a-25c5bdcc7f46": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Sweat_and_Tonic_Ride_Studio_Galaxy.jpg",
             "title": "FRONT / SPADINA (THE WELL)",
             "text": "<p>The highest capacity studio in Canada - work up a sweat in our mesmerizing ride studio, equipped with Technogym bikes, a 266-inch video projector, custom programmed lights and theatre-quality sound.</p>",
             "address": "486 Front Street West, Toronto ON M5V 0V2",
