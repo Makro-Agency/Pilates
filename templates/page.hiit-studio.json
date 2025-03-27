@@ -719,7 +719,7 @@
         "columns_desktop": 6,
         "background_style": "none",
         "button_label": "SEE THE FULL TEAM",
-        "button_link": "shopify://pages/team",
+        "button_link": "#",
         "color_scheme": "",
         "columns_mobile": "2",
         "top_padding_remove": false,
