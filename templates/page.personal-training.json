@@ -418,6 +418,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Dustin.png",
             "link_label": "DUSTIN PYM, PRINCIPAL TRAINER | Strength & Conditioning to High-Level Athletics",
             "link": "shopify://metaobjects/teammember/dustin-pym"
           }
@@ -445,6 +446,7 @@
           "disabled": true,
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Al_PT.png",
             "link_label": "AL ROBINSON | Pre / Post-natal, Weight Management, Sports-specific Training",
             "link": ""
           }
