@@ -662,6 +662,8 @@
       "custom_css": [],
       "settings": {
         "allow_transparent_header": false,
+        "image": "shopify://shop_images/sweat_and_tonic_personal_training_room_Final_2023-07-12_1.jpg",
+        "img_mobile": "shopify://shop_images/sweat_and_tonic_personal_training_room_Final_2023-07-12_2.jpg",
         "image_overlay_opacity": 50,
         "image_height": "adapt",
         "desktop_content_position": "bottom-right",
