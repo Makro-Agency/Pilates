@@ -214,8 +214,8 @@
       ],
       "settings": {
         "allow_transparent_header": false,
-        "image": "shopify://shop_images/7bf7be5d46c147b9f1ee72e1594a9d89.jpg",
-        "img_mobile": "shopify://shop_images/Frame_6085.jpg",
+        "image": "shopify://shop_images/7bf7be5d46c147b9f1ee72e1594a9d89_3.jpg",
+        "img_mobile": "shopify://shop_images/Frame_6085_3.jpg",
         "image_overlay_opacity": 100,
         "image_height": "adapt",
         "desktop_content_alignment": "left",
