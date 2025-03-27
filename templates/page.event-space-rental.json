@@ -386,6 +386,7 @@
         "enable_video_looping": true,
         "video_url": "https://vimeo.com/890042194?share=copy",
         "mb_video_url": "https://vimeo.com/890054765?share=copy",
+        "cover_image": "shopify://shop_images/TonicHouse_Event_1.png",
         "description": "Holiday party with large group dancing on disco floor in Tonic House at Sweat and Tonic",
         "full_width": false,
         "color_scheme": "",
