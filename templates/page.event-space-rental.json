@@ -1,1 +1,574 @@
-{"sections":{"spa_hero_Vk3NN7":{"type":"spa-hero","blocks":{"text_nMmwBD":{"type":"text","settings":{"text":"PRIVATE EVENTS & ACTIVATIONS AT SWEAT AND TONIC","text_style":"caption-with-letter-spacing","text_clr":"#ffffff"}},"heading_e3WnyH":{"type":"heading","settings":{"heading":"EVENT SPACE RENTAL","heading_size":"h1","text_clr":"#ffffff"}},"buttons_TDxGH8":{"type":"buttons","settings":{"button_label_1":"GET YOUR PARTY STARTED","button_link_1":"#contactus","button_style":"solid","applies_color_scheme":true,"btn_text_clr":"#000000","btn_hvr_text_clr":"#000000","btn_bg_clr":"#c79d5b","btn_hvr_bg_clr":"#ffffff"}},"spa_info_rK89Hg":{"type":"spa_info","settings":{"detail":"Host your next team meeting, cocktail, holiday, or office party at Tonic House.","link_text":"VIEW OUR EVENT PACKAGE","url":"https:\/\/bit.ly\/sweatandtonic-event-package","enableScroll":false}}},"block_order":["text_nMmwBD","heading_e3WnyH","buttons_TDxGH8","spa_info_rK89Hg"],"settings":{"allow_transparent_header":false,"image":"shopify:\/\/shop_images\/Sweat-and-Tonic-Events-Banner-2025.png","img_mobile":"shopify:\/\/shop_images\/Sweat-and-Tonic-Events-Banner-2025.png","image_overlay_opacity":0,"image_height":"adapt","desktop_content_position":"middle-center","color_scheme":"accent-1","image_behavior":"none"}},"services_about_w78iaR":{"type":"services-about","blocks":{"features_ExRUf4":{"type":"features","settings":{"svg_image_1":"<svg viewbox=\"0 0 64 64\" id=\"svg5\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" fill=\"#000000\" xml:space=\"preserve\" xmlns:svg=\"http:\/\/www.w3.org\/2000\/svg\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"><\/g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/g><g id=\"SVGRepo_iconCarrier\"> <defs id=\"defs2\"><\/defs> <g id=\"layer1\" transform=\"translate(-288)\"> <path d=\"m 306.51953,28.427734 c -0.65112,0.01192 -1.2849,0.197012 -1.76562,0.677735 -0.19132,0.191315 -0.33188,0.408965 -0.4375,0.640625 a 1,1 0 0 0 -0.01,0.01367 l -12.23828,27.630859 a 1.0001,1.0001 0 0 0 1.31836,1.320313 l 27.55469,-12.207032 a 1,1 0 0 0 0.0312,-0.01758 c 0.25349,-0.107628 0.492,-0.255673 0.69922,-0.46289 0.64095,-0.640964 0.75701,-1.554055 0.63671,-2.416016 -0.1203,-0.861954 -0.46342,-1.778629 -0.97461,-2.769531 -1.02236,-1.981805 -2.73782,-4.253456 -4.93945,-6.455079 -2.20162,-2.201621 -4.47133,-3.915124 -6.45312,-4.9375 -0.99091,-0.511187 -1.90759,-0.856262 -2.76953,-0.976562 -0.21549,-0.03007 -0.43531,-0.04499 -0.65235,-0.04102 z m 0.0508,1.996094 c 0.089,9.7e-5 0.19549,0.0074 0.32422,0.02539 0.51494,0.07186 1.26901,0.329842 2.12891,0.773437 1.71979,0.887219 3.87745,2.494643 5.95703,4.574219 2.07958,2.079576 3.68895,4.239191 4.57617,5.958984 0.4436,0.859905 0.69963,1.612019 0.77148,2.126953 0.0719,0.514929 -0.0276,0.683896 -0.0703,0.726563 -0.0426,0.04264 -0.21166,0.144108 -0.72656,0.07227 -0.51494,-0.07186 -1.269,-0.327882 -2.12891,-0.771485 -1.71978,-0.887219 -3.8794,-2.496596 -5.95898,-4.576172 -2.07958,-2.079575 -3.687,-4.237238 -4.57422,-5.957031 -0.4436,-0.859896 -0.69962,-1.613971 -0.77148,-2.128906 -0.0522,-0.374223 -0.0139,-0.562797 0.0273,-0.65625 l 0.01,-0.01953 v -0.002 c 0.0119,-0.02231 0.0242,-0.0418 0.0332,-0.05078 0.032,-0.03198 0.13522,-0.09599 0.40234,-0.0957 z m -1.79297,3.212891 c 0.0977,0.215664 0.20131,0.433135 0.31641,0.65625 1.02238,1.981797 2.73392,4.253456 4.93555,6.455078 2.20161,2.201622 4.47523,3.915117 6.45703,4.9375 0.22178,0.114411 0.43793,0.217246 0.65234,0.314453 l -7.70898,3.414062 c -1.63582,-0.960717 -3.51199,-2.441234 -5.2461,-4.173828 -1.12769,-1.12896 -2.15508,-2.324404 -3.0039,-3.482422 z m -4.51953,10.205078 c 0.75731,0.951967 1.60333,1.900939 2.51172,2.810547 1.4484,1.447366 2.97852,2.730397 4.46094,3.736328 l -12.28516,5.443359 z\" id=\"rect55015\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"><\/path> <path d=\"m 341.62891,26.142578 c -5.4532,-0.472611 -9.9929,1.468384 -13.30664,3.830078 -4.41833,3.148926 -6.82227,7.06836 -6.82227,7.06836 a 1,1 0 0 0 0.32812,1.376953 1,1 0 0 0 1.375,-0.328125 c 0,0 2.21942,-3.594817 6.2793,-6.488282 4.05988,-2.893464 9.79515,-5.061483 17.17774,-2.240234 a 1,1 0 0 0 1.29101,-0.576172 1,1 0 0 0 -0.57617,-1.291015 c -2.0092,-0.767816 -3.92836,-1.194026 -5.74609,-1.351563 z\" id=\"path55061\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"><\/path> <path d=\"m 332.38672,8.0546875 a 1,1 0 0 0 -1.08789,0.9023438 c 0,0 -0.40206,4.2050857 -2.76367,8.5957027 -2.36162,4.390618 -6.54694,8.872789 -14.41602,9.607422 a 1,1 0 0 0 -0.90234,1.087891 1,1 0 0 0 1.08789,0.902344 c 8.56641,-0.799735 13.42206,-5.87213 15.99218,-10.650391 2.57013,-4.778261 2.99219,-9.3574219 2.99219,-9.3574219 a 1,1 0 0 0 -0.90234,-1.0878906 z\" id=\"path55081\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"><\/path> <path d=\"m 310.21289,15.603516 c -1.64501,0 -3,1.354992 -3,3 0,1.645008 1.35499,3 3,3 1.64501,0 3,-1.354992 3,-3 0,-1.645008 -1.35499,-3 -3,-3 z m 0,2 c 0.56413,0 1,0.435871 1,1 0,0.564128 -0.43587,1 -1,1 -0.56413,0 -1,-0.435872 -1,-1 0,-0.564129 0.43587,-1 1,-1 z\" id=\"path55087\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"><\/path> <path d=\"m 343.42773,7.7519531 c -1.98555,0 -3.61718,1.6316312 -3.61718,3.6171879 0,1.985556 1.63163,3.617187 3.61718,3.617187 1.98556,0 3.61719,-1.631631 3.61719,-3.617187 0,-1.9855567 -1.63163,-3.6171879 -3.61719,-3.6171879 z m 0,2 c 0.90468,0 1.61719,0.7125099 1.61719,1.6171879 0,0.904677 -0.71251,1.617187 -1.61719,1.617187 -0.90467,0 -1.61718,-0.71251 -1.61718,-1.617187 0,-0.904678 0.71251,-1.6171879 1.61718,-1.6171879 z\" id=\"circle55089\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"><\/path> <path d=\"m 345.01758,45.775391 c -1.64501,0 -3,1.354992 -3,3 0,1.645008 1.35499,3 3,3 1.64501,0 3,-1.354992 3,-3 0,-1.645008 -1.35499,-3 -3,-3 z m 0,2 c 0.56413,0 1,0.435871 1,1 0,0.564128 -0.43587,1 -1,1 -0.56413,0 -1,-0.435872 -1,-1 0,-0.564129 0.43587,-1 1,-1 z\" id=\"circle55091\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"><\/path> <path d=\"m 323.25391,7.8359375 a 1,1 0 0 0 -1,1 v 1.3867185 h -1.38672 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 1.38672 v 1.386719 a 1,1 0 0 0 1,1 1,1 0 0 0 1,-1 v -1.386719 h 1.38671 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 h -1.38671 V 8.8359375 a 1,1 0 0 0 -1,-1 z\" id=\"path55093\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"><\/path> <path d=\"m 335.43555,17.988281 a 1,1 0 0 0 -0.70703,0.292969 1,1 0 0 0 0,1.414062 l 0.98046,0.980469 -0.98046,0.980469 a 1,1 0 0 0 0,1.414062 1,1 0 0 0 1.41406,0 l 0.98047,-0.980468 0.98047,0.980468 a 1,1 0 0 0 1.41406,0 1,1 0 0 0 0,-1.414062 l -0.98047,-0.980469 0.98047,-0.980469 a 1,1 0 0 0 0,-1.414062 1,1 0 0 0 -0.70703,-0.292969 1,1 0 0 0 -0.70703,0.292969 l -0.98047,0.980469 -0.98047,-0.980469 a 1,1 0 0 0 -0.70703,-0.292969 z\" id=\"path55097\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"><\/path> <path d=\"m 336.42383,36.179688 a 1,1 0 0 0 -1,1 v 1.386718 h -1.38672 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 1.38672 v 1.386719 a 1,1 0 0 0 1,1 1,1 0 0 0 1,-1 v -1.386719 h 1.38672 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 h -1.38672 v -1.386718 a 1,1 0 0 0 -1,-1 z\" id=\"path55101\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"><\/path> <path d=\"m 327.12305,45.207031 a 1,1 0 0 0 -0.86133,1.123047 1,1 0 0 0 1.12305,0.859375 c 0.27918,-0.03692 0.56457,-0.03692 0.84375,0 0.3226,0.04267 0.62337,0.135167 0.875,0.271484 0.24912,0.134963 0.4597,0.319998 0.5957,0.523438 0.13344,0.199604 0.20437,0.438385 0.20117,0.640625 -0.003,0.196172 -0.0845,0.396844 -0.19141,0.513672 -0.0735,0.08031 -0.19388,0.167022 -0.34765,0.232422 -0.15633,0.06649 -0.35162,0.115209 -0.57813,0.15039 -0.45436,0.07057 -1.041,0.06628 -1.72656,0.203125 -1.11132,0.221822 -2.12648,0.804948 -2.87891,1.652344 -0.75241,0.847402 -1.21004,1.924937 -1.29882,3.054688 -0.0888,1.129772 0.19581,2.264238 0.80664,3.21875 0.61083,0.954515 1.5229,1.689358 2.58593,2.082031 1.06304,0.392671 2.2337,0.427836 3.31836,0.09961 1.08467,-0.328222 2.03811,-1.005696 2.70508,-1.921875 0.66698,-0.916179 1.01891,-2.032979 0.99805,-3.166015 -0.0209,-1.132989 -0.41301,-2.23594 -1.11328,-3.126954 a 1,1 0 0 0 -1.4043,-0.167968 1,1 0 0 0 -0.16797,1.404297 c 0.42449,0.540113 0.67287,1.240812 0.68555,1.927734 0.0126,0.686876 -0.21091,1.39578 -0.61524,1.951172 -0.40432,0.555392 -1.01043,0.986575 -1.66796,1.185547 -0.65754,0.198973 -1.4005,0.175542 -2.04493,-0.0625 -0.64442,-0.238042 -1.2254,-0.704556 -1.5957,-1.283203 -0.3703,-0.578649 -0.54991,-1.299522 -0.49609,-1.984375 0.0538,-0.684876 0.34466,-1.369108 0.80078,-1.882813 0.45613,-0.513708 1.10169,-0.883108 1.77539,-1.017578 0.42304,-0.08444 0.97793,-0.08652 1.64062,-0.189453 0.33204,-0.05157 0.69088,-0.132381 1.05469,-0.28711 0.36637,-0.155817 0.73295,-0.383979 1.04102,-0.720703 0.47197,-0.515881 0.70404,-1.172715 0.71484,-1.833984 0.0104,-0.655201 -0.1959,-1.269888 -0.53906,-1.783203 -0.34058,-0.509479 -0.7998,-0.898356 -1.30469,-1.171875 -0.50238,-0.272164 -1.03887,-0.424368 -1.56641,-0.494141 -0.45398,-0.06004 -0.9132,-0.06004 -1.36718,-10e-7 z\" id=\"path55105\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"><\/path> <path d=\"m 301.02148,4.1113281 c -0.57378,-0.1511089 -1.17501,-0.1480852 -1.74804,0.00586 -0.57304,0.1539437 -1.09481,0.4527814 -1.51563,0.8710937 a 1,1 0 0 0 -0.004,1.4160157 1,1 0 0 0 1.41406,0.00391 c 0.16958,-0.1685704 0.39407,-0.2973377 0.625,-0.359375 0.23092,-0.062037 0.48947,-0.062849 0.7207,-0.00195 0.23123,0.060896 0.45458,0.1877274 0.625,0.3554687 0.17042,0.1677399 0.30264,0.390867 0.36719,0.6210938 0.11455,0.4085376 0.038,1.0258141 -0.004,1.8242188 -0.021,0.4013203 -0.0238,0.8545476 0.082,1.3398442 0.10725,0.491566 0.32514,1.00622 0.73829,1.433594 0.34668,0.35862 0.7868,0.605319 1.27343,0.714843 0.48664,0.109525 0.99012,0.07591 1.45703,-0.09961 0.46691,-0.175516 0.86814,-0.481809 1.16211,-0.884765 0.29399,-0.402969 0.46173,-0.876806 0.48633,-1.375 a 1,1 0 0 0 -0.94922,-1.0488281 1,1 0 0 0 -1.04883,0.9492187 c -0.005,0.1008625 -0.046,0.2153004 -0.10546,0.2968744 -0.0595,0.08159 -0.15549,0.153924 -0.25,0.189453 -0.0945,0.03554 -0.21398,0.04366 -0.3125,0.02149 -0.0985,-0.02217 -0.20325,-0.08169 -0.27344,-0.154296 -0.0871,-0.09005 -0.1765,-0.2571772 -0.22266,-0.4687507 -0.0475,-0.2178422 -0.0576,-0.4912337 -0.041,-0.8085938 0.0335,-0.6389559 0.20762,-1.4933511 -0.0664,-2.4707031 -0.16019,-0.5713314 -0.46776,-1.0896381 -0.89062,-1.5058594 -0.42288,-0.4162197 -0.94574,-0.714121 -1.51954,-0.8652344 z\" id=\"path55109\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"><\/path> <\/g> <\/g><\/svg>","desc_1":"<p><strong>Make your celebration extra special<\/strong> - we'll bring your birthday, cocktail party, or any special occasion to life in our full-service event venue.<\/p>","svg_image_2":"<svg fill=\"#000000\" height=\"200px\" width=\"200px\" version=\"1.1\" id=\"Capa_1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 422.207 422.207\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" xml:space=\"preserve\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"><\/g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/g><g id=\"SVGRepo_iconCarrier\"> <path id=\"XMLID_154_\" d=\"M58.776,239.422h304.655c4.418,0,8-3.582,8-8V45.623c0-4.418-3.582-8-8-8H58.776c-4.418,0-8,3.582-8,8 v185.799C50.776,235.84,54.357,239.422,58.776,239.422z M66.776,53.623h288.655v169.799H66.776V53.623z M227.159,313.569h-32.107 c-26.284,0-47.668,21.384-47.668,47.669v46.464c0,4.418,3.582,8,8,8h111.441c4.418,0,8-3.582,8-8v-46.464 C274.825,334.953,253.442,313.569,227.159,313.569z M258.825,399.702h-95.441v-38.464c0-17.462,14.206-31.669,31.668-31.669h32.107 c17.461,0,31.666,14.207,31.666,31.669V399.702z M181.338,14.505c0-4.418,3.582-8,8-8h43.531c4.418,0,8,3.582,8,8s-3.582,8-8,8 h-43.531C184.919,22.505,181.338,18.923,181.338,14.505z M0,290.485c0-4.418,3.582-8,8-8h28.156 c-0.01-0.168-0.016-0.337-0.016-0.507c0-4.418,3.582-8,8-8h43.531c4.418,0,8,3.582,8,8c0,0.17-0.005,0.339-0.016,0.507h85.697 c-0.01-0.168-0.016-0.337-0.016-0.507c0-4.418,3.582-8,8-8h43.531c4.418,0,8,3.582,8,8c0,0.17-0.005,0.339-0.016,0.507h85.699 c-0.01-0.168-0.016-0.337-0.016-0.507c0-4.418,3.582-8,8-8h43.531c4.418,0,8,3.582,8,8c0,0.17-0.005,0.339-0.016,0.507h28.154 c4.418,0,8,3.582,8,8s-3.582,8-8,8H8C3.582,298.485,0,294.903,0,290.485z M81.96,313.569H49.853 c-26.284,0-47.668,21.384-47.668,47.669v46.464c0,4.418,3.582,8,8,8h111.442c4.418,0,8-3.582,8-8v-46.464 C129.627,334.953,108.244,313.569,81.96,313.569z M113.627,399.702H18.185v-38.464c0-17.462,14.206-31.669,31.668-31.669H81.96 c17.461,0,31.667,14.207,31.667,31.669V399.702z M372.356,313.569h-32.107c-26.284,0-47.668,21.384-47.668,47.669v46.464 c0,4.418,3.582,8,8,8h111.442c4.418,0,8-3.582,8-8v-46.464C420.023,334.953,398.64,313.569,372.356,313.569z M404.023,399.702 h-95.442v-38.464c0-17.462,14.206-31.669,31.668-31.669h32.107c17.461,0,31.667,14.207,31.667,31.669V399.702z\"><\/path> <\/g><\/svg>","desc_2":"<p><strong>Host your next team meeting, presentation, or networking event <\/strong>in our fully-equipped event space that nurtures collaboration and creativity.<\/p>","svg_image_3":"<svg fill=\"#000000\" version=\"1.1\" id=\"Capa_1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 66.391 66.391\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" xml:space=\"preserve\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"><\/g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/g><g id=\"SVGRepo_iconCarrier\"> <g> <g> <path d=\"M42.634,53.324c4.927,0,9.639-1.085,13.668-3.143l8.564,5.275c0.161,0.1,0.343,0.148,0.524,0.148 c0.216,0,0.432-0.07,0.61-0.208c0.33-0.255,0.467-0.687,0.347-1.084l-2.99-9.8c1.985-2.567,3.033-5.461,3.033-8.399 c0-9.183-9.817-16.655-22.428-17.157c-4.304-5.048-11.987-8.172-20.206-8.172C10.657,10.785,0,18.504,0,27.992 c0,2.938,1.046,5.831,3.03,8.4l-2.987,9.8c-0.121,0.397,0.017,0.83,0.346,1.084C0.568,47.414,0.785,47.484,1,47.484 c0.181,0,0.363-0.049,0.524-0.148l8.564-5.277c3.64,1.857,7.887,2.916,12.345,3.095C26.74,50.2,34.421,53.324,42.634,53.324z M64.393,36.115c0,2.631-1.009,5.242-2.915,7.553c-0.214,0.258-0.283,0.606-0.187,0.928l2.371,7.771l-6.796-4.188 c-0.16-0.1-0.342-0.148-0.524-0.148c-0.163,0-0.325,0.04-0.475,0.12c-3.851,2.075-8.427,3.173-13.233,3.173 c-7.813,0-15.073-2.979-18.945-7.775c-1.839-2.275-2.812-4.847-2.812-7.434c0-8.386,9.76-15.208,21.756-15.208 c0.162,0,0.32,0.008,0.479,0.016l0.346,0.016c0.001,0,0.002,0,0.004,0C55.199,21.25,64.393,27.917,64.393,36.115z M10.526,40.03 c-0.314-0.169-0.696-0.157-0.999,0.028L2.73,44.246L5.1,36.475c0.098-0.321,0.028-0.67-0.185-0.928 c-1.905-2.312-2.912-4.922-2.912-7.554c0-8.385,9.76-15.207,21.757-15.207c6.892,0,13.352,2.316,17.438,6.152 c-0.179,0.008-0.354,0.021-0.532,0.032c-0.181,0.011-0.363,0.02-0.543,0.033c-0.216,0.017-0.429,0.039-0.643,0.06 c-0.174,0.017-0.349,0.031-0.521,0.051c-0.22,0.024-0.436,0.056-0.654,0.085c-0.164,0.021-0.33,0.041-0.494,0.065 c-0.235,0.035-0.468,0.077-0.699,0.117c-0.143,0.024-0.286,0.046-0.427,0.072c-0.362,0.068-0.722,0.142-1.076,0.222 c-0.097,0.021-0.188,0.047-0.284,0.068c-0.276,0.065-0.552,0.131-0.824,0.203c-0.144,0.037-0.284,0.08-0.427,0.121 c-0.211,0.059-0.424,0.117-0.632,0.181c-0.155,0.047-0.307,0.099-0.46,0.148c-0.192,0.063-0.385,0.123-0.574,0.188 c-0.156,0.054-0.308,0.112-0.462,0.169c-0.183,0.066-0.366,0.133-0.546,0.203c-0.155,0.06-0.306,0.124-0.458,0.187 c-0.174,0.072-0.35,0.143-0.521,0.218c-0.152,0.066-0.3,0.136-0.45,0.204c-0.167,0.077-0.335,0.153-0.5,0.232 c-0.148,0.072-0.293,0.147-0.439,0.222c-0.161,0.081-0.321,0.162-0.479,0.246c-0.145,0.077-0.287,0.158-0.429,0.237 c-0.153,0.086-0.307,0.172-0.457,0.261c-0.14,0.082-0.276,0.167-0.414,0.251c-0.148,0.092-0.295,0.183-0.44,0.276 c-0.134,0.087-0.265,0.176-0.396,0.265c-0.142,0.096-0.283,0.192-0.421,0.291c-0.128,0.091-0.254,0.184-0.38,0.277 c-0.135,0.101-0.269,0.201-0.4,0.305c-0.123,0.096-0.243,0.192-0.363,0.291c-0.128,0.104-0.255,0.21-0.38,0.317 c-0.116,0.1-0.229,0.2-0.342,0.301c-0.122,0.11-0.242,0.221-0.361,0.333c-0.109,0.104-0.217,0.207-0.323,0.313 c-0.115,0.114-0.228,0.229-0.338,0.345c-0.103,0.106-0.204,0.214-0.303,0.323c-0.108,0.117-0.213,0.236-0.317,0.356 c-0.095,0.11-0.19,0.222-0.282,0.334c-0.101,0.122-0.198,0.245-0.294,0.369c-0.088,0.113-0.175,0.228-0.26,0.342 c-0.093,0.126-0.182,0.254-0.271,0.382c-0.08,0.116-0.16,0.232-0.237,0.35c-0.085,0.131-0.166,0.263-0.247,0.396 c-0.072,0.118-0.145,0.236-0.214,0.356c-0.077,0.134-0.149,0.27-0.221,0.406c-0.064,0.12-0.13,0.241-0.19,0.363 c-0.069,0.139-0.132,0.278-0.196,0.419c-0.056,0.122-0.113,0.243-0.165,0.366c-0.061,0.145-0.115,0.291-0.171,0.437 c-0.046,0.122-0.095,0.243-0.138,0.366c-0.053,0.15-0.098,0.302-0.145,0.453c-0.038,0.121-0.078,0.242-0.112,0.364 c-0.044,0.157-0.08,0.315-0.117,0.475c-0.029,0.119-0.061,0.238-0.085,0.358c-0.035,0.166-0.061,0.333-0.088,0.501 c-0.019,0.114-0.042,0.229-0.058,0.344c-0.026,0.187-0.042,0.375-0.059,0.562c-0.009,0.1-0.023,0.196-0.03,0.295 c-0.02,0.288-0.03,0.577-0.03,0.868c0,0.347,0.019,0.692,0.048,1.038c0.009,0.105,0.023,0.212,0.034,0.316 c0.027,0.246,0.061,0.49,0.102,0.733c0.02,0.114,0.04,0.229,0.062,0.343c0.051,0.256,0.11,0.51,0.176,0.762 c0.023,0.09,0.043,0.18,0.068,0.268c0.096,0.338,0.205,0.673,0.328,1.005c0.024,0.063,0.053,0.127,0.077,0.19 c0.105,0.27,0.218,0.537,0.341,0.803c0.049,0.105,0.102,0.213,0.154,0.318c0.112,0.229,0.231,0.453,0.357,0.679 c0.058,0.104,0.116,0.209,0.177,0.313c0.034,0.058,0.063,0.115,0.098,0.174C17.13,42.709,13.579,41.676,10.526,40.03z\"><\/path> <path d=\"M38.511,37.258c0,2.272,1.849,4.123,4.12,4.123c2.273,0,4.123-1.851,4.123-4.123s-1.85-4.123-4.123-4.123 C40.359,33.135,38.511,34.985,38.511,37.258z M44.754,37.258c0,1.17-0.953,2.123-2.123,2.123c-1.169,0-2.12-0.953-2.12-2.123 s0.951-2.123,2.12-2.123C43.801,35.135,44.754,36.088,44.754,37.258z\"><\/path> <path d=\"M30.687,33.135c-2.273,0-4.123,1.85-4.123,4.123s1.85,4.123,4.123,4.123s4.123-1.851,4.123-4.123 C34.809,34.985,32.959,33.135,30.687,33.135z M30.687,39.381c-1.17,0-2.123-0.953-2.123-2.123s0.953-2.123,2.123-2.123 s2.123,0.953,2.123,2.123C32.809,38.428,31.856,39.381,30.687,39.381z\"><\/path> <path d=\"M54.58,41.381c2.273,0,4.123-1.851,4.123-4.123s-1.85-4.123-4.123-4.123c-2.272,0-4.123,1.85-4.123,4.123 S52.308,41.381,54.58,41.381z M54.58,35.135c1.17,0,2.123,0.953,2.123,2.123s-0.953,2.123-2.123,2.123s-2.123-0.953-2.123-2.123 S53.409,35.135,54.58,35.135z\"><\/path> <\/g> <\/g> <\/g><\/svg>","desc_3":"<p><strong>Sweat and socialize <\/strong>- take your celebration or team building event to the next level with private classes in our immersive, state-of-the-art studios.<\/p>","svg_image_4":"<svg version=\"1.0\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 24 24\" fill=\"#000000\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" xml:space=\"preserve\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"><\/g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/g><g id=\"SVGRepo_iconCarrier\"> <g id=\"Guides\"> <g id=\"_x32_0_px_2_\"> <\/g> <g id=\"_x32_0px\"> <\/g> <g id=\"_x34_0px\"> <\/g> <g id=\"_x34_4_px\"> <\/g> <g id=\"_x34_8px\"> <g id=\"_x31_6px\"> <\/g> <g id=\"square_4px\"> <g id=\"_x32_8_px\"> <g id=\"square_4px_2_\"> <\/g> <g id=\"square_4px_3_\"> <\/g> <g id=\"square_4px_1_\"> <\/g> <g id=\"_x32_4_px_2_\"> <\/g> <g id=\"_x31_2_px\"> <\/g> <\/g> <\/g> <\/g> <g id=\"Icons\"> <\/g> <g id=\"_x32_0_px\"> <\/g> <g id=\"square_6px\"> <g id=\"_x31_2_PX\"> <\/g> <\/g> <g id=\"_x33_6_px\"> <g id=\"_x33_2_px\"> <g id=\"_x32_8_px_1_\"> <g id=\"square_6px_1_\"> <\/g> <g id=\"_x32_0_px_1_\"> <g id=\"_x31_2_PX_2_\"> <\/g> <g id=\"_x34_8_px\"> <g id=\"_x32_4_px\"> <\/g> <g id=\"_x32_4_px_1_\"> <\/g> <\/g> <\/g> <\/g> <\/g> <\/g> <g id=\"_x32_0_px_3_\"> <\/g> <g id=\"_x32_0_px_4_\"> <\/g> <g id=\"New_Symbol_8\"> <g id=\"_x32_4_px_3_\"> <\/g> <\/g> <\/g> <g id=\"Artboard\"> <\/g> <g id=\"Free_Icons\"> <g> <polygon style=\"fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;\" points=\"17.5,21 3.5,14.5 3.5,9.5 17.5,3.5 \"><\/polygon> <polyline style=\"fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;\" points=\" 5.5,15.428 5.5,19 11.5,22 11.5,18.214 \"><\/polyline> <line style=\"fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;\" x1=\"23\" y1=\"19.5\" x2=\"20\" y2=\"18\"><\/line> <line style=\"fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;\" x1=\"23\" y1=\"4.5\" x2=\"20\" y2=\"6\"><\/line> <polygon style=\"fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;\" points=\"0.5,15.5 3.5,14.5 3.5,9.5 0.5,8.5 \"><\/polygon> <line style=\"fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;\" x1=\"20\" y1=\"11.5\" x2=\"23.5\" y2=\"11.5\"><\/line> <\/g> <\/g> <\/g><\/svg>","desc_4":"<p><strong>Activate your brand <\/strong>- partner with us for a one-of-a-kind, fully immersive experience to connect with our vast community of highly-engaged fitness, health, and wellness enthusiasts.<\/p>"}}},"block_order":["features_ExRUf4"],"settings":{"layout":"image_first","desktop_content_position":"top","desktop_content_alignment":"left","color_scheme":"","mobile_content_alignment":"left","top_padding_remove":true,"bottom_padding_remove":true}},"tonic_bookings_7TY7CV":{"type":"tonic-bookings","settings":{"sub_heading":"EVENT SPACE RENTAL","heading":"UNIQUE EVENT & PARTY VENUE IN THE HEART OF TORONTO","description":"<p>Host your next team meeting, cocktail, holiday, or office party at Tonic House - our multi-purpose, fully-licensed, boutique event space and community hub amidst a downtown view.<\/p>","btn_label":"VIEW EVENTS PACKAGE","btn_link":"https:\/\/bit.ly\/sweatandtonic-event-package","desktop_slider":true,"mobile_slider":false}},"multirow_hDxdme":{"type":"multirow","blocks":{"row_w49cDr":{"type":"row","settings":{"image":"shopify:\/\/shop_images\/TonicHouse_Event.png","caption":"","heading":"COCKTAIL & BIRTHDAY PARTY VENUE","text":"<p>Make your next celebration unforgettable. Tonic House is a premium venue accommodating up to 150 people, perfect for private events, birthday parties, cocktail, and holiday parties. We offer customizable options to suit every occasion, including live DJ, custom hand-crafted cocktails, and flexible catering & beverage services.<\/p>","button_label":"VIEW EVENTS PACKAGE","button_link":"https:\/\/bit.ly\/sweatandtonic-event-package"}},"row_QEtYtB":{"type":"row","settings":{"image":"shopify:\/\/shop_images\/BrandParnterships_SweatandTonic_FirstAidBeauty.png","caption":"","heading":"BRAND ACTIVATIONS & MEDIA EVENTS","text":"<p>Make an impact. From product launches and community activations, to networking and VIP events, we'll work with you to create unique and innovative experiences and connect with the community.<\/p>","button_label":"PARTNER WITH US","button_link":"#contactus"}},"row_XJiBKC":{"type":"row","settings":{"image":"shopify:\/\/shop_images\/PRIVATE_RIDE_SWEAT_AND_TONIC.jpg","caption":"","heading":"PRIVATE YOGA, RIDE, AND HIIT CLASSES","text":"<p>Sweat and socialize. Whether it's a celebratory occasion or corporate team building event, we've got everything you need to make your event extra special. Book a private & personalized HIIT, Ride, or Yoga class, and gather in Tonic House to unwind, mingle, and celebrate.<\/p>","button_label":"LEARN MORE","button_link":"https:\/\/bit.ly\/sweatandtonic-event-package"}},"row_AjCAeL":{"type":"row","settings":{"image":"shopify:\/\/shop_images\/SWEAT_AND_TONIC_PREMIUM_MEETING_SPACE_IN_DOWNTOWN_TORONTO.jpg","caption":"","heading":"PREMIUM MEETING SPACE IN DOWNTOWN TORONTO","text":"<p>Collaborate, nurture creativity, and boost productivity. With complimentary WIFI, high definition projector & screen, light dimmers, motorized window shades, full AV connectivity & control, flexible catering options, and a cocktail bar, you can even take your event from day to night. Just bring you and your team, and we'll do the rest.<\/p>","button_label":"GET IN TOUCH","button_link":"#contactus"}}},"block_order":["row_w49cDr","row_QEtYtB","row_XJiBKC","row_AjCAeL"],"settings":{"image_height":"medium","desktop_image_width":"medium","heading_size":"h2","text_style":"body","button_style":"primary","desktop_content_position":"middle","desktop_content_alignment":"left","image_layout":"alternate-right","section_color_scheme":"","row_color_scheme":"","mobile_content_alignment":"left","padding_top":0,"padding_bottom":20}},"presslogo_JGeMyK":{"type":"presslogo","blocks":{"image_jbWFMt":{"type":"image","settings":{"logo":"shopify:\/\/shop_images\/Sweat_Tonic_Benefit.png","logo_link":""}},"image_PhrCNK":{"type":"image","settings":{"logo":"shopify:\/\/shop_images\/Sweat_Tonic_Benefit.png","logo_link":""}},"image_K9AMgw":{"type":"image","settings":{"logo":"shopify:\/\/shop_images\/Sweat_Tonic_Benefit.png","logo_link":""}},"image_MKzJf9":{"type":"image","settings":{"logo":"shopify:\/\/shop_images\/Sweat_Tonic_Benefit.png","logo_link":""}},"image_pgR8Gg":{"type":"image","settings":{"logo":"shopify:\/\/shop_images\/Sweat_Tonic_Benefit.png","logo_link":""}},"image_WbDWTz":{"type":"image","settings":{"logo":"shopify:\/\/shop_images\/Sweat_Tonic_Benefit.png","logo_link":""}}},"block_order":["image_jbWFMt","image_PhrCNK","image_K9AMgw","image_MKzJf9","image_pgR8Gg","image_WbDWTz"],"disabled":true,"settings":{"allow_transparent_header":false,"image":"shopify:\/\/shop_images\/500.png","img_mobile":"shopify:\/\/shop_images\/500.png","image_overlay_opacity":10,"image_height":"small","desktop_content_position":"middle-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"accent-1","image_behavior":"none","mobile_content_alignment":"center","show_text_below":false}},"tonic_locations_FHUFTR":{"type":"tonic-locations","blocks":{"location_qVC3BC":{"type":"location","settings":{"heading":"YONGE \/ SHUTER","description":"","address":"225 Yonge Street, Toronto ON M5B 1N8","phone":"647-372-0225","button_label":"","button_link":"","image":"shopify:\/\/shop_images\/tonic-house-banner.png","feat_title":"LOCATION HIGHLIGHTS:","feature_1":"100-person event capacity","feature_2":"Complimentary WiFi, full AV including projector & screen","feature_3":"Full-service cocktail bar","feature_4":"Sound-proof phone booth","feature_5":"Located in the Financial District"}},"location_QwkcDF":{"type":"location","settings":{"heading":"FRONT \/ SPADINA","description":"","address":"468 Front Street West, Toronto ON M5V 0V2","phone":"647-477-1446","button_label":"","button_link":"","image":"shopify:\/\/shop_images\/Tonic_House.jpg","feat_title":"LOCATION HIGHLIGHTS:","feature_1":"150-person event capacity","feature_2":"Complimentary Wi-Fi, full AV including projector & screen","feature_3":"Full-service cocktail bar","feature_4":"All-season patio & private meeting rooms","feature_5":"Sound-proof phone booths"}}},"block_order":["location_qVC3BC","location_QwkcDF"],"settings":{"caption":"ALL LOCATIONS","title":"DISCOVER YOUR PERFECT SPOT"}},"imag_slider_v3_VFCkDN":{"type":"imag-slider-v3","blocks":{"image_m93Q3N":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/SweatandTonicBrandActivationTonicHouse_63ae9448-59bf-436c-bd5e-261e889a4e3a.jpg","heading":"BRAND ACTIVATION | FRONT\/SPADINA"}},"image_gJikUw":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/SweatandTonicTonicHouseEventVogueWorkshopFunction.jpg","heading":"WORKSHOP | FRONT\/SPADINA"}},"image_F6YdWw":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Sweat_and_Tonic_Tonic_House_Patio.jpg","heading":"TONIC HOUSE PATIO | FRONT\/SPADINA"}},"image_cypNPc":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/SweatandTonicPanelEventFrontandSpadina.jpg","heading":"SPEAKING EVENT | FRONT\/SPADINA"}},"image_hDAtzr":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/TonicHouse_party_2014x1105_3_ec4ba307-e16a-4da0-93bf-dffa055566cd.png","heading":"PANEL EVENT | YONGE\/SHUTER"}},"image_k6Xihm":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/TonicHouse_party_2014x1105_2.png","heading":"SOCIAL | YONGE\/SHUTER"}},"image_WTDgiy":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/TonicHouse_party_2014x1105_4.png","heading":"TONIC HOUSE | YONGE\/SHUTER"}},"image_UXkkmK":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/TonicHouse_party_2014x1105_5.png","heading":"CORPORATE EVENT | YONGE\/SHUTER"}}},"block_order":["image_m93Q3N","image_gJikUw","image_F6YdWw","image_cypNPc","image_hDAtzr","image_k6Xihm","image_WTDgiy","image_UXkkmK"],"settings":{"color_scheme":"","enableUpperCase":true,"subHeading":"","heading":"","padding_top":0,"padding_bottom":0}},"event-video":{"type":"event-video","settings":{"heading":"","heading_size":"h1","enable_video_looping":true,"video_url":"https:\/\/vimeo.com\/890042194?share=copy","mb_video_url":"https:\/\/vimeo.com\/890054765?share=copy","cover_image":"shopify:\/\/shop_images\/TonicHouse_Event.png","description":"Holiday party with large group dancing on disco floor in Tonic House at Sweat and Tonic","full_width":false,"color_scheme":"","top_padding_remove":false,"bottom_padding_remove":false}},"anchor_8yFbVB":{"type":"anchor","settings":{"link_anchor":"contactus"}},"event-contact":{"type":"event-contact","settings":{"bg_color_left":"#26221b","text_color_left":"#ffffff","sub_color_left":"#c79d5b","subheading_left":"BOOK YOUR NEXT EVENT","heading_left":"INTERESTED IN MAKING YOUR NEXT EVENT UNFORGETTABLE?","text_left":"Send us a note about what you have in mind and let’s get this party started.","p_name":"","p_tagline":"Partnerships, Corporate Sales & Events","p_mail":"salesandevents@sweatandtonic.com","heading":"Contact form","btn_label":"Submit event inquiry","btn_url":"https:\/\/hooks.zapier.com\/hooks\/catch\/16906339\/38ewv6l\/","success_msg":"<p>Thanks for inquiring. Your entry is submitted, and we'll reach out to you soon.<\/p>","color_scheme":"scheme-4c1a74af-8622-41b0-8be5-f4c2bac68732","top_padding_remove":false,"bottom_padding_remove":false,"show_current_activity_dropdown":false,"embed-form":"<!-- Begin Connect Signup Form -->\n<link href=\"https:\/\/assets.brandbot.com\/forms\/embed\/embed.css\" rel=\"stylesheet\" type=\"text\/css\">\n<style type=\"text\/css\">\n  .contact #bb_form .field.form-group:after {display: none;}\n  .contact #bb_form .field.form-group input[type=\"text\"],.contact #bb_form .field.form-group input[type=\"email\"],.contact #bb_form .field.form-group input[type=\"tel\"]{border: none;border-bottom: 1px solid rgba(0,0,0,.2);border-radius: unset;}\n  .contact #bb_form .form-group.with-label {flex-wrap: wrap;flex-direction: column;}\n  .contact #bb_form .form-group label{font-weight:400;}\n#bb_form .form-group.with-label input[type=checkbox]{margin-left: 20px;}\n<\/style>\n\n<div id=\"bb_form\">\n  <form method=\"post\" action=\"https:\/\/microservices.brndbot.net\/forms\/answers\" name=\"4pycgc\" id=\"bb_form_inner\">\n    <div id=\"alert\"><\/div>\n    <div class=\"contact__fields\">\n      <div class=\"field form-group no-label\">\n        <label for=\"bb_first_name\">First Name<\/label>\n        <input type=\"text\" name=\"bb_first_name\" id=\"bb_first_name\" class=\"form-control input-field\" required=\"required\" placeholder=\"First Name\">\n      <\/div>\n      <div class=\"field form-group no-label\">\n        <label for=\"bb_last_name\">Last Name<\/label>\n        <input type=\"text\" name=\"bb_last_name\" id=\"bb_last_name\" class=\"form-control input-field\" required=\"required\" placeholder=\"Last Name\">\n      <\/div>\n    <\/div>\n\n\n    <div class=\"contact__fields\">\n      <div class=\"field form-group no-label\">\n        <label for=\"bb_email\">Email Address<\/label>\n        <input type=\"email\" name=\"bb_email\" id=\"bb_email\" class=\"form-control input-field\" required=\"required\" placeholder=\"Email Address\">\n      <\/div>\n      <div class=\"field form-group no-label\">\n        <label for=\"bb_phone\">Phone Number<\/label>\n        <input type=\"tel\" name=\"bb_phone\" id=\"bb_phone\" class=\"form-control input-field\" required=\"required\" placeholder=\"Phone Number\">\n      <\/div>\n    <\/div>\n    <div class=\"field form-group no-label\">\n      <label for=\"bb_custom_company\">Company<\/label>\n      <input type=\"text\" name=\"bb_custom_company\" id=\"bb_custom_company\" class=\"form-control input-field\" placeholder=\"Company\">\n    <\/div>\n    <div class=\"field form-group with-label\">\n      <label for=\"bb_custom_occasion\">Occasion<\/label>\n      <div>\n        <select id=\"bb_custom_occasion\" placeholder=\"bb_custom_occasion\" name=\"bb_custom_occasion\" class=\"input-field\">\n          <option value=\"Birthday\">Birthday<\/option>\n          <option value=\"Bachelor \/ bachelorette party\">Bachelor \/ bachelorette party<\/option>\n          <option value=\"Social \/ networking event\">Social \/ networking event<\/option>\n          <option value=\"Corporate\">Corporate<\/option>\n          <option value=\"Team meeting \/ team building\">Team meeting \/ team building<\/option>\n          <option value=\"Other\">Other<\/option>\n        <\/select>\n      <\/div>\n    <\/div>\n    <div class=\"field form-group no-label\">\n      <label for=\"bb_custom_number-of-guests\">Number of guests<\/label>\n      <input type=\"text\" name=\"bb_custom_number-of-guests\" id=\"bb_custom_number-of-guests\" class=\"form-control input-field\" placeholder=\"Number of guests\">\n    <\/div>\n    <div class=\"field form-group no-label\">\n      <label for=\"bb_custom_event-date\">Event date<\/label>\n      <input type=\"text\" name=\"bb_custom_event-date\" id=\"bb_custom_event-date\" class=\"form-control input-field\" placeholder=\"Event date\">\n    <\/div>\n    <div class=\"field form-group no-label\">\n      <label for=\"bb_custom_additional-notes\">Additional notes<\/label>\n      <input type=\"text\" name=\"bb_custom_additional-notes\" id=\"bb_custom_additional-notes\" class=\"form-control input-field\" placeholder=\"Additional notes\">\n    <\/div>\n\n    \n    <div class=\"field form-group with-label\">\n      <label for=\"bb_custom_sign-me-up-to-receive-special-offers-promotions-updates-from-st\">Sign me up to receive special offers, promotions &amp; updates from S&amp;T.<\/label>\n      <div>\n        <input id=\"bb_custom_sign-me-up-to-receive-special-offers-promotions-updates-from-st\" type=\"checkbox\" value=\"Sign up\"> Sign up\n      <\/div>\n    <\/div>\n    <div class=\"field form-group\">\n      <input type=\"hidden\" name=\"bb_uuid\" id=\"bb_uuid\" value=\"ac113d2b-a450-40ef-90fb-8c8a5e6cfaad\">\n      <button type=\"submit\" class=\"button button--primary\" id=\"bb_submit\" style=\"background-color: #000000; border-color: #000000; color: white;\">SUBMIT EVENT INQUIRY<\/button>\n    <\/div>\n  <\/form>\n<\/div>\n<script>window.jQuery || document.write('<scr'+'ipt src=\"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/jquery\/3.3.1\/jquery.min.js\"><\/scr'+'ipt>') <\/script>\n<script src=\"https:\/\/assets.brandbot.com\/forms\/embed\/embed.js?id=4pycgc\"><\/script>\n<!-- Ending Connect Signup Form -->"}},"event-banner":{"type":"event-banner","blocks":{"6bf71fd1-ba85-4a43-8d76-927c4cab725e":{"type":"heading","settings":{"heading":"EVENT SPACE RENTAL"}},"buttons_MmmHzN":{"type":"buttons","settings":{"button_label_1":"Shop now","button_link_1":"","button_style_secondary_1":false}},"text_6JWHwA":{"type":"text","settings":{"text":"Give customers details about the banner image(s) or content on the template."}}},"block_order":["6bf71fd1-ba85-4a43-8d76-927c4cab725e","buttons_MmmHzN","text_6JWHwA"],"disabled":true,"settings":{"allow_transparent_header":true,"image":"shopify:\/\/shop_images\/096A4189website_1_6bd75164-947e-43ff-9151-66331dbd9377.png","img_mobile":"shopify:\/\/shop_images\/096A4189website_1_6bd75164-947e-43ff-9151-66331dbd9377.png","image_overlay_opacity":0,"image_height":"adapt","desktop_content_position":"bottom-left","show_text_box":false,"color_scheme":"inverse","image_behavior":"none","mobile_content_alignment":"left","show_text_below":false}},"event-text-column":{"type":"event-text-column","blocks":{"8cb243b8-2de5-461b-82fa-781713c869c4":{"type":"text","settings":{"title":"COCKTAIL & BIRTHDAY PARTY VENUE","content":"<p>Make your next celebration unforgettable. Tonic House is a luxury venue accommodating up to 150 people, perfect for private events, birthday parties, cocktail, and holiday parties. We offer customizable options to suit every occasion, including live DJ, custom hand-crafted cocktails, and flexible catering & beverage services.<\/p>"}},"a9e25818-af63-43ec-a469-c1afdd8ff354":{"type":"text","settings":{"title":"PREMIUM MEETING SPACE IN DOWNTOWN TORONTO","content":"<p>Collaborate, nurture creativity, and boost productivity. With complimentary WIFI, high definition projector & screen, light dimmers, motorized window shades, full AV connectivity & control, flexible catering options, and a cocktail bar, you can even take your event from day to night. Just bring you and your team, and we'll do the rest.<\/p>"}},"e7276979-9741-4da5-add1-effbc1376a3c":{"type":"text","settings":{"title":"PRIVATE YOGA, RIDE, AND HIIT CLASSES","content":"<p>Sweat and socialize. Whether it's a celebratory occasion or corporate team building event, we've got everything you need to make your event extra special. Book a private & personalized HIIT, Ride, or Yoga class, and gather in Tonic House to unwind, mingle, and celebrate.<\/p>"}},"f4c73174-7077-4211-aecf-ee65640d7262":{"type":"text","settings":{"title":"BRAND ACTIVATIONS & MEDIA EVENTS","content":"<p>Make an impact. From product launches and community activations, to networking and VIP events, we'll work with you to create unique and innovative experiences and connect with the community.<\/p>"}},"text_8eMK3H":{"type":"text","disabled":true,"settings":{"title":"COCKTAIL & BIRTHDAY PARTY VENUE","content":"<p>Make your next celebration unforgettable. Tonic House is a luxury venue accommodating up to 100 people, perfect for private events, birthday parties, cocktail, and holiday parties. We offer customizable options to suit every occasion, including live DJ, custom hand-crafted cocktails, and flexible catering &amp; beverage services.<\/p>"}}},"block_order":["8cb243b8-2de5-461b-82fa-781713c869c4","a9e25818-af63-43ec-a469-c1afdd8ff354","e7276979-9741-4da5-add1-effbc1376a3c","f4c73174-7077-4211-aecf-ee65640d7262","text_8eMK3H"],"disabled":true,"settings":{"caption":"TONIC HOUSE","heading":"UNIQUE EVENT & PARTY VENUE IN THE HEART OF TORONTO","description":"<p>Host your next team meeting, cocktail, holiday, or office party at Tonic House - our multi-purpose, fully-licensed, boutique event space and community hub amidst a downtown view.<\/p>","button_label":"VIEW EVENTS PACKAGES","button_link":"https:\/\/cdn.shopify.com\/s\/files\/1\/0277\/8280\/7635\/files\/Sweat_and_Tonic_-_Events_Package_3.pdf?v=1722515192","button_style_secondary":false,"desktop_content_position":"top","desktop_content_alignment":"left","mobile_content_alignment":"left","top_padding_remove":false,"bottom_padding_remove":false}},"event-gallery-slider":{"type":"event-gallery-slider","blocks":{"a296c20f-0156-46b5-9dfd-275728779f6b":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/TonicHouse_party_2014x1105_3_ec4ba307-e16a-4da0-93bf-dffa055566cd.png"}},"756b71f0-8890-467d-bc57-3eefd5ada348":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Tonic_House.jpg"}},"2e7aec4e-76d1-4ed9-9a67-65fa745be8d0":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/TonicHouse_party_2014x1105_2.png"}},"98c662aa-868d-44fd-8cb6-446a5faac957":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/TonicHouse_party_2014x1105_4.png"}},"f73f8d5e-4c70-49f8-ba17-d27e40306f4f":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/TonicHouse_party_2014x1105_5.png"}},"image_Q7M76J":{"type":"image","settings":{}}},"block_order":["a296c20f-0156-46b5-9dfd-275728779f6b","756b71f0-8890-467d-bc57-3eefd5ada348","2e7aec4e-76d1-4ed9-9a67-65fa745be8d0","98c662aa-868d-44fd-8cb6-446a5faac957","f73f8d5e-4c70-49f8-ba17-d27e40306f4f","image_Q7M76J"],"disabled":true,"settings":{"title":"","heading_size":"h2","image_ratio":"portrait","button_label":"","button_link":"","color_scheme":"","top_padding_remove":true,"bottom_padding_remove":true}}},"order":["spa_hero_Vk3NN7","services_about_w78iaR","tonic_bookings_7TY7CV","multirow_hDxdme","presslogo_JGeMyK","tonic_locations_FHUFTR","imag_slider_v3_VFCkDN","event-video","anchor_8yFbVB","event-contact","event-banner","event-text-column","event-gallery-slider"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "spa_hero_Vk3NN7": {
+      "type": "spa-hero",
+      "blocks": {
+        "text_nMmwBD": {
+          "type": "text",
+          "settings": {
+            "text": "PRIVATE EVENTS & ACTIVATIONS AT SWEAT AND TONIC",
+            "text_style": "caption-with-letter-spacing",
+            "text_clr": "#ffffff"
+          }
+        },
+        "heading_e3WnyH": {
+          "type": "heading",
+          "settings": {
+            "heading": "EVENT SPACE RENTAL",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "buttons_TDxGH8": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "GET YOUR PARTY STARTED",
+            "button_link_1": "#contactus",
+            "button_style": "solid",
+            "applies_color_scheme": true,
+            "btn_text_clr": "#000000",
+            "btn_hvr_text_clr": "#000000",
+            "btn_bg_clr": "#c79d5b",
+            "btn_hvr_bg_clr": "#ffffff"
+          }
+        },
+        "spa_info_rK89Hg": {
+          "type": "spa_info",
+          "settings": {
+            "detail": "Host your next team meeting, cocktail, holiday, or office party at Tonic House.",
+            "link_text": "VIEW OUR EVENT PACKAGE",
+            "url": "https://bit.ly/sweatandtonic-event-package",
+            "enableScroll": false
+          }
+        }
+      },
+      "block_order": [
+        "text_nMmwBD",
+        "heading_e3WnyH",
+        "buttons_TDxGH8",
+        "spa_info_rK89Hg"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "image": "shopify://shop_images/Sweat-and-Tonic-Events-Banner-2025.png",
+        "img_mobile": "shopify://shop_images/Sweat-and-Tonic-Events-Banner-2025_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "color_scheme": "accent-1",
+        "image_behavior": "none"
+      }
+    },
+    "services_about_w78iaR": {
+      "type": "services-about",
+      "blocks": {
+        "features_ExRUf4": {
+          "type": "features",
+          "settings": {
+            "svg_image_1": "<svg viewbox=\"0 0 64 64\" id=\"svg5\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"#000000\" xml:space=\"preserve\" xmlns:svg=\"http://www.w3.org/2000/svg\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <defs id=\"defs2\"></defs> <g id=\"layer1\" transform=\"translate(-288)\"> <path d=\"m 306.51953,28.427734 c -0.65112,0.01192 -1.2849,0.197012 -1.76562,0.677735 -0.19132,0.191315 -0.33188,0.408965 -0.4375,0.640625 a 1,1 0 0 0 -0.01,0.01367 l -12.23828,27.630859 a 1.0001,1.0001 0 0 0 1.31836,1.320313 l 27.55469,-12.207032 a 1,1 0 0 0 0.0312,-0.01758 c 0.25349,-0.107628 0.492,-0.255673 0.69922,-0.46289 0.64095,-0.640964 0.75701,-1.554055 0.63671,-2.416016 -0.1203,-0.861954 -0.46342,-1.778629 -0.97461,-2.769531 -1.02236,-1.981805 -2.73782,-4.253456 -4.93945,-6.455079 -2.20162,-2.201621 -4.47133,-3.915124 -6.45312,-4.9375 -0.99091,-0.511187 -1.90759,-0.856262 -2.76953,-0.976562 -0.21549,-0.03007 -0.43531,-0.04499 -0.65235,-0.04102 z m 0.0508,1.996094 c 0.089,9.7e-5 0.19549,0.0074 0.32422,0.02539 0.51494,0.07186 1.26901,0.329842 2.12891,0.773437 1.71979,0.887219 3.87745,2.494643 5.95703,4.574219 2.07958,2.079576 3.68895,4.239191 4.57617,5.958984 0.4436,0.859905 0.69963,1.612019 0.77148,2.126953 0.0719,0.514929 -0.0276,0.683896 -0.0703,0.726563 -0.0426,0.04264 -0.21166,0.144108 -0.72656,0.07227 -0.51494,-0.07186 -1.269,-0.327882 -2.12891,-0.771485 -1.71978,-0.887219 -3.8794,-2.496596 -5.95898,-4.576172 -2.07958,-2.079575 -3.687,-4.237238 -4.57422,-5.957031 -0.4436,-0.859896 -0.69962,-1.613971 -0.77148,-2.128906 -0.0522,-0.374223 -0.0139,-0.562797 0.0273,-0.65625 l 0.01,-0.01953 v -0.002 c 0.0119,-0.02231 0.0242,-0.0418 0.0332,-0.05078 0.032,-0.03198 0.13522,-0.09599 0.40234,-0.0957 z m -1.79297,3.212891 c 0.0977,0.215664 0.20131,0.433135 0.31641,0.65625 1.02238,1.981797 2.73392,4.253456 4.93555,6.455078 2.20161,2.201622 4.47523,3.915117 6.45703,4.9375 0.22178,0.114411 0.43793,0.217246 0.65234,0.314453 l -7.70898,3.414062 c -1.63582,-0.960717 -3.51199,-2.441234 -5.2461,-4.173828 -1.12769,-1.12896 -2.15508,-2.324404 -3.0039,-3.482422 z m -4.51953,10.205078 c 0.75731,0.951967 1.60333,1.900939 2.51172,2.810547 1.4484,1.447366 2.97852,2.730397 4.46094,3.736328 l -12.28516,5.443359 z\" id=\"rect55015\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"></path> <path d=\"m 341.62891,26.142578 c -5.4532,-0.472611 -9.9929,1.468384 -13.30664,3.830078 -4.41833,3.148926 -6.82227,7.06836 -6.82227,7.06836 a 1,1 0 0 0 0.32812,1.376953 1,1 0 0 0 1.375,-0.328125 c 0,0 2.21942,-3.594817 6.2793,-6.488282 4.05988,-2.893464 9.79515,-5.061483 17.17774,-2.240234 a 1,1 0 0 0 1.29101,-0.576172 1,1 0 0 0 -0.57617,-1.291015 c -2.0092,-0.767816 -3.92836,-1.194026 -5.74609,-1.351563 z\" id=\"path55061\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"></path> <path d=\"m 332.38672,8.0546875 a 1,1 0 0 0 -1.08789,0.9023438 c 0,0 -0.40206,4.2050857 -2.76367,8.5957027 -2.36162,4.390618 -6.54694,8.872789 -14.41602,9.607422 a 1,1 0 0 0 -0.90234,1.087891 1,1 0 0 0 1.08789,0.902344 c 8.56641,-0.799735 13.42206,-5.87213 15.99218,-10.650391 2.57013,-4.778261 2.99219,-9.3574219 2.99219,-9.3574219 a 1,1 0 0 0 -0.90234,-1.0878906 z\" id=\"path55081\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"></path> <path d=\"m 310.21289,15.603516 c -1.64501,0 -3,1.354992 -3,3 0,1.645008 1.35499,3 3,3 1.64501,0 3,-1.354992 3,-3 0,-1.645008 -1.35499,-3 -3,-3 z m 0,2 c 0.56413,0 1,0.435871 1,1 0,0.564128 -0.43587,1 -1,1 -0.56413,0 -1,-0.435872 -1,-1 0,-0.564129 0.43587,-1 1,-1 z\" id=\"path55087\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"></path> <path d=\"m 343.42773,7.7519531 c -1.98555,0 -3.61718,1.6316312 -3.61718,3.6171879 0,1.985556 1.63163,3.617187 3.61718,3.617187 1.98556,0 3.61719,-1.631631 3.61719,-3.617187 0,-1.9855567 -1.63163,-3.6171879 -3.61719,-3.6171879 z m 0,2 c 0.90468,0 1.61719,0.7125099 1.61719,1.6171879 0,0.904677 -0.71251,1.617187 -1.61719,1.617187 -0.90467,0 -1.61718,-0.71251 -1.61718,-1.617187 0,-0.904678 0.71251,-1.6171879 1.61718,-1.6171879 z\" id=\"circle55089\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"></path> <path d=\"m 345.01758,45.775391 c -1.64501,0 -3,1.354992 -3,3 0,1.645008 1.35499,3 3,3 1.64501,0 3,-1.354992 3,-3 0,-1.645008 -1.35499,-3 -3,-3 z m 0,2 c 0.56413,0 1,0.435871 1,1 0,0.564128 -0.43587,1 -1,1 -0.56413,0 -1,-0.435872 -1,-1 0,-0.564129 0.43587,-1 1,-1 z\" id=\"circle55091\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"></path> <path d=\"m 323.25391,7.8359375 a 1,1 0 0 0 -1,1 v 1.3867185 h -1.38672 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 1.38672 v 1.386719 a 1,1 0 0 0 1,1 1,1 0 0 0 1,-1 v -1.386719 h 1.38671 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 h -1.38671 V 8.8359375 a 1,1 0 0 0 -1,-1 z\" id=\"path55093\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"></path> <path d=\"m 335.43555,17.988281 a 1,1 0 0 0 -0.70703,0.292969 1,1 0 0 0 0,1.414062 l 0.98046,0.980469 -0.98046,0.980469 a 1,1 0 0 0 0,1.414062 1,1 0 0 0 1.41406,0 l 0.98047,-0.980468 0.98047,0.980468 a 1,1 0 0 0 1.41406,0 1,1 0 0 0 0,-1.414062 l -0.98047,-0.980469 0.98047,-0.980469 a 1,1 0 0 0 0,-1.414062 1,1 0 0 0 -0.70703,-0.292969 1,1 0 0 0 -0.70703,0.292969 l -0.98047,0.980469 -0.98047,-0.980469 a 1,1 0 0 0 -0.70703,-0.292969 z\" id=\"path55097\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"></path> <path d=\"m 336.42383,36.179688 a 1,1 0 0 0 -1,1 v 1.386718 h -1.38672 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 1.38672 v 1.386719 a 1,1 0 0 0 1,1 1,1 0 0 0 1,-1 v -1.386719 h 1.38672 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 h -1.38672 v -1.386718 a 1,1 0 0 0 -1,-1 z\" id=\"path55101\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"></path> <path d=\"m 327.12305,45.207031 a 1,1 0 0 0 -0.86133,1.123047 1,1 0 0 0 1.12305,0.859375 c 0.27918,-0.03692 0.56457,-0.03692 0.84375,0 0.3226,0.04267 0.62337,0.135167 0.875,0.271484 0.24912,0.134963 0.4597,0.319998 0.5957,0.523438 0.13344,0.199604 0.20437,0.438385 0.20117,0.640625 -0.003,0.196172 -0.0845,0.396844 -0.19141,0.513672 -0.0735,0.08031 -0.19388,0.167022 -0.34765,0.232422 -0.15633,0.06649 -0.35162,0.115209 -0.57813,0.15039 -0.45436,0.07057 -1.041,0.06628 -1.72656,0.203125 -1.11132,0.221822 -2.12648,0.804948 -2.87891,1.652344 -0.75241,0.847402 -1.21004,1.924937 -1.29882,3.054688 -0.0888,1.129772 0.19581,2.264238 0.80664,3.21875 0.61083,0.954515 1.5229,1.689358 2.58593,2.082031 1.06304,0.392671 2.2337,0.427836 3.31836,0.09961 1.08467,-0.328222 2.03811,-1.005696 2.70508,-1.921875 0.66698,-0.916179 1.01891,-2.032979 0.99805,-3.166015 -0.0209,-1.132989 -0.41301,-2.23594 -1.11328,-3.126954 a 1,1 0 0 0 -1.4043,-0.167968 1,1 0 0 0 -0.16797,1.404297 c 0.42449,0.540113 0.67287,1.240812 0.68555,1.927734 0.0126,0.686876 -0.21091,1.39578 -0.61524,1.951172 -0.40432,0.555392 -1.01043,0.986575 -1.66796,1.185547 -0.65754,0.198973 -1.4005,0.175542 -2.04493,-0.0625 -0.64442,-0.238042 -1.2254,-0.704556 -1.5957,-1.283203 -0.3703,-0.578649 -0.54991,-1.299522 -0.49609,-1.984375 0.0538,-0.684876 0.34466,-1.369108 0.80078,-1.882813 0.45613,-0.513708 1.10169,-0.883108 1.77539,-1.017578 0.42304,-0.08444 0.97793,-0.08652 1.64062,-0.189453 0.33204,-0.05157 0.69088,-0.132381 1.05469,-0.28711 0.36637,-0.155817 0.73295,-0.383979 1.04102,-0.720703 0.47197,-0.515881 0.70404,-1.172715 0.71484,-1.833984 0.0104,-0.655201 -0.1959,-1.269888 -0.53906,-1.783203 -0.34058,-0.509479 -0.7998,-0.898356 -1.30469,-1.171875 -0.50238,-0.272164 -1.03887,-0.424368 -1.56641,-0.494141 -0.45398,-0.06004 -0.9132,-0.06004 -1.36718,-10e-7 z\" id=\"path55105\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"></path> <path d=\"m 301.02148,4.1113281 c -0.57378,-0.1511089 -1.17501,-0.1480852 -1.74804,0.00586 -0.57304,0.1539437 -1.09481,0.4527814 -1.51563,0.8710937 a 1,1 0 0 0 -0.004,1.4160157 1,1 0 0 0 1.41406,0.00391 c 0.16958,-0.1685704 0.39407,-0.2973377 0.625,-0.359375 0.23092,-0.062037 0.48947,-0.062849 0.7207,-0.00195 0.23123,0.060896 0.45458,0.1877274 0.625,0.3554687 0.17042,0.1677399 0.30264,0.390867 0.36719,0.6210938 0.11455,0.4085376 0.038,1.0258141 -0.004,1.8242188 -0.021,0.4013203 -0.0238,0.8545476 0.082,1.3398442 0.10725,0.491566 0.32514,1.00622 0.73829,1.433594 0.34668,0.35862 0.7868,0.605319 1.27343,0.714843 0.48664,0.109525 0.99012,0.07591 1.45703,-0.09961 0.46691,-0.175516 0.86814,-0.481809 1.16211,-0.884765 0.29399,-0.402969 0.46173,-0.876806 0.48633,-1.375 a 1,1 0 0 0 -0.94922,-1.0488281 1,1 0 0 0 -1.04883,0.9492187 c -0.005,0.1008625 -0.046,0.2153004 -0.10546,0.2968744 -0.0595,0.08159 -0.15549,0.153924 -0.25,0.189453 -0.0945,0.03554 -0.21398,0.04366 -0.3125,0.02149 -0.0985,-0.02217 -0.20325,-0.08169 -0.27344,-0.154296 -0.0871,-0.09005 -0.1765,-0.2571772 -0.22266,-0.4687507 -0.0475,-0.2178422 -0.0576,-0.4912337 -0.041,-0.8085938 0.0335,-0.6389559 0.20762,-1.4933511 -0.0664,-2.4707031 -0.16019,-0.5713314 -0.46776,-1.0896381 -0.89062,-1.5058594 -0.42288,-0.4162197 -0.94574,-0.714121 -1.51954,-0.8652344 z\" id=\"path55109\" style=\"color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1\"></path> </g> </g></svg>",
+            "desc_1": "<p><strong>Make your celebration extra special</strong> - we'll bring your birthday, cocktail party, or any special occasion to life in our full-service event venue.</p>",
+            "svg_image_2": "<svg fill=\"#000000\" height=\"200px\" width=\"200px\" version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 422.207 422.207\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xml:space=\"preserve\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <path id=\"XMLID_154_\" d=\"M58.776,239.422h304.655c4.418,0,8-3.582,8-8V45.623c0-4.418-3.582-8-8-8H58.776c-4.418,0-8,3.582-8,8 v185.799C50.776,235.84,54.357,239.422,58.776,239.422z M66.776,53.623h288.655v169.799H66.776V53.623z M227.159,313.569h-32.107 c-26.284,0-47.668,21.384-47.668,47.669v46.464c0,4.418,3.582,8,8,8h111.441c4.418,0,8-3.582,8-8v-46.464 C274.825,334.953,253.442,313.569,227.159,313.569z M258.825,399.702h-95.441v-38.464c0-17.462,14.206-31.669,31.668-31.669h32.107 c17.461,0,31.666,14.207,31.666,31.669V399.702z M181.338,14.505c0-4.418,3.582-8,8-8h43.531c4.418,0,8,3.582,8,8s-3.582,8-8,8 h-43.531C184.919,22.505,181.338,18.923,181.338,14.505z M0,290.485c0-4.418,3.582-8,8-8h28.156 c-0.01-0.168-0.016-0.337-0.016-0.507c0-4.418,3.582-8,8-8h43.531c4.418,0,8,3.582,8,8c0,0.17-0.005,0.339-0.016,0.507h85.697 c-0.01-0.168-0.016-0.337-0.016-0.507c0-4.418,3.582-8,8-8h43.531c4.418,0,8,3.582,8,8c0,0.17-0.005,0.339-0.016,0.507h85.699 c-0.01-0.168-0.016-0.337-0.016-0.507c0-4.418,3.582-8,8-8h43.531c4.418,0,8,3.582,8,8c0,0.17-0.005,0.339-0.016,0.507h28.154 c4.418,0,8,3.582,8,8s-3.582,8-8,8H8C3.582,298.485,0,294.903,0,290.485z M81.96,313.569H49.853 c-26.284,0-47.668,21.384-47.668,47.669v46.464c0,4.418,3.582,8,8,8h111.442c4.418,0,8-3.582,8-8v-46.464 C129.627,334.953,108.244,313.569,81.96,313.569z M113.627,399.702H18.185v-38.464c0-17.462,14.206-31.669,31.668-31.669H81.96 c17.461,0,31.667,14.207,31.667,31.669V399.702z M372.356,313.569h-32.107c-26.284,0-47.668,21.384-47.668,47.669v46.464 c0,4.418,3.582,8,8,8h111.442c4.418,0,8-3.582,8-8v-46.464C420.023,334.953,398.64,313.569,372.356,313.569z M404.023,399.702 h-95.442v-38.464c0-17.462,14.206-31.669,31.668-31.669h32.107c17.461,0,31.667,14.207,31.667,31.669V399.702z\"></path> </g></svg>",
+            "desc_2": "<p><strong>Host your next team meeting, presentation, or networking event </strong>in our fully-equipped event space that nurtures collaboration and creativity.</p>",
+            "svg_image_3": "<svg fill=\"#000000\" version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 66.391 66.391\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xml:space=\"preserve\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <g> <g> <path d=\"M42.634,53.324c4.927,0,9.639-1.085,13.668-3.143l8.564,5.275c0.161,0.1,0.343,0.148,0.524,0.148 c0.216,0,0.432-0.07,0.61-0.208c0.33-0.255,0.467-0.687,0.347-1.084l-2.99-9.8c1.985-2.567,3.033-5.461,3.033-8.399 c0-9.183-9.817-16.655-22.428-17.157c-4.304-5.048-11.987-8.172-20.206-8.172C10.657,10.785,0,18.504,0,27.992 c0,2.938,1.046,5.831,3.03,8.4l-2.987,9.8c-0.121,0.397,0.017,0.83,0.346,1.084C0.568,47.414,0.785,47.484,1,47.484 c0.181,0,0.363-0.049,0.524-0.148l8.564-5.277c3.64,1.857,7.887,2.916,12.345,3.095C26.74,50.2,34.421,53.324,42.634,53.324z M64.393,36.115c0,2.631-1.009,5.242-2.915,7.553c-0.214,0.258-0.283,0.606-0.187,0.928l2.371,7.771l-6.796-4.188 c-0.16-0.1-0.342-0.148-0.524-0.148c-0.163,0-0.325,0.04-0.475,0.12c-3.851,2.075-8.427,3.173-13.233,3.173 c-7.813,0-15.073-2.979-18.945-7.775c-1.839-2.275-2.812-4.847-2.812-7.434c0-8.386,9.76-15.208,21.756-15.208 c0.162,0,0.32,0.008,0.479,0.016l0.346,0.016c0.001,0,0.002,0,0.004,0C55.199,21.25,64.393,27.917,64.393,36.115z M10.526,40.03 c-0.314-0.169-0.696-0.157-0.999,0.028L2.73,44.246L5.1,36.475c0.098-0.321,0.028-0.67-0.185-0.928 c-1.905-2.312-2.912-4.922-2.912-7.554c0-8.385,9.76-15.207,21.757-15.207c6.892,0,13.352,2.316,17.438,6.152 c-0.179,0.008-0.354,0.021-0.532,0.032c-0.181,0.011-0.363,0.02-0.543,0.033c-0.216,0.017-0.429,0.039-0.643,0.06 c-0.174,0.017-0.349,0.031-0.521,0.051c-0.22,0.024-0.436,0.056-0.654,0.085c-0.164,0.021-0.33,0.041-0.494,0.065 c-0.235,0.035-0.468,0.077-0.699,0.117c-0.143,0.024-0.286,0.046-0.427,0.072c-0.362,0.068-0.722,0.142-1.076,0.222 c-0.097,0.021-0.188,0.047-0.284,0.068c-0.276,0.065-0.552,0.131-0.824,0.203c-0.144,0.037-0.284,0.08-0.427,0.121 c-0.211,0.059-0.424,0.117-0.632,0.181c-0.155,0.047-0.307,0.099-0.46,0.148c-0.192,0.063-0.385,0.123-0.574,0.188 c-0.156,0.054-0.308,0.112-0.462,0.169c-0.183,0.066-0.366,0.133-0.546,0.203c-0.155,0.06-0.306,0.124-0.458,0.187 c-0.174,0.072-0.35,0.143-0.521,0.218c-0.152,0.066-0.3,0.136-0.45,0.204c-0.167,0.077-0.335,0.153-0.5,0.232 c-0.148,0.072-0.293,0.147-0.439,0.222c-0.161,0.081-0.321,0.162-0.479,0.246c-0.145,0.077-0.287,0.158-0.429,0.237 c-0.153,0.086-0.307,0.172-0.457,0.261c-0.14,0.082-0.276,0.167-0.414,0.251c-0.148,0.092-0.295,0.183-0.44,0.276 c-0.134,0.087-0.265,0.176-0.396,0.265c-0.142,0.096-0.283,0.192-0.421,0.291c-0.128,0.091-0.254,0.184-0.38,0.277 c-0.135,0.101-0.269,0.201-0.4,0.305c-0.123,0.096-0.243,0.192-0.363,0.291c-0.128,0.104-0.255,0.21-0.38,0.317 c-0.116,0.1-0.229,0.2-0.342,0.301c-0.122,0.11-0.242,0.221-0.361,0.333c-0.109,0.104-0.217,0.207-0.323,0.313 c-0.115,0.114-0.228,0.229-0.338,0.345c-0.103,0.106-0.204,0.214-0.303,0.323c-0.108,0.117-0.213,0.236-0.317,0.356 c-0.095,0.11-0.19,0.222-0.282,0.334c-0.101,0.122-0.198,0.245-0.294,0.369c-0.088,0.113-0.175,0.228-0.26,0.342 c-0.093,0.126-0.182,0.254-0.271,0.382c-0.08,0.116-0.16,0.232-0.237,0.35c-0.085,0.131-0.166,0.263-0.247,0.396 c-0.072,0.118-0.145,0.236-0.214,0.356c-0.077,0.134-0.149,0.27-0.221,0.406c-0.064,0.12-0.13,0.241-0.19,0.363 c-0.069,0.139-0.132,0.278-0.196,0.419c-0.056,0.122-0.113,0.243-0.165,0.366c-0.061,0.145-0.115,0.291-0.171,0.437 c-0.046,0.122-0.095,0.243-0.138,0.366c-0.053,0.15-0.098,0.302-0.145,0.453c-0.038,0.121-0.078,0.242-0.112,0.364 c-0.044,0.157-0.08,0.315-0.117,0.475c-0.029,0.119-0.061,0.238-0.085,0.358c-0.035,0.166-0.061,0.333-0.088,0.501 c-0.019,0.114-0.042,0.229-0.058,0.344c-0.026,0.187-0.042,0.375-0.059,0.562c-0.009,0.1-0.023,0.196-0.03,0.295 c-0.02,0.288-0.03,0.577-0.03,0.868c0,0.347,0.019,0.692,0.048,1.038c0.009,0.105,0.023,0.212,0.034,0.316 c0.027,0.246,0.061,0.49,0.102,0.733c0.02,0.114,0.04,0.229,0.062,0.343c0.051,0.256,0.11,0.51,0.176,0.762 c0.023,0.09,0.043,0.18,0.068,0.268c0.096,0.338,0.205,0.673,0.328,1.005c0.024,0.063,0.053,0.127,0.077,0.19 c0.105,0.27,0.218,0.537,0.341,0.803c0.049,0.105,0.102,0.213,0.154,0.318c0.112,0.229,0.231,0.453,0.357,0.679 c0.058,0.104,0.116,0.209,0.177,0.313c0.034,0.058,0.063,0.115,0.098,0.174C17.13,42.709,13.579,41.676,10.526,40.03z\"></path> <path d=\"M38.511,37.258c0,2.272,1.849,4.123,4.12,4.123c2.273,0,4.123-1.851,4.123-4.123s-1.85-4.123-4.123-4.123 C40.359,33.135,38.511,34.985,38.511,37.258z M44.754,37.258c0,1.17-0.953,2.123-2.123,2.123c-1.169,0-2.12-0.953-2.12-2.123 s0.951-2.123,2.12-2.123C43.801,35.135,44.754,36.088,44.754,37.258z\"></path> <path d=\"M30.687,33.135c-2.273,0-4.123,1.85-4.123,4.123s1.85,4.123,4.123,4.123s4.123-1.851,4.123-4.123 C34.809,34.985,32.959,33.135,30.687,33.135z M30.687,39.381c-1.17,0-2.123-0.953-2.123-2.123s0.953-2.123,2.123-2.123 s2.123,0.953,2.123,2.123C32.809,38.428,31.856,39.381,30.687,39.381z\"></path> <path d=\"M54.58,41.381c2.273,0,4.123-1.851,4.123-4.123s-1.85-4.123-4.123-4.123c-2.272,0-4.123,1.85-4.123,4.123 S52.308,41.381,54.58,41.381z M54.58,35.135c1.17,0,2.123,0.953,2.123,2.123s-0.953,2.123-2.123,2.123s-2.123-0.953-2.123-2.123 S53.409,35.135,54.58,35.135z\"></path> </g> </g> </g></svg>",
+            "desc_3": "<p><strong>Sweat and socialize </strong>- take your celebration or team building event to the next level with private classes in our immersive, state-of-the-art studios.</p>",
+            "svg_image_4": "<svg version=\"1.0\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 24 24\" fill=\"#000000\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xml:space=\"preserve\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <g id=\"Guides\"> <g id=\"_x32_0_px_2_\"> </g> <g id=\"_x32_0px\"> </g> <g id=\"_x34_0px\"> </g> <g id=\"_x34_4_px\"> </g> <g id=\"_x34_8px\"> <g id=\"_x31_6px\"> </g> <g id=\"square_4px\"> <g id=\"_x32_8_px\"> <g id=\"square_4px_2_\"> </g> <g id=\"square_4px_3_\"> </g> <g id=\"square_4px_1_\"> </g> <g id=\"_x32_4_px_2_\"> </g> <g id=\"_x31_2_px\"> </g> </g> </g> </g> <g id=\"Icons\"> </g> <g id=\"_x32_0_px\"> </g> <g id=\"square_6px\"> <g id=\"_x31_2_PX\"> </g> </g> <g id=\"_x33_6_px\"> <g id=\"_x33_2_px\"> <g id=\"_x32_8_px_1_\"> <g id=\"square_6px_1_\"> </g> <g id=\"_x32_0_px_1_\"> <g id=\"_x31_2_PX_2_\"> </g> <g id=\"_x34_8_px\"> <g id=\"_x32_4_px\"> </g> <g id=\"_x32_4_px_1_\"> </g> </g> </g> </g> </g> </g> <g id=\"_x32_0_px_3_\"> </g> <g id=\"_x32_0_px_4_\"> </g> <g id=\"New_Symbol_8\"> <g id=\"_x32_4_px_3_\"> </g> </g> </g> <g id=\"Artboard\"> </g> <g id=\"Free_Icons\"> <g> <polygon style=\"fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;\" points=\"17.5,21 3.5,14.5 3.5,9.5 17.5,3.5 \"></polygon> <polyline style=\"fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;\" points=\" 5.5,15.428 5.5,19 11.5,22 11.5,18.214 \"></polyline> <line style=\"fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;\" x1=\"23\" y1=\"19.5\" x2=\"20\" y2=\"18\"></line> <line style=\"fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;\" x1=\"23\" y1=\"4.5\" x2=\"20\" y2=\"6\"></line> <polygon style=\"fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;\" points=\"0.5,15.5 3.5,14.5 3.5,9.5 0.5,8.5 \"></polygon> <line style=\"fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;\" x1=\"20\" y1=\"11.5\" x2=\"23.5\" y2=\"11.5\"></line> </g> </g> </g></svg>",
+            "desc_4": "<p><strong>Activate your brand </strong>- partner with us for a one-of-a-kind, fully immersive experience to connect with our vast community of highly-engaged fitness, health, and wellness enthusiasts.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "features_ExRUf4"
+      ],
+      "settings": {
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "mobile_content_alignment": "left",
+        "top_padding_remove": true,
+        "bottom_padding_remove": true
+      }
+    },
+    "tonic_bookings_7TY7CV": {
+      "type": "tonic-bookings",
+      "settings": {
+        "sub_heading": "EVENT SPACE RENTAL",
+        "heading": "UNIQUE EVENT & PARTY VENUE IN THE HEART OF TORONTO",
+        "description": "<p>Host your next team meeting, cocktail, holiday, or office party at Tonic House - our multi-purpose, fully-licensed, boutique event space and community hub amidst a downtown view.</p>",
+        "btn_label": "VIEW EVENTS PACKAGE",
+        "btn_link": "https://bit.ly/sweatandtonic-event-package",
+        "desktop_slider": true,
+        "mobile_slider": false
+      }
+    },
+    "multirow_hDxdme": {
+      "type": "multirow",
+      "blocks": {
+        "row_w49cDr": {
+          "type": "row",
+          "settings": {
+            "caption": "",
+            "heading": "COCKTAIL & BIRTHDAY PARTY VENUE",
+            "text": "<p>Make your next celebration unforgettable. Tonic House is a premium venue accommodating up to 150 people, perfect for private events, birthday parties, cocktail, and holiday parties. We offer customizable options to suit every occasion, including live DJ, custom hand-crafted cocktails, and flexible catering & beverage services.</p>",
+            "button_label": "VIEW EVENTS PACKAGE",
+            "button_link": "https://bit.ly/sweatandtonic-event-package"
+          }
+        },
+        "row_QEtYtB": {
+          "type": "row",
+          "settings": {
+            "caption": "",
+            "heading": "BRAND ACTIVATIONS & MEDIA EVENTS",
+            "text": "<p>Make an impact. From product launches and community activations, to networking and VIP events, we'll work with you to create unique and innovative experiences and connect with the community.</p>",
+            "button_label": "PARTNER WITH US",
+            "button_link": "#contactus"
+          }
+        },
+        "row_XJiBKC": {
+          "type": "row",
+          "settings": {
+            "caption": "",
+            "heading": "PRIVATE YOGA, RIDE, AND HIIT CLASSES",
+            "text": "<p>Sweat and socialize. Whether it's a celebratory occasion or corporate team building event, we've got everything you need to make your event extra special. Book a private & personalized HIIT, Ride, or Yoga class, and gather in Tonic House to unwind, mingle, and celebrate.</p>",
+            "button_label": "LEARN MORE",
+            "button_link": "https://bit.ly/sweatandtonic-event-package"
+          }
+        },
+        "row_AjCAeL": {
+          "type": "row",
+          "settings": {
+            "caption": "",
+            "heading": "PREMIUM MEETING SPACE IN DOWNTOWN TORONTO",
+            "text": "<p>Collaborate, nurture creativity, and boost productivity. With complimentary WIFI, high definition projector & screen, light dimmers, motorized window shades, full AV connectivity & control, flexible catering options, and a cocktail bar, you can even take your event from day to night. Just bring you and your team, and we'll do the rest.</p>",
+            "button_label": "GET IN TOUCH",
+            "button_link": "#contactus"
+          }
+        }
+      },
+      "block_order": [
+        "row_w49cDr",
+        "row_QEtYtB",
+        "row_XJiBKC",
+        "row_AjCAeL"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h2",
+        "text_style": "body",
+        "button_style": "primary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "presslogo_JGeMyK": {
+      "type": "presslogo",
+      "blocks": {
+        "image_jbWFMt": {
+          "type": "image",
+          "settings": {
+            "logo_link": ""
+          }
+        },
+        "image_PhrCNK": {
+          "type": "image",
+          "settings": {
+            "logo_link": ""
+          }
+        },
+        "image_K9AMgw": {
+          "type": "image",
+          "settings": {
+            "logo_link": ""
+          }
+        },
+        "image_MKzJf9": {
+          "type": "image",
+          "settings": {
+            "logo_link": ""
+          }
+        },
+        "image_pgR8Gg": {
+          "type": "image",
+          "settings": {
+            "logo_link": ""
+          }
+        },
+        "image_WbDWTz": {
+          "type": "image",
+          "settings": {
+            "logo_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_jbWFMt",
+        "image_PhrCNK",
+        "image_K9AMgw",
+        "image_MKzJf9",
+        "image_pgR8Gg",
+        "image_WbDWTz"
+      ],
+      "disabled": true,
+      "settings": {
+        "allow_transparent_header": false,
+        "image_overlay_opacity": 10,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "tonic_locations_FHUFTR": {
+      "type": "tonic-locations",
+      "blocks": {
+        "location_qVC3BC": {
+          "type": "location",
+          "settings": {
+            "heading": "YONGE / SHUTER",
+            "description": "",
+            "address": "225 Yonge Street, Toronto ON M5B 1N8",
+            "phone": "647-372-0225",
+            "button_label": "",
+            "button_link": "",
+            "feat_title": "LOCATION HIGHLIGHTS:",
+            "feature_1": "100-person event capacity",
+            "feature_2": "Complimentary WiFi, full AV including projector & screen",
+            "feature_3": "Full-service cocktail bar",
+            "feature_4": "Sound-proof phone booth",
+            "feature_5": "Located in the Financial District"
+          }
+        },
+        "location_QwkcDF": {
+          "type": "location",
+          "settings": {
+            "heading": "FRONT / SPADINA",
+            "description": "",
+            "address": "468 Front Street West, Toronto ON M5V 0V2",
+            "phone": "647-477-1446",
+            "button_label": "",
+            "button_link": "",
+            "image": "shopify://shop_images/Tonic_House.jpg",
+            "feat_title": "LOCATION HIGHLIGHTS:",
+            "feature_1": "150-person event capacity",
+            "feature_2": "Complimentary Wi-Fi, full AV including projector & screen",
+            "feature_3": "Full-service cocktail bar",
+            "feature_4": "All-season patio & private meeting rooms",
+            "feature_5": "Sound-proof phone booths"
+          }
+        }
+      },
+      "block_order": [
+        "location_qVC3BC",
+        "location_QwkcDF"
+      ],
+      "settings": {
+        "caption": "ALL LOCATIONS",
+        "title": "DISCOVER YOUR PERFECT SPOT"
+      }
+    },
+    "imag_slider_v3_VFCkDN": {
+      "type": "imag-slider-v3",
+      "blocks": {
+        "image_m93Q3N": {
+          "type": "image",
+          "settings": {
+            "heading": "BRAND ACTIVATION | FRONT/SPADINA"
+          }
+        },
+        "image_gJikUw": {
+          "type": "image",
+          "settings": {
+            "heading": "WORKSHOP | FRONT/SPADINA"
+          }
+        },
+        "image_F6YdWw": {
+          "type": "image",
+          "settings": {
+            "heading": "TONIC HOUSE PATIO | FRONT/SPADINA"
+          }
+        },
+        "image_cypNPc": {
+          "type": "image",
+          "settings": {
+            "heading": "SPEAKING EVENT | FRONT/SPADINA"
+          }
+        },
+        "image_hDAtzr": {
+          "type": "image",
+          "settings": {
+            "heading": "PANEL EVENT | YONGE/SHUTER"
+          }
+        },
+        "image_k6Xihm": {
+          "type": "image",
+          "settings": {
+            "heading": "SOCIAL | YONGE/SHUTER"
+          }
+        },
+        "image_WTDgiy": {
+          "type": "image",
+          "settings": {
+            "heading": "TONIC HOUSE | YONGE/SHUTER"
+          }
+        },
+        "image_UXkkmK": {
+          "type": "image",
+          "settings": {
+            "heading": "CORPORATE EVENT | YONGE/SHUTER"
+          }
+        }
+      },
+      "block_order": [
+        "image_m93Q3N",
+        "image_gJikUw",
+        "image_F6YdWw",
+        "image_cypNPc",
+        "image_hDAtzr",
+        "image_k6Xihm",
+        "image_WTDgiy",
+        "image_UXkkmK"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "enableUpperCase": true,
+        "subHeading": "",
+        "heading": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "event-video": {
+      "type": "event-video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video_url": "https://vimeo.com/890042194?share=copy",
+        "mb_video_url": "https://vimeo.com/890054765?share=copy",
+        "description": "Holiday party with large group dancing on disco floor in Tonic House at Sweat and Tonic",
+        "full_width": false,
+        "color_scheme": "",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "anchor_8yFbVB": {
+      "type": "anchor",
+      "settings": {
+        "link_anchor": "contactus"
+      }
+    },
+    "event-contact": {
+      "type": "event-contact",
+      "settings": {
+        "bg_color_left": "#26221b",
+        "text_color_left": "#ffffff",
+        "sub_color_left": "#c79d5b",
+        "subheading_left": "BOOK YOUR NEXT EVENT",
+        "heading_left": "INTERESTED IN MAKING YOUR NEXT EVENT UNFORGETTABLE?",
+        "text_left": "Send us a note about what you have in mind and let’s get this party started.",
+        "p_name": "",
+        "p_tagline": "Partnerships, Corporate Sales & Events",
+        "p_mail": "salesandevents@sweatandtonic.com",
+        "heading": "Contact form",
+        "btn_label": "Submit event inquiry",
+        "btn_url": "https://hooks.zapier.com/hooks/catch/16906339/38ewv6l/",
+        "success_msg": "<p>Thanks for inquiring. Your entry is submitted, and we'll reach out to you soon.</p>",
+        "color_scheme": "scheme-4c1a74af-8622-41b0-8be5-f4c2bac68732",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false,
+        "show_current_activity_dropdown": false,
+        "embed-form": "<!-- Begin Connect Signup Form -->\n<link href=\"https://assets.brandbot.com/forms/embed/embed.css\" rel=\"stylesheet\" type=\"text/css\">\n<style type=\"text/css\">\n  .contact #bb_form .field.form-group:after {display: none;}\n  .contact #bb_form .field.form-group input[type=\"text\"],.contact #bb_form .field.form-group input[type=\"email\"],.contact #bb_form .field.form-group input[type=\"tel\"]{border: none;border-bottom: 1px solid rgba(0,0,0,.2);border-radius: unset;}\n  .contact #bb_form .form-group.with-label {flex-wrap: wrap;flex-direction: column;}\n  .contact #bb_form .form-group label{font-weight:400;}\n#bb_form .form-group.with-label input[type=checkbox]{margin-left: 20px;}\n</style>\n\n<div id=\"bb_form\">\n  <form method=\"post\" action=\"https://microservices.brndbot.net/forms/answers\" name=\"4pycgc\" id=\"bb_form_inner\">\n    <div id=\"alert\"></div>\n    <div class=\"contact__fields\">\n      <div class=\"field form-group no-label\">\n        <label for=\"bb_first_name\">First Name</label>\n        <input type=\"text\" name=\"bb_first_name\" id=\"bb_first_name\" class=\"form-control input-field\" required=\"required\" placeholder=\"First Name\">\n      </div>\n      <div class=\"field form-group no-label\">\n        <label for=\"bb_last_name\">Last Name</label>\n        <input type=\"text\" name=\"bb_last_name\" id=\"bb_last_name\" class=\"form-control input-field\" required=\"required\" placeholder=\"Last Name\">\n      </div>\n    </div>\n\n\n    <div class=\"contact__fields\">\n      <div class=\"field form-group no-label\">\n        <label for=\"bb_email\">Email Address</label>\n        <input type=\"email\" name=\"bb_email\" id=\"bb_email\" class=\"form-control input-field\" required=\"required\" placeholder=\"Email Address\">\n      </div>\n      <div class=\"field form-group no-label\">\n        <label for=\"bb_phone\">Phone Number</label>\n        <input type=\"tel\" name=\"bb_phone\" id=\"bb_phone\" class=\"form-control input-field\" required=\"required\" placeholder=\"Phone Number\">\n      </div>\n    </div>\n    <div class=\"field form-group no-label\">\n      <label for=\"bb_custom_company\">Company</label>\n      <input type=\"text\" name=\"bb_custom_company\" id=\"bb_custom_company\" class=\"form-control input-field\" placeholder=\"Company\">\n    </div>\n    <div class=\"field form-group with-label\">\n      <label for=\"bb_custom_occasion\">Occasion</label>\n      <div>\n        <select id=\"bb_custom_occasion\" placeholder=\"bb_custom_occasion\" name=\"bb_custom_occasion\" class=\"input-field\">\n          <option value=\"Birthday\">Birthday</option>\n          <option value=\"Bachelor / bachelorette party\">Bachelor / bachelorette party</option>\n          <option value=\"Social / networking event\">Social / networking event</option>\n          <option value=\"Corporate\">Corporate</option>\n          <option value=\"Team meeting / team building\">Team meeting / team building</option>\n          <option value=\"Other\">Other</option>\n        </select>\n      </div>\n    </div>\n    <div class=\"field form-group no-label\">\n      <label for=\"bb_custom_number-of-guests\">Number of guests</label>\n      <input type=\"text\" name=\"bb_custom_number-of-guests\" id=\"bb_custom_number-of-guests\" class=\"form-control input-field\" placeholder=\"Number of guests\">\n    </div>\n    <div class=\"field form-group no-label\">\n      <label for=\"bb_custom_event-date\">Event date</label>\n      <input type=\"text\" name=\"bb_custom_event-date\" id=\"bb_custom_event-date\" class=\"form-control input-field\" placeholder=\"Event date\">\n    </div>\n    <div class=\"field form-group no-label\">\n      <label for=\"bb_custom_additional-notes\">Additional notes</label>\n      <input type=\"text\" name=\"bb_custom_additional-notes\" id=\"bb_custom_additional-notes\" class=\"form-control input-field\" placeholder=\"Additional notes\">\n    </div>\n\n    \n    <div class=\"field form-group with-label\">\n      <label for=\"bb_custom_sign-me-up-to-receive-special-offers-promotions-updates-from-st\">Sign me up to receive special offers, promotions &amp; updates from S&amp;T.</label>\n      <div>\n        <input id=\"bb_custom_sign-me-up-to-receive-special-offers-promotions-updates-from-st\" type=\"checkbox\" value=\"Sign up\"> Sign up\n      </div>\n    </div>\n    <div class=\"field form-group\">\n      <input type=\"hidden\" name=\"bb_uuid\" id=\"bb_uuid\" value=\"ac113d2b-a450-40ef-90fb-8c8a5e6cfaad\">\n      <button type=\"submit\" class=\"button button--primary\" id=\"bb_submit\" style=\"background-color: #000000; border-color: #000000; color: white;\">SUBMIT EVENT INQUIRY</button>\n    </div>\n  </form>\n</div>\n<script>window.jQuery || document.write('<scr'+'ipt src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></scr'+'ipt>') </script>\n<script src=\"https://assets.brandbot.com/forms/embed/embed.js?id=4pycgc\"></script>\n<!-- Ending Connect Signup Form -->"
+      }
+    },
+    "event-banner": {
+      "type": "event-banner",
+      "blocks": {
+        "6bf71fd1-ba85-4a43-8d76-927c4cab725e": {
+          "type": "heading",
+          "settings": {
+            "heading": "EVENT SPACE RENTAL"
+          }
+        },
+        "buttons_MmmHzN": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop now",
+            "button_link_1": "",
+            "button_style_secondary_1": false
+          }
+        },
+        "text_6JWHwA": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        }
+      },
+      "block_order": [
+        "6bf71fd1-ba85-4a43-8d76-927c4cab725e",
+        "buttons_MmmHzN",
+        "text_6JWHwA"
+      ],
+      "disabled": true,
+      "settings": {
+        "allow_transparent_header": true,
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "show_text_below": false
+      }
+    },
+    "event-text-column": {
+      "type": "event-text-column",
+      "blocks": {
+        "8cb243b8-2de5-461b-82fa-781713c869c4": {
+          "type": "text",
+          "settings": {
+            "title": "COCKTAIL & BIRTHDAY PARTY VENUE",
+            "content": "<p>Make your next celebration unforgettable. Tonic House is a luxury venue accommodating up to 150 people, perfect for private events, birthday parties, cocktail, and holiday parties. We offer customizable options to suit every occasion, including live DJ, custom hand-crafted cocktails, and flexible catering & beverage services.</p>"
+          }
+        },
+        "a9e25818-af63-43ec-a469-c1afdd8ff354": {
+          "type": "text",
+          "settings": {
+            "title": "PREMIUM MEETING SPACE IN DOWNTOWN TORONTO",
+            "content": "<p>Collaborate, nurture creativity, and boost productivity. With complimentary WIFI, high definition projector & screen, light dimmers, motorized window shades, full AV connectivity & control, flexible catering options, and a cocktail bar, you can even take your event from day to night. Just bring you and your team, and we'll do the rest.</p>"
+          }
+        },
+        "e7276979-9741-4da5-add1-effbc1376a3c": {
+          "type": "text",
+          "settings": {
+            "title": "PRIVATE YOGA, RIDE, AND HIIT CLASSES",
+            "content": "<p>Sweat and socialize. Whether it's a celebratory occasion or corporate team building event, we've got everything you need to make your event extra special. Book a private & personalized HIIT, Ride, or Yoga class, and gather in Tonic House to unwind, mingle, and celebrate.</p>"
+          }
+        },
+        "f4c73174-7077-4211-aecf-ee65640d7262": {
+          "type": "text",
+          "settings": {
+            "title": "BRAND ACTIVATIONS & MEDIA EVENTS",
+            "content": "<p>Make an impact. From product launches and community activations, to networking and VIP events, we'll work with you to create unique and innovative experiences and connect with the community.</p>"
+          }
+        },
+        "text_8eMK3H": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "COCKTAIL & BIRTHDAY PARTY VENUE",
+            "content": "<p>Make your next celebration unforgettable. Tonic House is a luxury venue accommodating up to 100 people, perfect for private events, birthday parties, cocktail, and holiday parties. We offer customizable options to suit every occasion, including live DJ, custom hand-crafted cocktails, and flexible catering &amp; beverage services.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "8cb243b8-2de5-461b-82fa-781713c869c4",
+        "a9e25818-af63-43ec-a469-c1afdd8ff354",
+        "e7276979-9741-4da5-add1-effbc1376a3c",
+        "f4c73174-7077-4211-aecf-ee65640d7262",
+        "text_8eMK3H"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "TONIC HOUSE",
+        "heading": "UNIQUE EVENT & PARTY VENUE IN THE HEART OF TORONTO",
+        "description": "<p>Host your next team meeting, cocktail, holiday, or office party at Tonic House - our multi-purpose, fully-licensed, boutique event space and community hub amidst a downtown view.</p>",
+        "button_label": "VIEW EVENTS PACKAGES",
+        "button_link": "https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Sweat_and_Tonic_-_Events_Package_3.pdf?v=1722515192",
+        "button_style_secondary": false,
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "event-gallery-slider": {
+      "type": "event-gallery-slider",
+      "blocks": {
+        "a296c20f-0156-46b5-9dfd-275728779f6b": {
+          "type": "image",
+          "settings": {}
+        },
+        "756b71f0-8890-467d-bc57-3eefd5ada348": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Tonic_House.jpg"
+          }
+        },
+        "2e7aec4e-76d1-4ed9-9a67-65fa745be8d0": {
+          "type": "image",
+          "settings": {}
+        },
+        "98c662aa-868d-44fd-8cb6-446a5faac957": {
+          "type": "image",
+          "settings": {}
+        },
+        "f73f8d5e-4c70-49f8-ba17-d27e40306f4f": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_Q7M76J": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "a296c20f-0156-46b5-9dfd-275728779f6b",
+        "756b71f0-8890-467d-bc57-3eefd5ada348",
+        "2e7aec4e-76d1-4ed9-9a67-65fa745be8d0",
+        "98c662aa-868d-44fd-8cb6-446a5faac957",
+        "f73f8d5e-4c70-49f8-ba17-d27e40306f4f",
+        "image_Q7M76J"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "top_padding_remove": true,
+        "bottom_padding_remove": true
+      }
+    }
+  },
+  "order": [
+    "spa_hero_Vk3NN7",
+    "services_about_w78iaR",
+    "tonic_bookings_7TY7CV",
+    "multirow_hDxdme",
+    "presslogo_JGeMyK",
+    "tonic_locations_FHUFTR",
+    "imag_slider_v3_VFCkDN",
+    "event-video",
+    "anchor_8yFbVB",
+    "event-contact",
+    "event-banner",
+    "event-text-column",
+    "event-gallery-slider"
+  ]
+}
