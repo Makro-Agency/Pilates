@@ -340,18 +340,21 @@
         "image_k6Xihm": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/TonicHouse_party_2014x1105_2.png",
             "heading": "SOCIAL | YONGE/SHUTER"
           }
         },
         "image_WTDgiy": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/TonicHouse_party_2014x1105_4.png",
             "heading": "TONIC HOUSE | YONGE/SHUTER"
           }
         },
         "image_UXkkmK": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/TonicHouse_party_2014x1105_5.png",
             "heading": "CORPORATE EVENT | YONGE/SHUTER"
           }
         }
