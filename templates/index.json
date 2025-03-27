@@ -287,6 +287,8 @@
         "d28fc801-526c-4e2c-8f4b-7f586b143721": {
           "type": "class",
           "settings": {
+            "image": "shopify://shop_images/Rectangle_73_2.jpg",
+            "img_mobile": "shopify://shop_images/Rectangle_73_2_1.jpg",
             "title": "RIDE",
             "desc": "<p>Race past your goals and lose yourself in the music.</p>",
             "button_label": "LEARN MORE",
