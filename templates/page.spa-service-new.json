@@ -418,6 +418,7 @@
           "settings": {
             "serviceType": "All,Aesthetic",
             "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/Tonic_Spa_-_Microneedling_webpage.png",
             "heading": "MICRONEEDLING",
             "detail": "<p>Minimize pores, improve elasticity, and achieve smoother, more radiant skin with our advanced Dp4™ microneedling treatment</p>",
             "location_lbl_dk": "Locations Available",
@@ -439,6 +440,7 @@
           "settings": {
             "serviceType": "Health service",
             "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/Naturopathy_9d9ef24d-3dea-456f-b63f-131ac635becf.png",
             "heading": "NATUROPATHY",
             "detail": "<p>The art and science of disease diagnosis, treatment, and prevention using natural therapies.</p>",
             "location_lbl_dk": "Locations Available",
@@ -460,6 +462,7 @@
           "settings": {
             "serviceType": "Health service",
             "serviceLocation": "Yonge/Shuter,Front/Spadina (The Well)",
+            "image": "shopify://shop_images/Physiotherapy_73dd1b9b-6bb9-4503-a95e-e6043c1918d4.png",
             "heading": "PHYSIOTHERAPY",
             "detail": "<p>Restore and maintain optimal physical function, treat and prevent injuries, and address other aches and pains.</p>",
             "location_lbl_dk": "Locations Available",
@@ -481,7 +484,7 @@
           "settings": {
             "serviceType": "Biohacking",
             "serviceLocation": "Front/Spadina (The Well)",
-            "image": "shopify://shop_images/Tonic_Spa_Pool_Deck_Sweat_and_Tonic.png",
+            "image": "shopify://shop_images/Tonic_Spa_Pool_Deck_Sweat_and_Tonic_2.png",
             "heading": "POOL & HYDROTHERAPY",
             "detail": "<p>50 ft. saltwater lap pool, saltwater jetted hot tub, combined infrared & traditional electric sauna, rain & cold plunge showers, and all-season patio.</p>",
             "location_lbl_dk": "Locations Available",
@@ -503,6 +506,7 @@
           "settings": {
             "serviceType": "Biohacking",
             "serviceLocation": "Front/Spadina (The Well)",
+            "image": "shopify://shop_images/RedLightTherapy.png",
             "heading": "RED LIGHT THERAPY",
             "detail": "<p>Recover & rejuvenate in the TheraLight 360+ and experience the most advanced full-body photobiomodulation system.</p>",
             "location_lbl_dk": "Locations Available",
@@ -524,6 +528,7 @@
           "settings": {
             "serviceType": "Biohacking",
             "serviceLocation": "Yonge/Shuter",
+            "image": "shopify://shop_images/Somadome_0ee2a8ad-3ee1-4ca5-921e-4ac8cbc232b3.png",
             "heading": "SOMADOME MEDITATION",
             "detail": "<p>Recharge, restore and achieve balance through a technology-enhanced guided meditation in only 20 minutes.<br/>Unlimited member access only.</p>",
             "location_lbl_dk": "Locations Available",
