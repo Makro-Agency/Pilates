@@ -275,6 +275,8 @@
         "6978f5a6-526e-46d6-855a-8aed2047b5e8": {
           "type": "class",
           "settings": {
+            "image": "shopify://shop_images/SweatandTonic_HIIT_home.webp",
+            "img_mobile": "shopify://shop_images/SweatandTonic_HIIT_home_1.webp",
             "title": "HIIT",
             "desc": "<p>HIIT your peak performance with high intensity strength training & conditioning.</p>",
             "button_label": "LEARN MORE",
