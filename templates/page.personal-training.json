@@ -455,6 +455,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Alica_1.png",
             "link_label": "ALICA HEVEROVÁ | Strength Training, Bikini Fitness Specialist, Athletic Training",
             "link": ""
           }
@@ -464,6 +465,7 @@
           "disabled": true,
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Bianca_PT.png",
             "link_label": "BIANCA CELOTTI | Kinesiology, Mobility & Strength Specialist, Dancer",
             "link": "shopify://metaobjects/teammember/bianca-celotti"
           }
@@ -481,6 +483,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/JessicaPordelPersonalTrainingSweatandTonic.jpg",
             "link_label": "JESSICA PORDEL | Strength Training, Ride, Conditioning",
             "link": "shopify://metaobjects/teammember/jessica-pordel"
           }
@@ -489,6 +492,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Julian_1.jpg",
             "link_label": "JULIAN HO | Functional Strength, Mobility Specialist, Running Biomechanics",
             "link": "shopify://metaobjects/teammember/julian-ho"
           }
@@ -497,6 +501,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Julian.jpg",
             "link_label": "LAUREN KINSIE | Glute Growth, Women's Fitness Specialist, Muscle Gain / Fat Loss",
             "link": ""
           }
@@ -506,6 +511,7 @@
           "disabled": true,
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Lauren_option_1.png",
             "link_label": "LISA DAMLA | HIIT, Core Training, Lower Body Focus",
             "link": "shopify://metaobjects/teammember/lisa-damla"
           }
@@ -514,6 +520,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/team-24.png",
             "link_label": "NARIKO CHAFFE | Athletic Training, HIIT, Heavy Lifting",
             "link": "shopify://metaobjects/teammember/nariko-chaffe"
           }
