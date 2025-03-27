@@ -60,7 +60,7 @@
       "settings": {
         "allow_transparent_header": true,
         "image": "shopify://shop_images/BP_6.jpg",
-        "img_mobile": "shopify://shop_images/Sweat_and_Tonic_Personal_Training_Studio.jpg",
+        "img_mobile": "shopify://shop_images/Sweat_and_Tonic_Personal_Training_Studio_2.jpg",
         "image_overlay_opacity": 70,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -138,7 +138,6 @@
         "ab06944c-e56b-4aaa-962a-25c5bdcc7f46": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/sweat_and_tonic_Hiit_studio_it03_2023-11-07.jpg",
             "title": "FRONT / SPADINA",
             "text": "",
             "address": "486 Front Street West, Toronto ON M5V 0V2",
@@ -418,7 +417,6 @@
           "type": "column",
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/Dustin.png",
             "link_label": "DUSTIN PYM, PRINCIPAL TRAINER | Strength & Conditioning to High-Level Athletics",
             "link": "shopify://metaobjects/teammember/dustin-pym"
           }
@@ -446,7 +444,6 @@
           "disabled": true,
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/Al_PT.png",
             "link_label": "AL ROBINSON | Pre / Post-natal, Weight Management, Sports-specific Training",
             "link": ""
           }
@@ -455,7 +452,6 @@
           "type": "column",
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/Alica_1.png",
             "link_label": "ALICA HEVEROVÁ | Strength Training, Bikini Fitness Specialist, Athletic Training",
             "link": ""
           }
@@ -465,7 +461,6 @@
           "disabled": true,
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/Bianca_PT.png",
             "link_label": "BIANCA CELOTTI | Kinesiology, Mobility & Strength Specialist, Dancer",
             "link": "shopify://metaobjects/teammember/bianca-celotti"
           }
@@ -475,7 +470,6 @@
           "disabled": true,
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/Blair_Myers.jpg",
             "link_label": "BLAIR MYERS | Pilates Instructor, Health Coach",
             "link": "shopify://metaobjects/teammember/blair-myers"
           }
@@ -484,7 +478,6 @@
           "type": "column",
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/JessicaPordelPersonalTrainingSweatandTonic.jpg",
             "link_label": "JESSICA PORDEL | Strength Training, Ride, Conditioning",
             "link": "shopify://metaobjects/teammember/jessica-pordel"
           }
@@ -493,7 +486,6 @@
           "type": "column",
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/Julian.jpg",
             "link_label": "JULIAN HO | Functional Strength, Mobility Specialist, Running Biomechanics",
             "link": "shopify://metaobjects/teammember/julian-ho"
           }
@@ -502,7 +494,6 @@
           "type": "column",
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/Lauren_option_1.png",
             "link_label": "LAUREN KINSIE | Glute Growth, Women's Fitness Specialist, Muscle Gain / Fat Loss",
             "link": ""
           }
@@ -512,7 +503,6 @@
           "disabled": true,
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/team-24.png",
             "link_label": "LISA DAMLA | HIIT, Core Training, Lower Body Focus",
             "link": "shopify://metaobjects/teammember/lisa-damla"
           }
@@ -521,7 +511,6 @@
           "type": "column",
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/Nariko_PT.png",
             "link_label": "NARIKO CHAFFE | Athletic Training, HIIT, Heavy Lifting",
             "link": "shopify://metaobjects/teammember/nariko-chaffe"
           }
@@ -531,7 +520,6 @@
           "disabled": true,
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/Nilo_PT.png",
             "link_label": "NILO LIMA",
             "link": ""
           }
@@ -540,7 +528,6 @@
           "type": "column",
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/Perez.png",
             "link_label": "PEREZ TIEKU | Strength Training, Bodybuilding, Athletics",
             "link": "shopify://metaobjects/teammember/perez-tieku"
           }
@@ -549,7 +536,6 @@
           "type": "column",
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/SweatandTonicAlignTankBlack.png",
             "link_label": "RACHEL SCHICK",
             "link": "shopify://metaobjects/teammember/rachel-schick"
           }
@@ -559,7 +545,6 @@
           "disabled": true,
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/RachelB_PT.png",
             "link_label": "RACHEL BURNS | Martial Arts, Strength Training, Functional Movement",
             "link": "shopify://metaobjects/teammember/rachel-burns"
           }
@@ -569,7 +554,6 @@
           "disabled": true,
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/Shaz_PT.png",
             "link_label": "SHAZ KHAN | Physique Transformation, Strength Training, Boxing Coach",
             "link": ""
           }
@@ -578,7 +562,6 @@
           "type": "column",
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/Steve_PT.png",
             "link_label": "STEVE PARKHILL | Strength & Conditioning, Calisthenics",
             "link": ""
           }
@@ -587,7 +570,6 @@
           "type": "column",
           "settings": {
             "title": "",
-            "image": "shopify://shop_images/Will_PT.png",
             "link_label": "WILL TSILKAS | Strength & Conditioning, Calisthenics",
             "link": ""
           }
