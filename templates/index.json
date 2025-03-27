@@ -543,6 +543,7 @@
         "template--16876982829276__08cf3a5c-491f-4b1a-82fb-a34981a85688-location-1": {
           "type": "location",
           "settings": {
+            "image": "shopify://shop_images/SweatandTonic_FrontDesk_Shuter.jpg",
             "title": "YONGE / SHUTER",
             "desc": "<p>Set in the historic Ryrie Building, our  three-storey, 16,000+ sq.ft. boutique fitness hub is centrally located in the heart of downtown Toronto.</p>",
             "address": "225 Yonge Street, Toronto ON M5B 1N8",
@@ -558,6 +559,7 @@
         "template--16876982829276__08cf3a5c-491f-4b1a-82fb-a34981a85688-location-2": {
           "type": "location",
           "settings": {
+            "image": "shopify://shop_images/today-bg.png",
             "title": "FRONT / SPADINA",
             "desc": "<p>Our largest club - 25,000 sq.ft. of immersive fitness & wellness located at The Well, Canada's most ambitious mixed-use development.</p>",
             "address": "486 Front St W, Toronto, ON M5V 0V2",
