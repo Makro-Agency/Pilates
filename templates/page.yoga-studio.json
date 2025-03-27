@@ -107,6 +107,8 @@
       ],
       "settings": {
         "allow_transparent_header": false,
+        "image": "shopify://shop_images/SweatandTonic_Yoga2.png",
+        "img_mobile": "shopify://shop_images/YogaStudio_YongeShuter2.jpg",
         "image_overlay_opacity": 70,
         "image_height": "adapt",
         "show_text_box": false,
