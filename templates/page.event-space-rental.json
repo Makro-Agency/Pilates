@@ -231,6 +231,8 @@
       "disabled": true,
       "settings": {
         "allow_transparent_header": false,
+        "image": "shopify://shop_images/500.png",
+        "img_mobile": "shopify://shop_images/500.png",
         "image_overlay_opacity": 10,
         "image_height": "small",
         "desktop_content_position": "middle-center",
