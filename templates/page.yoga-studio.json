@@ -679,6 +679,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Brendan_Bornstein.jpg",
             "link_label": "BRENDAN BORNSTEIN",
             "link": "shopify://metaobjects/teammember/brendan-bornstein"
           }
@@ -687,6 +688,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Jacqui.jpg",
             "link_label": "JACQUI WELLS",
             "link": "shopify://metaobjects/teammember/jacqui-wells"
           }
@@ -695,6 +697,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/RachaelF_YogaInstructor.jpg",
             "link_label": "RACHAEL FALLON",
             "link": "shopify://metaobjects/teammember/rachael-fallon"
           }
@@ -703,6 +706,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/RoryBray_FitnessInstructor.jpg",
             "link_label": "RORY BRAY",
             "link": "shopify://metaobjects/teammember/rory-bray"
           }
@@ -711,6 +715,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/ViolaWang_YogaPilatesInstructor.jpg",
             "link_label": "VIOLA WANG",
             "link": "shopify://metaobjects/teammember/viola-wang"
           }
