@@ -530,6 +530,7 @@
           "disabled": true,
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Nilo_PT.png",
             "link_label": "NILO LIMA",
             "link": ""
           }
@@ -538,6 +539,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Perez.png",
             "link_label": "PEREZ TIEKU | Strength Training, Bodybuilding, Athletics",
             "link": "shopify://metaobjects/teammember/perez-tieku"
           }
@@ -546,6 +548,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/SweatandTonicAlignTankBlack.png",
             "link_label": "RACHEL SCHICK",
             "link": "shopify://metaobjects/teammember/rachel-schick"
           }
@@ -555,6 +558,7 @@
           "disabled": true,
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/RachelB_PT.png",
             "link_label": "RACHEL BURNS | Martial Arts, Strength Training, Functional Movement",
             "link": "shopify://metaobjects/teammember/rachel-burns"
           }
@@ -564,6 +568,7 @@
           "disabled": true,
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Shaz_PT.png",
             "link_label": "SHAZ KHAN | Physique Transformation, Strength Training, Boxing Coach",
             "link": ""
           }
@@ -572,6 +577,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Steve_PT.png",
             "link_label": "STEVE PARKHILL | Strength & Conditioning, Calisthenics",
             "link": ""
           }
@@ -580,6 +586,7 @@
           "type": "column",
           "settings": {
             "title": "",
+            "image": "shopify://shop_images/Will_PT.png",
             "link_label": "WILL TSILKAS | Strength & Conditioning, Calisthenics",
             "link": ""
           }
