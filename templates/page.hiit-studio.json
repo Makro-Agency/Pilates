@@ -737,6 +737,7 @@
         "5f339c27-a2d8-4ed9-9d14-fd9c115bad81": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/YongeShuter_hiitstudio.jpg",
             "title": "YONGE / SHUTER",
             "text": "<p>Dive into a high-intensity interval training with Technogym Skillrun treadmills, Aqua boxing bags, and full dumbbell racks and resistance band stations.</p>",
             "address": "225 Yonge Street, Toronto ON M5B 1N8",
@@ -748,6 +749,7 @@
         "ab06944c-e56b-4aaa-962a-25c5bdcc7f46": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/SweatandTonic_HIITalt.png",
             "title": "FRONT / SPADINA (THE WELL)",
             "text": "<p>Reach your potential with Technogym Skillrun treadmills, Aqua boxing bags, and premium FXD benches complete with dumbbells, kettlebells and slam balls.</p>",
             "address": "486 Front Street West, Toronto ON M5V 0V2",
