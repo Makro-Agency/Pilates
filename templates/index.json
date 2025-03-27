@@ -467,6 +467,8 @@
       ],
       "settings": {
         "allow_transparent_header": false,
+        "image": "shopify://shop_images/SweatandTonic_Wellness_home.png",
+        "img_mobile": "shopify://shop_images/SweatandTonic_Wellness_home_1.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "bottom-left",
