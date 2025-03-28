@@ -113,8 +113,11 @@
     {% include 'sliderule-data' %}
     <!-- SlideRule Script End -->
   </head>
-
-  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %} template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} template--{{ template.suffix }}">
+  {% assign has_page_font = false %}
+  {% if template.name == 'page' %}
+    {% assign has_page_font = true %}
+  {% endif %}
+  <body class="gradient pp--{{ has_page_font }} {% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %} template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} template--{{ template.suffix }}">
     <!--  -->
     {% comment %} <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBWHHMM"

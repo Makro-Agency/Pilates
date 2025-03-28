@@ -22,7 +22,7 @@
 {%- endstyle -%}
 
 <div class="page-width _page-width--narrow section-{{ section.id }}-padding">
-  <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %} {% if template == 'page.book-buy' or page.handle == 'reserve' or page.handle == 'pricing' %}hidden{% endif %}">
+  <h1 class="main-page-title page-title uppercase h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %} {% if template == 'page.book-buy' or page.handle == 'reserve' or page.handle == 'pricing' %}hidden{% endif %}">
     {{ page.title | escape }}
   </h1>
   {%- assign book_classes = section.blocks | where: 'type','book_classes' -%}
