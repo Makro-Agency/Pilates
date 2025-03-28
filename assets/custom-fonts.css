@@ -1,3 +1,70 @@
+
+@font-face {
+    font-family: 'New Frank';
+    src: url('https://cdn.shopify.com/s/files/1/0915/3917/7843/files/NewFrank-Medium.woff2?v=1743153464') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0915/3917/7843/files/NewFrank-Medium.woff?v=1743153464') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'New Frank';
+    src: url('https://cdn.shopify.com/s/files/1/0915/3917/7843/files/NewFrank-Bold.woff2?v=1743153464') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0915/3917/7843/files/NewFrank-Bold.woff?v=1743153464') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'New Frank';
+    src: url('https://cdn.shopify.com/s/files/1/0915/3917/7843/files/NewFrank-Light.woff2?v=1743153464') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0915/3917/7843/files/NewFrank-Light.woff?v=1743153464') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'New Frank';
+    src: url('https://cdn.shopify.com/s/files/1/0915/3917/7843/files/NewFrank-Regular.woff2?v=1743153464') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0915/3917/7843/files/NewFrank-Regular.woff?v=1743153464') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std';
+    src: url('https://cdn.shopify.com/s/files/1/0915/3917/7843/files/ITCAvantGardeStd-Bold.woff2?v=1743153707') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0915/3917/7843/files/ITCAvantGardeStd-Bold.woff?v=1743153707') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std Demi';
+    src: url('https://cdn.shopify.com/s/files/1/0915/3917/7843/files/ITCAvantGardeStd-Demi.woff2?v=1743153707') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0915/3917/7843/files/ITCAvantGardeStd-Demi.woff?v=1743153707') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std';
+    src: url('https://cdn.shopify.com/s/files/1/0915/3917/7843/files/ITCAvantGardeStd-Md.woff2?v=1743153708') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0915/3917/7843/files/ITCAvantGardeStd-Md.woff?v=1743153707') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 /* @font-face {
     font-family: 'Sailec';
     src: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Sailec-Medium.woff2') format('woff2'),
@@ -124,3 +191,5 @@
     font-style: italic;
     font-display: swap;
 }
+
+

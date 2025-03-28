@@ -5,16 +5,15 @@ body{
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0;
-  font-family: 'Brandon Grotesque';
+  font-family: var(--font-body-family);
 }
 body, input, textarea, select, .cart-item__name, .product-card-wrapper .card__heading,
 .main-cart-section .cart-item__name, .spa-services-row .inner-box .exclusive-tag{
-  /* font-family: 'Sailec'; */
-  font-family: 'Brandon Grotesque';
+  font-family: var(--font-body-family);
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .main-pro-price .price, .form__label, .link, 
 .press-hero .banner__text, .press-news-row .press-box, .main-cart-section th{
-  font-family: 'Brandon Grotesque';
+  font-family: var(--font-heading-family);
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4{
   font-weight: 450;
@@ -76,7 +75,7 @@ body .underlined-link:hover, body .customer a:hover, body .inline-richtext a:hov
   /*letter-spacing: 0.24px;*/
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  font-family: Brandon Grotesque;
+  font-family: var(--font-body-family);
 }
 .button--primary:after, .button--primary:before, .drawer-classes-btns .button:after, .drawer-classes-btns .button:before{
   display: none;
