@@ -60,8 +60,8 @@
       ],
       "settings": {
         "allow_transparent_header": true,
-        "image": "shopify://shop_images/Massage_Therapy_Tonic_Spa_Heading-2.jpg",
-        "img_mobile": "shopify://shop_images/Massage_Therapy_Tonic_Spa_Heading-2.jpg",
+        "image": "shopify://shop_images/Massage_Therapy_Tonic_Spa_Heading-2_1.jpg",
+        "img_mobile": "shopify://shop_images/Massage_Therapy_Tonic_Spa_Heading-2_2e828596-1a9d-4b49-bdc6-f6f2b650a1c9.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -104,7 +104,6 @@
         "a55b8a04-1b61-4712-b5c0-08cd27e57ddd": {
           "type": "location",
           "settings": {
-            "image": "shopify://shop_images/Tonic_Spa_Sweat_and_Tonic_Front_Desk_1000_03b33f77-edcf-40fd-a087-1f3577c5b679.jpg",
             "title": "TONIC SPA",
             "address": "486 Front St W, Toronto, ON M5V 0V2",
             "phone": "647-477-0539",
@@ -115,7 +114,6 @@
         "60f5ac5d-0b9a-47ea-86d1-d469f4d6bf61": {
           "type": "location",
           "settings": {
-            "image": "shopify://shop_images/SweatandTonicfrontdesk.png",
             "title": "YONGE / SHUTER",
             "address": "225 Yonge Street, Toronto ON M5B 1N8",
             "phone": "647-372-0225",
@@ -146,7 +144,6 @@
         "row_XMJPqE": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/SweatandTonic_TonicSpa_MassageTherapy.jpg",
             "caption": "",
             "heading": "S&T SIGNATURE MASSAGE",
             "text": "<p>Experience the perfect balance of relaxation and recovery. The S&T Signature combines therapeutic treatment with healing techniques to soothe both body and mind, using organic oil aromatherapy, warm Himalayan salt stones, cupping, and Swedish massage to relieve tension, improve circulation, and detoxify from the inside out.<br/>Pressure: light - medium<br/><br/>$165 | 50 minutes<br/>$225 | 80 minutes<br/><br/><strong>Couples massage:</strong><br/>$175 per person | 50 minutes</p>",
@@ -168,7 +165,6 @@
         "1efc39ee-b62b-45e2-8255-78a72db12041": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/lymphatic_drainage_massage_tonic_spa.jpg",
             "caption": "",
             "heading": "BRAZILIAN LYMPHATIC DRAINAGE",
             "text": "<p>Stimulate your lymphatic system, invigorate and sculpt the body. Our Brazilian Lymphatic Drainage massages integrate rhythmic pumping and specialized techniques to maximize lymphatic drainage, boost your immune system, remove toxins, and improve skin texture.</p><p><strong>Lymphatic Face & Buccal Massage:</strong><br/>$190 | 50 minutes</p><p><strong>Brazilian Lymphatic Drainage<br/></strong>$210 | 50 minutes</p>",
@@ -249,7 +245,6 @@
         "column_Ufnjjy": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Sonia_Rebelo_RMT_Tonic_Spa_Sweat_and_Tonic.png",
             "title": "Sonia Rebelo",
             "text": "",
             "link_label": "",
@@ -259,7 +254,6 @@
         "column_EKwKPt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Djordje_Petrovic_RMT_Tonic_Spa_Sweat_and_Tonic.png",
             "title": "Djordje Petrovic",
             "text": "",
             "link_label": "",
@@ -269,7 +263,6 @@
         "column_LKHjFa": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Julianne_Bradstreet_RMT_Tonic_Spa_Sweat_and_Tonic.png",
             "title": "Julianne Bradstreet",
             "text": "",
             "link_label": "",
@@ -289,7 +282,6 @@
         "column_bXECF3": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Taylor_Weir_RMT_Tonic_Spa_Sweat_and_Tonic.png",
             "title": "Taylor Weir",
             "text": "",
             "link_label": "",
@@ -319,7 +311,6 @@
         "column_4g7ndL": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Johanna_Friedrich_RMT_Tonic_Spa_Sweat_and_Tonic.png",
             "title": "Johanna Friedrich",
             "text": "",
             "link_label": "",
@@ -329,7 +320,6 @@
         "column_PBXWj6": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Michelle_Wozniak_RMT_Tonic_Spa_Sweat_and_Tonic.png",
             "title": "Michelle Wozniak",
             "text": "",
             "link_label": "",
@@ -349,7 +339,6 @@
         "column_dTaLJY": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Rob_Huner_RMT_Tonic_Spa_Sweat_and_Tonic.png",
             "title": "Rob Hunter",
             "text": "",
             "link_label": "",
