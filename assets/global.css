@@ -42,20 +42,44 @@ h4, .h4{
 }
 h5, .h5, .home-hero .banner__box_bottom .link{
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 120%;
   /* letter-spacing: -0.32px; */
   letter-spacing: 0.1em;
 }
 h6, .h6, .hit-team .multicolumn-card__info .link{
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 120%;
   /* letter-spacing: 0.24px; */
   letter-spacing: 0.1em;
 }
-.sub-titles, .gloabLs, .btn, .team-info, .main-page-title, .form-group label,
-.sub-title, .our-menu, .more-link { letter-spacing: 0.1em; }
+
+/* other pages fonts */
+.pp--true h1, .pp--true .h1, .pp--true h2, .pp--true .h2, .pp--true h3, .pp--true .h3,
+.pp--true h4, .pp--true .h4 {
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0;
+}
+.pp--true h3, .pp--true .h3,
+.pp--true h4, .pp--true .h4{ line-height: 1.2;  }
+@media (min-width: 1200px){
+  h2, .h2{
+    font-size: 48px;
+  }
+  h3, .h3{
+    font-size: 40px;
+  }
+  h4, .h4{
+    font-size: 32px;
+  }
+}
+/* other pages fonts */
+
+/*.sub-titles, .gloabLs, .team-info, .main-page-title, .form-group label,
+.sub-title, .our-menu, */.btn, .more-link { letter-spacing: 0.02em; }
+
 .subtitle{
   font-size: 16px;
   font-weight: 500;

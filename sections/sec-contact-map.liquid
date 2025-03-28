@@ -16,7 +16,7 @@
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="page-width secConMap section-{{ section.id }}-padding">
-    <h1 class="main-page-title page-title {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+    <h1 class="main-page-title page-title uppercase {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {{ section.settings.title | default: page.title | escape }}
     </h1>
     {%- if section.blocks.size > 0 -%}
