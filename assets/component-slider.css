@@ -317,17 +317,14 @@ slider-component.slider-component-full-width {
 }
 
 .slider-counter__link--numbers {
-  color: rgba(var(--color-foreground), 0.5);
+  color: #ffffff;
   text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .slider-counter__link--numbers:hover {
-  color: rgb(var(--color-foreground));
-}
-
-.slider-counter__link--active.slider-counter__link--numbers {
-  text-decoration: underline;
-  color: rgb(var(--color-foreground));
+  color: #ffffff
 }
 
 .slider-buttons {
@@ -355,7 +352,7 @@ slider-component.slider-component-full-width {
 }
 
 .slider-button {
-  color: rgba(var(--color-foreground), 0.75);
+  color: #ffffff;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -371,7 +368,7 @@ slider-component.slider-component-full-width {
 }
 
 .slider-button .icon {
-  height: 0.6rem;
+  height: 0.8rem;
 }
 
 .slider-button[disabled] .icon {

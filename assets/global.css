@@ -15,49 +15,38 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .main-pro-price .price, .f
 .press-hero .banner__text, .press-news-row .press-box, .main-cart-section th{
   font-family: var(--font-heading-family);
 }
-h1, .h1, h2, .h2, h3, .h3, h4, .h4{
-  font-weight: 450;
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+  font-weight: 500;
   line-height: 100%;
+  letter-spacing: 0;
 }
 h1, .h1{
   font-size: 60px;
-  font-weight: 420;
-  letter-spacing: 0.1em;
-  /* letter-spacing: -1.2px; */
+  font-weight: 500;
 }
 h2, .h2{
-  font-size: 40px;
-  letter-spacing: 0.1em;
-  /* letter-spacing: -0.8px; */
+  font-size: 48px;
 }
 h3, .h3{
   font-size: 32px;
-  letter-spacing: 0.1em;
-  /* letter-spacing: -0.64px; */
+  
 }
 h4, .h4{
   font-size: 24px;
-  letter-spacing: 0.1em;
-  /* letter-spacing: -0.48px; */
+  
 }
 h5, .h5, .home-hero .banner__box_bottom .link{
   font-size: 20px;
-  font-weight: 600;
-  line-height: 120%;
-  /* letter-spacing: -0.32px; */
-  letter-spacing: 0.1em;
+  
 }
 h6, .h6, .hit-team .multicolumn-card__info .link{
   font-size: 12px;
-  font-weight: 600;
-  line-height: 120%;
-  /* letter-spacing: 0.24px; */
-  letter-spacing: 0.1em;
+  
 }
 .sub-titles, .gloabLs, .btn, .team-info, .main-page-title, .form-group label,
 .sub-title, .our-menu, .more-link { letter-spacing: 0.1em; }
 .subtitle{
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 150%;
@@ -72,8 +61,6 @@ body .underlined-link:hover, body .customer a:hover, body .inline-richtext a:hov
   font-size: 12px;
   font-weight: 450;
   line-height: normal;
-  /*letter-spacing: 0.24px;*/
-  letter-spacing: 0.1em;
   text-transform: uppercase;
   font-family: var(--font-body-family);
 }
@@ -107,8 +94,6 @@ body .underlined-link:hover, body .customer a:hover, body .inline-richtext a:hov
   font-size: 12px;
   font-weight: 450;
   line-height: normal;
-  /*letter-spacing: 0.24px;*/
-  letter-spacing: 0.1em;
   text-transform: uppercase;
   display: inline-flex;
   align-items: center;

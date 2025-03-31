@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
@@ -49,6 +49,7 @@
       "block_order": [
         "f3379ac4-a87c-4f04-aa79-b5edb88faf25"
       ],
+      "disabled": true,
       "settings": {
         "logo_position": "top-center",
         "hide-header": true,
@@ -108,6 +109,7 @@
         "sections--16876983222492__4d342184-db41-43d6-bbe3-503423044f05-email_form-1",
         "sections--16876983222492__4d342184-db41-43d6-bbe3-503423044f05-disclaimer_paragraph-1"
       ],
+      "disabled": true,
       "settings": {
         "popup_delay": 3,
         "show_only_on_index": true,

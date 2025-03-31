@@ -1,0 +1,110 @@
+.hero-banner .image figure {
+    margin: 0;
+    position: relative;
+    height: 100vh;
+    line-height: 0;
+}
+.hero-banner .image {
+    width: 100%;
+}
+.banner-content {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    overflow: hidden;
+    height: 100%;
+    padding-bottom: 100px;
+    z-index: 2;
+}
+.banner-content > * {
+    flex-basis: 42%;
+}
+.banner-date {
+    align-items: self-end;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.dynamic-background { position: relative; }
+.dynamic-background::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 758.378px;
+    background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8AC1 80%);
+    opacity: 0.3;
+    filter: blur(125px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -360px;
+    transform: rotate(163.783deg);
+    right: -140px;
+    z-index: -1;
+}
+.countdown-timer ul {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}  
+.countdown-timer li {
+    position: relative;
+    padding: 0 17px;
+    text-align: center;
+}
+.countdown-timer li::after {
+    content: ":";
+    position: absolute;
+    left: auto;
+    right: -6px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #ffffff;
+    height: 50px;
+}
+.countdown-timer li:last-child:after {
+    display: none;
+}
+.countdown-timer li > span {
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: -5px -5px 15px 0px rgba(255, 255, 255, 0.05) inset;
+    backdrop-filter: blur(4px);
+    display: flex;
+    padding: 16px 20px;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+.countdown-timer span.number {
+    color: #FFF;
+    text-align: center;
+    font-family: var(--font-heading-family);
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+span.text {
+    color: #FFF;
+    text-align: center;
+    font-family: var(--font-heading-family);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+}

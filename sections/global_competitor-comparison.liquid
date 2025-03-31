@@ -1,0 +1,401 @@
+{% liquid
+  assign active_studio_index = -1
+  
+  if section.settings.active_studio != 'none'
+    assign active_parts = section.settings.active_studio | split: '_'
+    assign active_studio_index = active_parts[1] | plus: 0
+  endif
+%}
+
+<style>
+  .studio-comparison {
+    display: grid;
+    grid-template-columns: 200px repeat({{ section.blocks | where: 'type', 'studio' | size }}, 1fr);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .grid-header {
+    text-align: center;
+    padding: 20px 10px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .header-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+  }
+  
+  .grid-row {
+    display: contents;
+  }
+  
+  .grid-label {
+    padding: 15px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+  }
+  
+  .grid-cell {
+    padding: 15px 10px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+  }
+  
+  .active-studio {
+    background-color: {{ section.settings.active_highlight_color }};
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 10px;
+  }
+  
+  .check {
+    color: #4CAF50;
+  }
+  
+  .cross {
+    color: #f44336;
+  }
+  
+  .icon {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .studio-comparison {
+      display: block;
+      overflow-x: auto;
+    }
+
+    .studio-comparison-inner {
+      display: grid;
+      grid-template-columns: 200px repeat({{ section.blocks | where: 'type', 'studio' | size }}, 1fr);
+      min-width: 700px;
+    }
+  }
+</style>
+
+<div class="studio-comparison">
+  <div class="studio-comparison-inner">
+    <!-- Headers -->
+    <div class="grid-header"></div>
+    {% assign studio_blocks = section.blocks | where: 'type', 'studio' %}
+    {% for block in studio_blocks %}
+      <div class="grid-header" {{ block.shopify_attributes }}>
+        {% if forloop.index0 == active_studio_index %}
+          <div class="header-item">
+            {{ block.settings.name }}
+            <div class="active-studio">{{ section.settings.active_studio_letter }}</div>
+          </div>
+        {% else %}
+          {{ block.settings.name }}
+        {% endif %}
+      </div>
+    {% endfor %}
+    
+    <!-- Price Row -->
+    <div class="grid-row">
+      <div class="grid-label">PRICE</div>
+      {% for block in studio_blocks %}
+        <div class="grid-cell">{{ block.settings.price }}</div>
+      {% endfor %}
+    </div>
+    
+    <!-- Cost Per Class Row -->
+    <div class="grid-row">
+      <div class="grid-label">AVERAGE COST PER CLASS</div>
+      {% for block in studio_blocks %}
+        <div class="grid-cell">{{ block.settings.cost_per_class }}</div>
+      {% endfor %}
+    </div>
+    
+    <!-- Access Row -->
+    <div class="grid-row">
+      <div class="grid-label">ACCESS</div>
+      {% for block in studio_blocks %}
+        <div class="grid-cell">{{ block.settings.access }}</div>
+      {% endfor %}
+    </div>
+    
+    <!-- Guest Credit Row -->
+    <div class="grid-row">
+      <div class="grid-label">GUEST CREDIT</div>
+      {% for block in studio_blocks %}
+        <div class="grid-cell">{{ block.settings.guest_credit }}</div>
+      {% endfor %}
+    </div>
+    
+    <!-- Minimum Commitment Row -->
+    <div class="grid-row">
+      <div class="grid-label">MINIMUM COMMITMENT</div>
+      {% for block in studio_blocks %}
+        <div class="grid-cell">{{ block.settings.minimum_commitment }}</div>
+      {% endfor %}
+    </div>
+    
+    <!-- Cancel Anytime Row -->
+    <div class="grid-row">
+      <div class="grid-label">CANCEL ANYTIME</div>
+      {% for block in studio_blocks %}
+        <div class="grid-cell">
+          {% if block.settings.cancel_anytime %}
+            <span class="check icon">✓</span>
+          {% else %}
+            <span class="cross icon">✕</span>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    
+    <!-- Price Protected Row -->
+    <div class="grid-row">
+      <div class="grid-label">PRICE PROTECTED</div>
+      {% for block in studio_blocks %}
+        <div class="grid-cell">
+          {% if block.settings.price_protected %}
+            <span class="check icon">✓</span>
+          {% else %}
+            <span class="cross icon">✕</span>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    
+    <!-- Custom Rows -->
+    {% assign custom_rows = section.blocks | where: 'type', 'custom_row' %}
+    {% for block in custom_rows %}
+      <div class="grid-row" {{ block.shopify_attributes }}>
+        <div class="grid-label">{{ block.settings.row_label }}</div>
+        <div class="grid-cell">{{ block.settings.studio_1_value }}</div>
+        <div class="grid-cell">{{ block.settings.studio_2_value }}</div>
+        <div class="grid-cell">{{ block.settings.studio_3_value }}</div>
+        <div class="grid-cell">{{ block.settings.studio_4_value }}</div>
+        <div class="grid-cell">{{ block.settings.studio_5_value }}</div>
+        <div class="grid-cell">{{ block.settings.studio_6_value }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Fitness Studio Comparison",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "Compare Fitness Studios"
+    },
+    {
+      "type": "select",
+      "id": "active_studio",
+      "label": "Active Studio",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "studio_0",
+          "label": "First Studio"
+        },
+        {
+          "value": "studio_1", 
+          "label": "Second Studio"
+        },
+        {
+          "value": "studio_2",
+          "label": "Third Studio"
+        },
+        {
+          "value": "studio_3",
+          "label": "Fourth Studio"
+        },
+        {
+          "value": "studio_4",
+          "label": "Fifth Studio"
+        },
+        {
+          "value": "studio_5",
+          "label": "Sixth Studio"
+        }
+      ],
+      "default": "studio_2",
+      "info": "Select which studio should be highlighted as active"
+    },
+    {
+      "type": "color",
+      "id": "active_highlight_color",
+      "label": "Active Studio Highlight Color",
+      "default": "#8a56ff"
+    },
+    {
+      "type": "text",
+      "id": "active_studio_letter",
+      "label": "Active Studio Letter",
+      "default": "Z",
+      "info": "The letter that appears in the highlighted studio circle"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "studio",
+      "name": "Studio",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Studio Name",
+          "default": "STUDIO NAME"
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price",
+          "default": "$12"
+        },
+        {
+          "type": "text",
+          "id": "cost_per_class",
+          "label": "Average Cost Per Class",
+          "default": "$12"
+        },
+        {
+          "type": "text",
+          "id": "access",
+          "label": "Access Details",
+          "default": "Integer scelerisque"
+        },
+        {
+          "type": "text",
+          "id": "guest_credit",
+          "label": "Guest Credit",
+          "default": "Integer scelerisque"
+        },
+        {
+          "type": "text",
+          "id": "minimum_commitment",
+          "label": "Minimum Commitment",
+          "default": "Integer scelerisque"
+        },
+        {
+          "type": "checkbox",
+          "id": "cancel_anytime",
+          "label": "Cancel Anytime",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "price_protected",
+          "label": "Price Protected",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "custom_row",
+      "name": "Custom Comparison Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "row_label",
+          "label": "Row Label",
+          "default": "CUSTOM FEATURE"
+        },
+        {
+          "type": "text",
+          "id": "studio_1_value",
+          "label": "Studio 1 Value",
+          
+        },
+        {
+          "type": "text",
+          "id": "studio_2_value",
+          "label": "Studio 2 Value",
+          
+        },
+        {
+          "type": "text",
+          "id": "studio_3_value",
+          "label": "Studio 3 Value",
+          
+        },
+        {
+          "type": "text",
+          "id": "studio_4_value",
+          "label": "Studio 4 Value",
+          
+        },
+        {
+          "type": "text",
+          "id": "studio_5_value",
+          "label": "Studio 5 Value",
+          
+        },
+        {
+          "type": "text",
+          "id": "studio_6_value",
+          "label": "Studio 6 Value",
+          
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Fitness Studio Comparison",
+      "blocks": [
+        {
+          "type": "studio",
+          "settings": {
+            "name": "REFORMD",
+            "price": "$12",
+            "cost_per_class": "$12",
+            "cancel_anytime": true,
+            "price_protected": true
+          }
+        },
+        {
+          "type": "studio",
+          "settings": {
+            "name": "LAGREE PLUS",
+            "price": "$12",
+            "cost_per_class": "$12",
+            "cancel_anytime": false,
+            "price_protected": true
+          }
+        },
+        {
+          "type": "studio",
+          "settings": {
+            "name": "STUDIO LAGREE",
+            "price": "$12",
+            "cost_per_class": "$12",
+            "cancel_anytime": true,
+            "price_protected": false
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

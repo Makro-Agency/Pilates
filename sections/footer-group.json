@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
@@ -89,6 +89,7 @@
         "store_info_JJkigG",
         "2543d9fc-b376-4836-85cf-14fc5c3fbc1d"
       ],
+      "disabled": true,
       "settings": {
         "hide-section": true,
         "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
