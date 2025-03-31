@@ -1,0 +1,48 @@
+{{ 'global_sudio-classes.css' | asset_url | stylesheet_tag }}
+
+<div class="section-studio-classes padding-sections">
+    {%if section.settings.title != blank or section.settings.description != blank %}
+        <div class="studio-content">
+            {%if section.settings.title != blank %}
+                <h2 class="h1 heading">{{ section.settings.title }}</h2>
+            {% endif %}
+            {%if section.settings.description != blank %}
+                <p class="description">{{ section.settings.description }}</p>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "The Studio Classes",
+  "class": "studio-classes",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "label": "Title",
+      "id": "title"
+    },
+    {
+      "type": "textarea",
+      "label": "Description",
+      "id": "description"
+    }
+  ],
+  "presets": [
+    {
+      "name": "The Studio Classes"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

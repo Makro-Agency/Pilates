@@ -1,0 +1,64 @@
+{{ 'global_membership-credits.css' | asset_url | stylesheet_tag }}
+
+<div class="section-membership-credits padding-sections">
+    {% if section.settings.title != blank or section.settings.description != blank %}
+        <div class="heading-wrapper">
+            {% if section.settings.title != blank %}<h3 class="h3 heading">{{ section.settings.title }}</h3>{% endif %}
+            {% if section.settings.description != blank %}<p class="description">{{ section.settings.description }}</p>{% endif %}
+        </div> 
+    {% endif %}
+    {% if section.blocks.size > 0 %}
+        {%- for block in section.blocks -%}
+            {% if block.settings.section_title %}<a href="{{ block.settings.section_url }}" class="section-link-wrap">{{ block.settings.section_title }}</a>{% endif %}
+        {%- endfor -%}
+    {% endif %}
+
+</div>
+
+
+{% schema %}
+{
+  "name": "Membership Credits",
+  "class": "membership-credits",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Heading Content"
+    },
+    {
+      "type": "inline_richtext",
+      "label": "Title",
+      "id": "title"
+    },
+    {
+      "type": "textarea",
+      "label": "Description",
+      "id": "description"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "section_link",
+      "name": "Section Link",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "text",
+          "label": "Section Title",
+          "id": "section_title"
+        },
+        {
+          "type": "url",
+          "label": "Section URL",
+          "id": "section_url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Membership Credits"
+    }
+  ]
+}
+{% endschema %}

@@ -416,3 +416,49 @@ div#eligibility_create_form-inner p.option-title {
 .banner__content_top a.button {
   min-height: 45px;
 }
+
+
+
+/*------------------common css---------------------------*/
+img {
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.banner {
+  position: relative;
+}
+.banner::after, .banner__media::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background: #000;
+  opacity: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.padding-sections {
+  padding-left: 132px;
+  padding-right: 132px;
+}
+.heading, .subtitle {
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+.description {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 160%;
+  font-family: var(--font-body-family);
+  margin: 16px 0 0;
+}
+@media only screen and (min-width: 768px) {
+  .mobile-img {display: none;}
+}
+@media only screen and (max-width: 767px) {
+  .desktop-img { display: none; }
+}

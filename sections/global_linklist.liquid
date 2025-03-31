@@ -1,0 +1,72 @@
+{{ 'global_linklist.css' | asset_url | stylesheet_tag }}
+
+
+<div id="links-{{ section.id }}" class="global-linklist">
+    <div class="padding-sections">
+        {% if section.settings.title != blank %}
+            <div class="content-wrapper">
+                {% if section.settings.title != blank %}<div class="headings"><h2 class="h2 heading">{{ section.settings.title }}</h2></div>{% endif %}
+                {% if section.settings.content != blank or section.blocks.size > 0 %}
+                    <div class="links-wrappper">
+                        {% if section.settings.content != blank %}<p class="description">{{ section.settings.content }}</p>{% endif %}
+                        {% if section.blocks.size > 0 %}
+                        <div class="link-list">
+                            {%- for block in section.blocks -%}
+                                {% if block.settings.link_lable != blank %}<span id="{{ section_id }}">{{ block.settings.link_lable }}{% render 'down-arrow' %}</span>{% endif %}
+                            {% endfor %}
+                        </div>
+                        {% endif %} 
+                    </div>
+                {% endif %}
+            </div>
+         {% endif %}
+    </div>
+</div>
+
+
+{% schema %}
+    {
+        "name": "Global Link List",
+        "settings": [
+            {
+                "type": "header",
+                "content": "Content"
+            },
+            {
+                "type": "inline_richtext",
+                "label": "Title",
+                "id": "title"
+            },
+            {
+                "type": "textarea",
+                "label": "Content",
+                "id": "content"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "links",
+                "name": "Links",
+                "limit": 4,
+                "settings": [
+                    {
+                        "type": "text",
+                        "label": "Link Lable",
+                        "id": "link_lable"
+                    },
+                    {
+                        "type": "text",
+                        "label": "Add Section Id",
+                        "id": "section_id"
+                    }
+                ]
+            }
+
+        ],
+        "presets": [
+            {
+                "name": "Global Link List"
+            }
+        ]
+    }
+{% endschema %}

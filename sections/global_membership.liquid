@@ -1,0 +1,131 @@
+{{ 'global_membership.css' | asset_url | stylesheet_tag }}
+
+<div id="{{ section.settings.section_id }}" class="memberships-cards">
+    <div class="padding-sections">
+        {%  if section.settings.main_title != blank or section.settings.main_description != blank %}
+            <div class="heading-wrapper">
+                {%  if section.settings.main_title != blank %}<h2 class="h1 heading">{{ section.settings.main_title }}</h2>{% endif %}
+                {%  if section.settings.main_description != blank %}<p class="description">{{ section.settings.main_description }}</p>{% endif %}
+            </div>
+        {% endif %}
+        {% if section.blocks.size > 0 %}
+            <div class="membership-card-wrapper">
+                {%- for block in section.blocks -%}
+                    <div class="card-wrap">
+                        <div class="heading-wrap">
+                            {% if block.settings.title != blank %}<h3 class="h3 heading">{{ block.settings.title }}</h3>{% endif %}
+                            {% if block.settings.description != blank %}<p class="description">{{ block.settings.description }}</p>{% endif %}
+                        </div>
+                        {% if block.settings.sale_price != blank or block.settings.original_price != blank %}
+                            <div class="price-wrappper">
+                                {% if block.settings.sale_label != blank %}<div class="sale_label">{{ block.settings.sale_label }}</div>{% endif %}
+                                <div class="price">
+                                    <div class="original-price">{{ block.settings.original_price }}</div>
+                                    <div class="sale-price">{{ block.settings.sale_price }}</div>
+                                </div>
+                            </div>
+                        {% endif %}
+                        {% if block.settings.benefits != blank %}
+                            <div class="h5 heading">Benefits</div>
+                            <div class="benefits-list">{{ block.settings.benefits }}</div>
+                        {% endif %}
+                        {% if block.settings.total_membership_number != blank or block.settings.remain_membership_number != blank %}
+                            <div class="available-membership">
+                                <div>
+                                    {% if block.settings.remain_membership_number != blank %}<span class="remain">{{ block.settings.remain_membership_number }}</span>{% endif %} 
+                                    {% if block.settings.total_membership_number != blank  %}<span class="total">/ {{ block.settings.total_membership_number }}</span>{% endif %}
+                                </div>
+                                <span class="h5 heading">Available</span>
+                            </div>
+                            
+                        {% endif %}
+                    </div>
+                {%- endfor -%}
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Membership",
+  "class": "membership",
+  "settings": [
+    {
+        "type": "text",
+        "label": "Add Section Id",
+        "id": "section_id"
+    },
+    {
+      "type": "header",
+      "content": "Headings"
+    },
+    {
+      "type": "inline_richtext",
+      "label": "Main Title ",
+      "id": "main_title"
+    },
+    {
+      "type": "textarea",
+      "label": "Description",
+      "id": "main_description"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "membership_card",
+      "name": "Membership Card",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "label": "Title",
+          "id": "title"
+        },
+        {
+          "type": "textarea",
+          "label": "Description",
+          "id": "description"
+        },
+        {
+          "type": "text",
+          "label": "Sale Label",
+          "id": "sale_label"
+        },
+        {
+          "type": "text",
+          "label": "Sale Price",
+          "id": "sale_price"
+        },
+        {
+          "type": "text",
+          "label": "Original Price",
+          "id": "original_price"
+        },
+        {
+          "type": "richtext",
+          "label": "Benefits",
+          "id": "benefits"
+        },
+        {
+          "type": "text",
+          "label": "Total Membership Number",
+          "id": "total_membership_number",
+          "placeholder": "24"
+        },
+        {
+          "type": "text",
+          "label": "Remain Membership Number",
+          "id": "remain_membership_number",
+          "placeholder": "20"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Membership"
+    }
+  ]
+}
+{% endschema %}
+

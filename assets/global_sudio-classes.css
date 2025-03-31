@@ -1,0 +1,12 @@
+.section-studio-classes {
+    background: #000;
+    padding-top: 60px;
+    padding-bottom: 132px;
+}
+.studio-content {
+    display: flex;
+    justify-content: space-between;
+}
+.studio-content > * {
+    max-width: 33.33%;
+}

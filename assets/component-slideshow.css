@@ -2,6 +2,7 @@ slideshow-component {
   position: relative;
   display: flex;
   flex-direction: column;
+  background: #000000;
 }
 
 @media screen and (max-width: 989px) {
@@ -14,7 +15,7 @@ slideshow-component .slideshow.banner {
   flex-direction: row;
   flex-wrap: nowrap;
   margin: 0;
-  gap: 0;
+  gap: 24px;
 }
 
 .slideshow__slide {
@@ -43,10 +44,17 @@ slideshow-component .slideshow.banner {
   flex-direction: column;
   justify-content: center;
   max-width: 54.5rem;
+  padding: 0;
 }
 
 .slideshow__text > * {
   max-width: 100%;
+}
+.slideshow__text .banner__heading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 749px) {
@@ -101,12 +109,13 @@ slideshow-component .slideshow.banner {
 @media screen and (min-width: 750px) {
   .slideshow__text-wrapper.banner__content {
     height: 100%;
-    padding: 5rem;
+    padding: 7rem;
   }
 }
 
 .slideshow__controls {
-  border: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  border: none;
+  z-index: 99;
 }
 
 .slideshow__controls--top {
@@ -127,7 +136,9 @@ slideshow-component .slideshow.banner {
 
 @media screen and (min-width: 750px) {
   .slideshow__controls {
-    position: relative;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
   }
 }
 
