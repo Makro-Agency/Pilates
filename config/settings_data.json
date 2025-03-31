@@ -7,12 +7,12 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "current": {
-    "logo": "shopify://shop_images/Vector_1.svg",
-    "logo_width": 270,
+    "logo": "shopify://shop_images/Pilates_header-dark-logo.png",
+    "logo_width": 230,
     "favicon": "shopify://shop_images/2_07b01778-904f-4b32-8d1d-ab2a77e7c3f9.png",
-    "type_header_font": "assistant_n4",
+    "type_header_font": "itc_avant_garde_gothic_n5",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
     "body_scale": 100,
