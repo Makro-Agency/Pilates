@@ -14,7 +14,7 @@
                     <div class="card-wrap">
                         <div class="heading-wrap">
                             {% if block.settings.title != blank %}<h3 class="h3 heading">{{ block.settings.title }}</h3>{% endif %}
-                            {% if block.settings.description != blank %}<p class="description">{{ block.settings.description }}</p>{% endif %}
+                            {% if block.settings.price_per_class != blank %} <h5 class="h5 subtitle">{{ block.settings.price_per_class }}</h5>{% endif %}
                         </div>
                         {% if block.settings.sale_price != blank or block.settings.original_price != blank %}
                             <div class="price-wrappper">
@@ -25,6 +25,7 @@
                                 </div>
                             </div>
                         {% endif %}
+                        {% if block.settings.description != blank %}<p class="description">{{ block.settings.description }}</p>{% endif %}
                         {% if block.settings.benefits != blank %}
                             <div class="h5 heading">Benefits</div>
                             <div class="benefits-list">{{ block.settings.benefits }}</div>
@@ -53,8 +54,8 @@
 
 {% schema %}
 {
-  "name": "Membership",
-  "class": "membership",
+  "name": "Monthly Credits",
+  "class": "monthly-credits",
   "settings": [
     {
         "type": "text",
@@ -78,14 +79,19 @@
   ],
   "blocks": [
     {
-      "type": "membership_card",
-      "name": "Membership Card",
+      "type": "credits_card",
+      "name": "Credits Card",
       "limit": 3,
       "settings": [
         {
           "type": "inline_richtext",
           "label": "Title",
           "id": "title"
+        },
+        {
+          "type": "text",
+          "label": "Price Per Class",
+          "id": "price_per_class"
         },
         {
           "type": "textarea",
@@ -139,7 +145,7 @@
   ],
   "presets": [
     {
-      "name": "Membership"
+      "name": "Monthly Credits"
     }
   ]
 }

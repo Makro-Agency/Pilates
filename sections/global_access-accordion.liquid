@@ -15,32 +15,37 @@
   }
 {%- endstyle -%}
 
-<div class="padding-sections section-{{ section.id }}-padding">
-  <div class="row">
-    <div class="col col-right">
-      <div class="wellness-faq-accordion">
-        <div class="section-head">
-          <h2 class="h2 heading">{{ section.settings.title }}</h2>
-          {% if section.settings.sort_description != blank %}<p class="description">{{ section.settings.sort_description }}</p>{% endif %}
-          {% if section.settings.link_label != blank %}<a href="{{ section.settings.link_url }}" class="btn">{{ section.settings.link_label }}</a> {% endif %}
-        </div>
-        <div class="wellness-accordion-box-outer">
-          {%- for block in section.blocks -%}
-            {%- if block.settings.question != blank and block.settings.ans != blank -%}
-              <div class="wellness-accordion-box">
-                <div class="wellness-accordion-title h5" data-class-item>
-                  <span>{{ block.settings.question }}</span> {% render 'icon-faq-arrows' %}
-                </div>
-                <div class="panel" data-class-content>
-                  <div class="text-wrap">{{ block.settings.ans }}</div>
-                </div>
+<div class="allaccess-accordian">
+    {% if section.settings.desktop_image != blank or section.settings.mobile_image %}
+      <div class="image">
+        <figure>
+          <img src="{{ section.settings.desktop_image | image_url }}" class="desktop-img" height="auto" width="auto">
+          <img src="{{ section.settings.mobile_image | image_url }}" class="mobile-img" height="auto" width="auto">
+        </figure>
+      </div>
+    {% endif %}
+    
+    <div class="wellness-faq-accordion padding-sections section-{{ section.id }}-padding">
+      <div class="section-head">
+        <h2 class="h2 heading">{{ section.settings.title }}</h2>
+        {% if section.settings.sort_description != blank %}<p class="description">{{ section.settings.sort_description }}</p>{% endif %}
+        {% if section.settings.link_label != blank %}<a href="{{ section.settings.link_url }}" class="btn">{{ section.settings.link_label }}</a> {% endif %}
+      </div>
+      <div class="wellness-accordion-box-outer">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.question != blank and block.settings.ans != blank -%}
+            <div class="wellness-accordion-box">
+              <div class="wellness-accordion-title h5" data-class-item>
+                <span>{{ block.settings.question }}</span> {% render 'icon-faq-arrows' %}
               </div>
-            {%- endif -%}
-          {%- endfor -%}
-        </div>
+              <div class="panel" data-class-content>
+                <div class="text-wrap">{{ block.settings.ans }}</div>
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
       </div>
     </div>
-  </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
@@ -77,8 +82,8 @@
 
 {% schema %}
 {
-  "name": "Wellness Faq Accordion",
-  "class": "wellness-faq",
+  "name": "All Aceess Accordion",
+  "class": "all-access-faq wellness-faq",
   "settings": [
     {
       "type": "html",
@@ -87,19 +92,18 @@
       "default": "HAVE ANY <br/> QUESTIONS?"
     },
     {
-      "type": "textarea",
-      "id": "sort_description",
-      "label": "Sort Description"
+      "type": "header",
+      "content": "Image Content"
     },
     {
-      "type": "text",
-      "id": "link_label",
-      "label": "Link Label Text"
+      "type": "image_picker",
+      "label": "Desktop Image",
+      "id": "desktop_image"
     },
     {
-      "type": "url",
-      "id": "link_url",
-      "label": "Link URL"
+      "type": "image_picker",
+      "label": "Mobile Image",
+      "id": "mobile_image"
     },
     {
       "type": "header",
@@ -148,7 +152,7 @@
   ],
   "presets": [
     {
-      "name": "Wellness Faq Accordion"
+      "name": "All Aceess Accordion"
     }
   ]
 }
