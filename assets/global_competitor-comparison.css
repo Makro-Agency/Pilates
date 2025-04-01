@@ -1,0 +1,159 @@
+.competitor-comparison-section {
+    padding: 80px 0;
+    width: 100%;
+    background: #000;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .comparison-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 6rem 0;
+  }
+  
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    display: table;
+    table-layout: fixed;
+  }
+  
+  .table-row {
+    display: table-row;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+  }
+  
+  .feature-label {
+    display: table-cell !important;
+    padding: 29px 20px;
+    font-weight: 500;
+    text-align: left;
+    width: 320px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: var(--font-heading-family);
+  }
+  
+  .competitor-column {
+    display: table-cell;
+    text-align: left;
+    padding: 29px 20px;
+    vertical-align: middle;
+    min-width: 120px;
+    font-size: 16px;
+  }
+  
+  .header-row {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .header-row .competitor-column {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'ITC Avant Garde Gothic Std';
+  }
+  
+  .highlight {
+    position: relative;
+    font-weight: 600;
+  }
+  
+  .highlight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    z-index: -1;
+  }
+  
+  .checkmark {
+    color: #FFFFFF;
+    font-size: 18px;
+  }
+  
+  .cross {
+    color: #F44336;
+    font-size: 18px;
+  }
+  
+  .more-info-wrap {
+    max-width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .more-info-wrap {
+    max-width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .more-info {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .more-info-wrap .page-links {
+    display: flex;
+    gap: 40px;
+  }
+  .more-info-wrap .page-links span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    font-family: var(--font-heading-family);
+    border-bottom: 1.8px solid transparent;
+ }
+ .more-info-wrap .page-links span:hover {
+    border-color: #FEE4B1;
+ }
+  @media screen and (max-width: 767px) {
+    .comparison-table {
+      table-layout: auto;
+    }
+    
+    .feature-label {
+      width: 180px;
+      font-size: 12px;
+    }
+    
+    .competitor-column {
+      font-size: 12px;
+      padding: 15px 10px;
+    }
+    
+    .header-row .competitor-column {
+      font-size: 14px;
+    }
+    
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+  }
