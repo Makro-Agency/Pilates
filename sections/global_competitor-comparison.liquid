@@ -19,126 +19,154 @@
         </div>
         
         <!-- Price Row -->
-        <div class="table-row">
-          <div class="feature-label">PRICE</div>
-          {% for block in section.blocks %}
-            {% if block.type == "competitor" %}
-              <div class="competitor-column">
-                {{ block.settings.price }}
-              </div>
-            {% endif %}
-          {% endfor %}
-        </div>
-        
-        <!-- Average Cost Per Class Row -->
-        <div class="table-row">
-          <div class="feature-label">AVERAGE COST PER CLASS</div>
-          {% for block in section.blocks %}
-            {% if block.type == "competitor" %}
-              <div class="competitor-column">
-                {{ block.settings.cost_per_class }}
-              </div>
-            {% endif %}
-          {% endfor %}
-        </div>
-
-        <!-- Single Credit Cost Row -->
-        {% comment %} {% if block.settings.single_credit_cost != blank %} {% endcomment %}
+        {% if section.settings.price_label != blank %}
           <div class="table-row">
-            <div class="feature-label">Single Credit Cost</div>
+            <div class="feature-label">{{ section.settings.price_label }}</div>
             {% for block in section.blocks %}
               {% if block.type == "competitor" %}
-                <div class="competitor-column">
+                <div class="competitor-column prices">
+                  {{ block.settings.price }}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+        
+        <!-- Average Cost Per Class Row -->
+        {% if section.settings.cost_per_class_label != blank %}
+          <div class="table-row">
+            <div class="feature-label">{{ section.settings.cost_per_class_label }}</div>
+            {% for block in section.blocks %}
+              {% if block.type == "competitor" %}
+                <div class="competitor-column prices">
+                  {{ block.settings.cost_per_class }}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        <!-- Single Credit Cost Row -->
+        {% if section.settings.single_credit_cost_label != blank %}
+          <div class="table-row">
+            <div class="feature-label">{{ section.settings.single_credit_cost_label }}</div>
+            {% for block in section.blocks %}
+              {% if block.type == "competitor" %}
+                <div class="competitor-column prices">
                   {{ block.settings.single_credit_cost }}
                 </div>
               {% endif %}
             {% endfor %}
           </div>
-        {% comment %} {% endif %} {% endcomment %}
+        {% endif %}
         
         <!-- Access Row -->
-        <div class="table-row">
-          <div class="feature-label">ACCESS</div>
-          {% for block in section.blocks %}
-            {% if block.type == "competitor" %}
-              <div class="competitor-column">
-                {{ block.settings.access }}
-              </div>
-            {% endif %}
-          {% endfor %}
-        </div>
+        {% if section.settings.access_label != blank %}
+          <div class="table-row">
+            <div class="feature-label">{{section.settings.access_label}}</div>
+            {% for block in section.blocks %}
+              {% if block.type == "competitor" %}
+                <div class="competitor-column">
+                  {{ block.settings.access }}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
         
         <!-- Guest Credit Row -->
-        <div class="table-row">
-          <div class="feature-label">GUEST CREDIT</div>
-          {% for block in section.blocks %}
-            {% if block.type == "competitor" %}
-              <div class="competitor-column">
-                {{ block.settings.guest_credit }}
-              </div>
-            {% endif %}
-          {% endfor %}
-        </div>
+        {% if section.settings.guest_credit_label != blank %}
+          <div class="table-row">
+            <div class="feature-label">{{section.settings.guest_credit_label}}</div>
+            {% for block in section.blocks %}
+              {% if block.type == "competitor" %}
+                <div class="competitor-column">
+                  {{ block.settings.guest_credit }}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
         
         <!-- Minimum Commitment Row -->
-        <div class="table-row">
-          <div class="feature-label">MINIMUM COMMITMENT</div>
-          {% for block in section.blocks %}
-            {% if block.type == "competitor" %}
-              <div class="competitor-column">
-                {{ block.settings.min_commitment }}
-              </div>
-            {% endif %}
-          {% endfor %}
-        </div>
+        {% if section.settings.min_commitment_label != blank %}
+          <div class="table-row">
+            <div class="feature-label">{{section.settings.min_commitment_label}}</div>
+            {% for block in section.blocks %}
+              {% if block.type == "competitor" %}
+                <div class="competitor-column">
+                  {{ block.settings.min_commitment }}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
         
         <!-- Cancel Anytime Row -->
-        <div class="table-row">
-          <div class="feature-label">CANCEL ANYTIME</div>
-          {% for block in section.blocks %}
-            {% if block.type == "competitor" %}
-              <div class="competitor-column">
-                {% if block.settings.cancel_anytime %}
-                  <span class="checkmark">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                      <path d="M4.45215 12.0304L9.79391 17.5331L20.5479 6.46729" stroke="white" stroke-width="1.5"/>
-                    </svg>
-                  </span>
-                {% else %}
-                  <span class="cross">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                      <path opacity="0.4" d="M4.6665 19.5L12.1665 12M12.1665 12L19.6665 4.5M12.1665 12L4.6665 4.5M12.1665 12L19.6665 19.5" stroke="white" stroke-width="1.5"/>
-                    </svg>
-                  </span>
-                {% endif %}
-              </div>
-            {% endif %}
-          {% endfor %}
-        </div>
-        
+        {% if section.settings.cancel_anytime_label != blank %}
+          <div class="table-row">
+            <div class="feature-label">{{section.settings.cancel_anytime_label}}</div>
+            {% for block in section.blocks %}
+              {% if block.type == "competitor" %}
+                <div class="competitor-column">
+                  {% if block.settings.cancel_anytime %}
+                    <span class="checkmark">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <path d="M4.45215 12.0304L9.79391 17.5331L20.5479 6.46729" stroke="white" stroke-width="1.5"/>
+                      </svg>
+                    </span>
+                  {% else %}
+                    <span class="cross">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <path opacity="0.4" d="M4.6665 19.5L12.1665 12M12.1665 12L19.6665 4.5M12.1665 12L4.6665 4.5M12.1665 12L19.6665 19.5" stroke="white" stroke-width="1.5"/>
+                      </svg>
+                    </span>
+                  {% endif %}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+
         <!-- Price Protected Row -->
-        <div class="table-row">
-          <div class="feature-label">PRICE PROTECTED</div>
-          {% for block in section.blocks %}
-            {% if block.type == "competitor" %}
-              <div class="competitor-column">
-                {% if block.settings.price_protected %}
-                  <span class="checkmark">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                      <path d="M4.45215 12.0304L9.79391 17.5331L20.5479 6.46729" stroke="white" stroke-width="1.5"/>
-                    </svg>
-                  </span>
-                {% else %}
-                  <span class="cross">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                      <path opacity="0.4" d="M4.6665 19.5L12.1665 12M12.1665 12L19.6665 4.5M12.1665 12L4.6665 4.5M12.1665 12L19.6665 19.5" stroke="white" stroke-width="1.5"/>
-                    </svg>
-                  </span>
-                {% endif %}
-              </div>
-            {% endif %}
-          {% endfor %}
-        </div>
+        {% if section.settings.price_protected_label != blank %}
+          <div class="table-row">
+            <div class="feature-label">{{section.settings.price_protected_label}}</div>
+            {% for block in section.blocks %}
+              {% if block.type == "competitor" %}
+                <div class="competitor-column">
+                  {% if block.settings.price_protected %}
+                    <span class="checkmark">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <path d="M4.45215 12.0304L9.79391 17.5331L20.5479 6.46729" stroke="white" stroke-width="1.5"/>
+                      </svg>
+                    </span>
+                  {% else %}
+                    <span class="cross">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <path opacity="0.4" d="M4.6665 19.5L12.1665 12M12.1665 12L19.6665 4.5M12.1665 12L4.6665 4.5M12.1665 12L19.6665 19.5" stroke="white" stroke-width="1.5"/>
+                      </svg>
+                    </span>
+                  {% endif %}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+
+         <!-- expiry Row -->
+         {% if section.settings.expiry_label != blank %}
+          <div class="table-row">
+            <div class="feature-label">{{section.settings.expiry_label}}</div>
+            {% for block in section.blocks %}
+              {% if block.type == "competitor" %}
+                <div class="competitor-column">
+                  {{ block.settings.expiry }}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
         
       </div>
     </div>
@@ -182,6 +210,59 @@
       "default": "COMPETITOR COMPARISON"
     },
     {
+      "type": "header",
+      "content": "Feature Labels"
+    },
+    {
+      "type": "text",
+      "id": "price_label",
+      "label": "Price Label"
+    },
+    {
+      "type": "text",
+      "id": "cost_per_class_label",
+      "label": "Cost Per Class Label"
+    },
+    {
+      "type": "text",
+      "id": "single_credit_cost_label",
+      "label": "Single Credit Cost Label"
+    },
+    {
+      "type": "text",
+      "id": "access_label",
+      "label": "Access Label"
+    },
+    {
+      "type": "text",
+      "id": "guest_credit_label",
+      "label": "Guest Credit Label"
+    },
+    {
+      "type": "text",
+      "id": "min_commitment_label",
+      "label": "Minimum Commitment Label"
+    },
+    {
+      "type": "text",
+      "id": "cancel_anytime_label",
+      "label": "Cancel Anytime Label"
+    },
+    {
+      "type": "text",
+      "id": "price_protected_label",
+      "label": "Price Protected Label"
+    },
+    {
+      "type": "text",
+      "id": "expiry_label",
+      "label": "Expiry Label"
+    },
+    {
+      "type": "header",
+      "content": "More Info Details"
+    },
+    {
       "type": "text",
       "id": "info_text",
       "label": "Info Text",
@@ -210,7 +291,8 @@
       "type": "text",
       "id": "section_id_1",
       "label": "Link Section Id",
-    }
+    },
+  
   ],
   "max_blocks": 10,
   "blocks": [
@@ -239,25 +321,32 @@
         {
           "type": "text",
           "id": "single_credit_cost",
-          "label": "Single Credit Cost"
+          "label": "Single Credit Cost",
+          "default": "$12"
         },
         {
           "type": "text",
           "id": "access",
           "label": "Access Details",
-          "default": "Limited"
+          "default": "Integer scelerisque"
         },
         {
           "type": "text",
           "id": "guest_credit",
           "label": "Guest Credit",
-          "default": "None"
+          "default": "Integer scelerisque"
         },
         {
           "type": "text",
           "id": "min_commitment",
           "label": "Minimum Commitment",
-          "default": "Monthly"
+          "default": "Integer scelerisque"
+        },
+        {
+          "type": "text",
+          "id": "expiry",
+          "label": "Expiry Details",
+          "default": "Integer scelerisque"
         },
         {
           "type": "checkbox",

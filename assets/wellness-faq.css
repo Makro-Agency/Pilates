@@ -1,10 +1,12 @@
+.wellness-faq,.all-access-faq { background-color: #000;}
 .wellness-accordion-title {
 	display: flex;
 	justify-content: space-between;
-	color: #000;
+	color: #ffffff;
+	font-family: var(--font-heading-family);
 	font-size: 20px;
 	font-style: normal;
-	font-weight: 450;
+	font-weight: 500;
 	line-height: 150%;
 	text-transform: uppercase;
 	letter-spacing: 0;
@@ -19,25 +21,29 @@
 }
 
 .wellness-faq-accordion .wellness-accordion-box {
-	border: 1px solid rgba(0, 0, 0, 0.10);
+	border: 1px solid rgba(255, 255, 255, 0.25);
 	border-width: 1px 0 1px 0;
+	margin-bottom: -1px;
 }
-
+.wellness-faq-accordion .wellness-accordion-box:last-child {
+    border: none;
+}
 .wellness-accordion-box {
-	padding-bottom: 14px;
+	padding-bottom: 12px;
 }
 
 .wellness-faq-accordion .wellness-accordion-box .wellness-accordion-title {
-	padding: 30px 0 16px;
+	padding: 30px 20px 20px 0;
 	cursor: pointer;
 	gap: 30px;
 }
 
 .wellness-faq-accordion .wellness-accordion-box .text-wrap p {
-	font-size: 14px;
-	max-width: 97%;
-	color: #26221B;
-	line-height: normal;
+    font-size: 16px;
+    max-width: 97%;
+    color: #ffffff;
+    line-height: 150%;
+    font-weight: 300;
 }
 
 /* .wellness-faq .row {
@@ -53,13 +59,12 @@
 
 .wellness-accordion-box .wellness-accordion-title svg {
 	transition: all .3s ease 0s;
-	transform: rotate(45deg);
 	width: 20px;
 	height: 20px;
 }
 
 .wellness-accordion-box .wellness-accordion-title.active svg {
-	transform: rotate(0deg);
+	transform: rotate(180deg);
 }
 
 /* .wellness-faq .row .col-left {
@@ -90,7 +95,6 @@
 }
 
 .wellness-faq-accordion .section-head h2 {
-	letter-spacing: -0.8px;
 	text-transform: uppercase;
 	margin-top: 0;
 }
@@ -111,11 +115,30 @@
 .wellness-faq-accordion {
 	display: flex;
 	justify-content: space-between;
+	gap: 60px;
 }
-
+.section-head {
+    max-width: 536px;
+    padding-right: 32px;
+}
+.section-head p.description {
+    padding-right: 30%;
+}
+.section-head a.btn {
+    color: var(--White, #FFF);
+    font-family: var(--font-heading-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
 .wellness-accordion-box-outer {
 	width: 100%;
-	max-width: 660px;
+	max-width: 1060px;
 }
 
 /* new css end here */
@@ -130,6 +153,35 @@
 		width: 49.2%;
 	}
 } */
+.allaccess-accordian { position: relative;}
+.allaccess-accordian .image figure { margin: 0; line-height: 0;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 49.35%; }
+.allaccess-accordian .image figure img {
+    position: absolute;
+}
+.allaccess-accordian .wellness-faq-accordion {
+	position: absolute;
+	bottom: 12%;
+	right: 0;
+	flex-direction: column;
+    gap: 32px;
+	max-width: 42%;
+	z-index: 2;
+}
+.allaccess-accordian::after {
+	content: "";
+	background: linear-gradient(90deg, rgba(11, 7, 6, 0.00) 9.99%, rgba(11, 7, 6, 0.90) 73.5%);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
 
 @media only screen and (max-width: 1024px) {
 	.shopify-section.wellness-faq .page-width {

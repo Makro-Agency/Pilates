@@ -12,6 +12,14 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
+.heading-wrap {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    width: 100%;
+    padding-bottom: 35px;
+}
+.heading-wrap .subtitle {
+    margin-top: 12px;
+}
 .card-wrap {
     border-radius: 2px;
     background: rgba(255, 255, 255, 0.02);
@@ -39,6 +47,27 @@
 .price {
     display: flex;
     gap: 8px;
+    letter-spacing: 0;
+}
+.price .sale-price {
+    color: #fff;
+    font-size: 32px;
+    font-family: var(--font-heading-family);
+    font-weight: 500;
+    line-height: 100%;
+}
+.price .original-price {
+    color: var(--White, #FFF);
+    font-family: var(--font-heading-family);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 100%;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    opacity: 0.4;
+}
+.benefits-list {
+    width: 100%;
 }
 .benefits-list ul {
     color: #fff;
@@ -68,3 +97,31 @@
     line-height: 100%;
 }
 .available-membership div > span.total {color: rgba(255, 255, 255, 0.40);}
+.btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.book-now {
+    text-decoration: none;
+    color: #fff;
+    border: 1.5px solid var(--White, #FFF);
+    display: flex;
+    height: 48px;
+    padding: 16px 20px 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    font-family: var(--font-heading-family);
+}
+.book-now:hover {
+    background-color: #fff;
+    color: #000;
+}
