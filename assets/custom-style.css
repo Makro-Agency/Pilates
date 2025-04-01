@@ -456,6 +456,11 @@ img {
   font-family: var(--font-body-family);
   margin: 16px 0 0;
 }
+.template-index .section-header,
+.template-index .shopify-section-group-footer-group {
+  display: none;
+}
+.text-center {text-align: center;}
 @media only screen and (min-width: 768px) {
   .mobile-img {display: none;}
 }
