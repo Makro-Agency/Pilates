@@ -1,6 +1,6 @@
-
+{{ 'global_hero-banner.css' | asset_url | stylesheet_tag }}
 {%- if section.index == 1 -%}
-    {{ 'global_hero-banner.css' | asset_url | stylesheet_tag }}
+    
 {% endif %}
 {%- style -%}
   #Banner-{{ section.id }}::after {
@@ -52,6 +52,26 @@
                 {% if section.settings.show_hide_date and section.settings.end_date %}
                   {%- liquid                    
                     assign end_date = section.settings.end_date
+                    comment
+                      assign end_date1 = end_date | append: ' 23:59:59' | date: '%s'
+                      assign today = 'now' | date:'%s'
+
+                      assign end_date1 = end_date1 | minus: today
+
+                      echo end_date1
+                      assign seconds = 1
+                      assign minute = seconds | times: 60
+                      assign hours = minute | times: 60               
+                      assign hours_p = end_date1 | modulo: hours
+                      assign days = hours | times: 24
+                      assign days_p = end_date1 | modulo: days
+                      echo '<br>'
+                      echo end_date1 | divided_by: days
+                      echo '<br>'
+                      echo days_p | divided_by: hours
+                      echo '<br>'
+                      echo hours_p | divided_by: minute
+                    endcomment
                   -%}
                   
                     <div class="dynamic-background">                      

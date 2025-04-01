@@ -1,6 +1,6 @@
 {{ 'global_sudio-classes.css' | asset_url | stylesheet_tag }}
 
-<div class="section-studio-classes padding-sections">
+<div id="{{ section.settings.section_id | handle }}" class="section-studio-classes padding-sections">
     {%if section.settings.title != blank or section.settings.description != blank %}
         <div class="studio-content">
             {%if section.settings.title != blank %}
@@ -18,6 +18,11 @@
   "name": "The Studio Classes",
   "class": "studio-classes",
   "settings": [
+    {
+        "type": "text",
+        "label": "Add Section Id",
+        "id": "section_id"
+    },
     {
       "type": "header",
       "content": "Content"
