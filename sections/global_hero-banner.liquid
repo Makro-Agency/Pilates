@@ -49,25 +49,28 @@
                         <p class="description">{{ section.settings.content }}</p>
                     {% endif %}
                 </div>
-                {% if section.settings.show_hide_date and section.settings.start_date %}
-                    <div class="dynamic-background">
-                        <div class="banner-date">
-                            {% if section.settings.date_title != blank %}<div class="h4 subtitle">{{ section.settings.date_title }}</div>{% endif %}
-                            <div class="countdown-timer">
-                                <ul id="timer">
-                                    <li class="days"><span><span class="number">00</span><span class="text">days</span></span></li>
-                                    <li class="hours"><span><span class="number">00</span><span class="text">hours</span></span></li>
-                                    <li class="min"><span><span class="number">00</span><span class="text">mins</span></span></li>
-                                </ul>
-                            </div>
+                {% if section.settings.show_hide_date and section.settings.end_date %}
+                  {%- liquid                    
+                    assign end_date = section.settings.end_date
+                  -%}
+                  
+                    <div class="dynamic-background">                      
+                      <div class="banner-date">
+                        {% if section.settings.date_title != blank %}<div class="h4 subtitle">{{ section.settings.date_title }}</div>{% endif %}
+                        <div class="countdown-timer" data-count-end-date="{{- end_date -}}">
+                          <ul id="timer-{{ section.id }}" data-selector>
+                              <li class="days"><span><span class="number">00</span><span class="text">days</span></span></li>
+                              <li class="hours"><span><span class="number">00</span><span class="text">hours</span></span></li>
+                              <li class="min"><span><span class="number">00</span><span class="text">mins</span></span></li>
+                          </ul>
                         </div>
+                      </div>
                     </div>
                 {% endif %}
             </div>
         {% endif %}
     {% endif %}
 </div>
-
 
 {% schema %}
 {
@@ -125,12 +128,6 @@
       "type": "inline_richtext",
       "label": "Date Title",
       "id": "date_title"
-    },
-    {
-        "type": "text",
-        "id": "start_date",
-        "label": "Start Date",
-        "info": "Use YYYY-MM-DD date format i.e. 2021-11-20"
     },
     {
         "type": "text",

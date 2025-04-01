@@ -15,7 +15,14 @@ slideshow-component .slideshow.banner {
   flex-direction: row;
   flex-wrap: nowrap;
   margin: 0;
-  gap: 24px;
+  gap: 5px;
+  padding-inline: 20px;
+}
+@media screen and (min-width: 750px) {
+  slideshow-component .slideshow.banner {
+    gap: 24px;
+    padding-inline: 5.625vw;
+  }
 }
 
 .slideshow__slide {
@@ -45,6 +52,11 @@ slideshow-component .slideshow.banner {
   }
 }
 
+@media screen and (min-width: 1501px) {
+  .banner--medium:not(.banner--adapt) {
+    min-height: 93.4rem;
+  }
+}
 @media screen and (min-width: 750px) {
   .slideshow--placeholder.banner--adapt_image {
     height: 56rem;

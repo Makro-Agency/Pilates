@@ -1,3 +1,48 @@
+/* To used in count down */
+var timeObj = {
+  second: 1000,
+  minute: 1000 * 60,
+  hour: 1000 * 60 * 60,
+  day: 1000 * 60 * 60 * 24
+}
+/* To used in count down */
+function addZero(value){  
+  temp = (value < 10 ? `0${ value }` : value);  
+  return temp;
+}
+function callIntervalCountDown(obj){
+  var intervals = timeObj.second;    
+  var x = setInterval(function() {
+    appendCountDown(x, obj);
+  }, intervals);
+}
+function appendCountDown(inverval_var = null, obj){    
+  var now = new Date().getTime(),
+    distance = obj.countDown - now;    
+  if( inverval_var != null && distance <= 0  ){      
+    clearInterval(inverval_var);
+    document.querySelector( obj.s_id + ' .days .number').closest('.dynamic-background').classList.add('hidden');
+  }else if(distance <= 0){
+    document.querySelector( obj.s_id + ' .days .number').closest('.dynamic-background').classList.add('hidden');
+  }else{
+    document.querySelector( obj.s_id + ' .days .number').innerText = addZero(Math.floor(distance / (timeObj.day)));
+    document.querySelector( obj.s_id + ' .hours .number').innerText = addZero(Math.floor((distance % (timeObj.day)) / (timeObj.hour)));
+    document.querySelector( obj.s_id + ' .min .number').innerText = addZero(Math.floor((distance % (timeObj.hour)) / (timeObj.minute)));
+    //document.querySelector( s_id + '.js-timer-seconds').innerText = Math.floor((distance % (minute)) / second)
+  }
+}
+
+document.querySelectorAll('[data-count-end-date]').forEach(function(element, index){
+  var countDown = new Date(element.dataset.countEndDate);
+  var endOfDay = new Date(countDown.getFullYear(), countDown.getMonth(), countDown.getDate(), 23, 59, 59, 999);    
+  var countDownObj = {
+    countDown: new Date(endOfDay).getTime(),
+    s_id: "#"+ element.querySelector('[data-selector]').id
+  };  
+  appendCountDown(null, countDownObj);
+  callIntervalCountDown(countDownObj);
+});
+
 $(function() {
   
 
