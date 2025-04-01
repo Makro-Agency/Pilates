@@ -47,13 +47,10 @@
       </div>
     </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{% comment %} <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> {% endcomment %}
 <script>
-  function wellnessPageFAQAccordion() {
-  }
-
   // Initialize the accordion on document ready
-  $(document).ready(function () {
+  document.addEventListener("DOMContentLoaded", (event) => {
     $(document).on('click', '#shopify-section-{{ section.id }}.wellness-faq [data-class-item]', function (e) {
       e.preventDefault();
       e.stopPropagation(); // Prevents event bubbling, just in case

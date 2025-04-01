@@ -1,6 +1,6 @@
 {{ 'global_membership.css' | asset_url | stylesheet_tag }}
 
-<div id="{{ section.settings.section_id }}" class="memberships-cards">
+<div id="{{ section.settings.section_id | handle }}" class="memberships-cards">
     <div class="padding-sections">
         {%  if section.settings.main_title != blank or section.settings.main_description != blank %}
             <div class="heading-wrapper">
