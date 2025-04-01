@@ -80,7 +80,7 @@
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "",
+            "color_scheme": "inverse",
             "text_alignment_mobile": "left"
           }
         },
@@ -95,7 +95,7 @@
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "",
+            "color_scheme": "inverse",
             "text_alignment_mobile": "left"
           }
         },
@@ -110,7 +110,7 @@
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "",
+            "color_scheme": "inverse",
             "text_alignment_mobile": "left"
           }
         }
@@ -165,17 +165,6 @@
         "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad."
       }
     },
-    "3fc92be4-02f7-44e7-a568-93937857210e": {
-      "type": "instagram",
-      "disabled": true,
-      "settings": {
-        "sub_title": "FOLLOW & TAG US TO SHOW US YOUR S&T ROUTINE",
-        "title": "@SWEATANDTONIC",
-        "html_code": "<covet-pics-widget gallery-embed-id=\"238391\"></covet-pics-widget><script src=\"https://app.covet.pics/covet-pics-widget-inject.js\"></script>",
-        "top_padding_remove": false,
-        "bottom_padding_remove": true
-      }
-    },
     "global_membership_cxtXW9": {
       "type": "global_membership",
       "blocks": {
@@ -189,7 +178,9 @@
             "original_price": "$180",
             "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
             "total_membership_number": "24",
-            "remain_membership_number": "20"
+            "remain_membership_number": "20",
+            "button_text": "",
+            "btn_url": ""
           }
         },
         "membership_card_LrCenB": {
@@ -202,7 +193,9 @@
             "original_price": "$260",
             "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
             "total_membership_number": "24",
-            "remain_membership_number": "20"
+            "remain_membership_number": "20",
+            "button_text": "",
+            "btn_url": ""
           }
         },
         "membership_card_GJKEWW": {
@@ -215,7 +208,9 @@
             "original_price": "$120",
             "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
             "total_membership_number": "24",
-            "remain_membership_number": "20"
+            "remain_membership_number": "20",
+            "button_text": "",
+            "btn_url": ""
           }
         }
       },
@@ -229,6 +224,518 @@
         "main_title": "Memberships & credits",
         "main_description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad."
       }
+    },
+    "global_competitor_comparison_iiBDkL": {
+      "type": "global_competitor-comparison",
+      "blocks": {
+        "competitor_4itwfe": {
+          "type": "competitor",
+          "settings": {
+            "name": "REFORMD",
+            "price": "$12",
+            "cost_per_class": "$12",
+            "single_credit_cost": "$12",
+            "access": "Integer scelerisque",
+            "guest_credit": "Integer scelerisque",
+            "min_commitment": "Integer scelerisque",
+            "expiry": "Integer scelerisque",
+            "cancel_anytime": true,
+            "price_protected": true
+          }
+        },
+        "competitor_mbeYxM": {
+          "type": "competitor",
+          "settings": {
+            "name": "Lagree Plus",
+            "price": "$12",
+            "cost_per_class": "$12",
+            "single_credit_cost": "",
+            "access": "Integer scelerisque",
+            "guest_credit": "Integer scelerisque",
+            "min_commitment": "Integer scelerisque",
+            "expiry": "Integer scelerisque",
+            "cancel_anytime": false,
+            "price_protected": true
+          }
+        },
+        "competitor_QE9aBD": {
+          "type": "competitor",
+          "settings": {
+            "name": "Studio Lagree",
+            "price": "$12",
+            "cost_per_class": "$12",
+            "single_credit_cost": "",
+            "access": "Integer scelerisque",
+            "guest_credit": "Integer scelerisque",
+            "min_commitment": "Integer scelerisque",
+            "expiry": "Integer scelerisque",
+            "cancel_anytime": true,
+            "price_protected": false
+          }
+        },
+        "competitor_UqnjhR": {
+          "type": "competitor",
+          "settings": {
+            "name": "Solis",
+            "price": "$12",
+            "cost_per_class": "$12",
+            "single_credit_cost": "",
+            "access": "Integer scelerisque",
+            "guest_credit": "Integer scelerisque",
+            "min_commitment": "Integer scelerisque",
+            "expiry": "Integer scelerisque",
+            "cancel_anytime": true,
+            "price_protected": false
+          }
+        },
+        "competitor_XjfHRf": {
+          "type": "competitor",
+          "settings": {
+            "name": "Jaybird",
+            "price": "$12",
+            "cost_per_class": "$12",
+            "single_credit_cost": "",
+            "access": "Integer scelerisque",
+            "guest_credit": "Integer scelerisque",
+            "min_commitment": "Integer scelerisque",
+            "expiry": "Integer scelerisque",
+            "cancel_anytime": false,
+            "price_protected": false
+          }
+        },
+        "competitor_zk4MVf": {
+          "type": "competitor",
+          "settings": {
+            "name": "Altea",
+            "price": "$12",
+            "cost_per_class": "$12",
+            "single_credit_cost": "",
+            "access": "Integer scelerisque",
+            "guest_credit": "Integer scelerisque",
+            "min_commitment": "Integer scelerisque",
+            "expiry": "Integer scelerisque",
+            "cancel_anytime": false,
+            "price_protected": false
+          }
+        }
+      },
+      "block_order": [
+        "competitor_4itwfe",
+        "competitor_mbeYxM",
+        "competitor_QE9aBD",
+        "competitor_UqnjhR",
+        "competitor_XjfHRf",
+        "competitor_zk4MVf"
+      ],
+      "settings": {
+        "title": "COMPETITOR COMPARISON",
+        "price_label": "price",
+        "cost_per_class_label": "Average Cost per class",
+        "single_credit_cost_label": "",
+        "access_label": "Access",
+        "guest_credit_label": "Guest credit",
+        "min_commitment_label": "Minimum commitment",
+        "cancel_anytime_label": "Cancel anytime",
+        "price_protected_label": "Price Protected",
+        "expiry_label": "",
+        "info_text": "For more information on membersips terms, delails & payments, Please visit our FAQ",
+        "link_Label": "Explore FAQ PAGE",
+        "section_id": "",
+        "link_Label_1": "Explore all Memberships",
+        "section_id_1": ""
+      }
+    },
+    "global_credits_PpejdD": {
+      "type": "global_credits",
+      "blocks": {
+        "credits_card_Y8kcA3": {
+          "type": "credits_card",
+          "settings": {
+            "title": "Intro pack: 3 for XX",
+            "price_per_class": "$40 per Class",
+            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
+            "sale_label": "Pre-opening sale:",
+            "sale_price": "$120",
+            "original_price": "$180",
+            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
+            "total_membership_number": "24",
+            "remain_membership_number": "20",
+            "button_text": "",
+            "btn_url": ""
+          }
+        },
+        "credits_card_EKgxAt": {
+          "type": "credits_card",
+          "settings": {
+            "title": "Single credit",
+            "price_per_class": "$40 per Class",
+            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
+            "sale_label": "Pre-opening sale:",
+            "sale_price": "$120",
+            "original_price": "$180",
+            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
+            "total_membership_number": "24",
+            "remain_membership_number": "20",
+            "button_text": "",
+            "btn_url": ""
+          }
+        },
+        "credits_card_YtBKPz": {
+          "type": "credits_card",
+          "settings": {
+            "title": "5 Credit Pack",
+            "price_per_class": "$40 per Class",
+            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
+            "sale_label": "Pre-opening sale:",
+            "sale_price": "$120",
+            "original_price": "$180",
+            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
+            "total_membership_number": "24",
+            "remain_membership_number": "20",
+            "button_text": "",
+            "btn_url": ""
+          }
+        },
+        "credits_card_79cFzr": {
+          "type": "credits_card",
+          "settings": {
+            "title": "10 Credit Pack",
+            "price_per_class": "$40 per Class",
+            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
+            "sale_label": "Pre-opening sale:",
+            "sale_price": "$120",
+            "original_price": "$180",
+            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
+            "total_membership_number": "24",
+            "remain_membership_number": "20",
+            "button_text": "",
+            "btn_url": ""
+          }
+        },
+        "credits_card_mRgXam": {
+          "type": "credits_card",
+          "settings": {
+            "title": "15 Credit Pack",
+            "price_per_class": "$40 per Class",
+            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
+            "sale_label": "Pre-opening sale:",
+            "sale_price": "$120",
+            "original_price": "$180",
+            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
+            "total_membership_number": "24",
+            "remain_membership_number": "20",
+            "button_text": "",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "credits_card_Y8kcA3",
+        "credits_card_EKgxAt",
+        "credits_card_YtBKPz",
+        "credits_card_79cFzr",
+        "credits_card_mRgXam"
+      ],
+      "settings": {
+        "section_id": "",
+        "main_title": "Credits",
+        "main_description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora."
+      }
+    },
+    "global_competitor_comparison_AX9gmg": {
+      "type": "global_competitor-comparison",
+      "blocks": {
+        "competitor_HJcyTr": {
+          "type": "competitor",
+          "settings": {
+            "name": "REFORMD",
+            "price": "$12",
+            "cost_per_class": "$12",
+            "single_credit_cost": "$12",
+            "access": "Integer scelerisque",
+            "guest_credit": "Integer scelerisque",
+            "min_commitment": "Integer scelerisque",
+            "expiry": "Integer scelerisque",
+            "cancel_anytime": true,
+            "price_protected": true
+          }
+        },
+        "competitor_gGRXmY": {
+          "type": "competitor",
+          "settings": {
+            "name": "Lagree Plus",
+            "price": "$12",
+            "cost_per_class": "$12",
+            "single_credit_cost": "$12",
+            "access": "Integer scelerisque",
+            "guest_credit": "Integer scelerisque",
+            "min_commitment": "Integer scelerisque",
+            "expiry": "Integer scelerisque",
+            "cancel_anytime": false,
+            "price_protected": true
+          }
+        },
+        "competitor_iTCzQf": {
+          "type": "competitor",
+          "settings": {
+            "name": "Studio Lagree",
+            "price": "$12",
+            "cost_per_class": "$12",
+            "single_credit_cost": "$12",
+            "access": "Integer scelerisque",
+            "guest_credit": "Integer scelerisque",
+            "min_commitment": "Integer scelerisque",
+            "expiry": "Integer scelerisque",
+            "cancel_anytime": true,
+            "price_protected": false
+          }
+        },
+        "competitor_q7UtzR": {
+          "type": "competitor",
+          "settings": {
+            "name": "Solis",
+            "price": "$12",
+            "cost_per_class": "$12",
+            "single_credit_cost": "$12",
+            "access": "Integer scelerisque",
+            "guest_credit": "Integer scelerisque",
+            "min_commitment": "Integer scelerisque",
+            "expiry": "Integer scelerisque",
+            "cancel_anytime": true,
+            "price_protected": false
+          }
+        },
+        "competitor_6YYJc8": {
+          "type": "competitor",
+          "settings": {
+            "name": "Jaybird",
+            "price": "$12",
+            "cost_per_class": "$12",
+            "single_credit_cost": "$12",
+            "access": "Integer scelerisque",
+            "guest_credit": "Integer scelerisque",
+            "min_commitment": "Integer scelerisque",
+            "expiry": "Integer scelerisque",
+            "cancel_anytime": false,
+            "price_protected": false
+          }
+        },
+        "competitor_ExRzVi": {
+          "type": "competitor",
+          "settings": {
+            "name": "Altea",
+            "price": "$12",
+            "cost_per_class": "$12",
+            "single_credit_cost": "$12",
+            "access": "Integer scelerisque",
+            "guest_credit": "Integer scelerisque",
+            "min_commitment": "Integer scelerisque",
+            "expiry": "Integer scelerisque",
+            "cancel_anytime": false,
+            "price_protected": false
+          }
+        }
+      },
+      "block_order": [
+        "competitor_HJcyTr",
+        "competitor_gGRXmY",
+        "competitor_iTCzQf",
+        "competitor_q7UtzR",
+        "competitor_6YYJc8",
+        "competitor_ExRzVi"
+      ],
+      "settings": {
+        "title": "COMPETITOR COMPARISON",
+        "price_label": "",
+        "cost_per_class_label": "",
+        "single_credit_cost_label": "Single Credit Cost",
+        "access_label": "Access",
+        "guest_credit_label": "",
+        "min_commitment_label": "",
+        "cancel_anytime_label": "",
+        "price_protected_label": "",
+        "expiry_label": "Expiry",
+        "info_text": "For more information on membersips terms, delails & payments, Please visit our FAQ",
+        "link_Label": "Explore FAQ PAGE",
+        "section_id": "",
+        "link_Label_1": "Explore all Memberships",
+        "section_id_1": ""
+      }
+    },
+    "global_monthly_credits_4bKxDX": {
+      "type": "global_monthly-credits",
+      "blocks": {
+        "credits_card_7FexRm": {
+          "type": "credits_card",
+          "settings": {
+            "title": "4 × monthly",
+            "price_per_class": "$40 per Class",
+            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
+            "sale_label": "Pre-opening sale:",
+            "sale_price": "$120",
+            "original_price": "$180",
+            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
+            "total_membership_number": "24",
+            "remain_membership_number": "20",
+            "button_text": "",
+            "btn_url": ""
+          }
+        },
+        "credits_card_p6xjkN": {
+          "type": "credits_card",
+          "settings": {
+            "title": "8 × monthly",
+            "price_per_class": "$40 per Class",
+            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
+            "sale_label": "Pre-opening sale:",
+            "sale_price": "$120",
+            "original_price": "$180",
+            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
+            "total_membership_number": "24",
+            "remain_membership_number": "20",
+            "button_text": "",
+            "btn_url": ""
+          }
+        },
+        "credits_card_PpGpNa": {
+          "type": "credits_card",
+          "settings": {
+            "title": "12 × monthly",
+            "price_per_class": "$40 per Class",
+            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
+            "sale_label": "Pre-opening sale:",
+            "sale_price": "$120",
+            "original_price": "$180",
+            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
+            "total_membership_number": "24",
+            "remain_membership_number": "20",
+            "button_text": "",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "credits_card_7FexRm",
+        "credits_card_p6xjkN",
+        "credits_card_PpGpNa"
+      ],
+      "settings": {
+        "section_id": "",
+        "main_title": "Monthly Credit Packs",
+        "main_description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora."
+      }
+    },
+    "global_access_accordion_Uj7RDF": {
+      "type": "global_access-accordion",
+      "blocks": {
+        "faq_brzJJV": {
+          "type": "faq",
+          "settings": {
+            "question": "Flexible options",
+            "ans": "<p>Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"
+          }
+        },
+        "faq_GJQnjH": {
+          "type": "faq",
+          "settings": {
+            "question": "All-access, single currency",
+            "ans": "<p>Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"
+          }
+        },
+        "faq_4hTkPM": {
+          "type": "faq",
+          "settings": {
+            "question": "10% discount on credit packs",
+            "ans": "<p>Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_brzJJV",
+        "faq_GJQnjH",
+        "faq_4hTkPM"
+      ],
+      "settings": {
+        "title": "the ultimate all-access experience",
+        "desktop_image": "shopify://shop_images/accordian-desktop.png",
+        "mobile_image": "shopify://shop_images/accordian-mob.png",
+        "padding_top": 160,
+        "padding_bottom": 160
+      }
+    },
+    "wellness_accordion_dC3tQN": {
+      "type": "wellness-accordion",
+      "blocks": {
+        "faq_XPV36T": {
+          "type": "faq",
+          "settings": {
+            "question": "What is the Lagree Method?",
+            "ans": "<p>A high-intensity, low-impact workout that uses slow, controlled movements to activate muscle fibers, combining elements of strength, endurance, cardio, flexibility, and core stability.</p>"
+          }
+        },
+        "faq_9VUbfX": {
+          "type": "faq",
+          "settings": {
+            "question": "How is REFORMD different from Pilates or traditional reformer classes?",
+            "ans": "<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"
+          }
+        },
+        "faq_hhxMhn": {
+          "type": "faq",
+          "settings": {
+            "question": "Do I need previous experience to try a REFORMD class?",
+            "ans": "<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"
+          }
+        },
+        "faq_fdxd9y": {
+          "type": "faq",
+          "settings": {
+            "question": "Can REFORMD members access other Sweat & Tonic facilities?",
+            "ans": "<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"
+          }
+        },
+        "faq_j6hX6y": {
+          "type": "faq",
+          "settings": {
+            "question": "How early should I arrive for my first class?",
+            "ans": "<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"
+          }
+        },
+        "faq_NwdCij": {
+          "type": "faq",
+          "settings": {
+            "question": "What should I wear to a REFORMD class?",
+            "ans": "<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_XPV36T",
+        "faq_9VUbfX",
+        "faq_hhxMhn",
+        "faq_fdxd9y",
+        "faq_j6hX6y",
+        "faq_NwdCij"
+      ],
+      "settings": {
+        "title": "REFORMDQuestions Answered",
+        "sort_description": "Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+        "link_label": "see full FAQs",
+        "link_url": "#",
+        "padding_top": 160,
+        "padding_bottom": 160
+      }
+    },
+    "3fc92be4-02f7-44e7-a568-93937857210e": {
+      "type": "instagram",
+      "disabled": true,
+      "settings": {
+        "sub_title": "FOLLOW & TAG US TO SHOW US YOUR S&T ROUTINE",
+        "title": "@SWEATANDTONIC",
+        "html_code": "<covet-pics-widget gallery-embed-id=\"238391\"></covet-pics-widget><script src=\"https://app.covet.pics/covet-pics-widget-inject.js\"></script>",
+        "top_padding_remove": false,
+        "bottom_padding_remove": true
+      }
     }
   },
   "order": [
@@ -238,6 +745,12 @@
     "global_sudio_classes_qkDydH",
     "global_membership_credits_z7nw6j",
     "global_membership_cxtXW9",
+    "global_competitor_comparison_iiBDkL",
+    "global_credits_PpejdD",
+    "global_competitor_comparison_AX9gmg",
+    "global_monthly_credits_4bKxDX",
+    "global_access_accordion_Uj7RDF",
+    "wellness_accordion_dC3tQN",
     "3fc92be4-02f7-44e7-a568-93937857210e"
   ]
 }
