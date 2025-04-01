@@ -4,20 +4,7 @@
     padding-bottom: 16rem;
     display: flex;
     gap: 24px;
-    position: relative;
 }
-/*.section-membership-credits::before {
-    content: "";
-    background: url('membership-Vector1.svg');
-    opacity: 0.4;
-    filter: blur(200px);
-    width: 1677.992px;
-    height: 727.502px;
-    transform: rotate(148.503deg);
-    position: absolute;
-    left: -246px;
-    bottom: -532.998px;
-}*/
 .section-membership-credits > * {
     flex: 1;
 }
