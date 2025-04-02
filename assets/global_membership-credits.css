@@ -28,6 +28,7 @@
     background: rgba(255, 255, 255, 0.02);
     box-shadow: -5px -5px 60px 0px rgba(255, 255, 255, 0.02) inset;
     backdrop-filter: blur(4px);
+    min-height: 206px;
 }
 .section-link-wrap > * {
     flex: 1;
@@ -41,4 +42,18 @@
     padding: 10px;
     justify-content: center;
     align-items: center;
+}
+@media only screen and (max-width: 1199px) {
+    .section-membership-credits {
+        flex-direction: column;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+    .section-link-wrap {
+        min-height: 120px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .section-link-wrap { font-size: 20px; }
+    .memberships-cards .heading-wrapper { text-align: left; }
 }

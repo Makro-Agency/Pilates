@@ -461,9 +461,34 @@ img {
   display: none;
 }
 .text-center {text-align: center;}
+.template-index main#MainContent {
+  overflow-x: auto;
+}
 @media only screen and (min-width: 768px) {
   .mobile-img {display: none;}
+  .mobile-links-toggle { display: none; }
+}
+@media only screen and (max-width: 1750px) {
+  .padding-sections {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media only screen and (max-width: 1599px) {
+  .padding-sections {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media only screen and (max-width: 989px) {
+  .padding-sections {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .desktop-img { display: none; }
+  .description {
+    font-size: 16px;
+  }
 }

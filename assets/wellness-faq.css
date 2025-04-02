@@ -170,7 +170,7 @@
 	max-width: 42%;
 	z-index: 2;
 }
-.allaccess-accordian::after {
+.allaccess-accordian .image figure::after {
 	content: "";
 	background: linear-gradient(90deg, rgba(11, 7, 6, 0.00) 9.99%, rgba(11, 7, 6, 0.90) 73.5%);
 	position: absolute;
@@ -199,7 +199,19 @@
 		max-width: 60%;
 	}
 }
-
+@media only screen and (max-width:989px) {
+	.allaccess-accordian .wellness-faq-accordion {
+		position: static;
+		max-width: 100%;
+	}
+	.section-head {
+		max-width: 100%;
+		padding-right: 0;
+	} 
+	.section-head p.description {
+		padding-right: 10%;
+	}
+}
 @media only screen and (max-width:769px) {
 	.wellness-faq-accordion .section-head h2 {
 		font-size: 32px;
@@ -234,18 +246,6 @@
 
 	.section-boxes .box-items {
 		padding: 20px;
-	}
-
-	/* .wellness-faq .row {
-		flex-direction: column-reverse;
-		row-gap: 60px;
-	} */
-
-	.wellness-accordion-title span {
-		font-size: 16px;
-		font-style: normal;
-		font-weight: 600;
-		line-height: 150%;
 	}
 
 	.wellness-faq .row .col-right,

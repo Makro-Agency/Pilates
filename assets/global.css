@@ -226,6 +226,7 @@ a[href^="tel:"]{
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
+  display: none;
 }
 .drawer-classes-btns .button{
   border: 1px solid #fff;
@@ -297,7 +298,7 @@ a[href^="tel:"]{
     font-size: 44px;
   }
   .subtitle{
-    font-size: 15px;
+    font-size: 20px;
   }
   h2, .h2{
     font-size: 30px;
@@ -319,10 +320,10 @@ a[href^="tel:"]{
     padding-bottom: 50px;
   }
   h1, .h1{
-    font-size: 40px;
+    font-size: 38px;
   }
   .subtitle{
-    font-size: 14px;
+    font-size: 20px;
   }
   h2, .h2{
     font-size: 24px;

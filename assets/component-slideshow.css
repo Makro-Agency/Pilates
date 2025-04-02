@@ -62,13 +62,17 @@ slideshow-component .slideshow.banner {
     height: 56rem;
   }
 }
-
+.slider__slide[aria-hidden="true"] .slideshow__text.banner__box {
+  visibility: hidden;
+}
 .slideshow__text.banner__box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  max-width: 54.5rem;
+  justify-content: flex-start;
+  max-width: max-content;
   padding: 0;
+  min-width: max-content;
+  background: none;
 }
 
 .slideshow__text > * {
@@ -162,7 +166,7 @@ slideshow-component .slideshow.banner {
   .slideshow__controls {
     position: absolute;
     bottom: 40px;
-    right: 40px;
+    right: 8%;
   }
 }
 
@@ -187,6 +191,9 @@ slideshow-component:not(.page-width) .slider-buttons {
 @media screen and (max-width: 749px) {
   slideshow-component.page-width .slideshow__autoplay {
     right: 1.5rem;
+  }
+  .slideshow__controls {
+    margin-top: 40px;
   }
 }
 
