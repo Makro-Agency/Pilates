@@ -23,7 +23,7 @@
     position: absolute;
     left: -12.92%;
     bottom: -158.63%;
-    z-index: 0;
+    z-index: 1;
 }
 .section-studio-classes::after {
     content: "";
@@ -36,5 +36,14 @@
     width: 57.14255208333333vw;
     height: 29.26458333333333vw;
     transform: rotate(-48.364deg);
-    z-index: 0;
+    z-index: 1;
+}
+@media only screen and (max-width: 1199px) {
+    .section-studio-classes {
+        padding-bottom: 80px;
+    }
+    .studio-content { flex-direction: column;}
+    .studio-content > * {
+        max-width: 100%;
+    }
 }

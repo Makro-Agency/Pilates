@@ -9,6 +9,14 @@
  */
  {
   "sections": {
+    "global_header_jrHBy3": {
+      "type": "global_header",
+      "settings": {
+        "select_logo": "shopify://shop_images/logo-1.png",
+        "link_text": "Contact Us",
+        "add_header_link": ""
+      }
+    },
     "global_hero_banner_PFid6R": {
       "type": "global_hero-banner",
       "settings": {
@@ -19,7 +27,6 @@
         "content": "The World's Highest-Capacity Lagree Method Studio at The Well™ Not Pilates. Not reformer. This is Lagree® - reimagined through the signature Sweat & Tonic experience.",
         "show_hide_date": true,
         "date_title": "Set your alarms, sale begins",
-        "start_date": "2025-03-31",
         "end_date": "2030-03-31"
       }
     },
@@ -221,8 +228,8 @@
       ],
       "settings": {
         "section_id": "",
-        "main_title": "Memberships & credits",
-        "main_description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad."
+        "main_title": "Memberships",
+        "main_description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora."
       }
     },
     "global_competitor_comparison_iiBDkL": {
@@ -726,19 +733,18 @@
         "padding_bottom": 160
       }
     },
-    "3fc92be4-02f7-44e7-a568-93937857210e": {
-      "type": "instagram",
-      "disabled": true,
+    "global_custom_footer_ah6y7M": {
+      "type": "global_custom-footer",
       "settings": {
-        "sub_title": "FOLLOW & TAG US TO SHOW US YOUR S&T ROUTINE",
-        "title": "@SWEATANDTONIC",
-        "html_code": "<covet-pics-widget gallery-embed-id=\"238391\"></covet-pics-widget><script src=\"https://app.covet.pics/covet-pics-widget-inject.js\"></script>",
-        "top_padding_remove": false,
-        "bottom_padding_remove": true
+        "background_color": "#000000",
+        "select_logo": "shopify://shop_images/logo-1.png",
+        "contact": "647-372-0225",
+        "email": "hello@sweatandtonic.com"
       }
-    }
+    },
   },
   "order": [
+    "global_header_jrHBy3",
     "global_hero_banner_PFid6R",
     "global_linklist_gKEx6Q",
     "slideshow_ghX64P",
@@ -751,6 +757,6 @@
     "global_monthly_credits_4bKxDX",
     "global_access_accordion_Uj7RDF",
     "wellness_accordion_dC3tQN",
-    "3fc92be4-02f7-44e7-a568-93937857210e"
+    "global_custom_footer_ah6y7M"
   ]
 }

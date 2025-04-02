@@ -3,7 +3,22 @@
     width: 100%;
     background: #000;
     color: #fff;
+    position: relative;
   }
+  .competitor-comparison-section:after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    left: -6.875%;
+    bottom: 21.721%;
+    width: 67.3%;
+    height: 48.75%;
+    transform: rotate(65deg);
+    background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%););
+    opacity: 0.32;
+    filter: blur(250px);
+    z-index: 1;
+}
   
   .container {
     max-width: 1200px;
@@ -132,27 +147,29 @@
  .more-info-wrap .page-links span:hover {
     border-color: #FEE4B1;
  }
+ @media screen and (max-width: 989px) {
+  .feature-label {
+    width: 160px;
+    min-width: 160px;
+    padding: 24px 12px;
+    font-size: 16px;
+  }
+  .header-row .competitor-column {
+    font-size: 16px;
+  }
+  .competitor-column {
+    padding: 24px 12px;
+  }
+  .more-info {justify-content: flex-start;}
+  .more-info-wrap {max-width: 100%; gap: 32px;}
+  .competitor-comparison-section {padding: 0 0 80px;}
+ }
   @media screen and (max-width: 767px) {
     .comparison-table {
       table-layout: auto;
     }
-    
-    .feature-label {
-      width: 180px;
-      font-size: 12px;
-    }
-    
-    .competitor-column {
-      font-size: 12px;
-      padding: 15px 10px;
-    }
-    
-    .header-row .competitor-column {
-      font-size: 14px;
-    }
-    
-    .section-title {
-      font-size: 24px;
-      margin-bottom: 30px;
+    .more-info-wrap .page-links {
+      gap: 32px;
+      flex-direction: column;
     }
   }

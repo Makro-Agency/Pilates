@@ -1,6 +1,34 @@
 .memberships-cards {
     background: #000;
     padding: 160px 0 132px;
+    position: relative;
+}
+.memberships-cards:before {
+    content: '';
+    position: absolute;
+    background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
+    opacity: 0.3;
+    filter: blur(250px);
+    pointer-events: none;
+    width: 55.06%;
+    height: 141.86%;
+    transform: rotate(104.546deg);
+    top: 12.72%;
+    right: -24.7%;
+    z-index: 1;
+}
+.memberships-cards::after {
+    content: '';
+    position: absolute;
+    fill: var(--Neon-Peach, radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%));
+    opacity: 0.32;
+    filter: blur(250px);
+    pointer-events: none;
+    height: 90.2720vw;
+    top: 8.0971875vw;
+    right: -15.7%;
+    transform: rotate(-115.265deg);
+    z-index: 1;
 }
 .memberships-cards .heading-wrapper {
     text-align: center;
@@ -124,4 +152,19 @@
 .book-now:hover {
     background-color: #fff;
     color: #000;
+}
+@media only screen and (max-width: 1300px) {
+    .memberships-cards .heading-wrapper { padding: 0; }
+}
+@media only screen and (max-width: 1199px) {
+    .membership-card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (max-width: 989px) {
+    .memberships-cards {padding: 80px 0 60px;}
+}
+@media only screen and (max-width: 767px) {
+    .card-wrap { padding: 24px; }
+    .price .sale-price {font-size: 28px;}
 }

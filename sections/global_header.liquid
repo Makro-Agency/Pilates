@@ -1,0 +1,57 @@
+{{ 'global_header.css' | asset_url | stylesheet_tag }}
+
+<div class="custom-header padding-sections">
+    {% if section.settings.select_logo != blank %}
+        <div class="header-logo-wrapper">
+            <a href="{{ routes.root_url }}" class="header__heading-link">
+                <img src="{{ section.settings.select_logo | image_url }}" height="auto" width="auto" alt="logo" class="header__heading-logo">
+            </a>
+        </div>
+    {% endif %}
+    {% if section.settings.link_text != blank %}
+        <div class="left-links">
+            <a href="{{ section.settings.add_header_link }}" class="header-links contact">{{ section.settings.link_text }}</a>
+            <div class="mobile-links-toggle">
+              <div class="toggle-bar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                  <path d="M8.94922 6.93695L30.0742 6.93695M2.92578 15.7421H30.0742M2.92578 24.9369L24.0508 24.937" stroke="white" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <div class="dropdown-menu"></div>
+            </div>
+        </div>
+    {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Custom Header",
+  "class": "custom-header-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Select Logo"
+    },
+    {
+      "type": "image_picker",
+      "label": "Select Logo",
+      "id": "select_logo"
+    },
+    {
+        "type": "text",
+        "label": "Header Link Text",
+        "id": "link_text"
+    },
+    {
+      "type": "url",
+      "label": "Add Header Link",
+      "id": "add_header_link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Header"
+    }
+  ]
+}
+{% endschema %}

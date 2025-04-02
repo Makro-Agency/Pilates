@@ -1,0 +1,68 @@
+{{ 'global_custom-footer.css' | asset_url | stylesheet_tag }}
+
+<div id="footer-{{ section.id }}" class="custom-footer-section" style="background-color: {{ section.settings.background_color }}">
+    <div class="custom-footer padding-sections">
+        {% if section.settings.select_logo != blank %}
+            <div class="footer-logo">
+                <a href="{{ routes.root_url }}"><img src="{{ section.settings.select_logo | image_url }}" height="auto" width="auto" alt="footer-logo"></a>
+            </div>
+        {% endif %}
+        <div class="footer-right">
+            <div class="footer-link-wrap">
+                {% if section.settings.contact != blank %}
+                    <span class="footer-link phone"><a href="callTo:{{ section.settings.contact }}">{{ section.settings.contact }}</a></span>
+                {% endif %}
+                {% if section.settings.email != blank %}
+                    <span class="footer-link email"><a href="mailTo:{{ section.settings.email }}">{{ section.settings.email }}</a></span>
+                {% endif %}
+                <div class="footer__copyright caption footer-link">
+                    <small class="copyright__content footer__copyright_left"
+                      >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Footer",
+  "class": "custom-Footer-section",
+  "settings": [
+    {
+        "type": "color",
+        "label": "Select Background Color",
+        "id": "background_color"
+    },
+    {
+      "type": "header",
+      "content": "Select Logo"
+    },
+    {
+      "type": "image_picker",
+      "label": "Select Logo",
+      "id": "select_logo"
+    },
+    {
+        "type": "header",
+        "content": "Add Contact Links"
+    },
+    {
+        "type": "text",
+        "label": "Add Contact",
+        "id": "contact"
+    },
+    {
+        "type": "text",
+        "label": "Add Email",
+        "id": "email"
+    },
+  ],
+  "presets": [
+    {
+        "name": "Custom Footer"
+    }
+  ]
+}
+{% endschema %}

@@ -7,6 +7,15 @@
 .hero-banner .image {
     width: 100%;
 }
+.hero-banner::before {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.90) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
 .banner-content {
     position: absolute;
     bottom: 0;
@@ -35,16 +44,16 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 758.378px;
+    height: 71vh;
     background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8AC1 80%);
     opacity: 0.3;
     filter: blur(125px);
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: -360px;
+    bottom: -210%;
     transform: rotate(163.783deg);
-    right: -140px;
+    right: -20%;
     z-index: -1;
 }
 .countdown-timer ul {
@@ -60,6 +69,9 @@
     position: relative;
     padding: 0 17px;
     text-align: center;
+}
+.countdown-timer li:last-child {
+    padding-right: 0;
 }
 .countdown-timer li::after {
     content: ":";
@@ -108,3 +120,52 @@ span.text {
     letter-spacing: 0.32px;
     text-transform: uppercase;
 }
+@media only screen and (max-width: 767px) {
+    .countdown-timer li {
+        padding: 0 12px;
+    }
+    .countdown-timer li > span {
+        padding: 16px 15px;
+    }
+    .banner-content {
+        flex-direction: column;
+        gap: 50px;
+        padding-bottom: 50px;
+        padding-top: 44px;
+    }
+    .banner-content > * {
+        flex-basis: auto;
+    }
+    .countdown-timer span.number {
+        font-size: 40px;
+    }
+    .hero-banner .image figure {
+        height: 100%;
+    }
+    .banner-date {
+        align-items: center;
+        justify-content: center;
+    }
+    .dynamic-background::after {
+        content: "";
+        background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8AC1 80%);
+        opacity: 0.3;
+        filter: blur(60px);
+        position: absolute;
+        right: -46.0025641025641vw;
+        bottom: -36.96794871794872px;
+        width: 516.25px;
+        height: 402.179px;
+        transform: rotate(163.783deg);
+    }
+    .hero-banner::before {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.90) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
+        content: "";
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+}
+
