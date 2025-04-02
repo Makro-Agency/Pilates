@@ -462,7 +462,7 @@ img {
 }
 .text-center {text-align: center;}
 .template-index main#MainContent {
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 768px) {
   .mobile-img {display: none;}

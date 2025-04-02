@@ -131,7 +131,7 @@
     display: flex;
     gap: 40px;
   }
-  .more-info-wrap .page-links span {
+  .more-info-wrap .page-links a {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -143,8 +143,10 @@
     text-transform: uppercase;
     font-family: var(--font-heading-family);
     border-bottom: 1.8px solid transparent;
+    text-decoration: none;
+    color: #fff;
  }
- .more-info-wrap .page-links span:hover {
+ .more-info-wrap .page-links a:hover {
     border-color: #FEE4B1;
  }
  @media screen and (max-width: 989px) {

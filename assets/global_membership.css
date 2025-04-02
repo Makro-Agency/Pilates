@@ -40,7 +40,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
-.heading-wrap {
+.credits .heading-wrap {
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     width: 100%;
     padding-bottom: 35px;
@@ -59,6 +59,7 @@
     align-items: flex-start;
     gap: 32px;
     flex: 1 0 0;
+    align-self: stretch;
 }
 .card-wrap p.description {
     font-size: 16px;
@@ -67,10 +68,19 @@
 .price-wrappper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: #fff;
     width: 100%;
     padding-bottom: 32px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.price-wrappper .sale_label {
+    color: var(--White, #FFF);
+    font-family: var(--font-heading-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
 }
 .price {
     display: flex;
@@ -94,6 +104,14 @@
     text-transform: uppercase;
     opacity: 0.4;
 }
+.benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
 .benefits-list {
     width: 100%;
 }
@@ -105,7 +123,6 @@
     flex-direction: column;
     gap: 10px;
     padding-bottom: 32px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 .benefits-list ul li {
     color: #FFF;
@@ -153,6 +170,15 @@
     background-color: #fff;
     color: #000;
 }
+/*--------monthly memebership-----------*/
+.monthly-credits .membership-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.monthly-credits .card-wrap {
+    max-width: 37.539%;
+}
 @media only screen and (max-width: 1300px) {
     .memberships-cards .heading-wrapper { padding: 0; }
 }
@@ -167,4 +193,52 @@
 @media only screen and (max-width: 767px) {
     .card-wrap { padding: 24px; }
     .price .sale-price {font-size: 28px;}
+    .monthly-credits .card-wrap {
+        max-width: 100%;
+    }
+    .price-wrappper .sale_label {
+        font-size: 16px;
+    }
+    .membership-card-wrapper .card-wrap > .benefits,
+    .membership-card-wrapper .card-wrap > .btn-wrap { display: none; }
+    .mobile-toggle {
+        width: 100%;
+    }
+    .toggle-wrap {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        width: 100%;
+    }
+    .toggle-wrap label {
+        flex: 1 0 auto;
+        color: var(--White, #FFF);
+        font-family: var(--font-heading-family);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 100%;
+        text-transform: uppercase;
+    }
+    .dropdown-content {
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+        flex-direction: column;
+        gap: 24px;
+        display: flex;
+    }
+    .dropdown-content.open {
+        display: flex;
+    }
+    .mobile-toggle.active .toggle-icon {
+        transform: rotate(180deg);
+      }
+      
+      .toggle-icon {
+        transition: transform 0.3s ease;
+      }
+      .toggle-wrap.active {
+        display: none;
+    }
 }
