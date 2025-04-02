@@ -1,6 +1,5 @@
 .global-linklist {
     background: #000000;
-    overflow: hidden;
 }
 .content-wrapper {
     display: flex;
@@ -16,7 +15,7 @@
     opacity: 0.3;
     filter: blur(200px);
     position: absolute;
-    right: 0;
+    right: -0.058px;
     bottom: -59.17%;
     width: 40.43572916666667vw;
     height: 66.41125vw;

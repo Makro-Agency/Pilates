@@ -27,23 +27,53 @@
                         {% endif %}
                         {% if block.settings.description != blank %}<p class="description">{{ block.settings.description }}</p>{% endif %}
                         {% if block.settings.benefits != blank %}
+                          <div class="benefits">
                             <div class="h5 heading">Benefits</div>
                             <div class="benefits-list">{{ block.settings.benefits }}</div>
+                          </div>
                         {% endif %}
-                        <div class="btn-wrap">
-                          {% if block.settings.total_membership_number != blank or block.settings.remain_membership_number != blank %}
-                              <div class="available-membership">
-                                  <div>
-                                      {% if block.settings.remain_membership_number != blank %}<span class="remain">{{ block.settings.remain_membership_number }}</span>{% endif %} 
-                                      {% if block.settings.total_membership_number != blank  %}<span class="total">/ {{ block.settings.total_membership_number }}</span>{% endif %}
-                                  </div>
-                                  <span class="h5 heading">Available</span>
+                        {% if block.settings.total_membership_number != blank or block.settings.remain_membership_number != blank or block.settings.button_text != blank %}
+                          <div class="btn-wrap">                   
+                                <div class="available-membership">
+                                    <div>
+                                        {% if block.settings.remain_membership_number != blank %}<span class="remain">{{ block.settings.remain_membership_number }}</span>{% endif %} 
+                                        {% if block.settings.total_membership_number != blank  %}<span class="total">/ {{ block.settings.total_membership_number }}</span>{% endif %}
+                                    </div>
+                                    <span class="h5 heading">Available</span>
+                                </div>
+                                {% if block.settings.button_text != blank %}
+                                  <a href="{{ block.settings.btn_url }}" class="btn book-now">{{ block.settings.button_text }} </a>
+                                {% endif %}
+                          </div>
+                        {% endif %}
+
+                        <div class="mobile-toggle">
+                          <div class="toggle-wrap">
+                            <label>See Details</label>
+                            {% render 'icon-faq-arrows' %}
+                          </div>
+                          <div class="dropdown-content">
+                            {% if block.settings.benefits != blank %}
+                              <div class="benefits">
+                                <div class="h5 heading">Benefits</div>
+                                <div class="benefits-list">{{ block.settings.benefits }}</div>
                               </div>
-                              
-                          {% endif %}
-                          {% if block.settings.button_text != blank %}
-                            <a href="{{ block.settings.btn_url }}" class="btn book-now">{{ block.settings.button_text }} </a>
-                          {% endif %}
+                            {% endif %}
+                            {% if block.settings.total_membership_number != blank or block.settings.remain_membership_number != blank or block.settings.button_text != blank %}
+                              <div class="btn-wrap">                   
+                                    <div class="available-membership">
+                                        <div>
+                                            {% if block.settings.remain_membership_number != blank %}<span class="remain">{{ block.settings.remain_membership_number }}</span>{% endif %} 
+                                            {% if block.settings.total_membership_number != blank  %}<span class="total">/ {{ block.settings.total_membership_number }}</span>{% endif %}
+                                        </div>
+                                        <span class="h5 heading">Available</span>
+                                    </div>
+                                    {% if block.settings.button_text != blank %}
+                                      <a href="{{ block.settings.btn_url }}" class="btn book-now">{{ block.settings.button_text }} </a>
+                                    {% endif %}
+                              </div>
+                            {% endif %}
+                          </div>
                         </div>
                     </div>
                 {%- endfor -%}
@@ -51,6 +81,73 @@
         {% endif %}
     </div>
 </div>
+
+{% comment %} <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggles = document.querySelectorAll('.mobile-toggle, .toggle-wrap');
+    
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', function(e) {
+        // Prevent event bubbling
+        e.stopPropagation();
+        
+        // Find dropdown content - either directly nested or using selector
+        const dropdownContent = this.closest('.mobile-toggle').querySelector('.dropdown-content');
+        
+        // Toggle with smooth animation
+        if (dropdownContent) {
+          // Toggle active state
+          this.classList.toggle('active');
+          
+          if (dropdownContent.classList.contains('open')) {
+            // Close animation
+            dropdownContent.style.maxHeight = dropdownContent.scrollHeight + 'px';
+            // Force reflow
+            void dropdownContent.offsetWidth;
+            dropdownContent.style.maxHeight = '0';
+            dropdownContent.style.opacity = '0';
+            
+            // Remove class after animation completes
+            setTimeout(() => {
+              dropdownContent.classList.remove('open');
+            }, 300);
+          } else {
+            // Open animation
+            dropdownContent.classList.add('open');
+            dropdownContent.style.maxHeight = '0';
+            dropdownContent.style.opacity = '0';
+            
+            // Force reflow
+            void dropdownContent.offsetWidth;
+            dropdownContent.style.maxHeight = dropdownContent.scrollHeight + 'px';
+            dropdownContent.style.opacity = '1';
+          }
+        }
+      });
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+      const openDropdowns = document.querySelectorAll('.dropdown-content.open');
+      openDropdowns.forEach(dropdown => {
+        if (!dropdown.contains(e.target) && !e.target.classList.contains('mobile-toggle')) {
+          // Close animation
+          dropdown.style.maxHeight = '0';
+          dropdown.style.opacity = '0';
+          
+          // Remove active class from toggle
+          const parentToggle = dropdown.closest('.mobile-toggle');
+          if (parentToggle) parentToggle.classList.remove('active');
+          
+          // Remove open class after animation
+          setTimeout(() => {
+            dropdown.classList.remove('open');
+          }, 300);
+        }
+      });
+    });
+  });
+</script> {% endcomment %}
 
 {% schema %}
 {

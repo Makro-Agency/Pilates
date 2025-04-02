@@ -37,6 +37,11 @@
                     {% if section.settings.content != blank%}
                         <p class="description">{{ section.settings.content }}</p>
                     {% endif %}
+                    {% if section.settings.btn_text != blank %}
+                      <div class="banner-button">
+                        <a href="{{ section.settings.btn_url }}" class="cta">{{ section.settings.btn_text }}</a>
+                      </div>
+                    {% endif %}
                 </div>
                 {% if section.settings.show_hide_date and section.settings.end_date %}
                   {%- liquid                    
@@ -76,8 +81,14 @@
                     </div>
                    
                 {% endif %}
+                {% if section.settings.btn_text != blank %}
+                  <div class="banner-button">
+                    <a href="{{ section.settings.btn_url }}" class="cta">{{ section.settings.btn_text }}</a>
+                  </div>
+                {% endif %}
             </div>
         {% endif %}
+        
     {% endif %}
 </div>
 
@@ -143,6 +154,20 @@
         "id": "end_date",
         "label": "End Date",
         "info": "Use YYYY-MM-DD date format i.e. 2021-11-28"
+    },
+    {
+      "type": "header",
+      "content": "Button Content"
+    },
+    {
+      "type": "text",
+      "label": "Button Text",
+      "id": "btn_text"
+    },
+    {
+      "type": "url",
+      "label": "Button URL",
+      "id": "btn_url"
     }
   ],
   "presets": [

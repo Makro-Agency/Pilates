@@ -13,7 +13,7 @@
                 {%- for block in section.blocks -%}
                     <div class="card-wrap">
                         <div class="heading-wrap">
-                            {% if block.settings.title != blank %}<h3 class="h3 heading">{{ block.settings.title }}</h3>{% endif %}
+                            {% if block.settings.title != blank %}<h4 class="h4 heading">{{ block.settings.title }}</h4>{% endif %}
                             {% if block.settings.description != blank %}<p class="description">{{ block.settings.description }}</p>{% endif %}
                         </div>
                         {% if block.settings.sale_price != blank or block.settings.original_price != blank %}
@@ -26,23 +26,53 @@
                             </div>
                         {% endif %}
                         {% if block.settings.benefits != blank %}
+                          <div class="benefits">
                             <div class="h5 heading">Benefits</div>
                             <div class="benefits-list">{{ block.settings.benefits }}</div>
+                          </div>
                         {% endif %}
-                        <div class="btn-wrap">
-                          {% if block.settings.total_membership_number != blank or block.settings.remain_membership_number != blank %}
-                              <div class="available-membership">
-                                  <div>
-                                      {% if block.settings.remain_membership_number != blank %}<span class="remain">{{ block.settings.remain_membership_number }}</span>{% endif %} 
-                                      {% if block.settings.total_membership_number != blank  %}<span class="total">/ {{ block.settings.total_membership_number }}</span>{% endif %}
-                                  </div>
-                                  <span class="h5 heading">Available</span>
+                        {% if block.settings.total_membership_number != blank or block.settings.remain_membership_number != blank or block.settings.button_text != blank %}
+                          <div class="btn-wrap">                   
+                                <div class="available-membership">
+                                    <div>
+                                        {% if block.settings.remain_membership_number != blank %}<span class="remain">{{ block.settings.remain_membership_number }}</span>{% endif %} 
+                                        {% if block.settings.total_membership_number != blank  %}<span class="total">/ {{ block.settings.total_membership_number }}</span>{% endif %}
+                                    </div>
+                                    <span class="h5 heading">Available</span>
+                                </div>
+                                {% if block.settings.button_text != blank %}
+                                  <a href="{{ block.settings.btn_url }}" class="btn book-now">{{ block.settings.button_text }} </a>
+                                {% endif %}
+                          </div>
+                        {% endif %}
+
+                        <div class="mobile-toggle">
+                          <div class="toggle-wrap">
+                            <label>See Details</label>
+                            {% render 'icon-faq-arrows' %}
+                          </div>
+                          <div class="dropdown-content">
+                            {% if block.settings.benefits != blank %}
+                              <div class="benefits">
+                                <div class="h5 heading">Benefits</div>
+                                <div class="benefits-list">{{ block.settings.benefits }}</div>
                               </div>
-                              
-                          {% endif %}
-                          {% if block.settings.button_text != blank %}
-                            <a href="{{ block.settings.btn_url }}" class="btn book-now">{{ block.settings.button_text }} </a>
-                          {% endif %}
+                            {% endif %}
+                            {% if block.settings.total_membership_number != blank or block.settings.remain_membership_number != blank or block.settings.button_text != blank %}
+                              <div class="btn-wrap">                   
+                                    <div class="available-membership">
+                                        <div>
+                                            {% if block.settings.remain_membership_number != blank %}<span class="remain">{{ block.settings.remain_membership_number }}</span>{% endif %} 
+                                            {% if block.settings.total_membership_number != blank  %}<span class="total">/ {{ block.settings.total_membership_number }}</span>{% endif %}
+                                        </div>
+                                        <span class="h5 heading">Available</span>
+                                    </div>
+                                    {% if block.settings.button_text != blank %}
+                                      <a href="{{ block.settings.btn_url }}" class="btn book-now">{{ block.settings.button_text }} </a>
+                                    {% endif %}
+                              </div>
+                            {% endif %}
+                          </div>
                         </div>
                     </div>
                 {%- endfor -%}
@@ -50,6 +80,10 @@
         {% endif %}
     </div>
 </div>
+
+<script>
+  
+</script>
 
 {% schema %}
 {

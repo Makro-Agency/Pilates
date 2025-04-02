@@ -969,3 +969,67 @@ if (Shopify.designMode) {
   });
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  const toggles = document.querySelectorAll('.mobile-toggle, .toggle-wrap');
+  
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', function(e) {
+      // Prevent event bubbling
+      e.stopPropagation();
+      
+      // Find dropdown content - either directly nested or using selector
+      const dropdownContent = this.closest('.mobile-toggle').querySelector('.dropdown-content');
+      
+      // Toggle with smooth animation
+      if (dropdownContent) {
+        // Toggle active state
+        this.classList.toggle('active');
+        
+        if (dropdownContent.classList.contains('open')) {
+          // Close animation
+          dropdownContent.style.maxHeight = dropdownContent.scrollHeight + 'px';
+          // Force reflow
+          void dropdownContent.offsetWidth;
+          dropdownContent.style.maxHeight = '0';
+          dropdownContent.style.opacity = '0';
+          
+          // Remove class after animation completes
+          setTimeout(() => {
+            dropdownContent.classList.remove('open');
+          }, 300);
+        } else {
+          // Open animation
+          dropdownContent.classList.add('open');
+          dropdownContent.style.maxHeight = '0';
+          dropdownContent.style.opacity = '0';
+          
+          // Force reflow
+          void dropdownContent.offsetWidth;
+          dropdownContent.style.maxHeight = dropdownContent.scrollHeight + 'px';
+          dropdownContent.style.opacity = '1';
+        }
+      }
+    });
+  });
+  
+  // Close dropdown when clicking outside
+  document.addEventListener('click', function(e) {
+    const openDropdowns = document.querySelectorAll('.dropdown-content.open');
+    openDropdowns.forEach(dropdown => {
+      if (!dropdown.contains(e.target) && !e.target.classList.contains('mobile-toggle')) {
+        // Close animation
+        dropdown.style.maxHeight = '0';
+        dropdown.style.opacity = '0';
+        
+        // Remove active class from toggle
+        const parentToggle = dropdown.closest('.mobile-toggle');
+        if (parentToggle) parentToggle.classList.remove('active');
+        
+        // Remove open class after animation
+        setTimeout(() => {
+          dropdown.classList.remove('open');
+        }, 300);
+      }
+    });
+  });
+});

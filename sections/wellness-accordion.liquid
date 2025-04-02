@@ -15,7 +15,7 @@
   }
 {%- endstyle -%}
 
-<div class="padding-sections section-{{ section.id }}-padding">
+<div id="{{ section.settings.section_id | handle }}" class="padding-sections section-{{ section.id }}-padding">
   <div class="row">
     <div class="col col-right">
       <div class="wellness-faq-accordion">
@@ -77,6 +77,11 @@
   "name": "Wellness Faq Accordion",
   "class": "wellness-faq",
   "settings": [
+    {
+      "type": "text",
+      "label": "Add Section Id",
+      "id": "section_id"
+    },
     {
       "type": "html",
       "id": "title",

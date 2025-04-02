@@ -1,15 +1,15 @@
 {{ 'global_membership-credits.css' | asset_url | stylesheet_tag }}
 
-<div class="section-membership-credits padding-sections">
+<div id="{{ section.settings.section_id | handle }}" class="section-membership-credits padding-sections">
     {% if section.settings.title != blank or section.settings.description != blank %}
         <div class="heading-wrapper">
-            {% if section.settings.title != blank %}<h3 class="h3 heading">{{ section.settings.title }}</h3>{% endif %}
+            {% if section.settings.title != blank %}<h2 class="h1 heading">{{ section.settings.title }}</h2>{% endif %}
             {% if section.settings.description != blank %}<p class="description">{{ section.settings.description }}</p>{% endif %}
         </div> 
     {% endif %}
     {% if section.blocks.size > 0 %}
         {%- for block in section.blocks -%}
-            {% if block.settings.section_title %}<a href="{{ block.settings.section_url }}" class="section-link-wrap">{{ block.settings.section_title }}</a>{% endif %}
+            {% if block.settings.section_title %}<a href="#{{ block.settings.section_id | handle }}" class="section-link-wrap">{{ block.settings.section_title }}</a>{% endif %}
         {%- endfor -%}
     {% endif %}
 
@@ -21,6 +21,11 @@
   "name": "Membership Credits",
   "class": "membership-credits",
   "settings": [
+    {
+      "type": "text",
+      "label": "Add Section Id",
+      "id": "section_id"
+    },
     {
       "type": "header",
       "content": "Heading Content"
@@ -48,10 +53,11 @@
           "id": "section_title"
         },
         {
-          "type": "url",
-          "label": "Section URL",
-          "id": "section_url"
-        }
+          "type": "text",
+          "label": "Add Section Id",
+          "id": "section_id",
+          "info": "<strong>Add the same section id given in the section here.</strong>"
+      }
       ]
     }
   ],

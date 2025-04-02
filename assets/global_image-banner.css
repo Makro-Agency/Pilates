@@ -1,13 +1,13 @@
-.hero-banner .image figure {
+.global_image-banner.hero-banner .image figure {
     margin: 0;
     position: relative;
     height: 100vh;
     line-height: 0;
 }
-.hero-banner .image {
+.global_image-banner.hero-banner .image {
     width: 100%;
 }
-.hero-banner::before {
+.global_image-banner.hero-banner::before {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.90) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
     content: "";
     position: absolute;
@@ -16,7 +16,7 @@
     width: 100%;
     height: 100%;
   }
-.banner-content {
+.global_image-banner .banner-content {
     position: absolute;
     bottom: 0;
     top: auto;
@@ -40,18 +40,18 @@
     left: 0;
     right: 0;
 }
-.banner-content > * {
+.global_image-banner .banner-content > * {
     flex-basis: 100%;
     text-align: center;
 }
-.banner-date {
+.global_image-banner .banner-date {
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-.countdown-timer ul {
+.global_image-banner .countdown-timer ul {
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -60,15 +60,15 @@
     padding: 0;
     list-style: none;
 }  
-.countdown-timer li {
+.global_image-banner .countdown-timer li {
     position: relative;
     padding: 0 17px;
     text-align: center;
 }
-.countdown-timer li:last-child {
+.global_image-banner .countdown-timer li:last-child {
     padding-right: 0;
 }
-.countdown-timer li::after {
+.global_image-banner .countdown-timer li::after {
     content: ":";
     position: absolute;
     left: auto;
@@ -82,10 +82,10 @@
     color: #ffffff;
     height: 50px;
 }
-.countdown-timer li:last-child:after {
+.global_image-banner .countdown-timer li:last-child:after {
     display: none;
 }
-.countdown-timer li > span {
+.global_image-banner .countdown-timer li > span {
     border-radius: 2px;
     background: rgba(255, 255, 255, 0.04);
     box-shadow: -5px -5px 15px 0px rgba(255, 255, 255, 0.05) inset;
@@ -96,7 +96,7 @@
     align-items: center;
     color: #ffffff;
 }
-.countdown-timer span.number {
+.global_image-banner .countdown-timer span.number {
     color: #FFF;
     text-align: center;
     font-family: var(--font-heading-family);
@@ -105,7 +105,7 @@
     line-height: 100%;
     text-transform: uppercase;
 }
-span.text {
+.global_image-banner span.text {
     color: #FFF;
     text-align: center;
     font-family: var(--font-heading-family);
@@ -115,6 +115,28 @@ span.text {
     letter-spacing: 0.32px;
     text-transform: uppercase;
 }
+.global_image-banner .banner-contain a.cta {
+    display: none;
+}
+.global_image-banner a.cta {
+    border: 1.5px solid var(--White, #FFF);
+    display: flex;
+    height: 48px;
+    padding: 16px 20px 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    color: var(--White, #FFF);
+    font-family: var(--font-heading-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 @media only screen and (max-width: 1500px) {
     .global_image-banner .banner-content { max-width: 70%; }
 }
@@ -122,28 +144,28 @@ span.text {
     .global_image-banner .banner-content { max-width: 100%; gap: 30px; }
 }
 @media only screen and (max-width: 767px) {
-    .countdown-timer li {
+    .global_image-banner .countdown-timer li {
         padding: 0 12px;
     }
-    .countdown-timer li > span {
+    .global_image-banner .countdown-timer li > span {
         padding: 16px 15px;
     }
-    .banner-content {
+    .global_image-banner .banner-content {
         flex-direction: column;
         gap: 50px;
         padding-bottom: 50px;
         padding-top: 44px;
     }
-    .banner-content > * {
+    .global_image-banner .banner-content > * {
         flex-basis: auto;
     }
-    .countdown-timer span.number {
+    .global_image-banner .countdown-timer span.number {
         font-size: 40px;
     }
-    .hero-banner .image figure {
+    .global_image-banner.hero-banner .image figure {
         height: 100%;
     }
-    .banner-date {
+    .global_image-banner .banner-date {
         align-items: center;
         justify-content: center;
     }
@@ -153,6 +175,12 @@ span.text {
         height: 100%;
         justify-content: space-between;
         padding: 80px 20px;
+    }
+    .global_image-banner .banner-content > .banner-button { display: none; }
+    .global_image-banner .banner-contain a.cta {
+        display: block;
+        width: 100%;
+        margin-top: 16px;
     }
 }
 
