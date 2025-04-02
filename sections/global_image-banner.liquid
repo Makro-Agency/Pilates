@@ -1,0 +1,154 @@
+
+{{ 'global_image-banner.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  #Banner-{{ section.id }}::after {
+    opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+  }
+{%- endstyle -%}
+
+<div id="Banner-{{ section.id }}" class="banner hero-banner global_image-banner">
+    {%if section.settings.desktop_image != blank or section.settings.mobile_image != blank %}
+        <div class="image">
+            <figure>
+                {%if section.settings.desktop_image != blank %}
+                    {{
+                        section.settings.desktop_image
+                        | image_url: width: 3840
+                        | image_tag:
+                            class: 'desktop-img',
+                            alt: section.settings.desktop_image.alt | default: section.settings.title |escape
+                    }}
+                    {{
+                        section.settings.mobile_image
+                        | image_url: width: 1100
+                        | image_tag:
+                            class: 'mobile-img',
+                            alt: section.settings.mobile_image.alt | default: section.settings.title |escape
+                    }}
+                {% endif %}
+            </figure>
+        </div>
+        {% if section.settings.title != blank or section.settings.show_hide_date %}
+            <div class="banner-content padding-sections">
+                <div class="banner-contain">
+                    {% if section.settings.title != blank%}
+                        <h2 class="h1 heading">{{ section.settings.title }}</h2>
+                    {% endif %}
+                    {% if section.settings.content != blank%}
+                        <p class="description">{{ section.settings.content }}</p>
+                    {% endif %}
+                </div>
+                {% if section.settings.show_hide_date and section.settings.end_date %}
+                  {%- liquid                    
+                    assign end_date = section.settings.end_date
+                    comment
+                      assign end_date1 = end_date | append: ' 23:59:59' | date: '%s'
+                      assign today = 'now' | date:'%s'
+
+                      assign end_date1 = end_date1 | minus: today
+
+                      echo end_date1
+                      assign seconds = 1
+                      assign minute = seconds | times: 60
+                      assign hours = minute | times: 60               
+                      assign hours_p = end_date1 | modulo: hours
+                      assign days = hours | times: 24
+                      assign days_p = end_date1 | modulo: days
+                      echo '<br>'
+                      echo end_date1 | divided_by: days
+                      echo '<br>'
+                      echo days_p | divided_by: hours
+                      echo '<br>'
+                      echo hours_p | divided_by: minute
+                    endcomment
+                  -%}
+                  
+                                         
+                    <div class="banner-date">
+                      {% if section.settings.date_title != blank %}<div class="h4 subtitle">{{ section.settings.date_title }}</div>{% endif %}
+                      <div class="countdown-timer" data-count-end-date="{{- end_date -}}">
+                        <ul id="timer-{{ section.id }}" data-selector>
+                            <li class="days"><span><span class="number">00</span><span class="text">days</span></span></li>
+                            <li class="hours"><span><span class="number">00</span><span class="text">hours</span></span></li>
+                            <li class="min"><span><span class="number">00</span><span class="text">mins</span></span></li>
+                        </ul>
+                      </div>
+                    </div>
+                   
+                {% endif %}
+            </div>
+        {% endif %}
+    {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Image Banner",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image content"
+    },
+    {
+      "type": "image_picker",
+      "label": "Desktop Image",
+      "id": "desktop_image"
+    },
+    {
+      "type": "image_picker",
+      "label": "Mobile Image",
+      "id": "mobile_image"
+    },
+    {
+        "type": "range",
+        "id": "overlay_opacity",
+        "label": "Image ovrlay opacity",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "label": "Title",
+      "id": "title"
+    },
+    {
+      "type": "textarea",
+      "label": "Content",
+      "id": "content"
+    },
+    {
+        "type": "header",
+        "content": "Banner Display Date"
+    },
+    {
+        "type": "checkbox",
+        "id": "show_hide_date",
+        "label": "Show / Hide Date",
+        "default": true
+      },
+    {
+      "type": "inline_richtext",
+      "label": "Date Title",
+      "id": "date_title"
+    },
+    {
+        "type": "text",
+        "id": "end_date",
+        "label": "End Date",
+        "info": "Use YYYY-MM-DD date format i.e. 2021-11-28"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Global Image Banner"
+    }
+  ]
+}
+{% endschema %}

@@ -141,6 +141,7 @@
     "global_sudio_classes_qkDydH": {
       "type": "global_sudio-classes",
       "settings": {
+        "section_id": "",
         "title": "The studio / classes",
         "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
       }
@@ -733,6 +734,19 @@
         "padding_bottom": 160
       }
     },
+    "global_image_banner_wAR3NQ": {
+      "type": "global_image-banner",
+      "settings": {
+        "desktop_image": "shopify://shop_images/gimage-banner.png",
+        "mobile_image": "shopify://shop_images/gimage-banner-mob.png",
+        "overlay_opacity": 20,
+        "title": "Join the Revolution",
+        "content": "The World's Highest-Capacity Lagree Method Studio at The Well™ Not Pilates. Not reformer. This is Lagree® - reimagined through the signature Sweat & Tonic experience.",
+        "show_hide_date": true,
+        "date_title": "Set your alarms, sale begins",
+        "end_date": "2026-04-02"
+      }
+    },
     "global_custom_footer_ah6y7M": {
       "type": "global_custom-footer",
       "settings": {
@@ -741,7 +755,7 @@
         "contact": "647-372-0225",
         "email": "hello@sweatandtonic.com"
       }
-    },
+    }
   },
   "order": [
     "global_header_jrHBy3",
@@ -757,6 +771,7 @@
     "global_monthly_credits_4bKxDX",
     "global_access_accordion_Uj7RDF",
     "wellness_accordion_dC3tQN",
+    "global_image_banner_wAR3NQ",
     "global_custom_footer_ah6y7M"
   ]
 }

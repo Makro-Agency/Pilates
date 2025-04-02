@@ -1,3 +1,20 @@
+.wellness-faq {
+    position: relative;
+}
+.wellness-faq:before {
+    content: '';
+    position: absolute;
+    display: block;
+    pointer-events: none;
+    background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%);
+    opacity: 0.3;
+    filter: blur(200px);
+    left: -43.97%;
+    bottom: -1.89%;
+    width: 118.59192vw;
+    height: 51.88171875vw;
+    transform: rotate(-12.143deg);
+}
 .wellness-faq,.all-access-faq { background-color: #000;}
 .wellness-accordion-title {
 	display: flex;
