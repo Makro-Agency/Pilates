@@ -37,28 +37,28 @@
           "type": "links",
           "settings": {
             "link_lable": "The studio / classes",
-            "section_id": ""
+            "section_id": "studio-classes"
           }
         },
         "links_wgtLej": {
           "type": "links",
           "settings": {
             "link_lable": "Memberships & credits",
-            "section_id": ""
+            "section_id": "membership-credits"
           }
         },
         "links_YWPPcV": {
           "type": "links",
           "settings": {
             "link_lable": "The S&T benefit",
-            "section_id": ""
+            "section_id": "membership"
           }
         },
         "links_yeAjBV": {
           "type": "links",
           "settings": {
             "link_lable": "FAQ",
-            "section_id": ""
+            "section_id": "FAQ"
           }
         }
       },
@@ -71,6 +71,14 @@
       "settings": {
         "title": "we've created a fitness experience that goes beyond boundaries.",
         "content": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+      }
+    },
+    "global_sudio_classes_qkDydH": {
+      "type": "global_sudio-classes",
+      "settings": {
+        "section_id": "studio-classes",
+        "title": "The studio / classes",
+        "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
       }
     },
     "slideshow_ghX64P": {
@@ -138,14 +146,6 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "global_sudio_classes_qkDydH": {
-      "type": "global_sudio-classes",
-      "settings": {
-        "section_id": "",
-        "title": "The studio / classes",
-        "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
-      }
-    },
     "global_membership_credits_z7nw6j": {
       "type": "global_membership-credits",
       "blocks": {
@@ -153,14 +153,14 @@
           "type": "section_link",
           "settings": {
             "section_title": "Explore memberships",
-            "section_url": ""
+            "section_id": "membership"
           }
         },
         "section_link_bpw9YA": {
           "type": "section_link",
           "settings": {
             "section_title": "Explore Credits",
-            "section_url": ""
+            "section_id": "credits"
           }
         }
       },
@@ -169,6 +169,7 @@
         "section_link_bpw9YA"
       ],
       "settings": {
+        "section_id": "membership-credits",
         "title": "Memberships & credits",
         "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad."
       }
@@ -185,8 +186,8 @@
             "sale_price": "$120",
             "original_price": "$180",
             "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
-            "total_membership_number": "24",
-            "remain_membership_number": "20",
+            "total_membership_number": "",
+            "remain_membership_number": "",
             "button_text": "",
             "btn_url": ""
           }
@@ -199,9 +200,9 @@
             "sale_label": "Pre-opening sale:",
             "sale_price": "$240",
             "original_price": "$260",
-            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
-            "total_membership_number": "24",
-            "remain_membership_number": "20",
+            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li><li>Nunc vulputate libero</li></ul>",
+            "total_membership_number": "",
+            "remain_membership_number": "",
             "button_text": "",
             "btn_url": ""
           }
@@ -215,8 +216,8 @@
             "sale_price": "$80",
             "original_price": "$120",
             "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
-            "total_membership_number": "24",
-            "remain_membership_number": "20",
+            "total_membership_number": "",
+            "remain_membership_number": "",
             "button_text": "",
             "btn_url": ""
           }
@@ -228,7 +229,7 @@
         "membership_card_GJKEWW"
       ],
       "settings": {
-        "section_id": "",
+        "section_id": "membership",
         "main_title": "Memberships",
         "main_description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora."
       }
@@ -348,9 +349,9 @@
         "expiry_label": "",
         "info_text": "For more information on membersips terms, delails & payments, Please visit our FAQ",
         "link_Label": "Explore FAQ PAGE",
-        "section_id": "",
+        "section_id": "FAQ",
         "link_Label_1": "Explore all Memberships",
-        "section_id_1": ""
+        "section_id_1": "membership"
       }
     },
     "global_credits_PpejdD": {
@@ -445,7 +446,7 @@
         "credits_card_mRgXam"
       ],
       "settings": {
-        "section_id": "",
+        "section_id": "credits",
         "main_title": "Credits",
         "main_description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora."
       }
@@ -604,28 +605,11 @@
             "button_text": "",
             "btn_url": ""
           }
-        },
-        "credits_card_PpGpNa": {
-          "type": "credits_card",
-          "settings": {
-            "title": "12 × monthly",
-            "price_per_class": "$40 per Class",
-            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
-            "sale_label": "Pre-opening sale:",
-            "sale_price": "$120",
-            "original_price": "$180",
-            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
-            "total_membership_number": "24",
-            "remain_membership_number": "20",
-            "button_text": "",
-            "btn_url": ""
-          }
         }
       },
       "block_order": [
         "credits_card_7FexRm",
-        "credits_card_p6xjkN",
-        "credits_card_PpGpNa"
+        "credits_card_p6xjkN"
       ],
       "settings": {
         "section_id": "",
@@ -726,6 +710,7 @@
         "faq_NwdCij"
       ],
       "settings": {
+        "section_id": "FAQ",
         "title": "REFORMDQuestions Answered",
         "sort_description": "Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
         "link_label": "see full FAQs",
@@ -744,7 +729,9 @@
         "content": "The World's Highest-Capacity Lagree Method Studio at The Well™ Not Pilates. Not reformer. This is Lagree® - reimagined through the signature Sweat & Tonic experience.",
         "show_hide_date": true,
         "date_title": "Set your alarms, sale begins",
-        "end_date": "2026-04-02"
+        "end_date": "2026-04-02",
+        "btn_text": "cta",
+        "btn_url": "#"
       }
     },
     "global_custom_footer_ah6y7M": {
@@ -761,8 +748,8 @@
     "global_header_jrHBy3",
     "global_hero_banner_PFid6R",
     "global_linklist_gKEx6Q",
-    "slideshow_ghX64P",
     "global_sudio_classes_qkDydH",
+    "slideshow_ghX64P",
     "global_membership_credits_z7nw6j",
     "global_membership_cxtXW9",
     "global_competitor_comparison_iiBDkL",
