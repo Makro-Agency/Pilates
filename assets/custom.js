@@ -240,6 +240,17 @@ $(function() {
   footerAccrodion();
   /* Footer section */
 
+  /* global_linklist */
+  $(document).on('click', '.link-list a', function(event){    
+    var href = $(this).attr('href');
+    if( href.length > 1 ){
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: $(href).offset().top
+      }, 500);
+    }
+  })
+  /* global_linklist */
   
 });
 

@@ -30,7 +30,7 @@
     max-width: 33.33%;
 }
 .links-wrappper .description { margin: 0 0 40px; }
-.link-list span {
+.link-list a, .link-list span {
     display: flex;
     align-items: center;
     text-decoration: none;
