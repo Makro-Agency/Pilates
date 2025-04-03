@@ -18,8 +18,7 @@ function callIntervalCountDown(obj){
 }
 function appendCountDown(inverval_var = null, obj){    
   console.log('obj.s_id', obj.s_id)
-  if( distance <= 0 && inverval_var != null){
-    console.log('asd');
+  if( distance <= 0 && inverval_var != null){    
     clearInterval(inverval_var);    
   }
   if( document.querySelector(obj.s_id) == null ) return;
