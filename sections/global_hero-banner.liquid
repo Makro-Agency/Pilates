@@ -28,8 +28,42 @@
                 {% endif %}
             </figure>
         </div>
-        {% if section.settings.countdown_title != blank %}
-            <div class="banner-content padding-sections">
+
+        {%- liquid
+
+          assign now = 'now' | date
+          assign have_two_countdown = false
+          assign has_pre_sale = false
+
+          if section.settings.show_hide_date
+            assign countdown_end = section.settings.countdown_end_date | default: 0            
+            if countdown_end != 0
+              assign countdown_end = countdown_end | append: ' 23:59:59' | date: '%s' | times: 1
+            endif            
+
+            assign sale_end = section.settings.sale_end_date | default: 0
+            if sale_end != 0
+              assign sale_end = sale_end | append: ' 23:59:59' | date: '%s' | times: 1
+              assign have_two_countdown = true
+              if countdown_end == 0
+                assign has_pre_sale = true
+              endif
+            endif
+
+            
+            assign count_end_not = false
+            if countdown_end != 0 and countdown_end != 0
+              assign count_end_not = true
+            endif
+
+            if now >= countdown_end and sale_end <= now and sale_end != 0 and countdown_end != 0
+              assign count_end_not = false
+              assign has_pre_sale = true
+            endif
+          endif
+        -%}
+          {% if section.settings.countdown_title != blank or countdown_end != 0 %}
+            <div class="banner-content padding-sections{% if countdown_end != 0 and sale_end != 0 %} opacity-0{% endif %}" data-main>
                 <div class="banner-contain">
                     {% if section.settings.countdown_title != blank%}
                         <h2 class="h1 heading">{{ section.settings.countdown_title }}</h2>
@@ -68,7 +102,7 @@
                     endcomment
                   -%}
                   
-                    <div class="dynamic-background">                      
+                    <div class="dynamic-background" data-hide-countdown data-pre-count="{{ have_two_countdown }}">                      
                       <div class="banner-date">
                         {% if section.settings.presale_countdown_title != blank %}<div class="h4 subtitle">{{ section.settings.presale_countdown_title }}</div>{% endif %}
                         {% if section.settings.sale_live_title !=blank %}<div class="h4 subtitle">{{ section.settings.sale_live_title }}</div>{% endif %}
@@ -83,63 +117,62 @@
                     </div>
                 {% endif %}
             </div>
-          {% else  %}
-            {% if section.settings.sale_title != blank %}
-              <div class="banner-content padding-sections">
-                <div class="banner-contain">
-                    {% if section.settings.sale_title != blank%}
-                        <h2 class="h1 heading">{{ section.settings.sale_title }}</h2>
-                    {% endif %}
-                    {% if section.settings.sale_content != blank%}
-                        <p class="description">{{ section.settings.sale_content }}</p>
-                    {% endif %}
-                    {% if section.settings.btn_text != blank %}
-                      <div class="banner-button">
-                        <a href="{{ section.settings.btn_url }}" class="cta">{{ section.settings.btn_text }}{% render 'icon-left-arrow' %}</a>
-                      </div>
-                    {% endif %}
-                </div>
-                {% if section.settings.show_hide_date and section.settings.sale_end_date %}
-                  {%- liquid                    
-                    assign sale_end_date = section.settings.sale_end_date
-                    comment
-                      assign end_date1 = end_date | append: ' 23:59:59' | date: '%s'
-                      assign today = 'now' | date:'%s'
+          {% endif %}  
+          {% if section.settings.countdown_title != blank and section.settings.sale_title != blank or sale_end != 0 %}
+            <div class="banner-content padding-sections{% if sale_end != 0 %} hidden{% endif %}" data-pre-content>
+              <div class="banner-contain">
+                  {% if section.settings.sale_title != blank%}
+                      <h2 class="h1 heading">{{ section.settings.sale_title }}</h2>
+                  {% endif %}
+                  {% if section.settings.sale_content != blank%}
+                      <p class="description">{{ section.settings.sale_content }}</p>
+                  {% endif %}
+                  {% if section.settings.btn_text != blank %}
+                    <div class="banner-button">
+                      <a href="{{ section.settings.btn_url }}" class="cta">{{ section.settings.btn_text }}{% render 'icon-left-arrow' %}</a>
+                    </div>
+                  {% endif %}
+              </div>
+              {% if section.settings.show_hide_date and section.settings.sale_end_date %}
+                {%- liquid                    
+                  assign sale_end_date = section.settings.sale_end_date
+                  comment
+                    assign end_date1 = end_date | append: ' 23:59:59' | date: '%s'
+                    assign today = 'now' | date:'%s'
 
-                      assign end_date1 = end_date1 | minus: today
+                    assign end_date1 = end_date1 | minus: today
 
-                      echo end_date1
-                      assign seconds = 1
-                      assign minute = seconds | times: 60
-                      assign hours = minute | times: 60               
-                      assign hours_p = end_date1 | modulo: hours
-                      assign days = hours | times: 24
-                      assign days_p = end_date1 | modulo: days
-                      echo '<br>'
-                      echo end_date1 | divided_by: days
-                      echo '<br>'
-                      echo days_p | divided_by: hours
-                      echo '<br>'
-                      echo hours_p | divided_by: minute
-                    endcomment
-                  -%}
-                  
-                    <div class="dynamic-background">                      
-                      <div class="banner-date">
-                        {% if section.settings.presale_on_title != blank %}<div class="h4 subtitle">{{ section.settings.presale_on_title }}</div>{% endif %}
-                        <div class="countdown-timer" data-count-end-date="{{- sale_end_date -}}">
-                          <ul id="timer-{{ section.id }}" data-selector>
-                              <li class="days"><span><span class="number">00</span><span class="text">days</span></span></li>
-                              <li class="hours"><span><span class="number">00</span><span class="text">hours</span></span></li>
-                              <li class="min"><span><span class="number">00</span><span class="text">mins</span></span></li>
-                          </ul>
-                        </div>
+                    echo end_date1
+                    assign seconds = 1
+                    assign minute = seconds | times: 60
+                    assign hours = minute | times: 60               
+                    assign hours_p = end_date1 | modulo: hours
+                    assign days = hours | times: 24
+                    assign days_p = end_date1 | modulo: days
+                    echo '<br>'
+                    echo end_date1 | divided_by: days
+                    echo '<br>'
+                    echo days_p | divided_by: hours
+                    echo '<br>'
+                    echo hours_p | divided_by: minute
+                  endcomment
+                -%}
+                
+                  <div class="dynamic-background" data-hide-countdown>
+                    <div class="banner-date">
+                      {% if section.settings.presale_on_title != blank %}<div class="h4 subtitle">{{ section.settings.presale_on_title }}</div>{% endif %}
+                      <div class="countdown-timer" data-count-end-date="{{- sale_end_date -}}">
+                        <ul id="pre-timer-{{ section.id }}" data-selector>
+                            <li class="days"><span><span class="number">00</span><span class="text">days</span></span></li>
+                            <li class="hours"><span><span class="number">00</span><span class="text">hours</span></span></li>
+                            <li class="min"><span><span class="number">00</span><span class="text">mins</span></span></li>
+                        </ul>
                       </div>
                     </div>
-                {% endif %}
-              </div>
-            {% endif %}
-        {% endif %}
+                  </div>
+              {% endif %}
+            </div>
+          {% endif %}        
     {% endif %}
 </div>
 
