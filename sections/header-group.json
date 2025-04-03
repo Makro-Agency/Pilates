@@ -45,7 +45,7 @@
         "add_header_link": "",
         "btn_account": true,
         "btn_account_text": "My Account",
-        "btn_buy_classes": true,
+        "btn_buy_classes": false,
         "buy_classes_text": "Buy Classes",
         "buy_classes_url": ""
       }
