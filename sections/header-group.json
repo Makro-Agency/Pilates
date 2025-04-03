@@ -42,7 +42,7 @@
         "desktop_logo": "shopify://shop_images/new-logo.png",
         "mobile_logo": "shopify://shop_images/logo-1.png",
         "link_text": "Contact Us",
-        "add_header_link": "",
+        "add_header_link": "shopify://pages/contact",
         "btn_account": true,
         "btn_account_text": "My Account",
         "btn_buy_classes": true,
