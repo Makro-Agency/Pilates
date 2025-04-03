@@ -36,7 +36,15 @@
         "enable_language_selector": false
       }
     },
-    "header": {
+    "global_header_jrHBy3": {
+      "type": "global_header",
+      "settings": {
+        "select_logo": "shopify://shop_images/logo-1.png",
+        "link_text": "Contact Us",
+        "add_header_link": ""
+      }
+    },
+    /*"header": {
       "type": "header",
       "blocks": {
         "f3379ac4-a87c-4f04-aa79-b5edb88faf25": {
@@ -74,7 +82,7 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
+    },*/
     "4d342184-db41-43d6-bbe3-503423044f05": {
       "type": "newsletter-popup",
       "blocks": {
@@ -120,7 +128,8 @@
   },
   "order": [
     "announcement-bar",
-    "header",
+    "global_header_jrHBy3",
+    /*"header",*/
     "4d342184-db41-43d6-bbe3-503423044f05"
   ]
 }

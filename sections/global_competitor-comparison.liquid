@@ -180,16 +180,12 @@
           <div class="page-links">
             {% if section.settings.link_Label != blank %}
               <a href="#{{ section.settings.section_id | handle }}">{{ section.settings.link_Label }}
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                  <path d="M10.5131 10.0078L14.5206 6.00023M14.5206 6.00023L10.5131 1.99268M14.5206 6.00023H1.75488" stroke="white" stroke-width="1.5"/>
-                </svg>
+                {% render 'icon-left-arrow' %}
               </a>
             {% endif %}
             {% if section.settings.link_Label_1 != blank %}
               <a href="#{{ section.settings.section_id_1 | handle }}">{{ section.settings.link_Label_1 }}
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                  <path d="M10.5131 10.0078L14.5206 6.00023M14.5206 6.00023L10.5131 1.99268M14.5206 6.00023H1.75488" stroke="white" stroke-width="1.5"/>
-                </svg>
+                {% render 'icon-left-arrow' %}
               </a>
             {% endif %}
           </div>

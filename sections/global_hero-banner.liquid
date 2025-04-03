@@ -6,8 +6,8 @@
   }
 {%- endstyle -%}
 
-<div id="Banner-{{ section.id }}" class="banner hero-banner">
-    {%if section.settings.desktop_image != blank or section.settings.mobile_image != blank %}
+<div id="Banner-{{ section.id }}" class="banner hero-banner-1">
+    {% if section.settings.desktop_image != blank or section.settings.mobile_image != blank %}
         <div class="image">
             <figure>
                 {%if section.settings.desktop_image != blank %}
@@ -28,19 +28,24 @@
                 {% endif %}
             </figure>
         </div>
-        {% if section.settings.title != blank or section.settings.show_hide_date %}
+        {% if section.settings.countdown_title != blank %}
             <div class="banner-content padding-sections">
                 <div class="banner-contain">
-                    {% if section.settings.title != blank%}
-                        <h2 class="h1 heading">{{ section.settings.title }}</h2>
+                    {% if section.settings.countdown_title != blank%}
+                        <h2 class="h1 heading">{{ section.settings.countdown_title }}</h2>
                     {% endif %}
-                    {% if section.settings.content != blank%}
-                        <p class="description">{{ section.settings.content }}</p>
+                    {% if section.settings.countdown_content != blank%}
+                        <p class="description">{{ section.settings.countdown_content }}</p>
+                    {% endif %}
+                    {% if section.settings.btn_text != blank %}
+                      <div class="banner-button">
+                        <a href="{{ section.settings.btn_url }}" class="cta">{{ section.settings.btn_text }}{% render 'icon-left-arrow' %}</a>
+                      </div>
                     {% endif %}
                 </div>
-                {% if section.settings.show_hide_date and section.settings.end_date %}
+                {% if section.settings.show_hide_date and section.settings.countdown_end_date %}
                   {%- liquid                    
-                    assign end_date = section.settings.end_date
+                    assign countdown_end_date = section.settings.countdown_end_date
                     comment
                       assign end_date1 = end_date | append: ' 23:59:59' | date: '%s'
                       assign today = 'now' | date:'%s'
@@ -65,8 +70,9 @@
                   
                     <div class="dynamic-background">                      
                       <div class="banner-date">
-                        {% if section.settings.date_title != blank %}<div class="h4 subtitle">{{ section.settings.date_title }}</div>{% endif %}
-                        <div class="countdown-timer" data-count-end-date="{{- end_date -}}">
+                        {% if section.settings.presale_countdown_title != blank %}<div class="h4 subtitle">{{ section.settings.presale_countdown_title }}</div>{% endif %}
+                        {% if section.settings.sale_live_title !=blank %}<div class="h4 subtitle">{{ section.settings.sale_live_title }}</div>{% endif %}
+                        <div class="countdown-timer" data-count-end-date="{{- countdown_end_date -}}">
                           <ul id="timer-{{ section.id }}" data-selector>
                               <li class="days"><span><span class="number">00</span><span class="text">days</span></span></li>
                               <li class="hours"><span><span class="number">00</span><span class="text">hours</span></span></li>
@@ -77,6 +83,62 @@
                     </div>
                 {% endif %}
             </div>
+          {% else  %}
+            {% if section.settings.sale_title != blank %}
+              <div class="banner-content padding-sections">
+                <div class="banner-contain">
+                    {% if section.settings.sale_title != blank%}
+                        <h2 class="h1 heading">{{ section.settings.sale_title }}</h2>
+                    {% endif %}
+                    {% if section.settings.sale_content != blank%}
+                        <p class="description">{{ section.settings.sale_content }}</p>
+                    {% endif %}
+                    {% if section.settings.btn_text != blank %}
+                      <div class="banner-button">
+                        <a href="{{ section.settings.btn_url }}" class="cta">{{ section.settings.btn_text }}{% render 'icon-left-arrow' %}</a>
+                      </div>
+                    {% endif %}
+                </div>
+                {% if section.settings.show_hide_date and section.settings.sale_end_date %}
+                  {%- liquid                    
+                    assign sale_end_date = section.settings.sale_end_date
+                    comment
+                      assign end_date1 = end_date | append: ' 23:59:59' | date: '%s'
+                      assign today = 'now' | date:'%s'
+
+                      assign end_date1 = end_date1 | minus: today
+
+                      echo end_date1
+                      assign seconds = 1
+                      assign minute = seconds | times: 60
+                      assign hours = minute | times: 60               
+                      assign hours_p = end_date1 | modulo: hours
+                      assign days = hours | times: 24
+                      assign days_p = end_date1 | modulo: days
+                      echo '<br>'
+                      echo end_date1 | divided_by: days
+                      echo '<br>'
+                      echo days_p | divided_by: hours
+                      echo '<br>'
+                      echo hours_p | divided_by: minute
+                    endcomment
+                  -%}
+                  
+                    <div class="dynamic-background">                      
+                      <div class="banner-date">
+                        {% if section.settings.presale_on_title != blank %}<div class="h4 subtitle">{{ section.settings.presale_on_title }}</div>{% endif %}
+                        <div class="countdown-timer" data-count-end-date="{{- sale_end_date -}}">
+                          <ul id="timer-{{ section.id }}" data-selector>
+                              <li class="days"><span><span class="number">00</span><span class="text">days</span></span></li>
+                              <li class="hours"><span><span class="number">00</span><span class="text">hours</span></span></li>
+                              <li class="min"><span><span class="number">00</span><span class="text">mins</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                {% endif %}
+              </div>
+            {% endif %}
         {% endif %}
     {% endif %}
 </div>
@@ -111,17 +173,45 @@
     },
     {
       "type": "header",
-      "content": "Heading"
+      "content": "Presale Countdown Heading"
     },
     {
       "type": "inline_richtext",
-      "label": "Title",
-      "id": "title"
+      "label": "Countdown Title",
+      "id": "countdown_title"
     },
     {
       "type": "textarea",
-      "label": "Content",
-      "id": "content"
+      "label": "Countdown Content",
+      "id": "countdown_content"
+    },
+    {
+      "type": "header",
+      "content": "Presale Live Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "label": "Sale Title",
+      "id": "sale_title"
+    },
+    {
+      "type": "textarea",
+      "label": "Sale Content",
+      "id": "sale_content"
+    },
+    {
+      "type": "header",
+      "content": "Banner Content"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
     },
     {
         "type": "header",
@@ -132,22 +222,41 @@
         "id": "show_hide_date",
         "label": "Show / Hide Date",
         "default": true
-      },
+    },
+    {
+      "type": "header",
+      "content": "Presale Countdown"
+    },
     {
       "type": "inline_richtext",
-      "label": "Date Title",
-      "id": "date_title"
+      "label": "Presale Countdown Title",
+      "id": "presale_countdown_title"
     },
     {
         "type": "text",
-        "id": "end_date",
-        "label": "End Date",
+        "id": "countdown_end_date",
+        "label": "Countdown End Date",
+        "info": "Use YYYY-MM-DD date format i.e. 2021-11-28"
+    },
+    {
+      "type": "header",
+      "content": "Presale On"
+    },
+    {
+      "type": "inline_richtext",
+      "label": "Presale On Title",
+      "id": "presale_on_title"
+    },
+    {
+        "type": "text",
+        "id": "sale_end_date",
+        "label": "Sale End Date",
         "info": "Use YYYY-MM-DD date format i.e. 2021-11-28"
     }
   ],
   "presets": [
     {
-      "name": "Home Hero Banner"
+      "name": "Hero Banner"
     }
   ]
 }

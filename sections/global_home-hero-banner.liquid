@@ -1,0 +1,168 @@
+
+{{ 'global_home-hero-banner.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  #Banner-{{ section.id }}::after {
+    opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+  }
+{%- endstyle -%}
+
+<div id="Banner-{{ section.id }}" class="hero-banner global_home-hero-banner">
+    {%if section.settings.desktop_image != blank or section.settings.mobile_image != blank %}
+        <div class="image">
+            <figure>
+                {%if section.settings.desktop_image != blank %}
+                    {{
+                        section.settings.desktop_image
+                        | image_url: width: 3840
+                        | image_tag:
+                            class: 'desktop-img',
+                            alt: section.settings.desktop_image.alt | default: section.settings.title |escape
+                    }}
+                    {{
+                        section.settings.mobile_image
+                        | image_url: width: 1100
+                        | image_tag:
+                            class: 'mobile-img',
+                            alt: section.settings.mobile_image.alt | default: section.settings.title |escape
+                    }}
+                {% endif %}
+            </figure>
+        </div>
+        {% if section.settings.title != blank %}
+            <div class="banner-content padding-sections">
+                <div class="banner-contain">
+                    {% if section.settings.title != blank%}
+                        <h2 class="h1 heading">{{ section.settings.title }}</h2>
+                    {% endif %}
+                    
+                    {% if section.settings.btn_text != blank %}
+                      <div class="banner-button">
+                        <a href="{{ section.settings.btn_url }}" class="cta">{{ section.settings.btn_text }}{% render 'icon-left-arrow' %}</a>
+                      </div>
+                    {% endif %}
+                </div>
+            </div>
+        {% endif %}
+        
+    {% endif %} 
+</div>
+{% if section.settings.newsletter %}
+    <div class="newsletter center">
+        <div class="newsletter__wrapper">
+            {% if section.settings.newsletter_text != blank %}
+                <h4 class="h4 heading">{{ section.settings.newsletter_text }}</h4>
+            {% endif %}
+            <div class="newsletter-form__field-wrapper">
+                {% form 'customer', class: 'newsletter-form' %}
+                    <div class="field">
+                        <input
+                        id="NewsletterForm--{{ section.id }}"
+                        type="email"
+                        name="contact[email]"
+                        class="field__input"
+                        value="{{ form.email }}"
+                        aria-required="true"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        autocomplete="email"
+                        {% if form.errors %}
+                            autofocus
+                            aria-invalid="true"
+                            aria-describedby="Newsletter-error--{{ section.id }}"
+                        {% elsif form.posted_successfully? %}
+                            aria-describedby="Newsletter-success--{{ section.id }}"
+                        {% endif %}
+                        placeholder="{{ 'newsletter.label' | t }}"
+                        required
+                        >
+                       
+                    </div>
+                    <button
+                        type="submit"
+                        class="newsletter-form__button field__button"
+                        name="commit"
+                        id="Subscribe"
+                        aria-label="{{ 'newsletter.button_label' | t }}"
+                        >
+                        {{ 'newsletter.button_label' | t }}
+                    </button>
+                {% endform %}
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Home Hero Banner",
+  "class": "global_home-hero",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image content"
+    },
+    {
+      "type": "image_picker",
+      "label": "Desktop Image",
+      "id": "desktop_image"
+    },
+    {
+      "type": "image_picker",
+      "label": "Mobile Image",
+      "id": "mobile_image"
+    },
+    {
+        "type": "range",
+        "id": "overlay_opacity",
+        "label": "Image ovrlay opacity",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "label": "Title",
+      "id": "title"
+    },
+    {
+      "type": "header",
+      "content": "Button Content"
+    },
+    {
+      "type": "text",
+      "label": "Button Text",
+      "id": "btn_text"
+    },
+    {
+      "type": "url",
+      "label": "Button URL",
+      "id": "btn_url"
+    },
+    {
+        "type": "header",
+        "content": "Newsletter Content"
+    },
+    {
+        "type": "checkbox",
+        "id": "newsletter",
+        "label": "Hide / Show Newsletter"
+    },
+    {
+        "type": "inline_richtext",
+        "id": "newsletter_text",
+        "label": "Newsletter Title"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home Hero Banner"
+    }
+  ]
+}
+{% endschema %}

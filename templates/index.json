@@ -9,25 +9,36 @@
  */
  {
   "sections": {
-    "global_header_jrHBy3": {
-      "type": "global_header",
+    "global_home_hero_banner_BKhfkg": {
+      "type": "global_home-hero-banner",
       "settings": {
-        "select_logo": "shopify://shop_images/logo-1.png",
-        "link_text": "Contact Us",
-        "add_header_link": ""
+        "desktop_image": "shopify://shop_images/Hero_2.png",
+        "mobile_image": "shopify://shop_images/Presale_Countdown.png",
+        "overlay_opacity": 0,
+        "title": "Welcome to the Revolution",
+        "btn_text": "Join the Revolution",
+        "btn_url": "",
+        "newsletter": true,
+        "newsletter_text": "Be the first to know"
       }
     },
     "global_hero_banner_PFid6R": {
       "type": "global_hero-banner",
       "settings": {
-        "desktop_image": "shopify://shop_images/Hero.png",
-        "mobile_image": "shopify://shop_images/Hero-mobile.png",
+        "desktop_image": "shopify://shop_images/Presale.png",
+        "mobile_image": "shopify://shop_images/Presale-mobile.png",
         "overlay_opacity": 20,
-        "title": "Pre-opening sale: launching April, 10",
-        "content": "The World's Highest-Capacity Lagree Method Studio at The Well™ Not Pilates. Not reformer. This is Lagree® - reimagined through the signature Sweat & Tonic experience.",
+        "countdown_title": "Pre-opening sale: launching April, 10",
+        "countdown_content": "The World's Highest-Capacity Lagree Method Studio at The Well™ Not Pilates. Not reformer. This is Lagree® - reimagined through the signature Sweat & Tonic experience.",
+        "sale_title": "Presale Ends",
+        "sale_content": "The World's Highest-Capacity Lagree Method Studio at The Well™ Not Pilates. Not reformer. This is Lagree® - reimagined through the signature Sweat & Tonic experience.",
+        "btn_text": "Join the Revolution",
+        "btn_url": "",
         "show_hide_date": true,
-        "date_title": "Set your alarms, sale begins",
-        "end_date": "2030-03-31"
+        "presale_countdown_title": "Set your alarms, sale begins",
+        "countdown_end_date": "2025-04-08",
+        "presale_on_title": "Presale Ends",
+        "sale_end_date": "2025-04-12"
       }
     },
     "global_linklist_gKEx6Q": {
@@ -68,6 +79,7 @@
         "links_YWPPcV",
         "links_yeAjBV"
       ],
+      "disabled": true,
       "settings": {
         "title": "we've created a fitness experience that goes beyond boundaries.",
         "content": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
@@ -75,6 +87,7 @@
     },
     "global_sudio_classes_qkDydH": {
       "type": "global_sudio-classes",
+      "disabled": true,
       "settings": {
         "section_id": "studio-classes",
         "title": "The studio / classes",
@@ -135,6 +148,7 @@
         "slide_DeQiWy",
         "slide_ciinLM"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
@@ -168,6 +182,7 @@
         "section_link_6C3deD",
         "section_link_bpw9YA"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "membership-credits",
         "title": "Memberships & credits",
@@ -228,6 +243,7 @@
         "membership_card_LrCenB",
         "membership_card_GJKEWW"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "membership",
         "main_title": "Memberships",
@@ -336,6 +352,7 @@
         "competitor_XjfHRf",
         "competitor_zk4MVf"
       ],
+      "disabled": true,
       "settings": {
         "title": "COMPETITOR COMPARISON",
         "price_label": "price",
@@ -445,6 +462,7 @@
         "credits_card_79cFzr",
         "credits_card_mRgXam"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "credits",
         "main_title": "Credits",
@@ -553,6 +571,7 @@
         "competitor_6YYJc8",
         "competitor_ExRzVi"
       ],
+      "disabled": true,
       "settings": {
         "title": "COMPETITOR COMPARISON",
         "price_label": "",
@@ -611,6 +630,7 @@
         "credits_card_7FexRm",
         "credits_card_p6xjkN"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "main_title": "Monthly Credit Packs",
@@ -647,6 +667,7 @@
         "faq_GJQnjH",
         "faq_4hTkPM"
       ],
+      "disabled": true,
       "settings": {
         "title": "the ultimate all-access experience",
         "desktop_image": "shopify://shop_images/accordian-desktop.png",
@@ -709,6 +730,7 @@
         "faq_j6hX6y",
         "faq_NwdCij"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "FAQ",
         "title": "REFORMDQuestions Answered",
@@ -721,6 +743,7 @@
     },
     "global_image_banner_wAR3NQ": {
       "type": "global_image-banner",
+      "disabled": true,
       "settings": {
         "desktop_image": "shopify://shop_images/gimage-banner.png",
         "mobile_image": "shopify://shop_images/gimage-banner-mob.png",
@@ -733,19 +756,10 @@
         "btn_text": "cta",
         "btn_url": "#"
       }
-    },
-    "global_custom_footer_ah6y7M": {
-      "type": "global_custom-footer",
-      "settings": {
-        "background_color": "#000000",
-        "select_logo": "shopify://shop_images/logo-1.png",
-        "contact": "647-372-0225",
-        "email": "hello@sweatandtonic.com"
-      }
     }
   },
   "order": [
-    "global_header_jrHBy3",
+    "global_home_hero_banner_BKhfkg",
     "global_hero_banner_PFid6R",
     "global_linklist_gKEx6Q",
     "global_sudio_classes_qkDydH",
@@ -758,7 +772,6 @@
     "global_monthly_credits_4bKxDX",
     "global_access_accordion_Uj7RDF",
     "wellness_accordion_dC3tQN",
-    "global_image_banner_wAR3NQ",
-    "global_custom_footer_ah6y7M"
+    "global_image_banner_wAR3NQ"
   ]
 }

@@ -1,7 +1,6 @@
 .global_image-banner.hero-banner .image figure {
     margin: 0;
     position: relative;
-    height: 100vh;
     line-height: 0;
 }
 .global_image-banner.hero-banner .image {
