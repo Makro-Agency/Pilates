@@ -37,7 +37,7 @@
           {% endif %}
         </a>
         {%- if customer -%}
-          {% if section.settings.btn_buy_classes %}<a href="{{ section.settings.buy_classes_url }}" class="header_btn--links link">{{ section.settings.buy_classes_text }}{% render 'icon-left-arrow' %}</a>{% endif %}
+          {% if section.settings.btn_buy_classes != blank %}<a href="{{ section.settings.buy_classes_url }}" class="header_btn--links link">{{ section.settings.buy_classes_text }}{% render 'icon-left-arrow' %}</a>{% endif %}
         {%- endif -%}
       </div>
     </div>
