@@ -39,8 +39,8 @@
     "global_header_jrHBy3": {
       "type": "global_header",
       "settings": {
-        "desktop_logo": "shopify://shop_images/new-logo.png",
-        "mobile_logo": "shopify://shop_images/logo-1.png",
+        "desktop_logo": "shopify://shop_images/Vector.svg",
+        "mobile_logo": "shopify://shop_images/Vector_8.png",
         "link_text": "Contact Us",
         "add_header_link": "shopify://pages/contact",
         "btn_account": true,
