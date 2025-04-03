@@ -11,37 +11,70 @@ function addZero(value){
   return temp;
 }
 function callIntervalCountDown(obj){
-  var intervals = timeObj.second;    
+  var intervals = timeObj.minute/2;    
   var x = setInterval(function() {
     appendCountDown(x, obj);
   }, intervals);
 }
 function appendCountDown(inverval_var = null, obj){    
-  var now = new Date().getTime(),
-    distance = obj.countDown - now;    
-  if( inverval_var != null && distance <= 0  ){      
-    clearInterval(inverval_var);
-    document.querySelector( obj.s_id + ' .days .number').closest('.dynamic-background').classList.add('hidden');
-  }else if(distance <= 0){
-    document.querySelector( obj.s_id + ' .days .number').closest('.dynamic-background').classList.add('hidden');
+  console.log('obj.s_id', obj.s_id)
+  if( distance <= 0 && inverval_var != null){    
+    clearInterval(inverval_var);    
+  }
+  if( document.querySelector(obj.s_id) == null ) return;
+  var now = new Date().getTime(), hide_ele = document.querySelector(obj.s_id).closest('[data-hide-countdown]'),
+    distance = obj.countDown - now;
+  
+  if( distance <= 0){    
+    hide_ele.classList.add('hidden');
+    if( hide_ele.dataset.preCount == "true" ){
+      const pre_content = hide_ele.closest('.shopify-section').querySelector('[data-pre-content]');
+      if( pre_content ){
+        callElementCount(pre_content.querySelector('[data-count-end-date]'));
+
+        hide_ele.closest('[data-main]').classList.add('hidden');
+        hide_ele.closest('[data-main]').remove();
+        
+        var countDownObj = JSON.parse(pre_content.dataset.obj);        
+        callIntervalCountDown(countDownObj);
+
+        pre_content.classList.remove('hidden');
+        pre_content.removeAttribute('dataset-obj');
+      }
+    }
+    return false;
   }else{
+    var min = addZero(Math.floor((distance % (timeObj.hour)) / (timeObj.minute)) + 1);
     document.querySelector( obj.s_id + ' .days .number').innerText = addZero(Math.floor(distance / (timeObj.day)));
     document.querySelector( obj.s_id + ' .hours .number').innerText = addZero(Math.floor((distance % (timeObj.day)) / (timeObj.hour)));
-    document.querySelector( obj.s_id + ' .min .number').innerText = addZero(Math.floor((distance % (timeObj.hour)) / (timeObj.minute)));
+    document.querySelector( obj.s_id + ' .min .number').innerText = min;
     //document.querySelector( s_id + '.js-timer-seconds').innerText = Math.floor((distance % (minute)) / second)
+
+    document.querySelector( obj.s_id + ' .days .number').closest('.opacity-0') && (
+      document.querySelector( obj.s_id + ' .days .number').closest('.opacity-0').classList.remove('opacity-0')
+    );
+    return true;
   }
 }
 
 document.querySelectorAll('[data-count-end-date]').forEach(function(element, index){
+  callElementCount(element);
+});
+function callElementCount(element){
   var countDown = new Date(element.dataset.countEndDate);
-  var endOfDay = new Date(countDown.getFullYear(), countDown.getMonth(), countDown.getDate(), 23, 59, 59, 999);    
+  console.log('countDown', countDown);
+  var endOfDay = new Date(countDown.getFullYear(), countDown.getMonth(), countDown.getDate(), 23, 59, 59, 999);  
   var countDownObj = {
     countDown: new Date(endOfDay).getTime(),
     s_id: "#"+ element.querySelector('[data-selector]').id
   };  
-  appendCountDown(null, countDownObj);
-  callIntervalCountDown(countDownObj);
-});
+  if( element.closest('[data-pre-content]') == null ){
+    var hasDistande = appendCountDown(null, countDownObj);
+    hasDistande && callIntervalCountDown(countDownObj);
+  }else{
+    element.closest('[data-pre-content]').dataset.obj = JSON.stringify(countDownObj);
+  }
+}
 
 $(function() {
   
