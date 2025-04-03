@@ -7,6 +7,7 @@
 }
 .footer-logo {
     line-height: 0;
+    opacity: 0.4;
 }
 .footer-link a, .copyright__content {
     text-decoration: none;

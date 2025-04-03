@@ -1,31 +1,62 @@
 {{ 'global_header.css' | asset_url | stylesheet_tag }}
 
 <div class="custom-header padding-sections">
-    {% if section.settings.select_logo != blank %}
-        <div class="header-logo-wrapper">
-            <a href="{{ routes.root_url }}" class="header__heading-link">
-                <img src="{{ section.settings.select_logo | image_url }}" height="auto" width="auto" alt="logo" class="header__heading-logo">
-            </a>
-        </div>
-    {% endif %}
-    {% if section.settings.link_text != blank %}
-        <div class="left-links">
-            <a href="{{ section.settings.add_header_link }}" class="header-links contact">{{ section.settings.link_text }}</a>
-            <div class="mobile-links-toggle">
-              <div class="toggle-bar">
-                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
-                  <path d="M8.94922 6.93695L30.0742 6.93695M2.92578 15.7421H30.0742M2.92578 24.9369L24.0508 24.937" stroke="white" stroke-width="1.5"/>
-                </svg>
-              </div>
-              <div class="dropdown-menu"></div>
-            </div>
-        </div>
-    {% endif %}
+  {% if section.settings.link_text != blank %}
+    <div class="left-links">
+        <a href="{{ section.settings.add_header_link }}" class="header-links contact">{{ section.settings.link_text }}</a>
+    </div>
+  {% endif %}
+  {% if section.settings.desktop_logo != blank or section.settings.mobile_logo != blank %}
+      <div class="header-logo-wrapper">
+          <a href="{{ routes.root_url }}" class="header__heading-link">
+            {% if section.settings.desktop_logo != blank %}
+              <img src="{{ section.settings.desktop_logo | image_url }}" height="auto" width="auto" alt="logo" class="header__heading-logo desktop-img">
+            {% endif %}
+            {% if section.settings.mobile_logo != blank %}
+              <img src="{{ section.settings.mobile_logo | image_url }}" height="auto" width="auto" alt="logo" class="header__heading-logo mobile-img">
+            {% endif %}
+          </a>
+      </div>
+  {% endif %}
+  {% if section.settings.btn_account %}
+    <div class="header-right">
+      <div class="header-buttons-wrap">
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header-links header__icon--account link">
+          {% render 'icon-account-2' %}
+          {% if section.settings.btn_account_text != blank %}
+            <span class="header__icon_text">
+              {{ section.settings.btn_account_text }}
+              {% comment %} {%- liquid
+                if customer
+                  echo 'customer.account_fallback' | t
+                else
+                  echo 'customer.log_in' | t
+                endif
+              -%} {% endcomment %}
+            </span>
+          {% endif %}
+        </a>
+        {%- if customer -%}
+          {% if section.settings.btn_buy_classes %}<a href="{{ section.settings.buy_classes_url }}" class="header_btn--links link">{{ section.settings.buy_classes_text }}{% render 'icon-left-arrow' %}</a>{% endif %}
+        {%- endif -%}
+      </div>
+    </div>
+  {% endif %}
+  
+  <div class="mobile-links-toggle">
+    <div class="toggle-bar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+        <path d="M8.94922 6.93695L30.0742 6.93695M2.92578 15.7421H30.0742M2.92578 24.9369L24.0508 24.937" stroke="white" stroke-width="1.5"/>
+      </svg>
+    </div>
+    <div class="dropdown-menu"></div>
+  </div>
+    
 </div>
 
 {% schema %}
 {
-  "name": "Custom Header",
+  "name": "Header",
   "class": "custom-header-section",
   "settings": [
     {
@@ -34,8 +65,17 @@
     },
     {
       "type": "image_picker",
-      "label": "Select Logo",
-      "id": "select_logo"
+      "label": "Desktop Logo",
+      "id": "desktop_logo"
+    },
+    {
+      "type": "image_picker",
+      "label": "Mobile Logo",
+      "id": "mobile_logo"
+    },
+    {
+      "type": "header",
+      "content": "Header Links"
     },
     {
         "type": "text",
@@ -46,6 +86,35 @@
       "type": "url",
       "label": "Add Header Link",
       "id": "add_header_link"
+    },
+    {
+      "type": "header",
+      "content": "Hide / Show Header Buttons"
+    },
+    {
+      "type": "checkbox",
+      "id": "btn_account",
+      "label": "customer Accounts"
+    },
+    {
+      "type": "text",
+      "id": "btn_account_text",
+      "label": "Account Button Text"
+    },
+    {
+      "type": "checkbox",
+      "id": "btn_buy_classes",
+      "label": "Buy Classes"
+    },
+    {
+      "type": "text",
+      "id": "buy_classes_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "buy_classes_url",
+      "label": "Button URL"
     }
   ],
   "presets": [
