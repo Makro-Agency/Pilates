@@ -37,8 +37,10 @@
           {% endif %}
         </a>
         {%- if customer -%}
-          {% if section.settings.btn_buy_classes != blank %}<a href="{{ section.settings.buy_classes_url }}" class="header_btn--links link">{{ section.settings.buy_classes_text }}{% render 'icon-left-arrow' %}</a>{% endif %}
+          {% if section.settings.btn_buy_classes %}<a href="{{ section.settings.buy_classes_url }}" class="header_btn--links link">{{ section.settings.buy_classes_text }}{% render 'icon-left-arrow' %}</a>{% endif %}
         {%- endif -%}
+
+        {% if section.settings.btn_book_now %}<a href="{{ section.settings.book_now_url }}" class="header_btn--links link">{{ section.settings.book_now_text }}{% render 'icon-left-arrow' %}</a>{% endif %}
       </div>
     </div>
   {% endif %}
@@ -109,12 +111,29 @@
     {
       "type": "text",
       "id": "buy_classes_text",
-      "label": "Button Text"
+      "label": "Button Text",
+      "default": "Buy Classes"
     },
     {
       "type": "url",
       "id": "buy_classes_url",
       "label": "Button URL"
+    },
+    {
+      "type": "checkbox",
+      "id": "btn_book_now",
+      "label": "Book Now"
+    },
+    {
+      "type": "text",
+      "id": "book_now_text",
+      "label": "Button Text",
+      "default": "Book Now"
+    },
+    {
+      "type": "url",
+      "id": "book_now_url",
+      "label": "Book Now URL"
     }
   ],
   "presets": [
