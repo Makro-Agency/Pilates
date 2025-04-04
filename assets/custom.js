@@ -11,13 +11,12 @@ function addZero(value){
   return temp;
 }
 function callIntervalCountDown(obj){
-  var intervals = timeObj.minute/2;    
+  var intervals = timeObj.minute/7.5;
   var x = setInterval(function() {
     appendCountDown(x, obj);
   }, intervals);
 }
-function appendCountDown(inverval_var = null, obj){    
-  console.log('obj.s_id', obj.s_id)
+function appendCountDown(inverval_var = null, obj){
   if( distance <= 0 && inverval_var != null){    
     clearInterval(inverval_var);    
   }
@@ -35,8 +34,9 @@ function appendCountDown(inverval_var = null, obj){
         hide_ele.closest('[data-main]').classList.add('hidden');
         hide_ele.closest('[data-main]').remove();
         
-        var countDownObj = JSON.parse(pre_content.dataset.obj);        
-        callIntervalCountDown(countDownObj);
+        var countDownObj = JSON.parse(pre_content.dataset.obj);
+        var hasDistande = appendCountDown(null, countDownObj);
+        hasDistande && callIntervalCountDown(countDownObj);
 
         pre_content.classList.remove('hidden');
         pre_content.removeAttribute('dataset-obj');
@@ -63,7 +63,8 @@ document.querySelectorAll('[data-count-end-date]').forEach(function(element, ind
 function callElementCount(element){
   var countDown = new Date(element.dataset.countEndDate);
   console.log('countDown', countDown);
-  var endOfDay = new Date(countDown.getFullYear(), countDown.getMonth(), countDown.getDate(), 23, 59, 59, 999);  
+  var endOfDay = new Date(countDown.getFullYear(), countDown.getMonth(), countDown.getDate(), 23, 59, 59, 999);
+  //var endOfDay = new Date(countDown);
   var countDownObj = {
     countDown: new Date(endOfDay).getTime(),
     s_id: "#"+ element.querySelector('[data-selector]').id
