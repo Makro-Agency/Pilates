@@ -1,3 +1,8 @@
+.section-slideshow {
+  position: relative;
+  z-index: 2;
+}
+
 slideshow-component {
   position: relative;
   display: flex;
