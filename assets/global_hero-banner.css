@@ -57,6 +57,7 @@
     transform: rotate(163.783deg);
     right: -32%;
     z-index: -1;
+    pointer-events: none;
 }
 .hero-banner-1 .countdown-timer ul {
     display: flex;

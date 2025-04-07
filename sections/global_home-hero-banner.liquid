@@ -1,3 +1,7 @@
+{% if section.settings.newsletter %}
+  <script type="application/javascript" src="https://forms.prd.xplorcs.com/assets/embed/xpl-form-api.js"></script>
+  <link href="https://forms.prd.xplorcs.com/assets/embed/embed.css" rel="stylesheet" type="text/css">
+{% endif %}
 
 {{ 'global_home-hero-banner.css' | asset_url | stylesheet_tag }}
 {%- style -%}
@@ -7,89 +11,146 @@
 {%- endstyle -%}
 
 <div id="Banner-{{ section.id }}" class="hero-banner global_home-hero-banner">
-    {%if section.settings.desktop_image != blank or section.settings.mobile_image != blank %}
-        <div class="image">
-            <figure>
-                {%if section.settings.desktop_image != blank %}
-                    {{
-                        section.settings.desktop_image
-                        | image_url: width: 3840
-                        | image_tag:
-                            class: 'desktop-img',
-                            alt: section.settings.desktop_image.alt | default: section.settings.title |escape
-                    }}
-                    {{
-                        section.settings.mobile_image
-                        | image_url: width: 1100
-                        | image_tag:
-                            class: 'mobile-img',
-                            alt: section.settings.mobile_image.alt | default: section.settings.title |escape
-                    }}
-                {% endif %}
-            </figure>
-        </div>
-        {% if section.settings.title != blank %}
-            <div class="banner-content padding-sections">
-                <div class="banner-contain">
-                    {% if section.settings.title != blank%}
-                        <h2 class="h1 heading">{{ section.settings.title }}</h2>
-                    {% endif %}
-                    
-                    {% if section.settings.btn_text != blank %}
-                      <div class="banner-button">
-                        <a href="{{ section.settings.btn_url }}" class="cta">{{ section.settings.btn_text }}{% render 'icon-left-arrow' %}</a>
-                      </div>
-                    {% endif %}
-                </div>
-            </div>
+  {% if section.settings.desktop_image != blank or section.settings.mobile_image != blank %}
+    <div class="image">
+      <figure>
+        {% if section.settings.desktop_image != blank %}
+          {{
+            section.settings.desktop_image
+            | image_url: width: 3840
+            | image_tag: class: 'desktop-img', alt: section.settings.desktop_image.alt
+            | default: section.settings.title
+            | escape
+          }}
+          {{
+            section.settings.mobile_image
+            | image_url: width: 1100
+            | image_tag: class: 'mobile-img', alt: section.settings.mobile_image.alt
+            | default: section.settings.title
+            | escape
+          }}
         {% endif %}
-        
-    {% endif %} 
+      </figure>
+    </div>
+    {% if section.settings.title != blank %}
+      <div class="banner-content padding-sections">
+        <div class="banner-contain">
+          {% if section.settings.title != blank %}
+            <h2 class="h1 heading">{{ section.settings.title }}</h2>
+          {% endif %}
+
+          {% if section.settings.btn_text != blank %}
+            <div class="banner-button">
+              <a href="{{ section.settings.btn_url }}" class="cta">
+                {{- section.settings.btn_text -}}
+                {%- render 'icon-left-arrow' -%}
+              </a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+  {% endif %}
 </div>
 {% if section.settings.newsletter %}
-    <div class="newsletter center">
-        <div class="newsletter__wrapper">
-            {% if section.settings.newsletter_text != blank %}
-                <h4 class="h4 heading">{{ section.settings.newsletter_text }}</h4>
-            {% endif %}
-            <div class="newsletter-form__field-wrapper">
-                {% form 'customer', class: 'newsletter-form' %}
-                    <div class="field">
-                        <input
-                        id="NewsletterForm--{{ section.id }}"
-                        type="email"
-                        name="contact[email]"
-                        class="field__input"
-                        value="{{ form.email }}"
-                        aria-required="true"
-                        autocorrect="off"
-                        autocapitalize="off"
-                        autocomplete="email"
-                        {% if form.errors %}
-                            autofocus
-                            aria-invalid="true"
-                            aria-describedby="Newsletter-error--{{ section.id }}"
-                        {% elsif form.posted_successfully? %}
-                            aria-describedby="Newsletter-success--{{ section.id }}"
-                        {% endif %}
-                        placeholder="{{ 'newsletter.label' | t }}"
-                        required
-                        >
-                       
-                    </div>
-                    <button
-                        type="submit"
-                        class="newsletter-form__button field__button"
-                        name="commit"
-                        id="Subscribe"
-                        aria-label="{{ 'newsletter.button_label' | t }}"
-                        >
-                        {{ 'newsletter.button_label' | t }}
-                    </button>
-                {% endform %}
+  <div class="newsletter center">
+    <div class="newsletter__wrapper">
+      {% if section.settings.newsletter_text != blank %}
+        <h4 class="h4 heading">{{ section.settings.newsletter_text }}</h4>
+      {% endif %}
+      <div class="newsletter-form__field-wrapper">
+        {% comment %} {% form 'customer', class: 'newsletter-form' %}
+          <div class="field">
+            <input
+              id="NewsletterForm--{{ section.id }}"
+              type="email"
+              name="contact[email]"
+              class="field__input"
+              value="{{ form.email }}"
+              aria-required="true"
+              autocorrect="off"
+              autocapitalize="off"
+              autocomplete="email"
+              {% if form.errors %}
+                autofocus
+                aria-invalid="true"
+                aria-describedby="Newsletter-error--{{ section.id }}"
+              {% elsif form.posted_successfully? %}
+                aria-describedby="Newsletter-success--{{ section.id }}"
+              {% endif %}
+              placeholder="{{ 'newsletter.label' | t }}"
+              required
+            >
+          </div>
+          <button
+            type="submit"
+            class="newsletter-form__button field__button"
+            name="commit"
+            id="Subscribe"
+            aria-label="{{ 'newsletter.button_label' | t }}"
+          >
+            {{ 'newsletter.button_label' | t }}
+          </button>
+        {% endform %} {% endcomment %}
+        
+        <!-- Begin Connect Signup Form -->
+        <form
+          method="post" action="https://api.prd.xplorcs.com/forms-v2/forms/answers"
+          onsubmit="onXplFormSubmit(event)" name="cc0f1994-f309-4764-b914-d3c3c31b326a"
+          id="bb_form" class="newsletter-form"
+        >
+          <div id="alert"></div>
+          <input type="hidden" name="uuid" id="bb_uuid" value="cc0f1994-f309-4764-b914-d3c3c31b326a" style="display: none;">
+          <div class="form-group">
+            {% comment %} <label for="bb_email"> {{ 'newsletter.label' | t }} </label> {% endcomment %}
+            <div class="field">
+              <input type="email" name="email" id="bb_email" placeholder="{{ 'newsletter.label' | t }}" required="required" class="form-control field__input" />
             </div>
-        </div>
+            <button type="submit" id="bb_submit" class="btn newsletter-form__button field__button" >
+              {{ 'newsletter.button_label' | t }}
+            </button>
+          </div>
+          {% comment %} <div class="form-group">
+            <button
+              type="submit"
+              id="bb_submit"
+              class="btn newsletter-form__button field__button"
+              {% comment %} style="background-color: rgb(0, 0, 0); border-color: rgb(0, 0, 0); color: white;" {% endcomment %}
+            >              
+            {{ 'newsletter.button_label' | t }}
+            </button>
+          </div> {% endcomment %}
+        </form>
+        <script type="module" defer="defer">
+          const FormServiceURL = 'https://api.prd.xplorcs.com/forms-v2/forms';
+          const formUuid = 'cc0f1994-f309-4764-b914-d3c3c31b326a';
+          const formElement = document.forms[formUuid];
+          const formContainer = new XplFormContainer(FormServiceURL);
+          const loadRecaptcha = (formConfig) => {
+            const { template } = formConfig;
+            const key = template.use_recaptcha ? template.recaptcha_key : null;
+            if (key) XplFormAPI.loadRecaptchaScript(key);
+          };
+          formContainer.load(formUuid).then(loadRecaptcha);
+          window.onXplFormLocationChange = (selectElement) => formContainer.load(selectElement.value);
+          window.onXplFormSubmit = async (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            const form = new XplFormAPI(FormServiceURL, event.target, formContainer);
+            const recaptchaKey = form.getRecaptchaKey();
+            if (recaptchaKey)
+              window.grecaptcha.ready(() =>
+                window.grecaptcha
+                  .execute(recaptchaKey, { action: 'submit' })
+                  .then((recaptchaResponse) => form.submit(recaptchaResponse))
+              );
+            else form.submit();
+          };
+        </script>
+        <!-- Ending Connect Signup Form -->
+      </div>
     </div>
+  </div>
 {% endif %}
 
 {% schema %}
@@ -112,14 +173,14 @@
       "id": "mobile_image"
     },
     {
-        "type": "range",
-        "id": "overlay_opacity",
-        "label": "Image ovrlay opacity",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "%",
-        "default": 20
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Image ovrlay opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 20
     },
     {
       "type": "header",
@@ -145,18 +206,18 @@
       "id": "btn_url"
     },
     {
-        "type": "header",
-        "content": "Newsletter Content"
+      "type": "header",
+      "content": "Newsletter Content"
     },
     {
-        "type": "checkbox",
-        "id": "newsletter",
-        "label": "Hide / Show Newsletter"
+      "type": "checkbox",
+      "id": "newsletter",
+      "label": "Hide / Show Newsletter"
     },
     {
-        "type": "inline_richtext",
-        "id": "newsletter_text",
-        "label": "Newsletter Title"
+      "type": "inline_richtext",
+      "id": "newsletter_text",
+      "label": "Newsletter Title"
     }
   ],
   "presets": [

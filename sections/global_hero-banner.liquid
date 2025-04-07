@@ -80,7 +80,10 @@
                 {% if section.settings.show_hide_date and section.settings.countdown_end_date %}
                   {%- liquid                    
                     assign countdown_end_date = section.settings.countdown_end_date
+
+                    
                     comment
+                      assign countdown_end_date = '2025-04-04 07:36 PM'
                       assign end_date1 = end_date | append: ' 23:59:59' | date: '%s'
                       assign today = 'now' | date:'%s'
 

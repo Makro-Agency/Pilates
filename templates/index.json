@@ -7,12 +7,12 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "global_home_hero_banner_BKhfkg": {
       "type": "global_home-hero-banner",
       "settings": {
-        "desktop_image": "shopify://shop_images/Hero_2.png",
+        "desktop_image": "shopify://shop_images/Hero_4.png",
         "mobile_image": "shopify://shop_images/Presale_Countdown.png",
         "overlay_opacity": 0,
         "title": "Welcome to the Revolution",
