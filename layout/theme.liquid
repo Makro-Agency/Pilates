@@ -118,10 +118,10 @@
     project: '67f047189315d0fa38e2357c', 
     source: 'snippet'
   };
-
-  !function(e,r,a){if(!e.__Marker){e.__Marker={};var t=[],n={__cs:t};["show","hide","isVisible","capture","cancelCapture","unload","reload","isExtensionInstalled","setReporter","clearReporter","setCustomData","on","off"].forEach(function(e){n[e]=function(){var r=Array.prototype.slice.call(arguments);r.unshift(e),t.push(r)}}),e.Marker=n;var s=r.createElement("script");s.async=1,s.src="https://edge.marker.io/latest/shim.js";var i=r.getElementsByTagName("script")[0];i.parentNode.insertBefore(s,i)}}(window,document);
+  !function(e,r,a){if(!e.__Marker){e.__Marker={};var t=[],n={__cs:t};["show","hide","isVisible","capture","cancelCapture","unload","reload","isExtensionInstalled","setReporter","clearReporter","setCustomData","on","off"].forEach(function(e){n[e]=function(){var r=Array.prototype.slice.call(arguments);r.unshift(e),t.push(r)}}),e.Marker=n;var s=r.createElement("script");s.async=1,s.src="https://edge.marker.io/latest/shim.js";var i=r.getElementsByTagName("script")[0];i.parentNode.insertBefore(s,i)}}(window,document);  
 </script>
 
+  <script src="{{ 'jquery.min.js' | asset_url }}" defer="defer"></script>
     
   </head>
   {% assign has_page_font = false %}
@@ -168,7 +168,7 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    <script src="{{ 'jquery.min.js' | asset_url }}" defer="defer"></script>
+    
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'custom-ipstudio.js' | asset_url }}" defer="defer"></script>
 

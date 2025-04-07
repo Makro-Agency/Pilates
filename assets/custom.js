@@ -29,17 +29,19 @@ function appendCountDown(inverval_var = null, obj){
     if( hide_ele.dataset.preCount == "true" ){
       const pre_content = hide_ele.closest('.shopify-section').querySelector('[data-pre-content]');
       if( pre_content ){
-        callElementCount(pre_content.querySelector('[data-count-end-date]'));
-
         hide_ele.closest('[data-main]').classList.add('hidden');
         hide_ele.closest('[data-main]').remove();
-        
-        var countDownObj = JSON.parse(pre_content.dataset.obj);
-        var hasDistande = appendCountDown(null, countDownObj);
-        hasDistande && callIntervalCountDown(countDownObj);
 
         pre_content.classList.remove('hidden');
-        pre_content.removeAttribute('dataset-obj');
+        if( pre_content.querySelector('[data-count-end-date]') ){
+          callElementCount(pre_content.querySelector('[data-count-end-date]'));
+          
+          var countDownObj = JSON.parse(pre_content.dataset.obj);
+          var hasDistande = appendCountDown(null, countDownObj);
+          hasDistande && callIntervalCountDown(countDownObj);
+
+          pre_content.removeAttribute('dataset-obj');
+        }
       }
     }
     return false;
