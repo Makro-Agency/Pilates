@@ -14,7 +14,7 @@
     width: 67.3%;
     height: 48.75%;
     transform: rotate(65deg);
-    background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%););
+    background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%);
     opacity: 0.32;
     filter: blur(250px);
     z-index: 1;
@@ -46,6 +46,8 @@
     border-collapse: collapse;
     display: table;
     table-layout: fixed;
+    position: relative;
+    z-index: 1;
   }
   
   .table-row {
@@ -118,7 +120,7 @@
   }
   
   .more-info-wrap {
-    max-width: 30%;
+    max-width: 34%;
     display: flex;
     flex-direction: column;
     gap: 40px;

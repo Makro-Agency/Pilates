@@ -133,6 +133,8 @@
 	display: flex;
 	justify-content: space-between;
 	gap: 60px;
+	position: relative;
+    z-index: 1;
 }
 .section-head {
     max-width: 536px;
