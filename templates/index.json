@@ -16,7 +16,7 @@
         "mobile_image": "shopify://shop_images/Presale_Countdown.png",
         "overlay_opacity": 0,
         "title": "Welcome to the Revolution",
-        "btn_text": "Join the Revolution",
+        "btn_text": "",
         "btn_url": "",
         "newsletter": true,
         "newsletter_text": "Be the first to know"
