@@ -176,4 +176,18 @@
       gap: 32px;
       flex-direction: column;
     }
+    .competitor-comparison-section:after {
+      content: '';
+      position: absolute;
+      pointer-events: none;
+      left: -100%;
+      bottom: 24.2%;
+      width: 331.2574358974359vw;
+      height: 144.0717948717949vw;
+      transform: rotate(-115.265deg);
+      background: var(--Neon-Blue, radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%));
+      opacity: 0.32;
+      filter: blur(250px);
+      z-index: 1;
+    }
   }

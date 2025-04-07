@@ -74,4 +74,17 @@
         font-size: 40px;
     }
     .link-list {grid-template-columns: 1fr;}
+    .content-wrapper::after {
+        content: "";
+        background: var(--Neon-Peach, radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%));
+        opacity: 0.3;
+        filter: blur(100px);
+        position: absolute;
+        right: -42%;
+        bottom: -159.872px;
+        width: 142.29%;
+        height: 100%;
+        transform: rotate(67.766deg);
+        z-index: -1;
+    }
 }

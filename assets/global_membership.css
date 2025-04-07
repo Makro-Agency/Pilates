@@ -3,7 +3,7 @@
     padding: 160px 0 132px;
     position: relative;
 }
-.memberships-cards:before {
+.membership .memberships-cards:before {
     content: '';
     position: absolute;
     background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
@@ -17,7 +17,7 @@
     right: -24.7%;
     z-index: 1;
 }
-.memberships-cards::after {
+.membership .memberships-cards::after {
     content: '';
     position: absolute;
     fill: var(--Neon-Peach, radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%));
@@ -29,6 +29,62 @@
     right: -15.7%;
     transform: rotate(-115.265deg);
     z-index: 1;
+}
+.credits .memberships-cards:before {
+    content: '';
+    position: absolute;
+    background: var(--Neon-Cherry, radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%));
+    opacity: 0.3;
+    filter: blur(250px);
+    pointer-events: none;
+    width: 55.5%;
+    height: 79.74%;
+    transform: rotate(104.546deg);
+    right: -10.2%;
+    top: 7.87%;
+    z-index: 1;
+}
+.credits .memberships-cards::after {
+    content: '';
+    position: absolute;
+    background: var(--Neon-Peach, radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%));
+    opacity: 0.32;
+    filter: blur(250px);
+    pointer-events: none;
+    left: -6.3%;
+    bottom: 0;
+    width: 67.8%;
+    height: 28.44%;
+    transform: rotate(-115.265deg);
+    z-index: 2;
+}
+.monthly-credits .memberships-cards:before {
+    content: '';
+    position: absolute;
+    background: var(--Neon-Blue, radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%));
+    opacity: 0.3;
+    filter: blur(300px);
+    pointer-events: none;
+    width: 44.733%;
+    height: 100%;
+    transform: rotate(-137.873deg);
+    right: 18.53%;
+    bottom: -10.2%;
+    z-index: 1;
+}
+.monthly-credits .memberships-cards::after {
+    content: '';
+    position: absolute;
+    background: var(--Neon-Cherry, radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%));
+    opacity: 0.32;
+    filter: blur(250px);
+    pointer-events: none;
+    left: -6.3%;
+    top: 0;
+    width: 67.82%;
+    height: 31.32%;
+    transform: rotate(-115.265deg);
+    z-index: 2;
 }
 .memberships-cards .heading-wrapper {
     text-align: center;
@@ -247,5 +303,66 @@
       }
       .toggle-wrap.active {
         display: none;
+    }
+    .membership .memberships-cards:before {
+        content: '';
+        position: absolute;
+        background: var(--Neon-Peach, radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%));
+        opacity: 0.3;
+        filter: blur(100px);
+        pointer-events: none;
+        width: 144.4476923076923vw;
+        height: 205.9264102564103vw;
+        transform: rotate(-120.037deg);
+        right: -53%;
+        top: -2%;
+        z-index: 1;
+    }
+    .membership .memberships-cards::after {
+        content: '';
+        position: absolute;
+        background: var(--Neon-Peach, radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%));
+        opacity: 0.3;
+        filter: blur(100px);
+        pointer-events: none;
+        left: -264.356px;
+        bottom: 6%;
+        top: auto;
+        width: 563.346px;
+        height: 713.113px;
+        transform: rotate(-120.037deg);
+        z-index: 1;
+    }
+    .credits .memberships-cards:before {
+        content: '';
+        width: 219.4569230769231vw;
+        height: 359.6079487179487vw;
+        transform: rotate(151.969deg);
+        right: -114%;
+        top: 0;
+        z-index: 1;
+    }
+    .credits .memberships-cards::after {
+        content: '';
+        position: absolute;
+        fill: var(--Neon-Peach, radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%));
+        opacity: 0.3;
+        filter: blur(150px);
+        pointer-events: none;
+        left: -109%;
+        bottom: -20%;
+        width: 163.4%;
+        height: 45.9%;
+        transform: rotate(166.779deg);
+        z-index: 2;
+    }
+    .monthly-credits .memberships-cards::after { display: none; }
+    .monthly-credits .memberships-cards:before {
+        filter: blur(150px);
+        right: -706.268px;
+        top: 9.8%;
+        width: 259.2630769230769vw;
+        height: 293.494615vw;
+        transform: rotate(166.779deg);
     }
 }

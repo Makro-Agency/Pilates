@@ -1,7 +1,7 @@
 .wellness-faq {
     position: relative;
 }
-.wellness-faq:before {
+.wellness-faq > .padding-sections:before {
     content: '';
     position: absolute;
     display: block;
@@ -9,10 +9,10 @@
     background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%);
     opacity: 0.3;
     filter: blur(200px);
-    left: -43.97%;
+    left: -48.72%;
     bottom: -1.89%;
     width: 118.59192vw;
-    height: 51.88171875vw;
+    height: 48.881719vw;
     transform: rotate(-12.143deg);
 }
 .wellness-faq,.all-access-faq { background-color: #000;}
@@ -232,13 +232,13 @@
 	}
 }
 @media only screen and (max-width:769px) {
+	.all-access-faq .wellness-faq-accordion .section-head h2 {font-size: 32px;}
 	.wellness-faq-accordion .section-head h2 {
-		font-size: 32px;
-		font-weight: 500;
-		margin-top: 0;
-		margin-bottom: 40px;
+		font-size: 40px;
 	}
-
+	.section-head p.description {
+		padding-right: 0;
+	}
 	.section-boxes {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -284,5 +284,15 @@
 		display: flex;
 		flex-direction: column;
 		gap: 14px;
+	}
+	.wellness-faq > .padding-sections:before {
+		filter: blur(100px);
+		right: -98.3%;
+		top: 30%;
+		width: 271.3746153846154vw;
+		height: 157.5828205128205vw;
+		transform: rotate(-113.331deg);
+		bottom: auto;
+		left: auto;
 	}
 }
