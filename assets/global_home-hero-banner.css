@@ -168,6 +168,7 @@
 .newsletter-form__field-wrapper input,
 form.newsletter-form:not(#id) .field input.field__input {
     background: none;
+    border: none;
     border-bottom: 1.5px solid var(--White, #FFF);
     color: #fff;
     height: 48px;
@@ -178,6 +179,10 @@ form.newsletter-form:not(#id) .field input.field__input {
     outline: none !important;
     box-shadow: none !important;
     font-family: var(--font-heading-family);
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.32px;
+    line-height: 100%;
 }
 .newsletter-form__field-wrapper input::placeholder,
 form.newsletter-form:not(#id) .field input.field__input::placeholder {
