@@ -1,6 +1,10 @@
 {% if section.settings.newsletter %}
-  <script type="application/javascript" src="https://forms.prd.xplorcs.com/assets/embed/xpl-form-api.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.43/polyfill.min.js" integrity="sha512-lvWiOP+aMKHllm4THsjzNleVuGOh0WGniJ3lgu/nvCbex1LlaQSxySUjAu/LTJw9FhnSL/PVYoQcckg1Q03+fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  {% comment %} <script type="application/javascript" src="https://forms.prd.xplorcs.com/assets/embed/xpl-form-api.js" defer="defer"></script> {% endcomment %}
+  {{ 'xpl-form-api.js' | asset_url | script_tag }}  
   <link href="https://forms.prd.xplorcs.com/assets/embed/embed.css" rel="stylesheet" type="text/css">
+  {% comment %} <script type="application/javascript" src="https://assets.brandbot.com/forms/embed/embed.js?id=cc0f1994-f309-4764-b914-d3c3c31b326a" defer="defer"></script> {% endcomment %}
+  {% comment %} <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> {% endcomment %}
 {% endif %}
 
 {{ 'global_home-hero-banner.css' | asset_url | stylesheet_tag }}
@@ -121,31 +125,33 @@
             </button>
           </div> {% endcomment %}
         </form>
-        <script type="module" defer="defer">
-          const FormServiceURL = 'https://api.prd.xplorcs.com/forms-v2/forms';
-          const formUuid = 'cc0f1994-f309-4764-b914-d3c3c31b326a';
-          const formElement = document.forms[formUuid];
-          const formContainer = new XplFormContainer(FormServiceURL);
-          const loadRecaptcha = (formConfig) => {
-            const { template } = formConfig;
-            const key = template.use_recaptcha ? template.recaptcha_key : null;
-            if (key) XplFormAPI.loadRecaptchaScript(key);
-          };
-          formContainer.load(formUuid).then(loadRecaptcha);
-          window.onXplFormLocationChange = (selectElement) => formContainer.load(selectElement.value);
-          window.onXplFormSubmit = async (event) => {
-            event.preventDefault();
-            event.stopPropagation();
-            const form = new XplFormAPI(FormServiceURL, event.target, formContainer);
-            const recaptchaKey = form.getRecaptchaKey();
-            if (recaptchaKey)
-              window.grecaptcha.ready(() =>
-                window.grecaptcha
-                  .execute(recaptchaKey, { action: 'submit' })
-                  .then((recaptchaResponse) => form.submit(recaptchaResponse))
-              );
-            else form.submit();
-          };
+        <script _type="module" defer="defer">
+          document.addEventListener("DOMContentLoaded", (event) => {
+            const FormServiceURL = 'https://api.prd.xplorcs.com/forms-v2/forms';
+            const formUuid = 'cc0f1994-f309-4764-b914-d3c3c31b326a';
+            const formElement = document.forms[formUuid];
+            const formContainer = new XplFormContainer(FormServiceURL);
+            const loadRecaptcha = (formConfig) => {
+              const { template } = formConfig;
+              const key = template.use_recaptcha ? template.recaptcha_key : null;
+              if (key) XplFormAPI.loadRecaptchaScript(key);
+            };
+            formContainer.load(formUuid).then(loadRecaptcha);
+            window.onXplFormLocationChange = (selectElement) => formContainer.load(selectElement.value);
+            window.onXplFormSubmit = async (event) => {
+              event.preventDefault();
+              event.stopPropagation();
+              const form = new XplFormAPI(FormServiceURL, event.target, formContainer);
+              const recaptchaKey = form.getRecaptchaKey();
+              if (recaptchaKey)
+                window.grecaptcha.ready(() =>
+                  window.grecaptcha
+                    .execute(recaptchaKey, { action: 'submit' })
+                    .then((recaptchaResponse) => form.submit(recaptchaResponse))
+                );
+              else form.submit();
+            };
+          });
         </script>
         <!-- Ending Connect Signup Form -->
       </div>

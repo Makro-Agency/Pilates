@@ -109,3 +109,9 @@
 }
 
 
+.template-page main .sec-contact-form:only-child .contact.grid {
+  min-height: calc(100vh - 104px);
+}
+.template-page main .sec-contact-form:only-child .rightContactPart {
+  align-self: center;
+}

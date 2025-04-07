@@ -1,3 +1,7 @@
+body.gradient.template-index {
+    --gradient-background: #000;
+}
+
 .custom-header-section {
     position: absolute;
     z-index: 99;
