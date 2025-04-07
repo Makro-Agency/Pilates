@@ -63,7 +63,7 @@
           endif
         -%}
           {% if section.settings.countdown_title != blank or countdown_end != 0 %}
-            <div class="banner-content padding-sections{% if countdown_end != 0 and sale_end != 0 %} opacity-0{% endif %}" data-main>
+            <div class="banner-content padding-sections{% if section.settings.show_hide_date and countdown_end != 0 and sale_end != 0 %} opacity-0{% endif %}" data-main>
                 <div class="banner-contain">
                     {% if section.settings.countdown_title != blank%}
                         <h2 class="h1 heading">{{ section.settings.countdown_title }}</h2>
@@ -71,7 +71,7 @@
                     {% if section.settings.countdown_content != blank%}
                         <p class="description">{{ section.settings.countdown_content }}</p>
                     {% endif %}
-                    {% if section.settings.btn_text != blank %}
+                    {% if section.settings.btn_text != blank and section.settings.show_btn %}
                       <div class="banner-button">
                         <a href="{{ section.settings.btn_url }}" class="cta">{{ section.settings.btn_text }}{% render 'icon-left-arrow' %}</a>
                       </div>
@@ -79,11 +79,10 @@
                 </div>
                 {% if section.settings.show_hide_date and section.settings.countdown_end_date %}
                   {%- liquid                    
-                    assign countdown_end_date = section.settings.countdown_end_date
-
+                    assign countdown_end_date = section.settings.countdown_end_date                    
                     
                     comment
-                      assign countdown_end_date = '2025-04-04 07:36 PM'
+                      assign countdown_end_date = '2025-04-07 03:41 PM'    
                       assign end_date1 = end_date | append: ' 23:59:59' | date: '%s'
                       assign today = 'now' | date:'%s'
 
@@ -130,13 +129,13 @@
                   {% if section.settings.sale_content != blank%}
                       <p class="description">{{ section.settings.sale_content }}</p>
                   {% endif %}
-                  {% if section.settings.btn_text != blank %}
+                  {% if section.settings.btn_text != blank and section.settings.show_btn_pre %}
                     <div class="banner-button">
-                      <a href="{{ section.settings.btn_url }}" class="cta">{{ section.settings.btn_text }}{% render 'icon-left-arrow' %}</a>
+                      <a href="{{ section.settings.btn_url_pre }}" class="cta">{{ section.settings.btn_text_pre }}{% render 'icon-left-arrow' %}</a>
                     </div>
                   {% endif %}
               </div>
-              {% if section.settings.show_hide_date and section.settings.sale_end_date %}
+              {% if section.settings.show_date_pre_on and section.settings.sale_end_date %}
                 {%- liquid                    
                   assign sale_end_date = section.settings.sale_end_date
                   comment
@@ -240,6 +239,11 @@
       "content": "Banner Content"
     },
     {
+      "type": "checkbox",
+      "id": "show_btn",
+      "label": "Show button"
+    },
+    {
       "type": "text",
       "id": "btn_text",
       "label": "Button Text"
@@ -279,6 +283,12 @@
       "content": "Presale On"
     },
     {
+        "type": "checkbox",
+        "id": "show_date_pre_on",
+        "label": "Show Date for 'Presale On'",
+        "default": true
+    },
+    {
       "type": "inline_richtext",
       "label": "Presale On Title",
       "id": "presale_on_title"
@@ -288,6 +298,25 @@
         "id": "sale_end_date",
         "label": "Sale End Date",
         "info": "Use YYYY-MM-DD date format i.e. 2021-11-28"
+    },
+    {
+      "type": "paragraph",
+      "content": "PreSale Button"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_btn_pre",
+      "label": "Show button"
+    },
+    {
+      "type": "text",
+      "id": "btn_text_pre",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "btn_url_pre",
+      "label": "Button URL"
     }
   ],
   "presets": [

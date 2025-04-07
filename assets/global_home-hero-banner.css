@@ -163,6 +163,7 @@
 .newsletter-form__field-wrapper form {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
 }
 .newsletter-form__field-wrapper input,
 form.newsletter-form:not(#id) .field input.field__input {
@@ -297,7 +298,7 @@ form.newsletter-form:not(#id) .newsletter-form__button:hover {
 #alert.success ~ .form-group {
     display: none;
 }
-.newsletter-form:not(#id) #alert.success {
+.newsletter-form:not(#id) #alert {
     width: 100%;
     margin-bottom: 0;
     background: transparent;
@@ -305,6 +306,10 @@ form.newsletter-form:not(#id) .newsletter-form__button:hover {
     border-color: #fff;
     font-family: var(--font-heading-family);
     padding-inline: 10px;
+}
+.newsletter-form:not(#id) #alert.success {    
+    color: #fff;
+    border-color: #fff;
 }
 .newsletter-form__field-wrapper {
     display: flex;
