@@ -12,14 +12,14 @@
     "global_home_hero_banner_BKhfkg": {
       "type": "global_home-hero-banner",
       "settings": {
-        "desktop_image": "shopify://shop_images/Hero_4.png",
-        "mobile_image": "shopify://shop_images/Presale_Countdown.png",
-        "overlay_opacity": 0,
+        "desktop_image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL.jpg",
+        "mobile_image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL.jpg",
+        "overlay_opacity": 26,
         "title": "WELCOME TO THE MOVEMENT",
         "btn_text": "",
         "btn_url": "",
         "newsletter": true,
-        "newsletter_text": "Be the first to know"
+        "newsletter_text": "SIGN UP TO BE THE FIRST TO KNOW"
       }
     },
     "global_hero_banner_PFid6R": {
@@ -27,9 +27,9 @@
       "settings": {
         "desktop_image": "shopify://shop_images/Presale.png",
         "mobile_image": "shopify://shop_images/Presale-mobile.png",
-        "overlay_opacity": 20,
-        "countdown_title": "Pre-opening sale: launching April, 10",
-        "countdown_content": "The World's Highest-Capacity Lagree Method Studio at The Well™ Not Pilates. Not reformer. This is Lagree® - reimagined through the signature Sweat & Tonic experience.",
+        "overlay_opacity": 56,
+        "countdown_title": "COMING SPRING 2025",
+        "countdown_content": "Introducing REFORMD by Sweat and Tonic - the largest capacity Lagree studio in the world and the next step in our mission to bring the best of boutique fitness & wellness to Toronto. \n⁠",
         "sale_title": "Presale Ends",
         "sale_content": "The World's Highest-Capacity Lagree Method Studio at The Well™ Not Pilates. Not reformer. This is Lagree® - reimagined through the signature Sweat & Tonic experience.",
         "show_btn": false,
