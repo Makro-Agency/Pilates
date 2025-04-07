@@ -208,6 +208,7 @@ class XplFormAPI {
       }).then(async (res) => ({ data: await res.json(), ok: res.ok }));
       if (!response.ok) throw new Error(response.data.message);
       // add a success alert
+      //alert.setMessage("Your submission was successful!", "success").show();
       alert.setMessage("Your submission was successful!", "success").show();
       this.FormElement.reset();
       if (!redirectUrl) {
