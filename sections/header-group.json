@@ -47,7 +47,12 @@
         "btn_account_text": "My Account",
         "btn_buy_classes": true,
         "buy_classes_text": "Buy Classes",
-        "buy_classes_url": ""
+        "buy_classes_url": "",
+        "btn_book_now": false,
+        "book_now_text": "Book Now",
+        "book_now_url": "",
+        "btn_mobile_toggle": true,
+        "sale_on_header": true
       }
     },
     "4d342184-db41-43d6-bbe3-503423044f05": {
