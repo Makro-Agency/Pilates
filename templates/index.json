@@ -26,8 +26,8 @@
     "global_hero_banner_PFid6R": {
       "type": "global_hero-banner",
       "settings": {
-        "desktop_image": "shopify://shop_images/Presale.png",
-        "mobile_image": "shopify://shop_images/Presale-mobile.png",
+        "desktop_image": "shopify://shop_images/Hero.png",
+        "mobile_image": "shopify://shop_images/Hero-mobile.png",
         "overlay_opacity": 20,
         "countdown_title": "Pre-opening sale: launching April, 10",
         "countdown_content": "The World's Highest-Capacity Lagree Method Studio at The Well™ Not Pilates. Not reformer. This is Lagree® - reimagined through the signature Sweat & Tonic experience.",
