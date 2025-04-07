@@ -104,4 +104,8 @@ a.header-links:hover {
     .header-buttons-wrap {
         display: none;
     }
+    .header-static.custom-header-section {
+        position: static;
+        background-color: #000000;
+    }
 }
