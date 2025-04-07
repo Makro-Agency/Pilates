@@ -330,4 +330,7 @@ form.newsletter-form:not(#id) .field input.field__input:focus {
 .newsletter-form__field-wrapper input::-moz-selection {
     background: #ffffff3b;
 }
+.newsletter-form:not(#id) #alert.success {
+    display: none !important;
+}
 /* Custom form */
