@@ -188,7 +188,7 @@
       "settings": {
         "section_id": "membership-credits",
         "title": "Memberships & credits",
-        "description": "Mega savings on pre-opening sale packages - limited quantities available."
+        "description": "Don't miss out on pre-opening sale packages and mega savings. Limited quantities available."
       }
     },
     "global_membership_cxtXW9": {
@@ -696,6 +696,20 @@
     "wellness_accordion_dC3tQN": {
       "type": "wellness-accordion",
       "blocks": {
+        "faq_PwDFGb": {
+          "type": "faq",
+          "settings": {
+            "question": "WHEN IS REFORMD OPENING?",
+            "ans": "<p>Our opening is currently targeted for the end of May - stay tuned for updates!</p>"
+          }
+        },
+        "faq_9tkn6E": {
+          "type": "faq",
+          "settings": {
+            "question": "WHERE IS REFORMD LOCATED?",
+            "ans": "<p>Reformd is located at 486 Front St. W on the Terrace Level at The Well, just across the pedestrian bridge from Sweat and Tonic.</p>"
+          }
+        },
         "faq_XPV36T": {
           "type": "faq",
           "settings": {
@@ -715,20 +729,6 @@
           "settings": {
             "question": "WHY IS THE MEGAFORMER BETTER THAN OTHER MACHINES?",
             "ans": "<p>The Lagree Method was founded in 1999, but it is a live method, which means it is constantly evolving and advancing. There are currently over 600 Lagree Method studios globally, and continues to rapidly expand, with many brands and studios trying to copy the Lagree Method and the Megaformer machine; however, it is the only fitness machinery to hold over 180 patents. The focus on slow, controlled movements make this exercise safer than other methods, especially with a larger class size. This strength-building exercise is the perfect complement to other fitness classes offered at S&T. </p>"
-          }
-        },
-        "faq_9tkn6E": {
-          "type": "faq",
-          "settings": {
-            "question": "WHERE IS REFORMD LOCATED?",
-            "ans": "<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"
-          }
-        },
-        "faq_PwDFGb": {
-          "type": "faq",
-          "settings": {
-            "question": "WHEN IS REFORMD OPENING?",
-            "ans": "<p>Our opening is currently targeted for the end of May - stay tuned for updates!</p>"
           }
         },
         "faq_fdxd9y": {
@@ -754,11 +754,11 @@
         }
       },
       "block_order": [
+        "faq_PwDFGb",
+        "faq_9tkn6E",
         "faq_XPV36T",
         "faq_9VUbfX",
         "faq_hhxMhn",
-        "faq_9tkn6E",
-        "faq_PwDFGb",
         "faq_fdxd9y",
         "faq_j6hX6y",
         "faq_NwdCij"
@@ -782,8 +782,8 @@
         "title": "JOIN THE MOVEMENT",
         "content": "Limited packages available - Don't miss your chance",
         "show_hide_date": true,
-        "date_title": "Set your alarms, sale begins",
-        "end_date": "2026-04-02",
+        "date_title": "PRE-OPENING SALE BEGINS",
+        "end_date": "2025-04-17",
         "btn_text": "cta",
         "btn_url": "#"
       }
