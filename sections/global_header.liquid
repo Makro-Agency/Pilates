@@ -51,8 +51,67 @@
           <path d="M8.94922 6.93695L30.0742 6.93695M2.92578 15.7421H30.0742M2.92578 24.9369L24.0508 24.937" stroke="white" stroke-width="1.5"/>
         </svg>
       </div>
-      <div class="dropdown-menu"></div>
+      <div class="dropdown-menu">
+        <div class="dropdown-menu-inner">
+          <div class="dropdown-dropup">
+             {%- render 'icon-close', type: 1 -%} 
+          </div>
+          {% if section.settings.desktop_logo != blank or section.settings.mobile_logo != blank %}
+            <div class="header-logo-wrapper">
+              <a href="{{ routes.root_url }}" class="header__heading-link">
+                {% if section.settings.desktop_logo != blank %}
+                  <img src="{{ section.settings.desktop_logo | image_url }}" height="auto" width="auto" alt="logo" class="header__heading-logo desktop-img">
+                {% endif %}
+                {% if section.settings.mobile_logo != blank %}
+                  <img src="{{ section.settings.mobile_logo | image_url }}" height="auto" width="auto" alt="logo" class="header__heading-logo mobile-img">
+                {% endif %}
+              </a>
+            </div>
+          {% endif %}
+
+          <div class="dropdown-link-ul">
+            {% if section.settings.link_text != blank %}
+              <div class="dropLink-li">
+                <a href="{{ section.settings.add_header_link }}" class="header-links contact">{{ section.settings.link_text }}</a>
+              </div>
+            {% endif %}
+            <div class="dropLink-li">
+              <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header-links header__icon--account link">                
+                {% if section.settings.btn_account_text != blank %}
+                  <span class="header__icon_text">
+                    {{ section.settings.btn_account_text }}        
+                  </span>
+                {% endif %}
+              </a>
+            </div>
+          </div>
+          
+          <div class="dropdown-bottom">
+            {%- if section.settings.btn_buy_classes %}<a href="{{ section.settings.buy_classes_url }}" class="header_btn--links link">{{ section.settings.buy_classes_text }}</a>{% endif -%}
+            {%- if section.settings.btn_book_now %}<a href="{{ section.settings.book_now_url }}" class="header_btn--links link">{{ section.settings.book_now_text }}</a>{% endif -%}
+          </div>            
+        </div>
+
+      </div>
     </div>
+    
+    <script>
+      document.querySelector('.mobile-links-toggle .toggle-bar').addEventListener('click',function(e){
+        e.preventDefault();
+        if(this.closest('.mobile-links-toggle').classList.contains('active')){
+          this.closest('.mobile-links-toggle').classList.remove('active');
+          document.body.classList.remove('mobile-toggle--show');
+        }else{
+          this.closest('.mobile-links-toggle').classList.add('active');  
+          document.body.classList.add('mobile-toggle--show');
+        }
+      });
+      document.querySelector('.mobile-links-toggle .dropdown-dropup').addEventListener('click',function(e){
+        e.preventDefault();
+        this.closest('.mobile-links-toggle').classList.remove('active');
+        document.body.classList.remove('mobile-toggle--show');
+      });
+    </script>
   {% endif %}
     
 </div>
