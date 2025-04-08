@@ -659,35 +659,51 @@
     "global_access_accordion_Uj7RDF": {
       "type": "global_access-accordion",
       "blocks": {
-        "faq_brzJJV": {
+        "faq_Xjf4Ke": {
           "type": "faq",
           "settings": {
-            "question": "Flexible options",
-            "ans": "<p>Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"
+            "question": "FLEXIBLE + ALL-IN-ONE ACCESS",
+            "ans": "<p>Choose what suits you best - drop in on credits, or get the ultimate freedom with an Unlimited membership. Access Reformd, Sweat and Tonic, and biohacking at Tonic Spa with one account in the S&T app.</p>"
           }
         },
         "faq_GJQnjH": {
           "type": "faq",
           "settings": {
-            "question": "All-access, single currency",
-            "ans": "<p>Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"
+            "question": "LIMITLESS ACCESS",
+            "ans": "<p>Unlimited means unlimited. With an Unlimited membership, there are no daily limits for how many classes you can take. Keep calm and sweat on.</p>"
           }
         },
         "faq_4hTkPM": {
           "type": "faq",
           "settings": {
-            "question": "10% discount on credit packs",
-            "ans": "<p>Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"
+            "question": "PRICE-PROTECTED FOREVER",
+            "ans": "<p>Your rate is yours to keep - as long as you don't cancel your membership, you get to keep your current rate, forever and always. We like fun surprises only.</p>"
+          }
+        },
+        "faq_Y4YUqm": {
+          "type": "faq",
+          "settings": {
+            "question": "NO INITIATION FEES, CANCEL ANYTIME",
+            "ans": "<p>No initiation fees, no annual contracts, cancel anytime with no minimum notice periods.</p>"
+          }
+        },
+        "faq_fDa8A4": {
+          "type": "faq",
+          "settings": {
+            "question": "FULL-SERVICE AMENITIES",
+            "ans": "<p>Heated flooring, changing rooms, showers, towel service and more. Come as you are, and we'll do the rest</p>"
           }
         }
       },
       "block_order": [
-        "faq_brzJJV",
+        "faq_Xjf4Ke",
         "faq_GJQnjH",
-        "faq_4hTkPM"
+        "faq_4hTkPM",
+        "faq_Y4YUqm",
+        "faq_fDa8A4"
       ],
       "settings": {
-        "title": "the ultimate all-access experience",
+        "title": "THE PREMIUM S&amp;T EXPERIENCE",
         "desktop_image": "shopify://shop_images/accordian-desktop.png",
         "mobile_image": "shopify://shop_images/accordian-mob.png",
         "padding_top": 160,
