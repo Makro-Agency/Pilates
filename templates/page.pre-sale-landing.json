@@ -94,7 +94,7 @@
       "type": "global_sudio-classes",
       "settings": {
         "section_id": "studio-classes",
-        "title": "The studio / classes",
+        "title": "The studio",
         "description": "Lagree is not Pilates, and the Megaformer is not a reformer. ⁠\n⁠\nThe Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts.⁠"
       }
     },
@@ -198,7 +198,7 @@
           "type": "membership_card",
           "settings": {
             "title": "Reformd Unlimited membership",
-            "description": "Unlimited means unlimited - no daily limit. Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always.",
+            "description": "Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always.",
             "sale_label": "20% OFF",
             "sale_price": "$288",
             "original_price": "$360",
@@ -213,7 +213,7 @@
           "type": "membership_card",
           "settings": {
             "title": "Reformd + The Well Unlimited membership",
-            "description": "Unlimited means unlimited - no daily limit. Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always.",
+            "description": "Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always.",
             "sale_label": "20% OFF",
             "sale_price": "$435",
             "original_price": "$470",
@@ -228,7 +228,7 @@
           "type": "membership_card",
           "settings": {
             "title": "S&T Unlimited membership add-on",
-            "description": "Already have a S&T Unlimited membership? Get a Reformd Unlimited membership add-on for 50% off.\n<br>Unlimited means unlimited - no daily limit. Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always.",
+            "description": "Already have a S&T Unlimited membership? Get a Reformd Unlimited membership add-on for 50% off.\n<br>Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always.",
             "sale_label": "Additional 20% off",
             "sale_price": "$145",
             "original_price": "$180",
@@ -248,7 +248,7 @@
       "settings": {
         "section_id": "membership",
         "main_title": "Memberships",
-        "main_description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora."
+        "main_description": "Unlimited means unlimited - save 20% on unlimited access to classes at Reformd, plus 50% off membership add-ons for existing S&T Unlimited members."
       }
     },
     "global_competitor_comparison_iiBDkL": {
@@ -377,15 +377,15 @@
         "credits_card_Y8kcA3": {
           "type": "credits_card",
           "settings": {
-            "title": "Intro pack: 3 for XX",
-            "price_per_class": "$40 per Class",
-            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
+            "title": "Intro pack: 3 for $50",
+            "price_per_class": "$16.67 per Class",
+            "description": "Valid for use at Reformd only. Credits expire one month from opening. Limit of one purchase per customer.",
             "sale_label": "Pre-opening sale:",
-            "sale_price": "$120",
-            "original_price": "$180",
-            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
-            "total_membership_number": "24",
-            "remain_membership_number": "20",
+            "sale_price": "$50",
+            "original_price": "$60",
+            "benefits": "",
+            "total_membership_number": "200",
+            "remain_membership_number": "200",
             "button_text": "",
             "btn_url": ""
           }
@@ -393,15 +393,15 @@
         "credits_card_EKgxAt": {
           "type": "credits_card",
           "settings": {
-            "title": "Single credit",
-            "price_per_class": "$40 per Class",
-            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
+            "title": "4x Monthly credit pack",
+            "price_per_class": "$21.50 per Class",
+            "description": "Renews monthly, minimum of two months. Credits expire in billing month and do not roll over. Valid for use at Reformd only.",
             "sale_label": "Pre-opening sale:",
-            "sale_price": "$120",
-            "original_price": "$180",
-            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
-            "total_membership_number": "24",
-            "remain_membership_number": "20",
+            "sale_price": "$86",
+            "original_price": "$108",
+            "benefits": "<p>Save $12.50 per credit with a recurring credit pack. Price-protected, forever and always - keep your rate as long as your membership remains active.</p>",
+            "total_membership_number": "100",
+            "remain_membership_number": "100",
             "button_text": "",
             "btn_url": ""
           }
@@ -409,21 +409,39 @@
         "credits_card_YtBKPz": {
           "type": "credits_card",
           "settings": {
-            "title": "5 Credit Pack",
-            "price_per_class": "$40 per Class",
-            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
+            "title": "8x monthly credit pack",
+            "price_per_class": "$20 per Class",
+            "description": "Renews monthly, minimum of two months. Credits expire in billing month and do not roll over. Valid for use at Reformd only.",
             "sale_label": "Pre-opening sale:",
-            "sale_price": "$120",
-            "original_price": "$180",
-            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
-            "total_membership_number": "24",
-            "remain_membership_number": "20",
+            "sale_price": "$160",
+            "original_price": "$200",
+            "benefits": "<p>Save $14 per credit with a recurring credit pack. Price-protected, forever and always - keep your rate as long as your membership remains active.</p>",
+            "total_membership_number": "75",
+            "remain_membership_number": "75",
+            "button_text": "",
+            "btn_url": ""
+          }
+        },
+        "credits_card_7jT9h4": {
+          "type": "credits_card",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "price_per_class": "",
+            "description": "",
+            "sale_label": "",
+            "sale_price": "",
+            "original_price": "",
+            "benefits": "",
+            "total_membership_number": "",
+            "remain_membership_number": "",
             "button_text": "",
             "btn_url": ""
           }
         },
         "credits_card_79cFzr": {
           "type": "credits_card",
+          "disabled": true,
           "settings": {
             "title": "10 Credit Pack",
             "price_per_class": "$40 per Class",
@@ -440,6 +458,7 @@
         },
         "credits_card_mRgXam": {
           "type": "credits_card",
+          "disabled": true,
           "settings": {
             "title": "15 Credit Pack",
             "price_per_class": "$40 per Class",
@@ -459,13 +478,14 @@
         "credits_card_Y8kcA3",
         "credits_card_EKgxAt",
         "credits_card_YtBKPz",
+        "credits_card_7jT9h4",
         "credits_card_79cFzr",
         "credits_card_mRgXam"
       ],
       "settings": {
         "section_id": "credits",
-        "main_title": "Credits",
-        "main_description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora."
+        "main_title": "Credit packs",
+        "main_description": "Save big on credits and get up to 40% off classes at Reformd with a monthly recurring credit pack."
       }
     },
     "global_competitor_comparison_AX9gmg": {
@@ -628,6 +648,7 @@
         "credits_card_7FexRm",
         "credits_card_p6xjkN"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "main_title": "Monthly Credit Packs",
