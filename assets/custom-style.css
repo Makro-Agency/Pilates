@@ -463,7 +463,6 @@ img {
 }
 @media only screen and (min-width: 768px) {
   .mobile-img {display: none;}
-  .mobile-links-toggle { display: none; }
 }
 @media only screen and (max-width: 1750px) {
   .padding-sections {

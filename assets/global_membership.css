@@ -242,12 +242,28 @@
         display: none;
     }
 }
-@media only screen and (max-width: 1300px) {
-    .memberships-cards .heading-wrapper { padding: 0; }
+@media only screen and (max-width: 1499px) {
+    .card-wrap {padding: 50px 30px 30px 30px;}
+    .memberships-cards .heading-wrapper {padding: 0 15%;}
+}
+@media only screen and (max-width: 1299px) {
+    .membership-card-wrapper .heading-wrap .heading {
+        font-size: 26px;
+    }
+    .price-wrappper .sale_label {font-size: 16px;}
+    .price .sale-price { font-size: 26px;}
+    .price .original-price {font-size: 20px;}
+    .membership-card-wrapper .heading-wrap .subtitle {
+        font-size: 18px;
+    }
 }
 @media only screen and (max-width: 1199px) {
     .membership-card-wrapper {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .memberships-cards .heading-wrapper { padding: 0; }
+    .monthly-credits .card-wrap {
+        max-width: 50%;
     }
 }
 @media only screen and (max-width: 989px) {
@@ -364,5 +380,8 @@
         width: 259.2630769230769vw;
         height: 293.494615vw;
         transform: rotate(166.779deg);
+    }
+    .monthly-credits .card-wrap {
+        max-width: 100%;
     }
 }

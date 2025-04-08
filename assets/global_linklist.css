@@ -42,9 +42,10 @@
     border-bottom: 1.8px solid transparent;
     max-width: max-content;
     cursor: pointer;
+    padding-bottom: 5px;
 }
-.link-list span:hover {
-    border-bottom: 1.8px solid #FEE4B1;
+.link-list a:hover {
+    border-color: #FEE4B1;
 }
 .link-list {
     display: grid;
@@ -54,6 +55,11 @@
 @media only screen and (max-width: 1650px) {
     .links-wrappper {
         max-width: 40%;
+    }
+}
+@media only screen and (max-width: 1299px) {
+    .links-wrappper, .headings {
+        max-width: 47%;
     }
 }
 @media only screen and (max-width: 1199px) {

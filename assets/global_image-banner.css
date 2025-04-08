@@ -136,11 +136,29 @@
     text-transform: uppercase;
     text-decoration: none;
 }
+.global_image-banner a.cta:hover {
+    background: #ffffff;
+    color: #000000;
+}
 @media only screen and (max-width: 1500px) {
     .global_image-banner .banner-content { max-width: 70%; }
 }
-@media only screen and (max-width: 1500px) {
-    .global_image-banner .banner-content { max-width: 100%; gap: 30px; }
+@media only screen and (max-width: 1250px) {
+    .global_image-banner .banner-content {
+        max-width: 80%;
+        gap: 15px;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .global_image-banner .banner-content {
+        max-width: 100%;
+    }
+    .global_image-banner .banner-content {padding-bottom: 40px;}
+}
+@media only screen and (max-width: 989px) {
+    .global_image-banner .banner-content {padding-bottom: 15px;}
+    .global_image-banner .banner-content .banner-contain .description {font-size: 14px;}
+    .global_image-banner .banner-date {gap: 10px;}
 }
 @media only screen and (max-width: 767px) {
     .global_image-banner .countdown-timer li {

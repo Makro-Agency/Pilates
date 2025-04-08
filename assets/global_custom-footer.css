@@ -22,10 +22,17 @@
 .footer-link:hover a {
     border-color: #FEE4B1;
 }
+.copyright__content {
+    opacity: 0.4;
+}
 .footer-link-wrap {
     display: flex;
     gap: 60px;
     align-items: center;
+}
+@media only screen and (max-width: 1199px) { 
+    .footer-link a, .copyright__content { font-size: 16px; }
+    .footer-link-wrap {gap: 30px;}
 }
 @media only screen and (max-width: 989px) {
     .custom-footer {
@@ -36,4 +43,5 @@
         gap: 24px;
         flex-direction: column;
     }
+    
 }

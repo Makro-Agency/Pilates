@@ -28,6 +28,9 @@
     position: relative;
     z-index: 2;
 }
+.section-link-wrap:hover {
+    background: rgba(255,255,255,0.07);
+}
 .section-link-wrap > * {
     flex: 1;
     text-decoration: none;
@@ -76,6 +79,11 @@
     }
     .section-link-wrap {
         min-height: 120px;
+    }
+}
+@media only screen and (max-width: 1299px) {
+    .section-membership-credits .heading-wrapper .heading {
+        font-size: 40px;
     }
 }
 @media only screen and (max-width: 767px) {
