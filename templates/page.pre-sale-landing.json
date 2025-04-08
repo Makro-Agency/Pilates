@@ -32,7 +32,7 @@
         "countdown_title": "Pre-opening sale: launching April, 10",
         "countdown_content": "Introducing the world's highest capacity Lagree Method™ studio, powered by Sweat and Tonic. Coming to The Well at Front/Spadina in spring 2025.",
         "sale_title": "PRE-OPENING SALE",
-        "sale_content": "The World's Highest-Capacity Lagree Method Studio at The Well™ Not Pilates. Not reformer. This is Lagree® - reimagined through the signature Sweat & Tonic experience.",
+        "sale_content": "The World's Highest-Capacity Lagree Method Studio at The Well Not Pilates. Not reformer. This is Lagree® - reimagined through the signature Sweat & Tonic experience.",
         "show_btn": false,
         "btn_text": "Join the Revolution",
         "btn_url": "",
@@ -87,7 +87,7 @@
       ],
       "settings": {
         "title": "THE BEST OF BOUTIQUE FITNESS & WELLNESS",
-        "content": "Step inside REFORMD for a Lagree® experience unlike any other. Heated flooring throughout, state-of-the-art AV, custom chromotherapy lighting, plus a demo and education room for one-on-one guidance.⁠"
+        "content": "Step inside REFORMD for a Lagree® experience unlike any other. 30 Mega Pro Megaformers, state-of-the-art AV, custom chromotherapy lighting, and world-class programming - all expertly crafted and delivered in a signature Sweat and Tonic experience."
       }
     },
     "global_sudio_classes_qkDydH": {
@@ -95,18 +95,18 @@
       "settings": {
         "section_id": "studio-classes",
         "title": "The studio",
-        "description": "Lagree is not Pilates, and the Megaformer is not a reformer. ⁠\n⁠\nThe Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts.⁠"
+        "description": "Lagree is not Pilates, and the Megaformer is not a reformer. ⁠The Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts.⁠\n\n<br>\n<br> Reformd features heated flooring throughout the studio and locker room, plus a demo and education room for one-on-one guidance.⁠"
       }
     },
     "slideshow_ghX64P": {
       "type": "slideshow",
       "blocks": {
-        "slide_PrVpCJ": {
+        "slide_ciinLM": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/slideshow-1.png",
-            "mobile_image": "shopify://shop_images/slideshow-mob-1.png",
-            "heading": "REFORMD lobby",
+            "image": "shopify://shop_images/slideshow-3.png",
+            "mobile_image": "shopify://shop_images/slideshow-mob-3.png",
+            "heading": "MEGAFORMER STUDIO",
             "heading_size": "h2",
             "box_align": "bottom-left",
             "show_text_box": false,
@@ -119,9 +119,9 @@
         "slide_DeQiWy": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/slideshow-2.png",
-            "mobile_image": "shopify://shop_images/slideshow-mob-2.png",
-            "heading": "REFORMD lobby",
+            "image": "shopify://shop_images/accordian-desktop.png",
+            "mobile_image": "shopify://shop_images/accordian-desktop.png",
+            "heading": "RECEPTION",
             "heading_size": "h2",
             "box_align": "bottom-left",
             "show_text_box": false,
@@ -131,12 +131,12 @@
             "text_alignment_mobile": "left"
           }
         },
-        "slide_ciinLM": {
+        "slide_PrVpCJ": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/slideshow-3.png",
-            "mobile_image": "shopify://shop_images/slideshow-mob-3.png",
-            "heading": "REFORMD lobby",
+            "image": "shopify://shop_images/slideshow-2.png",
+            "mobile_image": "shopify://shop_images/slideshow-2.png",
+            "heading": "WELCOME LOUNGE",
             "heading_size": "h2",
             "box_align": "bottom-left",
             "show_text_box": false,
@@ -148,9 +148,9 @@
         }
       },
       "block_order": [
-        "slide_PrVpCJ",
+        "slide_ciinLM",
         "slide_DeQiWy",
-        "slide_ciinLM"
+        "slide_PrVpCJ"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -699,43 +699,57 @@
         "faq_XPV36T": {
           "type": "faq",
           "settings": {
-            "question": "What is the Lagree Method?",
-            "ans": "<p>A high-intensity, low-impact workout that uses slow, controlled movements to activate muscle fibers, combining elements of strength, endurance, cardio, flexibility, and core stability.</p>"
+            "question": "What is the Lagree Method? How is it different from Pilates or traditional reformer classes?",
+            "ans": "<p>Lagree is not Pilates, and the Megaformer is not a reformer. Since its inception over 25 years ago, the Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts. </p><p>Founded on five components of physical fitness – endurance, cardiovascular fitness, body composition, flexibility, and strength – Lagree is a patented high-intensity, low-impact exercise method that tightens, tones, and deeply activates slow-twitch muscle fibers. The method integrates body-building principles and focuses on slow, controlled movements and progressive load to build strength. It was founded on the five components of physical fitness: endurance, cardiovascular fitness, body composition, flexibility and strength. </p>"
           }
         },
         "faq_9VUbfX": {
           "type": "faq",
           "settings": {
-            "question": "How is REFORMD different from Pilates or traditional reformer classes?",
-            "ans": "<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"
+            "question": "WHAT IS A MEGA PRO MEGAFORMER?",
+            "ans": "<p>A Megaformer is a fitness machine with a moving carriage, static platforms, and springs for resistance with quick-release technology. It is similar to the Reformer, but has more features and attachments than the traditional Pilates reformer.  The Mega Pro is the latest Megaformer, and is considered to be the best of the past and future of the Megaformer series. The most identifiable feature of the Mega Pro are the platform lifts, which allow for easier stabilization and impact of joints and less inflammation in connective tissues during and post-workout.</p>"
           }
         },
         "faq_hhxMhn": {
           "type": "faq",
           "settings": {
-            "question": "Do I need previous experience to try a REFORMD class?",
+            "question": "WHY IS THE MEGAFORMER BETTER THAN OTHER MACHINES?",
+            "ans": "<p>The Lagree Method was founded in 1999, but it is a live method, which means it is constantly evolving and advancing. There are currently over 600 Lagree Method studios globally, and continues to rapidly expand, with many brands and studios trying to copy the Lagree Method and the Megaformer machine; however, it is the only fitness machinery to hold over 180 patents. The focus on slow, controlled movements make this exercise safer than other methods, especially with a larger class size. This strength-building exercise is the perfect complement to other fitness classes offered at S&T. </p>"
+          }
+        },
+        "faq_9tkn6E": {
+          "type": "faq",
+          "settings": {
+            "question": "WHERE IS REFORMD LOCATED?",
+            "ans": "<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"
+          }
+        },
+        "faq_PwDFGb": {
+          "type": "faq",
+          "settings": {
+            "question": "WHEN IS REFORMD OPENING?",
             "ans": "<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"
           }
         },
         "faq_fdxd9y": {
           "type": "faq",
           "settings": {
-            "question": "Can REFORMD members access other Sweat & Tonic facilities?",
-            "ans": "<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"
+            "question": "I’m an Unlimited member at S&T. Do I have access to Reformd?",
+            "ans": "<p>As an active Unlimited member at S&T, you can purchase a Reformd Unlimited membership add-on at a 50% discount to get access to Reformd. The add-on gives you unlimited access to classes at Reformd.</p>"
           }
         },
         "faq_j6hX6y": {
           "type": "faq",
           "settings": {
-            "question": "How early should I arrive for my first class?",
-            "ans": "<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"
+            "question": "When will the class schedule be available? When can I start booking classes?",
+            "ans": "<p>Keep your eyes out for the class schedule to be released in May. More details will be available soon - make sure to sign up for our newsletter and follow Reformd on Instagram for the latest updates.</p>"
           }
         },
         "faq_NwdCij": {
           "type": "faq",
           "settings": {
-            "question": "What should I wear to a REFORMD class?",
-            "ans": "<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"
+            "question": "How can I book classes at Reformd? Is there an app?",
+            "ans": "<p>You’ll be able to access Reformd in the S&T app, by selecting 'Reformd' in the location drop-down. This means you only need one account to access products at both S&T and Reformd.</p><p>If you already have a Sweat and Tonic account, you’ll be able to book classes, make purchases, and manage your account at Reformd, using the same account you use for S&T, all in one place!</p>"
           }
         }
       },
@@ -743,14 +757,16 @@
         "faq_XPV36T",
         "faq_9VUbfX",
         "faq_hhxMhn",
+        "faq_9tkn6E",
+        "faq_PwDFGb",
         "faq_fdxd9y",
         "faq_j6hX6y",
         "faq_NwdCij"
       ],
       "settings": {
         "section_id": "FAQ",
-        "title": "REFORMDQuestions Answered",
-        "sort_description": "Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+        "title": "REFORMD FAQ",
+        "sort_description": "Get answers to frequently asked questions about our pre-opening sale, memberships, access, and more.",
         "link_label": "see full FAQs",
         "link_url": "#",
         "padding_top": 160,
