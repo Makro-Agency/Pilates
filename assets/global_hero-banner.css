@@ -157,7 +157,7 @@
     height: 100%;
 }
 @media only screen and (min-width: 992px) {
-    .hero-banner-1 .banner-content {
+    .template-index .hero-banner-1 .banner-content {
         align-items: center;
         padding-bottom: 0;
     }
