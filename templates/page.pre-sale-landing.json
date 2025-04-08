@@ -218,9 +218,9 @@
             "sale_price": "$435",
             "original_price": "$470",
             "benefits": "<ul><li>Unlimited access to classes at Reformd</li><li>Unlimited yoga, Pilates, ride & HIIT classes at Front/Spadina and Yonge/Shuter</li><li>Access to Tonic House at Front/Spadina and Yonge/Shuter</li><li>24-hour priority booking</li><li>1 guest credit per month</li></ul>",
-            "total_membership_number": "25",
-            "remain_membership_number": "25",
-            "button_text": "",
+            "total_membership_number": "50",
+            "remain_membership_number": "50",
+            "button_text": "BUY NOW",
             "btn_url": ""
           }
         },
@@ -228,13 +228,13 @@
           "type": "membership_card",
           "settings": {
             "title": "S&T Unlimited membership add-on",
-            "description": "Exclusive to S&T Unlimited members. Already have an Unlimited membership at S&T? Get a Reformd Unlimited membership add-on for 50% off.",
+            "description": "Already have a S&T Unlimited membership? Get a Reformd Unlimited membership add-on for 50% off.\n<br>Unlimited means unlimited - no daily limit. Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always.",
             "sale_label": "Additional 20% off",
             "sale_price": "$145",
             "original_price": "$180",
-            "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>1 guest credit per month</li></ul>",
-            "total_membership_number": "25",
-            "remain_membership_number": "25",
+            "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>1 guest credit per month</li><li>Plus all the benefits of your S&T Unlimited membership</li></ul>",
+            "total_membership_number": "50",
+            "remain_membership_number": "50",
             "button_text": "",
             "btn_url": ""
           }
