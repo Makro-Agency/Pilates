@@ -187,13 +187,13 @@
     "form": {
       "type": "contact-form",
       "settings": {
-        "bg_color_left": "#26221b",
+        "bg_color_left": "#000000",
         "text_color_left": "#ffffff",
         "sub_color_left": "#f3f3f3",
         "subheading_left": "Ready to sweat?",
         "heading_left": "LET’S GET YOU IN",
         "heading_size_left": "h1",
-        "btn_text_left": "JOIN THE SWEAT FAM",
+        "btn_text_left": "JOIN THE REFORMD FAM",
         "btn_link_left": "shopify://pages/pricing",
         "heading": "Send us a note",
         "heading_size": "h2",
