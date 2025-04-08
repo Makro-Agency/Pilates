@@ -57,16 +57,16 @@
       if ($this.hasClass('active')) {
         $this.removeClass('active');
         $this.parent().removeClass('active');
-        $this.next('[data-class-content]').slideUp(450);
+        $this.next('[data-class-content]').slideUp(200);
       } else {
         // Close all other open accordion content and deactivate other items
-        $accordion.find('[data-class-content]').slideUp(450);
+        $accordion.find('[data-class-content]').slideUp(200);
         $accordion.find('.active').removeClass('active');
 
         // Activate the clicked item and show its content
         $this.addClass('active');
         $this.parent().addClass('active');
-        $this.next('[data-class-content]').slideDown(450);
+        $this.next('[data-class-content]').slideDown(200);
       }
     });
   });
