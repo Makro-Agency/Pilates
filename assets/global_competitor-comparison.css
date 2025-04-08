@@ -147,9 +147,20 @@
     border-bottom: 1.8px solid transparent;
     text-decoration: none;
     color: #fff;
+    padding: 0 0 5px;
  }
  .more-info-wrap .page-links a:hover {
     border-color: #FEE4B1;
+ }
+ @media screen and (max-width: 1499px) {
+  .more-info-wrap {
+    max-width: 50%;
+  }
+ }
+ @media screen and (max-width: 1199px) {
+  .more-info-wrap {
+    max-width: 60%;
+  }
  }
  @media screen and (max-width: 989px) {
   .feature-label {

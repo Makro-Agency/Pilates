@@ -61,7 +61,7 @@ a.header-links:hover {
     color: var(--White, #FFF);
     font-family: var(--font-heading-family);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 100%;
     letter-spacing: 0.32px;
     text-transform: uppercase;
@@ -82,7 +82,7 @@ a.header-links:hover {
     font-family: var(--font-heading-family);
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 100%;
     letter-spacing: 0.32px;
     text-transform: uppercase;
@@ -92,12 +92,18 @@ a.header-links:hover {
     background: #ffffff;
     color: #000000;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 1200px) {
+    .custom-header .mobile-img {display: none;}
+    .mobile-links-toggle { display: none; }
+}
+@media only screen and (max-width: 1199px) {
+    .custom-header .desktop-img {display: none;}
     .custom-header {
         padding-top: 12px;
         padding-bottom: 12px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     .header-logo-wrapper {max-width: 159px;}
     .left-links {display: none;}
@@ -108,4 +114,5 @@ a.header-links:hover {
         position: static;
         background-color: #000000;
     }
+    .custom-header .mobile-img {display: block;}
 }

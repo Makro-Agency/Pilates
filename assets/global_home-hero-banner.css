@@ -10,6 +10,10 @@
 .global_home-hero-banner.hero-banner .image {
     width: 100%;
 }
+.global_home-hero-banner.hero-banner .image img {
+    position: absolute;
+    top: 0;
+}
 .global_home-hero-banner.hero-banner::before {
     background: radial-gradient(29.78% 68.02% at 50% 46.11%, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.00) 100%);
     content: "";
@@ -247,6 +251,11 @@ form.newsletter-form:not(#id) .newsletter-form__button:hover {
     }
     .global_home-hero-banner.hero-banner .image figure {
         height: 100%;
+        padding-bottom: 100%;
+    }
+    .global_home-hero-banner.hero-banner .image figure img {
+        position: absolute;
+        top: 0;
     }
     .global_home-hero-banner .banner-date {
         align-items: center;
@@ -278,6 +287,7 @@ form.newsletter-form:not(#id) .newsletter-form__button:hover {
         transform: rotate(148.503deg);
         pointer-events: none;
     }
+    .global_home-hero-banner .banner-contain .heading {font-size: 38px;}
 }
 
 
@@ -329,8 +339,5 @@ form.newsletter-form:not(#id) .field input.field__input:focus {
 }
 .newsletter-form__field-wrapper input::-moz-selection {
     background: #ffffff3b;
-}
-.newsletter-form:not(#id) #alert.success {
-    display: none !important;
 }
 /* Custom form */

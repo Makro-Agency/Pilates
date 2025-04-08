@@ -149,6 +149,11 @@
 .hero-banner-1 a.cta:hover {
     border-color: #FEE4B1;
 }
+@media only screen and (max-width: 1300px) {
+    .hero-banner-1 .banner-content > * {
+        flex-basis: 50%;
+    }
+}
 @media only screen and (max-width: 989px) {
     .hero-banner-1 .desktop-img { display: none; }
     .hero-banner-1 .mobile-img { display: block; }
@@ -188,6 +193,11 @@
         width: 132.3717948717949vw;
         height: 103.1228205128205vw;
         transform: rotate(163.783deg);
+    }
+}
+@media only screen and (max-width: 767px) {
+    .hero-banner-1 .banner-contain .heading {
+        font-size: 38px;
     }
 }
 

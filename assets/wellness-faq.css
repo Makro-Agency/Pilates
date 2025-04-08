@@ -15,7 +15,7 @@
     height: 48.881719vw;
     transform: rotate(-12.143deg);
 }
-.wellness-faq,.all-access-faq { background-color: #000;}
+.wellness-faq,.all-access-faq { background-color: #000; overflow: hidden;}
 .wellness-accordion-title {
 	display: flex;
 	justify-content: space-between;
@@ -155,6 +155,9 @@
     display: flex;
     align-items: center;
 }
+.section-head a.btn:hover {
+	text-decoration: underline;
+}
 .wellness-accordion-box-outer {
 	width: 100%;
 	max-width: 1060px;
@@ -201,7 +204,16 @@
 	width: 100%;
 	z-index: 1;
 }
-
+@media only screen and (max-width: 1599px) {
+	.section-head p.description {
+        padding-right: 10%;
+    }
+	.allaccess-accordian .wellness-faq-accordion {
+		max-width: 100%;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
 @media only screen and (max-width: 1024px) {
 	.shopify-section.wellness-faq .page-width {
 		padding-left: 2rem;
@@ -213,10 +225,6 @@
 		row-gap: 80px;
 	}
 
-	.wellness-accordion-box-outer {
-		width: 100%;
-		max-width: 60%;
-	}
 }
 @media only screen and (max-width:989px) {
 	.allaccess-accordian .wellness-faq-accordion {

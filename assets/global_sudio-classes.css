@@ -11,10 +11,17 @@
 }
 .studio-content > * {
     max-width: 33.33%;
+    margin: 0;
+}
+@media only screen and (max-width: 1299px) {
+    .studio-content > * {
+        max-width: 50%;
+    }
 }
 @media only screen and (max-width: 1199px) {
     .studio-content { flex-direction: column;}
     .studio-content > * {
         max-width: 100%;
+        margin: 16px 0 0;
     }
 }
