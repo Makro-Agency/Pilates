@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "global_home_hero_banner_BKhfkg": {
       "type": "global_home-hero-banner",
@@ -17,7 +17,7 @@
         "overlay_opacity": 0,
         "title": "Welcome to the Revolution",
         "btn_text": "Join the Revolution",
-        "btn_url": "shopify://pages/landing",
+        "btn_url": "shopify://pages/pre-sale",
         "newsletter": true,
         "newsletter_text": "Be the first to know"
       }
@@ -34,7 +34,7 @@
         "sale_content": "The World's Highest-Capacity Lagree Method Studio at The Well™ Not Pilates. Not reformer. This is Lagree® - reimagined through the signature Sweat & Tonic experience.",
         "show_btn": true,
         "btn_text": "Join the Revolution",
-        "btn_url": "shopify://pages/landing",
+        "btn_url": "shopify://pages/pre-sale",
         "show_hide_date": true,
         "presale_countdown_title": "Set your alarms, sale begins",
         "countdown_end_date": "2025-04-10",
@@ -45,10 +45,10 @@
         "btn_text_pre": "",
         "btn_url_pre": ""
       }
-    },
+    }
   },
   "order": [
     "global_home_hero_banner_BKhfkg",
-    "global_hero_banner_PFid6R",
+    "global_hero_banner_PFid6R"
   ]
 }
