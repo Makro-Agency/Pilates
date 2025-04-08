@@ -198,13 +198,13 @@
           "type": "membership_card",
           "settings": {
             "title": "Reformd Unlimited membership",
-            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
-            "sale_label": "Pre-opening sale:",
-            "sale_price": "",
-            "original_price": "",
-            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
-            "total_membership_number": "",
-            "remain_membership_number": "",
+            "description": "Unlimited means unlimited - no daily limit. Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always.",
+            "sale_label": "20% OFF",
+            "sale_price": "$288",
+            "original_price": "$360",
+            "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>1 guest credit per month</li></ul>",
+            "total_membership_number": "100",
+            "remain_membership_number": "100",
             "button_text": "",
             "btn_url": ""
           }
@@ -212,14 +212,14 @@
         "membership_card_LrCenB": {
           "type": "membership_card",
           "settings": {
-            "title": "Reformd + S&T Unlimited membership",
-            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
-            "sale_label": "Pre-opening sale:",
-            "sale_price": "",
-            "original_price": "",
-            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li><li>Nunc vulputate libero</li></ul>",
-            "total_membership_number": "",
-            "remain_membership_number": "",
+            "title": "Reformd + The Well Unlimited membership",
+            "description": "Unlimited means unlimited - no daily limit. Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always.",
+            "sale_label": "20% OFF",
+            "sale_price": "$435",
+            "original_price": "$470",
+            "benefits": "<ul><li>Unlimited access to classes at Reformd</li><li>Unlimited yoga, Pilates, ride & HIIT classes at Front/Spadina and Yonge/Shuter</li><li>Access to Tonic House at Front/Spadina and Yonge/Shuter</li><li>24-hour priority booking</li><li>1 guest credit per month</li></ul>",
+            "total_membership_number": "25",
+            "remain_membership_number": "25",
             "button_text": "",
             "btn_url": ""
           }
@@ -228,13 +228,13 @@
           "type": "membership_card",
           "settings": {
             "title": "S&T Unlimited membership add-on",
-            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
-            "sale_label": "Pre-opening sale:",
-            "sale_price": "",
-            "original_price": "",
-            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
-            "total_membership_number": "",
-            "remain_membership_number": "",
+            "description": "Exclusive to S&T Unlimited members. Already have an Unlimited membership at S&T? Get a Reformd Unlimited membership add-on for 50% off.",
+            "sale_label": "Additional 20% off",
+            "sale_price": "$145",
+            "original_price": "$180",
+            "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>1 guest credit per month</li></ul>",
+            "total_membership_number": "25",
+            "remain_membership_number": "25",
             "button_text": "",
             "btn_url": ""
           }
