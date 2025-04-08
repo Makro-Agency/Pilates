@@ -457,7 +457,7 @@ img {
   margin: 16px 0 0;
 }
 .text-center {text-align: center;}
-.template-index main#MainContent {
+main#MainContent {
   overflow-x: hidden;
   background-color: #000;
 }

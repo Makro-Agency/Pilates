@@ -3,6 +3,7 @@
     margin: 0;
     position: relative;
     line-height: 0;
+    height: 100vh;
 }
 .hero-banner-1 .image {
     width: 100%;
@@ -23,10 +24,11 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     overflow: hidden;
     height: 100%;
     z-index: 2;
+    padding-bottom: 100px;
 }
 .hero-banner-1 .banner-content.opacity-0 {
     visibility: hidden;
@@ -149,6 +151,18 @@
 .hero-banner-1 a.cta:hover {
     border-color: #FEE4B1;
 }
+
+/*------------for home page------------------*/
+.template-index .hero-banner-1 .image figure {
+    height: 100%;
+}
+@media only screen and (min-width: 992px) {
+    .hero-banner-1 .banner-content {
+        align-items: center;
+        padding-bottom: 0;
+    }
+}
+/*------------for home page------------------*/
 @media only screen and (max-width: 1300px) {
     .hero-banner-1 .banner-content > * {
         flex-basis: 50%;
@@ -175,9 +189,6 @@
     .hero-banner-1 .countdown-timer span.number {
         font-size: 40px;
     }
-    .hero-banner-1 .image figure {
-        height: 100%;
-    }
     .hero-banner-1 .banner-date {
         align-items: center;
         justify-content: center;
@@ -193,6 +204,9 @@
         width: 132.3717948717949vw;
         height: 103.1228205128205vw;
         transform: rotate(163.783deg);
+    }
+    .hero-banner-1 .image figure {
+        height: calc(100vh - 64px);
     }
 }
 @media only screen and (max-width: 767px) {
