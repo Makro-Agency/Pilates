@@ -188,7 +188,7 @@
       "settings": {
         "section_id": "membership-credits",
         "title": "Memberships & credits",
-        "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad."
+        "description": "Mega savings on pre-opening sale packages - limited quantities available."
       }
     },
     "global_membership_cxtXW9": {
@@ -779,8 +779,8 @@
         "desktop_image": "shopify://shop_images/gimage-banner.png",
         "mobile_image": "shopify://shop_images/gimage-banner-mob.png",
         "overlay_opacity": 20,
-        "title": "Join the Revolution",
-        "content": "The World's Highest-Capacity Lagree Method Studio at The Well™ Not Pilates. Not reformer. This is Lagree® - reimagined through the signature Sweat & Tonic experience.",
+        "title": "JOIN THE MOVEMENT",
+        "content": "Limited packages available - Don't miss your chance",
         "show_hide_date": true,
         "date_title": "Set your alarms, sale begins",
         "end_date": "2026-04-02",
