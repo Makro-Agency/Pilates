@@ -258,7 +258,7 @@
           "type": "competitor",
           "settings": {
             "name": "REFORMD + THE WELL UNLIMITED",
-            "price": "$435",
+            "price": "$435 unlimited",
             "cost_per_class": "$14.50",
             "single_credit_cost": "$12",
             "access": "Unlimited classes: Megaformer, Yoga, Pilates, Ride, HIIT",
@@ -273,7 +273,7 @@
           "type": "competitor",
           "settings": {
             "name": "Lagree Plus",
-            "price": "$490",
+            "price": "$490 for 30 classes",
             "cost_per_class": "$16.33",
             "single_credit_cost": "",
             "access": "Limit of 30 classes per month: Reformer only",
