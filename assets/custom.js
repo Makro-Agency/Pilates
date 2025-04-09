@@ -1000,6 +1000,9 @@ if (Shopify.designMode) {
         tonicBookingSlider();
       }
       
+      document.querySelectorAll('.banner-content.opacity-0').forEach(function(element){
+        element.classList.remove('opacity-0');
+      });
       
     });
   });
