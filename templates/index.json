@@ -14,7 +14,7 @@
       "settings": {
         "desktop_image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL.jpg",
         "mobile_image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL.jpg",
-        "overlay_opacity": 70,
+        "overlay_opacity": 100,
         "title": "Welcome to the movement",
         "btn_text": "Pre-opening sale starts April 17 @ 9 AM",
         "btn_url": "shopify://pages/pre-sale",
@@ -40,7 +40,7 @@
         "countdown_end_date": "2025-04-17",
         "show_date_pre_on": true,
         "presale_on_title": "Presale Ends",
-        "sale_end_date": "2025-04-12",
+        "sale_end_date": "2025-04-12 09:00 AM",
         "show_btn_pre": true,
         "btn_text_pre": "",
         "btn_url_pre": ""
