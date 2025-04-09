@@ -145,12 +145,15 @@
     {%- endif -%}
 
     {% sections 'header-group' %}
-    {%- liquid
+    {%- liquid         
       assign has_drakness = true
-      assign bright_temp = 'faq'
-      if template.name contains bright_temp or template.suffix contains bright_temp
-        assign has_drakness = false
-      endif
+      assign bright_temp = 'faq,customers' | split:','
+      for bt in bright_temp
+        if template contains bt
+          assign has_drakness = false
+          break
+        endif
+      endfor
     -%}
 
     <main id="MainContent" class="content-for-layout focus-none dark--{{ has_drakness }}" role="main" tabindex="-1">
