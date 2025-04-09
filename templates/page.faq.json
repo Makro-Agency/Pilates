@@ -81,26 +81,66 @@
             "detail": "<p>You can view and purchase memberships and credits online or in the S&T app by selecting 'REFORMD' in the location - drop down.</p>"
           }
         },
-        "title_zYcA3w": {
-          "type": "title",
-          "disabled": true,
-          "settings": {
-            "title": "GETTING HERE"
-          }
-        },
         "que_ans_G9aRwm": {
           "type": "que_ans",
-          "disabled": true,
           "settings": {
-            "title": "Where are you located?",
-            "detail": "<p>Our <strong>Yonge/Shuter</strong> location is at 225 Yonge Street, right across the street from the CF Toronto Eaton Centre, on the northeast corner of Yonge St and Shuter St.</p><p>Our <strong>Front/Spadina</strong> location is at 486 Front Street in The Well, on the 'Terrace Level' (level 2).</p>"
+            "title": "I’m an Unlimited member at S&T. Do I have access to Reformd?",
+            "detail": "<p>As an active Unlimited member at S&T, you can purchase a Reformd Unlimited membership add-on at a 50% discount to get access to Reformd. The add-on gives you unlimited access to classes at Reformd. </p>"
           }
         },
         "6beaa2ad-e3e7-4b02-9db6-25c2cae1a7bc": {
           "type": "que_ans",
           "settings": {
-            "title": "Do you have dedicated parking?",
-            "detail": "<p>We do not have dedicated or validated parking, however, there are several paid public parking and transit options nearby.<br/><br/><strong>Yonge/Shuter: </strong>We're right across the street from the Queen St. TTC stop and from the Eaton Centre parking garage. There is also a Green P parking garage at Dundas Square and Victoria St, as well as more parking options on Victoria St.<br/><br/><strong>Front/Spadina (The Well): </strong>Public underground parking is available at The Well. There is one entrance located at 421 Wellington St. W, and another entrance located near 482 Front St. W. The Well is accessible by TTC streetcar from Spadina Ave, as well as King St.</p>"
+            "title": "Who can purchase a Reformd Unlimited membership add-on?",
+            "detail": "<p>Guests with an active Yonge/Shuter or The Well Unlimited membership can purchase a membership add-on at 50% off.</p>"
+          }
+        },
+        "que_ans_3BAmnt": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Can I use credits I purchase during the Reformd pre-opening sale at Sweat and Tonic?",
+            "detail": "<p>No, credits purchased during the Reformd pre-opening sale are valid only for classes at Reformd. However, regular-priced credits will be valid for use at Reformd and S&T.</p>"
+          }
+        },
+        "que_ans_nCV7JP": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Can I use my S&T credits at Reformd?",
+            "detail": "<p>Yes! Once Reformd opens, you’ll be able to use your S&T credits at Reformd. A S&T credit can be used to book:</p><ul><li>A class at Reformd</li><li>A yoga, Pilates, Ride, or HIIT class at any S&T location</li><li>Small Group Training at Front/Spadina</li><li>Pool deck at Front/Spadina</li><li>Red light therapy at Front/Spadina</li><li>Compression therapy at Front/Spadina</li><li>Private hot & cold therapy suite at Front/Spadina</li><li>Sauna session at Yonge/Shuter</li></ul>"
+          }
+        },
+        "4cdf833b-812d-4a9a-84a9-bc2b229a449d": {
+          "type": "que_ans",
+          "settings": {
+            "title": "If I purchase a membership or monthly credit pack during the pre-opening sale, how long do I get to keep my rate for?",
+            "detail": "<p>As always, just like at S&T, you get to keep your rate forever, as long as you don’t cancel your membership.</p>"
+          }
+        },
+        "d7696939-47e4-410d-9584-55d9659a7c55": {
+          "type": "que_ans",
+          "settings": {
+            "title": "I’ve taken a class at S&T before. Can I purchase the Reformd 3 for $50 intro pack?",
+            "detail": "<p>Yes, you’re eligible to purchase a <strong>Reformd 3 for $50 intro pack</strong> during our pre-opening sale. There is a limit of 1 per customer for intro packs. Any credits purchased during the pre-opening sale will be valid for use at Reformd only.</p><p>This is applicable during the Reformd pre-opening sale only. After Reformd opens, the <strong>standard 3 for $60 intro pack</strong> will be valid for first-timers only at both S&T and Reformd.</p>"
+          }
+        },
+        "title_zYcA3w": {
+          "type": "title",
+          "settings": {
+            "title": "ACCOUNT"
+          }
+        },
+        "que_ans_J97CWR": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What happens if I want to cancel my S&T Unlimited membership, and keep my Reformd membership add-on?",
+            "detail": "<p>You can cancel your membership at any time. If you do not have a S&T Unlimited membership, you are not eligible to receive the 50% off discount on your Reformd membership add-on, and you will be charged the regular price. Anytime you cancel a membership, you will lose your current rate; however, as long as you don’t cancel your membership, your rate is price-protected forever. </p>"
+          }
+        },
+        "7064720d-0420-40f1-803f-d9b0235d07ef": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Can I freeze my membership?",
+            "detail": "<p>Memberships and monthly credit packs can be frozen for a maximum of 14 days at a time every six months, and you can request your first freeze at any time after starting your membership. At the end of each freeze, 6 months must pass before you are eligible for another. Eligibility does not reset if you cancel and purchase a new membership. Your membership start date is the very first date you signed up for a membership.</p>"
           }
         },
         "e491b7f7-2e86-42db-9739-797a6fbb5195": {
@@ -110,39 +150,12 @@
             "title": "CLASS CREDITS & MEMBERSHIPS"
           }
         },
-        "7064720d-0420-40f1-803f-d9b0235d07ef": {
-          "type": "que_ans",
-          "settings": {
-            "title": "How many credits does a class or service cost?",
-            "detail": "<p>1 credit</p>"
-          }
-        },
-        "d7696939-47e4-410d-9584-55d9659a7c55": {
-          "type": "que_ans",
-          "settings": {
-            "title": "What services and offerings can I use credits for?",
-            "detail": "<p>You can use standard S&T credits for:</p><ul><li>Any yoga, Pilates, HIIT, and Ride classes</li><li>Small Group Training sessions at Front/Spadina</li><li>Sauna sessions at Yonge/Shuter</li><li>Pool deck sessions at Tonic Spa</li><li>Private Hot/Cold Therapy suite at Tonic Spa</li><li>Red Light Therapy at Tonic Spa</li><li>Lymphatic Compression Therapy at Tonic Spa</li></ul><p>Exceptions apply - certain credit types allow booking for specific services only, including but not limited to milestone credits or gifted credits.</p><p>Unlimited member guest credits are valid only for group fitness classes.<br/><br/>Additional products and services are available for purchase with credit card, including massages & wellness services, retail, café and bar items.</p>"
-          }
-        },
         "ab3a0bf7-e7e2-4232-9cf4-65d41c889a85": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "Can I use my credits to book classes or services for other people?",
             "detail": "<p>Absolutely – the more the merrier! You can use class credits to book classes for a guest, and Unlimited members can use guest credits.<br/>As with all class reservations, our standard 12-hour no-show / late cancellation policy also applies to guest reservations. If your guest does not show up for class you booked for them, your account is subject to the no-show penalty as per our studio policy.</p>"
-          }
-        },
-        "4cdf833b-812d-4a9a-84a9-bc2b229a449d": {
-          "type": "que_ans",
-          "settings": {
-            "title": "Do credits expire?",
-            "detail": "<p>Credits expire 3 months after purchase. Intro pack credits expire 1 month after purchase. Exceptions may apply, including Fundraiser Class Credits which expire at the conclusion of the fundraiser class / event.</p>"
-          }
-        },
-        "que_ans_J97CWR": {
-          "type": "que_ans",
-          "settings": {
-            "title": "I'm an Unlimited member. What can I use my guest credit for?",
-            "detail": "<p>Unlimited member guest credits are valid for booking guests in group fitness classes (yoga, Pilates, HIIT, and ride classes).</p>"
           }
         },
         "03005134-1b24-4879-8a85-c338503355d3": {
@@ -369,15 +382,17 @@
         "title_W6aazN",
         "que_ans_EePXQP",
         "que_ans_DkfcPE",
-        "title_zYcA3w",
         "que_ans_G9aRwm",
         "6beaa2ad-e3e7-4b02-9db6-25c2cae1a7bc",
-        "e491b7f7-2e86-42db-9739-797a6fbb5195",
-        "7064720d-0420-40f1-803f-d9b0235d07ef",
-        "d7696939-47e4-410d-9584-55d9659a7c55",
-        "ab3a0bf7-e7e2-4232-9cf4-65d41c889a85",
+        "que_ans_3BAmnt",
+        "que_ans_nCV7JP",
         "4cdf833b-812d-4a9a-84a9-bc2b229a449d",
+        "d7696939-47e4-410d-9584-55d9659a7c55",
+        "title_zYcA3w",
         "que_ans_J97CWR",
+        "7064720d-0420-40f1-803f-d9b0235d07ef",
+        "e491b7f7-2e86-42db-9739-797a6fbb5195",
+        "ab3a0bf7-e7e2-4232-9cf4-65d41c889a85",
         "03005134-1b24-4879-8a85-c338503355d3",
         "df72df29-8093-40fa-83f3-c8def3f9bcfa",
         "3ba96673-528e-457a-8524-171c4ebf84ac",
