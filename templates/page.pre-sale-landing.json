@@ -276,7 +276,7 @@
             "price": "$490",
             "cost_per_class": "$16.33",
             "single_credit_cost": "",
-            "access": "Limit of 1 per day: Reformer only",
+            "access": "Limit of 30 classes per month: Reformer only",
             "guest_credit": "None",
             "min_commitment": "2 months",
             "expiry": "30 days notice",
@@ -291,7 +291,7 @@
             "price": "$270 for 12 classes",
             "cost_per_class": "$22.50",
             "single_credit_cost": "",
-            "access": "12 classes per month: Reformer only",
+            "access": "Limit of 12 classes per month: Reformer only",
             "guest_credit": "None",
             "min_commitment": "3 months",
             "expiry": "Integer scelerisque",
@@ -306,9 +306,24 @@
             "price": "$399 for 30 classes",
             "cost_per_class": "$13.30",
             "single_credit_cost": "",
-            "access": "Limit of 1 class per day",
+            "access": "Limit of 1 class per day: Reformer only",
             "guest_credit": "Integer scelerisque",
             "min_commitment": "Integer scelerisque",
+            "expiry": "Integer scelerisque",
+            "cancel_anytime": false,
+            "price_protected": false
+          }
+        },
+        "competitor_zk4MVf": {
+          "type": "competitor",
+          "settings": {
+            "name": "Altea",
+            "price": "$270 for 12 classes",
+            "cost_per_class": "$22.50",
+            "single_credit_cost": "",
+            "access": "Limit of 6 classes biweekly: Reformer only",
+            "guest_credit": "None",
+            "min_commitment": "12 months",
             "expiry": "Integer scelerisque",
             "cancel_anytime": false,
             "price_protected": false
@@ -328,21 +343,6 @@
             "cancel_anytime": false,
             "price_protected": false
           }
-        },
-        "competitor_zk4MVf": {
-          "type": "competitor",
-          "settings": {
-            "name": "Altea",
-            "price": "$270 for 12 classes",
-            "cost_per_class": "$22.50",
-            "single_credit_cost": "",
-            "access": "6 classes biweekly: Reformer only",
-            "guest_credit": "None",
-            "min_commitment": "12 months",
-            "expiry": "Integer scelerisque",
-            "cancel_anytime": false,
-            "price_protected": false
-          }
         }
       },
       "block_order": [
@@ -350,8 +350,8 @@
         "competitor_mbeYxM",
         "competitor_UqnjhR",
         "competitor_XjfHRf",
-        "competitor_QE9aBD",
-        "competitor_zk4MVf"
+        "competitor_zk4MVf",
+        "competitor_QE9aBD"
       ],
       "settings": {
         "title": "COMPARE MEMBERSHIPS",
