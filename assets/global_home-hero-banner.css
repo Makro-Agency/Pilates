@@ -287,7 +287,7 @@ form.newsletter-form:not(#id) .newsletter-form__button:hover {
         transform: rotate(148.503deg);
         pointer-events: none;
     }
-    .global_home-hero-banner .banner-contain .heading {font-size: 38px;}
+    /* .global_home-hero-banner .banner-contain .heading {font-size: 38px;} */
 }
 
 
