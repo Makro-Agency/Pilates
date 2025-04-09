@@ -261,7 +261,7 @@ a[href^="tel:"]{
     padding-left: 40px;
   }
 }
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1250px){
   .section-padding{
     padding-top: 80px;
     padding-bottom: 80px;

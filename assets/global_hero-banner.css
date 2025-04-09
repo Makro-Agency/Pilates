@@ -121,7 +121,7 @@
     text-align: center;
     font-family: var(--font-heading-family);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 100%;
     letter-spacing: 0.32px;
     text-transform: uppercase;
@@ -140,7 +140,7 @@
     font-family: var(--font-heading-family);
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 100%;
     letter-spacing: 0.32px;
     text-transform: uppercase;
@@ -168,6 +168,11 @@
         flex-basis: 50%;
     }
 }
+@media only screen and (max-width: 1250px) {
+    .hero-banner-1 .countdown-timer span.number {
+        font-size: 40px;
+    }
+}
 @media only screen and (max-width: 989px) {
     .hero-banner-1 .desktop-img { display: none; }
     .hero-banner-1 .mobile-img { display: block; }
@@ -185,9 +190,6 @@
     }
     .hero-banner-1 .banner-content > * {
         flex-basis: auto;
-    }
-    .hero-banner-1 .countdown-timer span.number {
-        font-size: 40px;
     }
     .hero-banner-1 .banner-date {
         align-items: center;
