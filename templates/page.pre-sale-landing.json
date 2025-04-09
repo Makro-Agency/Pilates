@@ -287,7 +287,7 @@
         "competitor_UqnjhR": {
           "type": "competitor",
           "settings": {
-            "name": "Solis - 12 classes",
+            "name": "Solis",
             "price": "$270 for 12 classes",
             "cost_per_class": "$22.50",
             "single_credit_cost": "",
@@ -302,7 +302,7 @@
         "competitor_zk4MVf": {
           "type": "competitor",
           "settings": {
-            "name": "Altea - 12 Classes",
+            "name": "Altea",
             "price": "$270 for 12 classes",
             "cost_per_class": "$22.50",
             "single_credit_cost": "",
@@ -317,7 +317,7 @@
         "competitor_XjfHRf": {
           "type": "competitor",
           "settings": {
-            "name": "Jaybird - 30 classes",
+            "name": "Jaybird",
             "price": "$399 for 30 classes",
             "cost_per_class": "$13.30",
             "single_credit_cost": "",
@@ -332,7 +332,7 @@
         "competitor_QE9aBD": {
           "type": "competitor",
           "settings": {
-            "name": "Studio Lagree - 50 CLASSES",
+            "name": "Studio Lagree",
             "price": "$1,300 for 50 classes",
             "cost_per_class": "$26",
             "single_credit_cost": "",
