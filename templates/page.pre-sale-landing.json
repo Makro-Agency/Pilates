@@ -364,7 +364,7 @@
         "cancel_anytime_label": "Cancel anytime",
         "price_protected_label": "Price Protected",
         "expiry_label": "",
-        "info_text": "For more information on memberships, access, billing, account activation, and more, please visit our FAQ page.",
+        "info_text": "For more information on memberships, access, billing, account activation and more, please visit our FAQ page.",
         "link_Label": "VIEW FAQs",
         "section_id": "FAQ",
         "link_Label_1": "Explore all Memberships",
@@ -745,7 +745,7 @@
           "type": "faq",
           "settings": {
             "question": "WHERE IS REFORMD LOCATED?",
-            "ans": "<p>Reformd is located at 486 Front St. W on the Terrace Level at The Well, just across the pedestrian bridge from Sweat and Tonic.</p>"
+            "ans": "<p>Reformd is located at 486 Front St. W on the Terrace Level at The Well, across from S&T accessible via the pedestrian bridge.</p>"
           }
         },
         "faq_fdxd9y": {
