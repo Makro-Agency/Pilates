@@ -41,7 +41,7 @@
       "settings": {
         "desktop_logo": "shopify://shop_images/Vector.svg",
         "mobile_logo": "shopify://shop_images/Vector_8.png",
-        "link_text": "",
+        "link_text": "Contact us",
         "add_header_link": "shopify://pages/contact",
         "btn_account": true,
         "btn_account_text": "My Account",
