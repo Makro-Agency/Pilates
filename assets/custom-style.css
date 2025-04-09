@@ -457,8 +457,10 @@ img {
   margin: 16px 0 0;
 }
 .text-center {text-align: center;}
-.template-index main#MainContent {
-  overflow-x: hidden;
+main#MainContent {
+  overflow-x: hidden; 
+}
+main#MainContent:not(.dark--false) {
   background-color: #000;
 }
 @media only screen and (min-width: 768px) {
