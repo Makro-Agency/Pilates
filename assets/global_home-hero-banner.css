@@ -341,3 +341,7 @@ form.newsletter-form:not(#id) .field input.field__input:focus {
     background: #ffffff3b;
 }
 /* Custom form */
+
+.banner-contain .heading, .newsletter__wrapper h4 {
+    padding-top: 0.025em;
+}
