@@ -224,7 +224,28 @@ body.mobile-toggle--show {
     }
 }
 
-/* drak header */
+/* drak header */ 
+    main.dark--false {        
+        min-height: calc(100vh - 6.4rem - 20.5rem);
+    }
+    main.dark--false .section-padding:first-child {
+        padding-top: 0;
+    }
+    @media only screen and (min-width: 990px) {
+        main.dark--false {            
+            min-height: calc(100vh - 6.4rem - 10.4rem);
+        }
+    }
+    @media only screen and (min-width: 1200px) {
+        main.dark--false {
+            margin-top: 13.9rem;
+            min-height: calc(100vh - 13.9rem - 10.4rem);
+        }        
+        .custom-header.dark {            
+            min-height: 98px;
+            max-height: unset;
+        }
+    }
     .custom-header.dark {
         background: #fff;
     }
