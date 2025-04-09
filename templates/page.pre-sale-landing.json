@@ -257,13 +257,13 @@
         "competitor_4itwfe": {
           "type": "competitor",
           "settings": {
-            "name": "REFORMD",
-            "price": "$12",
-            "cost_per_class": "$12",
+            "name": "REFORMD + THE WELL UNLIMITED",
+            "price": "$435 unlimited",
+            "cost_per_class": "$14.50",
             "single_credit_cost": "$12",
-            "access": "Integer scelerisque",
-            "guest_credit": "Integer scelerisque",
-            "min_commitment": "Integer scelerisque",
+            "access": "Unlimited classes: Megaformer, Yoga, Pilates, Ride, HIIT",
+            "guest_credit": "1 per month",
+            "min_commitment": "No commitment",
             "expiry": "Integer scelerisque",
             "cancel_anytime": true,
             "price_protected": true
@@ -273,29 +273,14 @@
           "type": "competitor",
           "settings": {
             "name": "Lagree Plus",
-            "price": "$12",
-            "cost_per_class": "$12",
+            "price": "$490 for 30 classes",
+            "cost_per_class": "$16.33",
             "single_credit_cost": "",
-            "access": "Integer scelerisque",
-            "guest_credit": "Integer scelerisque",
-            "min_commitment": "Integer scelerisque",
-            "expiry": "Integer scelerisque",
+            "access": "Limit of 30 classes per month: Reformer only",
+            "guest_credit": "None",
+            "min_commitment": "2 months",
+            "expiry": "30 days notice",
             "cancel_anytime": false,
-            "price_protected": true
-          }
-        },
-        "competitor_QE9aBD": {
-          "type": "competitor",
-          "settings": {
-            "name": "Studio Lagree",
-            "price": "$12",
-            "cost_per_class": "$12",
-            "single_credit_cost": "",
-            "access": "Integer scelerisque",
-            "guest_credit": "Integer scelerisque",
-            "min_commitment": "Integer scelerisque",
-            "expiry": "Integer scelerisque",
-            "cancel_anytime": true,
             "price_protected": false
           }
         },
@@ -303,27 +288,12 @@
           "type": "competitor",
           "settings": {
             "name": "Solis",
-            "price": "$12",
-            "cost_per_class": "$12",
+            "price": "$270 for 12 classes",
+            "cost_per_class": "$22.50",
             "single_credit_cost": "",
-            "access": "Integer scelerisque",
-            "guest_credit": "Integer scelerisque",
-            "min_commitment": "Integer scelerisque",
-            "expiry": "Integer scelerisque",
-            "cancel_anytime": true,
-            "price_protected": false
-          }
-        },
-        "competitor_XjfHRf": {
-          "type": "competitor",
-          "settings": {
-            "name": "Jaybird",
-            "price": "$12",
-            "cost_per_class": "$12",
-            "single_credit_cost": "",
-            "access": "Integer scelerisque",
-            "guest_credit": "Integer scelerisque",
-            "min_commitment": "Integer scelerisque",
+            "access": "Limit of 12 classes per month: Reformer only",
+            "guest_credit": "None",
+            "min_commitment": "3 months",
             "expiry": "Integer scelerisque",
             "cancel_anytime": false,
             "price_protected": false
@@ -333,13 +303,43 @@
           "type": "competitor",
           "settings": {
             "name": "Altea",
-            "price": "$12",
-            "cost_per_class": "$12",
+            "price": "$270 for 12 classes",
+            "cost_per_class": "$22.50",
             "single_credit_cost": "",
-            "access": "Integer scelerisque",
-            "guest_credit": "Integer scelerisque",
-            "min_commitment": "Integer scelerisque",
+            "access": "Limit of 6 classes biweekly: Reformer only",
+            "guest_credit": "None",
+            "min_commitment": "12 months",
             "expiry": "Integer scelerisque",
+            "cancel_anytime": false,
+            "price_protected": false
+          }
+        },
+        "competitor_XjfHRf": {
+          "type": "competitor",
+          "settings": {
+            "name": "Jaybird",
+            "price": "$399 for 30 classes",
+            "cost_per_class": "$13.30",
+            "single_credit_cost": "",
+            "access": "Limit of 1 class per day: Reformer only",
+            "guest_credit": "None",
+            "min_commitment": "2 months",
+            "expiry": "Integer scelerisque",
+            "cancel_anytime": false,
+            "price_protected": false
+          }
+        },
+        "competitor_QE9aBD": {
+          "type": "competitor",
+          "settings": {
+            "name": "Studio Lagree",
+            "price": "$1,300 for 50 classes",
+            "cost_per_class": "$26",
+            "single_credit_cost": "",
+            "access": "Megaformer only",
+            "guest_credit": "N/A",
+            "min_commitment": "N/A",
+            "expiry": "2 weeks",
             "cancel_anytime": false,
             "price_protected": false
           }
@@ -348,13 +348,13 @@
       "block_order": [
         "competitor_4itwfe",
         "competitor_mbeYxM",
-        "competitor_QE9aBD",
         "competitor_UqnjhR",
+        "competitor_zk4MVf",
         "competitor_XjfHRf",
-        "competitor_zk4MVf"
+        "competitor_QE9aBD"
       ],
       "settings": {
-        "title": "COMPETITOR COMPARISON",
+        "title": "COMPARE MEMBERSHIPS",
         "price_label": "price",
         "cost_per_class_label": "Average Cost per class",
         "single_credit_cost_label": "",
@@ -677,7 +677,7 @@
           "type": "faq",
           "settings": {
             "question": "Unlimited means unlimited",
-            "ans": "<p>Keep calm and sweat on - with an Unlimited membership, there are no daily limits for how many classes you can take. </p>"
+            "ans": "<p>Keep calm and sweat on - with an Unlimited membership, there are no daily, weekly, or monthly limits for how many classes you can take. </p>"
           }
         },
         "faq_4hTkPM": {
