@@ -284,6 +284,21 @@
             "price_protected": false
           }
         },
+        "competitor_XjfHRf": {
+          "type": "competitor",
+          "settings": {
+            "name": "Jaybird",
+            "price": "$399 for 30 classes",
+            "cost_per_class": "$13.30",
+            "single_credit_cost": "",
+            "access": "Limit of 1 class per day: Reformer only",
+            "guest_credit": "None",
+            "min_commitment": "2 months",
+            "expiry": "Integer scelerisque",
+            "cancel_anytime": false,
+            "price_protected": false
+          }
+        },
         "competitor_UqnjhR": {
           "type": "competitor",
           "settings": {
@@ -314,21 +329,6 @@
             "price_protected": false
           }
         },
-        "competitor_XjfHRf": {
-          "type": "competitor",
-          "settings": {
-            "name": "Jaybird",
-            "price": "$399 for 30 classes",
-            "cost_per_class": "$13.30",
-            "single_credit_cost": "",
-            "access": "Limit of 1 class per day: Reformer only",
-            "guest_credit": "None",
-            "min_commitment": "2 months",
-            "expiry": "Integer scelerisque",
-            "cancel_anytime": false,
-            "price_protected": false
-          }
-        },
         "competitor_QE9aBD": {
           "type": "competitor",
           "settings": {
@@ -348,9 +348,9 @@
       "block_order": [
         "competitor_4itwfe",
         "competitor_mbeYxM",
+        "competitor_XjfHRf",
         "competitor_UqnjhR",
         "competitor_zk4MVf",
-        "competitor_XjfHRf",
         "competitor_QE9aBD"
       ],
       "settings": {
