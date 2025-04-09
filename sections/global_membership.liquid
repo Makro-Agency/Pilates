@@ -27,7 +27,7 @@
                         {% endif %}
                         {% if block.settings.benefits != blank %}
                           <div class="benefits">
-                            <div class="h5 heading">Benefits</div>
+                            <div class="h5 heading">{{ block.settings.title_benefits | default: 'Benefits' }}</div>
                             <div class="benefits-list">{{ block.settings.benefits }}</div>
                           </div>
                         {% endif %}
@@ -54,7 +54,7 @@
                           <div class="dropdown-content">
                             {% if block.settings.benefits != blank %}
                               <div class="benefits">
-                                <div class="h5 heading">Benefits</div>
+                                <div class="h5 heading">{{ block.settings.title_benefits | default: 'Benefits' }}</div>
                                 <div class="benefits-list">{{ block.settings.benefits }}</div>
                               </div>
                             {% endif %}
@@ -140,6 +140,13 @@
           "type": "text",
           "label": "Original Price",
           "id": "original_price"
+        },
+        {
+          "type": "text",
+          "label": "Enter title",
+          "id": "title_benefits",
+          "default":"Benefits",
+          "info": "If files were empty it will take 'Benefits' as defaut title"
         },
         {
           "type": "richtext",
