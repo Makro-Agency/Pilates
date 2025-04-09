@@ -30,7 +30,7 @@
     gap: 60px;
     align-items: center;
 }
-@media only screen and (max-width: 1199px) { 
+@media only screen and (max-width: 1250px) { 
     .footer-link a, .copyright__content { font-size: 16px; }
     .footer-link-wrap {gap: 30px;}
 }
