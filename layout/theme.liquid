@@ -149,11 +149,11 @@
 
     {% sections 'header-group' %}
     {%- liquid            
-      assign has_drakness = true
-      assign bright_temp = 'faq,customers' | split:','
+      assign has_drakness = false
+      assign bright_temp = 'index,pre-sale-landing' | split:','
       for bt in bright_temp
         if template contains bt
-          assign has_drakness = false
+          assign has_drakness = true
           break
         endif
       endfor
