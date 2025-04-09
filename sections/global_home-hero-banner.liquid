@@ -9,7 +9,7 @@
 
 {{ 'global_home-hero-banner.css' | asset_url | stylesheet_tag }}
 {%- style -%}
-  #Banner-{{ section.id }}::after {
+  #Banner-{{ section.id }}::before {
     opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
   }
 {%- endstyle -%}
