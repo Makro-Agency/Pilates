@@ -666,6 +666,13 @@
             "ans": "<p>Choose what suits you best - drop in on credits, or get the ultimate freedom with an Unlimited membership. Access Reformd, Sweat and Tonic, and biohacking at Tonic Spa with one account in the S&T app.</p>"
           }
         },
+        "faq_fDa8A4": {
+          "type": "faq",
+          "settings": {
+            "question": "PREMIUM FULL-SERVICE AMENITIES",
+            "ans": "<p>Heated flooring, changing rooms, showers, towel service and more. Come as you are, and we'll do the rest</p>"
+          }
+        },
         "faq_GJQnjH": {
           "type": "faq",
           "settings": {
@@ -686,21 +693,14 @@
             "question": "NO INITIATION FEES, CANCEL ANYTIME",
             "ans": "<p>No initiation fees, no annual contracts, cancel anytime with no minimum notice periods.</p>"
           }
-        },
-        "faq_fDa8A4": {
-          "type": "faq",
-          "settings": {
-            "question": "FULL-SERVICE AMENITIES",
-            "ans": "<p>Heated flooring, changing rooms, showers, towel service and more. Come as you are, and we'll do the rest</p>"
-          }
         }
       },
       "block_order": [
         "faq_Xjf4Ke",
+        "faq_fDa8A4",
         "faq_GJQnjH",
         "faq_4hTkPM",
-        "faq_Y4YUqm",
-        "faq_fDa8A4"
+        "faq_Y4YUqm"
       ],
       "settings": {
         "title": "THE PREMIUM S&amp;T EXPERIENCE",
