@@ -797,7 +797,7 @@
         "title": "REFORMD FAQ",
         "sort_description": "Get answers to questions about our pre-opening sale, memberships, access, and more.",
         "link_label": "see full FAQs",
-        "link_url": "#",
+        "link_url": "shopify://pages/faq",
         "padding_top": 160,
         "padding_bottom": 160
       }
