@@ -64,8 +64,17 @@ document.querySelectorAll('[data-count-end-date]').forEach(function(element, ind
 });
 function callElementCount(element){
   var countDown = new Date(element.dataset.countEndDate);
-  console.log('countDown', countDown);
+  var setToEndofDay = true;
+  if( element.dataset.countEndDate.indexOf('AM') > -1 || element.dataset.countEndDate.indexOf('PM') > -1 ){
+    setToEndofDay = false;
+  }  
   var endOfDay = new Date(countDown.getFullYear(), countDown.getMonth(), countDown.getDate(), 23, 59, 59, 999);
+  if( !setToEndofDay ){
+    endOfDay = countDown;
+  }
+  console.log('countDown', countDown);
+  console.log('setToEndofDay', setToEndofDay);
+  console.log('endOfDay', endOfDay);
   //var endOfDay = new Date(countDown);
   var countDownObj = {
     countDown: new Date(endOfDay).getTime(),
