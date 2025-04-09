@@ -112,15 +112,16 @@
         "4cdf833b-812d-4a9a-84a9-bc2b229a449d": {
           "type": "que_ans",
           "settings": {
-            "title": "If I purchase a membership or monthly credit pack during the pre-opening sale, how long do I get to keep my rate for?",
-            "detail": "<p>As always, just like at S&T, you get to keep your rate forever, as long as you don’t cancel your membership.</p>"
-          }
-        },
-        "d7696939-47e4-410d-9584-55d9659a7c55": {
-          "type": "que_ans",
-          "settings": {
             "title": "I’ve taken a class at S&T before. Can I purchase the Reformd 3 for $50 intro pack?",
             "detail": "<p>Yes, you’re eligible to purchase a <strong>Reformd 3 for $50 intro pack</strong> during our pre-opening sale. There is a limit of 1 per customer for intro packs. Any credits purchased during the pre-opening sale will be valid for use at Reformd only.</p><p>This is applicable during the Reformd pre-opening sale only. After Reformd opens, the <strong>standard 3 for $60 intro pack</strong> will be valid for first-timers only at both S&T and Reformd.</p>"
+          }
+        },
+        "ab3a0bf7-e7e2-4232-9cf4-65d41c889a85": {
+          "type": "que_ans",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use my credits to book classes or services for other people?",
+            "detail": "<p>Absolutely – the more the merrier! You can use class credits to book classes for a guest, and Unlimited members can use guest credits.<br/>As with all class reservations, our standard 12-hour no-show / late cancellation policy also applies to guest reservations. If your guest does not show up for class you booked for them, your account is subject to the no-show penalty as per our studio policy.</p>"
           }
         },
         "title_zYcA3w": {
@@ -143,19 +144,18 @@
             "detail": "<p>Memberships and monthly credit packs can be frozen for a maximum of 14 days at a time every six months, and you can request your first freeze at any time after starting your membership. At the end of each freeze, 6 months must pass before you are eligible for another. Eligibility does not reset if you cancel and purchase a new membership. Your membership start date is the very first date you signed up for a membership.</p>"
           }
         },
+        "d7696939-47e4-410d-9584-55d9659a7c55": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Are purchases refundable?",
+            "detail": "<p>No, just like at S&T, purchases are non-refundable.</p>"
+          }
+        },
         "e491b7f7-2e86-42db-9739-797a6fbb5195": {
           "type": "title",
           "disabled": true,
           "settings": {
             "title": "CLASS CREDITS & MEMBERSHIPS"
-          }
-        },
-        "ab3a0bf7-e7e2-4232-9cf4-65d41c889a85": {
-          "type": "que_ans",
-          "disabled": true,
-          "settings": {
-            "title": "Can I use my credits to book classes or services for other people?",
-            "detail": "<p>Absolutely – the more the merrier! You can use class credits to book classes for a guest, and Unlimited members can use guest credits.<br/>As with all class reservations, our standard 12-hour no-show / late cancellation policy also applies to guest reservations. If your guest does not show up for class you booked for them, your account is subject to the no-show penalty as per our studio policy.</p>"
           }
         },
         "03005134-1b24-4879-8a85-c338503355d3": {
@@ -387,12 +387,12 @@
         "que_ans_3BAmnt",
         "que_ans_nCV7JP",
         "4cdf833b-812d-4a9a-84a9-bc2b229a449d",
-        "d7696939-47e4-410d-9584-55d9659a7c55",
+        "ab3a0bf7-e7e2-4232-9cf4-65d41c889a85",
         "title_zYcA3w",
         "que_ans_J97CWR",
         "7064720d-0420-40f1-803f-d9b0235d07ef",
+        "d7696939-47e4-410d-9584-55d9659a7c55",
         "e491b7f7-2e86-42db-9739-797a6fbb5195",
-        "ab3a0bf7-e7e2-4232-9cf4-65d41c889a85",
         "03005134-1b24-4879-8a85-c338503355d3",
         "df72df29-8093-40fa-83f3-c8def3f9bcfa",
         "3ba96673-528e-457a-8524-171c4ebf84ac",
