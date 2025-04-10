@@ -443,7 +443,7 @@
       ],
       "settings": {
         "title": "FAQS",
-        "padding_top": 100,
+        "padding_top": 200,
         "padding_bottom": 100
       }
     }
