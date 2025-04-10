@@ -50,9 +50,10 @@
 }
 
 .wellness-faq-accordion .wellness-accordion-box .wellness-accordion-title {
-	padding: 30px 20px 20px 0;
+	padding: 30px 40px 20px 0;
 	cursor: pointer;
 	gap: 30px;
+	position: relative;
 }
 
 .wellness-faq-accordion .wellness-accordion-box .text-wrap p {
@@ -78,6 +79,11 @@
 	transition: all .3s ease 0s;
 	width: 20px;
 	height: 20px;
+	position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .wellness-accordion-box .wellness-accordion-title.active svg {
@@ -190,6 +196,8 @@
 	flex-direction: column;
     gap: 32px;
 	max-width: 42%;
+	padding-top: 0;
+    padding-bottom: 0;
 	z-index: 2;
 }
 .allaccess-accordian .image figure::after {
@@ -209,9 +217,17 @@
         padding-right: 10%;
     }
 	.allaccess-accordian .wellness-faq-accordion {
-		max-width: 100%;
+		max-width: 60%;
 		padding-top: 0;
 		padding-bottom: 0;
+	}
+	.allaccess-accordian .image figure {
+		padding-bottom: 60%;
+	}
+}
+@media only screen and (max-width: 1399px) {
+	.allaccess-accordian .image figure {
+		padding-bottom: 80%;
 	}
 }
 @media only screen and (max-width: 1024px) {
@@ -230,6 +246,8 @@
 	.allaccess-accordian .wellness-faq-accordion {
 		position: static;
 		max-width: 100%;
+		padding-top: 40px;
+        padding-bottom: 40px;
 	}
 	.section-head {
 		max-width: 100%;
@@ -257,8 +275,9 @@
 		padding-bottom: 8px;
 	}
 	.wellness-faq-accordion .wellness-accordion-box .wellness-accordion-title {
-		padding: 24px 0 16px;
+		padding: 32px 30px 32px 0;
 	} 
+	.wellness-accordion-box .wellness-accordion-title svg { right: 0; }
 
 	.wellness-faq-accordion {
 		display: flex;

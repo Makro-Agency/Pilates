@@ -1,7 +1,7 @@
 {{ 'global_header.css' | asset_url | stylesheet_tag }}
 {%- liquid            
   assign has_drakness = 'dark'
-  assign bright_temp = 'pre-sale-landing,index' | split:','
+  assign bright_temp = 'pre-sale-landing,index,faq' | split:','
   for bt in bright_temp
     if template contains bt
       assign has_drakness = ''

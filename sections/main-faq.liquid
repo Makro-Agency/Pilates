@@ -77,7 +77,7 @@
             {% if forloop.index > forloopIndex %}
               {% if block.type == 'que_ans' %}
               <div class="tab" {{ block.shopify_attributes }}>
-                <h3 class="tab-title uppercase h5">{{ block.settings.title }} {%- render 'icon-plus-2' -%}</h3>
+                <h3 class="tab-title uppercase h5">{{ block.settings.title }} {% render 'icon-faq-arrows' %}</h3>
                 <div class="tabWrapper rte">
                   {{ block.settings.detail }}
                 </div>
@@ -160,21 +160,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 100,
+      "max": 200,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
-      "default": 100
+      "default": 140
     },
     {
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 100,
+      "max": 200,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
-      "default": 100
+      "default": 140
     }
   ],
   "blocks":[
