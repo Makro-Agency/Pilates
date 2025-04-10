@@ -257,6 +257,21 @@
     "global_competitor_comparison_iiBDkL": {
       "type": "global_competitor-comparison",
       "blocks": {
+        "competitor_TVJq8D": {
+          "type": "competitor",
+          "settings": {
+            "name": "REFORMD",
+            "price": "$288 unlimited",
+            "cost_per_class": "$9.60",
+            "single_credit_cost": "$12",
+            "access": "Unlimited classes: Megaformer only",
+            "guest_credit": "Integer scelerisque",
+            "min_commitment": "Integer scelerisque",
+            "expiry": "Integer scelerisque",
+            "cancel_anytime": false,
+            "price_protected": false
+          }
+        },
         "competitor_4itwfe": {
           "type": "competitor",
           "settings": {
@@ -350,6 +365,7 @@
         }
       },
       "block_order": [
+        "competitor_TVJq8D",
         "competitor_4itwfe",
         "competitor_UqnjhR",
         "competitor_XjfHRf",
