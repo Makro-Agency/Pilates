@@ -1047,6 +1047,10 @@ document.addEventListener('DOMContentLoaded', function() {
           dropdownContent.style.maxHeight = dropdownContent.scrollHeight + 'px';
           dropdownContent.style.opacity = '1';
         }
+        
+        if(this.querySelector('.toggle-wrap.active')){
+          this.querySelector('.toggle-wrap.active').classList.toggle('active');
+        }
       }
     });
   });
