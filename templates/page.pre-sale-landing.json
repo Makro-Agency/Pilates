@@ -87,7 +87,7 @@
       ],
       "settings": {
         "title": "THE BEST OF BOUTIQUE FITNESS & WELLNESS",
-        "content": "Lagree is not Pilates, and the Megaformer is not a reformer. ⁠The Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts.⁠ Step inside REFORMD for a Lagree experience unlike any other."
+        "content": "The Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts.⁠ Step inside Reformd for a Lagree experience unlike any other."
       }
     },
     "global_sudio_classes_qkDydH": {
@@ -199,11 +199,11 @@
           "settings": {
             "title": "Reformd Unlimited membership",
             "description": "Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always.",
-            "sale_label": "20% OFF",
+            "sale_label": "20% OFF REFORMD UNLIMITED",
             "sale_price": "$288",
             "original_price": "$360",
-            "title_benefits": "Benefits",
-            "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>1 guest credit per month</li></ul>",
+            "title_benefits": "INCLUDES",
+            "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>1 guest credit per month for Reformd</li></ul>",
             "total_membership_number": "100",
             "remain_membership_number": "100",
             "button_text": "",
@@ -215,11 +215,11 @@
           "settings": {
             "title": "Reformd + The Well Unlimited membership",
             "description": "Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always.",
-            "sale_label": "20% OFF",
+            "sale_label": "S&T Unlimited + 20% OFF REFORMD UNLIMITED",
             "sale_price": "$435",
             "original_price": "$470",
-            "title_benefits": "Benefits",
-            "benefits": "<ul><li>Unlimited access to classes at Reformd</li><li>Unlimited yoga, Pilates, ride & HIIT classes at Front/Spadina and Yonge/Shuter</li><li>Access to Tonic House at Front/Spadina and Yonge/Shuter</li><li>24-hour priority booking</li><li>1 guest credit per month</li></ul>",
+            "title_benefits": "INCLUDES",
+            "benefits": "<ul><li>Unlimited access to classes at Reformd</li><li>Unlimited yoga, Pilates, ride & HIIT classes at Front/Spadina and Yonge/Shuter</li><li>Access to Tonic House at Front/Spadina and Yonge/Shuter</li><li>24-hour priority booking</li><li>2 guest credits per month (Reformd + S&T)</li></ul>",
             "total_membership_number": "50",
             "remain_membership_number": "50",
             "button_text": "TEST BUTTON",
@@ -229,13 +229,13 @@
         "membership_card_GJKEWW": {
           "type": "membership_card",
           "settings": {
-            "title": "S&T Unlimited membership add-on",
+            "title": "Reformd Unlimited add-on for S&T memberships",
             "description": "Already have a S&T Unlimited membership? Get a Reformd Unlimited membership add-on for 50% off.\n<br>Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always.",
             "sale_label": "Additional 20% off",
             "sale_price": "$145",
             "original_price": "$180",
-            "title_benefits": "Benefits",
-            "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>1 guest credit per month</li><li>Plus all the benefits of your S&T Unlimited membership</li></ul>",
+            "title_benefits": "INCLUDES",
+            "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>1 guest credit per month for Reformd</li><li>Plus all the benefits of your S&T Unlimited membership</li></ul>",
             "total_membership_number": "50",
             "remain_membership_number": "50",
             "button_text": "",
@@ -251,7 +251,7 @@
       "settings": {
         "section_id": "membership",
         "main_title": "Memberships",
-        "main_description": "Unlimited means unlimited - save 20% on unlimited access to classes at Reformd, plus 50% off membership add-ons for existing S&T Unlimited members."
+        "main_description": "Unlimited means unlimited - save 20% on unlimited access to classes at Reformd, plus 60% off membership add-ons for existing S&T Unlimited members."
       }
     },
     "global_competitor_comparison_iiBDkL": {
@@ -707,7 +707,7 @@
         "faq_Y4YUqm"
       ],
       "settings": {
-        "title": "THE PREMIUM S&amp;T EXPERIENCE",
+        "title": "THE S&amp;T EXPERIENCE",
         "desktop_image": "shopify://shop_images/accordian-desktop.png",
         "mobile_image": "shopify://shop_images/accordian-mob.png",
         "padding_top": 160,
