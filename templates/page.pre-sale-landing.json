@@ -265,11 +265,11 @@
             "cost_per_class": "$9.60",
             "single_credit_cost": "$12",
             "access": "Unlimited classes: Megaformer only",
-            "guest_credit": "Integer scelerisque",
-            "min_commitment": "Integer scelerisque",
+            "guest_credit": "1 per month",
+            "min_commitment": "No commitment",
             "expiry": "Integer scelerisque",
-            "cancel_anytime": false,
-            "price_protected": false
+            "cancel_anytime": true,
+            "price_protected": true
           }
         },
         "competitor_4itwfe": {
@@ -280,11 +280,41 @@
             "cost_per_class": "$14.50",
             "single_credit_cost": "$12",
             "access": "Unlimited classes: Megaformer, Yoga, Pilates, Ride, HIIT",
-            "guest_credit": "1 per month",
+            "guest_credit": "2 per month (Reformd + S&T)",
             "min_commitment": "No commitment",
             "expiry": "Integer scelerisque",
             "cancel_anytime": true,
             "price_protected": true
+          }
+        },
+        "competitor_mbeYxM": {
+          "type": "competitor",
+          "settings": {
+            "name": "Lagree Plus",
+            "price": "$490 for 30 classes",
+            "cost_per_class": "$16.33",
+            "single_credit_cost": "",
+            "access": "Limit of 30 classes per month: Megaformer only",
+            "guest_credit": "None",
+            "min_commitment": "2 months",
+            "expiry": "30 days notice",
+            "cancel_anytime": false,
+            "price_protected": false
+          }
+        },
+        "competitor_QE9aBD": {
+          "type": "competitor",
+          "settings": {
+            "name": "Studio Lagree",
+            "price": "$1,300 for 50 classes",
+            "cost_per_class": "$26",
+            "single_credit_cost": "",
+            "access": "Megaformer only",
+            "guest_credit": "N/A",
+            "min_commitment": "N/A",
+            "expiry": "2 weeks",
+            "cancel_anytime": false,
+            "price_protected": false
           }
         },
         "competitor_UqnjhR": {
@@ -317,32 +347,18 @@
             "price_protected": false
           }
         },
-        "competitor_mbeYxM": {
+        "competitor_gMzhQq": {
           "type": "competitor",
+          "disabled": true,
           "settings": {
-            "name": "Lagree Plus",
-            "price": "$490 for 30 classes",
-            "cost_per_class": "$16.33",
-            "single_credit_cost": "",
-            "access": "Limit of 30 classes per month: Reformer only",
-            "guest_credit": "None",
-            "min_commitment": "2 months",
-            "expiry": "30 days notice",
-            "cancel_anytime": false,
-            "price_protected": false
-          }
-        },
-        "competitor_QE9aBD": {
-          "type": "competitor",
-          "settings": {
-            "name": "Studio Lagree",
-            "price": "$1,300 for 50 classes",
-            "cost_per_class": "$26",
-            "single_credit_cost": "",
-            "access": "Megaformer only",
-            "guest_credit": "N/A",
-            "min_commitment": "N/A",
-            "expiry": "2 weeks",
+            "name": "Framework",
+            "price": "$12",
+            "cost_per_class": "$12",
+            "single_credit_cost": "$12",
+            "access": "Integer scelerisque",
+            "guest_credit": "Integer scelerisque",
+            "min_commitment": "Integer scelerisque",
+            "expiry": "Integer scelerisque",
             "cancel_anytime": false,
             "price_protected": false
           }
@@ -367,10 +383,11 @@
       "block_order": [
         "competitor_TVJq8D",
         "competitor_4itwfe",
-        "competitor_UqnjhR",
-        "competitor_XjfHRf",
         "competitor_mbeYxM",
         "competitor_QE9aBD",
+        "competitor_UqnjhR",
+        "competitor_XjfHRf",
+        "competitor_gMzhQq",
         "competitor_zk4MVf"
       ],
       "settings": {
