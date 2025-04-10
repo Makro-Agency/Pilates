@@ -203,7 +203,7 @@
             "sale_price": "$288",
             "original_price": "$360",
             "title_benefits": "INCLUDES",
-            "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>1 guest credit per month for Reformd</li></ul>",
+            "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>1 guest credit per month for Reformd</li><li>10% off Reformd retail store</li></ul>",
             "total_membership_number": "100",
             "remain_membership_number": "100",
             "button_text": "",
@@ -219,7 +219,7 @@
             "sale_price": "$435",
             "original_price": "$470",
             "title_benefits": "INCLUDES",
-            "benefits": "<ul><li>Unlimited access to classes at Reformd</li><li>Unlimited yoga, Pilates, ride & HIIT classes at Front/Spadina and Yonge/Shuter</li><li>Access to Tonic House at Front/Spadina and Yonge/Shuter</li><li>24-hour priority booking</li><li>2 guest credits per month (Reformd + S&T)</li></ul>",
+            "benefits": "<ul><li>Unlimited access to classes at Reformd</li><li>Unlimited yoga, Pilates, ride & HIIT classes at Front/Spadina and Yonge/Shuter</li><li>Access to Tonic House at Front/Spadina and Yonge/Shuter</li><li>24-hour priority booking</li><li>Complimentary 30-min Personal Training consulation</li><li>2 guest credits per month (Reformd + S&T)</li><li>10% off Reformd + S&T retail store</li><li>10% Tonic Spa treatments</li><li>50% off Tonic Spa pool deck membership</li></ul>",
             "total_membership_number": "50",
             "remain_membership_number": "50",
             "button_text": "TEST BUTTON",
@@ -287,6 +287,21 @@
             "price_protected": true
           }
         },
+        "competitor_gMzhQq": {
+          "type": "competitor",
+          "settings": {
+            "name": "Framework",
+            "price": "$420 unlimited",
+            "cost_per_class": "$14",
+            "single_credit_cost": "$12",
+            "access": "Megaformer only",
+            "guest_credit": "None",
+            "min_commitment": "4 months",
+            "expiry": "Integer scelerisque",
+            "cancel_anytime": false,
+            "price_protected": false
+          }
+        },
         "competitor_mbeYxM": {
           "type": "competitor",
           "settings": {
@@ -347,22 +362,6 @@
             "price_protected": false
           }
         },
-        "competitor_gMzhQq": {
-          "type": "competitor",
-          "disabled": true,
-          "settings": {
-            "name": "Framework",
-            "price": "$12",
-            "cost_per_class": "$12",
-            "single_credit_cost": "$12",
-            "access": "Integer scelerisque",
-            "guest_credit": "Integer scelerisque",
-            "min_commitment": "Integer scelerisque",
-            "expiry": "Integer scelerisque",
-            "cancel_anytime": false,
-            "price_protected": false
-          }
-        },
         "competitor_zk4MVf": {
           "type": "competitor",
           "disabled": true,
@@ -383,11 +382,11 @@
       "block_order": [
         "competitor_TVJq8D",
         "competitor_4itwfe",
+        "competitor_gMzhQq",
         "competitor_mbeYxM",
         "competitor_QE9aBD",
         "competitor_UqnjhR",
         "competitor_XjfHRf",
-        "competitor_gMzhQq",
         "competitor_zk4MVf"
       ],
       "settings": {
