@@ -289,6 +289,7 @@
         },
         "competitor_gMzhQq": {
           "type": "competitor",
+          "disabled": true,
           "settings": {
             "name": "Framework",
             "price": "$420 unlimited",
@@ -364,7 +365,6 @@
         },
         "competitor_zk4MVf": {
           "type": "competitor",
-          "disabled": true,
           "settings": {
             "name": "Altea",
             "price": "$270 for 12 classes",
