@@ -26,8 +26,20 @@
     .faq-sQA .tab .tab-title .icon { width: 20px;height: 20px;transform-origin: center;position: absolute;right: 0;top: calc(50% - 10px);transition: all 0.5s ease; }  
     .faq-sQA .active .tab-title .icon { transform: rotate(45deg); }
   .faq-sQA .tab .tabWrapper { padding: 30px 0; border-top: 1px solid rgba(var(--color-foreground),.1); display: none; }
-  .faq-sQA .active .tabWrapper { display: block; }
+  .faq-sQA .active .tabWrapper { display: block; }  
 
+main.dark--true .mainFaq .leftPart .main-page-title,
+main.dark--true .faq-sLink .link,
+main.dark--true .faq-sTitle h2,
+main.dark--true .faq-sQA .tab .tab-title,
+main.dark--true .faq-sQA .tab .tabWrapper {
+  color: #ffffff;
+}
+main.dark--true .faq-sLink .link:hover, 
+main.dark--true .faq-sLink .link.active {
+  color: #FEE4B1;
+}  
+  
 @media only screen and (min-width: 1200px ){
   .mainFaq .leftPart .main-page-title { margin-bottom: 70px; }
 }

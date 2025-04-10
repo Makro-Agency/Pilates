@@ -36,7 +36,7 @@
 }
 
 
-@font-face {
+/* @font-face {
     font-family: 'ITC Avant Garde Gothic Std';
     src: url('https://cdn.shopify.com/s/files/1/0915/3917/7843/files/ITCAvantGardeStd-Bold.woff2?v=1743153707') format('woff2'),
         url('https://cdn.shopify.com/s/files/1/0915/3917/7843/files/ITCAvantGardeStd-Bold.woff?v=1743153707') format('woff');
@@ -58,6 +58,53 @@
     font-family: 'ITC Avant Garde Gothic Std';
     src: url('https://cdn.shopify.com/s/files/1/0915/3917/7843/files/ITCAvantGardeStd-Md.woff2?v=1743153708') format('woff2'),
         url('https://cdn.shopify.com/s/files/1/0915/3917/7843/files/ITCAvantGardeStd-Md.woff?v=1743153707') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+} */
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std';
+    src: url('../assets/ITCAvantGardeStd-Bold.woff2') format('woff2'),
+        url('../assets/ITCAvantGardeStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std Demi';
+    src: url('../assets/ITCAvantGardeStd-Demi.woff2') format('woff2'),
+        url('../assets/ITCAvantGardeStd-Demi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {    
+    /* font-family: 'ITC Avant Garde Gothic Std Book'; */
+    font-family: 'ITC Avant Garde Gothic Std';
+    src: url('../assets/ITCAvantGardeStd-Bk.woff2') format('woff2'),
+        url('../assets/ITCAvantGardeStd-Bk.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std Extra';
+    font-family: 'ITC Avant Garde Gothic Std';
+    src: url('../assets/ITCAvantGardeStd-XLt.woff2') format('woff2'),
+        url('../assets/ITCAvantGardeStd-XLt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std';    
+    src: url('../assets/ITCAvantGardeStd-Md.woff2') format('woff2'),
+        url('../assets/ITCAvantGardeStd-Md.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
