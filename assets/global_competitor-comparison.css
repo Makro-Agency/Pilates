@@ -1,204 +1,227 @@
 .competitor-comparison-section {
-    padding: 0 0 160px;
-    width: 100%;
-    background: #000;
-    color: #fff;
-    position: relative;
+  padding: 0 0 160px;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  position: relative;
+}
+.competitor-comparison-section:after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  left: -6.875%;
+  bottom: 21.721%;
+  width: 67.3%;
+  height: 48.75%;
+  transform: rotate(65deg);
+  background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%);
+  opacity: 0.32;
+  filter: blur(250px);
+  z-index: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.comparison-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 6rem 0;
+  scrollbar-width: none;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  display: table;
+  table-layout: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.table-row {
+  display: table-row;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+}
+.table-row:last-child {
+  border: navajowhite;
+}
+.feature-label {
+  display: table-cell !important;
+  padding: 29px 20px;
+  font-weight: 500;
+  text-align: left;
+  width: 320px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: var(--font-heading-family);
+}
+
+.competitor-column {
+  display: table-cell;
+  text-align: left;
+  padding: 29px 20px;
+  vertical-align: middle;
+  min-width: 120px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+}
+.competitor-column.prices {
+  font-weight: 500;
+}
+
+.header-row {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.header-row .competitor-column {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'ITC Avant Garde Gothic Std';
+}
+
+.highlight {
+  position: relative;
+  font-weight: 600;
+}
+
+.highlight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  z-index: -1;
+}
+
+.checkmark {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.cross {
+  color: #F44336;
+  font-size: 18px;
+}
+
+.more-info-wrap {
+  max-width: 34%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.more-info {
+  display: flex;
+  justify-content: flex-end;
+}
+.more-info-wrap .page-links {
+  display: flex;
+  gap: 40px;
+}
+.more-info-wrap .page-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  font-family: var(--font-heading-family);
+  border-bottom: 1.8px solid transparent;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 0 5px;
+}
+.more-info-wrap .page-links a:hover {
+  border-color: #FEE4B1;
+}
+@media screen and (max-width: 1499px) {
+.more-info-wrap {
+  max-width: 50%;
+}
+}
+@media screen and (max-width: 1199px) {
+.more-info-wrap {
+  max-width: 60%;
+}
+.custom-scrollbar {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.10);
+}
+.custom-scrollbar .custom-thumb {
+  height: 100%;
+  display: block!important;
+  background: #FFF;
+  position: relative;
+}
+.scroll-wrapper {
+  position: relative;
+}
+}
+@media screen and (max-width: 989px) {
+.feature-label {
+  width: 160px;
+  min-width: 160px;
+  padding: 24px 12px;
+  font-size: 16px;
+}
+.header-row .competitor-column {
+  font-size: 16px;
+}
+.competitor-column {
+  padding: 24px 12px;
+}
+.more-info {justify-content: flex-start;}
+.more-info-wrap {max-width: 100%; gap: 32px;}
+.competitor-comparison-section {padding: 0 0 80px;}
+}
+@media screen and (max-width: 767px) {
+  .comparison-table {
+    table-layout: auto;
+  }
+  .more-info-wrap .page-links {
+    gap: 32px;
+    flex-direction: column;
   }
   .competitor-comparison-section:after {
     content: '';
     position: absolute;
     pointer-events: none;
-    left: -6.875%;
-    bottom: 21.721%;
-    width: 67.3%;
-    height: 48.75%;
-    transform: rotate(65deg);
-    background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%);
+    left: -100%;
+    bottom: 24.2%;
+    width: 331.2574358974359vw;
+    height: 144.0717948717949vw;
+    transform: rotate(-115.265deg);
+    background: var(--Neon-Blue, radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%));
     opacity: 0.32;
     filter: blur(250px);
     z-index: 1;
+  }
 }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .section-title {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  .comparison-table-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    margin: 6rem 0;
-  }
-  
-  .comparison-table {
-    width: 100%;
-    border-collapse: collapse;
-    display: table;
-    table-layout: fixed;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .table-row {
-    display: table-row;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.40);
-  }
-  
-  .feature-label {
-    display: table-cell !important;
-    padding: 29px 20px;
-    font-weight: 500;
-    text-align: left;
-    width: 320px;
-    vertical-align: middle;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-family: var(--font-heading-family);
-  }
-  
-  .competitor-column {
-    display: table-cell;
-    text-align: left;
-    padding: 29px 20px;
-    vertical-align: middle;
-    min-width: 120px;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 150%;
-  }
-  .competitor-column.prices {
-    font-weight: 500;
-  }
-  
-  .header-row {
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-  
-  .header-row .competitor-column {
-    font-size: 20px;
-    font-weight: 500;
-    font-family: 'ITC Avant Garde Gothic Std';
-  }
-  
-  .highlight {
-    position: relative;
-    font-weight: 600;
-  }
-  
-  .highlight::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.05);
-    z-index: -1;
-  }
-  
-  .checkmark {
-    color: #FFFFFF;
-    font-size: 18px;
-  }
-  
-  .cross {
-    color: #F44336;
-    font-size: 18px;
-  }
-  
-  .more-info-wrap {
-    max-width: 34%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  .more-info {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .more-info-wrap .page-links {
-    display: flex;
-    gap: 40px;
-  }
-  .more-info-wrap .page-links a {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 100%;
-    letter-spacing: 0.32px;
-    text-transform: uppercase;
-    font-family: var(--font-heading-family);
-    border-bottom: 1.8px solid transparent;
-    text-decoration: none;
-    color: #fff;
-    padding: 0 0 5px;
- }
- .more-info-wrap .page-links a:hover {
-    border-color: #FEE4B1;
- }
- @media screen and (max-width: 1499px) {
-  .more-info-wrap {
-    max-width: 50%;
-  }
- }
- @media screen and (max-width: 1199px) {
-  .more-info-wrap {
-    max-width: 60%;
-  }
- }
- @media screen and (max-width: 989px) {
-  .feature-label {
-    width: 160px;
-    min-width: 160px;
-    padding: 24px 12px;
-    font-size: 16px;
-  }
-  .header-row .competitor-column {
-    font-size: 16px;
-  }
-  .competitor-column {
-    padding: 24px 12px;
-  }
-  .more-info {justify-content: flex-start;}
-  .more-info-wrap {max-width: 100%; gap: 32px;}
-  .competitor-comparison-section {padding: 0 0 80px;}
- }
-  @media screen and (max-width: 767px) {
-    .comparison-table {
-      table-layout: auto;
-    }
-    .more-info-wrap .page-links {
-      gap: 32px;
-      flex-direction: column;
-    }
-    .competitor-comparison-section:after {
-      content: '';
-      position: absolute;
-      pointer-events: none;
-      left: -100%;
-      bottom: 24.2%;
-      width: 331.2574358974359vw;
-      height: 144.0717948717949vw;
-      transform: rotate(-115.265deg);
-      background: var(--Neon-Blue, radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%));
-      opacity: 0.32;
-      filter: blur(250px);
-      z-index: 1;
-    }
-  }

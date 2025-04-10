@@ -77,7 +77,7 @@ a.header-links:hover {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    border: 1.5px solid #FFF;
+    border: 1.5px solid currentColor;
     color: #FFF;
     font-family: var(--font-heading-family);
     font-size: 16px;
@@ -224,7 +224,7 @@ body.mobile-toggle--show {
     }
 }
 
-/* drak header */
+/* drak header */ 
     main.dark--false {        
         min-height: calc(100vh - 6.4rem - 20.5rem);
     }

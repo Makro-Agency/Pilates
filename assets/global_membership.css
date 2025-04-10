@@ -119,9 +119,15 @@
     flex: 1 0 0;
     align-self: stretch;
 }
+.heading-wrap {
+    overflow: hidden;
+}
 .card-wrap p.description {
     font-size: 16px;
     margin: 12px 0 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 .price-wrappper {
     display: flex;
@@ -172,6 +178,10 @@
 }
 .benefits-list {
     width: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
 }
 .benefits-list ul {
     color: #fff;
@@ -205,6 +215,7 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    min-height: 48px;
 }
 .book-now {
     text-decoration: none;
@@ -277,6 +288,9 @@
     }
     .price-wrappper .sale_label {
         font-size: 16px;
+    }
+    .membership-card-wrapper .heading-wrap .heading {
+        font-size: 22px;
     }
     .membership-card-wrapper .card-wrap > .benefits,
     .membership-card-wrapper .card-wrap > .btn-wrap { display: none; }
@@ -383,5 +397,11 @@
     }
     .monthly-credits .card-wrap {
         max-width: 100%;
+    }
+    .btn-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        min-height: 100%;
     }
 }

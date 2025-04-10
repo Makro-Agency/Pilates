@@ -13,7 +13,7 @@
                 {%- for block in section.blocks -%}
                     <div class="card-wrap">
                         <div class="heading-wrap">
-                            {% if block.settings.title != blank %}<h3 class="h3 heading">{{ block.settings.title }}</h3>{% endif %}
+                            {% if block.settings.title != blank %}<h4 class="h4 heading">{{ block.settings.title }}</h4>{% endif %}
                             {% if block.settings.price_per_class != blank %} <h5 class="h5 subtitle">{{ block.settings.price_per_class }}</h5>{% endif %}
                         </div>
                         {% if block.settings.sale_price != blank or block.settings.original_price != blank %}

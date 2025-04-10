@@ -42,6 +42,7 @@
 .global_image-banner .banner-content > * {
     flex-basis: 100%;
     text-align: center;
+    padding-top: 0.05em;
 }
 .global_image-banner .banner-date {
     align-items: center;

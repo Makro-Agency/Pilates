@@ -24,9 +24,20 @@
   .faq-sQA .tab { border-top: 1px solid rgba(var(--color-foreground),.1); }  
     .faq-sQA .tab .tab-title { margin: 0; position: relative; font-weight: 450; padding: 30px 25px 30px 0; cursor: pointer; }
     .faq-sQA .tab .tab-title .icon { width: 20px;height: 20px;transform-origin: center;position: absolute;right: 0;top: calc(50% - 10px);transition: all 0.5s ease; }  
-    .faq-sQA .active .tab-title .icon { transform: rotate(45deg); }
+    .faq-sQA .active .tab-title .icon { transform: rotate(180deg); }
   .faq-sQA .tab .tabWrapper { padding: 30px 0; border-top: 1px solid rgba(var(--color-foreground),.1); display: none; }
   .faq-sQA .active .tabWrapper { display: block; }
+
+  main#MainContent:not(.dark--false) .mainFaq .leftPart .main-page-title,
+  main#MainContent:not(.dark--false) .faq-sLink .link,
+  main#MainContent:not(.dark--false) .faq-sTitle h2,
+  main#MainContent:not(.dark--false) .faq-sQA .tab .tab-title,
+  main#MainContent:not(.dark--false) .faq-sQA .tab .tabWrapper {
+    color: #ffffff;
+  }
+  main#MainContent:not(.dark--false) .faq-sLink .link:hover, .faq-sLink .link.active {
+    color: #FEE4B1;
+  }
 
 @media only screen and (min-width: 1200px ){
   .mainFaq .leftPart .main-page-title { margin-bottom: 70px; }
