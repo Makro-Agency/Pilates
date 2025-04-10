@@ -61,7 +61,7 @@ a.header-links:hover {
     color: var(--White, #FFF);
     font-family: var(--font-heading-family);
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 100%;
     letter-spacing: 0.32px;
     text-transform: uppercase;
