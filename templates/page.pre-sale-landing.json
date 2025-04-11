@@ -194,6 +194,22 @@
     "global_membership_cxtXW9": {
       "type": "global_membership",
       "blocks": {
+        "membership_card_GJKEWW": {
+          "type": "membership_card",
+          "settings": {
+            "title": "Reformd Unlimited add-on for S&T memberships",
+            "description": "Already have a S&T Unlimited membership? Get a Reformd Unlimited membership add-on for 50% off.\n<br>Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always. Valid for Yonge/Shuter and The Well Unlimited memberships.",
+            "sale_label": "50% off Reformd unlimited + Additional 20% off",
+            "sale_price": "$145",
+            "original_price": "$180",
+            "title_benefits": "INCLUDES",
+            "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>Plus all the benefits of your S&T Unlimited membership</li></ul>",
+            "total_membership_number": "50",
+            "remain_membership_number": "50",
+            "button_text": "",
+            "btn_url": ""
+          }
+        },
         "membership_card_U67qN8": {
           "type": "membership_card",
           "settings": {
@@ -225,28 +241,12 @@
             "button_text": "TEST BUTTON",
             "btn_url": ""
           }
-        },
-        "membership_card_GJKEWW": {
-          "type": "membership_card",
-          "settings": {
-            "title": "Reformd Unlimited add-on for S&T memberships",
-            "description": "Already have a S&T Unlimited membership? Get a Reformd Unlimited membership add-on for 50% off.\n<br>Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always. Valid for Yonge/Shuter and The Well Unlimited memberships.",
-            "sale_label": "50% off Reformd unlimited + Additional 20% off",
-            "sale_price": "$145",
-            "original_price": "$180",
-            "title_benefits": "INCLUDES",
-            "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>Plus all the benefits of your S&T Unlimited membership</li></ul>",
-            "total_membership_number": "50",
-            "remain_membership_number": "50",
-            "button_text": "",
-            "btn_url": ""
-          }
         }
       },
       "block_order": [
+        "membership_card_GJKEWW",
         "membership_card_U67qN8",
-        "membership_card_LrCenB",
-        "membership_card_GJKEWW"
+        "membership_card_LrCenB"
       ],
       "settings": {
         "section_id": "membership",
@@ -790,6 +790,7 @@
         "faq_Y4YUqm"
       ],
       "settings": {
+        "section_id": "",
         "title": "THE S&amp;T EXPERIENCE",
         "desktop_image": "shopify://shop_images/accordian-desktop.png",
         "mobile_image": "shopify://shop_images/accordian-mob.png",
