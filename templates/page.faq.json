@@ -154,7 +154,7 @@
           "type": "que_ans",
           "settings": {
             "title": "Can I freeze my membership?",
-            "detail": "<p>Memberships and monthly credit packs can be frozen for a maximum of 14 days at a time every six months, and you can request your first freeze at any time after starting your membership. At the end of each freeze, 6 months must pass before you are eligible for another. Eligibility does not reset if you cancel and purchase a new membership. Your membership start date is the very first date you signed up for a membership.</p>"
+            "detail": "<p>Memberships and monthly credit packs can be frozen for a maximum of 14 days at a time every six months, and you can request your first freeze at any time after starting your membership. At the end of each freeze, 6 months must pass before you are eligible for another. Eligibility does not reset if you cancel and purchase a new membership. If you purchase a pre-opening sale membership, your start date will be the first day Reformd opens.</p>"
           }
         },
         "d7696939-47e4-410d-9584-55d9659a7c55": {
@@ -169,6 +169,14 @@
           "settings": {
             "title": "If I purchase a Reformd membership or credit pack now, when will the credits be activated / when will my monthly billing begin?",
             "detail": "<p>Your purchase will be processed immediately to secure your pre-opening sale rate. Memberships and credits will activate when Reformd opens. For memberships and recurring credit packs, your next payment will be charged at the start of your second billing month, after Reformd opens.</p>"
+          }
+        },
+        "22e4de22-4b8c-4f02-a061-11408cf91e8a": {
+          "type": "que_ans",
+          "disabled": true,
+          "settings": {
+            "title": "How do I create an account / update my account information?",
+            "detail": "<p>You can create an account and update your information <a href=\"https://www.sweatandtonic.com/my-account/?_mt=%2Faccount%2Fcreate%3FredirectURL%3D%252Faccount\">online</a> or in the S&T app. One account is permitted per customer. For more information, visit our <a href=\"https://www.sweatandtonic.com/terms-and-conditions/\">Terms & Conditions</a>.</p>"
           }
         },
         "e491b7f7-2e86-42db-9739-797a6fbb5195": {
@@ -189,14 +197,6 @@
           "settings": {
             "title": "I have a question that isn't answered here. How can I get in touch?",
             "detail": "<p>Please contact us at hello@reformd.com with details of your inquiry and our team will be happy to help!</p>"
-          }
-        },
-        "22e4de22-4b8c-4f02-a061-11408cf91e8a": {
-          "type": "que_ans",
-          "disabled": true,
-          "settings": {
-            "title": "How do I create an account / update my account information?",
-            "detail": "<p>You can create an account and update your information <a href=\"https://www.sweatandtonic.com/my-account/?_mt=%2Faccount%2Fcreate%3FredirectURL%3D%252Faccount\">online</a> or in the S&T app. One account is permitted per customer. For more information, visit our <a href=\"https://www.sweatandtonic.com/terms-and-conditions/\">Terms & Conditions</a>.</p>"
           }
         },
         "que_ans_prKExh": {
@@ -412,10 +412,10 @@
         "7064720d-0420-40f1-803f-d9b0235d07ef",
         "d7696939-47e4-410d-9584-55d9659a7c55",
         "03005134-1b24-4879-8a85-c338503355d3",
+        "22e4de22-4b8c-4f02-a061-11408cf91e8a",
         "e491b7f7-2e86-42db-9739-797a6fbb5195",
         "3ba96673-528e-457a-8524-171c4ebf84ac",
         "df72df29-8093-40fa-83f3-c8def3f9bcfa",
-        "22e4de22-4b8c-4f02-a061-11408cf91e8a",
         "que_ans_prKExh",
         "88eef28f-11aa-41e2-96f1-65617d2b3755",
         "f01c3501-f8e6-44b9-ab49-1b639a6ec3b8",
