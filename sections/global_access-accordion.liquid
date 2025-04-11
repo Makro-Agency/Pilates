@@ -15,7 +15,7 @@
   }
 {%- endstyle -%}
 
-<div class="allaccess-accordian">
+<div class="allaccess-accordian" id="{{ section.settings.section_id | handle }}">
     {% if section.settings.desktop_image != blank or section.settings.mobile_image %}
       <div class="image">
         <figure>
@@ -82,6 +82,11 @@
   "name": "All Aceess Accordion",
   "class": "all-access-faq wellness-faq",
   "settings": [
+    {
+        "type": "text",
+        "label": "Add Section Id",
+        "id": "section_id"
+    },
     {
       "type": "html",
       "id": "title",
