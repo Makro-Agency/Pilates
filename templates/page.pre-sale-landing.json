@@ -194,16 +194,16 @@
     "global_membership_cxtXW9": {
       "type": "global_membership",
       "blocks": {
-        "membership_card_GJKEWW": {
+        "membership_card_LrCenB": {
           "type": "membership_card",
           "settings": {
-            "title": "Reformd Unlimited add-on for S&T memberships",
-            "description": "Already have a S&T Unlimited membership? Get a Reformd Unlimited membership add-on for 50% off.\n<br>Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always. Valid for Yonge/Shuter and The Well Unlimited memberships.",
-            "sale_label": "50% off Reformd unlimited + Additional 20% off",
-            "sale_price": "$145",
-            "original_price": "$180",
+            "title": "Reformd + S&T Unlimited membership",
+            "description": "Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always.",
+            "sale_label": "S&T Unlimited + 20% OFF REFORMD UNLIMITED",
+            "sale_price": "$435",
+            "original_price": "$470",
             "title_benefits": "INCLUDES",
-            "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>Plus all the benefits of your S&T Unlimited membership</li></ul>",
+            "benefits": "<ul><li>Unlimited classes at Reformd</li><li>Unlimited yoga, Pilates, ride & HIIT classes at Front/Spadina and Yonge/Shuter</li><li>Access to Tonic House at Front/Spadina and Yonge/Shuter</li><li>24-hour priority booking</li><li>Complimentary 30-min Personal Training consulation</li><li>1 guest credit per month (S&T)</li><li>10% off Reformd + S&T retail store</li><li>10% Tonic Spa treatments</li><li>50% off Tonic Spa pool deck membership</li></ul>",
             "total_membership_number": "50",
             "remain_membership_number": "50",
             "button_text": "",
@@ -226,16 +226,16 @@
             "btn_url": ""
           }
         },
-        "membership_card_LrCenB": {
+        "membership_card_GJKEWW": {
           "type": "membership_card",
           "settings": {
-            "title": "Reformd + S&T Unlimited membership",
-            "description": "Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always.",
-            "sale_label": "S&T Unlimited + 20% OFF REFORMD UNLIMITED",
-            "sale_price": "$435",
-            "original_price": "$470",
+            "title": "Reformd Unlimited add-on for S&T memberships",
+            "description": "Already have a S&T Unlimited membership? Get a Reformd Unlimited membership add-on for 50% off.\n<br>Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always. Valid for Yonge/Shuter and The Well Unlimited memberships.",
+            "sale_label": "50% off Reformd unlimited + Additional 20% off",
+            "sale_price": "$145",
+            "original_price": "$180",
             "title_benefits": "INCLUDES",
-            "benefits": "<ul><li>Unlimited classes at Reformd</li><li>Unlimited yoga, Pilates, ride & HIIT classes at Front/Spadina and Yonge/Shuter</li><li>Access to Tonic House at Front/Spadina and Yonge/Shuter</li><li>24-hour priority booking</li><li>Complimentary 30-min Personal Training consulation</li><li>1 guest credit per month (S&T)</li><li>10% off Reformd + S&T retail store</li><li>10% Tonic Spa treatments</li><li>50% off Tonic Spa pool deck membership</li></ul>",
+            "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>Plus all the benefits of your S&T Unlimited membership</li></ul>",
             "total_membership_number": "50",
             "remain_membership_number": "50",
             "button_text": "",
@@ -244,9 +244,9 @@
         }
       },
       "block_order": [
-        "membership_card_GJKEWW",
+        "membership_card_LrCenB",
         "membership_card_U67qN8",
-        "membership_card_LrCenB"
+        "membership_card_GJKEWW"
       ],
       "settings": {
         "section_id": "membership",
