@@ -10,164 +10,191 @@
           <!-- Header Row with Competitor Names -->
           <div class="table-row header-row">
             <div class="feature-label"></div>
-            {% for block in section.blocks %}
+
+            <!-- label_1 -->
+            {% if section.settings.label_1 != blank %}
+            <div class="competitor-column">
+              {{ section.settings.label_1 }}
+            </div>
+            {% endif %}
+
+            <!-- label_2 -->
+            {% if section.settings.label_2 != blank %}
+            <div class="competitor-column">
+              {{ section.settings.label_2 }}
+            </div>
+            {% endif %}
+
+              <!-- label_3 -->
+            {% if section.settings.label_3 != blank %}
+            <div class="competitor-column">
+              {{ section.settings.label_3 }}
+            </div>
+            {% endif %}
+
+              <!-- label_4 -->
+            {% if section.settings.label_4 != blank %}
+            <div class="competitor-column">
+              {{ section.settings.label_4 }}
+            </div>
+            {% endif %}
+
+              <!-- label_5 -->
+            {% if section.settings.label_5 != blank %}
+            <div class="competitor-column">
+              {{ section.settings.label_5 }}
+            </div>
+            {% endif %}
+
+              <!-- label_6 -->
+            {% if section.settings.label_6 != blank %}
+            <div class="competitor-column">
+              {{ section.settings.label_6 }}
+            </div>
+            {% endif %}
+
+              <!-- label_7 -->
+            {% if section.settings.label_7 != blank %}
+            <div class="competitor-column">
+              {{ section.settings.label_7 }}
+            </div>
+            {% endif %}
+
+              <!-- label_8 -->
+            {% if section.settings.label_8 != blank %}
+            <div class="competitor-column">
+              {{ section.settings.label_8 }}
+            </div>
+            {% endif %}
+
+              <!-- label_9 -->
+            {% if section.settings.label_9 != blank %}
+            <div class="competitor-column">
+              {{ section.settings.label_9 }}
+            </div>
+            {% endif %}
+
+              <!-- label_10 -->
+            {% if section.settings.label_10 != blank %}
+            <div class="competitor-column">
+              {{ section.settings.label_10 }}
+            </div>
+            {% endif %}
+
+            {% comment %} {% for block in section.blocks %}
               {% if block.type == "competitor" %}
                 <div class="competitor-column">
                   {{ block.settings.name }}
                 </div>
               {% endif %}
-            {% endfor %}
+            {% endfor %} {% endcomment %}
           </div>
-          
-          <!-- Price Row -->
-          {% if section.settings.price_label != blank %}
-            <div class="table-row">
-              <div class="feature-label">{{ section.settings.price_label }}</div>
-              {% for block in section.blocks %}
-                {% if block.type == "competitor" %}
-                  <div class="competitor-column prices">
-                    {{ block.settings.price }}
-                  </div>
-                {% endif %}
-              {% endfor %}
-            </div>
-          {% endif %}
-          
-          <!-- Average Cost Per Class Row -->
-          {% if section.settings.cost_per_class_label != blank %}
-            <div class="table-row">
-              <div class="feature-label">{{ section.settings.cost_per_class_label }}</div>
-              {% for block in section.blocks %}
-                {% if block.type == "competitor" %}
-                  <div class="competitor-column prices">
-                    {{ block.settings.cost_per_class }}
-                  </div>
-                {% endif %}
-              {% endfor %}
-            </div>
-          {% endif %}
 
-          <!-- Single Credit Cost Row -->
-          {% if section.settings.single_credit_cost_label != blank %}
-            <div class="table-row">
-              <div class="feature-label">{{ section.settings.single_credit_cost_label }}</div>
-              {% for block in section.blocks %}
-                {% if block.type == "competitor" %}
-                  <div class="competitor-column prices">
-                    {{ block.settings.single_credit_cost }}
-                  </div>
-                {% endif %}
-              {% endfor %}
-            </div>
-          {% endif %}
-          
-          <!-- Access Row -->
-          {% if section.settings.access_label != blank %}
-            <div class="table-row">
-              <div class="feature-label">{{section.settings.access_label}}</div>
-              {% for block in section.blocks %}
-                {% if block.type == "competitor" %}
-                  <div class="competitor-column">
-                    {{ block.settings.access }}
-                  </div>
-                {% endif %}
-              {% endfor %}
-            </div>
-          {% endif %}
-          
-          <!-- Guest Credit Row -->
-          {% if section.settings.guest_credit_label != blank %}
-            <div class="table-row">
-              <div class="feature-label">{{section.settings.guest_credit_label}}</div>
-              {% for block in section.blocks %}
-                {% if block.type == "competitor" %}
-                  <div class="competitor-column">
-                    {{ block.settings.guest_credit }}
-                  </div>
-                {% endif %}
-              {% endfor %}
-            </div>
-          {% endif %}
-          
-          <!-- Minimum Commitment Row -->
-          {% if section.settings.min_commitment_label != blank %}
-            <div class="table-row">
-              <div class="feature-label">{{section.settings.min_commitment_label}}</div>
-              {% for block in section.blocks %}
-                {% if block.type == "competitor" %}
-                  <div class="competitor-column">
-                    {{ block.settings.min_commitment }}
-                  </div>
-                {% endif %}
-              {% endfor %}
-            </div>
-          {% endif %}
-          
-          <!-- Cancel Anytime Row -->
-          {% if section.settings.cancel_anytime_label != blank %}
-            <div class="table-row">
-              <div class="feature-label">{{section.settings.cancel_anytime_label}}</div>
-              {% for block in section.blocks %}
-                {% if block.type == "competitor" %}
-                  <div class="competitor-column">
-                    {% if block.settings.cancel_anytime %}
-                      <span class="checkmark">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                          <path d="M4.45215 12.0304L9.79391 17.5331L20.5479 6.46729" stroke="white" stroke-width="1.5"/>
-                        </svg>
-                      </span>
-                    {% else %}
-                      <span class="cross">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                          <path opacity="0.4" d="M4.6665 19.5L12.1665 12M12.1665 12L19.6665 4.5M12.1665 12L4.6665 4.5M12.1665 12L19.6665 19.5" stroke="white" stroke-width="1.5"/>
-                        </svg>
-                      </span>
-                    {% endif %}
-                  </div>
-                {% endif %}
-              {% endfor %}
-            </div>
-          {% endif %}
 
-          <!-- Price Protected Row -->
-          {% if section.settings.price_protected_label != blank %}
-            <div class="table-row">
-              <div class="feature-label">{{section.settings.price_protected_label}}</div>
-              {% for block in section.blocks %}
-                {% if block.type == "competitor" %}
-                  <div class="competitor-column">
-                    {% if block.settings.price_protected %}
-                      <span class="checkmark">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                          <path d="M4.45215 12.0304L9.79391 17.5331L20.5479 6.46729" stroke="white" stroke-width="1.5"/>
-                        </svg>
-                      </span>
-                    {% else %}
-                      <span class="cross">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                          <path opacity="0.4" d="M4.6665 19.5L12.1665 12M12.1665 12L19.6665 4.5M12.1665 12L4.6665 4.5M12.1665 12L19.6665 19.5" stroke="white" stroke-width="1.5"/>
-                        </svg>
-                      </span>
-                    {% endif %}
-                  </div>
-                {% endif %}
-              {% endfor %}
-            </div>
-          {% endif %}
+          {% for block in section.blocks %}
+            {% if block.type == "competitor" %}
+              <div class="table-row">
+                {% if block.settings.name != blank %}<div class="feature-label">{{ block.settings.name }}</div>{% endif %}
 
-          <!-- expiry Row -->
-          {% if section.settings.expiry_label != blank %}
-            <div class="table-row">
-              <div class="feature-label">{{section.settings.expiry_label}}</div>
-              {% for block in section.blocks %}
-                {% if block.type == "competitor" %}
-                  <div class="competitor-column">
-                    {{ block.settings.expiry }}
-                  </div>
+                {% if block.settings.label_1 != blank %}
+                <div class="competitor-column {% if block.settings.bold-text == true %}prices{% endif %}">
+                  {{ block.settings.label_1 }}
+                </div>
                 {% endif %}
-              {% endfor %}
-            </div>
-          {% endif %}
+
+                {% if block.settings.label_2 != blank %}
+                <div class="competitor-column {% if block.settings.bold-text == true %}prices{% endif %}">
+                  {{ block.settings.label_2 }}
+                </div>
+                {% endif %}
+
+                {% if block.settings.label_3 != blank %}
+                <div class="competitor-column {% if block.settings.bold-text == true %}prices{% endif %}">
+                  {{ block.settings.label_3 }}
+                </div>
+                {% endif %}
+
+                {% if block.settings.label_4 != blank %}
+                <div class="competitor-column {% if block.settings.bold-text == true %}prices{% endif %}">
+                  {{ block.settings.label_4 }}
+                </div>
+                {% endif %}
+
+                {% if block.settings.label_5 != blank %}
+                <div class="competitor-column {% if block.settings.bold-text == true %}prices{% endif %}">
+                  {{ block.settings.label_5 }}
+                </div>
+                {% endif %}
+
+                {% if block.settings.label_6 != blank %}
+                <div class="competitor-column {% if block.settings.bold-text == true %}prices{% endif %}">
+                  {{ block.settings.label_6 }}
+                </div>
+                {% endif %}
+
+                {% if block.settings.label_7 != blank %}
+                <div class="competitor-column {% if block.settings.bold-text == true %}prices{% endif %}">
+                  {{ block.settings.label_7 }}
+                </div>
+                {% endif %}
+
+                {% if block.settings.label_8 != blank %}
+                <div class="competitor-column {% if block.settings.bold-text == true %}prices{% endif %}">
+                  {{ block.settings.label_8 }}
+                </div>
+                {% endif %}
+
+                {% if block.settings.label_9 != blank %}
+                <div class="competitor-column {% if block.settings.bold-text == true %}prices{% endif %}">
+                  {{ block.settings.label_9 }}
+                </div>
+                {% endif %}
+
+                {% if block.settings.label_10 != blank %}
+                <div class="competitor-column {% if block.settings.bold-text == true %}prices{% endif %}">
+                  {{ block.settings.label_10 }}
+                </div>
+                {% endif %}
+
+              </div>
+            {% elsif block.type == "true-false-value" %}
+              <div class="table-row">
+                {% if block.settings.name != blank %}<div class="feature-label">{{block.settings.name}}</div>{% endif %}
+                
+                {% capture true_icon %}
+                  <div class="competitor-column">
+                    <span class="checkmark">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <path d="M4.45215 12.0304L9.79391 17.5331L20.5479 6.46729" stroke="white" stroke-width="1.5"/>
+                      </svg>
+                    </span>
+                  </div>
+                {% endcapture %}
+
+                {% capture false_icon %}
+                  <div class="competitor-column">
+                    <span class="cross">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <path opacity="0.4" d="M4.6665 19.5L12.1665 12M12.1665 12L19.6665 4.5M12.1665 12L4.6665 4.5M12.1665 12L19.6665 19.5" stroke="white" stroke-width="1.5"/>
+                      </svg>
+                    </span>
+                  </div>
+                {% endcapture %}
+
+                {% if section.settings.label_1 != blank %}{% if block.settings.label_1 == true %}{{ true_icon }}{% else %}{{ false_icon }}{% endif %}{% endif %}
+                {% if section.settings.label_2 != blank %}{% if block.settings.label_2 == true %}{{ true_icon }}{% else %}{{ false_icon }}{% endif %}{% endif %}
+                {% if section.settings.label_3 != blank %}{% if block.settings.label_3 == true %}{{ true_icon }}{% else %}{{ false_icon }}{% endif %}{% endif %}
+                {% if section.settings.label_4 != blank %}{% if block.settings.label_4 == true %}{{ true_icon }}{% else %}{{ false_icon }}{% endif %}{% endif %}
+                {% if section.settings.label_5 != blank %}{% if block.settings.label_5 == true %}{{ true_icon }}{% else %}{{ false_icon }}{% endif %}{% endif %}
+                {% if section.settings.label_6 != blank %}{% if block.settings.label_6 == true %}{{ true_icon }}{% else %}{{ false_icon }}{% endif %}{% endif %}
+                {% if section.settings.label_7 != blank %}{% if block.settings.label_7 == true %}{{ true_icon }}{% else %}{{ false_icon }}{% endif %}{% endif %}
+                {% if section.settings.label_8 != blank %}{% if block.settings.label_8 == true %}{{ true_icon }}{% else %}{{ false_icon }}{% endif %}{% endif %}
+                {% if section.settings.label_9 != blank %}{% if block.settings.label_9 == true %}{{ true_icon }}{% else %}{{ false_icon }}{% endif %}{% endif %}
+                {% if section.settings.label_10 != blank %}{% if block.settings.label_10 == true %}{{ true_icon }}{% else %}{{ false_icon }}{% endif %}{% endif %}
+
+              </div>
+            {% endif %}
+          {% endfor %}
           
         </div>
       </div>
@@ -212,52 +239,57 @@
     },
     {
       "type": "header",
-      "content": "Feature Labels"
+      "content": "Feature Column Labels"
     },
     {
       "type": "text",
-      "id": "price_label",
-      "label": "Price Label"
+      "id": "label_1",
+      "label": "Label 1"
     },
     {
       "type": "text",
-      "id": "cost_per_class_label",
-      "label": "Cost Per Class Label"
+      "id": "label_2",
+      "label": "Label 2"
     },
     {
       "type": "text",
-      "id": "single_credit_cost_label",
-      "label": "Single Credit Cost Label"
+      "id": "label_3",
+      "label": "Label 3"
     },
     {
       "type": "text",
-      "id": "access_label",
-      "label": "Access Label"
+      "id": "label_4",
+      "label": "Label 4"
     },
     {
       "type": "text",
-      "id": "guest_credit_label",
-      "label": "Guest Credit Label"
+      "id": "label_5",
+      "label": "Label 5"
     },
     {
       "type": "text",
-      "id": "min_commitment_label",
-      "label": "Minimum Commitment Label"
+      "id": "label_6",
+      "label": "Label 6"
     },
     {
       "type": "text",
-      "id": "cancel_anytime_label",
-      "label": "Cancel Anytime Label"
+      "id": "label_7",
+      "label": "Label 7"
     },
     {
       "type": "text",
-      "id": "price_protected_label",
-      "label": "Price Protected Label"
+      "id": "label_8",
+      "label": "Label 8"
     },
     {
       "type": "text",
-      "id": "expiry_label",
-      "label": "Expiry Label"
+      "id": "label_9",
+      "label": "Label 9"
+    },
+    {
+      "type": "text",
+      "id": "label_10",
+      "label": "Label 10"
     },
     {
       "type": "header",
@@ -304,50 +336,64 @@
         {
           "type": "text",
           "id": "name",
-          "label": "Competitor Name",
+          "label": "Row Title Name",
           "default": "Competitor"
         },
         {
-          "type": "text",
-          "id": "price",
-          "label": "Price",
-          "default": "$12"
+          "type": "checkbox",
+          "id": "bold-text",
+          "label": "Bold Text",
+          "default": false
         },
         {
           "type": "text",
-          "id": "cost_per_class",
-          "label": "Average Cost Per Class",
-          "default": "$12"
+          "id": "label_1",
+          "label": "Lable 1"
         },
         {
           "type": "text",
-          "id": "single_credit_cost",
-          "label": "Single Credit Cost",
-          "default": "$12"
+          "id": "label_2",
+          "label": "Lable 2"
         },
         {
           "type": "text",
-          "id": "access",
-          "label": "Access Details",
-          "default": "Integer scelerisque"
+          "id": "label_3",
+          "label": "Lable 3"
         },
         {
           "type": "text",
-          "id": "guest_credit",
-          "label": "Guest Credit",
-          "default": "Integer scelerisque"
+          "id": "label_4",
+          "label": "Lable 4"
         },
         {
           "type": "text",
-          "id": "min_commitment",
-          "label": "Minimum Commitment",
-          "default": "Integer scelerisque"
+          "id": "label_5",
+          "label": "Lable 5"
         },
         {
           "type": "text",
-          "id": "expiry",
-          "label": "Expiry Details",
-          "default": "Integer scelerisque"
+          "id": "label_6",
+          "label": "Lable 6"
+        },
+        {
+          "type": "text",
+          "id": "label_7",
+          "label": "Lable 7"
+        },
+        {
+          "type": "text",
+          "id": "label_8",
+          "label": "Lable 8"
+        },
+        {
+          "type": "text",
+          "id": "label_9",
+          "label": "Lable 9"
+        },
+        {
+          "type": "text",
+          "id": "label_10",
+          "label": "Lable 10"
         },
         {
           "type": "checkbox",
@@ -359,6 +405,78 @@
           "type": "checkbox",
           "id": "price_protected",
           "label": "Price Protected",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "true-false-value",
+      "name": "True False Value",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Row Title Name",
+          "default": "Competitor"
+        },
+        {
+          "type": "checkbox",
+          "id": "label_1",
+          "label": "Lable 1",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "label_2",
+          "label": "Lable 2",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "label_3",
+          "label": "Lable 3",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "label_4",
+          "label": "Lable 4",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "label_5",
+          "label": "Lable 5",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "label_6",
+          "label": "Lable 6",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "label_7",
+          "label": "Lable 7",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "label_8",
+          "label": "Lable 8",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "label_9",
+          "label": "Lable 9",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "label_10",
+          "label": "Lable 10",
           "default": false
         }
       ]
