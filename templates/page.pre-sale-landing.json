@@ -301,7 +301,7 @@
             "name": "Access",
             "bold-text": false,
             "label_1": "Unlimited classes: Megaformer only",
-            "label_2": "Unlimited classes: Megaformer, Yoga, Pilates, Ride, HIIT",
+            "label_2": "Unlimited classes: Megaformer, Yoga, Pilates, Ride, HIIT at Reformd, Front/Spadina & Yonge/Shuter",
             "label_3": "Limit of 30 classes per month: Megaformer only",
             "label_4": "Megaformer only",
             "label_5": "Limit of 1 class per day: Reformer or mat",
@@ -368,6 +368,25 @@
             "label_10": false
           }
         },
+        "competitor_VgTDU6": {
+          "type": "competitor",
+          "settings": {
+            "name": "CANCELLATION NOTICE",
+            "bold-text": false,
+            "label_1": "None",
+            "label_2": "",
+            "label_3": "",
+            "label_4": "",
+            "label_5": "",
+            "label_6": "",
+            "label_7": "",
+            "label_8": "",
+            "label_9": "",
+            "label_10": "",
+            "cancel_anytime": false,
+            "price_protected": false
+          }
+        },
         "true_false_value_YhgDXQ": {
           "type": "true-false-value",
           "settings": {
@@ -392,11 +411,12 @@
         "competitor_QE9aBD",
         "competitor_UqnjhR",
         "true_false_value_Qg9gTG",
+        "competitor_VgTDU6",
         "true_false_value_YhgDXQ"
       ],
       "settings": {
         "title": "COMPARE MEMBERSHIPS",
-        "label_1": "REFORMD",
+        "label_1": "REFORMD UNLIMITED",
         "label_2": "REFORMD + THE WELL UNLIMITED",
         "label_3": "Lagree Plus",
         "label_4": "Studio Lagree",
