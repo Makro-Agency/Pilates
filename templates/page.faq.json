@@ -47,6 +47,14 @@
             "detail": "<p>A Megaformer is a fitness machine with a moving carriage, static platforms, and springs for resistance with quick-release technology. It's similar to the reformer, but has more features and attachments than the traditional Pilates reformer, including platform lifts that allow for easier stabilization and impact of joints and less inflammation in connective tissues during and post-workout.. The Mega Pro is the latest Megaformer, and is considered to be the best of the past and future of the Megaformer series.</p>"
           }
         },
+        "que_ans_prKExh": {
+          "type": "que_ans",
+          "disabled": true,
+          "settings": {
+            "title": "When does the pre-opening sale start?",
+            "detail": "<p>Our pre-opening sale will start on Thursday, April 17 at 9 AM (ET).</p>"
+          }
+        },
         "que_ans_ir7wiX": {
           "type": "que_ans",
           "settings": {
@@ -196,14 +204,6 @@
           "settings": {
             "title": "I have a question that isn't answered here. How can I get in touch?",
             "detail": "<p>Please contact us at hello@reformd.com with details of your inquiry and our team will be happy to help!</p>"
-          }
-        },
-        "que_ans_prKExh": {
-          "type": "que_ans",
-          "disabled": true,
-          "settings": {
-            "title": "Can I share my membership or account?",
-            "detail": "<p>No, taking classes under an account that is not your own, modifying account information from one individual to another, creating multiple accounts, or allowing another individual to take classes on your membership is strictly prohibited.<br/><br/>Accounts found in conflict with this policy will be charged the full value of one-month’s membership and will be permanently banned from Sweat and Tonic.</p>"
           }
         },
         "88eef28f-11aa-41e2-96f1-65617d2b3755": {
@@ -393,6 +393,7 @@
         "title_fqec8p",
         "que_ans_bbxt94",
         "que_ans_DBkNnb",
+        "que_ans_prKExh",
         "que_ans_ir7wiX",
         "que_ans_jwiCiH",
         "ab3a0bf7-e7e2-4232-9cf4-65d41c889a85",
@@ -415,7 +416,6 @@
         "e491b7f7-2e86-42db-9739-797a6fbb5195",
         "3ba96673-528e-457a-8524-171c4ebf84ac",
         "df72df29-8093-40fa-83f3-c8def3f9bcfa",
-        "que_ans_prKExh",
         "88eef28f-11aa-41e2-96f1-65617d2b3755",
         "f01c3501-f8e6-44b9-ab49-1b639a6ec3b8",
         "b847ba64-6c33-4d0d-9549-5cced3f8e822",
