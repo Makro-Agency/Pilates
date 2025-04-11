@@ -420,7 +420,7 @@
           "type": "credits_card",
           "settings": {
             "title": "Intro pack: 3 for $50",
-            "price_per_class": "$16.67 per Class",
+            "price_per_class": "$16.67 per Class (Regular: $34)",
             "description": "Valid for use at Reformd only. Credits expire one month from opening. Limit of one purchase per customer.",
             "sale_label": "Pre-opening sale:",
             "sale_price": "$50",
@@ -436,7 +436,7 @@
           "type": "credits_card",
           "settings": {
             "title": "4x Monthly credit pack",
-            "price_per_class": "$21.50 per Class (regular $34)",
+            "price_per_class": "$21.50 per Class (regular: $34)",
             "description": "Renews monthly, minimum of two months. Credits expire in billing month and do not roll over. Valid for use at Reformd only.",
             "sale_label": "+ ADDITIONAL 20% OFF",
             "sale_price": "$86",
@@ -452,7 +452,7 @@
           "type": "credits_card",
           "settings": {
             "title": "8x monthly credit pack",
-            "price_per_class": "$20 per Class (Regular $34)",
+            "price_per_class": "$20 per Class (Regular: $34)",
             "description": "Renews monthly, minimum of two months. Credits expire in billing month and do not roll over. Valid for use at Reformd only.",
             "sale_label": "+ ADDITIONAL 20% OFF",
             "sale_price": "$160",
