@@ -182,7 +182,7 @@
           "type": "que_ans",
           "settings": {
             "title": "Can I freeze my membership?",
-            "detail": "<p>Memberships and monthly credit packs can be frozen for a maximum of 14 days at a time every six months, and you can request your first freeze at any time after starting your membership. At the end of each freeze, 6 months must pass before you are eligible for another. Eligibility does not reset if you cancel and purchase a new membership. If you purchase a pre-opening sale membership, your start date will be the first day Reformd opens.</p>"
+            "detail": "<p>Memberships and monthly credit packs can be frozen for a maximum of 14 days at a time in a six month period, and you can request your first freeze at any time after starting your membership. At the end of each freeze, 6 months must pass before you are eligible for another. Eligibility does not reset if you cancel and purchase a new membership. If you purchase a pre-opening sale membership, your start date will be the first day Reformd opens.</p>"
           }
         },
         "e491b7f7-2e86-42db-9739-797a6fbb5195": {
