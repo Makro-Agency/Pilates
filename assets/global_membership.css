@@ -144,6 +144,8 @@
     font-weight: 500;
     line-height: 100%;
     text-transform: uppercase;
+    flex: 1 1 auto;
+    padding-right: 2rem;
 }
 .price {
     display: flex;
@@ -290,6 +292,7 @@
     }
     .price-wrappper .sale_label {
         font-size: 16px;
+        padding-right: 1rem;
     }
     .membership-card-wrapper .heading-wrap .heading {
         font-size: 22px;
