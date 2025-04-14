@@ -328,6 +328,11 @@
 @media screen and (max-width: 749px) {
   .banner--mobile-bottom:not(.banner--stacked) .banner__content {
     order: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 1rem;
+    padding-inline: 1rem;
   }
 
   .banner:not(.banner--mobile-bottom) .field__input,
