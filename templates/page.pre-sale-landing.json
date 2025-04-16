@@ -206,8 +206,8 @@
             "benefits": "<ul><li>Unlimited classes at Reformd</li><li>Unlimited yoga, Pilates, ride & HIIT classes at Front/Spadina and Yonge/Shuter</li><li>Access to Tonic House at Front/Spadina and Yonge/Shuter</li><li>24-hour priority booking</li><li>Complimentary 30-min Personal Training consulation</li><li>1 guest credit per month (S&T)</li><li>10% off Reformd + S&T retail store</li><li>10% Tonic Spa treatments</li><li>50% off Tonic Spa pool deck membership</li></ul>",
             "total_membership_number": "50",
             "remain_membership_number": "50",
-            "button_text": "",
-            "btn_url": ""
+            "button_text": "BUY NOW",
+            "btn_url": "shopify://pages/buy-classes"
           }
         },
         "membership_card_U67qN8": {
@@ -222,8 +222,8 @@
             "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>10% off Reformd retail store</li></ul>",
             "total_membership_number": "100",
             "remain_membership_number": "100",
-            "button_text": "",
-            "btn_url": ""
+            "button_text": "BUY NOW",
+            "btn_url": "shopify://pages/buy-classes"
           }
         },
         "membership_card_GJKEWW": {
@@ -238,8 +238,8 @@
             "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>Plus all the benefits of your S&T Unlimited membership</li></ul>",
             "total_membership_number": "50",
             "remain_membership_number": "50",
-            "button_text": "",
-            "btn_url": ""
+            "button_text": "BUY NOW",
+            "btn_url": "shopify://pages/buy-classes"
           }
         }
       },
@@ -453,7 +453,7 @@
             "benefits": "",
             "total_membership_number": "200",
             "remain_membership_number": "200",
-            "button_text": "",
+            "button_text": "BUY NOW",
             "btn_url": ""
           }
         },
@@ -469,8 +469,8 @@
             "benefits": "<ul><li>Save $12.50 per credit with a recurring credit pack.</li><li>Price-protected, forever and always - keep your rate as long as your membership remains active.</li></ul>",
             "total_membership_number": "100",
             "remain_membership_number": "100",
-            "button_text": "",
-            "btn_url": ""
+            "button_text": "BUY NOW",
+            "btn_url": "shopify://pages/buy-classes"
           }
         },
         "credits_card_YtBKPz": {
@@ -485,8 +485,8 @@
             "benefits": "<ul><li>Save $14 per credit with a recurring credit pack.</li><li>Price-protected, forever and always - keep your rate as long as your membership remains active</li></ul>",
             "total_membership_number": "75",
             "remain_membership_number": "75",
-            "button_text": "",
-            "btn_url": ""
+            "button_text": "BUY NOW",
+            "btn_url": "shopify://pages/buy-classes"
           }
         },
         "credits_card_7jT9h4": {
@@ -902,8 +902,8 @@
         "show_hide_date": true,
         "date_title": "PRE-OPENING SALE BEGINS",
         "end_date": "2025-04-17",
-        "btn_text": "Pre-OPENING SALE COMING SOON",
-        "btn_url": "#"
+        "btn_text": "SHOP THE SALE",
+        "btn_url": "shopify://pages/buy-classes"
       }
     }
   },
