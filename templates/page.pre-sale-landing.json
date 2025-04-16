@@ -40,7 +40,7 @@
         "presale_countdown_title": "Set your alarms, sale begins",
         "countdown_end_date": "2025-04-08",
         "show_date_pre_on": true,
-        "presale_on_title": "NOW LIVE",
+        "presale_on_title": "",
         "sale_end_date": "2025-04-17 09:00 AM",
         "show_btn_pre": false,
         "btn_text_pre": "",
@@ -900,7 +900,7 @@
         "title": "JOIN THE MOVEMENT",
         "content": "Limited packages available - set your alarms and don't miss your chance to get in on an exclusive pre-opening sale package.",
         "show_hide_date": true,
-        "date_title": "PRE-OPENING SALE BEGINS",
+        "date_title": "",
         "end_date": "2025-04-17 09:00 AM",
         "btn_text": "SHOP THE SALE",
         "btn_url": "shopify://pages/buy-classes"
