@@ -40,7 +40,7 @@
         "countdown_end_date": "2025-04-17 09:00 AM",
         "show_date_pre_on": true,
         "presale_on_title": "Presale Ends",
-        "sale_end_date": "2025-04-17",
+        "sale_end_date": "2025-04-17 09:00 AM",
         "show_btn_pre": true,
         "btn_text_pre": "",
         "btn_url_pre": ""
