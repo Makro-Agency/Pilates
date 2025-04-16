@@ -144,6 +144,20 @@
             "detail": "<p>No, you’ll need to have a S&T membership to access facilities at S&T.</p>"
           }
         },
+        "que_ans_VzY3bt": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Do you offer a corporate membership discount at Reformd?",
+            "detail": "<p>At this time, we do not have corporate membership discounts available for Reformd. If you are an existing corporate discount member at S&T, you may purchase a pre-opening sale package at Reformd; however, your corporate discount will not apply to Reformd.</p>"
+          }
+        },
+        "12b36bdf-f8c7-4c70-a6c5-67d3942a9ec1": {
+          "type": "que_ans",
+          "settings": {
+            "title": "How does express check-in for Unlimited members work?",
+            "detail": "<p>Express check-in is available for Unlimited members who are not checking in with a guest, and do not have any account inquiries or special requests. When you arrive at S&T for your HIIT or Yoga class, you can head straight to the studio to check in with our team member who will be situated by the studio doors. Express check-in opens 10 minutes before class start time. We still recommend arriving and checking in early to ensure you’re all ready for class!</p>"
+          }
+        },
         "title_zYcA3w": {
           "type": "title",
           "settings": {
@@ -260,28 +274,12 @@
             "detail": "<p>We do not allow refunds and do not accept refund requests for price adjustments.</p>"
           }
         },
-        "que_ans_VzY3bt": {
-          "type": "que_ans",
-          "disabled": true,
-          "settings": {
-            "title": "Can I bring my phone into class?",
-            "detail": "<p>Use of a phone during active exercise is prohibited. Phones are not permitted in the yoga studio. You may bring your phone into the Ride and HIIT studios, but please be mindful of your Sweat Fam around you and be present. Your studio time is a gift to yourself – make time for you!</p><p>Please feel free to let your instructor know should you require your mobile device for accessibility or medical reasons.</p>"
-          }
-        },
         "7645ce0f-ffea-4e13-ae63-97cdd9c3bbf3": {
           "type": "que_ans",
           "disabled": true,
           "settings": {
             "title": "How does the waitlist work?",
             "detail": "<p>Our waitlist is designed to move quickly and ensures that guests who want to take a class will have the best chance of getting into that class. As soon as a spot opens up, you will be <strong>automatically enrolled </strong>on a first come, first served basis, up to 10 minutes before class start time. If you do not wish or intend to take the class, we encourage you to remove yourself from the waitlist to avoid automatic enrolment and a penalty should you no longer be able to make it. You can remove yourself from the waitlist at anytime without penalty. Once you are enrolled, our standard no-show / late cancellation policy will apply. Removing yourself from the waitlist will allow other guests who are on the waitlist and able to make it to class the chance to get in. Expect waitlists to move quickly – if you can’t make it to class within 10 minutes of being notified, we recommend that you remove yourself from the waitlist.</p>"
-          }
-        },
-        "12b36bdf-f8c7-4c70-a6c5-67d3942a9ec1": {
-          "type": "que_ans",
-          "disabled": true,
-          "settings": {
-            "title": "How does express check-in for Unlimited members work?",
-            "detail": "<p>Express check-in is available for Unlimited members who are not checking in with a guest, and do not have any account inquiries or special requests. When you arrive at S&T for your HIIT or Yoga class, you can head straight to the studio to check in with our team member who will be situated by the studio doors. Express check-in opens 10 minutes before class start time. We still recommend arriving and checking in early to ensure you’re all ready for class!</p>"
           }
         },
         "0c90dbed-c9e0-448d-8967-022bb2dd36a5": {
@@ -406,6 +404,8 @@
         "que_ans_nCV7JP",
         "4cdf833b-812d-4a9a-84a9-bc2b229a449d",
         "848afe71-f729-4582-a605-5eedb9841282",
+        "que_ans_VzY3bt",
+        "12b36bdf-f8c7-4c70-a6c5-67d3942a9ec1",
         "title_zYcA3w",
         "que_ans_J97CWR",
         "d7696939-47e4-410d-9584-55d9659a7c55",
@@ -422,9 +422,7 @@
         "13ea47b8-18dc-4449-adec-639f034e7805",
         "f327a534-4931-43b9-808d-a10caa75f1ab",
         "70316a9b-847d-447a-9313-7d52ca66f24d",
-        "que_ans_VzY3bt",
         "7645ce0f-ffea-4e13-ae63-97cdd9c3bbf3",
-        "12b36bdf-f8c7-4c70-a6c5-67d3942a9ec1",
         "0c90dbed-c9e0-448d-8967-022bb2dd36a5",
         "60f81ea4-844e-4e74-b276-2fbbd44be5ab",
         "c59ccd3b-4159-4933-b5a8-405abd2d353f",
