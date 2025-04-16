@@ -144,18 +144,18 @@
             "detail": "<p>No, you’ll need to have a S&T membership to access facilities at S&T.</p>"
           }
         },
+        "b847ba64-6c33-4d0d-9549-5cced3f8e822": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Can I book classes for friends wtih a recurring monthly credit pack?",
+            "detail": "<p>No, monthly recurring credits cannot be used to book classes for other people. To book classes for friends, you can purchase standard S&T class credits that can be used for classes, Small Group Training, biohacking, the pool deck, or as guest credits.</p>"
+          }
+        },
         "que_ans_VzY3bt": {
           "type": "que_ans",
           "settings": {
             "title": "Do you offer a corporate membership discount at Reformd?",
             "detail": "<p>At this time, we do not have corporate membership discounts available for Reformd. If you are an existing corporate discount member at S&T, you may purchase a pre-opening sale package at Reformd; however, your corporate discount will not apply to Reformd.</p>"
-          }
-        },
-        "12b36bdf-f8c7-4c70-a6c5-67d3942a9ec1": {
-          "type": "que_ans",
-          "settings": {
-            "title": "How does express check-in for Unlimited members work?",
-            "detail": "<p>Express check-in is available for Unlimited members who are not checking in with a guest, and do not have any account inquiries or special requests. When you arrive at S&T for your HIIT or Yoga class, you can head straight to the studio to check in with our team member who will be situated by the studio doors. Express check-in opens 10 minutes before class start time. We still recommend arriving and checking in early to ensure you’re all ready for class!</p>"
           }
         },
         "title_zYcA3w": {
@@ -234,14 +234,6 @@
             "detail": "<p>Welcome – we can’t wait to meet you!  Please arrive 30 minutes prior to your first class so you can get familiar with the studios you’ll be in, and make sure you’re all set to get your sweat on!</p><p>During peak studio times, our team may not be able to step away from the front desk, but would be happy to provide a tour after class or at any other time at your convenience. </p><p>All you need to bring is a water bottle, workout clothes (or come dressed for movement), running shoes if you're taking a HIIT class, and any personal items you'd like (e.g., makeup, hair brush, shower slides). We provide complimentary sweat towels, yoga mats, cycling shoes, and boxing gloves, and our change rooms are stocked with bath towels, toiletries (shampoo, conditioner, body wash, face wash, and body lotion), and Dyson hairdryers.</p><p>We also sell everything except shoes in our retail shop, in case you forget something.</p><p>We provide lockers with built-in locks to your store your belongings (one locker permitted per guest).</p><p>Check out more <a href=\"https://sweatandtonic.com/pages/first-timers\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/first-timers\">hot tips here</a> prior to your first sweat!</p>"
           }
         },
-        "b847ba64-6c33-4d0d-9549-5cced3f8e822": {
-          "type": "que_ans",
-          "disabled": true,
-          "settings": {
-            "title": "Do I have to book online in advance, or can I just show up?",
-            "detail": "<p>Booking online is recommended to ensure you secure a spot in class, but walk-ins are welcome, provided there are spots available in the class!</p>"
-          }
-        },
         "e4fe30f0-e977-419f-8d79-0f1dc06ec885": {
           "type": "que_ans",
           "disabled": true,
@@ -264,6 +256,14 @@
           "settings": {
             "title": "What’s your cancellation policy?",
             "detail": "<p>You must cancel class at least 12 hours in advance or you will lose a credit. For Unlimited and 9 to 5 Sweat memberships, you will be charged a $24 fee for no shows and $19 for any late cancellations. This includes switching time slots under the 12-hour notice time period. This is to prevent spots from being booked up and unattended in classes that otherwise would have been available for another guest to book, and to give those who are on the waitlists for our most popular classes a chance to get a spot in class. If you are unable to make it to class, we encourage you to cancel at least 12 hours in advance to avoid any charges, and so that your spot can be made available to another fellow Sweat Fam member. To cancel your booking, please access your account online or in our app. If you have any questions, please feel free to contact us at <a href=\"mailto:hello@sweatandtonic.com\" target=\"_blank\">hello@sweatandtonic.com</a>.</p><p></p>"
+          }
+        },
+        "12b36bdf-f8c7-4c70-a6c5-67d3942a9ec1": {
+          "type": "que_ans",
+          "disabled": true,
+          "settings": {
+            "title": "How does express check-in for Unlimited members work?",
+            "detail": "<p>Express check-in is available for Unlimited members who are not checking in with a guest, and do not have any account inquiries or special requests. When you arrive at S&T for your HIIT or Yoga class, you can head straight to the studio to check in with our team member who will be situated by the studio doors. Express check-in opens 10 minutes before class start time. We still recommend arriving and checking in early to ensure you’re all ready for class!</p>"
           }
         },
         "70316a9b-847d-447a-9313-7d52ca66f24d": {
@@ -404,8 +404,8 @@
         "que_ans_nCV7JP",
         "4cdf833b-812d-4a9a-84a9-bc2b229a449d",
         "848afe71-f729-4582-a605-5eedb9841282",
+        "b847ba64-6c33-4d0d-9549-5cced3f8e822",
         "que_ans_VzY3bt",
-        "12b36bdf-f8c7-4c70-a6c5-67d3942a9ec1",
         "title_zYcA3w",
         "que_ans_J97CWR",
         "d7696939-47e4-410d-9584-55d9659a7c55",
@@ -417,10 +417,10 @@
         "df72df29-8093-40fa-83f3-c8def3f9bcfa",
         "88eef28f-11aa-41e2-96f1-65617d2b3755",
         "f01c3501-f8e6-44b9-ab49-1b639a6ec3b8",
-        "b847ba64-6c33-4d0d-9549-5cced3f8e822",
         "e4fe30f0-e977-419f-8d79-0f1dc06ec885",
         "13ea47b8-18dc-4449-adec-639f034e7805",
         "f327a534-4931-43b9-808d-a10caa75f1ab",
+        "12b36bdf-f8c7-4c70-a6c5-67d3942a9ec1",
         "70316a9b-847d-447a-9313-7d52ca66f24d",
         "7645ce0f-ffea-4e13-ae63-97cdd9c3bbf3",
         "0c90dbed-c9e0-448d-8967-022bb2dd36a5",
