@@ -17,13 +17,16 @@ function callIntervalCountDown(obj){
   }, intervals);
 }
 function appendCountDown(inverval_var = null, obj){
+  if( document.querySelector(obj.s_id) == null ) return;
+  
+  var now = new Date().getTime();
+  var hide_ele = document.querySelector(obj.s_id).closest('[data-hide-countdown]');
+  var distance = obj.countDown - now;
+  
   if( distance <= 0 && inverval_var != null){    
     clearInterval(inverval_var);    
   }
-  if( document.querySelector(obj.s_id) == null ) return;
-  var now = new Date().getTime(), hide_ele = document.querySelector(obj.s_id).closest('[data-hide-countdown]'),
-    distance = obj.countDown - now;
-  
+
   if( distance <= 0){    
     hide_ele.classList.add('hidden');
     if( hide_ele.dataset.preCount == "true" ){
@@ -46,16 +49,29 @@ function appendCountDown(inverval_var = null, obj){
     }
     return false;
   }else{
-    var min = addZero(Math.floor((distance % (timeObj.hour)) / (timeObj.minute)) + 1);
-    document.querySelector( obj.s_id + ' .days .number').innerText = addZero(Math.floor(distance / (timeObj.day)));
-    document.querySelector( obj.s_id + ' .hours .number').innerText = addZero(Math.floor((distance % (timeObj.day)) / (timeObj.hour)));
-    document.querySelector( obj.s_id + ' .min .number').innerText = min;
-    //document.querySelector( s_id + '.js-timer-seconds').innerText = Math.floor((distance % (minute)) / second)
+    try {
+      var min = addZero(Math.floor((distance % (timeObj.hour)) / (timeObj.minute)) + 1);
+      var days = addZero(Math.floor(distance / (timeObj.day)));
+      var hours = addZero(Math.floor((distance % (timeObj.day)) / (timeObj.hour)));
+      
+      var daysElement = document.querySelector(obj.s_id + ' .days .number');
+      var hoursElement = document.querySelector(obj.s_id + ' .hours .number');
+      var minElement = document.querySelector(obj.s_id + ' .min .number');
+      
+      if(daysElement) daysElement.innerText = days;
+      if(hoursElement) hoursElement.innerText = hours;
+      if(minElement) minElement.innerText = min;
 
-    document.querySelector( obj.s_id + ' .days .number').closest('.opacity-0') && (
-      document.querySelector( obj.s_id + ' .days .number').closest('.opacity-0').classList.remove('opacity-0')
-    );
-    return true;
+      var opacityElement = document.querySelector(obj.s_id + ' .days .number').closest('.opacity-0');
+      if(opacityElement) {
+        opacityElement.classList.remove('opacity-0');
+      }
+      
+      return true;
+    } catch(e) {
+      console.error('Error updating countdown:', e);
+      return false;
+    }
   }
 }
 
@@ -63,7 +79,14 @@ document.querySelectorAll('[data-count-end-date]').forEach(function(element, ind
   callElementCount(element);
 });
 function callElementCount(element){
+  if(!element || !element.dataset.countEndDate) return;
+  
   var countDown = new Date(element.dataset.countEndDate);
+  if(isNaN(countDown.getTime())) {
+    console.error('Invalid date format:', element.dataset.countEndDate);
+    return;
+  }
+  
   var setToEndofDay = true;
   if( element.dataset.countEndDate.indexOf('AM') > -1 || element.dataset.countEndDate.indexOf('PM') > -1 ){
     setToEndofDay = false;
@@ -72,10 +95,7 @@ function callElementCount(element){
   if( !setToEndofDay ){
     endOfDay = countDown;
   }
-  console.log('countDown', countDown);
-  console.log('setToEndofDay', setToEndofDay);
-  console.log('endOfDay', endOfDay);
-  //var endOfDay = new Date(countDown);
+  
   var countDownObj = {
     countDown: new Date(endOfDay).getTime(),
     s_id: "#"+ element.querySelector('[data-selector]').id
