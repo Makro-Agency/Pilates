@@ -38,7 +38,7 @@
         "show_hide_date": true,
         "presale_countdown_title": "SET YOUR ALARMS - SALE BEGINS IN",
         "countdown_end_date": "2025-04-17 09:00 AM",
-        "show_date_pre_on": true,
+        "show_date_pre_on": false,
         "presale_on_title": "Presale Ends",
         "sale_end_date": "2025-04-17 09:00 AM",
         "show_btn_pre": true,
