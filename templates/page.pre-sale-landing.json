@@ -207,7 +207,7 @@
             "total_membership_number": "50",
             "remain_membership_number": "50",
             "button_text": "BUY NOW",
-            "btn_url": "shopify://pages/buy-classes"
+            "btn_url": "shopify://pages/pricing"
           }
         },
         "membership_card_U67qN8": {
@@ -223,7 +223,7 @@
             "total_membership_number": "100",
             "remain_membership_number": "100",
             "button_text": "BUY NOW",
-            "btn_url": "shopify://pages/buy-classes"
+            "btn_url": "shopify://pages/pricing"
           }
         },
         "membership_card_GJKEWW": {
@@ -239,7 +239,7 @@
             "total_membership_number": "50",
             "remain_membership_number": "50",
             "button_text": "BUY NOW",
-            "btn_url": "shopify://pages/buy-classes"
+            "btn_url": "shopify://pages/pricing"
           }
         }
       },
@@ -454,7 +454,7 @@
             "total_membership_number": "200",
             "remain_membership_number": "200",
             "button_text": "BUY NOW",
-            "btn_url": "shopify://pages/buy-classes"
+            "btn_url": "shopify://pages/pricing"
           }
         },
         "credits_card_EKgxAt": {
@@ -470,7 +470,7 @@
             "total_membership_number": "100",
             "remain_membership_number": "100",
             "button_text": "BUY NOW",
-            "btn_url": "shopify://pages/buy-classes"
+            "btn_url": "shopify://pages/pricing"
           }
         },
         "credits_card_YtBKPz": {
@@ -486,7 +486,7 @@
             "total_membership_number": "75",
             "remain_membership_number": "75",
             "button_text": "BUY NOW",
-            "btn_url": "shopify://pages/buy-classes"
+            "btn_url": "shopify://pages/pricing"
           }
         },
         "credits_card_7jT9h4": {
@@ -903,7 +903,7 @@
         "date_title": "",
         "end_date": "2025-04-17 09:00 AM",
         "btn_text": "SHOP THE SALE",
-        "btn_url": "shopify://pages/buy-classes"
+        "btn_url": "shopify://pages/pricing"
       }
     }
   },
