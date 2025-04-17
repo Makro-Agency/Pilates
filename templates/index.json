@@ -16,7 +16,7 @@
         "mobile_image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL.jpg",
         "overlay_opacity": 100,
         "title": "Welcome to the movement",
-        "btn_text": "VIEW OUR PRE-OPENING SALE PACKAGES",
+        "btn_text": "PRE-OPENING PACKAGES SOLD OUT",
         "btn_url": "shopify://pages/pre-opening-sale-april17",
         "newsletter": true,
         "newsletter_text": "SIGN UP TO GET NOTIFIED"
@@ -30,7 +30,7 @@
         "overlay_opacity": 58,
         "countdown_title": "Pre-opening sale: April 17",
         "countdown_content": "Introducing REFORMD by Sweat and Tonic - the largest capacity Lagree® studio in the world and the next step in our mission to bring the best of boutique fitness & wellness to Toronto.",
-        "sale_title": "Presale Ends",
+        "sale_title": "PRE-OPENING SALE: SOLD OUT",
         "sale_content": "The World's Highest-Capacity Lagree Method Studio at The Well™ Not Pilates. Not reformer. This is Lagree® - reimagined through the signature Sweat & Tonic experience.",
         "show_btn": true,
         "btn_text": "SEE PRICING DETAILS",
@@ -42,8 +42,8 @@
         "presale_on_title": "Presale Ends",
         "sale_end_date": "2025-04-12 09:00 AM",
         "show_btn_pre": true,
-        "btn_text_pre": "SEE PRICING DETAILS",
-        "btn_url_pre": "shopify://pages/pre-opening-sale-april17"
+        "btn_text_pre": "Purchase a credit pack at S&T",
+        "btn_url_pre": "shopify://pages/pricing"
       }
     }
   },
