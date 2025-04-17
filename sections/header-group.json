@@ -47,7 +47,7 @@
         "btn_account_text": "My Account",
         "btn_buy_classes": false,
         "buy_classes_text": "Buy Classes",
-        "buy_classes_url": "shopify://pages/buy-classes",
+        "buy_classes_url": "shopify://pages/pricing",
         "btn_book_now": false,
         "book_now_text": "Book Now",
         "book_now_url": "",
