@@ -31,20 +31,20 @@
         "overlay_opacity": 20,
         "countdown_title": "Pre-opening sale: launching April, 10",
         "countdown_content": "Introducing the world's highest capacity Lagree Method™ studio, powered by Sweat and Tonic. Coming to The Well at Front/Spadina in spring 2025.",
-        "sale_title": "PRE-OPENING SALE",
-        "sale_content": "Introducing the world's highest capacity Lagree Method™ studio, powered by Sweat and Tonic. Coming to The Well at Front/Spadina in spring 2025.",
+        "sale_title": "PRE-OPENING SALE: SOLD OUT",
+        "sale_content": "Introducing the world's highest capacity Lagree Method™ studio, powered by Sweat and Tonic. Coming to The Well at Front/Spadina in spring 2025.\n<br>\n<br>\nOur pre-opening sale packages are now SOLD OUT. You can still get in classes by purchasing a regular S&T credit pack, valid for use at S&T and Reformd.",
         "show_btn": false,
-        "btn_text": "Join the Revolution",
-        "btn_url": "",
+        "btn_text": "Buy a S&T credit pack",
+        "btn_url": "shopify://pages/pricing",
         "show_hide_date": true,
         "presale_countdown_title": "Set your alarms, sale begins",
         "countdown_end_date": "2025-04-07 09:00 AM",
         "show_date_pre_on": true,
         "presale_on_title": "",
         "sale_end_date": "2025-04-17 09:00 AM",
-        "show_btn_pre": false,
-        "btn_text_pre": "",
-        "btn_url_pre": ""
+        "show_btn_pre": true,
+        "btn_text_pre": "Buy a S&T credit pack",
+        "btn_url_pre": "shopify://pages/pricing"
       }
     },
     "global_linklist_gKEx6Q": {
