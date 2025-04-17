@@ -244,6 +244,9 @@
     color: #000;
 }
 /*--------monthly memebership-----------*/
+.benefits .heading {
+  padding-top: 0.05em;
+}
 .monthly-credits .membership-card-wrapper {
     display: flex;
     flex-wrap: wrap;
