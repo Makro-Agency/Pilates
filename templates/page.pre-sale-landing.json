@@ -237,7 +237,7 @@
             "title_benefits": "INCLUDES",
             "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>Plus all the benefits of your S&T Unlimited membership</li></ul>",
             "total_membership_number": "50",
-            "remain_membership_number": "50",
+            "remain_membership_number": "0",
             "button_text": "BUY NOW",
             "btn_url": "shopify://pages/pricing"
           }
@@ -452,7 +452,7 @@
             "original_price": "$60",
             "benefits": "",
             "total_membership_number": "200",
-            "remain_membership_number": "200",
+            "remain_membership_number": "0",
             "button_text": "BUY NOW",
             "btn_url": "shopify://pages/pricing"
           }
@@ -468,7 +468,7 @@
             "original_price": "$108",
             "benefits": "<ul><li>Save $12.50 per credit with a recurring credit pack.</li><li>Price-protected, forever and always - keep your rate as long as your membership remains active.</li></ul>",
             "total_membership_number": "100",
-            "remain_membership_number": "100",
+            "remain_membership_number": "0",
             "button_text": "BUY NOW",
             "btn_url": "shopify://pages/pricing"
           }
@@ -484,7 +484,7 @@
             "original_price": "$200",
             "benefits": "<ul><li>Save $14 per credit with a recurring credit pack.</li><li>Price-protected, forever and always - keep your rate as long as your membership remains active</li></ul>",
             "total_membership_number": "75",
-            "remain_membership_number": "75",
+            "remain_membership_number": "20",
             "button_text": "BUY NOW",
             "btn_url": "shopify://pages/pricing"
           }
