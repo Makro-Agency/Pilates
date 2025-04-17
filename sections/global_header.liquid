@@ -1,11 +1,18 @@
 {{ 'global_header.css' | asset_url | stylesheet_tag }}
 {%- liquid            
   assign has_drakness = 'dark'
-  assign bright_temp = 'pre-sale-landing,index,faq' | split:','
+  assign bright_temp = 'pre-sale-landing,index,faq,terms-conditions' | split:','
   for bt in bright_temp
-    if template contains bt
-      assign has_drakness = ''
-      break
+    if bt == "page"
+      if template.suffix == blank
+        assign has_drakness = ''
+        break
+      endif
+    else
+      if template contains bt
+        assign has_drakness = ''
+        break
+      endif
     endif
   endfor
 -%}
