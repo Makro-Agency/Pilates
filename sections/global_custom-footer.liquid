@@ -21,7 +21,24 @@
                     </small>
                 </div>
             </div>
+        </div>   
+        {%- if section.settings.policy_link -%}
+        <div class="footer-bottom{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {%- if settings.animations_reveal_on_scroll %} data-cascade{% endif -%}
+            >            
+            <div class="row">
+                <div class="col col-links">                    
+                    <ul class="policies list-unstyled">
+                    {%- for link in linklists[section.settings.policy_link].links -%}                        
+                        <li>
+                            <small class="copyright__content{% if link.active %} active{% endif %}"><a href="{{ link.url }}">{{ link.title }}</a></small>
+                        </li>                        
+                    {%- endfor -%}
+                    </ul>
+                </div>
+            </div>            
         </div>
+        {%- endif -%}
     </div>
 </div>
 
@@ -58,6 +75,15 @@
         "label": "Add Email",
         "id": "email"
     },
+    {
+        "type": "header",
+        "content": "Policy menu"
+    },
+    {
+        "type": "link_list",
+        "label": "Provide navigation for policies",
+        "id": "policy_link"
+    }
   ],
   "presets": [
     {
