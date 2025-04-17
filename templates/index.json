@@ -42,8 +42,8 @@
         "presale_on_title": "Presale Ends",
         "sale_end_date": "2025-04-12 09:00 AM",
         "show_btn_pre": true,
-        "btn_text_pre": "",
-        "btn_url_pre": ""
+        "btn_text_pre": "SEE PRICING DETAILS",
+        "btn_url_pre": "shopify://pages/pre-opening-sale-april17"
       }
     }
   },
