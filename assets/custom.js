@@ -10,82 +10,177 @@ function addZero(value){
   temp = (value < 10 ? `0${ value }` : value);  
   return temp;
 }
+
+function getESTDate(dateString) {
+  // Expected format: "2025-04-17 09:00 AM"
+  try {
+    const [datePart, timePart, meridiem] = dateString.split(' ');
+    const [year, month, day] = datePart.split('-').map(num => parseInt(num, 10));
+    let [hours, minutes] = timePart.split(':').map(num => parseInt(num, 10));
+    
+    // Adjust hours for PM
+    if (meridiem === 'PM' && hours < 12) {
+      hours += 12;
+    }
+    // Adjust for 12 AM
+    if (meridiem === 'AM' && hours === 12) {
+      hours = 0;
+    }
+
+    // Create date string in EST
+    const estDateString = `${year}-${addZero(month)}-${addZero(day)}T${addZero(hours)}:${addZero(minutes)}:00-04:00`;
+    
+    // First create the date in EST
+    const estDate = new Date(estDateString);
+    
+    // If the browser doesn't support the timezone format, fall back to manual offset calculation
+    if (isNaN(estDate.getTime())) {
+      const date = new Date(year, month - 1, day, hours, minutes);
+      // Get the time difference between local and EST (UTC-4)
+      const estOffset = 4 * 60; // EST offset in minutes
+      const localOffset = date.getTimezoneOffset();
+      const offsetDiff = localOffset - estOffset;
+      
+      // Adjust the date by the offset difference
+      date.setMinutes(date.getMinutes() + offsetDiff);
+      return date;
+    }
+    
+    return estDate;
+  } catch (e) {
+    console.error('Error parsing date:', e);
+    return null;
+  }
+}
+
+function initializeCountdowns() {
+  document.querySelectorAll('[data-count-end-date]').forEach(function(element) {
+    if(element) {
+      callElementCount(element);
+      // Remove opacity-0 class from parent banner-content
+      const bannerContent = element.closest('.banner-content');
+      if(bannerContent && bannerContent.classList.contains('opacity-0')) {
+        bannerContent.classList.remove('opacity-0');
+      }
+    }
+  });
+}
+
 function callIntervalCountDown(obj){
+  if(!obj || !obj.countDown) return;
+  
   var intervals = timeObj.minute/7.5;
   var x = setInterval(function() {
     appendCountDown(x, obj);
   }, intervals);
 }
+
 function appendCountDown(inverval_var = null, obj){
-  if( distance <= 0 && inverval_var != null){    
+  if(!obj || !obj.s_id || !document.querySelector(obj.s_id)) return false;
+  
+  var now = new Date().getTime();
+  var hide_ele = document.querySelector(obj.s_id).closest('[data-hide-countdown]');
+  var distance = obj.countDown - now;
+  
+  if(distance <= 0 && inverval_var != null){    
     clearInterval(inverval_var);    
   }
-  if( document.querySelector(obj.s_id) == null ) return;
-  var now = new Date().getTime(), hide_ele = document.querySelector(obj.s_id).closest('[data-hide-countdown]'),
-    distance = obj.countDown - now;
-  
-  if( distance <= 0){    
-    hide_ele.classList.add('hidden');
-    if( hide_ele.dataset.preCount == "true" ){
-      const pre_content = hide_ele.closest('.shopify-section').querySelector('[data-pre-content]');
-      if( pre_content ){
-        hide_ele.closest('[data-main]').classList.add('hidden');
-        hide_ele.closest('[data-main]').remove();
 
-        pre_content.classList.remove('hidden');
-        if( pre_content.querySelector('[data-count-end-date]') ){
-          callElementCount(pre_content.querySelector('[data-count-end-date]'));
-          
-          var countDownObj = JSON.parse(pre_content.dataset.obj);
-          var hasDistande = appendCountDown(null, countDownObj);
-          hasDistande && callIntervalCountDown(countDownObj);
+  if(distance <= 0){    
+    if(hide_ele) {
+      hide_ele.classList.add('hidden');
+      if(hide_ele.dataset.preCount == "true"){
+        const pre_content = hide_ele.closest('.shopify-section').querySelector('[data-pre-content]');
+        if(pre_content){
+          const mainContent = hide_ele.closest('[data-main]');
+          if(mainContent) {
+            mainContent.classList.add('hidden');
+            mainContent.remove();
+          }
 
-          pre_content.removeAttribute('dataset-obj');
+          pre_content.classList.remove('hidden');
+          const newCountdown = pre_content.querySelector('[data-count-end-date]');
+          if(newCountdown){
+            callElementCount(newCountdown);
+            
+            if(pre_content.dataset.obj) {
+              var countDownObj = JSON.parse(pre_content.dataset.obj);
+              var hasDistance = appendCountDown(null, countDownObj);
+              if(hasDistance) callIntervalCountDown(countDownObj);
+              pre_content.removeAttribute('dataset-obj');
+            }
+          }
         }
       }
     }
     return false;
-  }else{
-    var min = addZero(Math.floor((distance % (timeObj.hour)) / (timeObj.minute)) + 1);
-    document.querySelector( obj.s_id + ' .days .number').innerText = addZero(Math.floor(distance / (timeObj.day)));
-    document.querySelector( obj.s_id + ' .hours .number').innerText = addZero(Math.floor((distance % (timeObj.day)) / (timeObj.hour)));
-    document.querySelector( obj.s_id + ' .min .number').innerText = min;
-    //document.querySelector( s_id + '.js-timer-seconds').innerText = Math.floor((distance % (minute)) / second)
+  } else {
+    try {
+      var days = Math.floor(distance / (timeObj.day));
+      var hours = Math.floor((distance % (timeObj.day)) / (timeObj.hour));
+      var minutes = Math.floor((distance % (timeObj.hour)) / (timeObj.minute));
+      
+      var daysElement = document.querySelector(obj.s_id + ' .days .number');
+      var hoursElement = document.querySelector(obj.s_id + ' .hours .number');
+      var minElement = document.querySelector(obj.s_id + ' .min .number');
+      
+      if(daysElement) daysElement.innerText = addZero(days);
+      if(hoursElement) hoursElement.innerText = addZero(hours);
+      if(minElement) minElement.innerText = addZero(minutes);
 
-    document.querySelector( obj.s_id + ' .days .number').closest('.opacity-0') && (
-      document.querySelector( obj.s_id + ' .days .number').closest('.opacity-0').classList.remove('opacity-0')
-    );
-    return true;
+      // Remove opacity-0 class if present
+      var opacityElement = document.querySelector(obj.s_id).closest('.opacity-0');
+      if(opacityElement) {
+        opacityElement.classList.remove('opacity-0');
+      }
+      
+      return true;
+    } catch(e) {
+      console.error('Error updating countdown:', e);
+      return false;
+    }
   }
 }
 
-document.querySelectorAll('[data-count-end-date]').forEach(function(element, index){
-  callElementCount(element);
-});
 function callElementCount(element){
-  var countDown = new Date(element.dataset.countEndDate);
-  var setToEndofDay = true;
-  if( element.dataset.countEndDate.indexOf('AM') > -1 || element.dataset.countEndDate.indexOf('PM') > -1 ){
-    setToEndofDay = false;
-  }  
-  var endOfDay = new Date(countDown.getFullYear(), countDown.getMonth(), countDown.getDate(), 23, 59, 59, 999);
-  if( !setToEndofDay ){
-    endOfDay = countDown;
+  if(!element || !element.dataset.countEndDate) return;
+  
+  try {
+    const parsedDate = getESTDate(element.dataset.countEndDate.trim());
+    if(!parsedDate || isNaN(parsedDate.getTime())) {
+      console.error('Invalid date format:', element.dataset.countEndDate);
+      return;
+    }
+    
+    var selector = element.querySelector('[data-selector]');
+    if(!selector) return;
+    
+    var countDownObj = {
+      countDown: parsedDate.getTime(),
+      s_id: "#" + selector.id
+    };
+    
+    if(!element.closest('[data-pre-content]')) {
+      var hasDistance = appendCountDown(null, countDownObj);
+      if(hasDistance) callIntervalCountDown(countDownObj);
+    } else {
+      element.closest('[data-pre-content]').dataset.obj = JSON.stringify(countDownObj);
+    }
+  } catch(e) {
+    console.error('Error in callElementCount:', e);
   }
-  console.log('countDown', countDown);
-  console.log('setToEndofDay', setToEndofDay);
-  console.log('endOfDay', endOfDay);
-  //var endOfDay = new Date(countDown);
-  var countDownObj = {
-    countDown: new Date(endOfDay).getTime(),
-    s_id: "#"+ element.querySelector('[data-selector]').id
-  };  
-  if( element.closest('[data-pre-content]') == null ){
-    var hasDistande = appendCountDown(null, countDownObj);
-    hasDistande && callIntervalCountDown(countDownObj);
-  }else{
-    element.closest('[data-pre-content]').dataset.obj = JSON.stringify(countDownObj);
-  }
+}
+
+// Initialize countdowns when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  initializeCountdowns();
+});
+
+// Re-initialize countdowns when Shopify section is loaded (for theme editor)
+if(Shopify.designMode) {
+  document.addEventListener('shopify:section:load', function(event) {
+    initializeCountdowns();
+  });
 }
 
 $(function() {
