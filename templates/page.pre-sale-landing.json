@@ -893,6 +893,7 @@
     },
     "global_image_banner_wAR3NQ": {
       "type": "global_image-banner",
+      "disabled": true,
       "settings": {
         "desktop_image": "shopify://shop_images/gimage-banner.png",
         "mobile_image": "shopify://shop_images/gimage-banner-mob.png",
