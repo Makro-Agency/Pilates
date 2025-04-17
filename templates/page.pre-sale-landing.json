@@ -454,7 +454,7 @@
             "total_membership_number": "200",
             "remain_membership_number": "200",
             "button_text": "BUY NOW",
-            "btn_url": ""
+            "btn_url": "shopify://pages/buy-classes"
           }
         },
         "credits_card_EKgxAt": {
