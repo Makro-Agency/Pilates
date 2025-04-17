@@ -453,7 +453,7 @@
             "benefits": "",
             "total_membership_number": "200",
             "remain_membership_number": "0",
-            "button_text": "BUY NOW",
+            "button_text": "",
             "btn_url": "shopify://pages/pricing"
           }
         },
@@ -469,7 +469,7 @@
             "benefits": "<ul><li>Save $12.50 per credit with a recurring credit pack.</li><li>Price-protected, forever and always - keep your rate as long as your membership remains active.</li></ul>",
             "total_membership_number": "100",
             "remain_membership_number": "0",
-            "button_text": "BUY NOW",
+            "button_text": "",
             "btn_url": "shopify://pages/pricing"
           }
         },
@@ -485,7 +485,7 @@
             "benefits": "<ul><li>Save $14 per credit with a recurring credit pack.</li><li>Price-protected, forever and always - keep your rate as long as your membership remains active</li></ul>",
             "total_membership_number": "75",
             "remain_membership_number": "0",
-            "button_text": "BUY NOW",
+            "button_text": "",
             "btn_url": "shopify://pages/pricing"
           }
         },
