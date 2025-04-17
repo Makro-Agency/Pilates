@@ -238,7 +238,7 @@
             "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>Plus all the benefits of your S&T Unlimited membership</li></ul>",
             "total_membership_number": "50",
             "remain_membership_number": "0",
-            "button_text": "BUY NOW",
+            "button_text": "",
             "btn_url": "shopify://pages/pricing"
           }
         }
