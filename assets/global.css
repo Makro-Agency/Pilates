@@ -163,7 +163,7 @@ body .underlined-link:hover, body .customer a:hover, body .inline-richtext a:hov
   max-width: 100%;
 }
 .page-width--narrow{
-  max-width: 880px;
+  max-width: 960px;
 }
 .section-padding{
   padding-top: 120px;

@@ -151,14 +151,43 @@
     {% sections 'header-group' %}
     {%- liquid            
       assign has_drakness = false
-      assign bright_temp = 'index,pre-sale-landing,faq' | split:','
+      assign bright_temp = 'index,pre-sale-landing,faq,terms-conditions' | split:','
       for bt in bright_temp
-        if template contains bt
-          assign has_drakness = true
-          break
+        if bt == "page"
+          if template.suffix == blank
+            assign has_drakness = true
+            break
+          endif
+        else
+          if template contains bt
+            assign has_drakness = true
+            break
+          endif
         endif
       endfor
     -%}
+    {% if has_drakness %}
+      {% style %}
+        :root, .color-background-1 {
+          --color-background: 0, 0, 0;
+          --gradient-background: #000;
+          --color-foreground: 255, 255, 255;          
+          --color-shadow: 255, 255, 255;
+          --color-button: 255, 255, 255;
+          --color-button-text: 0, 0, 0;
+          --color-secondary-button: 0, 0, 0;
+          --color-secondary-button-text: 199, 157, 91;
+          --color-link: 199, 157, 91;
+          --color-badge-foreground: 255, 255, 255;
+          --color-badge-background: 0, 0, 0;
+          --color-badge-border: 255, 255, 255;
+          --payment-terms-background-color: rgb(255 255 255);
+        }
+        body .policies-section .rte {
+          color: rgb(var(--color-foreground));
+        }
+      {% endstyle %}
+    {% endif %}
 
     <main id="MainContent" class="content-for-layout focus-none dark--{{ has_drakness }}" role="main" tabindex="-1">
       {{ content_for_layout }}
