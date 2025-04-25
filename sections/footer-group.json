@@ -17,7 +17,8 @@
         "background_color": "#000000",
         "select_logo": "shopify://shop_images/logo-1.png",
         "contact": "",
-        "email": "hello@reformd.com"
+        "email": "hello@reformd.com",
+        "policy_link": "policies"
       }
     }
   },
