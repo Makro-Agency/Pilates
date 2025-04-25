@@ -165,6 +165,7 @@ body .underlined-link:hover, body .customer a:hover, body .inline-richtext a:hov
 .page-width--narrow{
   max-width: 960px;
 }
+body.template--accessibility-policy .page-width--narrow,
 body.template--terms-conditions .page-width--narrow {
   max-width: 880px;
 }

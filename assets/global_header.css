@@ -228,7 +228,7 @@ body.mobile-toggle--show {
     main.dark--false {        
         min-height: calc(100vh - 6.4rem - 20.5rem);
     }
-    main.dark--false .section-padding:first-child:not(.accessibility-policy-page) {
+    main.dark--false .section-padding:first-child:not(.accessibility-policy-page,.accessibility-contact-wrap) {
         padding-top: 0;
     }
     @media only screen and (min-width: 990px) {
