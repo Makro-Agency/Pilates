@@ -460,7 +460,7 @@ img {
 main#MainContent {
   overflow-x: hidden; 
 }
-main#MainContent:not(.dark--false) {
+main#MainContent:not(.dark--false,body.template--terms-conditions .dark--true) {
   background-color: #000;
 }
 @media only screen and (min-width: 768px) {
