@@ -185,6 +185,7 @@
         "section_link_6C3deD",
         "section_link_bpw9YA"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "membership-credits",
         "title": "Memberships & credits",
@@ -248,6 +249,7 @@
         "membership_card_U67qN8",
         "membership_card_GJKEWW"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "membership",
         "main_title": "Memberships",
@@ -549,6 +551,7 @@
         "credits_card_79cFzr",
         "credits_card_mRgXam"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "credits",
         "main_title": "Credit packs",
