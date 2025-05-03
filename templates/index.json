@@ -34,7 +34,7 @@
         "sale_content": "The World's Highest-Capacity Lagree Method Studio at The Well™ Not Pilates. Not reformer. This is Lagree® - reimagined through the signature Sweat and Tonic experience.",
         "show_btn": true,
         "btn_text": "SEE PRICING DETAILS",
-        "btn_url": "shopify://pages/pre-opening-sale-april17",
+        "btn_url": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750",
         "show_hide_date": true,
         "presale_countdown_title": "",
         "countdown_end_date": "2025-04-17 09:00 AM",
@@ -43,7 +43,7 @@
         "sale_end_date": "2025-04-12 09:00 AM",
         "show_btn_pre": true,
         "btn_text_pre": "Purchase a credit pack at S&T",
-        "btn_url_pre": "shopify://pages/pricing"
+        "btn_url_pre": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750"
       }
     }
   },
