@@ -550,7 +550,6 @@
         "credits_card_79cFzr",
         "credits_card_mRgXam"
       ],
-      "disabled": true,
       "settings": {
         "section_id": "credits",
         "main_title": "Credit packs",
@@ -743,6 +742,7 @@
         "credits_card_7FexRm",
         "credits_card_p6xjkN"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "main_title": "Monthly Credit Packs",
