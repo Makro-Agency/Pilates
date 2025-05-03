@@ -59,6 +59,7 @@
         },
         "links_wgtLej": {
           "type": "links",
+          "disabled": true,
           "settings": {
             "link_lable": "Memberships & credits",
             "section_id": "membership-credits"
@@ -446,37 +447,86 @@
         "credits_card_Y8kcA3": {
           "type": "credits_card",
           "settings": {
-            "title": "Intro pack: 3 for $50",
-            "price_per_class": "$16.67 / Class (Regular: 3 for $60)",
-            "description": "Valid for use at Reformd only. Credits expire one month from opening. Limit of one purchase per customer.",
-            "sale_label": "+ ADDITIONAL 17% OFF",
-            "sale_price": "$50",
-            "original_price": "$60",
-            "benefits": "",
-            "total_membership_number": "200",
-            "remain_membership_number": "0",
-            "button_text": "",
-            "btn_url": "shopify://pages/pricing"
+            "title": "Intro pack: 3 for $60",
+            "price_per_class": "FIRST-TIMERS ONLY",
+            "description": "For first-time guests only. Valid for use at Reformd and S&T. Credits expire one month from purchase.",
+            "sale_label": "$20 / class",
+            "sale_price": "$60",
+            "original_price": "",
+            "benefits": "<p>Valid for:</p><ul><li>Yoga, Pilates, Ride & HIIT classes at S&T</li><li>Classes at Reformd</li><li>Small Group Training at S&T</li><li>Biohacking at Tonic Spa: Red Light Therapy, Compression Therapy, Private Hot & Cold Therapy Suite</li><li>Pool deck at Tonic Spa</li></ul>",
+            "total_membership_number": "",
+            "remain_membership_number": "",
+            "button_text": "BUY NOW",
+            "btn_url": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750"
+          }
+        },
+        "credits_card_7jT9h4": {
+          "type": "credits_card",
+          "settings": {
+            "title": "SINGLE CREDIT",
+            "price_per_class": "$34 / CREDIT",
+            "description": "Valid for use at Reformd and S&T. Expires three months from purchase.",
+            "sale_label": "1 CREDIT",
+            "sale_price": "$34",
+            "original_price": "",
+            "benefits": "<p>Valid for:</p><ul><li>Yoga, Pilates, Ride & HIIT classes at S&T</li><li>Classes at Reformd</li><li>Small Group Training at S&T</li><li>Biohacking at Tonic Spa: Red Light Therapy, Compression Therapy, Private Hot & Cold Therapy Suite</li><li>Pool deck at Tonic Spa</li></ul>",
+            "total_membership_number": "",
+            "remain_membership_number": "",
+            "button_text": "BUY NOW",
+            "btn_url": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750"
           }
         },
         "credits_card_EKgxAt": {
           "type": "credits_card",
           "settings": {
-            "title": "4x Monthly credit pack",
-            "price_per_class": "$21.50 / Class (regular: $34)",
-            "description": "Renews monthly, minimum of two months. Credits expire in billing month and do not roll over. Valid for use at Reformd only.",
-            "sale_label": "+ ADDITIONAL 20% OFF",
-            "sale_price": "$86",
-            "original_price": "$108",
-            "benefits": "<ul><li>Save $12.50 per credit with a recurring credit pack.</li><li>Price-protected, forever and always - keep your rate as long as your membership remains active.</li></ul>",
-            "total_membership_number": "100",
-            "remain_membership_number": "0",
-            "button_text": "",
-            "btn_url": "shopify://pages/pricing"
+            "title": "5 CREDIT PACK",
+            "price_per_class": "$31 / CREDIT",
+            "description": "Valid for use at Reformd and S&T. Expires three months from purchase.",
+            "sale_label": "5 CREDITS",
+            "sale_price": "$155",
+            "original_price": "",
+            "benefits": "<p>Valid for:</p><ul><li>Yoga, Pilates, Ride & HIIT classes at S&T</li><li>Classes at Reformd</li><li>Small Group Training at S&T</li><li>Biohacking at Tonic Spa: Red Light Therapy, Compression Therapy, Private Hot & Cold Therapy Suite</li><li>Pool deck at Tonic Spa</li></ul>",
+            "total_membership_number": "",
+            "remain_membership_number": "",
+            "button_text": "BUY NOW",
+            "btn_url": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750"
+          }
+        },
+        "credits_card_79cFzr": {
+          "type": "credits_card",
+          "settings": {
+            "title": "10 Credit Pack",
+            "price_per_class": "$29 / CREDIT",
+            "description": "Valid for use at Reformd and S&T. Expires three months from purchase.",
+            "sale_label": "10 CREDITS",
+            "sale_price": "$290",
+            "original_price": "",
+            "benefits": "<p>Valid for:</p><ul><li>Yoga, Pilates, Ride & HIIT classes at S&T</li><li>Classes at Reformd</li><li>Small Group Training at S&T</li><li>Biohacking at Tonic Spa: Red Light Therapy, Compression Therapy, Private Hot & Cold Therapy Suite</li><li>Pool deck at Tonic Spa</li></ul>",
+            "total_membership_number": "",
+            "remain_membership_number": "",
+            "button_text": "BUY NOW",
+            "btn_url": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750"
+          }
+        },
+        "credits_card_mRgXam": {
+          "type": "credits_card",
+          "settings": {
+            "title": "15 Credit Pack",
+            "price_per_class": "$26.33 / CLASS",
+            "description": "Valid for use at Reformd and S&T. Expires three months from purchase.",
+            "sale_label": "15 CREDITS",
+            "sale_price": "$395",
+            "original_price": "",
+            "benefits": "<p>Valid for:</p><ul><li>Yoga, Pilates, Ride & HIIT classes at S&T</li><li>Classes at Reformd</li><li>Small Group Training at S&T</li><li>Biohacking at Tonic Spa: Red Light Therapy, Compression Therapy, Private Hot & Cold Therapy Suite</li><li>Pool deck at Tonic Spa</li></ul>",
+            "total_membership_number": "",
+            "remain_membership_number": "",
+            "button_text": "BUY NOW",
+            "btn_url": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750"
           }
         },
         "credits_card_YtBKPz": {
           "type": "credits_card",
+          "disabled": true,
           "settings": {
             "title": "8x monthly credit pack",
             "price_per_class": "$20 / Class (Regular: $34)",
@@ -490,71 +540,67 @@
             "button_text": "",
             "btn_url": "shopify://pages/pricing"
           }
-        },
-        "credits_card_7jT9h4": {
+        }
+      },
+      "block_order": [
+        "credits_card_Y8kcA3",
+        "credits_card_7jT9h4",
+        "credits_card_EKgxAt",
+        "credits_card_79cFzr",
+        "credits_card_mRgXam",
+        "credits_card_YtBKPz"
+      ],
+      "settings": {
+        "section_id": "credits",
+        "main_title": "Credit packs",
+        "main_description": "Credit packs activate at time of purchase and are valid for use at S&T and Reformd."
+      }
+    },
+    "global_monthly_credits_4bKxDX": {
+      "type": "global_monthly-credits",
+      "blocks": {
+        "credits_card_7FexRm": {
           "type": "credits_card",
-          "disabled": true,
           "settings": {
-            "title": "",
-            "price_per_class": "",
-            "description": "",
+            "title": "4x MONTHLY CREDIT PACK",
+            "price_per_class": "$27 / Class",
+            "description": "Renews monthly, minimum of two months. Credits expire in billing month and do not roll over. Valid for use at Reformd only.",
             "sale_label": "",
-            "sale_price": "",
+            "sale_price": "$108",
             "original_price": "",
-            "benefits": "",
+            "benefits": "<ul><li>Save $7 per credit with a recurring credit pack.</li><li>Price-protected, forever and always - keep your rate as long as your membership remains active.</li></ul>",
             "total_membership_number": "",
             "remain_membership_number": "",
             "button_text": "",
             "btn_url": ""
           }
         },
-        "credits_card_79cFzr": {
+        "credits_card_p6xjkN": {
           "type": "credits_card",
-          "disabled": true,
           "settings": {
-            "title": "10 Credit Pack",
-            "price_per_class": "$40 per Class",
-            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
-            "sale_label": "Pre-opening sale:",
-            "sale_price": "$120",
-            "original_price": "$180",
-            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
-            "total_membership_number": "24",
-            "remain_membership_number": "20",
-            "button_text": "",
-            "btn_url": ""
-          }
-        },
-        "credits_card_mRgXam": {
-          "type": "credits_card",
-          "disabled": true,
-          "settings": {
-            "title": "15 Credit Pack",
-            "price_per_class": "$40 per Class",
-            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
-            "sale_label": "Pre-opening sale:",
-            "sale_price": "$120",
-            "original_price": "$180",
-            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
-            "total_membership_number": "24",
-            "remain_membership_number": "20",
+            "title": "8X MONTHLY CREDIT PACK",
+            "price_per_class": "$25 per Class",
+            "description": "Renews monthly, minimum of two months. Credits expire in billing month and do not roll over. Valid for use at Reformd only.",
+            "sale_label": "",
+            "sale_price": "$200",
+            "original_price": "",
+            "benefits": "<ul><li>Save $9 per credit with a recurring credit pack.</li><li>Price-protected, forever and always - keep your rate as long as your membership remains active.</li></ul>",
+            "total_membership_number": "",
+            "remain_membership_number": "",
             "button_text": "",
             "btn_url": ""
           }
         }
       },
       "block_order": [
-        "credits_card_Y8kcA3",
-        "credits_card_EKgxAt",
-        "credits_card_YtBKPz",
-        "credits_card_7jT9h4",
-        "credits_card_79cFzr",
-        "credits_card_mRgXam"
+        "credits_card_7FexRm",
+        "credits_card_p6xjkN"
       ],
+      "disabled": true,
       "settings": {
-        "section_id": "credits",
-        "main_title": "Credit packs",
-        "main_description": "Save big on credits and get up to 40% off classes at Reformd with a monthly recurring credit pack."
+        "section_id": "",
+        "main_title": "Monthly Credit Packs",
+        "main_description": "Get up to 26% off classes at Reformd with a monthly recurring credit pack."
       }
     },
     "global_competitor_comparison_AX9gmg": {
@@ -701,53 +747,6 @@
         "section_id": "",
         "link_Label_1": "Explore all Memberships",
         "section_id_1": ""
-      }
-    },
-    "global_monthly_credits_4bKxDX": {
-      "type": "global_monthly-credits",
-      "blocks": {
-        "credits_card_7FexRm": {
-          "type": "credits_card",
-          "settings": {
-            "title": "4 × monthly",
-            "price_per_class": "$40 per Class",
-            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
-            "sale_label": "Pre-opening sale:",
-            "sale_price": "$120",
-            "original_price": "$180",
-            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
-            "total_membership_number": "24",
-            "remain_membership_number": "20",
-            "button_text": "",
-            "btn_url": ""
-          }
-        },
-        "credits_card_p6xjkN": {
-          "type": "credits_card",
-          "settings": {
-            "title": "8 × monthly",
-            "price_per_class": "$40 per Class",
-            "description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
-            "sale_label": "Pre-opening sale:",
-            "sale_price": "$120",
-            "original_price": "$180",
-            "benefits": "<ul><li>Torem ipsum dolor sit amet, consectetur</li><li>Ipsum dolor sit amet, consectetur adipiscing</li><li>Nunc vulputate libero</li><li>Class aptent taciti sociosqu ad litora.</li></ul>",
-            "total_membership_number": "24",
-            "remain_membership_number": "20",
-            "button_text": "",
-            "btn_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "credits_card_7FexRm",
-        "credits_card_p6xjkN"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_id": "",
-        "main_title": "Monthly Credit Packs",
-        "main_description": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora."
       }
     },
     "global_access_accordion_Uj7RDF": {
@@ -920,8 +919,8 @@
     "global_membership_cxtXW9",
     "global_competitor_comparison_iiBDkL",
     "global_credits_PpejdD",
-    "global_competitor_comparison_AX9gmg",
     "global_monthly_credits_4bKxDX",
+    "global_competitor_comparison_AX9gmg",
     "global_access_accordion_Uj7RDF",
     "wellness_accordion_dC3tQN",
     "global_image_banner_wAR3NQ"
