@@ -200,13 +200,13 @@
           "settings": {
             "title": "Reformd + S&T Unlimited membership",
             "description": "Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always.",
-            "sale_label": "S&T Unlimited + 20% OFF REFORMD UNLIMITED",
-            "sale_price": "$435",
-            "original_price": "$470",
+            "sale_label": "S&T Unlimited + 50% OFF REFORMD UNLIMITED",
+            "sale_price": "$470",
+            "original_price": "",
             "title_benefits": "INCLUDES",
             "benefits": "<ul><li>Unlimited classes at Reformd</li><li>Unlimited yoga, Pilates, ride & HIIT classes at Front/Spadina and Yonge/Shuter</li><li>Access to Tonic House at Front/Spadina and Yonge/Shuter</li><li>24-hour priority booking</li><li>Complimentary 30-min Personal Training consulation</li><li>1 guest credit per month (S&T)</li><li>10% off Reformd + S&T retail store</li><li>10% Tonic Spa treatments</li><li>50% off Tonic Spa pool deck membership</li></ul>",
-            "total_membership_number": "50",
-            "remain_membership_number": "0",
+            "total_membership_number": "",
+            "remain_membership_number": "",
             "button_text": "",
             "btn_url": ""
           }
@@ -217,12 +217,12 @@
             "title": "Reformd Unlimited membership",
             "description": "Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always.",
             "sale_label": "20% OFF REFORMD UNLIMITED",
-            "sale_price": "$288",
-            "original_price": "$360",
+            "sale_price": "$360",
+            "original_price": "",
             "title_benefits": "INCLUDES",
             "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>10% off Reformd retail store</li></ul>",
-            "total_membership_number": "100",
-            "remain_membership_number": "0",
+            "total_membership_number": "",
+            "remain_membership_number": "",
             "button_text": "",
             "btn_url": "shopify://pages/pricing"
           }
@@ -232,13 +232,13 @@
           "settings": {
             "title": "Reformd Unlimited add-on for S&T memberships",
             "description": "Already have a S&T Unlimited membership? Get a Reformd Unlimited membership add-on for 50% off.\n<br>Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always. Valid for Yonge/Shuter and The Well Unlimited memberships.",
-            "sale_label": "50% off Reformd unlimited + Additional 20% off",
-            "sale_price": "$144",
-            "original_price": "$180",
+            "sale_label": "50% off Reformd unlimited",
+            "sale_price": "$180",
+            "original_price": "",
             "title_benefits": "INCLUDES",
             "benefits": "<ul><li>Unlimited classes at Reformd</li><li>24-hour priority booking</li><li>Plus all the benefits of your S&T Unlimited membership</li></ul>",
-            "total_membership_number": "50",
-            "remain_membership_number": "0",
+            "total_membership_number": "",
+            "remain_membership_number": "",
             "button_text": "",
             "btn_url": "shopify://pages/pricing"
           }
@@ -249,10 +249,11 @@
         "membership_card_U67qN8",
         "membership_card_GJKEWW"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "membership",
         "main_title": "Memberships",
-        "main_description": "Unlimited means unlimited - save 20% on unlimited access to classes at Reformd, plus 60% off membership add-ons for existing S&T Unlimited members."
+        "main_description": "Unlimited means unlimited. Reserve a membership now - activates on opening day."
       }
     },
     "global_competitor_comparison_iiBDkL": {
