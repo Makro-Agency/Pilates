@@ -8,8 +8,6 @@
 {% endif %}
 
 
-
-
 {{ 'global_home-hero-banner.css' | asset_url | stylesheet_tag }}
 {%- style -%}
   #Banner-{{ section.id }}::before {
@@ -103,11 +101,11 @@
         <!-- Begin Connect Signup Form -->
         <form
           method="post" action="https://api.prd.xplorcs.com/forms-v2/forms/answers"
-          onsubmit="onXplFormSubmit(event)" name="01bd20a9-ae0d-4f5e-80ff-e019488dfb93"
+          onsubmit="onXplFormSubmit(event)" name="cc0f1994-f309-4764-b914-d3c3c31b326a"
           id="bb_form" class="newsletter-form"
         >
           <div id="alert"></div>
-          <input type="hidden" name="uuid" id="bb_uuid" value="01bd20a9-ae0d-4f5e-80ff-e019488dfb93" style="display: none;">
+          <input type="hidden" name="uuid" id="bb_uuid" value="cc0f1994-f309-4764-b914-d3c3c31b326a" style="display: none;">
           <div class="form-group">
             {% comment %} <label for="bb_email"> {{ 'newsletter.label' | t }} </label> {% endcomment %}
              <div class="field-group">
@@ -166,7 +164,7 @@
         </script> {% endcomment %}
         <script  type="module" defer="defer"> 
           const FormServiceURL = 'https://api.prd.xplorcs.com/forms-v2/forms'; 
-          const formUuid = '01bd20a9-ae0d-4f5e-80ff-e019488dfb93'; 
+          const formUuid = 'cc0f1994-f309-4764-b914-d3c3c31b326a'; 
           const formElement = document.forms[formUuid]; 
           const formContainer = new XplFormContainer(FormServiceURL); 
           const loadRecaptcha = (formConfig) => { 
