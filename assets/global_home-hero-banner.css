@@ -185,12 +185,13 @@ form.newsletter-form:not(#id) .field input.field__input {
     font-family: var(--font-heading-family);
     font-size: 16px;
     font-weight: 500;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
     line-height: 100%;
+    border-radius: 0;
 }
 .newsletter-form__field-wrapper input::placeholder,
 form.newsletter-form:not(#id) .field input.field__input::placeholder {
-    opacity: 0.6;
+    opacity: 0.8;
     text-transform: uppercase;
 }
 .newsletter-form__field-wrapper .field::after,
@@ -213,13 +214,14 @@ form.newsletter-form:not(#id) .newsletter-form__button {
     text-align: center;
     font-family: var(--font-heading-family);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 100%;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
     flex: 1 0 auto;
     cursor: pointer;
     background-color: transparent;
+    margin-top: 16px;
 }
 .newsletter-form__field-wrapper button.newsletter-form__button:hover,
 form.newsletter-form:not(#id) .newsletter-form__button:hover {
@@ -288,6 +290,11 @@ form.newsletter-form:not(#id) .newsletter-form__button:hover {
         pointer-events: none;
     }
     /* .global_home-hero-banner .banner-contain .heading {font-size: 38px;} */
+    .newsletter-form .field-group {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+    }
 }
 
 
@@ -298,6 +305,11 @@ form.newsletter-form:not(#id) .newsletter-form__button:hover {
 .newsletter-form .form-group {
     display: flex;
     width: 100%;
+    gap: 16px;
+    flex-direction: column;
+}
+.newsletter-form .field-group {
+    display: flex;
     gap: 24px;
 }
 .newsletter-form__field-wrapper input:-internal-autofill-selected {
