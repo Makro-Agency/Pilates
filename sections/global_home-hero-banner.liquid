@@ -107,6 +107,14 @@
           <input type="hidden" name="uuid" id="bb_uuid" value="cc0f1994-f309-4764-b914-d3c3c31b326a" style="display: none;">
           <div class="form-group">
             {% comment %} <label for="bb_email"> {{ 'newsletter.label' | t }} </label> {% endcomment %}
+             <div class="field-group">
+              <div class="field">
+                <input type="text" name="fname" id="fname" placeholder="First Name" required="required" class="form-control field__input" />
+              </div>
+              <div class="field">
+                <input type="text" name="lname" id="lname" placeholder="Last Name" required="required" class="form-control field__input" />
+              </div>
+             </div>
             <div class="field">
               <input type="email" name="email" id="bb_email" placeholder="{{ 'newsletter.label' | t }}" required="required" class="form-control field__input" />
             </div>
