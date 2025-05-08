@@ -217,7 +217,7 @@
           "settings": {
             "title": "Reformd Unlimited membership",
             "description": "Automatically renews monthly.\nNo initiation fees, no commitment or annual contracts, cancel anytime. Price-protected, forever and always.",
-            "sale_label": "20% OFF REFORMD UNLIMITED",
+            "sale_label": "",
             "sale_price": "$360",
             "original_price": "",
             "title_benefits": "INCLUDES",
@@ -250,7 +250,6 @@
         "membership_card_U67qN8",
         "membership_card_GJKEWW"
       ],
-      "disabled": true,
       "settings": {
         "section_id": "membership",
         "main_title": "Memberships",
@@ -596,7 +595,6 @@
         "credits_card_7FexRm",
         "credits_card_p6xjkN"
       ],
-      "disabled": true,
       "settings": {
         "section_id": "",
         "main_title": "Monthly Credit Packs",
