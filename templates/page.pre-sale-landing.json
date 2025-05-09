@@ -61,7 +61,7 @@
           "type": "links",
           "settings": {
             "link_lable": "Memberships & credits",
-            "section_id": "memberships-credits"
+            "section_id": "membership-credits"
           }
         },
         "links_YWPPcV": {
@@ -597,7 +597,7 @@
       "settings": {
         "section_id": "",
         "main_title": "Monthly Credit Packs",
-        "main_description": "Get up to 26% off classes at Reformd with a monthly recurring credit pack."
+        "main_description": "Get up to 26% off classes at Reformd with a monthly recurring credit pack. Activates on opening day."
       }
     },
     "global_competitor_comparison_AX9gmg": {
