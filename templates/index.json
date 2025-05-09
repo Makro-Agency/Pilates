@@ -17,7 +17,7 @@
         "overlay_opacity": 100,
         "title": "Welcome to the movement",
         "btn_text": "VIEW OUR PRE-OPENING SALE PACKAGES",
-        "btn_url": "shopify://pages/pre-opening-sale-april17",
+        "btn_url": "shopify://pages/memberships-credits",
         "newsletter": true,
         "newsletter_text": "SIGN UP TO GET NOTIFIED"
       }
@@ -34,7 +34,7 @@
         "sale_content": "The World's Highest-Capacity Lagree Method Studio at The Well™ Not Pilates. Not reformer. This is Lagree® - reimagined through the signature Sweat & Tonic experience.",
         "show_btn": true,
         "btn_text": "SEE PRICING DETAILS",
-        "btn_url": "shopify://pages/pre-opening-sale-april17",
+        "btn_url": "shopify://pages/memberships-credits",
         "show_hide_date": true,
         "presale_countdown_title": "SET YOUR ALARMS - SALE BEGINS IN",
         "countdown_end_date": "2025-04-17 09:00 AM",
