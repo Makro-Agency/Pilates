@@ -47,13 +47,6 @@
             "detail": "<p>A Megaformer is a fitness machine with a moving carriage, static platforms, and springs for resistance with quick-release technology. It's similar to the reformer, but has more features and attachments than the traditional Pilates reformer, including platform lifts that allow for easier stabilization and impact of joints and less inflammation in connective tissues during and post-workout.. The Mega Pro is the latest Megaformer, and is considered to be the best of the past and future of the Megaformer series.</p>"
           }
         },
-        "que_ans_prKExh": {
-          "type": "que_ans",
-          "settings": {
-            "title": "When does the pre-opening sale start?",
-            "detail": "<p>Our pre-opening sale will start on Thursday, April 17 at 9 AM (ET).</p>"
-          }
-        },
         "que_ans_ir7wiX": {
           "type": "que_ans",
           "settings": {
@@ -95,6 +88,20 @@
             "detail": "<p>You’ll be able to access Reformd in the S&T app, in the location drop-down. This means you only need one account to access products at both S&T and Reformd.</p><p>If you already have a Sweat and Tonic account, you’ll be able to book classes, make purchases, and manage your account at Reformd, using the same account you use for S&T, in the S&T app! </p>"
           }
         },
+        "que_ans_nCV7JP": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What can I use credits for?",
+            "detail": "<p>Credits, including the 3 for $60 intro pack, are valid for use at both S&T and Reformd! A credit can be used to book:</p><ul><li>A class at Reformd</li><li>A yoga, Pilates, Ride, or HIIT class at any S&T location</li><li>Small Group Training at Front/Spadina</li><li>Pool deck at Front/Spadina</li><li>Red light therapy at Front/Spadina</li><li>Compression therapy at Front/Spadina</li><li>Private hot & cold therapy suite at Front/Spadina</li><li>Sauna session at Yonge/Shuter</li></ul><p>Credits activate at the time of purchase.</p>"
+          }
+        },
+        "que_ans_prKExh": {
+          "type": "que_ans",
+          "settings": {
+            "title": "When does the pre-opening sale start?",
+            "detail": "<p>Our pre-opening sale will start on Thursday, April 17 at 9 AM (ET).</p>"
+          }
+        },
         "que_ans_DkfcPE": {
           "type": "que_ans",
           "settings": {
@@ -123,18 +130,11 @@
             "detail": "<p>No, credits purchased during the Reformd pre-opening sale are valid only for classes at Reformd. However, regular-priced credits will be valid for use at Reformd and S&T.</p>"
           }
         },
-        "que_ans_nCV7JP": {
-          "type": "que_ans",
-          "settings": {
-            "title": "Can I use my S&T credits at Reformd?",
-            "detail": "<p>Yes! Once Reformd opens, you’ll be able to use your S&T credits at Reformd. A S&T credit can be used to book:</p><ul><li>A class at Reformd</li><li>A yoga, Pilates, Ride, or HIIT class at any S&T location</li><li>Small Group Training at Front/Spadina</li><li>Pool deck at Front/Spadina</li><li>Red light therapy at Front/Spadina</li><li>Compression therapy at Front/Spadina</li><li>Private hot & cold therapy suite at Front/Spadina</li><li>Sauna session at Yonge/Shuter</li></ul>"
-          }
-        },
         "4cdf833b-812d-4a9a-84a9-bc2b229a449d": {
           "type": "que_ans",
           "settings": {
-            "title": "I’ve taken a class at S&T before. Can I purchase the Reformd 3 for $50 intro pack?",
-            "detail": "<p>Yes, you’re eligible to purchase a <strong>Reformd 3 for $50 intro pack</strong> during our pre-opening sale. There is a limit of 1 per customer for intro packs. Any credits purchased during the pre-opening sale will be valid for use at Reformd only.</p><p>This is applicable during the Reformd pre-opening sale only. After Reformd opens, the <strong>standard 3 for $60 intro pack</strong> will be valid for first-timers only at both S&T and Reformd.</p>"
+            "title": "I’ve taken a class at S&T before. Can I purchase 3 for $60 intro pack?",
+            "detail": "<p>No, the<strong> 3 for $60 intro pack</strong> is valid for first-timers only at both S&T and Reformd.</p>"
           }
         },
         "848afe71-f729-4582-a605-5eedb9841282": {
@@ -182,11 +182,12 @@
           "type": "que_ans",
           "settings": {
             "title": "If I purchase a Reformd membership or credit pack now, when will the credits be activated / when will my monthly billing begin?",
-            "detail": "<p>Your purchase will be processed immediately to secure your pre-opening sale rate. Memberships and credits will activate when Reformd opens. For memberships and recurring credit packs, your next payment will be charged at the start of your second billing month, after Reformd opens.</p>"
+            "detail": "<p>Your purchase will be processed immediately. Credits are valid for use at S&T and Reformd and activate at the time of purchase. Memberships and recurring credit packs will activate when Reformd opens, and your next payment will be charged at the start of your second billing month, after Reformd opens.</p>"
           }
         },
         "22e4de22-4b8c-4f02-a061-11408cf91e8a": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "Can I purchase a pre-opening sale membership or recurring credit pack, and delay the start date?",
             "detail": "<p>No, you cannot delay your start date. Your membership or recurring credit pack will activate the day Reformd opens.</p>"
@@ -390,18 +391,18 @@
         "title_fqec8p",
         "que_ans_bbxt94",
         "que_ans_DBkNnb",
-        "que_ans_prKExh",
         "que_ans_ir7wiX",
         "que_ans_jwiCiH",
         "ab3a0bf7-e7e2-4232-9cf4-65d41c889a85",
         "83dfdfe3-9459-4c30-bc14-42e274ce06ba",
         "title_W6aazN",
         "que_ans_EePXQP",
+        "que_ans_nCV7JP",
+        "que_ans_prKExh",
         "que_ans_DkfcPE",
         "que_ans_G9aRwm",
         "6beaa2ad-e3e7-4b02-9db6-25c2cae1a7bc",
         "que_ans_3BAmnt",
-        "que_ans_nCV7JP",
         "4cdf833b-812d-4a9a-84a9-bc2b229a449d",
         "848afe71-f729-4582-a605-5eedb9841282",
         "b847ba64-6c33-4d0d-9549-5cced3f8e822",
