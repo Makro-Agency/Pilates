@@ -59,7 +59,6 @@
         },
         "links_wgtLej": {
           "type": "links",
-          "disabled": true,
           "settings": {
             "link_lable": "Memberships & credits",
             "section_id": "membership-credits"
