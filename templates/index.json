@@ -43,7 +43,7 @@
         "sale_end_date": "2025-04-12 09:00 AM",
         "show_btn_pre": true,
         "btn_text_pre": "Purchase a membership or credit pack",
-        "btn_url_pre": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750"
+        "btn_url_pre": "shopify://pages/pricing"
       }
     }
   },
