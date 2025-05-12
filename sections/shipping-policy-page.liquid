@@ -27,27 +27,33 @@
 </div>
 
 {% schema %}
-{
-  "name": "shipping policy page",
-  "tag": "section",
-  "class": "section policies-section section-padding shipping-policy-page",
-  "settings": [
     {
-      "type": "header",
-      "content": "Section padding"
-    },
-    {
-      "type": "checkbox",
-      "id": "top_padding_remove",
-      "default": false,
-      "label": "Remove top padding"
-    },
-    {
-      "type": "checkbox",
-      "id": "bottom_padding_remove",
-      "default": false,
-      "label": "Remove bottom padding"
+      "name": "shipping policy page",
+      "tag": "section",
+      "class": "section policies-section section-padding shipping-policy-page",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Section padding"
+        },
+        {
+          "type": "checkbox",
+          "id": "top_padding_remove",
+          "default": false,
+          "label": "Remove top padding"
+        },
+        {
+          "type": "checkbox",
+          "id": "bottom_padding_remove",
+          "default": false,
+          "label": "Remove bottom padding"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Shipping Policy Page"
+        }
+      ]
     }
-  ]
-}
-{% endschema %}
+    {% endschema %}
+    
