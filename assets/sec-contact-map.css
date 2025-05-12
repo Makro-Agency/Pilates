@@ -53,7 +53,200 @@
   .tabt-content .rte p:first-child { margin-top: 0; }
   .tabt-content .rte p:last-child { margin-bottom: 0; }
 
+  .template--contact-us .scMap-tab-title.h3 {
+    color: #FFF;
+    font-family: "ITC Avant Garde Gothic Std";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+     border-top: 1px solid rgba(255, 255, 255, 0.40);
+  }
+  .template--contact-us .scMap-tab .tabWrapper {
+    border-top: 1px solid rgba(255, 255, 255, 0.40);
+  }
+  .template--contact-us .contact-time .item .ct-title{
+    margin: 0 0 16px;
+    color: #FFF;
+    font-family: "ITC Avant Garde Gothic Std";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
 
+  .template--contact-us  .contact-time .rte p {
+    color: #FFF;
+    font-family: "New Frank";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  .template--contact-us .contact-time:before{
+    background: rgba(255, 255, 255, 0.40);
+    opacity: 1;
+  }
+  .template--contact-us .tabTime table td.h6 {
+    padding-right: 10px;
+    color: var(--White, #FFF);
+    font-family: "ITC Avant Garde Gothic Std";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+  .template--contact-us .tabTime table td:last-child{
+    text-align: right;
+    color:  #FFF;
+    font-family: "New Frank";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+  }
+ .template--contact-us .contact-time + .tabtab {
+  border-top: 1px solid rgba(255, 255, 255, 0.40);
+  }
+ .template--contact-us .tabt-links{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+  }
+  .template--contact-us .tabt-links .tabt-link-title{
+    font-family: "ITC Avant Garde Gothic Std";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+  }
+  .template--contact-us .tabt-content h5 {
+    color:#FFF;
+    font-family: "ITC Avant Garde Gothic Std";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  .template--contact-us .tabt-content .rte p{
+    color: #FFF;
+    font-family: "New Frank";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  .template--contact-us .scMap-tab-title:after{
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M2.5 6.25L10 13.75L17.5 6.25' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E");
+    width: 16px;
+    height: 16px;
+    top: calc(50% - 8px);
+    transition: transform 0.5s ease;
+    display: block;
+    right: 0;
+    top: calc(50% - 8px);
+    position: absolute;
+    background-size: cover;
+  }
+  .template--contact-us .scMap-tab.active .scMap-tab-title:after {
+    transform: rotate(180deg);
+  }
+  .template--contact-us .scMap-tab-title .icon{
+    opacity: 0;
+  }
+  .template--contact-us .sec-contact-form .contact .leftBGPart {
+    align-content: flex-start;
+    padding-left: 0;
+  }
+  .sec-contact-form .contact .rightContactPart {
+    padding-right: 0;
+  }
+  .template--contact-us .sec-contact-form .contact .leftBGPart h6 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+  .template--contact-us .sec-contact-form .contact .leftBGPart .button--secondary {
+    color: #FFF;
+    font-family: "ITC Avant Garde Gothic Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    border-width: 0;
+    padding: 0;
+    border-bottom: 1.5px solid transparent;
+    margin-top: 40px;
+    min-height: unset;
+  }
+  .template--contact-us .sec-contact-form .contact .leftBGPart .button--secondary:hover{
+    border-color: #fee4b1;
+    background-color: transparent;
+    color: white;
+  }
+  .template--contact-us .sec-contact-map .main-page-title {
+    margin-bottom: 80px;
+    font-weight: 500;
+  }
+    .template--contact-us .sec-contact-form .contact .leftBGPart .button--secondary:after,
+      .template--contact-us .sec-contact-form .contact .leftBGPart .button--secondary::before {
+        opacity: 0;
+      }
+      .template--contact-us .sec-contact-form .contact .leftBGPart .button--secondary svg {
+        margin-left: 8px;
+      }
+      .template--contact-us .sec-contact-form .contact .rightContactPart .title {
+        font-family: "ITC Avant Garde Gothic Std";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%; /* 40px */
+        text-transform: uppercase;
+      }
+      .template--contact-us .contact_form .field .field__label {
+        font-family: "New Frank";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+      }
+      .template--contact-us .sec-contact-form .contact .button{
+      min-width: 190px;
+    display: flex;
+    min-height: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1.5px solid #FFF;
+    background-color: transparent;
+    color: #FFF;
+    font-family: "ITC Avant Garde Gothic Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    border-radius: 0;
+      }
+      .template--contact-us .sec-contact-form .contact .button:hover{
+        background-color: white;
+        color: #000;
+      }
+      .template--contact-us .sec-contact-form .contact .button:before,
+      .template--contact-us .sec-contact-form .contact .button:after{
+        opacity: 0;
+      }
 @media screen and ( max-width: 1199px ){
   .sec-contact-map .main-page-title { margin-bottom: 60px; }
   
@@ -66,14 +259,80 @@
   .secConMap .wrapper .map-wrapper { width: 100%; max-width: 100%; padding-right: 0; }
   .secConMap .wrapper .map-wrapper { margin-top: 40px; }
   .secConMap .wrapper .map:before { padding-bottom: 65vw; }
+  .template--contact-us .sec-contact-form .contact .leftBGPart {padding-left: 0;}
+  .sec-contact-form .contact .rightContactPart {padding-left: 0;}
   @media (min-width: 750px){
     .sec-contact-map .page-width { padding-left: 3.2rem; padding-right: 3.2rem; }
   }
   .contact-time .item.tabTime { max-width: 385px; }
 }
 @media screen and ( max-width: 749px ){
+  .sec-contact-form .contact .rightContactPart {
+    position: relative;padding-bottom: 100px;
+  }
+  .sec-contact-form .contact .rightContactPart {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .template--contact-us .sec-contact-form .contact .leftBGPart{
+    padding-left: 20px;
+  }
+ .template--contact-us .rightContactPart:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(https://cdn.shopify.com/s/files/1/0915/3917/7843/files/Group_20.png?v=1747057279);
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+   .template--contact-us .page-width.secConMap {
+    padding: 0 0;
+  }
+  .template--contact-us .contact-time + .tabtab{
+    padding-top: 40px;
+  }
+  .template--contact-us .scMap-tab .tabWrapper {
+    padding: 24px 0 24px;
+  }
+  .template--contact-us .sec-contact-map .main-page-title 
+  {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+   .template--contact-us .secConMap .wrapper .content {
+    padding-left: 2rem;
+    padding-right: 2rem ;
+  }
+  .template--contact-us .sec-contact-form .contact .leftBGPart h2  {
+    font-size: 60px;
+  }
+      .template--contact-us .sec-contact-form .contact .leftBGPart  {
+        padding-top: 80px;
+      }
+      .template--contact-us .secConMap .content{
+        position: relative;
+      }
+    .template--contact-us .secConMap .content:before {
+    content: "";
+    background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%);
+    opacity: 0.5;
+    filter: blur(104px);
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 120.5251282051282vw;
+    height: 52.25435897435897vw;
+    transform: rotate(0deg);
+    pointer-events: none;
+    opacity: .4;
+}
+  .template--contact-us .sec-contact-map .main-page-title,
   .sec-contact-map .main-page-title { margin-bottom: 40px; }
-  
   .scMap-tab-title { padding: 30px 0; }
   .contact-time { flex-wrap: wrap; margin: 0; }
     .tabTime table { width: 100%; }

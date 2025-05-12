@@ -43,7 +43,12 @@
 .sec-contact-form .contact>* { padding: 120px 50px; }
 .sec-contact-form .contact .leftBGPart { background: #26221B; color: #fff; position: relative; }
   .sec-contact-form .contact .leftBGPart:before { background-image: url(bg_pattren.svg); content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.1; background-position: left top; }
-
+.template--contact-us .sec-contact-form .contact .leftBGPart:before {
+opacity: 0;
+}
+.template--contact-us .page-width.contact{
+  max-width: calc(1340px + 10rem);
+}
 
 .sec-contact-form .contact .leftBGPart { display: flex; flex-wrap: wrap; align-content: flex-end; }
   .sec-contact-form .contact .leftBGPart h6,
@@ -93,7 +98,7 @@
   }
 }
 @media screen and (max-width: 989px) {
-  .sec-contact-form .contact>* { padding: 5rem 1.5rem; }
+  .sec-contact-form .contact>* { padding: 5rem 2rem; }
   
   .sec-contact-form .contact .leftBGPart>*+* { margin-top: 20px; }
   
