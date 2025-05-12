@@ -204,35 +204,31 @@
             "detail": "<p>Please contact us at hello@reformd.com with details of your inquiry and our team will be happy to help!</p>"
           }
         },
-        "88eef28f-11aa-41e2-96f1-65617d2b3755": {
-          "type": "title",
-          "disabled": true,
-          "settings": {
-            "title": "CLASSES & STUDIO POLICIES"
-          }
-        },
         "f01c3501-f8e6-44b9-ab49-1b639a6ec3b8": {
           "type": "que_ans",
-          "disabled": true,
           "settings": {
-            "title": "It’s my first visit! What do I need to know?",
+            "title": "Who can use self check-in?",
             "detail": "<p>Welcome – we can’t wait to meet you!  Please arrive 30 minutes prior to your first class so you can get familiar with the studios you’ll be in, and make sure you’re all set to get your sweat on!</p><p>During peak studio times, our team may not be able to step away from the front desk, but would be happy to provide a tour after class or at any other time at your convenience. </p><p>All you need to bring is a water bottle, workout clothes (or come dressed for movement), running shoes if you're taking a HIIT class, and any personal items you'd like (e.g., makeup, hair brush, shower slides). We provide complimentary sweat towels, yoga mats, cycling shoes, and boxing gloves, and our change rooms are stocked with bath towels, toiletries (shampoo, conditioner, body wash, face wash, and body lotion), and Dyson hairdryers.</p><p>We also sell everything except shoes in our retail shop, in case you forget something.</p><p>We provide lockers with built-in locks to your store your belongings (one locker permitted per guest).</p><p>Check out more <a href=\"https://sweatandtonic.com/pages/first-timers\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/first-timers\">hot tips here</a> prior to your first sweat!</p>"
           }
         },
         "e4fe30f0-e977-419f-8d79-0f1dc06ec885": {
           "type": "que_ans",
-          "disabled": true,
           "settings": {
-            "title": "What time do I need to show up for class?",
+            "title": "Can I still check in at the front desk?",
             "detail": "<p>If it’s your first visit, please arrive 30 minutes prior to class. If it’s not your first visit, please arrive a minimum of 10 minutes before class to make sure you’re all set for doors to open. If you are not checked in before your class start time, your spot will be opened up to guests on the waitlist and your account will be subject to a no show fee.</p>"
           }
         },
         "13ea47b8-18dc-4449-adec-639f034e7805": {
           "type": "que_ans",
-          "disabled": true,
           "settings": {
-            "title": "If I arrive late, can I still take a class?",
+            "title": "Is express check-in in front of the HIIT and Yoga studios still available for Unlimited members?",
             "detail": "<p>Out of respect and safety for your fellow classmates and instructors, classes start on time. Doors will open 5 minutes prior to your class start time, and will remain open for 2 minutes after the class starts. Once the studio doors close, any other latecomers will not be allowed in. We are firm with this policy because opening the studio door once it’s been closed disturbs the flow of the class, and also puts guests who are stationed next to the door at risk of injury. Classes also begin with an introduction, including proper form and technique, that is required to be successful in the class. If you arrive late for your class, we would be happy to find a spot for you in the next class, if there are available spots. Your studio time is a gift to yourself – make time for you!</p>"
+          }
+        },
+        "88eef28f-11aa-41e2-96f1-65617d2b3755": {
+          "type": "title",
+          "settings": {
+            "title": "CLASSES & STUDIO POLICIES"
           }
         },
         "f327a534-4931-43b9-808d-a10caa75f1ab": {
@@ -398,10 +394,10 @@
         "e491b7f7-2e86-42db-9739-797a6fbb5195",
         "3ba96673-528e-457a-8524-171c4ebf84ac",
         "df72df29-8093-40fa-83f3-c8def3f9bcfa",
-        "88eef28f-11aa-41e2-96f1-65617d2b3755",
         "f01c3501-f8e6-44b9-ab49-1b639a6ec3b8",
         "e4fe30f0-e977-419f-8d79-0f1dc06ec885",
         "13ea47b8-18dc-4449-adec-639f034e7805",
+        "88eef28f-11aa-41e2-96f1-65617d2b3755",
         "f327a534-4931-43b9-808d-a10caa75f1ab",
         "12b36bdf-f8c7-4c70-a6c5-67d3942a9ec1",
         "70316a9b-847d-447a-9313-7d52ca66f24d",
