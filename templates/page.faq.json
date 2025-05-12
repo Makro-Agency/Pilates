@@ -225,6 +225,20 @@
             "detail": "<p>Out of respect and safety for your fellow classmates and instructors, classes start on time. Doors will open 5 minutes prior to your class start time, and will remain open for 2 minutes after the class starts. Once the studio doors close, any other latecomers will not be allowed in. We are firm with this policy because opening the studio door once it’s been closed disturbs the flow of the class, and also puts guests who are stationed next to the door at risk of injury. Classes also begin with an introduction, including proper form and technique, that is required to be successful in the class. If you arrive late for your class, we would be happy to find a spot for you in the next class, if there are available spots. Your studio time is a gift to yourself – make time for you!</p>"
           }
         },
+        "text_TRQATq": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "title_1": "",
+            "detail_1": "",
+            "title_2": "",
+            "detail_2": "",
+            "title_3": "",
+            "detail_3": "",
+            "title_4": "",
+            "detail_4": ""
+          }
+        },
         "88eef28f-11aa-41e2-96f1-65617d2b3755": {
           "type": "title",
           "settings": {
@@ -397,6 +411,7 @@
         "f01c3501-f8e6-44b9-ab49-1b639a6ec3b8",
         "e4fe30f0-e977-419f-8d79-0f1dc06ec885",
         "13ea47b8-18dc-4449-adec-639f034e7805",
+        "text_TRQATq",
         "88eef28f-11aa-41e2-96f1-65617d2b3755",
         "f327a534-4931-43b9-808d-a10caa75f1ab",
         "12b36bdf-f8c7-4c70-a6c5-67d3942a9ec1",
