@@ -14,8 +14,8 @@
       "name": "About Banner",
       "settings": {
         "allow_transparent_header": true,
-        "sub_title": "",
-        "title": "",
+        "sub_title": "fgs",
+        "title": "dfd",
         "desktop_image": "shopify://shop_images/474842706_18482396428028911_7819424887357492243_n.jpg"
       }
     },
@@ -47,10 +47,49 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "landing_half_banner_PYJtQC": {
+      "type": "landing-half-banner",
+      "blocks": {
+        "column_FArKWA": {
+          "type": "column",
+          "settings": {
+            "content_alignment": "bottom",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_zrKEtf": {
+          "type": "column",
+          "settings": {
+            "content_alignment": "bottom",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_FArKWA",
+        "column_zrKEtf"
+      ],
+      "name": "Multi image banner",
+      "settings": {
+        "allow_transparent_header": false,
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "about_banner_XnPzBi",
+    "landing_half_banner_PYJtQC",
     "banner",
     "product-grid"
   ]
