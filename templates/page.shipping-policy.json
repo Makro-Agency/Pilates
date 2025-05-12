@@ -16,8 +16,6 @@
           "type": "book_classes",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/SpaWellness_desktop_2024.03.jpg",
-            "image_mobile": "shopify://shop_images/SpaWellness_mobile_2024.03.png",
             "url": "https://booking.mangomint.com/sweattonic"
           }
         }
@@ -29,9 +27,18 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "shipping_policy_page_QTUPFn": {
+      "type": "shipping-policy-page",
+      "name": "Shipping Policy Page",
+      "settings": {
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "shipping_policy_page_QTUPFn"
   ]
 }
