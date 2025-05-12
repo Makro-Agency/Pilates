@@ -167,41 +167,41 @@
         "title_zYcA3w": {
           "type": "title",
           "settings": {
-            "title": "ACCOUNT & BILLING"
+            "title": "CLASSES & STUDIO POLICIES"
           }
         },
         "que_ans_J97CWR": {
           "type": "que_ans",
           "settings": {
-            "title": "What happens if I want to cancel my S&T Unlimited membership, and keep my Reformd membership add-on?",
+            "title": "It’s my first visit! What do I need to know?",
             "detail": "<p>You can cancel your membership at any time. If you do not have a S&T Unlimited membership, you are not eligible to receive the 50% off discount on your Reformd membership add-on, and you will be charged the regular price. Anytime you cancel a membership, you will lose your current rate; however, as long as you don’t cancel your membership, your rate is price-protected forever. </p>"
           }
         },
         "d7696939-47e4-410d-9584-55d9659a7c55": {
           "type": "que_ans",
           "settings": {
-            "title": "Are purchases refundable?",
+            "title": "Do I have to book online in advance, or can I just show up?",
             "detail": "<p>No, just like at S&T, purchases are non-refundable.</p>"
           }
         },
         "03005134-1b24-4879-8a85-c338503355d3": {
           "type": "que_ans",
           "settings": {
-            "title": "If I purchase a Reformd membership or credit pack now, when will the credits be activated / when will my monthly billing begin?",
+            "title": "What time do I need to show up for class?",
             "detail": "<p>Your purchase will be processed immediately to secure your pre-opening sale rate. Memberships and credits will activate when Reformd opens. For memberships and recurring credit packs, your next payment will be charged at the start of your second billing month, after Reformd opens.</p>"
           }
         },
         "22e4de22-4b8c-4f02-a061-11408cf91e8a": {
           "type": "que_ans",
           "settings": {
-            "title": "Can I purchase a pre-opening sale membership or recurring credit pack, and delay the start date?",
+            "title": "If I arrive late, can I still take a class?",
             "detail": "<p>No, you cannot delay your start date. Your membership or recurring credit pack will activate the day Reformd opens.</p>"
           }
         },
         "7064720d-0420-40f1-803f-d9b0235d07ef": {
           "type": "que_ans",
           "settings": {
-            "title": "Can I freeze my membership?",
+            "title": "What’s your cancellation policy?",
             "detail": "<p>Memberships and monthly credit packs can be frozen for a maximum of 14 days at a time in a six month period, and you can request your first freeze at any time after starting your membership. At the end of each freeze, 6 months must pass before you are eligible for another. Eligibility does not reset if you cancel and purchase a new membership. If you purchase a pre-opening sale membership, your start date will be the first day Reformd opens.</p>"
           }
         },
