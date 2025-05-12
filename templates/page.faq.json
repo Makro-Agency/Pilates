@@ -242,20 +242,18 @@
         "88eef28f-11aa-41e2-96f1-65617d2b3755": {
           "type": "title",
           "settings": {
-            "title": "CLASSES & STUDIO POLICIES"
+            "title": "SERVICES & FACILITIES"
           }
         },
         "f327a534-4931-43b9-808d-a10caa75f1ab": {
           "type": "que_ans",
-          "disabled": true,
           "settings": {
-            "title": "What’s your cancellation policy?",
+            "title": "Do you have showers? Do I need to bring my own towel?",
             "detail": "<p>You must cancel class at least 12 hours in advance or you will lose a credit. For Unlimited and 9 to 5 Sweat memberships, you will be charged a $24 fee for no shows and $19 for any late cancellations. This includes switching time slots under the 12-hour notice time period. This is to prevent spots from being booked up and unattended in classes that otherwise would have been available for another guest to book, and to give those who are on the waitlists for our most popular classes a chance to get a spot in class. If you are unable to make it to class, we encourage you to cancel at least 12 hours in advance to avoid any charges, and so that your spot can be made available to another fellow Sweat Fam member. To cancel your booking, please access your account online or in our app. If you have any questions, please feel free to contact us at <a href=\"mailto:hello@sweatandtonic.com\" target=\"_blank\">hello@sweatandtonic.com</a>.</p><p></p>"
           }
         },
         "12b36bdf-f8c7-4c70-a6c5-67d3942a9ec1": {
           "type": "que_ans",
-          "disabled": true,
           "settings": {
             "title": "How does express check-in for Unlimited members work?",
             "detail": "<p>Express check-in is available for Unlimited members who are not checking in with a guest, and do not have any account inquiries or special requests. When you arrive at S&T for your HIIT or Yoga class, you can head straight to the studio to check in with our team member who will be situated by the studio doors. Express check-in opens 10 minutes before class start time. We still recommend arriving and checking in early to ensure you’re all ready for class!</p>"
@@ -263,7 +261,6 @@
         },
         "70316a9b-847d-447a-9313-7d52ca66f24d": {
           "type": "que_ans",
-          "disabled": true,
           "settings": {
             "title": "What’s your refund policy?",
             "detail": "<p>We do not allow refunds and do not accept refund requests for price adjustments.</p>"
@@ -271,7 +268,6 @@
         },
         "7645ce0f-ffea-4e13-ae63-97cdd9c3bbf3": {
           "type": "que_ans",
-          "disabled": true,
           "settings": {
             "title": "How does the waitlist work?",
             "detail": "<p>Our waitlist is designed to move quickly and ensures that guests who want to take a class will have the best chance of getting into that class. As soon as a spot opens up, you will be <strong>automatically enrolled </strong>on a first come, first served basis, up to 10 minutes before class start time. If you do not wish or intend to take the class, we encourage you to remove yourself from the waitlist to avoid automatic enrolment and a penalty should you no longer be able to make it. You can remove yourself from the waitlist at anytime without penalty. Once you are enrolled, our standard no-show / late cancellation policy will apply. Removing yourself from the waitlist will allow other guests who are on the waitlist and able to make it to class the chance to get in. Expect waitlists to move quickly – if you can’t make it to class within 10 minutes of being notified, we recommend that you remove yourself from the waitlist.</p>"
