@@ -5,7 +5,7 @@
 }
 .accessibility-contact .col{
   width: 33.33%;
-  border: 1px solid rgba(0, 0, 0, 0.10);
+  border: 1px solid #fff;
 }
 
 .accessibility-contact .col-box{
@@ -13,11 +13,15 @@
   height: 100%;
 }
 .accessibility-contact .col-box h6{
-  color: #000;
+  color: #fff;
   margin: 0 0 15px;
 }
 .accessibility-contact .col-box p{
   margin: 0;
+  color:#fff;
+}
+.learn-more-wrap .global-link.link {
+  color:#fff;
 }
 .accessibility-contact-wrap{
   border-top: 1px solid rgba(0, 0, 0, 0.10);
