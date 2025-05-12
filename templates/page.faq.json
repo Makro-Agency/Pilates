@@ -60,30 +60,6 @@
             "detail": "<p>We don’t have dedicated parking; however, there are lots of public parking and transit options nearby. We’re just across the street from the Queen St. stop and from the Eaton Centre parking garage. There is also a Green P parking garage at Dundas Square and Victoria St, as well as more parking options on Victoria St.<br/><br/></p>"
           }
         },
-        "que_ans_jwiCiH": {
-          "type": "que_ans",
-          "disabled": true,
-          "settings": {
-            "title": "When is Reformd opening?",
-            "detail": "<p>We're opening this spring - stay tuned for updates!</p>"
-          }
-        },
-        "ab3a0bf7-e7e2-4232-9cf4-65d41c889a85": {
-          "type": "que_ans",
-          "disabled": true,
-          "settings": {
-            "title": "What amenities are at Reformd?",
-            "detail": "<p>We’ll have a welcome lounge, a gender-neutral locker room with seven private changing spaces that include three showers and washrooms, heated flooring throughout the studio and locker room, Tonic Bar ordering kiosks, and an education room for 1-1 guidance that will also be available for private bookings.</p>"
-          }
-        },
-        "83dfdfe3-9459-4c30-bc14-42e274ce06ba": {
-          "type": "que_ans",
-          "disabled": true,
-          "settings": {
-            "title": "When will the class schedule be available? When can I start booking classes?",
-            "detail": "<p>Keep your eyes out for the class schedule to be released approximately two weeks prior to the opening date. More details will be available soon - make sure to sign up for our newsletter and follow Reformd on Instagram for the latest updates.</p>"
-          }
-        },
         "title_W6aazN": {
           "type": "title",
           "settings": {
@@ -132,38 +108,6 @@
             "detail": "<p>Yes! Once Reformd opens, you’ll be able to use your S&T credits at Reformd. A S&T credit can be used to book:</p><ul><li>A class at Reformd</li><li>A yoga, Pilates, Ride, or HIIT class at any S&T location</li><li>Small Group Training at Front/Spadina</li><li>Pool deck at Front/Spadina</li><li>Red light therapy at Front/Spadina</li><li>Compression therapy at Front/Spadina</li><li>Private hot & cold therapy suite at Front/Spadina</li><li>Sauna session at Yonge/Shuter</li></ul>"
           }
         },
-        "4cdf833b-812d-4a9a-84a9-bc2b229a449d": {
-          "type": "que_ans",
-          "disabled": true,
-          "settings": {
-            "title": "I’ve taken a class at S&T before. Can I purchase the Reformd 3 for $50 intro pack?",
-            "detail": "<p>Yes, you’re eligible to purchase a <strong>Reformd 3 for $50 intro pack</strong> during our pre-opening sale. There is a limit of 1 per customer for intro packs. Any credits purchased during the pre-opening sale will be valid for use at Reformd only.</p><p>This is applicable during the Reformd pre-opening sale only. After Reformd opens, the <strong>standard 3 for $60 intro pack</strong> will be valid for first-timers only at both S&T and Reformd.</p>"
-          }
-        },
-        "848afe71-f729-4582-a605-5eedb9841282": {
-          "type": "que_ans",
-          "disabled": true,
-          "settings": {
-            "title": "If I have a Reformd Unlimited membership with no S&T membership, can I access facilities at S&T?",
-            "detail": "<p>No, you’ll need to have a S&T membership to access facilities at S&T.</p>"
-          }
-        },
-        "b847ba64-6c33-4d0d-9549-5cced3f8e822": {
-          "type": "que_ans",
-          "disabled": true,
-          "settings": {
-            "title": "Can I book classes for friends wtih a recurring monthly credit pack?",
-            "detail": "<p>No, monthly recurring credits cannot be used to book classes for other people. To book classes for friends, you can purchase standard S&T class credits that can be used for classes, Small Group Training, biohacking, the pool deck, or as guest credits.</p>"
-          }
-        },
-        "que_ans_VzY3bt": {
-          "type": "que_ans",
-          "disabled": true,
-          "settings": {
-            "title": "Do you offer a corporate membership discount at Reformd?",
-            "detail": "<p>At this time, we do not have corporate membership discounts available for Reformd. If you are an existing corporate discount member at S&T, you may purchase a pre-opening sale package at Reformd; however, your corporate discount will not apply to Reformd.</p>"
-          }
-        },
         "title_zYcA3w": {
           "type": "title",
           "settings": {
@@ -203,6 +147,41 @@
           "settings": {
             "title": "What’s your cancellation policy?",
             "detail": "<p>Memberships and monthly credit packs can be frozen for a maximum of 14 days at a time in a six month period, and you can request your first freeze at any time after starting your membership. At the end of each freeze, 6 months must pass before you are eligible for another. Eligibility does not reset if you cancel and purchase a new membership. If you purchase a pre-opening sale membership, your start date will be the first day Reformd opens.</p>"
+          }
+        },
+        "que_ans_QqzFb9": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What’s your refund policy?",
+            "detail": "<p>We don’t have dedicated parking; however, there are lots of public parking and transit options nearby. We’re just across the street from the Queen St. stop and from the Eaton Centre parking garage. There is also a Green P parking garage at Dundas Square and Victoria St, as well as more parking options on Victoria St.</p>"
+          }
+        },
+        "que_ans_RABYL4": {
+          "type": "que_ans",
+          "settings": {
+            "title": "How does the waitlist work?",
+            "detail": "<p>We don’t have dedicated parking; however, there are lots of public parking and transit options nearby. We’re just across the street from the Queen St. stop and from the Eaton Centre parking garage. There is also a Green P parking garage at Dundas Square and Victoria St, as well as more parking options on Victoria St.</p>"
+          }
+        },
+        "que_ans_iRX3C8": {
+          "type": "que_ans",
+          "settings": {
+            "title": "How does express check-in for Unlimited members work?",
+            "detail": "<p>We don’t have dedicated parking; however, there are lots of public parking and transit options nearby. We’re just across the street from the Queen St. stop and from the Eaton Centre parking garage. There is also a Green P parking garage at Dundas Square and Victoria St, as well as more parking options on Victoria St.</p>"
+          }
+        },
+        "que_ans_xdfwaa": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What is HIIT?",
+            "detail": "<p>We don’t have dedicated parking; however, there are lots of public parking and transit options nearby. We’re just across the street from the Queen St. stop and from the Eaton Centre parking garage. There is also a Green P parking garage at Dundas Square and Victoria St, as well as more parking options on Victoria St.</p>"
+          }
+        },
+        "que_ans_6w7CVH": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Small Group Training refund and cancellation policy",
+            "detail": "<p>We don’t have dedicated parking; however, there are lots of public parking and transit options nearby. We’re just across the street from the Queen St. stop and from the Eaton Centre parking garage. There is also a Green P parking garage at Dundas Square and Victoria St, as well as more parking options on Victoria St.</p>"
           }
         },
         "e491b7f7-2e86-42db-9739-797a6fbb5195": {
@@ -398,9 +377,6 @@
         "que_ans_DBkNnb",
         "que_ans_prKExh",
         "que_ans_ir7wiX",
-        "que_ans_jwiCiH",
-        "ab3a0bf7-e7e2-4232-9cf4-65d41c889a85",
-        "83dfdfe3-9459-4c30-bc14-42e274ce06ba",
         "title_W6aazN",
         "que_ans_EePXQP",
         "que_ans_DkfcPE",
@@ -408,16 +384,17 @@
         "6beaa2ad-e3e7-4b02-9db6-25c2cae1a7bc",
         "que_ans_3BAmnt",
         "que_ans_nCV7JP",
-        "4cdf833b-812d-4a9a-84a9-bc2b229a449d",
-        "848afe71-f729-4582-a605-5eedb9841282",
-        "b847ba64-6c33-4d0d-9549-5cced3f8e822",
-        "que_ans_VzY3bt",
         "title_zYcA3w",
         "que_ans_J97CWR",
         "d7696939-47e4-410d-9584-55d9659a7c55",
         "03005134-1b24-4879-8a85-c338503355d3",
         "22e4de22-4b8c-4f02-a061-11408cf91e8a",
         "7064720d-0420-40f1-803f-d9b0235d07ef",
+        "que_ans_QqzFb9",
+        "que_ans_RABYL4",
+        "que_ans_iRX3C8",
+        "que_ans_xdfwaa",
+        "que_ans_6w7CVH",
         "e491b7f7-2e86-42db-9739-797a6fbb5195",
         "3ba96673-528e-457a-8524-171c4ebf84ac",
         "df72df29-8093-40fa-83f3-c8def3f9bcfa",
