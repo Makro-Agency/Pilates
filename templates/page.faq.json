@@ -187,20 +187,20 @@
         "e491b7f7-2e86-42db-9739-797a6fbb5195": {
           "type": "title",
           "settings": {
-            "title": "CONTACT US"
+            "title": "SELF CHECK-IN"
           }
         },
         "3ba96673-528e-457a-8524-171c4ebf84ac": {
           "type": "que_ans",
           "settings": {
-            "title": "I'm interested in joining the team. Are you hiring?",
+            "title": "How does self check-in work?",
             "detail": "<p>Keep your eyes out for job postings to be released.<br/>Fitness instructor inquiries: emily@reformd.com<br/>All other job inquiries: hello@reformd.com</p>"
           }
         },
         "df72df29-8093-40fa-83f3-c8def3f9bcfa": {
           "type": "que_ans",
           "settings": {
-            "title": "I have a question that isn't answered here. How can I get in touch?",
+            "title": "How do I use self check-in?",
             "detail": "<p>Please contact us at hello@reformd.com with details of your inquiry and our team will be happy to help!</p>"
           }
         },
