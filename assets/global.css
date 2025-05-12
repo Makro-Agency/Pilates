@@ -206,12 +206,14 @@ body .swiper-button-next.swiper-button-disabled, body .swiper-button-prev.swiper
   body.template--accessibility-policy h1,
   body.template--accessibility-policy .h1,
   body.template--terms-conditions h1,
-  body.template--terms-conditions .h1 { 
+  body.template--terms-conditions .h1,
+  body.template--shipping-policy h1{ 
     font-size: 50px;
   }
   body.template--accessibility-policy h3,
   body.template--accessibility-policy .h3,
-  body.template--terms-conditions h3, body.template--terms-conditions .h3 {
+  body.template--terms-conditions h3, body.template--terms-conditions .h3 ,
+  body.template--shipping-policy h3,  body.template--shipping-policy h3{
     font-size: 30px;
   }
 }
@@ -276,7 +278,8 @@ a[href^="tel:"]{
   padding-bottom: 67px;
 }
 body.template--accessibility-policy,
-body.template--terms-conditions{
+body.template--terms-conditions,
+body.template--shipping-policy{
   color: var(--White, #FFF);
   font-family: "New Frank";
   font-size: 16px;
@@ -289,7 +292,8 @@ body.template--terms-conditions .page-title  {
   text-align: left;
 }
 body.template--accessibility-policy h5,
-body.template--accessibility-policy .h5
+body.template--accessibility-policy .h5,
+body.template--shipping-policy h5,  body.template--shipping-policy .h5
 {
   font-size: 20px;
   font-weight: 500;
@@ -299,7 +303,8 @@ body.template--accessibility-policy .h5
 body.template--accessibility-policy h1,
 body.template--accessibility-policy .h1,
 body.template--terms-conditions h1,
-body.template--terms-conditions .h1 {
+body.template--terms-conditions .h1,
+body.template--shipping-policy h1 {
   color: var(--White, #FFF);
   font-family: "ITC Avant Garde Gothic Std";
   font-size: 60px;
@@ -311,7 +316,9 @@ body.template--terms-conditions .h1 {
 body.template--accessibility-policy h3,
 body.template--accessibility-policy .h3,
 body.template--terms-conditions h3, 
-body.template--terms-conditions .h3 {
+body.template--terms-conditions .h3,
+body.template--shipping-policy h3,
+body.template--shipping-policy .h3 {
   letter-spacing: .1em;color: var(--White, #FFF);
   font-family: "ITC Avant Garde Gothic Std";
   font-size: 32px;
@@ -322,7 +329,8 @@ body.template--terms-conditions .h3 {
   letter-spacing: 0;
   margin-bottom: 24px;
 }
-.template--terms-conditions main#MainContent,.template--accessibility-policy main#MainContent {
+.template--terms-conditions main#MainContent,.template--accessibility-policy main#MainContent,
+.template--shipping-policy{
   background: var(--Black, #000);
 }
 .policies-section .rte{
@@ -373,12 +381,14 @@ body.template--terms-conditions .rte  b{
   body.template--accessibility-policy h1,
   body.template--accessibility-policy .h1,
   body.template--terms-conditions h1,
-  body.template--terms-conditions .h1 { 
+  body.template--terms-conditions .h1,
+  body.template--shipping-policy h1{ 
     font-size: 44px;
   }
   body.template--accessibility-policy h3,
   body.template--accessibility-policy .h3,
-  body.template--terms-conditions h3, body.template--terms-conditions .h3 {
+  body.template--terms-conditions h3, body.template--terms-conditions .h3,
+  body.template--shipping-policy h3,  body.template--shipping-policy .h3 {
     font-size: 26px;
   }
   .section-padding{
@@ -409,12 +419,16 @@ body.template--terms-conditions .rte  b{
   body.template--accessibility-policy h1,
   body.template--accessibility-policy .h1,
   body.template--terms-conditions h1,
-  body.template--terms-conditions .h1 { 
+  body.template--terms-conditions .h1,
+  body.template--shipping-policy h1,
+  body.template--shipping-policy h1,
+  body.template--shipping-policy .h1 { 
     font-size: 40px;
   }
   body.template--accessibility-policy h3,
   body.template--accessibility-policy .h3,
-  body.template--terms-conditions h3, body.template--terms-conditions .h3 {
+  body.template--terms-conditions h3, body.template--terms-conditions .h3 ,
+  body.template--shipping-policy h3,  body.template--shipping-policy .h3{
     font-size: 22px;
   }
   .section-padding{
