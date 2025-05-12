@@ -96,22 +96,11 @@
         "popup_repeat_delay": 30,
         "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae"
       }
-    },
-    "about_banner_NQFrfP": {
-      "type": "about-banner",
-      "name": "About Banner",
-      "settings": {
-        "allow_transparent_header": true,
-        "sub_title": "afae",
-        "title": "fsf",
-        "desktop_image": "shopify://shop_images/474842706_18482396428028911_7819424887357492243_n.jpg"
-      }
     }
   },
   "order": [
     "announcement-bar",
     "global_header_jrHBy3",
-    "4d342184-db41-43d6-bbe3-503423044f05",
-    "about_banner_NQFrfP"
+    "4d342184-db41-43d6-bbe3-503423044f05"
   ]
 }
