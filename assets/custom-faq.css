@@ -1,0 +1,119 @@
+.mainFaq .page-width{
+    align-items:center; 
+    justify-content:center; 
+}
+
+.mainFaq .rightPart  .faq-sTitle .h3{
+font-family: ITC Avant Garde Gothic Std;
+font-weight: 500;
+font-size: 32px;
+line-height: 100%;
+letter-spacing: 0;
+text-transform: uppercase;
+
+}
+.mainFaq .rightPart{ margin-top:0; }
+.mainFaq .faq-sContent .h6{
+font-family: ITC Avant Garde Gothic Std;
+font-weight: 600;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color:#ffffff; 
+}
+.template--faq  .mainFaq .faq-sLink .link{ color:rgb(255, 255, 255, 0.4);
+}
+.template--faq  .mainFaq  .faq-sLink .link:hover , .template--faq  .mainFaq  .faq-sLink .link.active {
+    color:rgb(255, 255, 255, 1);
+}
+.template--faq .mainFaq .faq-sLink .link{
+    padding-bottom: 16px;
+    padding-top:0; 
+}
+ .mainFaq .faq-sLink .link:hover, main.dark--true .faq-sLink .link.active{ color:rgb(255, 255, 255, 1); }
+.mainFaq main.dark--true .faq-sLink .link.active{
+     color:rgb(255, 255, 255, 1);
+}
+.mainFaq .f-sCon--item h4{
+font-family: ITC Avant Garde Gothic Std;
+font-weight: 500;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0;
+text-transform: uppercase;
+}
+.mainFaq .f-sCon--item .rte p{
+font-family: 'New Frank';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+}
+.mainFaq .f-sCon--item{
+         border-bottom: 1px solid rgba(255, 255, 255, 0.25);   
+}
+.mainFaq .faq-sQA{
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);  
+}
+.mainFaq .f-sCon--item{
+   border-top: 1px solid rgba(255, 255, 255, 0.25); 
+}
+.mainFaq .faq-sQA .tab{
+border-top: 1px solid rgba(255, 255, 255, 0.25); 
+}
+.mainFaq .faq-notes h5.sub-title{
+    font-family: ITC Avant Garde Gothic Std;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin-top:30px;
+    margin-bottom:10px; 
+    text-transform: uppercase;
+}
+.mainFaq .faq-notes{ padding-bottom:80px; }
+.mainFaq .notes-details{
+font-family: New Frank;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0;
+margin-top:0;
+margin-bottom:0; 
+padding-bottom:30px;
+border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.faqBlock:first-child{
+    position:relative; 
+}
+.faqBlock:first-child:before{
+    content:'';
+    position: absolute;
+width: 776.37px;
+height: 100%;
+left: 271px;
+top: 0px;
+background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
+opacity: 0.3;
+filter: blur(200px);
+transform: rotate(67.77deg);
+}
+.rightPart .faqBlock:nth-child(3){
+    position:relative; 
+}
+
+.rightPart .faqBlock:nth-child(3):after{
+content:'';
+position: absolute;
+width: 1677.99px;
+height: 727.5px;
+left: -80%;
+transform: rotate(-148.5deg);
+top: 0;
+background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%);
+opacity: 0.4;
+filter: blur(200px);
+
+}
