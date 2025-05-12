@@ -255,60 +255,49 @@
         "12b36bdf-f8c7-4c70-a6c5-67d3942a9ec1": {
           "type": "que_ans",
           "settings": {
-            "title": "How does express check-in for Unlimited members work?",
+            "title": "Do I need to bring my own yoga mat, boxing gloves, or cycling shoes?",
             "detail": "<p>Express check-in is available for Unlimited members who are not checking in with a guest, and do not have any account inquiries or special requests. When you arrive at S&T for your HIIT or Yoga class, you can head straight to the studio to check in with our team member who will be situated by the studio doors. Express check-in opens 10 minutes before class start time. We still recommend arriving and checking in early to ensure you’re all ready for class!</p>"
           }
         },
         "70316a9b-847d-447a-9313-7d52ca66f24d": {
           "type": "que_ans",
           "settings": {
-            "title": "What’s your refund policy?",
+            "title": "Will I be the only one in the sauna?",
             "detail": "<p>We do not allow refunds and do not accept refund requests for price adjustments.</p>"
           }
         },
         "7645ce0f-ffea-4e13-ae63-97cdd9c3bbf3": {
           "type": "que_ans",
           "settings": {
-            "title": "How does the waitlist work?",
+            "title": "What should I wear in the sauna?",
             "detail": "<p>Our waitlist is designed to move quickly and ensures that guests who want to take a class will have the best chance of getting into that class. As soon as a spot opens up, you will be <strong>automatically enrolled </strong>on a first come, first served basis, up to 10 minutes before class start time. If you do not wish or intend to take the class, we encourage you to remove yourself from the waitlist to avoid automatic enrolment and a penalty should you no longer be able to make it. You can remove yourself from the waitlist at anytime without penalty. Once you are enrolled, our standard no-show / late cancellation policy will apply. Removing yourself from the waitlist will allow other guests who are on the waitlist and able to make it to class the chance to get in. Expect waitlists to move quickly – if you can’t make it to class within 10 minutes of being notified, we recommend that you remove yourself from the waitlist.</p>"
-          }
-        },
-        "0c90dbed-c9e0-448d-8967-022bb2dd36a5": {
-          "type": "title",
-          "disabled": true,
-          "settings": {
-            "title": "CHECKING IN"
           }
         },
         "60f81ea4-844e-4e74-b276-2fbbd44be5ab": {
           "type": "que_ans",
-          "disabled": true,
           "settings": {
-            "title": "How do I check in for class?",
+            "title": "Is Tonic House always available to use?",
             "detail": "<p>There are three ways to check in for your class!</p><p><strong>1. Self check-in on the S&T app.</strong> If its your first visit, please check in at the front desk.</p><p><strong>2. Check in at studio doors.</strong> A S&T team member will be stationed in front of studio doors prior to class beginning. If you have any account inquiries, please visit the front desk.</p><p><strong>3. Check in at the front desk. </strong>Visit the front desk if this is your first visit, or if you have any account inquiries.</p>"
           }
         },
         "c59ccd3b-4159-4933-b5a8-405abd2d353f": {
           "type": "que_ans",
-          "disabled": true,
           "settings": {
-            "title": "How does self check-in work?",
+            "title": "Do you accept cash?",
             "detail": "<p>You can check yourself in for Yoga, HIIT & Ride classes, as well as sauna and Somadome sessions on the S&T app. Self check-in opens 30 minutes before your class start time, and closes 5 minutes before the class starts. For example, if your class starts at 12 PM, self check-in on the app will open at 11:30 AM, and close at 11:55 AM. After the window closes, you’ll need to check in for class at the front desk.</p>"
           }
         },
         "que_ans_FUTk9g": {
           "type": "que_ans",
-          "disabled": true,
           "settings": {
-            "title": "Self check-in policy",
+            "title": "Can I purchase items from nutbar and Tonic Bar even if I don’t work out here?",
             "detail": "<p>Our standard no show and late cancellation policies apply.</p><p>You must attend a class that you’ve checked in for. Once you’ve checked in, make sure to head to the correct spot number you’ve booked!</p><p>Checking in and not attending class will result in double the no show fee ($24 x 2) for the first violation; the second violation will result in double the fee and a permanent ban from Sweat and Tonic.</p><p>Be considerate of your Sweat Fam - do not book overlapping classes or more classes than you intend to take. If you no longer wish to attend a class, please cancel reservations at least 12 hours in advance to ensure spots are not taken up that could have been available to someone else.</p>"
           }
         },
         "05a40f69-e3df-4da1-9362-79a359552aaa": {
           "type": "que_ans",
-          "disabled": true,
           "settings": {
-            "title": "How do I use self check-in?",
+            "title": "Are you hiring?",
             "detail": "<p>Open your S&T app to view your upcoming reservations. If you are at S&T and within the self check-in window, you’ll see a ‘Check In’ button for the class you’re attending. You must have location access enabled on your phone, and be physically present within the S&T facility in order for self check-in to work.<br/><br/>Once you've checked in, you can head straight to the studio. For Ride, you can pick up your shoes from the self-service area next to the Ride studio.</p><p>As always, feel free to stop by the front desk if you have any questions or need assistance.</p>"
           }
         },
@@ -413,7 +402,6 @@
         "12b36bdf-f8c7-4c70-a6c5-67d3942a9ec1",
         "70316a9b-847d-447a-9313-7d52ca66f24d",
         "7645ce0f-ffea-4e13-ae63-97cdd9c3bbf3",
-        "0c90dbed-c9e0-448d-8967-022bb2dd36a5",
         "60f81ea4-844e-4e74-b276-2fbbd44be5ab",
         "c59ccd3b-4159-4933-b5a8-405abd2d353f",
         "que_ans_FUTk9g",
