@@ -134,6 +134,7 @@
         },
         "4cdf833b-812d-4a9a-84a9-bc2b229a449d": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "I’ve taken a class at S&T before. Can I purchase the Reformd 3 for $50 intro pack?",
             "detail": "<p>Yes, you’re eligible to purchase a <strong>Reformd 3 for $50 intro pack</strong> during our pre-opening sale. There is a limit of 1 per customer for intro packs. Any credits purchased during the pre-opening sale will be valid for use at Reformd only.</p><p>This is applicable during the Reformd pre-opening sale only. After Reformd opens, the <strong>standard 3 for $60 intro pack</strong> will be valid for first-timers only at both S&T and Reformd.</p>"
@@ -141,6 +142,7 @@
         },
         "848afe71-f729-4582-a605-5eedb9841282": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "If I have a Reformd Unlimited membership with no S&T membership, can I access facilities at S&T?",
             "detail": "<p>No, you’ll need to have a S&T membership to access facilities at S&T.</p>"
@@ -148,6 +150,7 @@
         },
         "b847ba64-6c33-4d0d-9549-5cced3f8e822": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "Can I book classes for friends wtih a recurring monthly credit pack?",
             "detail": "<p>No, monthly recurring credits cannot be used to book classes for other people. To book classes for friends, you can purchase standard S&T class credits that can be used for classes, Small Group Training, biohacking, the pool deck, or as guest credits.</p>"
@@ -155,6 +158,7 @@
         },
         "que_ans_VzY3bt": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "Do you offer a corporate membership discount at Reformd?",
             "detail": "<p>At this time, we do not have corporate membership discounts available for Reformd. If you are an existing corporate discount member at S&T, you may purchase a pre-opening sale package at Reformd; however, your corporate discount will not apply to Reformd.</p>"
