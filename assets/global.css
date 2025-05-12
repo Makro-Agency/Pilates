@@ -169,9 +169,9 @@ body.template--accessibility-policy .page-width--narrow,
 body.template--terms-conditions .page-width--narrow {
   max-width: 960px;
 }
-.section-padding{
-  padding-top: 120px;
-  padding-bottom: 120px;
+.section-padding,.template--shipping-policy .section-padding{
+  padding-top: 120px !important;
+  padding-bottom: 120px !important;
 }
 body .swiper-button-next, body .swiper-button-prev{
   height: 50px;
