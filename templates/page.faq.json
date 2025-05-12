@@ -227,6 +227,7 @@
         },
         "text_TRQATq": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "",
             "title_1": "",
