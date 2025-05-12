@@ -167,7 +167,7 @@ body .underlined-link:hover, body .customer a:hover, body .inline-richtext a:hov
 }
 body.template--accessibility-policy .page-width--narrow,
 body.template--terms-conditions .page-width--narrow {
-  max-width: 880px;
+  max-width: 960px;
 }
 .section-padding{
   padding-top: 120px;
@@ -196,6 +196,12 @@ body .swiper-button-next:after, body .swiper-rtl .swiper-button-prev:after, .swi
 body .swiper-button-next.swiper-button-disabled, body .swiper-button-prev.swiper-button-disabled{
   opacity: 0;
 }
+.template--terms-conditions .policies-section .main-page-title{
+  margin-bottom: 24px;
+}
+
+
+
 @media(max-width: 1199px){
   body.template--accessibility-policy h1,
   body.template--accessibility-policy .h1,
@@ -271,10 +277,12 @@ a[href^="tel:"]{
 }
 body.template--accessibility-policy,
 body.template--terms-conditions{
+  color: var(--White, #FFF);
+  font-family: "New Frank";
   font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0;
-  font-family: Brandon Grotesque;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
 }
 body.template--accessibility-policy .page-title,
 body.template--terms-conditions .page-title  {
@@ -292,19 +300,41 @@ body.template--accessibility-policy h1,
 body.template--accessibility-policy .h1,
 body.template--terms-conditions h1,
 body.template--terms-conditions .h1 {
-    font-size: 60px;
-    font-weight: 420;
-    letter-spacing: .1em;
-    font-family: Brandon Grotesque;
+  color: var(--White, #FFF);
+  font-family: "ITC Avant Garde Gothic Std";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  text-transform: uppercase;
 }
 body.template--accessibility-policy h3,
 body.template--accessibility-policy .h3,
 body.template--terms-conditions h3, 
 body.template--terms-conditions .h3 {
+  letter-spacing: .1em;color: var(--White, #FFF);
+  font-family: "ITC Avant Garde Gothic Std";
   font-size: 32px;
-  font-weight: 450;
-  letter-spacing: .1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; 
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin-bottom: 24px;
 }
+.template--terms-conditions main#MainContent,.template--accessibility-policy main#MainContent {
+  background: var(--Black, #000);
+}
+.policies-section .rte{
+  color: var(--White, #FFF) !important;
+}
+body.template--terms-conditions .rte  b{
+  font-weight: 300;
+  font-size: 16px;
+}
+
+
+
 @media screen and (min-width: 750px){
   .banner .banner__content, .page-width{
     padding-right: 40px;

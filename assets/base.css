@@ -3251,7 +3251,7 @@ details-disclosure > details {
 
 .rte a {
   color: rgba(var(--color-link), var(--alpha-link));
-  text-underline-offset: 0.3rem;
+  text-underline-offset: 0.1rem;
   text-decoration-thickness: 0.1rem;
   transition: text-decoration-thickness var(--duration-short) ease;
 }
