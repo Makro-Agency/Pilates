@@ -9,8 +9,20 @@
  */
 {
   "sections": {
+    "collections_banner_DicHCP": {
+      "type": "collections-banner",
+      "name": "Collections Banner",
+      "settings": {
+        "allow_transparent_header": false,
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "",
+        "shop_all_text": "Shop All"
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "allow_transparent_header": true,
         "show_collection_description": true,
@@ -38,25 +50,16 @@
         "padding_bottom": 36
       }
     },
-    "about_banner_W8XxyT": {
-      "type": "about-banner",
-      "name": "About Banner",
-      "settings": {
-        "allow_transparent_header": false,
-        "sub_title": "",
-        "title": ""
-      }
-    },
-    "collection_list_bM64Aq": {
-      "type": "collection-list",
+    "collection_list_data_HDLxqN": {
+      "type": "collection-list-data",
       "blocks": {
-        "featured_collection_DqhiRi": {
+        "featured_collection_hzJH8X": {
           "type": "featured_collection",
           "settings": {
             "collection": "menswear"
           }
         },
-        "featured_collection_t3bQaB": {
+        "featured_collection_nDMhEK": {
           "type": "featured_collection",
           "settings": {
             "collection": "womenswear"
@@ -64,10 +67,10 @@
         }
       },
       "block_order": [
-        "featured_collection_DqhiRi",
-        "featured_collection_t3bQaB"
+        "featured_collection_hzJH8X",
+        "featured_collection_nDMhEK"
       ],
-      "name": "t:sections.collection-list.presets.name",
+      "name": "collction list data",
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -81,7 +84,7 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection_M6cNRh": {
+    "featured_collection_fgyRVa": {
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
@@ -112,10 +115,10 @@
     }
   },
   "order": [
+    "collections_banner_DicHCP",
     "banner",
     "product-grid",
-    "about_banner_W8XxyT",
-    "collection_list_bM64Aq",
-    "featured_collection_M6cNRh"
+    "collection_list_data_HDLxqN",
+    "featured_collection_fgyRVa"
   ]
 }

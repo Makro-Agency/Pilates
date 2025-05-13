@@ -15,11 +15,15 @@
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
-  <div class="contact grid grid--gapless grid--1-col grid--2-col grid--1-col-tablet-down _page-width _page-width--narrow">
+  <div class="contact grid grid--gapless grid--1-col grid--2-col grid--1-col-tablet-down page-width _page-width--narrow">
     <div class="grid__item leftBGPart leftBGPart-{{ section.id }}">
       {% if section.settings.subheading_left != blank %}<h6 class="uppercase">{{ section.settings.subheading_left }}</h6>{% endif %}
       {% if section.settings.heading_left != blank %}<h2 class="{{ section.settings.heading_size_left }}">{{ section.settings.heading_left }}</h2>{% endif %}
-      {% if section.settings.btn_text_left != blank and section.settings.btn_link_left != blank %}<a class="button button--secondary" href="{{ section.settings.btn_link_left | default:'#' }}" title="">{{ section.settings.btn_text_left }}</a>{% endif %}
+      {% if section.settings.btn_text_left != blank and section.settings.btn_link_left != blank %}<a class="button button--secondary" href="{{ section.settings.btn_link_left | default:'#' }}" title="">{{ section.settings.btn_text_left }}
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M10.0131 10.0073L14.0206 5.99974M14.0206 5.99974L10.0131 1.99219M14.0206 5.99974H1.25488" stroke="white" stroke-width="1.5"/>
+        </svg>
+      </a>{% endif %}
     </div>
 
     <div class="grid__item rightContactPart">
@@ -211,7 +215,7 @@
       "label": "Sub heading"
     },
     {
-      "type": "inline_richtext",
+      "type": "textarea",
       "id": "heading_left",
       "default": "LET’S GET YOU IN",
       "label": "Heading"
