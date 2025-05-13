@@ -10,3 +10,49 @@ font-weight: 500;
 line-height: 100%; 
 text-transform: uppercase;
 }
+.team-list-box .team-list .box .team-box .team-name{ margin-top:0; }
+.team-main-wrapper .team-list-box .team-list{
+        grid-template-columns: 1fr 1fr 1fr; gap:0; 
+}
+.team-list-box .team-list .box .team-box .team-name{ color: var(--White, #FFF);
+    font-family: "ITC Avant Garde Gothic Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase; }
+.team-main-wrapper .team-content{ padding:40px; }
+.team-main-wrapper .team-list-box .team-list .box .team-box .team-info{ margin-top:10px; }
+.team-main-wrapper .box:nth-child(3){ position:relative; }
+.team-main-wrapper .box:nth-child(3):before{
+content:'';
+position: absolute;
+width: 776.37px;
+height: 1275.1px;
+left: -15%;
+top: 0px;
+background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
+opacity: 0.3;
+filter: blur(200px);
+transform: rotate(67.77deg);
+}
+.team-main-wrapper .box:nth-child(11){ position:relative; }
+.team-main-wrapper .box:nth-child(11):before{
+content:'';
+position: absolute;
+width: 776.37px;
+height: 1275.1px;
+left: -15%;
+top: 0px;
+background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
+opacity: 0.3;
+filter: blur(200px);
+transform: rotate(67.77deg);
+}
+@media screen and (max-width:1440px){
+    .team-main-wrapper .sec-head .sec-title{ padding-left:50px; }
+.team-main-wrapper .page-width{ 
+    padding-left:0;  padding-right:0; 
+}
+}

@@ -29,11 +29,12 @@
               {{ 'image' | placeholder_svg_tag }}
             </div>
           {%- endif -%}
+          <div class="team-content">
           {%- if block.settings.name != blank -%}
             <h3 class="team-name">
               {{ block.settings.name }} 
               {% if block.settings.url != blank %}
-                <a href="{{ block.settings.url }}">{% render 'icon-right-arrow' %}</a>
+                <a href="{{ block.settings.url }}">{% render 'custom-icon-right-arrow' %}</a>
               {% endif %}
             </h3>
             {%- endif -%}
@@ -41,6 +42,7 @@
             <div class="team-info">{{ block.settings.sp_tag }}</div>
             {%- assign totalSpecialtags = totalSpecialtags | append: block.settings.sp_tag | append: ', ' -%}
           {%- endif -%}
+          </div>
         </div>
       </div>
     {%- endif -%}
