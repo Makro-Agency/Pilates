@@ -322,6 +322,7 @@
           },
           "db17916d-aa57-433e-8c52-121acbe72a31": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Claudia Erban",
               "name": "Claudia Erban",
@@ -341,6 +342,7 @@
           },
           "881db73b-4ec0-4e33-a603-426cc16527c9": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Dustin Pym",
               "name": "Dustin Pym",
@@ -350,6 +352,7 @@
           },
           "d68f9629-29f8-4f86-a5bf-f22336cb0b0b": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Elaine Clark",
               "name": "Elaine Clark",
@@ -359,6 +362,7 @@
           },
           "image_dNTHAc": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Elizabeth Pipes",
               "name": "Elizabeth Pipes",
@@ -378,6 +382,7 @@
           },
           "image_rGUiq6": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Erika Quach",
               "name": "Erika Quach",
@@ -397,6 +402,7 @@
           },
           "ab40d137-d1fb-40fa-a865-20107955db7e": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Heather Fee",
               "name": "Heather Fee",
@@ -406,6 +412,7 @@
           },
           "image_kefrqF": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Helena Ziemer",
               "name": "Helena Ziemer",
@@ -415,6 +422,7 @@
           },
           "image_Lq9U9J": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Irena Ponizova",
               "name": "Irena Ponizova",
@@ -424,6 +432,7 @@
           },
           "994eee01-7656-46e5-a990-000dbace9f76": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jacqui Wells",
               "image": "shopify://shop_images/Jacqui.jpg",
@@ -434,6 +443,7 @@
           },
           "image_qpEgrL": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jaclyn Ghannoum",
               "name": "Jaclyn Ghannoum",
@@ -443,6 +453,7 @@
           },
           "image_hQiCpM": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jamie Holman",
               "name": "Jamie Holman",
@@ -452,6 +463,7 @@
           },
           "cdeb9f9c-9d54-43c5-8211-c0ed0268f355": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Javier Sanchez",
               "name": "Javier Sanchez",
@@ -461,6 +473,7 @@
           },
           "image_XhNXzQ": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jessica Pordel",
               "name": "Jessica Pordel",
@@ -470,6 +483,7 @@
           },
           "image_EAfTig": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jessica Ullathorne",
               "name": "Jessica Ullathorne",
@@ -479,6 +493,7 @@
           },
           "image_QQcw4m": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jiana Alnajjar",
               "name": "Jiana Alnajjar",
@@ -488,6 +503,7 @@
           },
           "c15ffe1a-dfa2-4ffd-8a40-a82b677faa82": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jonathan Phair",
               "name": "Jonathan Phair",
@@ -497,6 +513,7 @@
           },
           "8dc13a56-c6a0-4a2c-b552-affcdd13d4fc": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jordan Scholl",
               "name": "Jordan Scholl",
@@ -506,6 +523,7 @@
           },
           "image_kc6jiQ": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jordyn Davloor",
               "name": "Jordyn Davloor",
@@ -515,6 +533,7 @@
           },
           "803e6606-3b28-460b-ad09-1c3383c4bf23": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Josh Camson",
               "name": "Josh Camson",
@@ -524,6 +543,7 @@
           },
           "e14618a8-d954-4b3e-a05a-830f6ad30f91": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Julian Ho",
               "name": "Julian Ho",
@@ -533,6 +553,7 @@
           },
           "89feaf76-0392-4102-af52-6619a0010cd3": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Justin B Haley",
               "name": "Justin B Haley",
@@ -542,6 +563,7 @@
           },
           "94c7cf54-e467-41d3-99d0-44f05063e357": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Kaivan Shimi",
               "name": "Kaivan Shimi",
@@ -551,6 +573,7 @@
           },
           "d7708121-e8af-4751-96df-579969e8baa2": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Katie Kunst",
               "name": "Katie Kunst",
@@ -560,6 +583,7 @@
           },
           "image_AkkEq9": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Kimmel Alcide",
               "name": "Kimmel Alcide",
@@ -569,6 +593,7 @@
           },
           "image_XYdXEC": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Kirstie Yergens",
               "name": "Kirstie Yergens",
@@ -578,6 +603,7 @@
           },
           "image_yrAdr4": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Kristen Seaton",
               "name": "Kristen Seaton",
@@ -587,6 +613,7 @@
           },
           "image_JbFq3C": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Lauren Halliwell",
               "name": "Lauren Halliwell",
@@ -596,6 +623,7 @@
           },
           "image_VgB8DM": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Lauren Kinsie",
               "image": "shopify://shop_images/Lauren_option_1.png",
@@ -606,6 +634,7 @@
           },
           "68db93f2-8e06-4836-9c6e-c2b243d60356": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Lisa Damla",
               "name": "Lisa Damla",
@@ -615,6 +644,7 @@
           },
           "83abf209-e589-4670-a9f7-2569f9e59564": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Maddy Cassidy",
               "name": "Maddy Cassidy",
@@ -624,6 +654,7 @@
           },
           "a7abcfc2-fb82-4f39-b453-d6031e4f8a2c": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Megan van der Baars",
               "name": "Megan van der Baars",
@@ -633,6 +664,7 @@
           },
           "image_cn9jWY": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Morgan Stasiewicz",
               "name": "Morgan Stasiewicz",
@@ -642,6 +674,7 @@
           },
           "2eb215c6-11d6-431a-8f7e-77ae92756618": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Nariko Chaffe",
               "name": "Nariko Chaffe",
@@ -651,6 +684,7 @@
           },
           "image_6iDRRg": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Staz Irons",
               "name": "Staz Irons",
@@ -660,6 +694,7 @@
           },
           "image_NQDpWr": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Natalie Kwong",
               "name": "Natalie Kwong",
@@ -669,6 +704,7 @@
           },
           "image_HyBaPt": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Naomi Campbell",
               "name": "Naomi Campbell",
@@ -688,6 +724,7 @@
           },
           "bac2b50d-81c7-462e-952e-4c99ab2024a8": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Perez Tieku",
               "name": "Perez Tieku",
@@ -717,6 +754,7 @@
           },
           "51c030d1-3e9a-433b-a1ef-3e5799e6479a": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Queenie Phair",
               "name": "Queenie Phair",
@@ -726,6 +764,7 @@
           },
           "image_FL3Tni": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Quinn Schell",
               "name": "Quinn Schell",
@@ -735,6 +774,7 @@
           },
           "68bf15e3-5a73-46f9-8444-3577ec81ffa7": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Rachael Crumb",
               "name": "Rachael Crumb",
@@ -744,6 +784,7 @@
           },
           "aa55b3e1-9b17-4ebc-b5e8-b9f060ed9e31": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Rachael Fallon",
               "name": "Rachael Fallon",
@@ -763,6 +804,7 @@
           },
           "3d8f666e-89c2-4d3b-b0c8-4a592d05bb1a": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Rachel Schick",
               "name": "Rachel Schick",
@@ -772,6 +814,7 @@
           },
           "46fbed04-c653-4aee-9160-c4de69194513": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Rebecca Moskob",
               "image": "shopify://shop_images/RebeccaMoskob_RideInstructor.jpg",
@@ -782,6 +825,7 @@
           },
           "image_4Bj6CA": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Renelyn Quinicot",
               "name": "Renelyn Quinicot",
@@ -791,6 +835,7 @@
           },
           "1f9100e9-0254-43cb-b263-cf1dfeef10c8": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Riley Bennett",
               "name": "Riley Bennett",
@@ -800,6 +845,7 @@
           },
           "4348d2bf-8b81-4b42-aba1-181179e2a26f": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Rory Bray",
               "name": "Rory Bray",
@@ -809,6 +855,7 @@
           },
           "1323444c-3caa-45ef-b939-f4aeddbe2680": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Sam Clarkey",
               "name": "Sam Clarkey",
@@ -818,6 +865,7 @@
           },
           "4f086ce4-6fdd-4566-a1f2-9dbdd8a6e05a": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Samantha Ushedo",
               "image": "shopify://shop_images/SamUshedo_RideInstructor.jpg",
@@ -828,6 +876,7 @@
           },
           "image_9dm4Ly": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Sara Buckingham",
               "name": "Sara Buckingham",
@@ -837,6 +886,7 @@
           },
           "image_rUWFqG": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Sean Alexandra",
               "name": "Sean Alexandra",
@@ -846,6 +896,7 @@
           },
           "image_FjX783": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Seyar Karimi",
               "name": "Seyar Karimi",
@@ -855,6 +906,7 @@
           },
           "fd45b006-2bad-4997-83b4-813720ce72dc": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Sophia McNolty",
               "name": "Sophia McNolty",
@@ -874,6 +926,7 @@
           },
           "image_Pan3Xe": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Stella Azzopardi",
               "name": "Stella Azzopardi",
@@ -883,6 +936,7 @@
           },
           "image_NKAeJb": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Steve Parkhill",
               "image": "shopify://shop_images/Steve_PT.png",
@@ -893,6 +947,7 @@
           },
           "fdb14853-d519-4d8f-a4bc-5c4068067a2c": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Sydney Strimas",
               "name": "Sydney Strimas",
@@ -902,6 +957,7 @@
           },
           "216fb0d6-2cf2-49ae-ac9e-1e7d69b8659f": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Tiana Bentley-Dittmar",
               "name": "Tiana Bentley-Dittmar",
@@ -911,6 +967,7 @@
           },
           "image_gVPpVt": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Tricia Kopec",
               "name": "Tricia Kopec",
@@ -920,6 +977,7 @@
           },
           "image_YQekbE": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Valentine Giambattista",
               "name": "Valentine Giambattista",
@@ -929,6 +987,7 @@
           },
           "image_DEpWdW": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Valerie Tiu",
               "name": "Valerie Tiu",
@@ -938,6 +997,7 @@
           },
           "image_zk3JLk": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Vanessa Badran",
               "name": "Vanessa Badran",
@@ -947,6 +1007,7 @@
           },
           "74496099-8006-4518-b546-161b3f820c0c": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Victoria Nigro",
               "name": "Victoria Nigro",
@@ -956,6 +1017,7 @@
           },
           "cb083dfa-611d-4373-a16e-2d36bb00e91b": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Viola Wang",
               "image": "shopify://shop_images/ViolaWang_YogaPilatesInstructor.jpg",
@@ -966,6 +1028,7 @@
           },
           "image_iCDxdT": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "William Tsilkas",
               "image": "shopify://shop_images/Will_PT.png",
