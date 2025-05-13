@@ -62,6 +62,7 @@
         "template--16876988825820__6fbef022-0ebe-41f6-aef8-f36a8807efd3-column-2": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Frame_5359.png",
             "content_alignment": "bottom",
             "title": "Menswear",
             "text": "performance driven",
@@ -72,6 +73,7 @@
         "template--16876988825820__6fbef022-0ebe-41f6-aef8-f36a8807efd3-column-1": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Frame_5360.png",
             "content_alignment": "bottom",
             "title": "Womenswear",
             "text": "embrace your every move",
