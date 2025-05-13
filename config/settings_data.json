@@ -184,7 +184,8 @@
             "type": "image",
             "settings": {
               "title": "Andre Brault",
-              "name": "Andre Brault",
+              "image": "shopify://shop_images/Rectangle_50_3.png",
+              "name": "Blake Copeland",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/andre-brault"
             }
