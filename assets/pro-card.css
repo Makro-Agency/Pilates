@@ -12,7 +12,8 @@
   font-size: 12px; font-style: normal; font-weight: 400; line-height: 150%; text-decoration: line-through; }
 
 
-
+.dark--true .product-card-wrapper .card .card__content .card__information .card__heading { color: #fff; }
+.dark--true .product-card-wrapper .card .card__content .card__information .price .price__container .price__regular .price-item--regular { color: #ffffff; }
 
 
 
