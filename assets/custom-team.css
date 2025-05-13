@@ -1,0 +1,12 @@
+.team-main-wrapper .tabs-wrapper{ display:none; }
+.team-main-wrapper{ margin-top:140px; }
+.team-main-wrapper .sec-head{ padding-top:80px; }
+.dark--true .sec-head .sec-title{
+color: var(--White, #FFF);
+font-family: "ITC Avant Garde Gothic Std";
+font-size: 60px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; 
+text-transform: uppercase;
+}

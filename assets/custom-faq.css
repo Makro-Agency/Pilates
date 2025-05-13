@@ -109,7 +109,14 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 
 
 .mainFaq .rightPart{ padding-left:0; }
-
+.mainFaq .page-width{
+    gap: 60px;
+    max-width: 1325px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+.mainFaq .page-width{ padding-top:79px; } }
 @media screen and (min-width:768px){
 .faqBlock:first-child:before{
     content:'';
@@ -133,10 +140,10 @@ width: 116.53vw; /* 1677.992px */ ;
 height: 50.52vw;  /* 727.502px; */
 left: -88%;
 transform: rotate(148.503deg);
-top: 85%;
+top: 82%;
 background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%);
 opacity: 0.4;
-filter: blur(200px);
+filter: blur(250px);
 pointer-events:none;
 
 }
@@ -145,6 +152,7 @@ content:'';
 position: absolute;
 width: 76.19vw;  /* 1097.137px; */
 height: 39.02vw;   /* 561.88px; */
+
 transform: rotate(-48.364deg);
 left: 188px;
 top: -208px;
@@ -161,7 +169,7 @@ height: 120.36vw;
 left: 44%;
 top: -110%;
 background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
-opacity: 0.3;
+opacity: 0.2;
 filter: blur(250px);
 transform: rotate(104.55deg);
 pointer-events:none;
