@@ -114,6 +114,7 @@
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext h1">{{ block.settings.title }}</h3>
                 {%- endif -%}
+                <div class="cust-link">
                 {%- if block.settings.link_label != blank -%}
                   <a
                     class="link global-link"
@@ -127,6 +128,7 @@
                     <span class="icon-wrap">&nbsp;{% render 'icon-link-arrow' %}</span></a
                   >
                 {%- endif -%}
+                </div>
               </div>
             </div>
           </li>
