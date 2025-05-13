@@ -144,39 +144,12 @@
         "top_padding_remove": true,
         "bottom_padding_remove": false
       }
-    },
-    "00ca4ca8-cfe5-4072-a3aa-bc1a99794fe0": {
-      "type": "product-carousel",
-      "settings": {
-        "title": "SALE",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "sale",
-        "products_to_show": 16,
-        "columns_desktop": 4,
-        "enable_desktop_slider": true,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "top_padding_remove": true,
-        "bottom_padding_remove": false
-      }
     }
   },
   "order": [
     "banner",
     "6fbef022-0ebe-41f6-aef8-f36a8807efd3",
     "5b2a0859-5a12-489b-bace-b40270fc9fa6",
-    "4956a163-f607-4f23-baf2-ebb7cc629fe4",
-    "00ca4ca8-cfe5-4072-a3aa-bc1a99794fe0"
+    "4956a163-f607-4f23-baf2-ebb7cc629fe4"
   ]
 }
