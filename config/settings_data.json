@@ -154,9 +154,9 @@
             "type": "image",
             "settings": {
               "title": "Adam Kunder",
-              "image": "shopify://shop_images/DSC00230.jpg",
-              "name": "Adam Kunder",
-              "sp_tag": "HIIT",
+              "image": "shopify://shop_images/Rectangle_50.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/adam-kunder"
             }
           },
@@ -164,9 +164,9 @@
             "type": "image",
             "settings": {
               "title": "Aliana Comeau",
-              "image": "shopify://shop_images/Aliana.png",
-              "name": "Aliana Comeau",
-              "sp_tag": "Yoga",
+              "image": "shopify://shop_images/Rectangle_50_1.png",
+              "name": "Bianca Celotti",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/aliana-comeau"
             }
           },
@@ -174,9 +174,9 @@
             "type": "image",
             "settings": {
               "title": "Alica Heverová",
-              "image": "shopify://shop_images/AlicaHeverovaHIIT.jpg",
-              "name": "Alica Heverová",
-              "sp_tag": "HIIT, Personal Training, Small Group Training",
+              "image": "shopify://shop_images/Rectangle_50_2.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/alica-heverova"
             }
           },
@@ -184,41 +184,38 @@
             "type": "image",
             "settings": {
               "title": "Andre Brault",
-              "image": "shopify://shop_images/Andre_B.png",
-              "name": "Andre Brault",
+              "image": "shopify://shop_images/Rectangle_50_3.png",
+              "name": "Blake Copeland",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/andre-brault"
             }
           },
           "image_tgPgqM": {
             "type": "image",
-            "disabled": true,
             "settings": {
               "title": "Alva Robinson",
-              "image": "shopify://shop_images/Alva-Robinson-HIIT-Personal-Trainer-Sweat-and-Tonic.jpg",
-              "name": "Alva Robinson",
-              "sp_tag": "HIIT, Personal Training",
+              "image": "shopify://shop_images/Rectangle_50_4.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/alva-robinson"
             }
           },
           "image_gjR4tC": {
             "type": "image",
-            "disabled": true,
             "settings": {
               "title": "Andrew Daye",
-              "image": "shopify://shop_images/Andrew_Daye_HIIT_Sweat_and_Tonic.jpg",
-              "name": "Andrew Daye",
-              "sp_tag": "HIIT",
+              "image": "shopify://shop_images/Rectangle_50_5.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/andrew-daye"
             }
           },
           "image_mJxLTa": {
             "type": "image",
-            "disabled": true,
             "settings": {
-              "title": "Aoife Gray",
-              "image": "shopify://shop_images/Aoife_Ride_SweatandTonic_Squarejpg.jpg",
-              "name": "Aoife Gray",
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_6.png",
+              "name": "Blake Copeland",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/aoife-gray"
             }
@@ -226,40 +223,40 @@
           "13f825a9-c359-43ee-97dc-1a52c701a32b": {
             "type": "image",
             "settings": {
-              "title": "Baylee joy",
-              "image": "shopify://shop_images/Baylee.png",
-              "name": "Baylee joy",
-              "sp_tag": "HIIT, Personal Training, Small Group Training",
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_7.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/baylee-joy"
             }
           },
           "image_W9AfRa": {
             "type": "image",
             "settings": {
-              "title": "Bethany Litner",
-              "image": "shopify://shop_images/Bethany_Pilates_Sweat_and_Tonic.jpg",
-              "name": "Bethany Litner",
-              "sp_tag": "Pilates",
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_8.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/bethany-litner"
             }
           },
           "3a155d7a-f30c-44ee-a89d-15bdd79f68d4": {
             "type": "image",
             "settings": {
-              "title": "Bianca Celotti",
-              "image": "shopify://shop_images/Bianca-Celotti-HIIT-Sweat-and-Tonic.png",
-              "name": "Bianca Celotti",
-              "sp_tag": "HIIT",
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_9.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/bianca-celotti"
             }
           },
           "87c59ce0-7859-45c6-8d8f-2a0ee98fa7f0": {
             "type": "image",
             "settings": {
-              "title": "Blair Myers",
-              "image": "shopify://shop_images/BlairMyers.jpg",
-              "name": "Blair Myers",
-              "sp_tag": "HIIT, Pilates",
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_10.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/blair-myers"
             }
           },
@@ -267,7 +264,7 @@
             "type": "image",
             "settings": {
               "title": "Blake Copeland",
-              "image": "shopify://shop_images/team-4.png",
+              "image": "shopify://shop_images/Rectangle_50_11.png",
               "name": "Blake Copeland",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/blake-copeland"
@@ -275,11 +272,10 @@
           },
           "fe0ab163-b8e0-47e7-b37e-a3a99e799f20": {
             "type": "image",
-            "disabled": true,
             "settings": {
-              "title": "Brandon Abas",
-              "image": "shopify://shop_images/Brandon_Abas.png",
-              "name": "Brandon Abas",
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_12.png",
+              "name": "Blake Copeland",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/brandon-abas"
             }
@@ -287,9 +283,9 @@
           "54be782c-f0cf-4f3e-b155-281383e84ef3": {
             "type": "image",
             "settings": {
-              "title": "Brendan Bornstein",
-              "image": "shopify://shop_images/Brendan_Bornstein.jpg",
-              "name": "Brendan Bornstein",
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_13.png",
+              "name": "Blake Copeland",
               "sp_tag": "Yoga, Small Group Training",
               "url": "shopify://metaobjects/teammember/brendan-bornstein"
             }
@@ -297,9 +293,9 @@
           "image_PmGf4F": {
             "type": "image",
             "settings": {
-              "title": "Calvin Hyman",
-              "image": "shopify://shop_images/Calvin_ride_Sweat_and_Tonic_1000.jpg",
-              "name": "Calvin Hyman",
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_14.png",
+              "name": "Blake Copeland",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/calvin-hyman"
             }
@@ -307,29 +303,28 @@
           "e8c773eb-b23f-41ee-bf93-930480d6fae3": {
             "type": "image",
             "settings": {
-              "title": "Catherine Villar",
-              "image": "shopify://shop_images/Cat.jpg",
-              "name": "Catherine Villar",
-              "sp_tag": "Pilates, HIIT",
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_15.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/catherine-villar"
             }
           },
           "a775db5a-736d-4ba1-8ba9-412f8960d47e": {
             "type": "image",
-            "disabled": true,
             "settings": {
               "title": "Chrys Muszka",
-              "image": "shopify://shop_images/team-7.png",
-              "name": "Chrys Muszka",
-              "sp_tag": "Yoga",
+              "image": "shopify://shop_images/Rectangle_50_16.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/chrys-muszka"
             }
           },
           "db17916d-aa57-433e-8c52-121acbe72a31": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Claudia Erban",
-              "image": "shopify://shop_images/team-8.png",
               "name": "Claudia Erban",
               "sp_tag": "Ride, HIIT",
               "url": "shopify://metaobjects/teammember/claudia-erban"
@@ -340,7 +335,6 @@
             "disabled": true,
             "settings": {
               "title": "David Kim-MacKinnon",
-              "image": "shopify://shop_images/team-10.png",
               "name": "David Kim-MacKinnon",
               "sp_tag": "HIIT",
               "url": "shopify://metaobjects/teammember/david-kim-mac-kinnon"
@@ -348,9 +342,9 @@
           },
           "881db73b-4ec0-4e33-a603-426cc16527c9": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Dustin Pym",
-              "image": "shopify://shop_images/team-12.png",
               "name": "Dustin Pym",
               "sp_tag": "HIIT, Personal Training, Small Group Training",
               "url": "shopify://metaobjects/teammember/dustin-pym"
@@ -358,9 +352,9 @@
           },
           "d68f9629-29f8-4f86-a5bf-f22336cb0b0b": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Elaine Clark",
-              "image": "shopify://shop_images/team-13.png",
               "name": "Elaine Clark",
               "sp_tag": "Yoga",
               "url": "shopify://metaobjects/teammember/elaine-clark"
@@ -368,9 +362,9 @@
           },
           "image_dNTHAc": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Elizabeth Pipes",
-              "image": "shopify://shop_images/Elizabeth.png",
               "name": "Elizabeth Pipes",
               "sp_tag": "HIIT, Pilates",
               "url": "shopify://metaobjects/teammember/elizabeth-pipes"
@@ -381,7 +375,6 @@
             "disabled": true,
             "settings": {
               "title": "Emily Rapley",
-              "image": "shopify://shop_images/EmilyRapley_HIIT.jpg",
               "name": "Emily Rapley",
               "sp_tag": "HIIT, Pilates",
               "url": "shopify://metaobjects/teammember/emily-rapley"
@@ -389,9 +382,9 @@
           },
           "image_rGUiq6": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Erika Quach",
-              "image": "shopify://shop_images/Erika_Quach_Sweat_and_Tonic_1-1.jpg",
               "name": "Erika Quach",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/erika-quach"
@@ -402,7 +395,6 @@
             "disabled": true,
             "settings": {
               "title": "FRANCES AHN",
-              "image": "shopify://shop_images/FrancesAhn_HIITInstructor.jpg",
               "name": "FRANCES AHN",
               "sp_tag": "HIIT",
               "url": "shopify://metaobjects/teammember/frances-ahn"
@@ -410,9 +402,9 @@
           },
           "ab40d137-d1fb-40fa-a865-20107955db7e": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Heather Fee",
-              "image": "shopify://shop_images/team-14.png",
               "name": "Heather Fee",
               "sp_tag": "Yoga, Ride, Pilates",
               "url": "shopify://metaobjects/teammember/heather-fee"
@@ -420,9 +412,9 @@
           },
           "image_kefrqF": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Helena Ziemer",
-              "image": "shopify://shop_images/Helena.png",
               "name": "Helena Ziemer",
               "sp_tag": "HIIT",
               "url": "shopify://metaobjects/teammember/helena-ziemer"
@@ -430,9 +422,9 @@
           },
           "image_Lq9U9J": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Irena Ponizova",
-              "image": "shopify://shop_images/IrenaPonizova_Yoga.jpg",
               "name": "Irena Ponizova",
               "sp_tag": "Yoga",
               "url": "shopify://metaobjects/teammember/irena-ponizova"
@@ -440,6 +432,7 @@
           },
           "994eee01-7656-46e5-a990-000dbace9f76": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jacqui Wells",
               "image": "shopify://shop_images/Jacqui.jpg",
@@ -450,9 +443,9 @@
           },
           "image_qpEgrL": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jaclyn Ghannoum",
-              "image": "shopify://shop_images/Jaclyn_1767c243-d0f0-47bb-a3c4-db0e630ac879.png",
               "name": "Jaclyn Ghannoum",
               "sp_tag": "Yoga",
               "url": "shopify://metaobjects/teammember/jaclyn-ghannoum"
@@ -460,9 +453,9 @@
           },
           "image_hQiCpM": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jamie Holman",
-              "image": "shopify://shop_images/JamieHolman_Ride.png",
               "name": "Jamie Holman",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/jamie-holman"
@@ -470,9 +463,9 @@
           },
           "cdeb9f9c-9d54-43c5-8211-c0ed0268f355": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Javier Sanchez",
-              "image": "shopify://shop_images/team-16.png",
               "name": "Javier Sanchez",
               "sp_tag": "Ride, HIIT",
               "url": "shopify://metaobjects/teammember/javier-sanchez"
@@ -480,9 +473,9 @@
           },
           "image_XhNXzQ": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jessica Pordel",
-              "image": "shopify://shop_images/Jessica_Ride_Sweat_and_Tonic_v2.jpg",
               "name": "Jessica Pordel",
               "sp_tag": "Ride, HIIT, Personal Training, Small Group Training",
               "url": "shopify://metaobjects/teammember/jessica-pordel"
@@ -490,9 +483,9 @@
           },
           "image_EAfTig": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jessica Ullathorne",
-              "image": "shopify://shop_images/Jessica_Ullathorne.jpg",
               "name": "Jessica Ullathorne",
               "sp_tag": "Yoga, Pilates",
               "url": "shopify://metaobjects/teammember/jessica-ullathorne"
@@ -500,9 +493,9 @@
           },
           "image_QQcw4m": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jiana Alnajjar",
-              "image": "shopify://shop_images/JianaAlnajjar_HIITInstructor.jpg",
               "name": "Jiana Alnajjar",
               "sp_tag": "HIIT",
               "url": "shopify://metaobjects/teammember/jiana-alnajjar"
@@ -510,9 +503,9 @@
           },
           "c15ffe1a-dfa2-4ffd-8a40-a82b677faa82": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jonathan Phair",
-              "image": "shopify://shop_images/JonathanPhair.jpg",
               "name": "Jonathan Phair",
               "sp_tag": "Yoga",
               "url": "shopify://metaobjects/teammember/jonathan-phair"
@@ -520,9 +513,9 @@
           },
           "8dc13a56-c6a0-4a2c-b552-affcdd13d4fc": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jordan Scholl",
-              "image": "shopify://shop_images/team-18.png",
               "name": "Jordan Scholl",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/jordan-scholl"
@@ -530,9 +523,9 @@
           },
           "image_kc6jiQ": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jordyn Davloor",
-              "image": "shopify://shop_images/Jordyn_Davloor_Pilates_Sweat_and_Tonic.png",
               "name": "Jordyn Davloor",
               "sp_tag": "Pilates",
               "url": "shopify://metaobjects/teammember/jordyn-davloor"
@@ -540,9 +533,9 @@
           },
           "803e6606-3b28-460b-ad09-1c3383c4bf23": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Josh Camson",
-              "image": "shopify://shop_images/team-19.png",
               "name": "Josh Camson",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/josh-camson"
@@ -550,9 +543,9 @@
           },
           "e14618a8-d954-4b3e-a05a-830f6ad30f91": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Julian Ho",
-              "image": "shopify://shop_images/team-20.png",
               "name": "Julian Ho",
               "sp_tag": "HIIT, Yoga, Personal Training",
               "url": "shopify://metaobjects/teammember/julian-ho"
@@ -560,9 +553,9 @@
           },
           "89feaf76-0392-4102-af52-6619a0010cd3": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Justin B Haley",
-              "image": "shopify://shop_images/JustinBHaley.png",
               "name": "Justin B Haley",
               "sp_tag": "Yoga",
               "url": "shopify://metaobjects/teammember/justin-b-haley"
@@ -570,9 +563,9 @@
           },
           "94c7cf54-e467-41d3-99d0-44f05063e357": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Kaivan Shimi",
-              "image": "shopify://shop_images/Kaivan_1.png",
               "name": "Kaivan Shimi",
               "sp_tag": "HIIT, Personal Training, Small Group Training",
               "url": "shopify://metaobjects/teammember/kaivan-shimi"
@@ -580,9 +573,9 @@
           },
           "d7708121-e8af-4751-96df-579969e8baa2": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Katie Kunst",
-              "image": "shopify://shop_images/team-23.png",
               "name": "Katie Kunst",
               "sp_tag": "Ride, HIIT, Pilates",
               "url": "shopify://metaobjects/teammember/katie-kunst"
@@ -590,9 +583,9 @@
           },
           "image_AkkEq9": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Kimmel Alcide",
-              "image": "shopify://shop_images/KimmelAlcide_Yoga.png",
               "name": "Kimmel Alcide",
               "sp_tag": "Yoga",
               "url": "shopify://metaobjects/teammember/kimmel-alcide"
@@ -600,9 +593,9 @@
           },
           "image_XYdXEC": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Kirstie Yergens",
-              "image": "shopify://shop_images/Kirstie-Yergens-Ride-Sweat-and-Tonic-1000.jpg",
               "name": "Kirstie Yergens",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/kirstie-yergens"
@@ -610,9 +603,9 @@
           },
           "image_yrAdr4": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Kristen Seaton",
-              "image": "shopify://shop_images/KristenSeaton_HIITInstructor_2.jpg",
               "name": "Kristen Seaton",
               "sp_tag": "HIIT, Pilates",
               "url": "shopify://metaobjects/teammember/kristen-seaton"
@@ -620,9 +613,9 @@
           },
           "image_JbFq3C": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Lauren Halliwell",
-              "image": "shopify://shop_images/Lauren_Halliwell_HIIT_Sweat_and_Tonic_Website.jpg",
               "name": "Lauren Halliwell",
               "sp_tag": "HIIT",
               "url": "shopify://metaobjects/teammember/lauren-halliwell"
@@ -630,6 +623,7 @@
           },
           "image_VgB8DM": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Lauren Kinsie",
               "image": "shopify://shop_images/Lauren_option_1.png",
@@ -640,9 +634,9 @@
           },
           "68db93f2-8e06-4836-9c6e-c2b243d60356": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Lisa Damla",
-              "image": "shopify://shop_images/Lisa_1.png",
               "name": "Lisa Damla",
               "sp_tag": "HIIT",
               "url": "shopify://metaobjects/teammember/lisa-damla"
@@ -650,9 +644,9 @@
           },
           "83abf209-e589-4670-a9f7-2569f9e59564": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Maddy Cassidy",
-              "image": "shopify://shop_images/Maddy.jpg",
               "name": "Maddy Cassidy",
               "sp_tag": "Yoga, Pilates",
               "url": "shopify://metaobjects/teammember/maddy-cassidy"
@@ -660,9 +654,9 @@
           },
           "a7abcfc2-fb82-4f39-b453-d6031e4f8a2c": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Megan van der Baars",
-              "image": "shopify://shop_images/team-26.png",
               "name": "Megan van der Baars",
               "sp_tag": "Ride, HIIT, Pilates",
               "url": "shopify://metaobjects/teammember/megan-van-der-baars"
@@ -670,9 +664,9 @@
           },
           "image_cn9jWY": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Morgan Stasiewicz",
-              "image": "shopify://shop_images/MorganStasiewicz_Ride_Sweat_and_Tonic.jpg",
               "name": "Morgan Stasiewicz",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/morgan-stasiewicz"
@@ -680,9 +674,9 @@
           },
           "2eb215c6-11d6-431a-8f7e-77ae92756618": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Nariko Chaffe",
-              "image": "shopify://shop_images/team-27.png",
               "name": "Nariko Chaffe",
               "sp_tag": "Ride, HIIT, Personal Training",
               "url": "shopify://metaobjects/teammember/nariko-chaffe"
@@ -690,9 +684,9 @@
           },
           "image_6iDRRg": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Staz Irons",
-              "image": "shopify://shop_images/Staz.png",
               "name": "Staz Irons",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/nastasia-irons"
@@ -700,9 +694,9 @@
           },
           "image_NQDpWr": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Natalie Kwong",
-              "image": "shopify://shop_images/Instructor_headshots_11.png",
               "name": "Natalie Kwong",
               "sp_tag": "HIIT, Small Group Training",
               "url": "shopify://metaobjects/teammember/natalie-kwong"
@@ -710,9 +704,9 @@
           },
           "image_HyBaPt": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Naomi Campbell",
-              "image": "shopify://shop_images/Naomi_Campbell_Sweat_and_Tonic_Yoga.png",
               "name": "Naomi Campbell",
               "sp_tag": "Yoga",
               "url": "shopify://metaobjects/teammember/naomi-campbell"
@@ -723,7 +717,6 @@
             "disabled": true,
             "settings": {
               "title": "Odeta Kasa",
-              "image": "shopify://shop_images/New_MT_headshots.jpg",
               "name": "Odeta Kasa",
               "sp_tag": "Yoga, Pilates, HIIT, Ride",
               "url": "shopify://metaobjects/teammember/odeta-kasa"
@@ -731,9 +724,9 @@
           },
           "bac2b50d-81c7-462e-952e-4c99ab2024a8": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Perez Tieku",
-              "image": "shopify://shop_images/DSCF3941.jpg",
               "name": "Perez Tieku",
               "sp_tag": "HIIT, Personal Training, Small Group Training",
               "url": "shopify://metaobjects/teammember/perez-tieku"
@@ -744,7 +737,6 @@
             "disabled": true,
             "settings": {
               "title": "Philippe Van de Maele Martin",
-              "image": "shopify://shop_images/team-30.png",
               "name": "Philippe Van de Maele Martin",
               "sp_tag": "Yoga",
               "url": "shopify://metaobjects/teammember/philippe-van-de-maele-martin"
@@ -755,7 +747,6 @@
             "disabled": true,
             "settings": {
               "title": "Phoenix Grey",
-              "image": "shopify://shop_images/team-31.png",
               "name": "Phoenix Grey",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/phoenix-grey"
@@ -763,9 +754,9 @@
           },
           "51c030d1-3e9a-433b-a1ef-3e5799e6479a": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Queenie Phair",
-              "image": "shopify://shop_images/team-32.png",
               "name": "Queenie Phair",
               "sp_tag": "Yoga",
               "url": "shopify://metaobjects/teammember/queenie-phair"
@@ -773,9 +764,9 @@
           },
           "image_FL3Tni": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Quinn Schell",
-              "image": "shopify://shop_images/Quinn_Ride_Sweat_and_Tonic_500_591c2bd5-0cde-486b-a580-2181b928e8f1.png",
               "name": "Quinn Schell",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/quinn-schell"
@@ -783,9 +774,9 @@
           },
           "68bf15e3-5a73-46f9-8444-3577ec81ffa7": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Rachael Crumb",
-              "image": "shopify://shop_images/Instructor_headshots_11_c399b00c-e6bd-41fc-8ff8-8f067cc89caf.png",
               "name": "Rachael Crumb",
               "sp_tag": "Ride, HIIT, Pilates",
               "url": "shopify://metaobjects/teammember/rachael-crumb"
@@ -793,9 +784,9 @@
           },
           "aa55b3e1-9b17-4ebc-b5e8-b9f060ed9e31": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Rachael Fallon",
-              "image": "shopify://shop_images/team-34.png",
               "name": "Rachael Fallon",
               "sp_tag": "Yoga",
               "url": "shopify://metaobjects/teammember/rachael-fallon"
@@ -806,7 +797,6 @@
             "disabled": true,
             "settings": {
               "title": "Rachel Burns",
-              "image": "shopify://shop_images/team-35.png",
               "name": "Rachel Burns",
               "sp_tag": "HIIT",
               "url": "shopify://metaobjects/teammember/rachel-burns"
@@ -814,9 +804,9 @@
           },
           "3d8f666e-89c2-4d3b-b0c8-4a592d05bb1a": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Rachel Schick",
-              "image": "shopify://shop_images/team-36.png",
               "name": "Rachel Schick",
               "sp_tag": "HIIT, Personal Training, Pilates",
               "url": "shopify://metaobjects/teammember/rachel-schick"
@@ -824,6 +814,7 @@
           },
           "46fbed04-c653-4aee-9160-c4de69194513": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Rebecca Moskob",
               "image": "shopify://shop_images/RebeccaMoskob_RideInstructor.jpg",
@@ -834,9 +825,9 @@
           },
           "image_4Bj6CA": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Renelyn Quinicot",
-              "image": "shopify://shop_images/Renelyn-Quinicot-Yoga-Sweat-and-Tonic.png",
               "name": "Renelyn Quinicot",
               "sp_tag": "Yoga, Pilates",
               "url": "shopify://metaobjects/teammember/renelyn-quinicot"
@@ -844,9 +835,9 @@
           },
           "1f9100e9-0254-43cb-b263-cf1dfeef10c8": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Riley Bennett",
-              "image": "shopify://shop_images/RileyBennett_HIITInstructor.jpg",
               "name": "Riley Bennett",
               "sp_tag": "HIIT",
               "url": "shopify://metaobjects/teammember/riley-bennett"
@@ -854,9 +845,9 @@
           },
           "4348d2bf-8b81-4b42-aba1-181179e2a26f": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Rory Bray",
-              "image": "shopify://shop_images/team-38.png",
               "name": "Rory Bray",
               "sp_tag": "Yoga, Pilates, HIIT, Ride",
               "url": "shopify://metaobjects/teammember/rory-bray"
@@ -864,9 +855,9 @@
           },
           "1323444c-3caa-45ef-b939-f4aeddbe2680": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Sam Clarkey",
-              "image": "shopify://shop_images/SamClarkey_RideInstructor_1.jpg",
               "name": "Sam Clarkey",
               "sp_tag": "Ride, HIIT",
               "url": "shopify://metaobjects/teammember/sam-clarkey"
@@ -874,6 +865,7 @@
           },
           "4f086ce4-6fdd-4566-a1f2-9dbdd8a6e05a": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Samantha Ushedo",
               "image": "shopify://shop_images/SamUshedo_RideInstructor.jpg",
@@ -884,9 +876,9 @@
           },
           "image_9dm4Ly": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Sara Buckingham",
-              "image": "shopify://shop_images/Sara_Sweat_and_Tonic_500.jpg",
               "name": "Sara Buckingham",
               "sp_tag": "Pilates",
               "url": "shopify://metaobjects/teammember/sara-buckingham"
@@ -894,9 +886,9 @@
           },
           "image_rUWFqG": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Sean Alexandra",
-              "image": "shopify://shop_images/1-14-min-scaled-e1602260118517.jpg",
               "name": "Sean Alexandra",
               "sp_tag": "Yoga",
               "url": "shopify://metaobjects/teammember/sean-alexandra"
@@ -904,9 +896,9 @@
           },
           "image_FjX783": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Seyar Karimi",
-              "image": "shopify://shop_images/Seyar_Yoga_Sweat_and_Tonic.jpg",
               "name": "Seyar Karimi",
               "sp_tag": "Yoga",
               "url": "shopify://metaobjects/teammember/seyar-karimi"
@@ -914,9 +906,9 @@
           },
           "fd45b006-2bad-4997-83b4-813720ce72dc": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Sophia McNolty",
-              "image": "shopify://shop_images/SophiaMcNolty_RideInstructor.jpg",
               "name": "Sophia McNolty",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/sophia-mc-nolty"
@@ -927,7 +919,6 @@
             "disabled": true,
             "settings": {
               "title": "Steve Miranda",
-              "image": "shopify://shop_images/Steve-ST-16.jpg",
               "name": "Steve Miranda",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/steve-miranda"
@@ -935,9 +926,9 @@
           },
           "image_Pan3Xe": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Stella Azzopardi",
-              "image": "shopify://shop_images/Stella_Azzopardi_Sweat_and_Tonic_Pilates_IIII.png",
               "name": "Stella Azzopardi",
               "sp_tag": "Pilates",
               "url": "shopify://metaobjects/teammember/stella-azzopardi"
@@ -945,6 +936,7 @@
           },
           "image_NKAeJb": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Steve Parkhill",
               "image": "shopify://shop_images/Steve_PT.png",
@@ -955,9 +947,9 @@
           },
           "fdb14853-d519-4d8f-a4bc-5c4068067a2c": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Sydney Strimas",
-              "image": "shopify://shop_images/SydneyStrimas_RideInstructor.jpg",
               "name": "Sydney Strimas",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/sydney-strimas"
@@ -965,9 +957,9 @@
           },
           "216fb0d6-2cf2-49ae-ac9e-1e7d69b8659f": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Tiana Bentley-Dittmar",
-              "image": "shopify://shop_images/Tiana_Bentley_Sweat_and_Tonic_Square_1000_b6595e37-f23c-4495-951d-e61ce453dac3.png",
               "name": "Tiana Bentley-Dittmar",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/tiana-bentley"
@@ -975,9 +967,9 @@
           },
           "image_gVPpVt": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Tricia Kopec",
-              "image": "shopify://shop_images/TriciaKopec.png",
               "name": "Tricia Kopec",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/tricia-kopec"
@@ -985,9 +977,9 @@
           },
           "image_YQekbE": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Valentine Giambattista",
-              "image": "shopify://shop_images/Valentine_Stephanie_Giambattista_Yoga_Sweat_and_Tonic.jpg",
               "name": "Valentine Giambattista",
               "sp_tag": "Yoga",
               "url": "shopify://metaobjects/teammember/valentine-giambattista"
@@ -995,9 +987,9 @@
           },
           "image_DEpWdW": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Valerie Tiu",
-              "image": "shopify://shop_images/ValerieTiu_YogaPilatesInstructor.jpg",
               "name": "Valerie Tiu",
               "sp_tag": "Pilates, Yoga",
               "url": "shopify://metaobjects/teammember/valerie-tiu"
@@ -1005,9 +997,9 @@
           },
           "image_zk3JLk": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Vanessa Badran",
-              "image": "shopify://shop_images/VanessaBadran_YogaInstructor.jpg",
               "name": "Vanessa Badran",
               "sp_tag": "Yoga",
               "url": "shopify://metaobjects/teammember/vanessa-badran"
@@ -1015,9 +1007,9 @@
           },
           "74496099-8006-4518-b546-161b3f820c0c": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Victoria Nigro",
-              "image": "shopify://shop_images/team-47.png",
               "name": "Victoria Nigro",
               "sp_tag": "HIIT, Ride, Yoga, Pilates",
               "url": "shopify://metaobjects/teammember/victoria-nigro"
@@ -1025,6 +1017,7 @@
           },
           "cb083dfa-611d-4373-a16e-2d36bb00e91b": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Viola Wang",
               "image": "shopify://shop_images/ViolaWang_YogaPilatesInstructor.jpg",
@@ -1035,6 +1028,7 @@
           },
           "image_iCDxdT": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "William Tsilkas",
               "image": "shopify://shop_images/Will_PT.png",

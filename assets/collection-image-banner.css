@@ -41,6 +41,11 @@ h2.banner__heading.inline-richtext.h1 {
     border-radius: 0;
     min-width: unset;
 }
+.banner__buttons .button:hover{
+    background-color: #fff;
+    color:#000;
+    border:1px solid transparent;
+}
 
 .landing-banner .banner__box .banner__heading+*{
     margin-top:0;
