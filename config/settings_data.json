@@ -124,7 +124,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": false,
-    "cart_type": "drawer",
+    "cart_type": "page",
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
@@ -223,37 +223,40 @@
           "13f825a9-c359-43ee-97dc-1a52c701a32b": {
             "type": "image",
             "settings": {
-              "title": "Baylee joy",
-              "image": "shopify://shop_images/Baylee.png",
-              "name": "Baylee joy",
-              "sp_tag": "HIIT, Personal Training, Small Group Training",
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_7.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/baylee-joy"
             }
           },
           "image_W9AfRa": {
             "type": "image",
             "settings": {
-              "title": "Bethany Litner",
-              "name": "Bethany Litner",
-              "sp_tag": "Pilates",
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_8.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/bethany-litner"
             }
           },
           "3a155d7a-f30c-44ee-a89d-15bdd79f68d4": {
             "type": "image",
             "settings": {
-              "title": "Bianca Celotti",
-              "name": "Bianca Celotti",
-              "sp_tag": "HIIT",
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_9.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/bianca-celotti"
             }
           },
           "87c59ce0-7859-45c6-8d8f-2a0ee98fa7f0": {
             "type": "image",
             "settings": {
-              "title": "Blair Myers",
-              "name": "Blair Myers",
-              "sp_tag": "HIIT, Pilates",
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_10.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/blair-myers"
             }
           },
@@ -261,6 +264,7 @@
             "type": "image",
             "settings": {
               "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_11.png",
               "name": "Blake Copeland",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/blake-copeland"
@@ -268,10 +272,10 @@
           },
           "fe0ab163-b8e0-47e7-b37e-a3a99e799f20": {
             "type": "image",
-            "disabled": true,
             "settings": {
-              "title": "Brandon Abas",
-              "name": "Brandon Abas",
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_12.png",
+              "name": "Blake Copeland",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/brandon-abas"
             }
@@ -279,9 +283,9 @@
           "54be782c-f0cf-4f3e-b155-281383e84ef3": {
             "type": "image",
             "settings": {
-              "title": "Brendan Bornstein",
-              "image": "shopify://shop_images/Brendan_Bornstein.jpg",
-              "name": "Brendan Bornstein",
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_13.png",
+              "name": "Blake Copeland",
               "sp_tag": "Yoga, Small Group Training",
               "url": "shopify://metaobjects/teammember/brendan-bornstein"
             }
@@ -289,8 +293,9 @@
           "image_PmGf4F": {
             "type": "image",
             "settings": {
-              "title": "Calvin Hyman",
-              "name": "Calvin Hyman",
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_14.png",
+              "name": "Blake Copeland",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/calvin-hyman"
             }
@@ -298,19 +303,20 @@
           "e8c773eb-b23f-41ee-bf93-930480d6fae3": {
             "type": "image",
             "settings": {
-              "title": "Catherine Villar",
-              "name": "Catherine Villar",
-              "sp_tag": "Pilates, HIIT",
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_15.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/catherine-villar"
             }
           },
           "a775db5a-736d-4ba1-8ba9-412f8960d47e": {
             "type": "image",
-            "disabled": true,
             "settings": {
               "title": "Chrys Muszka",
-              "name": "Chrys Muszka",
-              "sp_tag": "Yoga",
+              "image": "shopify://shop_images/Rectangle_50_16.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/chrys-muszka"
             }
           },
