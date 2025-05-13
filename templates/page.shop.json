@@ -88,11 +88,11 @@
       "name": "collection multi column",
       "settings": {
         "allow_transparent_header": false,
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "column_alignment": "left",
         "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "collection_product_carousel_qzJApW": {
