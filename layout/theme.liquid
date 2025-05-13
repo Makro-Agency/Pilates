@@ -151,7 +151,7 @@
     {% sections 'header-group' %}
     {%- liquid            
       assign has_drakness = false
-      assign bright_temp = 'index,pre-sale-landing,faq,terms-conditions' | split:','
+      assign bright_temp = 'index,pre-sale-landing,faq,terms-conditions,product' | split:','
       for bt in bright_temp
         if bt == "page"
           if template.suffix == blank
@@ -166,7 +166,7 @@
         endif
       endfor
     -%}
-    {% if has_drakness and template.suffix != 'terms-conditions' %}
+    {% if has_drakness and template.suffix != 'terms-conditions'  %}
       {% style %}
         :root, .color-background-1 {
           --color-background: 0, 0, 0;
