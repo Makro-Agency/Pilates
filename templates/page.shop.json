@@ -29,8 +29,8 @@
         "buttons_7R4PT9": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop now",
-            "button_link_1": "",
+            "button_label_1": "Shop all",
+            "button_link_1": "#",
             "button_style_secondary_1": false
           }
         }
