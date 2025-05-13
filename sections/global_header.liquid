@@ -1,4 +1,18 @@
 {{ 'global_header.css' | asset_url | stylesheet_tag }}
+
+{%- if settings.cart_type == "drawer" -%}
+  {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
+  {{ 'component-cart.css' | asset_url | stylesheet_tag }}
+  {{ 'component-totals.css' | asset_url | stylesheet_tag }}
+  {{ 'component-price.css' | asset_url | stylesheet_tag }}
+  {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+  {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+{%- if settings.cart_type == "drawer" -%}
+  <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
 {%- liquid            
   assign has_drakness = 'dark'
   assign bright_temp = 'pre-sale-landing,index,faq,terms-conditions' | split:','
@@ -35,8 +49,29 @@
           </a>
       </div>
   {% endif %}
-  {% if section.settings.btn_account %}
-    <div class="header-right">
+  
+  <div class="header-right">
+    {%- if template == 'product' or template == 'collection' or template == 'cart' -%}
+      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+        {%- liquid
+          if cart == empty
+            render 'icon-cart'
+          else
+            render 'icon-cart'
+          endif
+        -%}
+        <span class="visually--hidden h6 header__icon_text">{{ 'templates.cart.cart' | t }}</span>
+        {%- if cart != empty -%}
+          <div class="cart-count-bubble hidden">
+            {%- if cart.item_count < 100 -%}
+              <span aria-hidden="true">{{ cart.item_count }}</span>
+            {%- endif -%}
+            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+          </div>
+        {%- endif -%}
+      </a>
+    {%- endif -%}
+    {% if section.settings.btn_account %}
       <div class="header-buttons-wrap">
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header-links header__icon--account link">
           {% render 'icon-account-2' %}
@@ -58,8 +93,8 @@
 
         {% if section.settings.btn_book_now %}<a href="{{ section.settings.book_now_url }}" class="header_btn--links link">{{ section.settings.book_now_text }}{% render 'icon-left-arrow' %}</a>{% endif %}
       </div>
-    </div>
-  {% endif %}
+    {% endif %}
+  </div>
   
   {% if section.settings.btn_mobile_toggle %}
     <div class="mobile-links-toggle">

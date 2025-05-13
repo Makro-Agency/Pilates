@@ -2602,6 +2602,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 .header__icon {
@@ -2626,13 +2627,6 @@ product-info .loading-overlay:not(.hidden) ~ *,
   width: 2rem;
   fill: none;
   vertical-align: middle;
-}
-
-.header__icon,
-.header__icon--cart .icon {
-  height: 4.4rem;
-  width: 4.4rem;
-  padding: 0;
 }
 
 .header__icon--cart {

@@ -51,11 +51,16 @@ a.header-links:hover {
 .header-right {
     grid-area: icons;
 }
-.header-buttons-wrap {
+.header-buttons-wrap, .header-right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 40px;
+}
+.header__icon--cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .header-buttons-wrap .header__icon--account {
     color: var(--White, #FFF);
@@ -259,7 +264,9 @@ body.mobile-toggle--show {
     }
     .custom-header.dark>*:not(.mobile-links-toggle) .header-buttons-wrap .header__icon--account,
     .custom-header.dark>*:not(.mobile-links-toggle) .header_btn--links, 
-    .custom-header.dark>*:not(.mobile-links-toggle) a.header-links {
+    .custom-header.dark>*:not(.mobile-links-toggle) a.header-links,
+    .custom-header.dark>*:not(.mobile-links-toggle) .header__icon--cart,
+    .custom-header.dark>*:not(.mobile-links-toggle) .header__icon_text {
         color: #000;
     }    
     .custom-header.dark>*:not(.mobile-links-toggle) a.header-links:hover {
