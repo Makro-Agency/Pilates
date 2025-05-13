@@ -87,7 +87,7 @@
             {% if forloop.index > forloopIndex %}
               {% if block.type == 'que_ans' %}
               <div class="tab" {{ block.shopify_attributes }}>
-                <h3 class="tab-title uppercase h5">{{ block.settings.title }} {% render 'icon-faq-arrows' %}</h3>
+                <h3 class="tab-title uppercase h5"> <div>{{ block.settings.title }}</div> {% render 'icon-faq-arrows' %}</h3>
                 <div class="tabWrapper rte">
                   {{ block.settings.detail }}
                 </div>
