@@ -240,6 +240,13 @@
             "detail_4": ""
           }
         },
+        "note_AQLbGM": {
+          "type": "note",
+          "settings": {
+            "sub_title": "PLEASE NOTE:",
+            "notes": "Our standard no show and late cancellation policies still apply. We always recommend arriving for class early so that you have plenty of time to get ready. Yoga and HIIT studio doors open 5 minutes before class start time, and Ride Studio doors open 10 minutes before class start time. Once you’ve checked yourself in, make sure to head to the correct spot number you’ve booked! Be considerate of your Sweat Fam – misuse of the self check-in feature will result in immediate suspension of your account while account history and activity are being audited. Repeated violation of check-in policies will result in the termination of your account."
+          }
+        },
         "88eef28f-11aa-41e2-96f1-65617d2b3755": {
           "type": "title",
           "settings": {
@@ -398,6 +405,7 @@
         "e4fe30f0-e977-419f-8d79-0f1dc06ec885",
         "13ea47b8-18dc-4449-adec-639f034e7805",
         "text_TRQATq",
+        "note_AQLbGM",
         "88eef28f-11aa-41e2-96f1-65617d2b3755",
         "f327a534-4931-43b9-808d-a10caa75f1ab",
         "12b36bdf-f8c7-4c70-a6c5-67d3942a9ec1",
