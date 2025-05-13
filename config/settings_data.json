@@ -202,7 +202,6 @@
           },
           "image_gjR4tC": {
             "type": "image",
-            "disabled": true,
             "settings": {
               "title": "Andrew Daye",
               "image": "shopify://shop_images/Rectangle_50_5.png",
@@ -213,10 +212,10 @@
           },
           "image_mJxLTa": {
             "type": "image",
-            "disabled": true,
             "settings": {
-              "title": "Aoife Gray",
-              "name": "Aoife Gray",
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_6.png",
+              "name": "Blake Copeland",
               "sp_tag": "Ride",
               "url": "shopify://metaobjects/teammember/aoife-gray"
             }
