@@ -1,6 +1,6 @@
 {{ 'section-main-page.css' | asset_url | stylesheet_tag }}
 {{ 'main-faq.css' | asset_url | stylesheet_tag }}
-
+{{ 'custom-faq.css' | asset_url | stylesheet_tag }}
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -22,7 +22,8 @@
     </h1>
     {% assign _firstLoop = false %}
     <ul class="faq-sLink list-unstyled">
-      {%- for block in section.blocks -%}        
+      {%- for block in section.blocks -%}  
+          
         {%- if block.type == 'text' -%}
         {% if _firstLoop == false %}{% assign _firstLoop = true %}{% endif %}
         <li>
@@ -39,6 +40,13 @@
   </div>
   <div class="rightPart {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {%- for block in section.blocks -%}
+     {% if block.type == 'note' %}
+           <div class="faq-notes">
+           <h5 class="sub-title"> {{ block.settings.sub_title }} </h5>
+           <p class="notes-details"> {{ block.settings.notes }} </p>
+           </div> 
+           {% endif %}  
+
       {% assign forloopIndex = forloop.index %}      
       {% if block.type == 'text' %}
         {% assign this_category = block.settings.title | handleize %}
@@ -65,13 +73,15 @@
             {%- endfor -%}
           </div>
         </div>
+        
       {% elsif block.type == 'title' and block.settings.title != blank %}
         {% assign this_category = block.settings.title | handleize %}        
         <div class="faqBlock" {{ block.shopify_attributes }} data-category="faq-{{ this_category }}-{{ forloop.index }}" id="faq-{{ block.id }}">
           <div class="faq-sTitle">
             <h2 class="h3">{{ block.settings.title }}</h2>
           </div>
-
+            
+        
           <div class="faq-sQA">            
           {%- for block in section.blocks -%}            
             {% if forloop.index > forloopIndex %}
@@ -247,6 +257,24 @@ document.addEventListener("DOMContentLoaded", (event) => {
           "label":"Enter faq Title",
           "id":"title",
           "default":"LOCATION & HOURS"
+        }
+      ]
+    },
+     {
+      "name":"Note",
+      "type":"note",
+      "settings":[
+           {
+          "type":"text",
+          "label":"sub heading",
+          "id":"sub_title",
+          "default":"NOTE"
+        },
+        {
+          "type":"textarea",
+          "label":"Enter your Note",
+          "id":"notes",
+          "default":"Our standard no show and late cancellation policies still apply. We always recommend arriving for class early so that you have plenty of time to get ready. Yoga and HIIT studio doors open 5 minutes before class start time, and Ride Studio doors open 10 minutes before class start time. Once you’ve checked yourself in, make sure to head to the correct spot number you’ve booked! Be considerate of your Sweat Fam – misuse of the self check-in feature will result in immediate suspension of your account while account history and activity are being audited. Repeated violation of check-in policies will result in the termination of your account."
         }
       ]
     },
