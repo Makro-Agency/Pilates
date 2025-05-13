@@ -174,8 +174,9 @@
             "type": "image",
             "settings": {
               "title": "Alica Heverová",
-              "name": "Alica Heverová",
-              "sp_tag": "HIIT, Personal Training, Small Group Training",
+              "image": "shopify://shop_images/Rectangle_50_2.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/alica-heverova"
             }
           },
