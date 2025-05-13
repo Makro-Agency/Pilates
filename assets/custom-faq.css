@@ -123,6 +123,7 @@ background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
 opacity: 0.3;
 filter: blur(200px);
 transform: rotate(67.77deg);
+pointer-events:none;
 
 }
 .rightPart .faqBlock:nth-child(3):after{
@@ -136,6 +137,7 @@ top: 85%;
 background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%);
 opacity: 0.4;
 filter: blur(200px);
+pointer-events:none;
 
 }
 .rightPart .faqBlock:nth-child(4):before{
@@ -149,6 +151,7 @@ top: -208px;
 background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%);
 opacity: 0.3;
 filter: blur(250px);
+pointer-events:none;
 }
 .rightPart .faqBlock:nth-child(5):before{
 content:'';
@@ -161,6 +164,7 @@ background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
 opacity: 0.3;
 filter: blur(250px);
 transform: rotate(104.55deg);
+pointer-events:none;
 
 }
 .rightPart .faqBlock:nth-child(7):before{
@@ -175,6 +179,7 @@ background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%);
 opacity: 0.32;
 filter: blur(250px);
 transform: rotate(-115.27deg);
+pointer-events:none;
 }
 
 }
