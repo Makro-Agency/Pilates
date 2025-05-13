@@ -63,8 +63,8 @@
           "type": "column",
           "settings": {
             "content_alignment": "bottom",
-            "title": "WOMENSWEAR",
-            "text": "COMFORT & PERFORMANCE DRIVEN",
+            "title": "Menswear",
+            "text": "performance driven",
             "link_label": "Shop all",
             "link": "shopify://collections/s-t-womens"
           }
@@ -73,8 +73,8 @@
           "type": "column",
           "settings": {
             "content_alignment": "bottom",
-            "title": "MENSWEAR",
-            "text": "TRAIN, SWEAT, MOVE",
+            "title": "Womenswear",
+            "text": "embrace your every move",
             "link_label": "Shop all",
             "link": "shopify://collections/s-t-mens"
           }
