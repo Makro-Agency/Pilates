@@ -192,11 +192,11 @@
           },
           "image_tgPgqM": {
             "type": "image",
-            "disabled": true,
             "settings": {
               "title": "Alva Robinson",
-              "name": "Alva Robinson",
-              "sp_tag": "HIIT, Personal Training",
+              "image": "shopify://shop_images/Rectangle_50_4.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/alva-robinson"
             }
           },
@@ -205,8 +205,9 @@
             "disabled": true,
             "settings": {
               "title": "Andrew Daye",
-              "name": "Andrew Daye",
-              "sp_tag": "HIIT",
+              "image": "shopify://shop_images/Rectangle_50_5.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
               "url": "shopify://metaobjects/teammember/andrew-daye"
             }
           },
