@@ -116,7 +116,7 @@
         "show_vendor": false,
         "show_rating": false,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "top_padding_remove": false,
         "bottom_padding_remove": false
       }
