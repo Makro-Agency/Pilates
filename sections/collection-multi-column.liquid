@@ -1,0 +1,298 @@
+<link rel="stylesheet" href="{{ 'section-multicolumn.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'landing-half-banner.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ 'section-multicolumn.css' | asset_url }}"></noscript>
+<noscript><link rel="stylesheet" href="{{ 'landing-half-banner.css' | asset_url }}"></noscript>
+<link rel="stylesheet" href="{{ 'coll-multi-column.css' | asset_url }}" media="print" onload="this.media='all'">
+
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="multicolumn color-{{ section.settings.color_scheme }} gradient background-none no-heading"
+  {%- if section.settings.allow_transparent_header %} allow-transparent-header{% endif -%}
+>
+  <div
+    class="section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}data-cascade{% endif %}
+  >
+    
+    <div class="slider-mobile-gutter">
+      <ul
+        class="multicolumn-list contains-content-container grid grid--1-col-tablet-down grid--2-col-desktop"
+        id="Slider-{{ section.id }}"
+        role="list"
+      >
+        {%- liquid
+          assign highest_ratio = 0
+          for block in section.blocks
+            if block.settings.image.aspect_ratio > highest_ratio
+              assign highest_ratio = block.settings.image.aspect_ratio
+            endif
+          endfor
+        -%}
+        {%- for block in section.blocks -%}
+          {%- assign empty_column = '' -%}
+          {%- if block.settings.image == blank
+            and block.settings.title == blank
+            and block.settings.text == blank
+            and block.settings.link_label == blank
+          -%}
+            {%- assign empty_column = ' multicolumn-list__item--empty' -%}
+          {%- endif -%}
+
+          <li
+            id="Slide-{{ section.id }}-{{ forloop.index }}"
+            class="multicolumn-list__item grid__item{%- if section.settings.column_alignment == 'center' %} center{% endif -%}
+            {{- empty_column }} content-align--{{ block.settings.content_alignment -}}
+            {%- if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif -%}"
+            {{ block.shopify_attributes }}
+            {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: {{ forloop.index }};"{% endif %}
+          >
+            <div class="multicolumn-card content-container">
+              
+              {%- if block.settings.link != blank -%}
+              <a href="{{ block.settings.link }}" class="card-full-link"></a>
+              {%- endif -%}
+          
+              {%- if block.settings.image != blank -%}
+                {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
+                  {% assign spaced_image = true %}
+                {% endif %}
+                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--full-width">
+                  <div
+                    class="media media--transparent media--{{ section.settings.image_ratio }}"
+                    {% if section.settings.image_ratio == 'adapt' %}
+                      style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
+                    {% endif %}
+                  >
+                    {%- liquid
+                      assign number_of_columns = 2
+                      assign number_of_columns_mobile = 1
+                      assign grid_space_desktop = number_of_columns | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
+                      assign grid_space_tablet = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
+                      assign grid_space_mobile = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | divided_by: 2 | plus: 30 | append: 'px'
+                      assign image_width = 1
+                    -%}
+                    {% capture sizes %}
+                      (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - {{ grid_space_desktop }}) * {{ image_width }} /  {{ number_of_columns }}),
+                      (min-width: 990px) calc((100vw - {{ grid_space_desktop }}) * {{ image_width }} / {{ number_of_columns }}),
+                      (min-width: 750px) calc((100vw - {{ grid_space_tablet }}) * {{ image_width }} / {{ number_of_columns_mobile }}),
+                      calc((100vw - {{ grid_space_mobile }}) * {{ image_width }} / {{ number_of_columns_mobile }})
+                    {% endcapture %}
+                    {{
+                      block.settings.image
+                      | image_url: width: 3200
+                      | image_tag:
+                        loading: 'lazy',
+                        widths: '200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
+                        sizes: sizes,
+                        class: 'multicolumn-card__image'
+                    }}
+                  </div>
+                </div>
+              {%- else -%}
+                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--full-width placeholder">
+                  {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                </div>
+              {%- endif -%}
+              <div class="multicolumn-card__info">
+                {%- if block.settings.text != blank -%}
+                  <h6>{{ block.settings.text }}</h6>
+                {%- endif -%}
+                {%- if block.settings.title != blank -%}
+                  <h3 class="inline-richtext h1">{{ block.settings.title }}</h3>
+                {%- endif -%}
+                {%- if block.settings.link_label != blank -%}
+                  <a
+                    class="link global-link"
+                    {% if block.settings.link == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.link }}"
+                    {% endif %}
+                  >
+                    {{- block.settings.link_label | escape -}}
+                    <span class="icon-wrap">&nbsp;{% render 'icon-link-arrow' %}</span></a
+                  >
+                {%- endif -%}
+              </div>
+            </div>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+    
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "collection multi column",
+  "class": "section landing-half-banner coll-multi-column",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "allow_transparent_header",
+      "label": "Allow transparent header",
+      "info": "This setting only applies when this section is the first one.",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.multicolumn.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.multicolumn.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.multicolumn.settings.image_ratio.options__3.label"
+        },
+        {
+          "value": "circle",
+          "label": "t:sections.multicolumn.settings.image_ratio.options__4.label"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.multicolumn.settings.image_ratio.label"
+    },
+    {
+      "type": "select",
+      "id": "column_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.multicolumn.settings.column_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.multicolumn.settings.column_alignment.options__2.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.multicolumn.settings.column_alignment.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "limit": 2,
+      "name": "t:sections.multicolumn.blocks.column.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "select",
+          "id": "content_alignment",
+          "options": [
+            {
+              "value": "top",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "bottom",
+              "label": "Bottom"
+            }
+          ],
+          "default": "bottom",
+          "label": "Content alignment"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "default": "Column",
+          "label": "t:sections.multicolumn.blocks.column.settings.title.label"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Subtitle"
+        },
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "t:sections.multicolumn.blocks.column.settings.link_label.label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.multicolumn.blocks.column.settings.link.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "collection multi column",
+      "blocks": [
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
