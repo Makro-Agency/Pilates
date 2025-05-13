@@ -220,6 +220,16 @@
               "url": "shopify://metaobjects/teammember/aoife-gray"
             }
           },
+          "image_np4Hrx": {
+            "type": "image",
+            "settings": {
+              "title": "Blake Copeland",
+              "image": "shopify://shop_images/Rectangle_50_17.png",
+              "name": "Blake Copeland",
+              "sp_tag": "RIDE",
+              "url": ""
+            }
+          },
           "13f825a9-c359-43ee-97dc-1a52c701a32b": {
             "type": "image",
             "settings": {
@@ -1046,6 +1056,7 @@
           "image_tgPgqM",
           "image_gjR4tC",
           "image_mJxLTa",
+          "image_np4Hrx",
           "13f825a9-c359-43ee-97dc-1a52c701a32b",
           "image_W9AfRa",
           "3a155d7a-f30c-44ee-a89d-15bdd79f68d4",
