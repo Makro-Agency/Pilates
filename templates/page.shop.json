@@ -88,7 +88,7 @@
       ],
       "settings": {
         "allow_transparent_header": false,
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "column_alignment": "left",
         "color_scheme": "",
         "padding_top": 0,
