@@ -15,15 +15,15 @@
         "heading_YKYkaL": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "NEW COLLECTION",
             "heading_size": "h1"
           }
         },
         "text_YWVTPd": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "text": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "text_style": "subtitle"
           }
         },
         "buttons_7R4PT9": {
