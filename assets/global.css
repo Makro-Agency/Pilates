@@ -170,8 +170,12 @@ body.template--terms-conditions .page-width--narrow {
   max-width: 960px;
 }
 .section-padding,.template--shipping-policy .section-padding{
+  padding-top: 120px ;
+  padding-bottom: 120px;
+}
+.template--shipping-policy .section-padding{
   padding-top: 120px !important;
-  padding-bottom: 120px !important;
+  padding-bottom: 120px;
 }
 body .swiper-button-next, body .swiper-button-prev{
   height: 50px;
@@ -354,6 +358,10 @@ body.template--terms-conditions .rte  b{
     padding-top: 80px;
     padding-bottom: 80px;
   }
+  .template--shipping-policy .section-padding{
+    padding-top: 80px !important;
+    padding-bottom: 80px;
+  }
   h1, .h1{
     font-size: 50px;
   }
@@ -393,6 +401,10 @@ body.template--terms-conditions .rte  b{
   }
   .section-padding{
     padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .template--shipping-policy .section-padding{
+    padding-top: 60px !important;
     padding-bottom: 60px;
   }
   h1, .h1{
@@ -435,6 +447,10 @@ body.template--terms-conditions .rte  b{
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .template--shipping-policy .section-padding{
+    padding-top: 50px !important;
+    padding-bottom: 50px;
+  }
   h1, .h1{
     font-size: 40px;
   }
@@ -447,4 +463,14 @@ body.template--terms-conditions .rte  b{
   h3, .h3{
     font-size: 22px;
   }
+}
+
+.template--shop #MainContent{
+  background-image: url("https://cdn.shopify.com/s/files/1/0915/3917/7843/files/collection_page.png?v=1747123504");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  width: 100%;
+  height: 100%;
+  display: block;
 }

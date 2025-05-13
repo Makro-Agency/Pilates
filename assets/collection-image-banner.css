@@ -1,0 +1,57 @@
+h2.banner__heading.inline-richtext.h1 {
+    color: #FFF;
+    font-family: "ITC Avant Garde Gothic Std";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+.banner__text.rte{
+    color: #FFF;
+    font-family: "New Frank";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: none;
+    display: block;
+    max-width: 540px;
+    letter-spacing: 0;
+}
+
+.banner__buttons .button{
+    display: flex;
+    padding: 16px 20px 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1.5px solid var(--White, #FFF);
+    color: #fff;
+    background: transparent;
+    color: var(--White, #FFF);
+    font-family: "ITC Avant Garde Gothic Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    border-radius: 0;
+    min-width: unset;
+}
+
+.landing-banner .banner__box .banner__heading+*{
+    margin-top:0;
+}
+
+@media only screen and (max-width:768px) {
+
+h2.banner__heading.inline-richtext.h1{
+    font-size: 40px;
+}
+.banner__text.rte{
+    font-weight: 300;
+}
+}
