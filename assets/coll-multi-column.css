@@ -46,6 +46,9 @@
         text-align: center;
         justify-content: center;
     }
+    .cust-link {
+        text-align: center;
+    }
     .multicolumn-card__info h3.inline-richtext{
         font-size: 36px;
     }
