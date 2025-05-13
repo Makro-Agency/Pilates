@@ -44,7 +44,7 @@
         "allow_transparent_header": true,
         "image": "shopify://shop_images/Frame_5356.png",
         "img_mobile": "shopify://shop_images/Rectangle_52_1.png",
-        "image_overlay_opacity": 30,
+        "image_overlay_opacity": 0,
         "image_height": "adapt",
         "maxWindowHeight": true,
         "desktop_content_position": "bottom-left",
