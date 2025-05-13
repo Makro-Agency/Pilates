@@ -22,7 +22,7 @@
         "5a98698d-e878-434f-9d9e-7432c1389c08": {
           "type": "text",
           "settings": {
-            "text": "Style your workouts with S&T's latest collection – designed for peak performance and comfort.",
+            "text": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "text_style": "subtitle"
           }
         },
@@ -42,8 +42,8 @@
       ],
       "settings": {
         "allow_transparent_header": true,
-        "image": "shopify://shop_images/STxApresActif_half-zip_Rory.jpg",
-        "img_mobile": "shopify://shop_images/STxApresActif_half-zip_Rory.jpg",
+        "image": "shopify://shop_images/Frame_5356.png",
+        "img_mobile": "shopify://shop_images/Rectangle_52_1.png",
         "image_overlay_opacity": 30,
         "image_height": "adapt",
         "maxWindowHeight": true,
