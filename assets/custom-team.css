@@ -1,5 +1,6 @@
 .team-main-wrapper .tabs-wrapper{ display:none; }
-.team-main-wrapper{ margin-top:140px; }
+.team-main-wrapper{ margin-top:100px; }
+.team-main-wrapper .sec-head{ margin-bottom:50px; }
 .team-main-wrapper .sec-head{ padding-top:80px; }
 .dark--true .sec-head .sec-title{
 color: var(--White, #FFF);
@@ -10,8 +11,13 @@ font-weight: 500;
 line-height: 100%; 
 text-transform: uppercase;
 }
+.custom-header.dark{ min-height:96px !important; max-height:96px !Important;  }
+/* .team-main-wrapper{
+height: 4529px;
+} */
 .team-list-box .team-list .box .team-box .team-name{ margin-top:0; }
 .team-main-wrapper .team-list-box .team-list{
+    margin-bottom:180px; 
         grid-template-columns: 1fr 1fr 1fr; gap:0; 
 }
 .team-list-box .team-list .box .team-box .team-name{ color: var(--White, #FFF);
@@ -25,34 +31,294 @@ text-transform: uppercase;
 .team-main-wrapper .team-content{ padding:40px; }
 .team-main-wrapper .team-list-box .team-list .box .team-box .team-info{ margin-top:10px; }
 .team-main-wrapper .box:nth-child(3){ position:relative; }
-.team-main-wrapper .box:nth-child(3):before{
+.team-main-wrapper .team-list-box .team-list .box .team-box .team-info{ 
+    color: var(--White, #FFF);
+font-family: "ITC Avant Garde Gothic Std";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 12px */
+text-transform: uppercase;
+}
+.team-main-wrapper .box:nth-child(3){ position:relative; }
+
+/* .team-main-wrapper .box:nth-child(12){ position:relative; }
+.team-main-wrapper .box:nth-child(12):before{
 content:'';
 position: absolute;
-width: 776.37px;
-height: 1275.1px;
-left: -15%;
-top: 0px;
+width: 1097.14px;
+height: 561.88px;
+left: 679px;
+top: 2608.98px;
+background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%);
+opacity: 0.4;
+filter: blur(250px);
+transform: rotate(-48.36deg);
+}
+.team-list-box .team-list{ position:relative; }
+.team-list-box .team-list:before{
+content:'';
+position: absolute;
+width: 1677.99px;
+height: 727.5px;
+left: -10%; 
+top: 2333.32px;
+background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%);
+opacity: 0.4;
+filter: blur(200px);
+transform: rotate(148.5deg);
+
+} */
+   .team-main-wrapper{ overflow:hidden; }
+ .team-list-box{ position:relative; }
+@media screen and (min-width:768px){
+  .team-main-wrapper .team-list-box .team-list{   border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
+  .team-main-wrapper .team-content{     border-right: 1px solid rgba(255, 255, 255, 0.25);  border-left: 1px solid rgba(255, 255, 255, 0.25);  }
+.team-list-box .new0{
+content:'';
+position: absolute;
+width:53.9%;    /* 776.37px; */
+height:33.54%;  /* 1275.1px; */
+left: 51.99%;
+top: -8.5%;
+display:block; 
 background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
 opacity: 0.3;
 filter: blur(200px);
 transform: rotate(67.77deg);
+pointer-events:none;
+z-index:-1; 
 }
-.team-main-wrapper .box:nth-child(11){ position:relative; }
-.team-main-wrapper .box:nth-child(11):before{
-content:'';
+
+.team-list-box .new1{
 position: absolute;
-width: 776.37px;
-height: 1275.1px;
-left: -15%;
-top: 0px;
+width:116.46%; /* 1677.99px; */
+height: 20.07%; /*  727.5px; */
+left: -13.1%;
+top: 50.47%;
+display:block; 
+background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%);
+opacity: 0.4;
+filter: blur(200px);
+transform: rotate(148.5deg);
+pointer-events:none;
+z-index:-1;
+}
+
+.team-list-box .new2{
+position: absolute;
+width:76.2%; /* 1097.14px; */
+height:15.5%;  /* 561.88px; */
+left: 48.9%; 
+top:50.5%;
+display:block; 
+background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%);
+opacity: 0.4;
+filter: blur(250px);
+transform: rotate(-48.36deg); pointer-events:none; }
+
+.team-list-box .new3{
+position: absolute;
+display:block; 
+width: 89.7%;
+height: 15.5%;
+left: -20.8%;
+top: 75.47%;
+background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%);
+opacity: 0.32;
+filter: blur(250px);
+transform: rotate(-115.27deg);
+pointer-events:none;
+ }
+
+/* .team-main-wrapper .team-list-box .team-list{ height:3588px;} */
+ .team-list-box .new4{
+position: absolute;
+display:block; 
+width:73.45%;  /* 1057.73px; */
+height:47.84%; /* 1733.22px; */
+left:60.45%; 
+top: 67.85%;
 background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
 opacity: 0.3;
-filter: blur(200px);
+filter: blur(250px);
+transform: rotate(104.55deg);
+pointer-events:none; 
+ }
+
+ .team-list-box .new5{
+ position: absolute;
+ display:block; 
+width: 89.6%;
+height: 15.5%;
+left: -9.5%;
+top: 107.5%; 
+background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%);
+opacity: 0.32;
+filter: blur(250px);
+transform: rotate(-115.27deg); pointer-events:none;   }
+
+ }
+
+
+@media screen and (max-width:767px){
+.team-list-box .new0{
+content:'';
+width: 127.5%; /* 497.62px; */
+height:9.01%;  /* 817.29px; */
+display:block; 
+position:absolute; 
+left: -2%; 
+top: -3.2%; 
+background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
+opacity: 0.3;
+filter: blur(100px);
 transform: rotate(67.77deg);
+pointer-events:none; 
+z-index:-1; 
 }
+
+.team-list-box .new1{
+position: absolute;
+display:block; 
+width:130.3%; /* 508.11px; */
+height:3.53%;   /* 260.22px; */
+left:  36.21px;
+top: 6%;
+background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%);
+opacity: 0.4;
+filter: blur(100px);
+transform: rotate(-45deg);
+pointer-events:none; 
+z-index:-1; 
+}
+
+.team-list-box .new2{
+position: absolute;
+width:189.5%; /*  739.82px; */
+height:3.53%; /* 320.75px; */
+left: -91.5%; 
+top: 19.18%;
+display:block; 
+background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%);
+opacity: 0.4;
+filter: blur(100px);
+transform: rotate(148.5deg);
+pointer-events:none; 
+ }
+
+.team-list-box .new3{
+position: absolute;
+width:130%;   /* 508px; */
+height:2.87%; /* 260px; */
+left: -16%; 
+top:21.39%;
+display:block;
+background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%);
+opacity: 0.4;
+filter: blur(100px);
+transform: rotate(-45deg);
+pointer-events:none; 
+ }
+
+/* .team-main-wrapper .team-list-box .team-list{ height:3588px;} */
+ .team-list-box .new4{
+position: absolute;
+width:144.4%;  /* 563.35px; */ 
+height:10.18%; /* 923.11px; */
+left: -27.8%; 
+top: 22.77%;
+display:block; 
+background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
+opacity: 0.3;
+filter: blur(100px);
+transform: rotate(-120.04deg);
+pointer-events:none; 
+z-index:-1; 
+ }
+
+ .team-list-box .new5{
+position: absolute;
+width:144.5%;  /*  563.35px; */
+height:10.18%; /*  923.11px; */
+left: -95%; 
+top: 32%;
+display:block; 
+background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
+opacity: 0.3;
+filter: blur(100px);
+transform: rotate(-120.04deg);
+pointer-events:none; 
+z-index:-1;
+  }
+
+  .team-list-box .new6{
+position: absolute;
+width:331.1%;  /*  1291.9px; */
+height:6.19%;  /*  561.88px; */
+left:-164%;
+top: 46.5%; 
+display:block; 
+background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%);
+opacity: 0.32;
+filter: blur(250px);
+transform: rotate(-115.27deg);
+pointer-events:none; 
+z-index:-1;
+  }
+
+  .team-list-box .new7{
+position: absolute;
+width: 219.3%; /*  855.88px; */
+height:15.46%; /* 1402.47px; */
+left: -66%;
+top: 55.4%;
+display:block;
+background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%);
+opacity: 0.3;
+filter: blur(250px);
+transform: rotate(151.97deg);
+pointer-events:none; 
+z-index:-1; 
+
+  }
+
+ }
+
+
+
+
 @media screen and (max-width:1440px){
     .team-main-wrapper .sec-head .sec-title{ padding-left:50px; }
 .team-main-wrapper .page-width{ 
     padding-left:0;  padding-right:0; 
+}
+}
+
+@media screen and (max-width:1199px){
+.team-main-wrapper{ margin-top:0; }
+}
+@media screen and (max-width:767px){
+.team-list-box .team-list .box .team-box .team-name{
+ font-family: 'ITC Avant Garde Gothic Std';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 100%;
+text-transform: uppercase;
+}
+   
+
+    .team-list-box .team-list .box .team-box .team-name a{ margin-right:10px; }
+    .team-main-wrapper .team-content{ padding:16px 0 0 0; }
+    .team-list-box .team-list .box .team-box figure{ min-height:415px; }
+    .team-main-wrapper .team-list-box .team-list{ padding:0 20px;  gap:30px;    grid-template-columns: 1fr; }
+   .team-main-wrapper .sec-head{ padding-top:40px; margin-bottom:30px;  }
+.dark--true .sec-head .sec-title{
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 100%;
+padding-left:30px; 
 }
 }

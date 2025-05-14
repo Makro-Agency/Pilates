@@ -60,6 +60,7 @@
 
   {%- if teamData != blank -%}
     <div class="team-list-box">
+    
       {%- if filterdTags[0] != blank -%}
         <div class="tabs-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-team-filter-btn>
           <button class="active btn" data-tags="all">Show All</button>
@@ -69,6 +70,14 @@
         </div>
       {%- endif -%}
       <div id="parent" class="team-list{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-profile>
+       <div class="new0"></div>
+      <div class="new1"></div>
+     <div class="new2"></div>
+      <div class="new3"></div>
+       <div class="new4"></div>
+       <div class="new5"></div>
+        <div class="new6"></div>
+         <div class="new7"></div>
         {{- teamData -}}
       </div>
     </div>
