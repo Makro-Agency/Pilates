@@ -1,29 +1,31 @@
-.press-news .tab-btn{
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
+.press-news {position: relative; z-index: 1; }
+.press-news .tab-btn {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--white-25, rgba(255, 255, 255, 0.25));
 }
 .press-news .tab-btn .btn{
   font-family: Brandon Grotesque;
   font-size: 12px;
-  font-weight: 450;
+  font-weight: 500;
   /*letter-spacing: 0.24px;*/
   text-transform: uppercase;
-  padding: 12px 28px;
+  padding: 12px 20px;
   background: transparent;
   border-radius: 2px;
-  border: 1px solid rgba(0, 0, 0, 0.20);
-  margin: 0 10px 10px 0;
+  border: none;
+  border-bottom: 1.5px solid transparent;
+  margin: 0;
   cursor: pointer;
   color: currentColor;
 }
 .press-news .tab-btn .btn.active{
-  background: #000;
-  border-color: #000;
+  border-color: #ffffff;
   color: #fff;
 }
 .press-news .section-head{
-  margin: 0 0 60px;
+  margin: 0 0 50px;
 }
 .section-head h2{
   margin: 0;
@@ -31,10 +33,12 @@
 .press-news-row{
   display: flex;
   flex-wrap: wrap;
+  gap: 24px;
+  position: relative;
+  z-index: 1;
 }
 .press-news-row .col{
-  width: 33.33%;
-  border: 1px solid #e5e5e5;
+  width: calc(33.33% - 16px);
 }
 .press-news-row .news-logo-img{
   width: 80px;
@@ -42,12 +46,16 @@
   object-fit: contain;
   object-position: left;
 }
-.press-news-row .press-box{
+.press-news-row .press-box {
   display: flex;
   flex-direction: column;
-  padding: 60px 40px;
+  padding: 60px 40px 40px 40px;
   height: 100%;
   position: relative;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: -5px -5px 60px 0px rgba(255, 255, 255, 0.02) inset;
+  backdrop-filter: blur(4px);
 }
 .press-news-row .press-text, .press-news-row .box-bottom{
   margin-top: 30px;
@@ -78,7 +86,7 @@
   /* letter-spacing: 0.24px; */
 }
 .press-news-row .box-bottom .link{
-  color: #000;
+  color: #ffffff;
 }
 .press-news-row .box-bottom .link:after{
   bottom: 0;
@@ -89,14 +97,75 @@
   top: 0;
   z-index: 1;
 }
+.press-news-tabs {
+    position: relative;
+    z-index: 1;
+}
+.press-news-tabs:after {
+  content: "";
+  background: var(--Neon-Blue, radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%));
+  opacity: .32;
+  filter: blur(250px);
+  position: absolute;
+  left: -16%;
+  bottom: auto;
+  width: 89.716vw;
+  height: 39.019vw;
+  transform: rotate(-115.265deg);
+  z-index: -1;
+  top: 113%;
+  right: auto;
+}
+.press-news-tabs:before {
+  content: "";
+  background: var(--Neon-Peach, radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%));
+  opacity: .3;
+  filter: blur(250px);
+  position: absolute;
+  right: -50%;
+  bottom: -28%;
+  width: 73.453vw;
+  height: 120.363vw;
+  transform: rotate(104.546deg);
+  z-index: -1;
+  top: auto;
+}
 
+.press-news-row:before {
+  content: "";
+  background: var(--Neon-Peach, radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%));
+  opacity: .4;
+  filter: blur(200px);
+  position: absolute;
+  left: -18%;
+  bottom: -8%;
+  width: 116.527vw;
+  height: 50.521vw;
+  transform: rotate(148.503deg);
+  z-index: 0;
+  top: 0;
+  margin: auto;
+}
+.press-news-row:after {
+  content: "";
+  background: var(--Neon-Blue, radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%));
+  opacity: .4;
+  filter: blur(250px);
+  position: absolute;
+  bottom: -3%;
+  width: 76.19vw;
+  height: 39.019vw;
+  transform: rotate(-48.364deg);
+  z-index: -1;
+  top: 0;
+  right: -26%;
+  margin: auto;
+}
 @media screen and (min-width: 750px){
-  .press-news-row .col{
-    margin-left: -1px;
-    margin-top: -1px;
-  }
-  .press-news-row{
-    margin-right: -1px;
+  .press-news.section-padding {
+    padding-top: 160px;
+    padding-bottom: 374px;
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 1199px){
@@ -124,8 +193,9 @@
     padding: 10px 19px;
   }
   .press-news-row .col{
-    width: 50%;
+    width: calc(50% - 12px);
   }
+  .press-news .section-head h2 { font-family: 32px; }
 }
 @media screen and (max-width: 749px){
   .press-news-row .press-box{
@@ -143,5 +213,29 @@
   }
   .press-news-row .press-text{
     margin-top: 20px;
+  }
+  .press-news-row:before {
+    width: 189.697vw;
+    height: 82.244vw;
+    opacity: .4;
+    filter: blur(100px);
+    bottom: auto;
+    left: -96%;
+    top: 16%;
+  }
+  .press-news-row:after {
+    width: 130.285vw;
+    height: 66.723vw;
+    opacity: .4;
+    filter: blur(100px);
+    transform: rotate(-45deg);
+    bottom: 58%;
+    right: -7%;
+  }
+  .press-news-tabs:before {
+    bottom: 0;
+  }
+  .press-news-tabs:after {
+    top: 0;
   }
 }

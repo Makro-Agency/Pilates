@@ -1,3 +1,4 @@
+.template-cart .custom-header-section { position: static;}
 .cart {
   position: relative;
   display: block;
