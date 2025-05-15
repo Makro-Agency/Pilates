@@ -363,7 +363,7 @@
         "sale_content": "Lagree-inspired training in a state-of-the-art studio, designed for precision, intensity, and transformation. Experience the highest quality reformer classes led by Toronto’s top instructors — all under one immersive roof.",
         "show_btn": true,
         "btn_text": "Lorem ipsum",
-        "btn_url": ""
+        "btn_url": "#"
       }
     },
     "custom_hero_banner3_tKAhJB": {
@@ -373,11 +373,11 @@
         "desktop_image": "shopify://shop_images/Section_4.png",
         "mobile_image": "shopify://shop_images/Section_e114859d-53f4-4f5c-aa80-7fb798557750.png",
         "overlay_opacity": 40,
-        "sale_title": "",
-        "sale_content": "",
-        "show_btn": false,
-        "btn_text": "",
-        "btn_url": ""
+        "sale_title": "STAY & CONNECT",
+        "sale_content": "After your session, unwind with a tonic or a post-class refuel in our lounge space. High-speed WiFi, charging stations, and a calm aesthetic make Reformd a place to linger, not just leave.",
+        "show_btn": true,
+        "btn_text": "Lorem ipsum",
+        "btn_url": "#"
       }
     },
     "custom_our_location_MRtpzi": {
