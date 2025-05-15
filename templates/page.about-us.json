@@ -13,8 +13,8 @@
       "type": "about-banner",
       "settings": {
         "allow_transparent_header": true,
-        "sub_title": "about us",
-        "title": "About Sweat AND Tonic",
+        "sub_title": "",
+        "title": "About Reformd",
         "desktop_image": "shopify://shop_images/Frame_5911.png",
         "mobile_image": "shopify://shop_images/hero_244a1198-d208-4c8c-be68-15563ebad63c.png"
       }
@@ -24,7 +24,7 @@
       "custom_css": [],
       "settings": {
         "sub_title": "Our mission",
-        "title": "SWEAT, RECOVER, CONNECT. We bring the best of boutique fitness & wellness, all under one roof.",
+        "title": "we challenge sweat addicts’ minds & bodies within a community that grows, succeeds, and celebrates together.",
         "description": ""
       }
     },
@@ -358,11 +358,11 @@
       "settings": {
         "desktop_image": "shopify://shop_images/Section_2.png",
         "mobile_image": "shopify://shop_images/Section_e114859d-53f4-4f5c-aa80-7fb798557750.png",
-        "overlay_opacity": 20,
-        "sale_title": "",
-        "sale_content": "",
-        "show_btn": false,
-        "btn_text": "",
+        "overlay_opacity": 40,
+        "sale_title": "SCULPT & STRENGTHEN",
+        "sale_content": "Lagree-inspired training in a state-of-the-art studio, designed for precision, intensity, and transformation. Experience the highest quality reformer classes led by Toronto’s top instructors — all under one immersive roof.",
+        "show_btn": true,
+        "btn_text": "Lorem ipsum",
         "btn_url": ""
       }
     },
@@ -372,6 +372,18 @@
       "settings": {
         "desktop_image": "shopify://shop_images/Section_4.png",
         "mobile_image": "shopify://shop_images/Section_e114859d-53f4-4f5c-aa80-7fb798557750.png",
+        "overlay_opacity": 40,
+        "sale_title": "",
+        "sale_content": "",
+        "show_btn": false,
+        "btn_text": "",
+        "btn_url": ""
+      }
+    },
+    "custom_our_location_MRtpzi": {
+      "type": "custom-our-location",
+      "name": "Custom our location",
+      "settings": {
         "overlay_opacity": 20,
         "sale_title": "",
         "sale_content": "",
@@ -497,18 +509,6 @@
         "sub_title": "",
         "title": "",
         "description": "We acknowledge the land we are on is the traditional territory of many nations including the Mississaugas of the Credit, the Anishnabeg, the Chippewa, the Haudenosaunee and the Wendat peoples and is now home to many diverse First Nations, Inuit and Métis peoples. We also acknowledge that Toronto is covered by Treaty 13 with the Mississaugas of the Credit"
-      }
-    },
-    "custom_our_location_MRtpzi": {
-      "type": "custom-our-location",
-      "name": "Custom our location",
-      "settings": {
-        "overlay_opacity": 20,
-        "sale_title": "",
-        "sale_content": "",
-        "show_btn": false,
-        "btn_text": "",
-        "btn_url": ""
       }
     }
   },
