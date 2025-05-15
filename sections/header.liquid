@@ -29,6 +29,24 @@
 
 {{ 'main-header.css' | asset_url | stylesheet_tag: preload: true }}
 
+{%- liquid            
+  assign has_drakness = 'dark'
+  assign bright_temp = 'pre-sale-landing,index,product,cart,faq,terms-conditions' | split:','
+  for bt in bright_temp
+    if bt == "page"
+      if template.suffix == blank
+        assign has_drakness = ''
+        break
+      endif
+    else
+      if template contains bt
+        assign has_drakness = ''
+        break
+      endif
+    endif
+  endfor
+-%}
+
 
 <style>
   header-drawer {
@@ -148,7 +166,11 @@
   endfor
 -%}
 
-<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="{% if section.settings.hide-header %}hide-header{% endif %} header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} 
+  class="{% if section.settings.hide-header %}hide-header{% endif %} {{ has_drakness }}
+  header-wrapper color-{{ section.settings.color_scheme }} gradient
+  {% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}"
+>
   {%- liquid
     assign social_links = false
     assign localization_forms = false
@@ -372,8 +394,8 @@
       {% endcomment %}
 
       <div class="header-btn-wrap small-hide medium-hide">
-        <a href="https://shop.sweatandtonic.com/pages/reserve" class="button btn-small-width button--secondary">book classes</a>
-        <a href="https://shop.sweatandtonic.com/pages/pricing" class="button btn-small-width button--primary">buy classes</a>
+        <a href="https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750" class="button btn-small-width button--secondary">book classes {% render 'icon-left-arrow', type: 1 %}</a>
+        <a href="https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750" class="button btn-small-width button--primary">buy classes {% render 'icon-left-arrow', type: 1 %}</a>
       </div>
     </div>
   </header>
