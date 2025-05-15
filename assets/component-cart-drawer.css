@@ -302,6 +302,7 @@ cart-drawer-items {
   grid-column: 2 / 5;
   padding-bottom: 16px;
   border: none;
+  position: relative;
 }
 
 .cart-drawer .title-wrap {
