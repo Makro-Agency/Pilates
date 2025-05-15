@@ -1,8 +1,8 @@
 .team-banner-wrapper { width:100%; }
 
-.team-banner-wrapper .banner-box { width:100%; display:flex; justify-content:center;  }
+.team-banner-wrapper .banner-box { width:100%; display:flex; justify-content:space-between;  }
 
-.team-banner-wrapper .banner-box .team-info { width:100%; padding:29px 5rem 20px 5rem; display: flex; flex-flow: column; }
+.team-banner-wrapper .banner-box .team-info { width:100%; padding:29px 5rem 0px 5rem; display: flex; flex-flow: column; }
 .team-banner-wrapper .banner-box .team-info .back-team { color: #000; font-size: 12px; font-style: normal; font-weight: 450; line-height: normal; gap:10px;
   letter-spacing: 0.24px; text-transform: uppercase; display:flex; align-items:center; text-decoration:none; }
 .team-banner-wrapper .banner-box .team-info .back-team:hover { text-decoration:underline; }
