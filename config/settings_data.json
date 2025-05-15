@@ -124,7 +124,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": false,
-    "cart_type": "page",
+    "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
@@ -1234,7 +1234,8 @@
           "image_LDKN8m": {
             "type": "image",
             "settings": {
-              "title": "<p>Toronto's Sweat and Tonic Celebrates with The 2024 Mariana Tek Full House Award</p>",
+              "logo": "shopify://shop_images/image_14.png",
+              "title": "<p>Sweat and Tonic, Toronto's Most Innovative Group Fitness and Wellness Hub, Opens Second Location This Fall at The Well™</p>",
               "date": "13.02.2025",
               "link_label": "Read more",
               "link": "https://www.marianatek.com/the-mariana-tek-studio-awards/"
@@ -1243,7 +1244,8 @@
           "image_GmJRNJ": {
             "type": "image",
             "settings": {
-              "title": "<p>Sweat and Tonic Unveils Lagree Studio REFORMD</p>",
+              "logo": "shopify://shop_images/image_5.png",
+              "title": "<p>Wellness practices fuel fitness sector growth: Experts</p>",
               "date": "04.02.2025",
               "link_label": "Read more",
               "link": "https://insider.fitt.co/sweat-and-tonic-reformd-lagree-studio/"
@@ -1252,7 +1254,8 @@
           "image_739Y3Q": {
             "type": "image",
             "settings": {
-              "title": "<p>Sweat and Tonic Unveils New Concept Studio REFORMD </p>",
+              "logo": "shopify://shop_images/image_16.png",
+              "title": "<p>The best spinning classes in Toronto</p>",
               "date": "23.01.2025",
               "link_label": "Read more",
               "link": "https://retail-insider.com/retail-insider/2025/01/sweat-and-tonic-unveils-new-concept-studio-reformd-renderings/"
@@ -1261,7 +1264,8 @@
           "image_QJgyp8": {
             "type": "image",
             "settings": {
-              "title": "<p>Sweat and Tonic Announces the Launch of REFORMD</p>",
+              "logo": "shopify://shop_images/image_17.png",
+              "title": "<p>Indoor fitness reopens today</p>",
               "date": "23.01.2025",
               "link_label": "Read more",
               "link": "https://www.trendhunter.com/trends/sweat-and-tonics"
@@ -1270,8 +1274,8 @@
           "image_rJkcmF": {
             "type": "image",
             "settings": {
-              "logo": "shopify://shop_images/image_14.png",
-              "title": "<p>Sweat and Tonic Unveils New Concept Studio REFORMD - the Highest-Capacity Lagree Studio Worldwide</p>",
+              "logo": "shopify://shop_images/image_18.png",
+              "title": "<p>Gyms Can Finally Reopen Next Week In Ontario & Here's What You Can Expect</p>",
               "date": "22.01.2025",
               "link_label": "Read more",
               "link": "https://www.newswire.ca/news-releases/sweat-and-tonic-unveils-new-concept-studio-reformd-the-highest-capacity-lagree-studio-worldwide-876657894.html"
@@ -1280,7 +1284,8 @@
           "image_7EryYm": {
             "type": "image",
             "settings": {
-              "title": "<p>Luxury Toronto Gym Opening New Studio Next Door To Other Location</p>",
+              "logo": "shopify://shop_images/image_18.png",
+              "title": "<p>6 Outdoor Workout Classes With Stunning Views You Can Book In Toronto This Summer</p>",
               "date": "21.01.2025",
               "link_label": "Read more",
               "link": "https://www.blogto.com/sports_play/2025/01/sweat-and-tonic-toronto-new-studio-reformd/"
@@ -1289,7 +1294,8 @@
           "image_tpDBLQ": {
             "type": "image",
             "settings": {
-              "title": "<p>8 Experiential Gifts to Give the Beauty Treatment Lover in Your Life</p>",
+              "logo": "shopify://shop_images/image_19.png",
+              "title": "<p>Ontario enters Stage 1 of reopening after several months of lockdown</p>",
               "date": "22.11.2024",
               "link_label": "Read more",
               "link": "https://fashionmagazine.com/beauty-grooming/experiential-christmas-gifts/"
@@ -1298,7 +1304,8 @@
           "image_FT6N49": {
             "type": "image",
             "settings": {
-              "title": "<p>Inside Sweat and Tonic and Tonic Spa at the Well</p>",
+              "logo": "shopify://shop_images/image_14.png",
+              "title": "<p>Toronto's most innovative and luxurious Fitness & Wellness Hub 'Sweat and Tonic' To Unveil Second Location at 'The Well' in Toronto</p>",
               "date": "07.11.2024",
               "link_label": "Read more",
               "link": "https://torontolife.com/city/sweat-and-tonic-tonic-spa-the-well/"
@@ -1307,7 +1314,8 @@
           "image_fknipE": {
             "type": "image",
             "settings": {
-              "title": "<p>7 Trendy Wellness Spaces In Toronto To Relax And Recharge At</p>",
+              "logo": "shopify://shop_images/image_20.png",
+              "title": "<p>RioCan and Allied Provide Progress Update for The Well™: 110,000 Square Feet of Retail and ~One Million Square Feet of Office Leased To-date</p>",
               "date": "24.10.2024",
               "link_label": "Read more",
               "link": "https://secrettoronto.co/wellness-spaces-toronto/"
@@ -1316,7 +1324,8 @@
           "image_9JQP4P": {
             "type": "image",
             "settings": {
-              "title": "<p>LinkedIn Top Startups 2024: The 15 Canadian companies on the rise</p>",
+              "logo": "shopify://shop_images/image_6.png",
+              "title": "<p>Toronto's most innovative and luxurious Fitness & Wellness Hub 'Sweat and Tonic' To Unveil Second Location at 'The Well' in</p>",
               "date": "25.09.2024",
               "link_label": "Read more",
               "link": "https://www.linkedin.com/pulse/linkedin-top-startups-2024-15-canadian-companies-rise-linkedin-news-llihe/?trackingId=hqz3SL7FSUODHMGqrn8hZg%3D%3D"
@@ -1325,7 +1334,8 @@
           "image_n9NVbH": {
             "type": "image",
             "settings": {
-              "title": "<p>In defense of the expensive fitness club: it’s for more than a workout</p>",
+              "logo": "shopify://shop_images/image_22.png",
+              "title": "<p>Toronto's most innovative and luxurious Fitness & Wellness Hub 'Sweat and Tonic' To Unveil Second Location at 'The Well' in Toronto</p>",
               "date": "15.09.2024",
               "link_label": "Read more",
               "link": "https://www.theglobeandmail.com/life/health-and-fitness/article-in-defense-of-the-expensive-fitness-club-its-for-more-than-a-workout/"
@@ -1334,7 +1344,8 @@
           "image_jBEULm": {
             "type": "image",
             "settings": {
-              "title": "<p>Is Sweat and Tonic’s David Ingram Building the Next Big Thing in Fitness?</p>",
+              "logo": "shopify://shop_images/image_16.png",
+              "title": "<p>Toronto getting new a fitness centre that will be one of its largest</p>",
               "date": "08.07.2024",
               "link_label": "Read more",
               "link": "https://www.glory.media/david-ingram-sweat-and-tonic-entrepreneur/"
@@ -1343,7 +1354,8 @@
           "image_jWPMWJ": {
             "type": "image",
             "settings": {
-              "title": "<p>The line between gyms and spas is disappearing as fitness centres go after luxury clients</p>",
+              "logo": "shopify://shop_images/image_7.png",
+              "title": "<p>Toronto getting new a fitness centre that will be one of its largest</p>",
               "date": "25.06.2024",
               "link_label": "Read more",
               "link": "https://www.theglobeandmail.com/life/article-the-line-between-gyms-and-spas-is-disappearing-as-fitness-centres-go/"
@@ -1352,7 +1364,8 @@
           "image_PMhpQ7": {
             "type": "image",
             "settings": {
-              "title": "<p>Multi-use commercial spaces: The future of success in hospitality and retail</p>",
+              "logo": "shopify://shop_images/image_16.png",
+              "title": "<p>Toronto gyms told to close for another month just as they were about to open again</p>",
               "date": "21.06.2024",
               "link_label": "Read more",
               "link": "https://realestatemagazine.ca/multi-use-commercial-spaces-the-future-of-success-in-hospitality-and-retail/"
@@ -1361,7 +1374,8 @@
           "image_JYVL9A": {
             "type": "image",
             "settings": {
-              "title": "<p>Join the Toronto Wellness Boom at These Buzzy New Studios</p>",
+              "logo": "shopify://shop_images/image_16.png",
+              "title": "<p>Toronto gym owners say their facilities are safe and shutdown is unfair</p>",
               "date": "13.05.2024",
               "link_label": "Read more",
               "link": "https://thekit.ca/living/health/toronto-wellness-studios/"
@@ -1370,7 +1384,8 @@
           "image_zt8xRE": {
             "type": "image",
             "settings": {
-              "title": "<p>A Luxurious Wellness Oasis Just Opened Within A Boutique Toronto Fitness Studio</p>",
+              "logo": "shopify://shop_images/image_18.png",
+              "title": "<p>Toronto Fitness Manager Says Gyms Should Stay Open Because They Are 'Keeping People Sane</p>",
               "date": "29.04.2024",
               "link_label": "Read more",
               "link": "https://secrettoronto.co/tonic-spa-the-well-toronto/"
@@ -1379,8 +1394,8 @@
           "image_yYmLyU": {
             "type": "image",
             "settings": {
-              "logo": "shopify://shop_images/image_14.png",
-              "title": "<p>Sweat and Tonic, Toronto's Favourite Boutique Fitness and Wellness Hub, Opens First Tonic Spa</p>",
+              "logo": "shopify://shop_images/image_7.png",
+              "title": "<p>\"Devastating\" second wave closure leaves Toronto's fitness studios in jeopardy</p>",
               "date": "25.04.2024",
               "link_label": "Read more",
               "link": "https://www.newswire.ca/news-releases/sweat-and-tonic-toronto-s-favourite-boutique-fitness-and-wellness-hub-opens-first-tonic-spa-808769832.html"
@@ -1389,7 +1404,8 @@
           "image_w3c8aa": {
             "type": "image",
             "settings": {
-              "title": "<p>Popular boutique fitness and wellness hub will open its third location in Yorkville</p>",
+              "logo": "shopify://shop_images/Frame_5396.png",
+              "title": "<p>Gym, restaurant owners dismayed by province’s COVID-19 restrictions</p>",
               "date": "19.04.2024",
               "link_label": "Read more",
               "link": "https://viewthevibe.com/popular-boutique-fitness-and-wellness-hub-will-open-its-third-location-in-yorkville/"
@@ -1398,7 +1414,8 @@
           "image_EYWBcX": {
             "type": "image",
             "settings": {
-              "title": "<p>Toronto's new sweat and tonic in the well is a sprawling fitness hub</p>",
+              "logo": "shopify://shop_images/image_25.png",
+              "title": "<p>“We’re disinfecting shower stalls after every use”: What reopening looks like at five Toronto gyms</p>",
               "date": "12.04.2024",
               "link_label": "Read more",
               "link": "https://escapism.to/reviews/sweat-tonic-well-toronto/"
@@ -1407,7 +1424,8 @@
           "image_DUhd3H": {
             "type": "image",
             "settings": {
-              "title": "<p>Toronto’s Most Aesthetic Way to Work Out Is Opening a Third Location</p>",
+              "logo": "shopify://shop_images/Frame_5396_1.png",
+              "title": "<p>Sweat and Tonic Brings Luxury To Group Fitness With New Toronto Location</p>",
               "date": "10.04.2024",
               "link_label": "Read more",
               "link": "https://itsdatenight.com/sweat-and-tonic-toronto-yorkville/?fbclid=PAAaaJWOBRToZXUChEPjA-BmdtTavMJVYsVZbJEFnKCvWcx-psZU4cuKxjm94_aem_AZuewSHYsiWlGga3uSQ0UF-stjGXzeB7G2U8E68GaVBMzweaE5wqZli--eWdMzKyqKc"
@@ -1416,7 +1434,8 @@
           "image_nGx7gt": {
             "type": "image",
             "settings": {
-              "title": "<p>Best of Classpass 2023</p>",
+              "logo": "shopify://shop_images/Frame_5396_2.png",
+              "title": "<p>Canadian businesses to support this holiday season</p>",
               "date": "09.04.2024",
               "link_label": "Read more",
               "link": "https://classpass.com/blog/best-of-classpass-2023/"
@@ -1425,7 +1444,8 @@
           "image_jBrEdM": {
             "type": "image",
             "settings": {
-              "title": "<p>Luxurious Boutique Fitness And Wellness Club Is Opening A New Location In Toronto</p>",
+              "logo": "shopify://shop_images/Mask_group_1.png",
+              "title": "<p>7 Fitness Studios In Toronto That Are Finally Reopening</p>",
               "date": "25.03.2024",
               "link_label": "Read more",
               "link": "https://secrettoronto.co/sweat-and-tonic-yorkville/"
@@ -1434,7 +1454,8 @@
           "image_WtcJ6F": {
             "type": "image",
             "settings": {
-              "title": "<p>Sweat & Tonic @ The Well Review: Hot HIIT Pilates Is The Class You Didn’t Know Existed, Needed</p>",
+              "logo": "shopify://shop_images/Mask_group.png",
+              "title": "<p>Reviews: Power pilates @ Sweat and tonic</p>",
               "date": "24.03.2024",
               "link_label": "Read more",
               "link": "https://fleetstreetmag.com/fitness/sweat-tonic-the-well-review-hot-hiit-pilates/"
@@ -1443,214 +1464,11 @@
           "image_rnajgf": {
             "type": "image",
             "settings": {
-              "title": "<p>Popular Fitness Studio To Open A 3rd Location In Toronto</p>",
+              "logo": "shopify://shop_images/image_18.png",
+              "title": "<p>Multiple Toronto Gyms Are Opening As Soon As Friday & They Will Be Totally Different</p>",
               "date": "22.03.2024",
               "link_label": "Read more",
               "link": "https://www.styledemocracy.com/popular-fitness-studio-to-open-a-3rd-location-in-toronto/"
-            }
-          },
-          "image_6ydjTU": {
-            "type": "image",
-            "settings": {
-              "title": "<p>luxury gym known for sold-out classes opening new location in Toronto</p>",
-              "date": "21.03.2024",
-              "link_label": "Read more",
-              "link": "https://www.blogto.com/sports_play/2024/03/luxury-gym-open-third-location-toronto/"
-            }
-          },
-          "image_UrWWqT": {
-            "type": "image",
-            "settings": {
-              "title": "<p>Fitness and Wellness Concept Sweat and Tonic to Open 18,000 Sq Ft. Location on Yorkville Avenue in Toronto</p>",
-              "date": "21.03.2024",
-              "link_label": "Read more",
-              "link": "https://retail-insider.com/retail-insider/2024/03/fitness-and-wellness-concept-sweat-and-tonic-to-open-18000-sq-ft-location-on-yorkville-avenue-in-toronto/"
-            }
-          },
-          "image_gDMemw": {
-            "type": "image",
-            "settings": {
-              "title": "<p>Popular Toronto fitness & wellness club is set to open a new location</p>",
-              "date": "21.03.2024",
-              "link_label": "Read more",
-              "link": "https://curiocity.com/sweat-and-tonic-yorkville-toronto/"
-            }
-          },
-          "image_VEKTe9": {
-            "type": "image",
-            "settings": {
-              "logo": "shopify://shop_images/image_14.png",
-              "title": "<p>Sweat and Tonic, Toronto's Favourite Boutique Fitness and Wellness Hub, To Unveil Third Location in Toronto's Prestigious Yorkville Neighbourhood</p>",
-              "date": "21.03.2024",
-              "link_label": "Read more",
-              "link": "https://www.newswire.ca/news-releases/sweat-and-tonic-toronto-s-favourite-boutique-fitness-and-wellness-hub-to-unveil-third-location-in-toronto-s-prestigious-yorkville-neighbourhood-885863190.html"
-            }
-          },
-          "image_MzaB7B": {
-            "type": "image",
-            "settings": {
-              "title": "<p>Three Top-Tier Spots in Toronto to Level-Up Your Wellness Routine</p>",
-              "date": "15.02.2024",
-              "link_label": "Read more",
-              "link": "https://nuvomagazine.com/daily-edit/three-top-tier-spots-in-toronto-to-level-up-your-wellness-routine"
-            }
-          },
-          "image_HwXUCx": {
-            "type": "image",
-            "settings": {
-              "title": "<p>Toronto's legendary Sweat and Tonic takes the 2023 Mariana Tek Lasting Community Award</p>",
-              "date": "29.01.2024",
-              "link_label": "Read more",
-              "link": "https://www.marianatek.com/blog/canadas-fitness-elite-announcing-the-2023-mariana-tek-award-recipients?utm_source=instagram&utm_medium=organic_social&utm_campaign=mt_appreciation_campaign_01.2024&utm_content=blog"
-            }
-          },
-          "image_JKJVGJ": {
-            "type": "image",
-            "settings": {
-              "title": "<p>8 Of The Best Gyms And Fitness Studios In Toronto</p>",
-              "date": "09.01.2024",
-              "link_label": "Read more",
-              "link": "https://www.styledemocracy.com/the-best-gyms-and-fitness-studios-in-toronto/"
-            }
-          },
-          "image_jbkPxz": {
-            "type": "image",
-            "settings": {
-              "title": "<p>The Perfect Health And Wellness Weekend In Toronto</p>",
-              "date": "08.01.2024",
-              "link_label": "Read more",
-              "link": "https://www.forbes.com/sites/miriamporter/2024/01/08/the-perfect-health-and-wellness-weekend-in-toronto/?sh=5314cf7d22f4"
-            }
-          },
-          "image_yY4T3J": {
-            "type": "image",
-            "settings": {
-              "title": "<p>The wild world of biohacking is unproven and expensive, and arguably worth the price</p>",
-              "date": "27.01.2024",
-              "link_label": "Read more",
-              "link": "https://www.theglobeandmail.com/life/article-biohacking-health-aging/?login=true"
-            }
-          },
-          "45502ca4-0277-4c25-a67c-0c054dff0e97": {
-            "type": "image",
-            "settings": {
-              "title": "<p>Toronto's New Massive Fitness & Wellness Club Is Opening Next Month</p>",
-              "date": "03.11.2023",
-              "link_label": "Read more",
-              "link": "https://curiocity.com/sweat-and-tonic-the-well-toronto/"
-            }
-          },
-          "image_QMjHrD": {
-            "type": "image",
-            "settings": {
-              "title": "<p>Here’s how to spend a day at Toronto’s favourite fitness & wellness space</p>",
-              "date": "02.10.2023",
-              "link_label": "Read more",
-              "link": "https://viewthevibe.com/heres-how-to-spend-a-day-at-torontos-favourite-fitness-wellness-space/"
-            }
-          },
-          "5b59f2ce-14ba-47c4-bb0c-89071d167625": {
-            "type": "image",
-            "settings": {
-              "title": "<p>A Local's Guide To Toronto </p>",
-              "date": "05.09.2023",
-              "link_label": "Read more",
-              "link": "https://www.vogue.com/article/toronto-city-guide"
-            }
-          },
-          "f6add151-5bce-4fc2-82bf-e1043e2a3dc5": {
-            "type": "image",
-            "settings": {
-              "title": "<p>Toronto's Most Innovative Fitness & Wellness Hub Is Expanding To The Well</p>",
-              "date": "28.07.2023",
-              "link_label": "Read more",
-              "link": "https://www.narcity.com/toronto/toronto-s-most-innovative-fitness-wellness-hub-is-expanding-to-the-well"
-            }
-          },
-          "361b081d-e145-4c11-ab1a-f9222df0d459": {
-            "type": "image",
-            "settings": {
-              "title": "<p>Toronto's Beloved Sweat & Tonic Is Opening A Second Location</p>",
-              "date": "26.07.2023",
-              "link_label": "Read more",
-              "link": "https://viewthevibe.com/torontos-beloved-sweat-tonic-is-opening-a-second-location/"
-            }
-          },
-          "ca3f0871-2edf-45f1-ba12-53b11efc8f86": {
-            "type": "image",
-            "settings": {
-              "title": "<p>Sweat and Tonic Brings Luxury To Group Fitness With New Toronto Location</p>",
-              "date": "20.07.2023",
-              "link_label": "Read more",
-              "link": "https://athletechnews.com/sweat-and-tonic-new-toronto-location/"
-            }
-          },
-          "ddd0562f-939f-4dce-b85d-3de68af3b4a3": {
-            "type": "image",
-            "settings": {
-              "logo": "shopify://shop_images/image_14.png",
-              "title": "<p>Sweat and Tonic, Toronto's Most Innovative Group Fitness and Wellness Hub, Opens Second Location This Fall at The Well™</p>",
-              "date": "18.07.2023",
-              "link_label": "Read more",
-              "link": "https://www.newswire.ca/news-releases/sweat-and-tonic-toronto-s-most-innovative-group-fitness-and-wellness-hub-opens-second-location-this-fall-at-the-well-tm--899382640.html"
-            }
-          },
-          "afe47fe5-c4ce-4b4c-9f1d-332843f31cc0": {
-            "type": "image",
-            "settings": {
-              "title": "<p>Wellness practices fuel fitness sector growth: Experts</p>",
-              "date": "30.03.2023",
-              "link_label": "Read more",
-              "link": "https://www.bnnbloomberg.ca/wellness-practices-fuel-fitness-sector-growth-experts-1.1902658"
-            }
-          },
-          "c1d1e6f4-90e5-423e-ac9f-f06ada04077e": {
-            "type": "image",
-            "settings": {
-              "logo": "shopify://shop_images/image_16.png",
-              "title": "<p>The best spinning classes in Toronto</p>",
-              "date": "21.07.2022",
-              "link_label": "Read more",
-              "link": "https://www.blogto.com/toronto/the_best_spinning_classes_in_toronto/"
-            }
-          },
-          "1114566e-5317-44b9-b402-0760d209b5cf": {
-            "type": "image",
-            "settings": {
-              "title": "<p>I Spent The Whole Day At One Of Toronto's Most Luxurious Fitness Studios, Sweat & Tonic</p>",
-              "date": "17.06.2022",
-              "link_label": "Read more",
-              "link": "https://torontolife.com/things-to-do/sweat-and-tonic/"
-            }
-          },
-          "1e2b4d71-ba86-4443-8197-12f732d8cef8": {
-            "type": "image",
-            "settings": {
-              "logo": "shopify://shop_images/image_17.png",
-              "title": "<p>Indoor fitness reopens today</p>",
-              "date": "16.07.2021",
-              "link_label": "Read more",
-              "link": "https://www.breakfasttelevision.ca/videos/indoor-fitness-reopens-today/"
-            }
-          },
-          "f8f68680-7379-42c5-9405-e6342ecee8d5": {
-            "type": "image",
-            "settings": {
-              "logo": "shopify://shop_images/image_18.png",
-              "title": "<p>Gyms Can Finally Reopen Next Week In Ontario & Here's What You Can Expect</p>",
-              "date": "09.07.2021",
-              "link_label": "Read more",
-              "link": "https://www.narcity.com/toronto/ontario-gyms-can-finally-open-soon--heres-what-you-can-expect"
-            }
-          },
-          "81f14f21-4a5d-4527-b3d0-59a50e827788": {
-            "type": "image",
-            "settings": {
-              "logo": "shopify://shop_images/image_18.png",
-              "title": "<p>6 Outdoor Workout Classes With Stunning Views You Can Book In Toronto This Summer</p>",
-              "date": "02.07.2021",
-              "link_label": "Read more",
-              "link": "https://www.narcity.com/toronto/6-outdoor-workout-classes-with-a-view-in-toronto"
             }
           }
         },
@@ -1678,29 +1496,7 @@
           "image_nGx7gt",
           "image_jBrEdM",
           "image_WtcJ6F",
-          "image_rnajgf",
-          "image_6ydjTU",
-          "image_UrWWqT",
-          "image_gDMemw",
-          "image_VEKTe9",
-          "image_MzaB7B",
-          "image_HwXUCx",
-          "image_JKJVGJ",
-          "image_jbkPxz",
-          "image_yY4T3J",
-          "45502ca4-0277-4c25-a67c-0c054dff0e97",
-          "image_QMjHrD",
-          "5b59f2ce-14ba-47c4-bb0c-89071d167625",
-          "f6add151-5bce-4fc2-82bf-e1043e2a3dc5",
-          "361b081d-e145-4c11-ab1a-f9222df0d459",
-          "ca3f0871-2edf-45f1-ba12-53b11efc8f86",
-          "ddd0562f-939f-4dce-b85d-3de68af3b4a3",
-          "afe47fe5-c4ce-4b4c-9f1d-332843f31cc0",
-          "c1d1e6f4-90e5-423e-ac9f-f06ada04077e",
-          "1114566e-5317-44b9-b402-0760d209b5cf",
-          "1e2b4d71-ba86-4443-8197-12f732d8cef8",
-          "f8f68680-7379-42c5-9405-e6342ecee8d5",
-          "81f14f21-4a5d-4527-b3d0-59a50e827788"
+          "image_rnajgf"
         ],
         "settings": {
           "title": "IN THE NEWS",

@@ -6,13 +6,13 @@
 {%- if section.settings.top_padding_remove or section.settings.bottom_padding_remove -%}
   <style>
     {% if section.settings.top_padding_remove %}
-      #shopify-section-{{ section.id }}.section-padding{
+      #shopify-section-{{ section.id }} .section-padding{
         padding-top: 0 !important;
       }
     {% endif %}
     
     {% if section.settings.bottom_padding_remove %}
-      #shopify-section-{{ section.id }}.section-padding{
+      #shopify-section-{{ section.id }} .section-padding{
         padding-bottom: 0 !important;
       }
     {% endif %}
@@ -20,7 +20,7 @@
 {%- endif -%}
 
 
-<div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %} section-padding">
   <div
     class="page-width isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
@@ -131,7 +131,7 @@
                     {% endif %}
                   >
                     {{- block.settings.link_label | escape -}}
-                    <span class="icon-wrap">{% render 'icon-link-arrow' %}</span>
+                    <span class="icon-wrap">{% render 'icon-link-down-arrow' %}</span>
                   </a>
                 {%- endif -%}
               </div>
@@ -147,7 +147,7 @@
 {% schema %}
 {
   "name": "t:sections.multicolumn.name",
-  "class": "section hit-multicolumn section-padding",
+  "class": "section hit-multicolumn ",
   "tag": "section",
   "disabled_on": {
     "groups": ["header", "footer"]

@@ -101,7 +101,9 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 }
 
 .cart-drawer__warnings .drawer__close {
-  right: 5px;
+  right: 20px;
+  position: absolute;
+  top: 20px;
 }
 
 .drawer__close svg {
@@ -302,6 +304,7 @@ cart-drawer-items {
   grid-column: 2 / 5;
   padding-bottom: 16px;
   border: none;
+  position: relative;
 }
 
 .cart-drawer .title-wrap {
@@ -557,4 +560,32 @@ cart-item-recommended .cait-reco-title {
   text-transform: uppercase;
   letter-spacing: 0.02em;
   border-radius: 0;
+}
+
+
+/*-------------------------*/
+.free-shipping-block {
+    padding: 3.2rem 2rem 4rem;
+}
+.free-shipping-block .text {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-family: var(--font-heading-family);
+    margin-bottom: 12px;
+}
+.progress-bar {
+    height: 5px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+}
+.progress-bar span {
+    background: #fff;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    height: 4px;
+    border-radius: 4px;
 }
