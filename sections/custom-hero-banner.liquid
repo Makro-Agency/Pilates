@@ -1,0 +1,123 @@
+
+{{ 'custom-global_hero-banner.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  #Banner-{{ section.id }}::after {
+    opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+  }
+{%- endstyle -%}
+
+<div id="Banner-{{ section.id }}" class="banner hero-banner-2">
+    {% if section.settings.desktop_image != blank or section.settings.mobile_image != blank %}
+        <div class="image">
+            <figure>
+                {%if section.settings.desktop_image != blank %}
+                    {{
+                        section.settings.desktop_image
+                        | image_url: width: 3840
+                        | image_tag:
+                            class: 'desktop-img',
+                            alt: section.settings.desktop_image.alt | default: section.settings.title |escape
+                    }}
+                      {% endif %}
+                    {%if section.settings.mobile_image != blank %}
+                    {{
+                        section.settings.mobile_image
+                        | image_url: width: 1100
+                        | image_tag:
+                            class: 'mobile-img',
+                            alt: section.settings.mobile_image.alt | default: section.settings.title |escape
+                    }}
+                {% endif %}
+            </figure>
+        </div>
+          {% if section.settings.sale_title != blank  %}
+            <div class="banner-content padding-sections">
+              <div class="banner-contain">
+                  {% if section.settings.sale_title != blank%}
+                      <h2 class="h1 heading">{{ section.settings.sale_title }}</h2>
+                  {% endif %}
+                  {% if section.settings.sale_content != blank%}
+                      <p class="description">{{ section.settings.sale_content }}</p>
+                  {% endif %}
+                  {% if section.settings.btn_url != blank  %}
+                    <div class="banner-button">
+                  {% endif %}
+                      <a href="{{ section.settings.btn_url }}" class="cta">{{ section.settings.btn_text }}{% render 'icon-left-arrow' %}</a>
+                    </div>
+                  {% endif %}
+              </div>
+           
+              {% endif %}
+            </div>      
+</div>
+
+{% schema %}
+{
+  "name": "Hero Banner",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image content"
+    },
+    {
+      "type": "image_picker",
+      "label": "Desktop Image",
+      "id": "desktop_image"
+    },
+    {
+      "type": "image_picker",
+      "label": "Mobile Image",
+      "id": "mobile_image"
+    },
+    {
+        "type": "range",
+        "id": "overlay_opacity",
+        "label": "Image ovrlay opacity",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Presale Live Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "label": "Sale Title",
+      "id": "sale_title"
+    },
+    {
+      "type": "textarea",
+      "label": "Sale Content",
+      "id": "sale_content"
+    },
+    {
+      "type": "header",
+      "content": "Banner Content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_btn",
+      "label": "Show button"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
+    }
+    
+  ],
+  "presets": [
+    {
+      "name": "Custom Hero Banner"
+    }
+  ]
+}
+{% endschema %}

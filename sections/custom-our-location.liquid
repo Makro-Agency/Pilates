@@ -1,0 +1,120 @@
+
+{{ 'custom-location.css' | asset_url | stylesheet_tag }}
+
+<div class="custom-location">
+  <div class="wrapper">
+    <h2>OUR LOCATIONS</h2>
+    <p class="description">
+      Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
+    </p>
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="info">
+          <h3>THE WELL</h3>
+          <p>
+            Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
+          </p>
+          <a href="#" class="learn-more">Learn more</a>
+        </div>
+        <div class="services">
+          <h4>Exclusive Services:</h4>
+          <ul>
+            <li>Service 1</li>
+            <li>Service 2</li>
+            <li>Service 3</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3>YONGE / SHUTER</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero
+            et velit interdum, ac aliquet odio mattis.
+          </p>
+          <a href="#" class="learn-more">Learn more</a>
+        </div>
+        <div class="services">
+          <h4>Exclusive Services:</h4>
+          <ul>
+            <li>Service 1</li>
+            <li>Service 2</li>
+            <li>Service 3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Our Location",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image content"
+    },
+    {
+      "type": "image_picker",
+      "label": "Desktop Image",
+      "id": "desktop_image"
+    },
+    {
+      "type": "image_picker",
+      "label": "Mobile Image",
+      "id": "mobile_image"
+    },
+    {
+        "type": "range",
+        "id": "overlay_opacity",
+        "label": "Image ovrlay opacity",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Presale Live Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "label": "Sale Title",
+      "id": "sale_title"
+    },
+    {
+      "type": "textarea",
+      "label": "Sale Content",
+      "id": "sale_content"
+    },
+    {
+      "type": "header",
+      "content": "Banner Content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_btn",
+      "label": "Show button"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
+    }
+    
+  ],
+  "presets": [
+    {
+      "name": "Custom our location"
+    }
+  ]
+}
+{% endschema %}
