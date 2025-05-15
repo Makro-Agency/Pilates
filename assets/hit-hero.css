@@ -1,56 +1,144 @@
 .hit-hero .banner__box .banner__heading+* {
   margin-top: 15px;
 }
-.hit-hero .banner__box>*+.banner__buttons, .hit-hero .banner__box>*+* {
+
+.hit-hero .banner__box>*+.banner__buttons,
+.hit-hero .banner__box>*+* {
   margin-top: 40px;
 }
-.hit-hero-info{
+
+.hit-hero .banner__heading {
+  font-weight: 500;
+}
+
+.hit-hero-info .link:before {
+  height: 1.8px;
+  background: #FEE4B1;
+}
+
+.hit-hero .banner__box .banner__text p {
+  color: #FFF;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.hit-hero .button:after {
+  border-radius: 0;
+}
+
+.hit-hero .banner__buttons .button {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  padding: 16px 20px 12px 20px;
+}
+
+.hit-hero .banner__buttons .button:hover {
+  background-color: white;
+  color: black
+}
+
+.hit-hero-info {
   position: absolute;
   bottom: 60px;
-  right: 0;
+  right: 30px;
 }
-.hit-hero-info-row{
-  max-width: 285px;
+
+.hit-hero-info-row {
+  max-width: 346px;
   width: 100%;
   margin-left: auto;
 }
-.hit-hero-info .link{
-  margin-top: 30px;
+
+.hit-hero-info-row p {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
 }
-.hit-hero .banner--adapt.banner, 
-.hit-hero .banner--adapt .banner__content{
+
+.hit-hero-info .link {
+  margin-top: 30px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+.hit-hero-info .link span.icon-wrap {
+  transform: rotate(90deg);
+  margin-bottom: 10px;
+}
+
+.hit-hero .banner--adapt.banner,
+.hit-hero .banner--adapt .banner__content {
   max-height: 100vh;
   min-height: 600px;
 }
 
-@media screen and (min-width: 750px){
-  .hit-hero .banner--desktop-transparent .banner__box{
+@media screen and (min-width: 750px) {
+  .hit-hero .banner--desktop-transparent .banner__box {
     padding: 0;
     /* max-width: 800px !important; */
   }
 }
-@media screen and (max-width: 989px){
-  .hit-hero-info-row{
+
+@media screen and (max-width: 989px) {
+  .hit-hero-info-row {
     max-width: 170px;
   }
-  .hit-hero-info .text-wrap{
+
+  .hit-hero-info .text-wrap {
     font-size: 12px;
   }
-  .hit-hero-info{
+
+  .hit-hero-info {
     bottom: 40px;
   }
 }
-@media screen and (max-width: 749px){
-  .hit-hero .banner__box{
+
+@media screen and (max-width: 749px) {
+  .hit-hero .banner__box {
     padding: 60px 20px;
   }
-  .hit-hero .banner__content{
+
+  .hit-hero .banner__content {
     align-items: flex-start;
   }
-  .hit-hero .banner__box>*+.banner__buttons{
-    margin-top: 25px;
+
+  .hit-hero .banner__box>*+.banner__buttons {
+    margin-top: 40px;
   }
-  .hit-hero .banner__box>*+*{
+
+  .hit-hero .banner__box>*+* {
     margin-top: 20px;
+  }
+
+  .hit-hero .banner--adapt.banner,
+  .hit-hero .banner--adapt .banner__content {
+    max-height: 100vh;
+    min-height: 700px;
+  }
+
+  .hit-hero-info .link {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    letter-spacing: 0.24px;
+  }
+
+  .hit-hero .banner__box {
+    padding-top: 180px;
   }
 }
