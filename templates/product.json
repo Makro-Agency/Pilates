@@ -1,1 +1,92 @@
-{"sections":{"main":{"type":"main-product","blocks":{"title":{"type":"title","settings":{}},"price":{"type":"price","settings":{}},"quantity_selector":{"type":"quantity_selector","disabled":true,"settings":{}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"dropdown"}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"show_gift_card_recipient":false}},"f6f51016-dbe4-4b84-b3fd-abf11e96f863":{"type":"accordion","settings":{"title":"Shipping & Returns","content":"<p>We ship worldwide via Canada Post.<\/p><p>In Canada and the US, orders over $150 qualify for free shipping. Shipping rates for orders under $150, as well as international orders, are calculated at checkout based upon the weight of items ordered.<\/p><p>All pricing is shown and charged in Canadian dollars.<\/p><p>Customers are responsible for any relevant duties and taxes that some international destinations may charge.<\/p>"}}},"block_order":["title","price","quantity_selector","variant_picker","buy_buttons","f6f51016-dbe4-4b84-b3fd-abf11e96f863"],"settings":{"enable_sticky_info":true,"media_size":"large","media_fit":"cover","gallery_layout":"carousel","media_position":"left","image_zoom":"lightbox","hide_variants":false,"enable_video_looping":true,"top_padding_remove":true,"bottom_padding_remove":true}},"related-products":{"type":"related-products","settings":{"heading":"YOU MAY ALSO LIKE","heading_size":"h2","products_to_show":10,"color_scheme":"background-1","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"top_padding_remove":false,"bottom_padding_remove":false}}},"order":["main","related-products"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "qty-full": false,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "f6f51016-dbe4-4b84-b3fd-abf11e96f863": {
+          "type": "accordion",
+          "settings": {
+            "title": "Shipping & Returns",
+            "content": "<p>We ship worldwide via Canada Post.</p><p>In Canada and the US, orders over $150 qualify for free shipping. Shipping rates for orders under $150, as well as international orders, are calculated at checkout based upon the weight of items ordered.</p><p>All pricing is shown and charged in Canadian dollars.</p><p>Customers are responsible for any relevant duties and taxes that some international destinations may charge.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "quantity_selector",
+        "variant_picker",
+        "buy_buttons",
+        "f6f51016-dbe4-4b84-b3fd-abf11e96f863"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "large",
+        "media_fit": "cover",
+        "gallery_layout": "carousel",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": true,
+        "top_padding_remove": true,
+        "bottom_padding_remove": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "YOU MAY ALSO LIKE",
+        "heading_size": "h2",
+        "products_to_show": 10,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products"
+  ]
+}
