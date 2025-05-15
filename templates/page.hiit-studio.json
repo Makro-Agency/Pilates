@@ -33,9 +33,9 @@
           "settings": {
             "button_label_1": "BOOK CLASSES",
             "button_link_1": "shopify://pages/reserve",
-            "button_style": "solid",
+            "button_style": "outline",
             "applies_color_scheme": true,
-            "btn_text_clr": "#000000",
+            "btn_text_clr": "#ffffff",
             "btn_hvr_text_clr": "#000000",
             "btn_bg_clr": "#c79d5b",
             "btn_hvr_bg_clr": "#ffffff"
@@ -61,7 +61,7 @@
         "allow_transparent_header": true,
         "image": "shopify://shop_images/TheWell_HIIT_1.jpg",
         "img_mobile": "shopify://shop_images/hero-min_0ae1c4a7-01e4-485e-a82d-a80711f9b865.jpg",
-        "image_overlay_opacity": 50,
+        "image_overlay_opacity": 40,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
@@ -599,6 +599,49 @@
         "bottom_padding_remove": false
       }
     },
+    "hit-multicolumn": {
+      "type": "hit-multicolumn",
+      "blocks": {
+        "5f339c27-a2d8-4ed9-9d14-fd9c115bad81": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/YongeShuter_hiitstudio.jpg",
+            "title": "YONGE / SHUTER",
+            "text": "<p>Dive into a high-intensity interval training with Technogym Skillrun treadmills, Aqua boxing bags, and full dumbbell racks and resistance band stations.</p>",
+            "address": "225 Yonge Street, Toronto ON M5B 1N8",
+            "phone": "Studio capacity: 48 people",
+            "link_label": "see classes",
+            "link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48717"
+          }
+        },
+        "ab06944c-e56b-4aaa-962a-25c5bdcc7f46": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SweatandTonic_HIITalt.png",
+            "title": "FRONT / SPADINA (THE WELL)",
+            "text": "<p>Reach your potential with Technogym Skillrun treadmills, Aqua boxing bags, and premium FXD benches complete with dumbbells, kettlebells and slam balls.</p>",
+            "address": "486 Front Street West, Toronto ON M5V 0V2",
+            "phone": "Studio capacity: 60 people",
+            "link_label": "see classes",
+            "link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48750"
+          }
+        }
+      },
+      "block_order": [
+        "5f339c27-a2d8-4ed9-9d14-fd9c115bad81",
+        "ab06944c-e56b-4aaa-962a-25c5bdcc7f46"
+      ],
+      "settings": {
+        "title": "S&T HIIT STUDIOS",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
     "hit-banner-row": {
       "type": "hit-banner-row",
       "blocks": {
@@ -615,10 +658,10 @@
           "settings": {
             "button_label_1": "JOIN US",
             "button_link_1": "shopify://collections/all",
-            "button_style": "solid",
+            "button_style": "link",
             "applies_color_scheme": true,
-            "btn_text_clr": "#000000",
-            "btn_hvr_text_clr": "#000000",
+            "btn_text_clr": "#ffffff",
+            "btn_hvr_text_clr": "#ffffff",
             "btn_bg_clr": "#ffffff",
             "btn_hvr_bg_clr": "#c79d5b"
           }
@@ -626,6 +669,7 @@
         "486c1659-7943-4d3f-a46d-0d16c16aa358": {
           "type": "function",
           "settings": {
+            "enable_accord": true,
             "text_clr": "#ffffff",
             "svg_1": "<svg viewbox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"#ffffff\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <defs> <style>.cls-1{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style> </defs> <g id=\"ic-sport-dumbbell\"> <line class=\"cls-1\" x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"></line> <line class=\"cls-1\" x1=\"5\" y1=\"10\" x2=\"5\" y2=\"14\"></line> <line class=\"cls-1\" x1=\"8\" y1=\"8\" x2=\"8\" y2=\"16\"></line> <line class=\"cls-1\" x1=\"16\" y1=\"8\" x2=\"16\" y2=\"16\"></line> <line class=\"cls-1\" x1=\"19\" y1=\"10\" x2=\"19\" y2=\"14\"></line> </g> </g></svg>",
             "title_1": "IMPROVE PERFORMANCE",
@@ -725,51 +769,8 @@
         "background_style": "none",
         "button_label": "SEE THE FULL TEAM",
         "button_link": "#",
-        "color_scheme": "",
+        "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
         "columns_mobile": "2",
-        "top_padding_remove": false,
-        "bottom_padding_remove": false
-      }
-    },
-    "hit-multicolumn": {
-      "type": "hit-multicolumn",
-      "blocks": {
-        "5f339c27-a2d8-4ed9-9d14-fd9c115bad81": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/YongeShuter_hiitstudio.jpg",
-            "title": "YONGE / SHUTER",
-            "text": "<p>Dive into a high-intensity interval training with Technogym Skillrun treadmills, Aqua boxing bags, and full dumbbell racks and resistance band stations.</p>",
-            "address": "225 Yonge Street, Toronto ON M5B 1N8",
-            "phone": "Studio capacity: 48 people",
-            "link_label": "see classes",
-            "link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48717"
-          }
-        },
-        "ab06944c-e56b-4aaa-962a-25c5bdcc7f46": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/SweatandTonic_HIITalt.png",
-            "title": "FRONT / SPADINA (THE WELL)",
-            "text": "<p>Reach your potential with Technogym Skillrun treadmills, Aqua boxing bags, and premium FXD benches complete with dumbbells, kettlebells and slam balls.</p>",
-            "address": "486 Front Street West, Toronto ON M5V 0V2",
-            "phone": "Studio capacity: 60 people",
-            "link_label": "see classes",
-            "link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48750"
-          }
-        }
-      },
-      "block_order": [
-        "5f339c27-a2d8-4ed9-9d14-fd9c115bad81",
-        "ab06944c-e56b-4aaa-962a-25c5bdcc7f46"
-      ],
-      "settings": {
-        "title": "S&T HIIT STUDIOS",
-        "heading_size": "h2",
-        "image_ratio": "portrait",
-        "column_alignment": "left",
-        "background_style": "none",
-        "color_scheme": "",
         "top_padding_remove": false,
         "bottom_padding_remove": false
       }
@@ -803,9 +804,9 @@
     "hit-hero",
     "hit-banner-column",
     "hit-classes",
+    "hit-multicolumn",
     "hit-banner-row",
     "hit-team",
-    "hit-multicolumn",
     "event-contact"
   ]
 }

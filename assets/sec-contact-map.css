@@ -457,11 +457,12 @@
 .template--contact-us .sec-contact-form .contact .button:after {
   opacity: 0;
 }
-@media only screen and (max-width: 1440px){
-.template--contact-us .sec-contact-map .page-width {
- max-width: 100%;
- padding-right: 0;
-}
+
+@media only screen and (max-width: 1440px) {
+  .template--contact-us .sec-contact-map .page-width {
+    max-width: 100%;
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -483,9 +484,11 @@
   .secConMap .wrapper {
     flex-wrap: wrap;
   }
+
   .template--contact-us .sec-contact-map .page-width {
     padding-right: 3.2rem;
   }
+
   .secConMap .wrapper .content,
   .secConMap .wrapper .map-wrapper {
     width: 100%;
