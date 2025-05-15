@@ -12,43 +12,186 @@
     "global_home_hero_banner_BKhfkg": {
       "type": "global_home-hero-banner",
       "settings": {
-        "desktop_image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL.jpg",
-        "mobile_image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL.jpg",
-        "overlay_opacity": 100,
-        "title": "OPENING SPRING 2025",
-        "btn_text": "EXPLORE MEMBERSHIPS & CREDITS",
+        "desktop_image": "shopify://shop_images/slideshow-1.png",
+        "mobile_image": "shopify://shop_images/slideshow-mob-1.png",
+        "overlay_opacity": 20,
+        "title": "Welcome to the movement",
+        "btn_text": "Join us",
         "btn_url": "shopify://pages/memberships-credits",
-        "newsletter": true,
+        "newsletter": false,
         "newsletter_text": "SIGN UP TO GET NOTIFIED"
       }
     },
-    "global_hero_banner_PFid6R": {
-      "type": "global_hero-banner",
+    "global_linklist_gKEx6Q": {
+      "type": "global_linklist",
+      "blocks": {
+        "links_6yzb4R": {
+          "type": "links",
+          "settings": {
+            "link_lable": "The studio / classes",
+            "section_id": "studio-classes"
+          }
+        },
+        "links_wgtLej": {
+          "type": "links",
+          "settings": {
+            "link_lable": "Our team",
+            "section_id": "membership-credits"
+          }
+        },
+        "links_YWPPcV": {
+          "type": "links",
+          "settings": {
+            "link_lable": "Locationa",
+            "section_id": "experience"
+          }
+        },
+        "links_yeAjBV": {
+          "type": "links",
+          "settings": {
+            "link_lable": "About",
+            "section_id": "FAQ"
+          }
+        }
+      },
+      "block_order": [
+        "links_6yzb4R",
+        "links_wgtLej",
+        "links_YWPPcV",
+        "links_yeAjBV"
+      ],
       "settings": {
-        "desktop_image": "shopify://shop_images/Presale.png",
-        "mobile_image": "shopify://shop_images/Presale-mobile.png",
-        "overlay_opacity": 58,
-        "countdown_title": "Pre-opening sale: April 17",
-        "countdown_content": "Introducing REFORMD by Sweat and Tonic - the largest capacity Lagree® studio in the world and the next step in our mission to bring the best of boutique fitness & wellness to Toronto.",
-        "sale_title": "WELCOME TO THE MOVEMENT",
-        "sale_content": "The World's Highest-Capacity Lagree Method Studio at The Well™ Not Pilates. Not reformer. This is Lagree® - reimagined through the signature Sweat and Tonic experience.",
-        "show_btn": true,
-        "btn_text": "SEE PRICING DETAILS",
-        "btn_url": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750",
-        "show_hide_date": true,
-        "presale_countdown_title": "",
-        "countdown_end_date": "2025-04-17 09:00 AM",
-        "show_date_pre_on": true,
-        "presale_on_title": "Presale Ends",
-        "sale_end_date": "2025-04-12 09:00 AM",
-        "show_btn_pre": true,
-        "btn_text_pre": "Purchase a credit pack at S&T",
-        "btn_url_pre": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750"
+        "title": "THE BEST OF BOUTIQUE FITNESS & WELLNESS",
+        "content": "The Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts.⁠ Step inside Reformd for a Lagree experience unlike any other."
+      }
+    },
+    "global_sudio_classes_qkDydH": {
+      "type": "global_sudio-classes",
+      "settings": {
+        "section_id": "studio-classes",
+        "title": "The studio",
+        "description": "30 Mega Pro Megaformers, state-of-the-art AV, custom chromotherapy lighting, heated flooring, and world-class programming - all expertly crafted and delivered in a signature Sweat and Tonic experience."
+      }
+    },
+    "slideshow_ghX64P": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_ciinLM": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/slideshow-3.png",
+            "mobile_image": "shopify://shop_images/slideshow-mob-3.png",
+            "heading": "MEGAFORMER STUDIO",
+            "heading_size": "h2",
+            "subheading": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "button_label": "Explore Studio",
+            "link": "",
+            "image_overlay_opacity": 0,
+            "color_scheme": "inverse"
+          }
+        },
+        "slide_DeQiWy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/accordian-desktop.png",
+            "mobile_image": "shopify://shop_images/accordian-desktop.png",
+            "heading": "RECEPTION",
+            "heading_size": "h2",
+            "subheading": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "button_label": "Explore Studio",
+            "link": "",
+            "image_overlay_opacity": 0,
+            "color_scheme": "inverse"
+          }
+        },
+        "slide_PrVpCJ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/slideshow-2.png",
+            "mobile_image": "shopify://shop_images/slideshow-2.png",
+            "heading": "WELCOME LOUNGE",
+            "heading_size": "h2",
+            "subheading": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "button_label": "Explore Studio",
+            "link": "",
+            "image_overlay_opacity": 0,
+            "color_scheme": "inverse"
+          }
+        }
+      },
+      "block_order": [
+        "slide_ciinLM",
+        "slide_DeQiWy",
+        "slide_PrVpCJ"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "instructors_team_gF9wd7": {
+      "type": "instructors-team",
+      "blocks": {
+        "team_wUWXPL": {
+          "type": "team",
+          "settings": {
+            "instructor_image": "shopify://shop_images/Frame_19.png",
+            "instructor_title": "Brendan Bornstein",
+            "profile_url": "#"
+          }
+        },
+        "team_HqB3ga": {
+          "type": "team",
+          "settings": {
+            "instructor_image": "shopify://shop_images/Frame_15.png",
+            "instructor_title": "David Kim-MacKinnon",
+            "profile_url": "#"
+          }
+        },
+        "team_bRe4jx": {
+          "type": "team",
+          "settings": {
+            "instructor_image": "shopify://shop_images/Frame_17.png",
+            "instructor_title": "Blake Copeland",
+            "profile_url": "#"
+          }
+        },
+        "team_4HJ9Kd": {
+          "type": "team",
+          "settings": {
+            "instructor_image": "shopify://shop_images/Frame_18.png",
+            "instructor_title": "Brendan Bornstein",
+            "profile_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "team_wUWXPL",
+        "team_HqB3ga",
+        "team_bRe4jx",
+        "team_4HJ9Kd"
+      ],
+      "name": "Instructors Team",
+      "settings": {
+        "background_image": "shopify://shop_images/Frame_6418.png",
+        "heading": "Instructors <br> Who Lead the Way",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at justo a elit convallis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec non magna ac ante tincidunt sollicitudin.",
+        "button_text": "SEE THE FULL Team",
+        "button_url": "#"
       }
     }
   },
   "order": [
     "global_home_hero_banner_BKhfkg",
-    "global_hero_banner_PFid6R"
+    "global_linklist_gKEx6Q",
+    "global_sudio_classes_qkDydH",
+    "slideshow_ghX64P",
+    "instructors_team_gF9wd7"
   ]
 }

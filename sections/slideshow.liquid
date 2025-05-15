@@ -186,25 +186,27 @@
                 {{ block.settings.heading }}
               </h2>
             {%- endif -%}
-            {%- if block.settings.subheading != blank -%}
-              <div class="banner__text rte" {{ block.shopify_attributes }}>
-                <p>{{ block.settings.subheading }}</p>
-              </div>
-            {%- endif -%}
-            {%- if block.settings.button_label != blank -%}
-              <div class="banner__buttons">
-                <a
-                  {% if block.settings.link %}
-                    href="{{ block.settings.link }}"
-                  {% else %}
-                    role="link" aria-disabled="true"
-                  {% endif %}
-                  class="button {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}"
-                >
-                  {{- block.settings.button_label | escape -}}
-                </a>
-              </div>
-            {%- endif -%}
+            <div class="content-btn-wrapper">
+              {%- if block.settings.subheading != blank -%}
+                <div class="banner__text rte" {{ block.shopify_attributes }}>
+                  <p>{{ block.settings.subheading }}</p>
+                </div>
+              {%- endif -%}
+              {%- if block.settings.button_label != blank -%}
+                <div class="banner__buttons">
+                  <a
+                    {% if block.settings.link %}
+                      href="{{ block.settings.link }}"
+                    {% else %}
+                      role="link" aria-disabled="true"
+                    {% endif %}
+                    class="button {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}"
+                  >
+                    {{- block.settings.button_label | escape -}}
+                  </a>
+                </div>
+              {%- endif -%}
+            </div>
           </div>
         </div>
       </div>
@@ -458,7 +460,7 @@
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
         },
-        /* {
+        {
           "type": "inline_richtext",
           "id": "subheading",
           "default": "Tell your brand's story through images",
@@ -476,12 +478,12 @@
           "id": "link",
           "label": "t:sections.slideshow.blocks.slide.settings.link.label"
         },
-        {
+        /*{
           "type": "checkbox",
           "id": "button_style_secondary",
           "label": "t:sections.slideshow.blocks.slide.settings.secondary_style.label",
           "default": false
-        },*/
+        },
         {
           "type": "select",
           "id": "box_align",
@@ -552,7 +554,7 @@
           ],
           "default": "center",
           "label": "t:sections.slideshow.blocks.slide.settings.text_alignment.label"
-        },
+        },*/
         {
           "type": "range",
           "id": "image_overlay_opacity",
@@ -569,7 +571,7 @@
           "label": "t:sections.all.colors.label",
           "default": "background-1"
         },
-        {
+        /* {
           "type": "header",
           "content": "t:sections.slideshow.settings.mobile.content"
         },
@@ -592,7 +594,7 @@
           ],
           "default": "center",
           "label": "t:sections.slideshow.blocks.slide.settings.text_alignment_mobile.label"
-        }
+        }*/
       ]
     }
   ],
