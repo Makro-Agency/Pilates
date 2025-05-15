@@ -1645,7 +1645,14 @@ a.product__text {
 .qty-wrap.full-block .quantity { width:100%; }
 .qty-wrap.full-block .product-form__submit { width:100%; }
 .qty-wrap .product-form__submit {
-    border-radius: 0;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .shopify-payment-button .paypal-button.paypal-button-border-radius { border-radius: 0 !important; }
 more-payment-options-link {
