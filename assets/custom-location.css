@@ -1,0 +1,128 @@
+  /* SECTION WRAPPER */
+  .custom-location {
+    background: linear-gradient(135deg, #0e3b34 0%, #000000 100%);
+    color: #fff;
+    padding: 132px 0px;
+  }
+
+  .custom-location .wrapper {
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  .custom-location h2 {
+font-family: ITC Avant Garde Gothic Std;
+font-weight: 500;
+font-size: 48px;
+line-height: 100%;
+letter-spacing: 0;
+text-align: center;
+text-transform: uppercase;
+color:#ffffff; 
+margin-bottom:40px;
+margin-top:0; 
+  }
+  .custom-location .description {
+  font-family: New Frank;
+  font-weight: 300;
+  font-size: 20px;
+line-height: 32px;
+letter-spacing: 0%;
+text-align: center;
+color:#fff; 
+margin:0 auto; 
+max-width:1075px; 
+  }
+
+  /* CARDS GRID */
+  .custom-location .cards {
+    display: flex;
+    gap: 24px;
+
+    margin-top:60px; 
+  }
+
+  .custom-location .card {
+
+    flex: 1 1 calc(50% - 10px);
+background: rgba(255, 255, 255, 0.02);
+box-shadow: -5px -5px 60px 0px rgba(255, 255, 255, 0.02) inset;
+backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+
+  }
+
+  /* LEFT SIDE (text + link) */
+  .custom-location .card .info {
+    max-width: 60%;
+  }
+  .custom-location .card .info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+  .custom-location .card .info p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    opacity: 0.85;
+  }
+  .custom-location .card .info .learn-more {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  .custom-location .card .info .learn-more::after {
+    content: " →";
+  }
+
+  /* RIGHT SIDE (services list) */
+  .custom-location .card .services {
+    text-align: right;
+  }
+  .custom-location .card .services h4 {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    opacity: 0.8;
+  }
+  .custom-location .card .services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .custom-location .card .services li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+  }
+  .custom-location .card .services li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #8cd790;
+  }
+
+  @media (max-width: 800px) {
+    .custom-location .cards {
+      flex-direction: column;
+    }
+    .custom-location .card {
+      flex-direction: column;
+      text-align: center;
+    }
+    .custom-location .card .info,
+    .custom-location .card .services {
+      max-width: 100%;
+      text-align: center;
+    }
+    .custom-location .card .services {
+      margin-top: 24px;
+    }
+  }
