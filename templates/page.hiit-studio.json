@@ -61,7 +61,7 @@
         "allow_transparent_header": true,
         "image": "shopify://shop_images/TheWell_HIIT_1.jpg",
         "img_mobile": "shopify://shop_images/hero-min_0ae1c4a7-01e4-485e-a82d-a80711f9b865.jpg",
-        "image_overlay_opacity": 40,
+        "image_overlay_opacity": 60,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
