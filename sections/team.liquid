@@ -1,4 +1,5 @@
 {{ 'team.css' | asset_url | stylesheet_tag: preload: true }}
+{{ 'custom-team.css' | asset_url | stylesheet_tag: preload: true }}
 {%- assign placeholderImg = 'https://cdn.shopify.com/s/files/1/0277/8280/7635/files/user-pacleholder.png?v=1701148515' -%}
 
 {%- capture sizes -%}
@@ -28,11 +29,12 @@
               {{ 'image' | placeholder_svg_tag }}
             </div>
           {%- endif -%}
+          <div class="team-content">
           {%- if block.settings.name != blank -%}
             <h3 class="team-name">
               {{ block.settings.name }} 
               {% if block.settings.url != blank %}
-                <a href="{{ block.settings.url }}">{% render 'icon-right-arrow' %}</a>
+                <a href="{{ block.settings.url }}">{% render 'custom-icon-right-arrow' %}</a>
               {% endif %}
             </h3>
             {%- endif -%}
@@ -40,6 +42,7 @@
             <div class="team-info">{{ block.settings.sp_tag }}</div>
             {%- assign totalSpecialtags = totalSpecialtags | append: block.settings.sp_tag | append: ', ' -%}
           {%- endif -%}
+          </div>
         </div>
       </div>
     {%- endif -%}
@@ -57,6 +60,7 @@
 
   {%- if teamData != blank -%}
     <div class="team-list-box">
+    
       {%- if filterdTags[0] != blank -%}
         <div class="tabs-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-team-filter-btn>
           <button class="active btn" data-tags="all">Show All</button>
@@ -66,6 +70,14 @@
         </div>
       {%- endif -%}
       <div id="parent" class="team-list{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-profile>
+       <div class="new0"></div>
+      <div class="new1"></div>
+     <div class="new2"></div>
+      <div class="new3"></div>
+       <div class="new4"></div>
+       <div class="new5"></div>
+        <div class="new6"></div>
+         <div class="new7"></div>
         {{- teamData -}}
       </div>
     </div>
