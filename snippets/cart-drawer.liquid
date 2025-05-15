@@ -69,11 +69,17 @@
           {% render 'icon-close' %}
         </button>
       </div>
+
       <cart-drawer-items
         {% if cart == empty %}
           class=" is-empty"
         {% endif %}
       >
+        <div class="free-shipping-block">
+          <div class="text">Congrats! You've unlocked FREE SHIPPING!</div>
+          <div class="progress-bar"><span></span></div>
+        </div>
+
         <form
           action="{{ routes.cart_url }}"
           id="CartDrawer-Form"
