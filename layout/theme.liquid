@@ -138,7 +138,7 @@
     
   </head>
   {% assign has_page_font = false %}
-  {% if template.name == 'page' %}
+  {% if template.name == 'page' or template.name == 'collection'  %}
     {% assign has_page_font = true %}
   {% endif %}
   <body class="gradient pp--{{ has_page_font }} {% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %} template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} template--{{ template.suffix }}">
@@ -160,7 +160,7 @@
     {% sections 'header-group' %}
     {%- liquid            
       assign has_drakness = false
-      assign bright_temp = 'index,pre-sale-landing,faq,terms-conditions,product,team,cart,press,about-us,404' | split:','
+      assign bright_temp = 'index,pre-sale-landing,faq,terms-conditions,product,team,cart,press,about-us,404,collection' | split:','
       for bt in bright_temp
         if bt == "page"
           if template.suffix == blank
