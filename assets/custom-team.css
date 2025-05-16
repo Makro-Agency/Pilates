@@ -1,5 +1,4 @@
 .team-main-wrapper .tabs-wrapper{ display:none; }
-.team-main-wrapper{ margin-top:0px; }
 .team-main-wrapper .sec-head{ margin-bottom:50px; }
 .team-main-wrapper .sec-head{ padding-top:80px; }
 .dark--true .sec-head .sec-title{
@@ -11,6 +10,7 @@ font-weight: 500;
 line-height: 100%; 
 text-transform: uppercase;
 }
+.team-main-wrapper{ margin-top:0px; }
 .custom-header.dark{ min-height:96px !important; max-height:96px !Important;  }
 /* .team-main-wrapper{
 height: 4529px;
