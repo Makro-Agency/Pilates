@@ -1,128 +1,284 @@
-  /* SECTION WRAPPER */
-  .custom-location {
-    background: linear-gradient(135deg, #0e3b34 0%, #000000 100%);
-    color: #fff;
-    padding: 132px 0px;
-  }
+.custom-location {
+	color: #fff;
+	padding: 132px 0px;
+}
 
-  .custom-location .wrapper {
-    margin: 0 auto;
-  }
+.custom-location .wrapper {
+	margin: 0 auto;
+}
 
-  /* HEADER */
-  .custom-location h2 {
-font-family: ITC Avant Garde Gothic Std;
-font-weight: 500;
-font-size: 48px;
-line-height: 100%;
-letter-spacing: 0;
-text-align: center;
-text-transform: uppercase;
-color:#ffffff; 
-margin-bottom:40px;
-margin-top:0; 
-  }
-  .custom-location .description {
-  font-family: New Frank;
-  font-weight: 300;
-  font-size: 20px;
-line-height: 32px;
-letter-spacing: 0%;
-text-align: center;
-color:#fff; 
-margin:0 auto; 
-max-width:1075px; 
-  }
+.custom-location h2 {
+	font-family: ITC Avant Garde Gothic Std;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 100%;
+	letter-spacing: 0;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-bottom: 40px;
+	margin-top: 0;
+}
 
-  /* CARDS GRID */
-  .custom-location .cards {
-    display: flex;
-    gap: 24px;
+.custom-location .description {
+	font-family: New Frank;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 32px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: #fff;
+	margin: 0 auto;
+	max-width: 1075px;
+}
 
-    margin-top:60px; 
-  }
+.custom-location .cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+	margin-top: 60px;
+}
 
-  .custom-location .card {
+.custom-location .card {
+	flex: 1 1 calc(50% - 10px);
+	background: rgba(255, 255, 255, 0.02);
+	box-shadow: -5px -5px 60px 0px rgba(255, 255, 255, 0.02) inset;
+	backdrop-filter: blur(4px);
+	display: flex;
+	gap: 40px;
+	padding: 60px 40px;
 
-    flex: 1 1 calc(50% - 10px);
-background: rgba(255, 255, 255, 0.02);
-box-shadow: -5px -5px 60px 0px rgba(255, 255, 255, 0.02) inset;
-backdrop-filter: blur(4px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 40px;
+}
 
-  }
+.custom-location .card .info {
+	max-width: 67.8%;
+	padding-right: 40px;
+	border-right: 1px solid rgba(102, 102, 102, 0.6);
+}
 
-  /* LEFT SIDE (text + link) */
-  .custom-location .card .info {
-    max-width: 60%;
-  }
-  .custom-location .card .info h3 {
-    font-size: 1.5rem;
-    margin-bottom: 12px;
-  }
-  .custom-location .card .info p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    opacity: 0.85;
-  }
-  .custom-location .card .info .learn-more {
-    font-size: 0.9rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
-  }
-  .custom-location .card .info .learn-more::after {
-    content: " →";
-  }
+.custom-location .card .info h3 {
+	color: var(--White, #FFF);
+	font-family: "ITC Avant Garde Gothic Std";
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 100%;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
 
-  /* RIGHT SIDE (services list) */
-  .custom-location .card .services {
-    text-align: right;
-  }
-  .custom-location .card .services h4 {
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-    opacity: 0.8;
-  }
-  .custom-location .card .services ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .custom-location .card .services li {
-    position: relative;
-    padding-left: 24px;
-    margin-bottom: 8px;
-    font-size: 0.9rem;
-  }
-  .custom-location .card .services li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #8cd790;
-  }
+.custom-location .card .info p {
+	color: var(--White, #FFF);
+	font-family: "New Frank";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 24px;
+	margin-top: 0;
+	margin-bottom: 50px;
+}
 
-  @media (max-width: 800px) {
-    .custom-location .cards {
-      flex-direction: column;
-    }
-    .custom-location .card {
-      flex-direction: column;
-      text-align: center;
-    }
-    .custom-location .card .info,
-    .custom-location .card .services {
-      max-width: 100%;
-      text-align: center;
-    }
-    .custom-location .card .services {
-      margin-top: 24px;
-    }
-  }
+.custom-location .card .info .learn-more {
+	color: var(--White, #FFF);
+	font-family: "ITC Avant Garde Gothic Std";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 100%;
+	letter-spacing: 0.32px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	display: flex;
+	gap: 8px;
+}
+
+.custom-location .card .services h4 {
+	color: var(--White, #FFF);
+	font-family: "ITC Avant Garde Gothic Std";
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 100%;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.custom-location .card .services ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.custom-location .card .services li {
+	position: relative;
+	padding-left: 0;
+	display: flex;
+	margin-bottom: 10px;
+	color: var(--White, #FFF);
+	font-family: "New Frank";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 24px;
+}
+
+.custom-location .card .services li span {
+	margin-right: 12px;
+}
+
+.custom-location .wrapper {
+	position: relative;
+}
+
+.custom-location .wrapper:before {
+	content: '';
+	position: absolute;
+	width: 68.7%;
+	height: 52.9%;
+	left: -8.2%;
+	top: -17%;
+	background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%);
+	opacity: 0.32;
+	filter: blur(250px);
+	transform: rotate(-115.27deg);
+	z-index: 0;
+	pointer-events: none;
+}
+
+@media (max-width: 800px) {
+	.custom-location .cards {
+		flex-direction: column;
+	}
+
+	.custom-location .card {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.custom-location .card .info,
+	.custom-location .card .services {
+		max-width: 100%;
+	}
+
+	.custom-location .card .services {
+		margin-top: 24px;
+	}
+}
+
+@media screen and (max-width:768px) {
+
+	.custom-location {
+		padding: 80px 0;
+	}
+
+	.custom-location h2 {
+		color: var(--White, #FFF);
+		text-align: center;
+		font-family: "ITC Avant Garde Gothic Std";
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 100%;
+		/* 36px */
+		text-transform: uppercase;
+	}
+
+	.custom-location .card .info p {
+		margin-bottom: 40px;
+	}
+
+	.custom-location .card .info h3 {
+		color: var(--White, #FFF);
+		font-family: "ITC Avant Garde Gothic Std";
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 100%;
+		text-transform: uppercase;
+	}
+
+}
+
+@media screen and (max-width:1199px) {
+	.custom-location .card .info {
+		border-right: none;
+	}
+
+	.custom-location .card {
+		gap: 20px;
+	}
+
+	.custom-location .card .info {
+		padding-right: 20px;
+	}
+}
+
+@media screen and (min-width:1024px) {
+	.custom-location .learn-more-mobile {
+		display: none !Important;
+	}
+}
+
+.learn-more-mobile {
+	color: var(--White, #FFF);
+	font-family: ITC Avant Garde Gothic Std;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 100%;
+	letter-spacing: .32px;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: flex;
+	gap: 8px;
+	margin-top: 40px;
+	color: #fff;
+}
+
+@media screen and (max-width:1023px) {
+
+	.custom-location .card .info {
+		border-bottom: 1px solid rgba(102, 102, 102, .6);
+	}
+
+	.custom-location .card .info .learn-more {
+		display: none;
+	}
+
+	.custom-location .card .info {
+		border-right: none;
+		border-bottom: 1px solid rgba(102, 102, 102, .6);
+	}
+
+	.custom-location .card {
+		border-radius: 2px;
+		border: 1px solid rgba(255, 255, 255, 0.02);
+		background: rgba(255, 255, 255, 0.02);
+		box-shadow: -5px -5px 60px 0px rgba(255, 255, 255, 0.02) inset;
+		backdrop-filter: blur(4px);
+	}
+
+
+	.custom-location .card .services h4 {
+		text-align: left;
+	}
+
+	.custom-location .card .info {
+		text-align: left;
+	}
+
+	.custom-location .card {
+		padding: 40px 20px;
+	}
+
+	.custom-location .wrapper-inner {
+		padding: 0 20px;
+	}
+
+	.custom-location .cards {
+		grid-template-columns: 1fr;
+	}
+}
