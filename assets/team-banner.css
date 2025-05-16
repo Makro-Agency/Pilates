@@ -35,7 +35,6 @@ text-transform: uppercase;  }
 .team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify { display:flex; align-items:center; color: #ffffff; 
   font-family: 'ITC Avant Garde Gothic Std';
 font-style: normal;
-/* font-weight: 600; */
 font-weight:500; 
 font-size: 12px;
 line-height: 100%;
