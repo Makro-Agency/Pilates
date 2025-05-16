@@ -42,7 +42,9 @@
                   {% if section.settings.btn_url != blank  %}
                     <div class="banner-button">
                   {% endif %}
+                  {% if section.settings.btn_text != blank  %}
                       <a href="{{ section.settings.btn_url }}" class="cta">{{ section.settings.btn_text }}{% render 'icon-left-arrow' %}</a>
+                  {% endif %}
                     </div>
                   {% endif %}
               </div>
