@@ -1,1 +1,830 @@
-{"sections":{"hit-hero":{"type":"hit-hero","blocks":{"3d295c9e-10b8-4397-b3c8-b08733efc0db":{"type":"text","settings":{"text":"WELCOME TO THE SWEAT FAM","text_style":"caption-with-letter-spacing","text_clr":"#ffffff"}},"89ede07a-229a-4fd5-8064-eb065090ad93":{"type":"heading","settings":{"heading":"LET THE SWEAT BEGIN","heading_size":"h1","text_clr":"#ffffff"}},"943f29ad-f020-4899-974b-20f586c4dd6a":{"type":"buttons","settings":{"button_label_1":"BOOK CLASSES","button_link_1":"https:\/\/www.sweatandtonic.com\/reserve","button_style":"solid","applies_color_scheme":true,"btn_text_clr":"#000000","btn_hvr_text_clr":"#000000","btn_bg_clr":"#FEE4B1","btn_hvr_bg_clr":"#ffffff"}},"1fe44382-9435-48ac-95f6-bf885137b352":{"type":"description","settings":{"desc":"<p>Get ready to sweat, recover, and connect in a one-of-a-kind community.<\/p>","anchor_label":"START YOUR JOURNEY","anchor_link":"","text_clr":"#ffffff"}}},"block_order":["3d295c9e-10b8-4397-b3c8-b08733efc0db","89ede07a-229a-4fd5-8064-eb065090ad93","943f29ad-f020-4899-974b-20f586c4dd6a","1fe44382-9435-48ac-95f6-bf885137b352"],"settings":{"allow_transparent_header":true,"image":"shopify:\/\/shop_images\/SweatandTonic_FirstTimer.png","img_mobile":"shopify:\/\/shop_images\/SweatandTonic_FirstTimer.png","image_overlay_opacity":70,"image_height":"adapt","desktop_content_position":"middle-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"accent-1","image_behavior":"none","mobile_content_alignment":"center"}},"hit-banner-column":{"type":"hit-banner-column","blocks":{"2fc049c5-7369-409d-b14a-69872fa3a417":{"type":"heading","settings":{"heading":"HOT TIPS","heading_size":"h1","text_clr":"#ffffff"}},"d57f9c4c-bb8d-4416-994b-eb28dc4afba4":{"type":"features","settings":{"text_clr":"#ffffff","svg_1":"<svg fill=\"#ffffff\" viewbox=\"-11 0 32 32\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"><\/g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/g><g id=\"SVGRepo_iconCarrier\"> <title>one<\/title> <path d=\"M1.906 2.625h5.469v22.969h-2.281v-20.75h-3.188v-2.219z\"><\/path> <\/g><\/svg>","title_1":"DOWNLOAD OUR APP","desc_1":"<p>Sweat easy. Book classes, pre-order your post-sweat smoothie, and manage your reservations, communication settings and account, all in one place.<\/p><p><a href=\"https:\/\/apps.apple.com\/ca\/app\/sweat-tonic\/id1610642208\" target=\"_blank\" title=\"https:\/\/apps.apple.com\/ca\/app\/sweat-tonic\/id1610642208\"><strong>Download from App Store<\/strong><\/a><br\/><a href=\"https:\/\/play.google.com\/store\/apps\/details?id=com.marianatek.sweatandtonic&hl=en_CA&pli=1\" target=\"_blank\" title=\"https:\/\/play.google.com\/store\/apps\/details?id=com.marianatek.sweatandtonic&hl=en_CA&pli=1\"><strong>Download from Google Play<\/strong><\/a><\/p>","svg_2":"<svg fill=\"#ffffff\" viewbox=\"-7 0 32 32\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"><\/g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/g><g id=\"SVGRepo_iconCarrier\"> <title>two<\/title> <path d=\"M14.5 13.531l-8.344 9.813h10.156v2.25h-15.031l7.969-9.344s3.656-4.219 4-4.75 0.594-1.469 0.594-2.344c0-2.719-2.188-4.938-4.938-4.938-2.719 0-4.938 2.219-4.938 4.938 0 0.813 0.188 1.531 0.531 2.219h-2.313c-0.25-0.719-0.406-1.406-0.406-2.219 0-3.906 3.219-7.125 7.125-7.125 3.656 0 6.656 2.75 7.063 6.313 0.031 0.25 0.031 0.563 0.031 0.813 0 1.656-0.563 3.188-1.5 4.375z\"><\/path> <\/g><\/svg>","title_2":"SUBSCRIBE TO OUR NEWSLETTER","desc_2":"<p>Be the first to know about exclusive offers and events, and stay up-to-date on the latest news and important studio updates. You can sign up for communications in your account, or <a href=\"https:\/\/sweatandtonicyongeandshuter.brandbot.io\/forms\/newsletter-sign-up-4GwO8q.html\" target=\"_blank\" title=\"https:\/\/sweatandtonicyongeandshuter.brandbot.io\/forms\/newsletter-sign-up-4GwO8q.html\"><strong>subscribe here<\/strong><\/a>.<\/p>","svg_3":"<svg fill=\"#ffffff\" viewbox=\"-7 0 32 32\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"><\/g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/g><g id=\"SVGRepo_iconCarrier\"> <title>three<\/title> <path d=\"M4.875 8h-2.25c0.063-3.281 2.781-6 6.094-6s6.031 2.719 6.031 6.094c0 1.969-0.969 3.719-2.438 4.813 2.094 1.25 3.5 3.531 3.5 6.125 0 3.938-3.188 7.094-7.094 7.094-3.844 0-6.969-3-7.125-6.781h2.25c0.156 2.531 2.281 4.594 4.875 4.594 2.688 0 4.844-2.219 4.844-4.906s-2.156-4.875-4.844-4.875v-2.219c2.125 0 3.813-1.719 3.813-3.844s-1.688-3.844-3.813-3.844-3.813 1.656-3.844 3.75z\"><\/path> <\/g><\/svg>","title_3":"UPDATE YOUR PROFILE","desc_3":"<p>Celebrate your birthday with us! Complete your profile and keep an eye out for a special treat on your special day (Unlimited members, 9 to 5 Sweat members, and S&T credit users only).<\/p>","svg_4":"<svg fill=\"#ffffff\" viewbox=\"-7 0 32 32\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"><\/g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/g><g id=\"SVGRepo_iconCarrier\"> <title>four<\/title> <path d=\"M13.719 1.375v15.438h2.781v2.25h-2.781v6.531h-2.219v-6.531h-10.219zM5.594 16.813h5.906v-8.344z\"><\/path> <\/g><\/svg>","title_4":"ARRIVE EARLY + STAY IN CLASS","desc_4":"<p>Classes begin on time, and studio doors will remain open for 2 mins. Out of respect for the instructors and the class experience for all guests, latecomers are not permitted once doors close. Stay in class until the end - magic happens when we move together!<\/p>"}}},"block_order":["2fc049c5-7369-409d-b14a-69872fa3a417","d57f9c4c-bb8d-4416-994b-eb28dc4afba4"],"settings":{"allow_transparent_header":false,"image_overlay_opacity":100,"image_height":"adapt","show_text_box":false,"desktop_content_alignment":"left","color_scheme":"inverse","image_behavior":"none","mobile_content_alignment":"left","section_title_mobtop":true}},"hit-classes":{"type":"hit-classes","blocks":{"4fb95e56-cda7-408b-a55c-63a88396079d":{"type":"hit_box","settings":{"heading":"BOOTY HIIT","int_heading":"INTENSITY","intensity_level":3,"dur_heading":"DURATION","duration":"50 min","skl_heading":"STUDIO","skillLevel":"HIIT","detail":"<p>Hello, leg day! Grow, shape, and strengthen one of the body’s biggest assets by sweating it out on the treadmill, weights, and resistance bands. Focus on form and technique to maximize every move.<\/p>","button_text_1":"SEE CLASS SCHEDULE","button_url_1":"shopify:\/\/pages\/reserve","button_text_2":"OUR HIIT STUDIO","button_url_2":"shopify:\/\/pages\/hiit-studio"}},"hit_box_YLXKDb":{"type":"hit_box","settings":{"heading":"HOT HIIT PILATES","int_heading":"INTENSITY","intensity_level":3,"dur_heading":"DURATION","duration":"50 min","skl_heading":"STUDIO","skillLevel":"Yoga","detail":"<p>We bring HIIT training into the heat of the hot yoga studio to turn up the burn in this S&T favourite. Expect short bursts of high intensity exercises that focus on stabilizing, strengthening, and toning the whole body - all while moving (and sweating) to the beat.<\/p>","button_text_1":"SEE CLASS SCHEDULE","button_url_1":"shopify:\/\/pages\/reserve","button_text_2":"OUR YOGA STUDIO","button_url_2":"shopify:\/\/pages\/yoga-studio"}},"a716f6c2-86fa-42e7-8de5-71a119a3d638":{"type":"hit_box","settings":{"heading":"MAT PILATES","int_heading":"INTENSITY","intensity_level":2,"dur_heading":"DURATION","duration":"50 min","skl_heading":"STUDIO","skillLevel":"Yoga","detail":"<p>Controlled, mindful movements tone and tighten in this full-body, breath-focused workout that combines core, endurance, balance, mobility, and strength.<\/p>","button_text_1":"SEE CLASS SCHEDULE","button_url_1":"shopify:\/\/pages\/reserve","button_text_2":"OUR YOGA STUDIO","button_url_2":"shopify:\/\/pages\/yoga-studio"}},"5afe78e2-53aa-47c6-96e8-d83d44d51028":{"type":"hit_box","settings":{"heading":"BEAT RIDE","int_heading":"INTENSITY","intensity_level":2,"dur_heading":"DURATION","duration":"45 min","skl_heading":"STUDIO","skillLevel":"Ride","detail":"<p>Lose yourself in the music & lights and let the beat be your guide as you work up a sweat in this high-energy, full-body ride.<\/p>","button_text_1":"SEE CLASS SCHEDULE","button_url_1":"shopify:\/\/pages\/reserve","button_text_2":"OUR RIDE STUDIO","button_url_2":"shopify:\/\/pages\/ride-studio"}},"hit_box_AJdNM7":{"type":"hit_box","settings":{"heading":"FLOW & RESTORE","int_heading":"INTENSITY","intensity_level":1,"dur_heading":"DURATION","duration":"50 min","skl_heading":"STUDIO","skillLevel":"Yoga","detail":"<p>Flow it out and then calm it all down in this 50\/50 class of Vinyasa and Restorative Yoga. We'll start by waking up the body, activating muscles, and working up a sweat, and then rinse it all out with stretching and meditation. You'll leave feeling strong, centered, and restored.<\/p>","button_text_1":"SEE CLASS SCHEDULE","button_url_1":"shopify:\/\/pages\/reserve","button_text_2":"OUR YOGA STUDIO","button_url_2":"shopify:\/\/pages\/yoga-studio"}},"704e6416-7383-410f-9de1-7ac0beeec85f":{"type":"hit_box","settings":{"heading":"CANDLELIT SOUND & RESTORE","int_heading":"INTENSITY","intensity_level":0,"dur_heading":"DURATION","duration":"50 min","skl_heading":"STUDIO","skillLevel":"Yoga","detail":"<p>Find peace and relaxation in this slow, restorative practice surrounded in a sound bath of calming and healing frequencies and vibrations, including crystal bowls, gongs, or chimes. You'll be supported by props in gentle postures, allowing your body and mind to relax and release to the fullest.<\/p>","button_text_1":"SEE CLASS SCHEDULE","button_url_1":"shopify:\/\/pages\/reserve","button_text_2":"OUR YOGA STUDIO","button_url_2":"shopify:\/\/pages\/yoga-studio"}}},"block_order":["4fb95e56-cda7-408b-a55c-63a88396079d","hit_box_YLXKDb","a716f6c2-86fa-42e7-8de5-71a119a3d638","5afe78e2-53aa-47c6-96e8-d83d44d51028","hit_box_AJdNM7","704e6416-7383-410f-9de1-7ac0beeec85f"],"settings":{"subHeading":"CLASSES AT S&T","heading":"YOUR FIRST SWEAT","detail":"<p>All classes are suitable for all levels of experience, and your instructors will provide options for regressions and progressions in class. We always encourage challenging yourself, but your workout is yours - sweat comfortably!<\/p><p>From restorative to high intensity, check out our recommendations here for different class styles to try in each of our studios.<\/p><p><strong>Unlimited members<\/strong> - don't forget to book your <a href=\"https:\/\/tonicspa.janeapp.com\/locations\/personal-training\/book\" target=\"_blank\" title=\"https:\/\/tonicspa.janeapp.com\/locations\/personal-training\/book\">complimentary personal training consultation<\/a>!<\/p><p><\/p><p><\/p>","top_padding_remove":false,"bottom_padding_remove":false}},"anchor_gN8t3G":{"type":"anchor","settings":{"link_anchor":"milestones"}},"slideshow_GTkyPD":{"type":"slideshow","blocks":{"slide_LJjN4V":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/SweatandTonic_rewards_RoryNariko.jpg","heading":"GET REWARDED","heading_size":"h2","subheading":"From your first sweat to your 1,000th - unlock exclusive benefits when you reach major milestones with your Unlimited membership, 9 to 5 Sweat membership, or S&T credits. Celebrate your hard work with special treats (and some fun surprises along the way) →","button_label":"","link":"","button_style_secondary":false,"box_align":"middle-center","show_text_box":true,"text_alignment":"center","image_overlay_opacity":50,"color_scheme":"background-1","text_alignment_mobile":"center"}},"slide_BzEpM4":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/SweatandTonic_rewards_toniccocktails.jpg","heading":"100 CLASSES","heading_size":"h2","subheading":"Redeem two complimentary cocktails \/ mocktails at Tonic House to celebrate with a friend! →","button_label":"","link":"","button_style_secondary":false,"box_align":"middle-center","show_text_box":true,"text_alignment":"center","image_overlay_opacity":50,"color_scheme":"scheme-dd6951d4-635b-4651-b375-dc1e299d2cae","text_alignment_mobile":"center"}},"slide_GQAjmP":{"type":"slide","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/SweatandTonic_rewards_redlighttherapy.png","heading":"300 CLASSES","heading_size":"h2","subheading":"In our biohacking era - enjoy three complimentary S&T credits redeemable for red light therapy, compression therapy, pool deck, hot & cold therapy, classes, or Small Group Training. Save for yourself, or share with friends. →","button_label":"","link":"","button_style_secondary":false,"box_align":"middle-center","show_text_box":true,"text_alignment":"center","image_overlay_opacity":50,"color_scheme":"scheme-dd6951d4-635b-4651-b375-dc1e299d2cae","text_alignment_mobile":"center"}},"slide_AAnpqc":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/500clubback.jpg","heading":"500 CLASSES","heading_size":"h2","subheading":"Good things come in fives: Receive 5 S&T credits redeemable for classes, the pool deck at Tonic Spa, or share with friends, and a $25 gift card redeemable at Tonic Bar or Tonic House. Celebrate with us in style - earn a collector's edition S&T crewneck, exclusive to 500 Club members. →","button_label":"","link":"","button_style_secondary":false,"box_align":"middle-center","show_text_box":true,"text_alignment":"center","image_overlay_opacity":50,"color_scheme":"scheme-dd6951d4-635b-4651-b375-dc1e299d2cae","text_alignment_mobile":"center"}},"slide_WQqYLW":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/DSC03510.jpg","heading":"CLUB 1,000","heading_size":"h2","subheading":"Officially Sweat Royalty - unlock a complimentary one-month Unlimited membership, 48-hour priority class booking, and a custom-branded S&T weekender travel bag exclusive to Club 1000 members, loaded with goodies. (total value: $1,000) →","button_label":"EXPLORE MEMBERSHIPS","link":"shopify:\/\/pages\/pricing","button_style_secondary":false,"box_align":"middle-center","show_text_box":true,"text_alignment":"center","image_overlay_opacity":50,"color_scheme":"scheme-dd6951d4-635b-4651-b375-dc1e299d2cae","text_alignment_mobile":"center"}},"slide_4ATkJG":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/Tonic_Spa_Pool_Sweat_and_Tonic_fafe547d-eacd-419b-a747-0262c24bd602.png","heading":"EVERY 1,000 CLASSES","heading_size":"h2","subheading":"Get a complimentary one-month Unlimited membership and 10 credits redeemable for classes, the pool deck at Tonic Spa, or share it with friends, between 2,000 - 4,000 classes (with some sweet surprises to fuel you in between). →","button_label":"EXPLORE MEMBERSHIPS","link":"shopify:\/\/pages\/pricing","button_style_secondary":false,"box_align":"middle-center","show_text_box":true,"text_alignment":"center","image_overlay_opacity":30,"color_scheme":"scheme-dd6951d4-635b-4651-b375-dc1e299d2cae","text_alignment_mobile":"center"}},"slide_KqzqQY":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/pink-purple-smoke.jpg","heading":"CLUB 5,000","heading_size":"h2","subheading":"Be boundless with Canada's most exclusive 360 wellness membership - receive a complimentary one-month <a href=\"https:\/\/sweatandtonic.com\/pages\/club-transcend\" target=\"_blank\" title=\"https:\/\/sweatandtonic.com\/pages\/club-transcend\"><strong>Club Transcend<\/strong><\/a> membership. →","button_label":"EXPLORE MEMBERSHIPS","link":"shopify:\/\/pages\/pricing","button_style_secondary":false,"box_align":"middle-center","show_text_box":true,"text_alignment":"center","image_overlay_opacity":30,"color_scheme":"scheme-dd6951d4-635b-4651-b375-dc1e299d2cae","text_alignment_mobile":"center"}}},"block_order":["slide_LJjN4V","slide_BzEpM4","slide_GQAjmP","slide_AAnpqc","slide_WQqYLW","slide_4ATkJG","slide_KqzqQY"],"settings":{"layout":"full_bleed","slide_height":"medium","slider_visual":"counter","auto_rotate":true,"change_slides_speed":5,"image_behavior":"none","show_text_below":true,"accessibility_info":"S&T milestone reward program"}},"collapsible_content_xyXAwh":{"type":"collapsible-content","blocks":{"collapsible_row_pVWdJq":{"type":"collapsible_row","settings":{"heading":"SWEAT ETIQUETTE","icon":"none","row_content":"<p><strong>BE PRESENT<\/strong><br\/>Class time is precious time, and magic happens when we all move together. Phones, conversations, doing your own personal workouts and going in and out of class can be unsafe and distracting for others.<\/p><p><strong>BE KIND<\/strong><br\/>Show care and respect for your fellow Sweat Fam, and treat others the way you want to be treated. Lift each other up to ensure both team members and community members are respected, valued, safe, and supported. All love, no hate.<\/p><p><strong>BE CLEAN<br\/><\/strong>Practice good personal hygiene. Be considerate of those around you, and help keep our shared space in tip top shape for all to enjoy.<br\/><\/p><p><strong>BE ON TIME<\/strong><br\/>Out of respect and safety for your fellow classmates and the instructor, classes start on time and latecomers are not permitted. Arrive with enough time to store your belongings and get ready for class.<\/p><p><\/p>","page":""}},"collapsible_row_CFhKQM":{"type":"collapsible_row","settings":{"heading":"GETTING HERE","icon":"none","row_content":"<p>Our <strong>Yonge\/Shuter<\/strong> location is at 225 Yonge Street, right across the street from the CF Toronto Eaton Centre, on the northeast corner of Yonge St and Shuter St.<\/p><p>Our <strong>Front\/Spadina<\/strong> location is at 486 Front Street in The Well, on the 'Terrace Level' (level 2):<\/p><p><strong>From parking level LG:<\/strong> Look for the Market Elevator lobby. Walk straight down the corridor out into the Grand Atrium. Make a right as you exit the doors, and take the 'West Av' elevator next to Shoppers Drug Mart to Terrace Level (TR). Turn right as you exit the elevator, head straight, and Sweat and Tonic will be on your right side.<\/p><p><strong>From parking level P3 or P5:<\/strong> Look for signs for BMO (West Av. elevators) or 8 Spadina (East Lane elevators), and take the elevator up to Terrace Level (TR). From East Lane elevators, turn right as you exit the elevator, continue to walk west, and Sweat and Tonic will be on your left (across the pedestrian bridge).<br\/>From West Av. elevators, turn right as you exit the elevator, head straight, and Sweat and Tonic will be on your right side.<\/p><p><strong>From 8 Spadina Ave (Front\/Spadina):<\/strong> Take the escalator from the Grand Atrium up to Terrace Level (level 2). Continue to walk straight (west) - Sweat and Tonic will be on your left (across the pedestrian bridge).<\/p><p><strong>From Front St. or Wellington St:<\/strong> Take the ‘West Ave’ elevator located next to Indigo on the ground level and head up to Terrace Level (TR). Turn right as you exit the elevator, head straight, and Sweat and Tonic will be on your right side.<\/p>","page":""}},"collapsible_row_BC3iMC":{"type":"collapsible_row","settings":{"heading":"DO YOU HAVE DEDICATED PARKING?","icon":"none","row_content":"<p>We do not have dedicated or validated parking, however, there are several paid public parking and transit options nearby.<br\/><br\/><strong>Yonge\/Shuter: <\/strong>We're right across the street from the Queen St. TTC stop and from the Eaton Centre parking garage. There is also a Green P parking garage at Dundas Square and Victoria St, as well as more parking options on Victoria St.<br\/><br\/><strong>Front\/Spadina (The Well): <\/strong>Public underground parking is available at The Well. There is one entrance located at 421 Wellington St. W, and another entrance located near 482 Front St. W. The Well is accessible by TTC streetcar from Spadina Ave, as well as King St.<\/p>","page":""}},"collapsible_row_BbVjJP":{"type":"collapsible_row","settings":{"heading":"YOUR FIRST VISIT","icon":"none","row_content":"<p>We can’t wait to meet you! Please arrive 30 minutes prior to your first class so you can get familiar with the studios you’ll be in, and make sure you’re all set to get your sweat on!<br\/><br\/>Feel free to visit the studio before the day of your class so you can get familiar with our studios! We would be happy to arrange a tour for you outside of peak studio times at your convenience.<\/p>","page":""}},"collapsible_row_HAx7Dr":{"type":"collapsible_row","settings":{"heading":"WHAT DO I NEED TO BRING?","icon":"none","row_content":"<p>All you need to bring is a water bottle, workout clothes (or come dressed for movement), running shoes if you're taking a HIIT class, and any personal items you'd like (e.g., makeup, hair brush, shower slides). We provide complimentary sweat towels, yoga mats, cycling shoes, and boxing gloves, and our change rooms are stocked with bath towels, toiletries (shampoo, conditioner, body wash, face wash, and body lotion), and Dyson hairdryers.<\/p><p>We also sell everything except shoes in our retail shop, in case you forget something.<\/p><p>We provide lockers with built-in locks to your store your belongings (one locker permitted per guest).<\/p>","page":""}},"collapsible_row_wFApfA":{"type":"collapsible_row","settings":{"heading":"CHECKING IN","icon":"none","row_content":"<p>For your first visit, please check in at the front desk. For all subsequent visits, you can check yourself in on the S&T app or with a team member by the studio doors.<\/p><p>We always recommend arriving for class early so that you have plenty of time to get ready. Once you’ve checked in, make sure to head to the correct spot number you’ve booked! You must be present for class if you've checked in.<\/p><p><\/p>","page":""}},"collapsible_row_jEqg4J":{"type":"collapsible_row","settings":{"heading":"WHAT SPOT AM I IN?","icon":"none","row_content":"<p>You can check your spot number by checking your reservation in the app, at the front desk, or with one of our attendants stationed outside your class studio.<\/p><p>Spot numbers in the <strong>Ride studio <\/strong>are located on the front of the bikes. Mat numbers in the <strong>Yoga studio<\/strong> are found on the yoga blocks.<\/p><p>In the <strong>HIIT studio<\/strong>, classes are circuit-based, so you’ll rotate through weights, treadmill, and floor stations, staying at the same <em>number<\/em> throughout. If you’re not sure which station to switch to next, just remember WTF.<\/p><p>W = weights<br\/>T = treadmill<br\/>F = floor<\/p>","page":""}},"collapsible_row_qfqBUM":{"type":"collapsible_row","settings":{"heading":"LATE & CANCELLATION POLICY","icon":"none","row_content":"<p>Out of respect and safety for your fellow classmates and instructors, classes start on time. Doors will open 5 minutes prior to your class start time, and will remain open for 2 minutes after the class starts. Once the studio doors close, any other latecomers will not be allowed in.<\/p><p>Be considerate of your Sweat Fam and do not take up spots in classes you are unable to attend. Only book classes you intend to take to ensure all of our Sweat Fam have a chance to get into class!<\/p><p>Please make sure to cancel your class reservation at least 12 hours in advance, or you will lose a credit for classes booked with a credit. For Unlimited and 9 to 5 Sweat Memberships, you will be charged a $24 fee for no shows and $19 for any late cancellations. This includes switching time slots under the 12-hour notice time period.<\/p>","page":""}},"collapsible_row_fURRMb":{"type":"collapsible_row","settings":{"heading":"PHONE USE","icon":"none","row_content":"<p>Use of a phone during active exercise is prohibited. Phones are not permitted in the yoga studio. You may bring your phone into the Ride and HIIT studios, but please be mindful of your Sweat Fam around you and be present. Your studio time is a gift to yourself – make time for you!<\/p><p>Please feel free to let your instructor know should you require your mobile device for accessibility or medical reasons.<\/p>","page":""}},"collapsible_row_egMQGD":{"type":"collapsible_row","settings":{"heading":"CAN I LEAVE CLASS EARLY?","icon":"none","row_content":"<p>Unless it's an emergency or you're feeling unwell, please stay in class until the end! We cool down and close off the class together, and leaving early disrupts the flow and experience for other guests. Make sure you fill up your water bottle before class, and take breaks in class as needed.<\/p>","page":""}},"collapsible_row_LYqwGe":{"type":"collapsible_row","settings":{"heading":"TONIC HOUSE ACCESS","icon":"none","row_content":"<p>Tonic House is open to Unlimited members only during weekday working hours (Monday to Friday, open to 5 PM). During this time, all guests in Tonic House must be prepared to present their valid membership access card to a S&T attendant.<\/p><p>You can pick up your access card at the front desk. There is a $10 deposit for Tonic House access cards.<br\/><br\/>Make sure to check out our <a href=\"https:\/\/sweatandtonic.com\/pages\/tonic-house-etiquette\" target=\"_blank\" title=\"https:\/\/sweatandtonic.com\/pages\/tonic-house-etiquette\"><strong>Tonic House Etiquette<\/strong><\/a> to ensure a pleasant and productive environment for all to enjoy.<\/p>","page":""}},"collapsible_row_dxGFdr":{"type":"collapsible_row","settings":{"heading":"HOW DOES THE WAITLIST WORK?","icon":"none","row_content":"<p>Our waitlist is designed to move quickly and ensures that guests who want to take a class will have the best chance of getting into that class. As soon as a spot opens up, you will be <strong>automatically enrolled <\/strong>on a first come, first served basis, up to 10 minutes before class start time.<\/p><p>If you do not wish or intend to take the class, we encourage you to remove yourself from the waitlist to avoid automatic enrolment and a penalty should you no longer be able to make it. You can remove yourself from the waitlist at anytime without penalty. Once you are enrolled, our standard no-show \/ late cancellation policy will apply. Removing yourself from the waitlist will allow other guests, who are on the waitlist and able to make it to class, the chance to get in.<\/p>","page":""}},"collapsible_row_X4EJFH":{"type":"collapsible_row","settings":{"heading":"WHEN DO CLASS SCHEDULES GET RELEASED?","icon":"none","row_content":"<p>Our class schedule opens up for booking every weekend. You can book classes up to two weeks in advance, every Saturday at 5 PM for Unlimited and 9 to 5 Sweat members, and Sunday at 5 PM for everyone else.<\/p>","page":""}},"collapsible_row_qhW7fN":{"type":"collapsible_row","settings":{"heading":"HOW DO MILESTONE REWARDS WORK?","icon":"none","row_content":"<p>Active guests who book classes with an Unlimited membership, 9 to 5 Sweat membership or S&T credits are eligible for milestone rewards! Exceptions apply.<br\/><br\/>Make sure you're opted into email communications and subscribed to our newsletter, so that you can receive notifications, offers, and other important updates.<\/p><p>You get to keep your milestone privileges (e.g. priority booking) so long as there is activity in your account - whether that's a purchase or booking a class - within a 12-month period.<\/p>","page":""}}},"block_order":["collapsible_row_pVWdJq","collapsible_row_CFhKQM","collapsible_row_BC3iMC","collapsible_row_BbVjJP","collapsible_row_HAx7Dr","collapsible_row_wFApfA","collapsible_row_jEqg4J","collapsible_row_qfqBUM","collapsible_row_fURRMb","collapsible_row_egMQGD","collapsible_row_LYqwGe","collapsible_row_dxGFdr","collapsible_row_X4EJFH","collapsible_row_qhW7fN"],"settings":{"caption":"BEFORE YOU SWEAT","heading":"SWEAT FAM ETIQUETTE","heading_size":"h2","heading_alignment":"center","layout":"none","color_scheme":"","container_color_scheme":"","open_first_collapsible_row":false,"image_ratio":"adapt","desktop_layout":"image_first","padding_top":32,"padding_bottom":32}},"rich_text_N3EzMc":{"type":"rich-text","blocks":{"heading_DaP8xc":{"type":"heading","settings":{"heading":"CHECK OUT OUR FAQ","heading_size":"h2"}},"text_VpcVib":{"type":"text","settings":{"text":"<p>Check out our full FAQs for more information on our studio policies, services, and facilities.<\/p>"}},"button_bkb3Mk":{"type":"button","settings":{"button_label":"VIEW ALL FAQs","button_link":"https:\/\/sweatandtonic.com\/pages\/faq","button_style_secondary":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_DaP8xc","text_VpcVib","button_bkb3Mk"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":16,"padding_bottom":16}},"hit-team":{"type":"hit-team","blocks":{"d8c76e3a-9682-4e98-ad54-de25dc96e3e2":{"type":"column","settings":{"title":"TONIC BAR","image":"shopify:\/\/shop_images\/TonicBar_smoothies.jpg","link_label":"PRE-ORDER YOUR POST-SWEAT SMOOTHIE ON THE S&T APP | VIEW OUR MENU","link":"shopify:\/\/pages\/tonic-bar"}},"344bccad-18c9-45fe-a9fa-30f6d5343214":{"type":"column","settings":{"title":"TONIC SPA","image":"shopify:\/\/shop_images\/SweatandTonic_TonicSpa_MassageTherapy.jpg","link_label":"FIND 360 RECOVERY & WELLNESS, ALL UNDER ONE ROOF.  | EXPLORE SPA SERVICES","link":"shopify:\/\/pages\/spa"}},"a746ac32-ac4e-4cf0-a968-b3c4d0a06e4d":{"type":"column","settings":{"title":"TONIC HOUSE","image":"shopify:\/\/shop_images\/TonicHouse_cocktails.jpg","link_label":"WORKSPACE BY DAY, COCKTAIL BAR BY NIGHT. GET TOGETHER WITH YOUR BESTIES & UNWIND. | VIEW COCKTAIL MENU","link":"shopify:\/\/pages\/bar-menu"}}},"block_order":["d8c76e3a-9682-4e98-ad54-de25dc96e3e2","344bccad-18c9-45fe-a9fa-30f6d5343214","a746ac32-ac4e-4cf0-a968-b3c4d0a06e4d"],"settings":{"sub_title":"POST-SWEAT","title":"RECOVER & REJUVENATE","heading_size":"h2","image_ratio":"square","columns_desktop":3,"background_style":"none","button_label":"","button_link":"","color_scheme":"","columns_mobile":"1","top_padding_remove":false,"bottom_padding_remove":false}},"hit-banner-row":{"type":"hit-banner-row","blocks":{"2fc049c5-7369-409d-b14a-69872fa3a417":{"type":"heading","settings":{"heading":"MEMBERSHIP BENEFITS","heading_size":"h1","text_clr":"#ffffff"}},"816d62d0-da59-4074-9bf1-9c214ed815fe":{"type":"buttons","settings":{"button_label_1":"GO UNLIMITED","button_link_1":"https:\/\/www.sweatandtonic.com\/reserve","button_style":"solid","applies_color_scheme":true,"btn_text_clr":"#000000","btn_hvr_text_clr":"#000000","btn_bg_clr":"#ffffff","btn_hvr_bg_clr":"#FEE4B1"}},"486c1659-7943-4d3f-a46d-0d16c16aa358":{"type":"function","settings":{"text_clr":"#ffffff","svg_1":"<svg viewbox=\"0 0 64 64\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"2.176\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"><\/g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/g><g id=\"SVGRepo_iconCarrier\"><polygon points=\"52 56 52 44 56 20 44 24 32 8 20 24 8 20 12 44 12 56 52 56\"><\/polygon><path d=\"M12 44z\"><\/path><\/g><\/svg>","title_1":"S&T UNLIMITED MEMBERSHIP","desc_1":"<p>Includes unlimited classes, a 30-min Personal Training consultation, Tonic House access, 10% off Tonic Spa treatments, 10% off the S&T shop, one guest credit per month, exclusive event invites, and more. <\/p>","svg_2":"<svg fill=\"#ffffff\" version=\"1.1\" id=\"Capa_1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 461.497 461.497\" stroke=\"#ffffff\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" xml:space=\"preserve\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"><\/g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/g><g id=\"SVGRepo_iconCarrier\"> <g> <g id=\"Layer_2_17_\"> <g> <path d=\"M268.616,409.893c-3.622,0.977-7.318,1.848-10.986,2.602c-9.596,1.955-15.789,11.32-13.829,20.917 c0.11,0.548,0.247,1.069,0.404,1.593c2.618,8.674,11.466,14.086,20.518,12.239c4.378-0.896,8.79-1.939,13.115-3.103 c9.46-2.544,15.062-12.277,12.517-21.737C287.807,412.932,278.076,407.346,268.616,409.893z\"><\/path> <path d=\"M144.994,400.018c-3.425-1.524-6.842-3.174-10.157-4.908c-8.687-4.529-19.396-1.163-23.926,7.523 c-2.236,4.272-2.55,9.039-1.258,13.317c1.334,4.412,4.369,8.307,8.772,10.605c3.957,2.061,8.024,4.032,12.104,5.851 c8.941,3.992,19.43-0.016,23.425-8.956C157.949,414.502,153.936,404.02,144.994,400.018z\"><\/path> <path d=\"M205.979,415.609c-3.73-0.3-7.514-0.723-11.228-1.245c-9.699-1.382-18.673,5.367-20.051,15.065 c-0.374,2.636-0.145,5.213,0.575,7.602c1.933,6.405,7.433,11.441,14.496,12.449c4.419,0.624,8.917,1.125,13.362,1.479 c9.766,0.791,18.317-6.487,19.103-16.247C223.021,424.946,215.747,416.395,205.979,415.609z\"><\/path> <path d=\"M325.738,383.44c-3.081,2.12-6.277,4.178-9.494,6.12c-7.089,4.271-10.115,12.719-7.833,20.294 c0.42,1.388,1.02,2.748,1.802,4.051c5.052,8.389,15.953,11.083,24.343,6.033c3.825-2.307,7.625-4.761,11.288-7.28 c8.066-5.553,10.11-16.596,4.556-24.661C344.849,379.924,333.803,377.888,325.738,383.44z\"><\/path> <path d=\"M395.453,335.48c-7.944-5.728-19.028-3.931-24.757,4.008c-2.188,3.037-4.504,6.05-6.875,8.941 c-3.89,4.75-4.9,10.908-3.255,16.375c0.985,3.254,2.911,6.269,5.736,8.585c7.577,6.205,18.75,5.091,24.955-2.487 c2.831-3.45,5.595-7.043,8.202-10.664C405.189,352.294,403.396,341.213,395.453,335.48z\"><\/path> <path d=\"M420.276,270.883c-9.4-2.746-19.247,2.654-21.989,12.056c-1.054,3.601-2.228,7.217-3.485,10.745 c-1.334,3.713-1.354,7.585-0.292,11.092c1.568,5.203,5.495,9.614,10.994,11.584c9.222,3.307,19.371-1.483,22.683-10.7 c1.504-4.204,2.901-8.508,4.146-12.792C435.074,283.471,429.676,273.62,420.276,270.883z\"><\/path> <path d=\"M453.552,155.337l-23.307,7.242c-17.688-54.204-54.93-98.746-105.337-125.798c-5.074-2.725-10.221-5.229-15.431-7.53 c-0.038-0.018-0.068-0.033-0.103-0.056c-0.218-0.092-0.447-0.178-0.659-0.272C262.758,8.814,211.901,5.002,163.15,18.204 c-0.383,0.075-0.766,0.147-1.144,0.254c-1.628,0.444-3.271,0.925-4.892,1.409c-2.661,0.804-5.338,1.67-7.964,2.571 c-0.311,0.107-0.604,0.24-0.906,0.36c-43.518,15.075-80.577,42.869-107.015,80.005c-0.094,0.128-0.2,0.238-0.289,0.365 c-2.584,3.629-5.087,7.392-7.451,11.188c-0.148,0.243-0.271,0.496-0.412,0.747c-2.358,3.824-4.624,7.736-6.77,11.726 C4.395,167.665-3.964,213.292,1.739,258.362c0.013,0.103,0.025,0.199,0.034,0.301c0.009,0.072,0.025,0.147,0.042,0.222 c1.55,12.04,4.096,24.041,7.671,35.895c9.388,31.125,25.053,59.112,46.557,83.188c6.523,7.302,17.735,7.932,25.041,1.409 c7.302-6.525,7.939-17.74,1.411-25.04c-10.735-12.013-19.719-25.208-26.91-39.424c-0.077-0.175-0.145-0.354-0.229-0.522 c-1.691-3.354-3.298-6.792-4.786-10.233c-0.008-0.027-0.017-0.043-0.029-0.065c-2.708-6.334-5.069-12.854-7.093-19.553 c-23.243-77.066,6.399-157.708,67.912-202.796c0.91-0.662,1.819-1.33,2.738-1.972c15.792-11.138,33.604-19.97,53.098-25.848 c19.618-5.914,39.457-8.398,58.887-7.816c0.314,0.014,0.619,0.023,0.93,0.032c1.186,0.036,2.368,0.099,3.548,0.165 c0.477,0.025,0.952,0.051,1.428,0.081c60.587,3.79,116.456,37.44,147.82,90.305c0.017,0.03,0.029,0.064,0.05,0.094 c0.465,0.785,0.919,1.569,1.375,2.363c0.054,0.089,0.113,0.168,0.165,0.259c6.001,10.523,11.05,21.784,14.977,33.701 l-23.306,7.246c-6.473,2.011-7.11,6.668-1.429,10.35l50.719,32.852c5.686,3.685,12.468,1.575,15.061-4.676l23.171-55.82 C463.182,156.804,460.02,153.327,453.552,155.337z\"><\/path> <path d=\"M155.288,231.23c-17.092,12.662-28.75,23.646-34.964,32.95c-6.208,9.303-9.932,19.235-11.155,29.796h106.935v-29.053 h-55.657c3.268-3.213,6.111-5.805,8.533-7.785c2.423-1.991,7.217-5.457,14.395-10.418c12.074-8.517,20.404-16.335,24.985-23.455 c4.577-7.114,6.868-14.582,6.868-22.4c0-7.349-1.997-13.987-5.993-19.912c-3.999-5.919-9.486-10.311-16.456-13.17 c-6.969-2.855-16.728-4.288-29.273-4.288c-12.014,0-21.419,1.505-28.219,4.514c-6.792,3.004-12.061,7.319-15.792,12.944 c-3.735,5.636-6.299,13.467-7.702,23.497l35.704,2.887c0.991-7.229,2.933-12.278,5.818-15.135 c2.891-2.859,6.604-4.29,11.161-4.29c4.373,0,8.006,1.388,10.892,4.16c2.886,2.766,4.332,6.109,4.332,10.02 c0,3.619-1.458,7.438-4.377,11.466C172.406,217.582,165.726,223.476,155.288,231.23z\"><\/path> <path d=\"M323.651,293.977v-23.979h16.099V242.34h-16.099v-78.844h-31.066l-64.93,77.187v29.315h64.93v23.979H323.651 L323.651,293.977z M258.28,242.34l34.305-40.366v40.366H258.28z\"><\/path> <\/g> <\/g> <\/g> <\/g><\/svg>","title_2":"24-HOUR PRIORITY BOOKING","desc_2":"<p>Get first dibs on your favourite classes. Our class schedule opens for booking every Saturday at 5 PM for Unlimited and 9 to 5 Sweat Members, and on Sunday at 5 PM for everyone else.<\/p>","svg_3":"<svg viewbox=\"0 0 1024 1024\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" fill=\"#ffffff\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"><\/g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/g><g id=\"SVGRepo_iconCarrier\"><path fill=\"#ffffff\" d=\"M224 448a32 32 0 0 0-32 32v384a32 32 0 0 0 32 32h576a32 32 0 0 0 32-32V480a32 32 0 0 0-32-32H224zm0-64h576a96 96 0 0 1 96 96v384a96 96 0 0 1-96 96H224a96 96 0 0 1-96-96V480a96 96 0 0 1 96-96z\"><\/path><path fill=\"#ffffff\" d=\"M512 544a32 32 0 0 1 32 32v192a32 32 0 1 1-64 0V576a32 32 0 0 1 32-32zm178.304-295.296A192.064 192.064 0 0 0 320 320v64h352l96 38.4V448H256V320a256 256 0 0 1 493.76-95.104l-59.456 23.808z\"><\/path><\/g><\/svg>","title_3":"CANCEL ANYTIME","desc_3":"<p>No initiation fees, no annual commitment, cancel anytime with no minimum notice periods.<\/p>","svg_4":"<svg fill=\"#ffffff\" viewbox=\"0 0 30 30\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"><\/g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/g><g id=\"SVGRepo_iconCarrier\"><path d=\"M20.5 10c-.13 0-.266.06-.357.152l-5.498 5.498c-.247.247-.464.334-.65.335-.184 0-.386-.08-.642-.335l-2.493-2.49c-.454-.475-1.175.257-.706.708l2.493 2.49c.392.392.853.63 1.35.627.495-.003.974-.246 1.354-.626l5.5-5.5c.31-.305.108-.86-.35-.86zM14.72.05c-.132.058-.33.183-.562.325-.233.142-.687.43-1.13.672-.888.48-2 .955-3.028.955-1.1 0-1.923-.23-2.688-.477C6.548 1.278 5.835 1 5 1c-.774 0-1.526.122-2.107.603C2.31 2.085 2 2.916 2 4v8c0 1.18-.19 5.267 2.064 9.248 1.327 2.342 3.62 4.495 5.778 6.092 1.08.798 2.124 1.455 3.01 1.918.885.463 1.55.742 2.148.742.6 0 1.263-.28 2.148-.742.886-.463 1.93-1.12 3.01-1.918 2.158-1.597 4.45-3.75 5.778-6.092C28.19 17.268 28 13.18 28 12V4c0-1.084-.31-1.915-.893-2.397C26.527 1.123 25.774 1 25 1c-.834 0-1.548.278-2.313.523C21.924 1.77 21.1 2 20 2c-1.03 0-2.148-.474-3.035-.955-.444-.24-.89-.512-1.13-.672-.243-.16-.443-.26-.562-.325-.14-.064-.408-.064-.554 0zm.28 1.04c.092 0 .173.05.303.132.298.187.705.444 1.183.703C17.442 2.443 18.686 3 20 3c1.242 0 2.2-.27 2.992-.523C23.782 2.222 24.398 2 25 2c.662 0 1.16.12 1.47.375.31.256.53.72.53 1.625v8c0 1.277.167 5.045-1.936 8.755-1.21 2.138-3.42 4.24-5.502 5.782-1.04.77-2.05 1.403-2.876 1.836-.828.433-1.535.627-1.686.627-.15 0-.858-.194-1.686-.627-.827-.433-1.835-1.065-2.877-1.836-2.082-1.54-4.29-3.644-5.5-5.782C2.832 17.045 3 13.277 3 12V4c0-.905.22-1.37.53-1.625C3.84 2.12 4.337 2 5 2c.602 0 1.217.222 2.008.477C7.798 2.73 8.758 3 10 3c1.313 0 2.55-.558 3.506-1.077.478-.26.885-.516 1.183-.703.13-.08.218-.133.31-.133z\"><\/path><\/g><\/svg>","title_4":"PRICE-PROTECTED","desc_4":"<p>As long as your membership remains active, your monthly rate is price-protected forever (and ever). We like fun surprises only.<\/p>"}}},"block_order":["2fc049c5-7369-409d-b14a-69872fa3a417","816d62d0-da59-4074-9bf1-9c214ed815fe","486c1659-7943-4d3f-a46d-0d16c16aa358"],"settings":{"allow_transparent_header":false,"image":"shopify:\/\/shop_images\/UnlimitedMembership.png","img_mobile":"shopify:\/\/shop_images\/UnlimitedMembership_vertical.jpg","image_overlay_opacity":80,"image_height":"adapt","desktop_content_alignment":"left","color_scheme":"","image_behavior":"none","mobile_content_alignment":"left","section_title_mobtop":true}},"hit-multicolumn":{"type":"hit-multicolumn","blocks":{"5f339c27-a2d8-4ed9-9d14-fd9c115bad81":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/YongeShuter_Yoga2.jpg","title":"YONGE \/ SHUTER","text":"<p>Elevate your practice in our infrared-heated studio, providing warm and hot yoga, dynamic Pilates, and soothing restorative yoga & meditation classes. <\/p>","address":"225 Yonge Street, Toronto ON M5B 1N8","phone":"Studio capacity: 50 people","link_label":"see classes","link":"https:\/\/sweatandtonic.com\/pages\/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48717"}},"ab06944c-e56b-4aaa-962a-25c5bdcc7f46":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/SweatandTonic_YogaRestorative.png","title":"FRONT \/ SPADINA","text":"<p>Find your flow in our infrared-heated studio, featuring warm and hot yoga classes elevated by chromatic light systems and an immersive 445-inch projection screen.<\/p>","address":"486 Front St W, Toronto, ON M5V 0V2","phone":"Studio capacity: 60 people","link_label":"see classes","link":"https:\/\/sweatandtonic.com\/pages\/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48750"}}},"block_order":["5f339c27-a2d8-4ed9-9d14-fd9c115bad81","ab06944c-e56b-4aaa-962a-25c5bdcc7f46"],"disabled":true,"settings":{"title":"OUR LOCATIONS","heading_size":"h2","image_ratio":"portrait","column_alignment":"left","background_style":"none","color_scheme":"","top_padding_remove":false,"bottom_padding_remove":false}},"event-contact":{"type":"event-contact","disabled":true,"settings":{"bg_color_left":"#26221b","text_color_left":"#ffffff","sub_color_left":"#FEE4B1","subheading_left":"Ready to sweat?","heading_left":"LET’S GET YOU IN","text_left":"","p_name":"SARAH TRAN","p_tagline":"Events & Sales Manager","p_mail":"sarah@sweatandtonic.com","heading":"Contact form","btn_label":"Submit event inquiry","btn_url":"","success_msg":"<p>Thanks for inquiring. Your entry is submitted, and we'll reach out to you soon.<\/p>","color_scheme":"","top_padding_remove":false,"bottom_padding_remove":false,"show_current_activity_dropdown":false,"embed-form":"<!-- Begin Connect Signup Form -->\n<link href=\"https:\/\/assets.brandbot.com\/forms\/embed\/embed.css\" rel=\"stylesheet\" type=\"text\/css\">\n<style type=\"text\/css\">\n\t#bb_form .field.form-group:after {display: none;}\n\t#bb_form .field.form-group input[type=\"text\"],.contact #bb_form .field.form-group input[type=\"email\"],.contact #bb_form .field.form-group input[type=\"tel\"]{border: none;border-bottom: 1px solid rgba(0,0,0,.2);border-radius: unset;}\n\t#bb_form .form-group.with-label {flex-wrap: wrap;flex-direction: column;}\n\t#bb_form .form-group.with-label label{font-weight:400;}\n\t#bb_form .form-group.with-label input[type=checkbox]{margin-left: 20px;}\n<\/style>\n\n<div id=\"bb_form\">\n\t<form method=\"post\" action=\"https:\/\/microservices.brndbot.net\/forms\/answers\" name=\"ibbxy\" id=\"bb_form_inner\">\n\t\t<div id=\"alert\"><\/div>\n\t\t<div class=\"contact__fields\">\n\t\t\t<div class=\"field form-group no-label\">\n\t\t\t\t<label for=\"bb_first_name\">First Name<\/label>\n\t\t\t\t<input type=\"text\" name=\"bb_first_name\" id=\"bb_first_name\" class=\"form-control\" required=\"required\" placeholder=\"First Name\">\n\t\t\t<\/div>\n\t\t\t<div class=\"field form-group no-label\">\n\t\t\t\t<label for=\"bb_last_name\">Last Name<\/label>\n\t\t\t\t<input type=\"text\" name=\"bb_last_name\" id=\"bb_last_name\" class=\"form-control\" required=\"required\" placeholder=\"Last Name\">\n\t\t\t<\/div>\n\t\t<\/div>\n\t\t<div class=\"field form-group no-label\">\n\t\t\t<label for=\"bb_email\">Email Address<\/label>\n\t\t\t<input type=\"email\" name=\"bb_email\" id=\"bb_email\" class=\"form-control\" required=\"required\" placeholder=\"Email Address\">\n\t\t<\/div>\n\t\t<div class=\"form-group\">\n\t\t\t<input type=\"hidden\" name=\"bb_uuid\" id=\"bb_uuid\" value=\"a4325c6c-fc7c-4b67-b8f2-c318441997f3\">\n\t\t\t<button type=\"submit\" class=\"button button--primary\" id=\"bb_submit\" style=\"background-color: #000000; border-color: #000000; color: white;\">RSVP NOW<\/button>\n\t\t<\/div>\n\t<\/form>\n<\/div>\n<script>window.jQuery || document.write('<scr'+'ipt src=\"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/jquery\/3.3.1\/jquery.min.js\"><\/scr'+'ipt>') <\/script>\n<script src=\"https:\/\/assets.brandbot.com\/forms\/embed\/embed.js?id=ibbxy\"><\/script>\n<!-- Ending Connect Signup Form -->"}},"wellness_tesimonials_3VHm8A":{"type":"wellness-tesimonials","blocks":{"column_wfVmJy":{"type":"column","settings":{"enable_block_image":true,"testimonial-title":"GET REWARDED","testimonial-desc":"<p>From your first sweat to your 1,000th - unlock exclusive benefits when you reach major milestones with your Unlimited membership, 9 to 5 Sweat membership, or S&T credits. Celebrate your hard work with special treats (and some fun surprises along the way) →<\/p>","testimonial-name":"","testimonial-role":""}},"column_hH4qAf":{"type":"column","settings":{"enable_block_image":true,"testimonial-title":"100 CLASSES","testimonial-desc":"<p>Redeem two complimentary cocktails \/ mocktails at Tonic House and a class credit for yourself, or share it with your bestie. →<\/p>","testimonial-name":"Name","testimonial-role":"Manager"}},"column_yCFijt":{"type":"column","settings":{"enable_block_image":true,"testimonial-title":"Great!!","testimonial-desc":"<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<\/p>","testimonial-name":"Name","testimonial-role":"Manager"}},"column_Wic6ad":{"type":"column","settings":{"enable_block_image":true,"testimonial-title":"Great!!","testimonial-desc":"<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<\/p>","testimonial-name":"Name","testimonial-role":"Manager"}},"column_jGMUFp":{"type":"column","settings":{"enable_block_image":true,"testimonial-title":"Great!!","testimonial-desc":"<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<\/p>","testimonial-name":"Name","testimonial-role":"Manager"}}},"block_order":["column_wfVmJy","column_hH4qAf","column_yCFijt","column_Wic6ad","column_jGMUFp"],"disabled":true,"settings":{"title":"SWEAT FAM REWARDS","padding_top":40,"padding_bottom":10}}},"order":["hit-hero","hit-banner-column","hit-classes","anchor_gN8t3G","slideshow_GTkyPD","collapsible_content_xyXAwh","rich_text_N3EzMc","hit-team","hit-banner-row","hit-multicolumn","event-contact","wellness_tesimonials_3VHm8A"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hit-hero": {
+      "type": "hit-hero",
+      "blocks": {
+        "3d295c9e-10b8-4397-b3c8-b08733efc0db": {
+          "type": "text",
+          "settings": {
+            "text": "WELCOME TO THE SWEAT FAM",
+            "text_style": "caption-with-letter-spacing",
+            "text_clr": "#ffffff"
+          }
+        },
+        "89ede07a-229a-4fd5-8064-eb065090ad93": {
+          "type": "heading",
+          "settings": {
+            "heading": "LET THE SWEAT BEGIN",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "943f29ad-f020-4899-974b-20f586c4dd6a": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "BOOK CLASSES",
+            "button_link_1": "https://www.sweatandtonic.com/reserve",
+            "button_style": "solid",
+            "applies_color_scheme": true,
+            "btn_text_clr": "#000000",
+            "btn_hvr_text_clr": "#000000",
+            "btn_bg_clr": "#FEE4B1",
+            "btn_hvr_bg_clr": "#ffffff"
+          }
+        },
+        "1fe44382-9435-48ac-95f6-bf885137b352": {
+          "type": "description",
+          "settings": {
+            "desc": "<p>Get ready to sweat, recover, and connect in a one-of-a-kind community.</p>",
+            "anchor_label": "START YOUR JOURNEY",
+            "anchor_link": "",
+            "text_clr": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "3d295c9e-10b8-4397-b3c8-b08733efc0db",
+        "89ede07a-229a-4fd5-8064-eb065090ad93",
+        "943f29ad-f020-4899-974b-20f586c4dd6a",
+        "1fe44382-9435-48ac-95f6-bf885137b352"
+      ],
+      "settings": {
+        "allow_transparent_header": true,
+        "image": "shopify://shop_images/SweatandTonic_FirstTimer.png",
+        "img_mobile": "shopify://shop_images/SweatandTonic_FirstTimer.png",
+        "image_overlay_opacity": 70,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center"
+      }
+    },
+    "hit-banner-column": {
+      "type": "hit-banner-column",
+      "blocks": {
+        "2fc049c5-7369-409d-b14a-69872fa3a417": {
+          "type": "heading",
+          "settings": {
+            "heading": "HOT TIPS",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "d57f9c4c-bb8d-4416-994b-eb28dc4afba4": {
+          "type": "features",
+          "settings": {
+            "text_clr": "#ffffff",
+            "svg_1": "<svg fill=\"#ffffff\" viewbox=\"-11 0 32 32\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <title>one</title> <path d=\"M1.906 2.625h5.469v22.969h-2.281v-20.75h-3.188v-2.219z\"></path> </g></svg>",
+            "title_1": "DOWNLOAD OUR APP",
+            "desc_1": "<p>Sweat easy. Book classes, pre-order your post-sweat smoothie, and manage your reservations, communication settings and account, all in one place.</p><p><a href=\"https://apps.apple.com/ca/app/sweat-tonic/id1610642208\" target=\"_blank\" title=\"https://apps.apple.com/ca/app/sweat-tonic/id1610642208\"><strong>Download from App Store</strong></a><br/><a href=\"https://play.google.com/store/apps/details?id=com.marianatek.sweatandtonic&hl=en_CA&pli=1\" target=\"_blank\" title=\"https://play.google.com/store/apps/details?id=com.marianatek.sweatandtonic&hl=en_CA&pli=1\"><strong>Download from Google Play</strong></a></p>",
+            "svg_2": "<svg fill=\"#ffffff\" viewbox=\"-7 0 32 32\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <title>two</title> <path d=\"M14.5 13.531l-8.344 9.813h10.156v2.25h-15.031l7.969-9.344s3.656-4.219 4-4.75 0.594-1.469 0.594-2.344c0-2.719-2.188-4.938-4.938-4.938-2.719 0-4.938 2.219-4.938 4.938 0 0.813 0.188 1.531 0.531 2.219h-2.313c-0.25-0.719-0.406-1.406-0.406-2.219 0-3.906 3.219-7.125 7.125-7.125 3.656 0 6.656 2.75 7.063 6.313 0.031 0.25 0.031 0.563 0.031 0.813 0 1.656-0.563 3.188-1.5 4.375z\"></path> </g></svg>",
+            "title_2": "SUBSCRIBE TO OUR NEWSLETTER",
+            "desc_2": "<p>Be the first to know about exclusive offers and events, and stay up-to-date on the latest news and important studio updates. You can sign up for communications in your account, or <a href=\"https://sweatandtonicyongeandshuter.brandbot.io/forms/newsletter-sign-up-4GwO8q.html\" target=\"_blank\" title=\"https://sweatandtonicyongeandshuter.brandbot.io/forms/newsletter-sign-up-4GwO8q.html\"><strong>subscribe here</strong></a>.</p>",
+            "svg_3": "<svg fill=\"#ffffff\" viewbox=\"-7 0 32 32\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <title>three</title> <path d=\"M4.875 8h-2.25c0.063-3.281 2.781-6 6.094-6s6.031 2.719 6.031 6.094c0 1.969-0.969 3.719-2.438 4.813 2.094 1.25 3.5 3.531 3.5 6.125 0 3.938-3.188 7.094-7.094 7.094-3.844 0-6.969-3-7.125-6.781h2.25c0.156 2.531 2.281 4.594 4.875 4.594 2.688 0 4.844-2.219 4.844-4.906s-2.156-4.875-4.844-4.875v-2.219c2.125 0 3.813-1.719 3.813-3.844s-1.688-3.844-3.813-3.844-3.813 1.656-3.844 3.75z\"></path> </g></svg>",
+            "title_3": "UPDATE YOUR PROFILE",
+            "desc_3": "<p>Celebrate your birthday with us! Complete your profile and keep an eye out for a special treat on your special day (Unlimited members, 9 to 5 Sweat members, and S&T credit users only).</p>",
+            "svg_4": "<svg fill=\"#ffffff\" viewbox=\"-7 0 32 32\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <title>four</title> <path d=\"M13.719 1.375v15.438h2.781v2.25h-2.781v6.531h-2.219v-6.531h-10.219zM5.594 16.813h5.906v-8.344z\"></path> </g></svg>",
+            "title_4": "ARRIVE EARLY + STAY IN CLASS",
+            "desc_4": "<p>Classes begin on time, and studio doors will remain open for 2 mins. Out of respect for the instructors and the class experience for all guests, latecomers are not permitted once doors close. Stay in class until the end - magic happens when we move together!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "2fc049c5-7369-409d-b14a-69872fa3a417",
+        "d57f9c4c-bb8d-4416-994b-eb28dc4afba4"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "image_overlay_opacity": 100,
+        "image_height": "adapt",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "section_title_mobtop": true
+      }
+    },
+    "hit-classes": {
+      "type": "hit-classes",
+      "blocks": {
+        "4fb95e56-cda7-408b-a55c-63a88396079d": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "BOOTY HIIT",
+            "int_heading": "INTENSITY",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "STUDIO",
+            "skillLevel": "HIIT",
+            "detail": "<p>Hello, leg day! Grow, shape, and strengthen one of the body’s biggest assets by sweating it out on the treadmill, weights, and resistance bands. Focus on form and technique to maximize every move.</p>",
+            "button_text_1": "SEE CLASS SCHEDULE",
+            "button_url_1": "shopify://pages/reserve",
+            "button_text_2": "OUR HIIT STUDIO",
+            "button_url_2": "shopify://pages/hiit-studio"
+          }
+        },
+        "hit_box_YLXKDb": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "HOT HIIT PILATES",
+            "int_heading": "INTENSITY",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "STUDIO",
+            "skillLevel": "Yoga",
+            "detail": "<p>We bring HIIT training into the heat of the hot yoga studio to turn up the burn in this S&T favourite. Expect short bursts of high intensity exercises that focus on stabilizing, strengthening, and toning the whole body - all while moving (and sweating) to the beat.</p>",
+            "button_text_1": "SEE CLASS SCHEDULE",
+            "button_url_1": "shopify://pages/reserve",
+            "button_text_2": "OUR YOGA STUDIO",
+            "button_url_2": "shopify://pages/yoga-studio"
+          }
+        },
+        "a716f6c2-86fa-42e7-8de5-71a119a3d638": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "MAT PILATES",
+            "int_heading": "INTENSITY",
+            "intensity_level": 2,
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "STUDIO",
+            "skillLevel": "Yoga",
+            "detail": "<p>Controlled, mindful movements tone and tighten in this full-body, breath-focused workout that combines core, endurance, balance, mobility, and strength.</p>",
+            "button_text_1": "SEE CLASS SCHEDULE",
+            "button_url_1": "shopify://pages/reserve",
+            "button_text_2": "OUR YOGA STUDIO",
+            "button_url_2": "shopify://pages/yoga-studio"
+          }
+        },
+        "5afe78e2-53aa-47c6-96e8-d83d44d51028": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "BEAT RIDE",
+            "int_heading": "INTENSITY",
+            "intensity_level": 2,
+            "dur_heading": "DURATION",
+            "duration": "45 min",
+            "skl_heading": "STUDIO",
+            "skillLevel": "Ride",
+            "detail": "<p>Lose yourself in the music & lights and let the beat be your guide as you work up a sweat in this high-energy, full-body ride.</p>",
+            "button_text_1": "SEE CLASS SCHEDULE",
+            "button_url_1": "shopify://pages/reserve",
+            "button_text_2": "OUR RIDE STUDIO",
+            "button_url_2": "shopify://pages/ride-studio"
+          }
+        },
+        "hit_box_AJdNM7": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "FLOW & RESTORE",
+            "int_heading": "INTENSITY",
+            "intensity_level": 1,
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "STUDIO",
+            "skillLevel": "Yoga",
+            "detail": "<p>Flow it out and then calm it all down in this 50/50 class of Vinyasa and Restorative Yoga. We'll start by waking up the body, activating muscles, and working up a sweat, and then rinse it all out with stretching and meditation. You'll leave feeling strong, centered, and restored.</p>",
+            "button_text_1": "SEE CLASS SCHEDULE",
+            "button_url_1": "shopify://pages/reserve",
+            "button_text_2": "OUR YOGA STUDIO",
+            "button_url_2": "shopify://pages/yoga-studio"
+          }
+        },
+        "704e6416-7383-410f-9de1-7ac0beeec85f": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "CANDLELIT SOUND & RESTORE",
+            "int_heading": "INTENSITY",
+            "intensity_level": 0,
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "STUDIO",
+            "skillLevel": "Yoga",
+            "detail": "<p>Find peace and relaxation in this slow, restorative practice surrounded in a sound bath of calming and healing frequencies and vibrations, including crystal bowls, gongs, or chimes. You'll be supported by props in gentle postures, allowing your body and mind to relax and release to the fullest.</p>",
+            "button_text_1": "SEE CLASS SCHEDULE",
+            "button_url_1": "shopify://pages/reserve",
+            "button_text_2": "OUR YOGA STUDIO",
+            "button_url_2": "shopify://pages/yoga-studio"
+          }
+        }
+      },
+      "block_order": [
+        "4fb95e56-cda7-408b-a55c-63a88396079d",
+        "hit_box_YLXKDb",
+        "a716f6c2-86fa-42e7-8de5-71a119a3d638",
+        "5afe78e2-53aa-47c6-96e8-d83d44d51028",
+        "hit_box_AJdNM7",
+        "704e6416-7383-410f-9de1-7ac0beeec85f"
+      ],
+      "settings": {
+        "subHeading": "CLASSES AT S&T",
+        "heading": "YOUR FIRST SWEAT",
+        "detail": "<p>All classes are suitable for all levels of experience, and your instructors will provide options for regressions and progressions in class. We always encourage challenging yourself, but your workout is yours - sweat comfortably!</p><p>From restorative to high intensity, check out our recommendations here for different class styles to try in each of our studios.</p><p><strong>Unlimited members</strong> - don't forget to book your <a href=\"https://tonicspa.janeapp.com/locations/personal-training/book\" target=\"_blank\" title=\"https://tonicspa.janeapp.com/locations/personal-training/book\">complimentary personal training consultation</a>!</p><p></p><p></p>",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "anchor_gN8t3G": {
+      "type": "anchor",
+      "settings": {
+        "link_anchor": "milestones"
+      }
+    },
+    "slideshow_GTkyPD": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_LJjN4V": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/SweatandTonic_rewards_RoryNariko.jpg",
+            "heading": "GET REWARDED",
+            "heading_size": "h2",
+            "subheading": "From your first sweat to your 1,000th - unlock exclusive benefits when you reach major milestones with your Unlimited membership, 9 to 5 Sweat membership, or S&T credits. Celebrate your hard work with special treats (and some fun surprises along the way) →",
+            "button_label": "",
+            "link": "",
+            "image_overlay_opacity": 50,
+            "color_scheme": "background-1"
+          }
+        },
+        "slide_BzEpM4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/SweatandTonic_rewards_toniccocktails.jpg",
+            "heading": "100 CLASSES",
+            "heading_size": "h2",
+            "subheading": "Redeem two complimentary cocktails / mocktails at Tonic House to celebrate with a friend! →",
+            "button_label": "",
+            "link": "",
+            "image_overlay_opacity": 50,
+            "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae"
+          }
+        },
+        "slide_GQAjmP": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/SweatandTonic_rewards_redlighttherapy.png",
+            "heading": "300 CLASSES",
+            "heading_size": "h2",
+            "subheading": "In our biohacking era - enjoy three complimentary S&T credits redeemable for red light therapy, compression therapy, pool deck, hot & cold therapy, classes, or Small Group Training. Save for yourself, or share with friends. →",
+            "button_label": "",
+            "link": "",
+            "image_overlay_opacity": 50,
+            "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae"
+          }
+        },
+        "slide_AAnpqc": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/500clubback.jpg",
+            "heading": "500 CLASSES",
+            "heading_size": "h2",
+            "subheading": "Good things come in fives: Receive 5 S&T credits redeemable for classes, the pool deck at Tonic Spa, or share with friends, and a $25 gift card redeemable at Tonic Bar or Tonic House. Celebrate with us in style - earn a collector's edition S&T crewneck, exclusive to 500 Club members. →",
+            "button_label": "",
+            "link": "",
+            "image_overlay_opacity": 50,
+            "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae"
+          }
+        },
+        "slide_WQqYLW": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/DSC03510.jpg",
+            "heading": "CLUB 1,000",
+            "heading_size": "h2",
+            "subheading": "Officially Sweat Royalty - unlock a complimentary one-month Unlimited membership, 48-hour priority class booking, and a custom-branded S&T weekender travel bag exclusive to Club 1000 members, loaded with goodies. (total value: $1,000) →",
+            "button_label": "EXPLORE MEMBERSHIPS",
+            "link": "shopify://pages/pricing",
+            "image_overlay_opacity": 50,
+            "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae"
+          }
+        },
+        "slide_4ATkJG": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Tonic_Spa_Pool_Sweat_and_Tonic_fafe547d-eacd-419b-a747-0262c24bd602.png",
+            "heading": "EVERY 1,000 CLASSES",
+            "heading_size": "h2",
+            "subheading": "Get a complimentary one-month Unlimited membership and 10 credits redeemable for classes, the pool deck at Tonic Spa, or share it with friends, between 2,000 - 4,000 classes (with some sweet surprises to fuel you in between). →",
+            "button_label": "EXPLORE MEMBERSHIPS",
+            "link": "shopify://pages/pricing",
+            "image_overlay_opacity": 30,
+            "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae"
+          }
+        },
+        "slide_KqzqQY": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/pink-purple-smoke.jpg",
+            "heading": "CLUB 5,000",
+            "heading_size": "h2",
+            "subheading": "Be boundless with Canada's most exclusive 360 wellness membership - receive a complimentary one-month <a href=\"https://sweatandtonic.com/pages/club-transcend\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/club-transcend\"><strong>Club Transcend</strong></a> membership. →",
+            "button_label": "EXPLORE MEMBERSHIPS",
+            "link": "shopify://pages/pricing",
+            "image_overlay_opacity": 30,
+            "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae"
+          }
+        }
+      },
+      "block_order": [
+        "slide_LJjN4V",
+        "slide_BzEpM4",
+        "slide_GQAjmP",
+        "slide_AAnpqc",
+        "slide_WQqYLW",
+        "slide_4ATkJG",
+        "slide_KqzqQY"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "S&T milestone reward program"
+      }
+    },
+    "collapsible_content_xyXAwh": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_pVWdJq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "SWEAT ETIQUETTE",
+            "icon": "none",
+            "row_content": "<p><strong>BE PRESENT</strong><br/>Class time is precious time, and magic happens when we all move together. Phones, conversations, doing your own personal workouts and going in and out of class can be unsafe and distracting for others.</p><p><strong>BE KIND</strong><br/>Show care and respect for your fellow Sweat Fam, and treat others the way you want to be treated. Lift each other up to ensure both team members and community members are respected, valued, safe, and supported. All love, no hate.</p><p><strong>BE CLEAN<br/></strong>Practice good personal hygiene. Be considerate of those around you, and help keep our shared space in tip top shape for all to enjoy.<br/></p><p><strong>BE ON TIME</strong><br/>Out of respect and safety for your fellow classmates and the instructor, classes start on time and latecomers are not permitted. Arrive with enough time to store your belongings and get ready for class.</p><p></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_CFhKQM": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "GETTING HERE",
+            "icon": "none",
+            "row_content": "<p>Our <strong>Yonge/Shuter</strong> location is at 225 Yonge Street, right across the street from the CF Toronto Eaton Centre, on the northeast corner of Yonge St and Shuter St.</p><p>Our <strong>Front/Spadina</strong> location is at 486 Front Street in The Well, on the 'Terrace Level' (level 2):</p><p><strong>From parking level LG:</strong> Look for the Market Elevator lobby. Walk straight down the corridor out into the Grand Atrium. Make a right as you exit the doors, and take the 'West Av' elevator next to Shoppers Drug Mart to Terrace Level (TR). Turn right as you exit the elevator, head straight, and Sweat and Tonic will be on your right side.</p><p><strong>From parking level P3 or P5:</strong> Look for signs for BMO (West Av. elevators) or 8 Spadina (East Lane elevators), and take the elevator up to Terrace Level (TR). From East Lane elevators, turn right as you exit the elevator, continue to walk west, and Sweat and Tonic will be on your left (across the pedestrian bridge).<br/>From West Av. elevators, turn right as you exit the elevator, head straight, and Sweat and Tonic will be on your right side.</p><p><strong>From 8 Spadina Ave (Front/Spadina):</strong> Take the escalator from the Grand Atrium up to Terrace Level (level 2). Continue to walk straight (west) - Sweat and Tonic will be on your left (across the pedestrian bridge).</p><p><strong>From Front St. or Wellington St:</strong> Take the ‘West Ave’ elevator located next to Indigo on the ground level and head up to Terrace Level (TR). Turn right as you exit the elevator, head straight, and Sweat and Tonic will be on your right side.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_BC3iMC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "DO YOU HAVE DEDICATED PARKING?",
+            "icon": "none",
+            "row_content": "<p>We do not have dedicated or validated parking, however, there are several paid public parking and transit options nearby.<br/><br/><strong>Yonge/Shuter: </strong>We're right across the street from the Queen St. TTC stop and from the Eaton Centre parking garage. There is also a Green P parking garage at Dundas Square and Victoria St, as well as more parking options on Victoria St.<br/><br/><strong>Front/Spadina (The Well): </strong>Public underground parking is available at The Well. There is one entrance located at 421 Wellington St. W, and another entrance located near 482 Front St. W. The Well is accessible by TTC streetcar from Spadina Ave, as well as King St.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_BbVjJP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "YOUR FIRST VISIT",
+            "icon": "none",
+            "row_content": "<p>We can’t wait to meet you! Please arrive 30 minutes prior to your first class so you can get familiar with the studios you’ll be in, and make sure you’re all set to get your sweat on!<br/><br/>Feel free to visit the studio before the day of your class so you can get familiar with our studios! We would be happy to arrange a tour for you outside of peak studio times at your convenience.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_HAx7Dr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "WHAT DO I NEED TO BRING?",
+            "icon": "none",
+            "row_content": "<p>All you need to bring is a water bottle, workout clothes (or come dressed for movement), running shoes if you're taking a HIIT class, and any personal items you'd like (e.g., makeup, hair brush, shower slides). We provide complimentary sweat towels, yoga mats, cycling shoes, and boxing gloves, and our change rooms are stocked with bath towels, toiletries (shampoo, conditioner, body wash, face wash, and body lotion), and Dyson hairdryers.</p><p>We also sell everything except shoes in our retail shop, in case you forget something.</p><p>We provide lockers with built-in locks to your store your belongings (one locker permitted per guest).</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_wFApfA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "CHECKING IN",
+            "icon": "none",
+            "row_content": "<p>For your first visit, please check in at the front desk. For all subsequent visits, you can check yourself in on the S&T app or with a team member by the studio doors.</p><p>We always recommend arriving for class early so that you have plenty of time to get ready. Once you’ve checked in, make sure to head to the correct spot number you’ve booked! You must be present for class if you've checked in.</p><p></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_jEqg4J": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "WHAT SPOT AM I IN?",
+            "icon": "none",
+            "row_content": "<p>You can check your spot number by checking your reservation in the app, at the front desk, or with one of our attendants stationed outside your class studio.</p><p>Spot numbers in the <strong>Ride studio </strong>are located on the front of the bikes. Mat numbers in the <strong>Yoga studio</strong> are found on the yoga blocks.</p><p>In the <strong>HIIT studio</strong>, classes are circuit-based, so you’ll rotate through weights, treadmill, and floor stations, staying at the same <em>number</em> throughout. If you’re not sure which station to switch to next, just remember WTF.</p><p>W = weights<br/>T = treadmill<br/>F = floor</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_qfqBUM": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "LATE & CANCELLATION POLICY",
+            "icon": "none",
+            "row_content": "<p>Out of respect and safety for your fellow classmates and instructors, classes start on time. Doors will open 5 minutes prior to your class start time, and will remain open for 2 minutes after the class starts. Once the studio doors close, any other latecomers will not be allowed in.</p><p>Be considerate of your Sweat Fam and do not take up spots in classes you are unable to attend. Only book classes you intend to take to ensure all of our Sweat Fam have a chance to get into class!</p><p>Please make sure to cancel your class reservation at least 12 hours in advance, or you will lose a credit for classes booked with a credit. For Unlimited and 9 to 5 Sweat Memberships, you will be charged a $24 fee for no shows and $19 for any late cancellations. This includes switching time slots under the 12-hour notice time period.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_fURRMb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "PHONE USE",
+            "icon": "none",
+            "row_content": "<p>Use of a phone during active exercise is prohibited. Phones are not permitted in the yoga studio. You may bring your phone into the Ride and HIIT studios, but please be mindful of your Sweat Fam around you and be present. Your studio time is a gift to yourself – make time for you!</p><p>Please feel free to let your instructor know should you require your mobile device for accessibility or medical reasons.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_egMQGD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "CAN I LEAVE CLASS EARLY?",
+            "icon": "none",
+            "row_content": "<p>Unless it's an emergency or you're feeling unwell, please stay in class until the end! We cool down and close off the class together, and leaving early disrupts the flow and experience for other guests. Make sure you fill up your water bottle before class, and take breaks in class as needed.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LYqwGe": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "TONIC HOUSE ACCESS",
+            "icon": "none",
+            "row_content": "<p>Tonic House is open to Unlimited members only during weekday working hours (Monday to Friday, open to 5 PM). During this time, all guests in Tonic House must be prepared to present their valid membership access card to a S&T attendant.</p><p>You can pick up your access card at the front desk. There is a $10 deposit for Tonic House access cards.<br/><br/>Make sure to check out our <a href=\"https://sweatandtonic.com/pages/tonic-house-etiquette\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/tonic-house-etiquette\"><strong>Tonic House Etiquette</strong></a> to ensure a pleasant and productive environment for all to enjoy.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_dxGFdr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "HOW DOES THE WAITLIST WORK?",
+            "icon": "none",
+            "row_content": "<p>Our waitlist is designed to move quickly and ensures that guests who want to take a class will have the best chance of getting into that class. As soon as a spot opens up, you will be <strong>automatically enrolled </strong>on a first come, first served basis, up to 10 minutes before class start time.</p><p>If you do not wish or intend to take the class, we encourage you to remove yourself from the waitlist to avoid automatic enrolment and a penalty should you no longer be able to make it. You can remove yourself from the waitlist at anytime without penalty. Once you are enrolled, our standard no-show / late cancellation policy will apply. Removing yourself from the waitlist will allow other guests, who are on the waitlist and able to make it to class, the chance to get in.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_X4EJFH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "WHEN DO CLASS SCHEDULES GET RELEASED?",
+            "icon": "none",
+            "row_content": "<p>Our class schedule opens up for booking every weekend. You can book classes up to two weeks in advance, every Saturday at 5 PM for Unlimited and 9 to 5 Sweat members, and Sunday at 5 PM for everyone else.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_qhW7fN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "HOW DO MILESTONE REWARDS WORK?",
+            "icon": "none",
+            "row_content": "<p>Active guests who book classes with an Unlimited membership, 9 to 5 Sweat membership or S&T credits are eligible for milestone rewards! Exceptions apply.<br/><br/>Make sure you're opted into email communications and subscribed to our newsletter, so that you can receive notifications, offers, and other important updates.</p><p>You get to keep your milestone privileges (e.g. priority booking) so long as there is activity in your account - whether that's a purchase or booking a class - within a 12-month period.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_pVWdJq",
+        "collapsible_row_CFhKQM",
+        "collapsible_row_BC3iMC",
+        "collapsible_row_BbVjJP",
+        "collapsible_row_HAx7Dr",
+        "collapsible_row_wFApfA",
+        "collapsible_row_jEqg4J",
+        "collapsible_row_qfqBUM",
+        "collapsible_row_fURRMb",
+        "collapsible_row_egMQGD",
+        "collapsible_row_LYqwGe",
+        "collapsible_row_dxGFdr",
+        "collapsible_row_X4EJFH",
+        "collapsible_row_qhW7fN"
+      ],
+      "settings": {
+        "caption": "BEFORE YOU SWEAT",
+        "heading": "SWEAT FAM ETIQUETTE",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_first",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "rich_text_N3EzMc": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_DaP8xc": {
+          "type": "heading",
+          "settings": {
+            "heading": "CHECK OUT OUR FAQ",
+            "heading_size": "h2"
+          }
+        },
+        "text_VpcVib": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Check out our full FAQs for more information on our studio policies, services, and facilities.</p>"
+          }
+        },
+        "button_bkb3Mk": {
+          "type": "button",
+          "settings": {
+            "button_label": "VIEW ALL FAQs",
+            "button_link": "https://sweatandtonic.com/pages/faq",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_DaP8xc",
+        "text_VpcVib",
+        "button_bkb3Mk"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "hit-team": {
+      "type": "hit-team",
+      "blocks": {
+        "d8c76e3a-9682-4e98-ad54-de25dc96e3e2": {
+          "type": "column",
+          "settings": {
+            "title": "TONIC BAR",
+            "image": "shopify://shop_images/TonicBar_smoothies.jpg",
+            "link_label": "PRE-ORDER YOUR POST-SWEAT SMOOTHIE ON THE S&T APP | VIEW OUR MENU",
+            "link": "shopify://pages/tonic-bar"
+          }
+        },
+        "344bccad-18c9-45fe-a9fa-30f6d5343214": {
+          "type": "column",
+          "settings": {
+            "title": "TONIC SPA",
+            "image": "shopify://shop_images/SweatandTonic_TonicSpa_MassageTherapy.jpg",
+            "link_label": "FIND 360 RECOVERY & WELLNESS, ALL UNDER ONE ROOF.  | EXPLORE SPA SERVICES",
+            "link": "shopify://pages/spa"
+          }
+        },
+        "a746ac32-ac4e-4cf0-a968-b3c4d0a06e4d": {
+          "type": "column",
+          "settings": {
+            "title": "TONIC HOUSE",
+            "image": "shopify://shop_images/TonicHouse_cocktails.jpg",
+            "link_label": "WORKSPACE BY DAY, COCKTAIL BAR BY NIGHT. GET TOGETHER WITH YOUR BESTIES & UNWIND. | VIEW COCKTAIL MENU",
+            "link": "shopify://pages/bar-menu"
+          }
+        }
+      },
+      "block_order": [
+        "d8c76e3a-9682-4e98-ad54-de25dc96e3e2",
+        "344bccad-18c9-45fe-a9fa-30f6d5343214",
+        "a746ac32-ac4e-4cf0-a968-b3c4d0a06e4d"
+      ],
+      "settings": {
+        "sub_title": "POST-SWEAT",
+        "title": "RECOVER & REJUVENATE",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "hit-banner-row": {
+      "type": "hit-banner-row",
+      "blocks": {
+        "2fc049c5-7369-409d-b14a-69872fa3a417": {
+          "type": "heading",
+          "settings": {
+            "heading": "MEMBERSHIP BENEFITS",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "816d62d0-da59-4074-9bf1-9c214ed815fe": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "GO UNLIMITED",
+            "button_link_1": "https://www.sweatandtonic.com/reserve",
+            "button_style": "solid",
+            "applies_color_scheme": true,
+            "btn_text_clr": "#000000",
+            "btn_hvr_text_clr": "#000000",
+            "btn_bg_clr": "#ffffff",
+            "btn_hvr_bg_clr": "#FEE4B1"
+          }
+        },
+        "486c1659-7943-4d3f-a46d-0d16c16aa358": {
+          "type": "function",
+          "settings": {
+            "text_clr": "#ffffff",
+            "svg_1": "<svg viewbox=\"0 0 64 64\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"2.176\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"><polygon points=\"52 56 52 44 56 20 44 24 32 8 20 24 8 20 12 44 12 56 52 56\"></polygon><path d=\"M12 44z\"></path></g></svg>",
+            "title_1": "S&T UNLIMITED MEMBERSHIP",
+            "desc_1": "<p>Includes unlimited classes, a 30-min Personal Training consultation, Tonic House access, 10% off Tonic Spa treatments, 10% off the S&T shop, one guest credit per month, exclusive event invites, and more. </p>",
+            "svg_2": "<svg fill=\"#ffffff\" version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 461.497 461.497\" stroke=\"#ffffff\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xml:space=\"preserve\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <g> <g id=\"Layer_2_17_\"> <g> <path d=\"M268.616,409.893c-3.622,0.977-7.318,1.848-10.986,2.602c-9.596,1.955-15.789,11.32-13.829,20.917 c0.11,0.548,0.247,1.069,0.404,1.593c2.618,8.674,11.466,14.086,20.518,12.239c4.378-0.896,8.79-1.939,13.115-3.103 c9.46-2.544,15.062-12.277,12.517-21.737C287.807,412.932,278.076,407.346,268.616,409.893z\"></path> <path d=\"M144.994,400.018c-3.425-1.524-6.842-3.174-10.157-4.908c-8.687-4.529-19.396-1.163-23.926,7.523 c-2.236,4.272-2.55,9.039-1.258,13.317c1.334,4.412,4.369,8.307,8.772,10.605c3.957,2.061,8.024,4.032,12.104,5.851 c8.941,3.992,19.43-0.016,23.425-8.956C157.949,414.502,153.936,404.02,144.994,400.018z\"></path> <path d=\"M205.979,415.609c-3.73-0.3-7.514-0.723-11.228-1.245c-9.699-1.382-18.673,5.367-20.051,15.065 c-0.374,2.636-0.145,5.213,0.575,7.602c1.933,6.405,7.433,11.441,14.496,12.449c4.419,0.624,8.917,1.125,13.362,1.479 c9.766,0.791,18.317-6.487,19.103-16.247C223.021,424.946,215.747,416.395,205.979,415.609z\"></path> <path d=\"M325.738,383.44c-3.081,2.12-6.277,4.178-9.494,6.12c-7.089,4.271-10.115,12.719-7.833,20.294 c0.42,1.388,1.02,2.748,1.802,4.051c5.052,8.389,15.953,11.083,24.343,6.033c3.825-2.307,7.625-4.761,11.288-7.28 c8.066-5.553,10.11-16.596,4.556-24.661C344.849,379.924,333.803,377.888,325.738,383.44z\"></path> <path d=\"M395.453,335.48c-7.944-5.728-19.028-3.931-24.757,4.008c-2.188,3.037-4.504,6.05-6.875,8.941 c-3.89,4.75-4.9,10.908-3.255,16.375c0.985,3.254,2.911,6.269,5.736,8.585c7.577,6.205,18.75,5.091,24.955-2.487 c2.831-3.45,5.595-7.043,8.202-10.664C405.189,352.294,403.396,341.213,395.453,335.48z\"></path> <path d=\"M420.276,270.883c-9.4-2.746-19.247,2.654-21.989,12.056c-1.054,3.601-2.228,7.217-3.485,10.745 c-1.334,3.713-1.354,7.585-0.292,11.092c1.568,5.203,5.495,9.614,10.994,11.584c9.222,3.307,19.371-1.483,22.683-10.7 c1.504-4.204,2.901-8.508,4.146-12.792C435.074,283.471,429.676,273.62,420.276,270.883z\"></path> <path d=\"M453.552,155.337l-23.307,7.242c-17.688-54.204-54.93-98.746-105.337-125.798c-5.074-2.725-10.221-5.229-15.431-7.53 c-0.038-0.018-0.068-0.033-0.103-0.056c-0.218-0.092-0.447-0.178-0.659-0.272C262.758,8.814,211.901,5.002,163.15,18.204 c-0.383,0.075-0.766,0.147-1.144,0.254c-1.628,0.444-3.271,0.925-4.892,1.409c-2.661,0.804-5.338,1.67-7.964,2.571 c-0.311,0.107-0.604,0.24-0.906,0.36c-43.518,15.075-80.577,42.869-107.015,80.005c-0.094,0.128-0.2,0.238-0.289,0.365 c-2.584,3.629-5.087,7.392-7.451,11.188c-0.148,0.243-0.271,0.496-0.412,0.747c-2.358,3.824-4.624,7.736-6.77,11.726 C4.395,167.665-3.964,213.292,1.739,258.362c0.013,0.103,0.025,0.199,0.034,0.301c0.009,0.072,0.025,0.147,0.042,0.222 c1.55,12.04,4.096,24.041,7.671,35.895c9.388,31.125,25.053,59.112,46.557,83.188c6.523,7.302,17.735,7.932,25.041,1.409 c7.302-6.525,7.939-17.74,1.411-25.04c-10.735-12.013-19.719-25.208-26.91-39.424c-0.077-0.175-0.145-0.354-0.229-0.522 c-1.691-3.354-3.298-6.792-4.786-10.233c-0.008-0.027-0.017-0.043-0.029-0.065c-2.708-6.334-5.069-12.854-7.093-19.553 c-23.243-77.066,6.399-157.708,67.912-202.796c0.91-0.662,1.819-1.33,2.738-1.972c15.792-11.138,33.604-19.97,53.098-25.848 c19.618-5.914,39.457-8.398,58.887-7.816c0.314,0.014,0.619,0.023,0.93,0.032c1.186,0.036,2.368,0.099,3.548,0.165 c0.477,0.025,0.952,0.051,1.428,0.081c60.587,3.79,116.456,37.44,147.82,90.305c0.017,0.03,0.029,0.064,0.05,0.094 c0.465,0.785,0.919,1.569,1.375,2.363c0.054,0.089,0.113,0.168,0.165,0.259c6.001,10.523,11.05,21.784,14.977,33.701 l-23.306,7.246c-6.473,2.011-7.11,6.668-1.429,10.35l50.719,32.852c5.686,3.685,12.468,1.575,15.061-4.676l23.171-55.82 C463.182,156.804,460.02,153.327,453.552,155.337z\"></path> <path d=\"M155.288,231.23c-17.092,12.662-28.75,23.646-34.964,32.95c-6.208,9.303-9.932,19.235-11.155,29.796h106.935v-29.053 h-55.657c3.268-3.213,6.111-5.805,8.533-7.785c2.423-1.991,7.217-5.457,14.395-10.418c12.074-8.517,20.404-16.335,24.985-23.455 c4.577-7.114,6.868-14.582,6.868-22.4c0-7.349-1.997-13.987-5.993-19.912c-3.999-5.919-9.486-10.311-16.456-13.17 c-6.969-2.855-16.728-4.288-29.273-4.288c-12.014,0-21.419,1.505-28.219,4.514c-6.792,3.004-12.061,7.319-15.792,12.944 c-3.735,5.636-6.299,13.467-7.702,23.497l35.704,2.887c0.991-7.229,2.933-12.278,5.818-15.135 c2.891-2.859,6.604-4.29,11.161-4.29c4.373,0,8.006,1.388,10.892,4.16c2.886,2.766,4.332,6.109,4.332,10.02 c0,3.619-1.458,7.438-4.377,11.466C172.406,217.582,165.726,223.476,155.288,231.23z\"></path> <path d=\"M323.651,293.977v-23.979h16.099V242.34h-16.099v-78.844h-31.066l-64.93,77.187v29.315h64.93v23.979H323.651 L323.651,293.977z M258.28,242.34l34.305-40.366v40.366H258.28z\"></path> </g> </g> </g> </g></svg>",
+            "title_2": "24-HOUR PRIORITY BOOKING",
+            "desc_2": "<p>Get first dibs on your favourite classes. Our class schedule opens for booking every Saturday at 5 PM for Unlimited and 9 to 5 Sweat Members, and on Sunday at 5 PM for everyone else.</p>",
+            "svg_3": "<svg viewbox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"#ffffff\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"><path fill=\"#ffffff\" d=\"M224 448a32 32 0 0 0-32 32v384a32 32 0 0 0 32 32h576a32 32 0 0 0 32-32V480a32 32 0 0 0-32-32H224zm0-64h576a96 96 0 0 1 96 96v384a96 96 0 0 1-96 96H224a96 96 0 0 1-96-96V480a96 96 0 0 1 96-96z\"></path><path fill=\"#ffffff\" d=\"M512 544a32 32 0 0 1 32 32v192a32 32 0 1 1-64 0V576a32 32 0 0 1 32-32zm178.304-295.296A192.064 192.064 0 0 0 320 320v64h352l96 38.4V448H256V320a256 256 0 0 1 493.76-95.104l-59.456 23.808z\"></path></g></svg>",
+            "title_3": "CANCEL ANYTIME",
+            "desc_3": "<p>No initiation fees, no annual commitment, cancel anytime with no minimum notice periods.</p>",
+            "svg_4": "<svg fill=\"#ffffff\" viewbox=\"0 0 30 30\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"><path d=\"M20.5 10c-.13 0-.266.06-.357.152l-5.498 5.498c-.247.247-.464.334-.65.335-.184 0-.386-.08-.642-.335l-2.493-2.49c-.454-.475-1.175.257-.706.708l2.493 2.49c.392.392.853.63 1.35.627.495-.003.974-.246 1.354-.626l5.5-5.5c.31-.305.108-.86-.35-.86zM14.72.05c-.132.058-.33.183-.562.325-.233.142-.687.43-1.13.672-.888.48-2 .955-3.028.955-1.1 0-1.923-.23-2.688-.477C6.548 1.278 5.835 1 5 1c-.774 0-1.526.122-2.107.603C2.31 2.085 2 2.916 2 4v8c0 1.18-.19 5.267 2.064 9.248 1.327 2.342 3.62 4.495 5.778 6.092 1.08.798 2.124 1.455 3.01 1.918.885.463 1.55.742 2.148.742.6 0 1.263-.28 2.148-.742.886-.463 1.93-1.12 3.01-1.918 2.158-1.597 4.45-3.75 5.778-6.092C28.19 17.268 28 13.18 28 12V4c0-1.084-.31-1.915-.893-2.397C26.527 1.123 25.774 1 25 1c-.834 0-1.548.278-2.313.523C21.924 1.77 21.1 2 20 2c-1.03 0-2.148-.474-3.035-.955-.444-.24-.89-.512-1.13-.672-.243-.16-.443-.26-.562-.325-.14-.064-.408-.064-.554 0zm.28 1.04c.092 0 .173.05.303.132.298.187.705.444 1.183.703C17.442 2.443 18.686 3 20 3c1.242 0 2.2-.27 2.992-.523C23.782 2.222 24.398 2 25 2c.662 0 1.16.12 1.47.375.31.256.53.72.53 1.625v8c0 1.277.167 5.045-1.936 8.755-1.21 2.138-3.42 4.24-5.502 5.782-1.04.77-2.05 1.403-2.876 1.836-.828.433-1.535.627-1.686.627-.15 0-.858-.194-1.686-.627-.827-.433-1.835-1.065-2.877-1.836-2.082-1.54-4.29-3.644-5.5-5.782C2.832 17.045 3 13.277 3 12V4c0-.905.22-1.37.53-1.625C3.84 2.12 4.337 2 5 2c.602 0 1.217.222 2.008.477C7.798 2.73 8.758 3 10 3c1.313 0 2.55-.558 3.506-1.077.478-.26.885-.516 1.183-.703.13-.08.218-.133.31-.133z\"></path></g></svg>",
+            "title_4": "PRICE-PROTECTED",
+            "desc_4": "<p>As long as your membership remains active, your monthly rate is price-protected forever (and ever). We like fun surprises only.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "2fc049c5-7369-409d-b14a-69872fa3a417",
+        "816d62d0-da59-4074-9bf1-9c214ed815fe",
+        "486c1659-7943-4d3f-a46d-0d16c16aa358"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "image": "shopify://shop_images/UnlimitedMembership.png",
+        "img_mobile": "shopify://shop_images/UnlimitedMembership_vertical.jpg",
+        "image_overlay_opacity": 80,
+        "image_height": "adapt",
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "section_title_mobtop": true
+      }
+    },
+    "hit-multicolumn": {
+      "type": "hit-multicolumn",
+      "blocks": {
+        "5f339c27-a2d8-4ed9-9d14-fd9c115bad81": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/YongeShuter_Yoga2.jpg",
+            "title": "YONGE / SHUTER",
+            "text": "<p>Elevate your practice in our infrared-heated studio, providing warm and hot yoga, dynamic Pilates, and soothing restorative yoga & meditation classes. </p>",
+            "address": "225 Yonge Street, Toronto ON M5B 1N8",
+            "phone": "Studio capacity: 50 people",
+            "link_label": "see classes",
+            "link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48717"
+          }
+        },
+        "ab06944c-e56b-4aaa-962a-25c5bdcc7f46": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SweatandTonic_YogaRestorative.png",
+            "title": "FRONT / SPADINA",
+            "text": "<p>Find your flow in our infrared-heated studio, featuring warm and hot yoga classes elevated by chromatic light systems and an immersive 445-inch projection screen.</p>",
+            "address": "486 Front St W, Toronto, ON M5V 0V2",
+            "phone": "Studio capacity: 60 people",
+            "link_label": "see classes",
+            "link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48750"
+          }
+        }
+      },
+      "block_order": [
+        "5f339c27-a2d8-4ed9-9d14-fd9c115bad81",
+        "ab06944c-e56b-4aaa-962a-25c5bdcc7f46"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "OUR LOCATIONS",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "event-contact": {
+      "type": "event-contact",
+      "disabled": true,
+      "settings": {
+        "bg_color_left": "#26221b",
+        "text_color_left": "#ffffff",
+        "sub_color_left": "#FEE4B1",
+        "subheading_left": "Ready to sweat?",
+        "heading_left": "LET’S GET YOU IN",
+        "text_left": "",
+        "p_name": "SARAH TRAN",
+        "p_tagline": "Events & Sales Manager",
+        "p_mail": "sarah@sweatandtonic.com",
+        "heading": "Contact form",
+        "btn_label": "Submit event inquiry",
+        "btn_url": "",
+        "success_msg": "<p>Thanks for inquiring. Your entry is submitted, and we'll reach out to you soon.</p>",
+        "color_scheme": "",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false,
+        "show_current_activity_dropdown": false,
+        "embed-form": "<!-- Begin Connect Signup Form -->\n<link href=\"https://assets.brandbot.com/forms/embed/embed.css\" rel=\"stylesheet\" type=\"text/css\">\n<style type=\"text/css\">\n\t#bb_form .field.form-group:after {display: none;}\n\t#bb_form .field.form-group input[type=\"text\"],.contact #bb_form .field.form-group input[type=\"email\"],.contact #bb_form .field.form-group input[type=\"tel\"]{border: none;border-bottom: 1px solid rgba(0,0,0,.2);border-radius: unset;}\n\t#bb_form .form-group.with-label {flex-wrap: wrap;flex-direction: column;}\n\t#bb_form .form-group.with-label label{font-weight:400;}\n\t#bb_form .form-group.with-label input[type=checkbox]{margin-left: 20px;}\n</style>\n\n<div id=\"bb_form\">\n\t<form method=\"post\" action=\"https://microservices.brndbot.net/forms/answers\" name=\"ibbxy\" id=\"bb_form_inner\">\n\t\t<div id=\"alert\"></div>\n\t\t<div class=\"contact__fields\">\n\t\t\t<div class=\"field form-group no-label\">\n\t\t\t\t<label for=\"bb_first_name\">First Name</label>\n\t\t\t\t<input type=\"text\" name=\"bb_first_name\" id=\"bb_first_name\" class=\"form-control\" required=\"required\" placeholder=\"First Name\">\n\t\t\t</div>\n\t\t\t<div class=\"field form-group no-label\">\n\t\t\t\t<label for=\"bb_last_name\">Last Name</label>\n\t\t\t\t<input type=\"text\" name=\"bb_last_name\" id=\"bb_last_name\" class=\"form-control\" required=\"required\" placeholder=\"Last Name\">\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"field form-group no-label\">\n\t\t\t<label for=\"bb_email\">Email Address</label>\n\t\t\t<input type=\"email\" name=\"bb_email\" id=\"bb_email\" class=\"form-control\" required=\"required\" placeholder=\"Email Address\">\n\t\t</div>\n\t\t<div class=\"form-group\">\n\t\t\t<input type=\"hidden\" name=\"bb_uuid\" id=\"bb_uuid\" value=\"a4325c6c-fc7c-4b67-b8f2-c318441997f3\">\n\t\t\t<button type=\"submit\" class=\"button button--primary\" id=\"bb_submit\" style=\"background-color: #000000; border-color: #000000; color: white;\">RSVP NOW</button>\n\t\t</div>\n\t</form>\n</div>\n<script>window.jQuery || document.write('<scr'+'ipt src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></scr'+'ipt>') </script>\n<script src=\"https://assets.brandbot.com/forms/embed/embed.js?id=ibbxy\"></script>\n<!-- Ending Connect Signup Form -->"
+      }
+    },
+    "wellness_tesimonials_3VHm8A": {
+      "type": "wellness-tesimonials",
+      "blocks": {
+        "column_wfVmJy": {
+          "type": "column",
+          "settings": {
+            "enable_block_image": true,
+            "testimonial-title": "GET REWARDED",
+            "testimonial-desc": "<p>From your first sweat to your 1,000th - unlock exclusive benefits when you reach major milestones with your Unlimited membership, 9 to 5 Sweat membership, or S&T credits. Celebrate your hard work with special treats (and some fun surprises along the way) →</p>",
+            "testimonial-name": "",
+            "testimonial-role": ""
+          }
+        },
+        "column_hH4qAf": {
+          "type": "column",
+          "settings": {
+            "enable_block_image": true,
+            "testimonial-title": "100 CLASSES",
+            "testimonial-desc": "<p>Redeem two complimentary cocktails / mocktails at Tonic House and a class credit for yourself, or share it with your bestie. →</p>",
+            "testimonial-name": "Name",
+            "testimonial-role": "Manager"
+          }
+        },
+        "column_yCFijt": {
+          "type": "column",
+          "settings": {
+            "enable_block_image": true,
+            "testimonial-title": "Great!!",
+            "testimonial-desc": "<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>",
+            "testimonial-name": "Name",
+            "testimonial-role": "Manager"
+          }
+        },
+        "column_Wic6ad": {
+          "type": "column",
+          "settings": {
+            "enable_block_image": true,
+            "testimonial-title": "Great!!",
+            "testimonial-desc": "<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>",
+            "testimonial-name": "Name",
+            "testimonial-role": "Manager"
+          }
+        },
+        "column_jGMUFp": {
+          "type": "column",
+          "settings": {
+            "enable_block_image": true,
+            "testimonial-title": "Great!!",
+            "testimonial-desc": "<p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>",
+            "testimonial-name": "Name",
+            "testimonial-role": "Manager"
+          }
+        }
+      },
+      "block_order": [
+        "column_wfVmJy",
+        "column_hH4qAf",
+        "column_yCFijt",
+        "column_Wic6ad",
+        "column_jGMUFp"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "SWEAT FAM REWARDS",
+        "padding_top": 40,
+        "padding_bottom": 10
+      }
+    }
+  },
+  "order": [
+    "hit-hero",
+    "hit-banner-column",
+    "hit-classes",
+    "anchor_gN8t3G",
+    "slideshow_GTkyPD",
+    "collapsible_content_xyXAwh",
+    "rich_text_N3EzMc",
+    "hit-team",
+    "hit-banner-row",
+    "hit-multicolumn",
+    "event-contact",
+    "wellness_tesimonials_3VHm8A"
+  ]
+}

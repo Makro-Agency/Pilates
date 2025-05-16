@@ -1,1 +1,652 @@
-{"sections":{"spa-hero":{"type":"spa-hero","blocks":{"3d295c9e-10b8-4397-b3c8-b08733efc0db":{"type":"text","settings":{"text":"WELLNESS & RECOVERY AT SWEAT AND TONIC","text_style":"caption-with-letter-spacing","text_clr":"#ffffff"}},"89ede07a-229a-4fd5-8064-eb065090ad93":{"type":"heading","settings":{"heading":"WELLNESS & RECOVERY HUB","heading_size":"h1","text_clr":"#ffffff"}},"943f29ad-f020-4899-974b-20f586c4dd6a":{"type":"buttons","settings":{"button_label_1":"BOOK services","button_link_1":"https:\/\/booking.mangomint.com\/sweattonic","button_style":"solid","applies_color_scheme":true,"btn_text_clr":"#000000","btn_hvr_text_clr":"#000000","btn_bg_clr":"#FEE4B1","btn_hvr_bg_clr":"#ffffff"}},"d41f6baf-924e-485e-ab85-303705a32897":{"type":"spa_info","settings":{"detail":"Relax, rejuvenate, and indulge with our diverse range of wellness services, treatments, and bio-hacking amenities.","link_text":"Learn More","url":"","enableScroll":true}}},"block_order":["3d295c9e-10b8-4397-b3c8-b08733efc0db","89ede07a-229a-4fd5-8064-eb065090ad93","943f29ad-f020-4899-974b-20f586c4dd6a","d41f6baf-924e-485e-ab85-303705a32897"],"settings":{"allow_transparent_header":true,"image":"shopify:\/\/shop_images\/Frame_5911.jpg","img_mobile":"shopify:\/\/shop_images\/hero.jpg","image_overlay_opacity":0,"image_height":"adapt","desktop_content_position":"middle-center","color_scheme":"accent-1","image_behavior":"none"}},"spa-services-section":{"type":"spa-services-section","blocks":{"c1ea4c2b-0cbc-4dc3-ba8b-630e6daa52c0":{"type":"services","settings":{"location_filter":"Yonge\/Shuter, Front\/Spadina (The Well)","serviceType":"ALL, BIOHACKING TECH","heading":"COMPRESSION THERAPY","detail":"<p>Recover, reshape, rejuvenate. Zip into the Ballancer Pro, a state-of-the-art compression therapy system that delivers lymphatic drainage technology to contour your body accelerate recovery, detox, and improve circulation in a 40-minute session.<br\/><br\/>Purchase credits first, then book your session at <a href=\"https:\/\/booking.mangomint.com\/sweattonic\" target=\"_blank\" title=\"https:\/\/booking.mangomint.com\/sweattonic\">booking.mangomint.com\/sweattonic<\/a><\/p>","button_text":"BUY CREDITS","button_link":"https:\/\/www.sweatandtonic.com\/pricing","link_text":"BOOK A SESSION","text_link":"https:\/\/booking.mangomint.com\/sweattonic","address_title_1":"YONGE \/ SHUTER","add_exclusive_1":false,"address_1":"<p>225 Yonge Street, Toronto ON M5B 1N8<\/p>","address_title_2":"FRONT \/ SPADINA (THE WELL)","add_exclusive_2":false,"address_2":"<p>Coming soon<\/p>","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":"","image":"shopify:\/\/shop_images\/SweatandTonic_CompressionTherapy.png"}},"976b4ad5-89d7-4a33-8792-b5a6a202b6a1":{"type":"services","settings":{"location_filter":"Yonge\/Shuter, Front\/Spadina (The Well)","serviceType":"ALL, BIOHACKING TECH","heading":"CRYOTHERAPY","detail":"<p>Biohack and chill. Step into our -130°C cryochamber to promote recovery, reduce inflammation, boost your mood, energy & metabolism, and burn calories.<br\/><br\/>Purchase credits first, then book your session at <a href=\"https:\/\/booking.mangomint.com\/sweattonic\" title=\"https:\/\/booking.mangomint.com\/sweattonic\">booking.mangomint.com\/sweattonic<\/a><br\/><br\/><a href=\"\/pages\/cryotherapy\" title=\"Cryotherapy\"><strong>LEARN MORE<\/strong><\/a><\/p>","button_text":"Buy credits","button_link":"shopify:\/\/pages\/pricing","link_text":"Book a session","text_link":"https:\/\/booking.mangomint.com\/sweattonic","address_title_1":"YONGE \/ SHUTER","add_exclusive_1":false,"address_1":"<p>225 Yonge Street, Toronto ON M5B 1N8<\/p><p>647-372-0225<\/p>","address_title_2":"FRONT \/ SPADINA (THE WELL)","add_exclusive_2":false,"address_2":"<p>Coming soon<\/p>","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":"","image":"shopify:\/\/shop_images\/cryochamber_sweatandtonic_6ffc0165-a066-49b1-a0d4-fb84cf4e1739.jpg"}},"aaba282a-25a9-4737-854d-bcbfa6e87067":{"type":"services","settings":{"location_filter":"Front\/Spadina (The Well), Yonge\/Shuter","serviceType":"ALL, MEDICAL","heading":"DIETETICS","detail":"<p>Find food freedom and develop an abundant relationship with food that supports your physical, mental, and emotional wellbeing.<\/p>","button_text":"Book now","button_link":"https:\/\/booking.mangomint.com\/sweattonic","link_text":"","text_link":"","address_title_1":"VIRTUAL SESSIONS","add_exclusive_1":false,"address_1":"<p>Now available<\/p>","address_title_2":"FRONT \/ SPADINA (THE WELL)","add_exclusive_2":false,"address_2":"<p>Coming soon<\/p>","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":"","image":"shopify:\/\/shop_images\/Dietetics.png"}},"c3a2197b-6488-435e-a311-a064b151d08a":{"type":"services","settings":{"location_filter":"Yonge\/Shuter, Front\/Spadina (The Well)","serviceType":"ALL, BIOHACKING TECH","heading":"INFRARED SAUNA","detail":"<p>Relax muscles, relieve tension and detoxify from the inside out.<\/p>","button_text":"book now","button_link":"https:\/\/www.sweatandtonic.com\/reserve","link_text":"LEARN MORE","text_link":"shopify:\/\/pages\/sauna","address_title_1":"YONGE \/ SHUTER","add_exclusive_1":false,"address_1":"<p>225 Yonge Street, Toronto ON M5B 1N8<\/p><p>Private saunas available<\/p>","address_title_2":"FRONT \/ SPADINA (THE WELL)","add_exclusive_2":false,"address_2":"<p>Coming soon<\/p>","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":"","image":"shopify:\/\/shop_images\/infrared-sauna-accessories-saunaray.png"}},"258f5bae-819a-4e01-a029-04680c92e6ef":{"type":"services","settings":{"location_filter":"Yonge\/Shuter, Front\/Spadina (The Well)","serviceType":"ALL, HIGH TOUCH SERVICE","heading":"MASSAGE THERAPY","detail":"<p>Relax muscles, relieve tension and detoxify skin for a glowing complexion in one of our two infrared saunas<\/p>","button_text":"book now","button_link":"https:\/\/booking.mangomint.com\/sweattonic","link_text":"","text_link":"","address_title_1":"YONGE \/ SHUTER","add_exclusive_1":false,"address_1":"<p>225 Yonge Street, Toronto ON M5B 1N8<\/p><p>647-372-0225<\/p>","address_title_2":"FRONT \/ SPADINA (THE WELL)","add_exclusive_2":false,"address_2":"<p>Coming soon<\/p>","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":"","image":"shopify:\/\/shop_images\/massagetherapy_sweatandtonic.jpg"}},"188ae94c-bc14-4188-bd62-1199bc872443":{"type":"services","settings":{"location_filter":"Yonge\/Shuter","serviceType":"ALL, BIOHACKING TECH","heading":"SOMADOME MEDITATION","detail":"<p>Recharge, restore and achieve balance through a technology-enhanced guided meditation in only 20 minutes.<br\/>Unlimited member access only.<\/p>","button_text":"BOOK NOW","button_link":"https:\/\/www.sweatandtonic.com\/reserve","link_text":"Learn more","text_link":"shopify:\/\/pages\/somadome","address_title_1":"YONGE \/ SHUTER","add_exclusive_1":true,"address_1":"<p>225 Yonge Street, Toronto ON M5B 1N8<\/p><p>Unlimited Member access only<\/p>","address_title_2":"","add_exclusive_2":false,"address_2":"","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":"","image":"shopify:\/\/shop_images\/Somadome_blue.jpg"}},"ee21d118-d816-472c-a9b6-1075c016dfbe":{"type":"services","settings":{"location_filter":"Yonge\/Shuter, Front\/Spadina (The Well)","serviceType":"ALL, MEDICAL","heading":"ACUPUNCTURE","detail":"<p>Enhance mental clarity, increase energy, reduce pain and tension, address sleep issues, and many more health concerns.<\/p>","button_text":"","button_link":"https:\/\/booking.mangomint.com\/sweattonic","link_text":"","text_link":"","address_title_1":"YONGE \/ SHUTER","add_exclusive_1":false,"address_1":"<p>225 Yonge Street, Toronto ON M5B 1N8<\/p><p>647-372-0225<\/p>","address_title_2":"FRONT \/ SPADINA (THE WELL)","add_exclusive_2":false,"address_2":"<p>Coming soon<\/p>","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":"","image":"shopify:\/\/shop_images\/acupuncture_sweatandtonic.jpg"}},"9e92333c-1696-4094-a06f-9dc97da4fb29":{"type":"services","settings":{"location_filter":"Front\/Spadina (The Well)","serviceType":"ALL","heading":"CHIROPRACTOR","detail":"<p>Coming soon to The Well<\/p>","button_text":"","button_link":"","link_text":"","text_link":"","address_title_1":"FRONT \/ SPADINA (THE WELL)","add_exclusive_1":true,"address_1":"<p>486 Front Street W, Toronto ON M5V 0V2<\/p><p>Coming soon<\/p>","address_title_2":"","add_exclusive_2":false,"address_2":"","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":"","image":"shopify:\/\/shop_images\/Coming_soon.png"}},"5ee5ef11-1a84-40ac-b6ad-41e750ce76f7":{"type":"services","settings":{"location_filter":"Front\/Spadina (The Well)","serviceType":"ALL, BIOHACKING TECH","heading":"DEXA SCAN","detail":"<p>Coming soon to The Well<\/p>","button_text":"","button_link":"","link_text":"","text_link":"","address_title_1":"FRONT \/ SPADINA (THE WELL)","add_exclusive_1":true,"address_1":"<p>486 Front Street W, Toronto ON M5V 0V2<\/p><p>Coming soon<\/p>","address_title_2":"","add_exclusive_2":false,"address_2":"","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":"","image":"shopify:\/\/shop_images\/Coming_soon.png"}},"7ed4ccec-8250-4dcb-a53a-464b30b0e777":{"type":"services","settings":{"location_filter":"Front\/Spadina (The Well)","serviceType":"ALL, BIOHACKING TECH","heading":"HOT & COLD THERAPY","detail":"<p>Coming soon to The Well<\/p>","button_text":"","button_link":"","link_text":"","text_link":"","address_title_1":"FRONT \/ SPADINA (THE WELL)","add_exclusive_1":true,"address_1":"<p>486 Front Street W, Toronto ON M5V 0V2<\/p><p>Coming soon<\/p>","address_title_2":"","add_exclusive_2":false,"address_2":"","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":"","image":"shopify:\/\/shop_images\/Coming_soon.png"}},"7a92c0ba-a3dc-4a8d-b57f-2dbce8f3ee52":{"type":"services","settings":{"location_filter":"Front\/Spadina (The Well)","serviceType":"ALL, MEDICAL","heading":"NATUROPATHY","detail":"<p>Coming soon to The Well<\/p>","button_text":"","button_link":"","link_text":"","text_link":"","address_title_1":"FRONT \/ SPADINA (THE WELL)","add_exclusive_1":true,"address_1":"<p>486 Front Street W, Toronto ON M5V 0V2<\/p><p>Coming soon<\/p>","address_title_2":"","add_exclusive_2":false,"address_2":"","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":"","image":"shopify:\/\/shop_images\/Coming_soon.png"}},"588b1c94-bcec-4b17-90f4-0e74603a2389":{"type":"services","settings":{"location_filter":"Front\/Spadina (The Well)","serviceType":"ALL, BIOHACKING TECH","heading":"IV THERAPY","detail":"<p>Coming soon to The Well<\/p>","button_text":"","button_link":"","link_text":"","text_link":"","address_title_1":"FRONT \/ SPADINA (THE WELL)","add_exclusive_1":true,"address_1":"<p>486 Front Street W, Toronto ON M5V 0V2<\/p><p>Coming soon<\/p>","address_title_2":"","add_exclusive_2":false,"address_2":"","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":"","image":"shopify:\/\/shop_images\/Coming_soon.png"}},"services_NhQAab":{"type":"services","disabled":true,"settings":{"location_filter":"","serviceType":"","heading":"INFRARED SAUNA","detail":"<p>Relax muscles, relieve tension and detoxify skin for a glowing complexion in one of our two infrared saunas<\/p>","button_text":"book now","button_link":"","link_text":"Learn More","text_link":"","address_title_1":"YONGE \/ SHUTER","add_exclusive_1":false,"address_1":"<p>225 Yonge Street, Toronto ON M5B 1N8<\/p><p>647-372-0225<\/p>","address_title_2":"YONGE \/ SHUTER","add_exclusive_2":false,"address_2":"<p>225 Yonge Street, Toronto ON M5B 2N8<\/p><p>647-372-0225<\/p>","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":""}},"services_MbWVHn":{"type":"services","disabled":true,"settings":{"location_filter":"","serviceType":"","heading":"INFRARED SAUNA","detail":"<p>Relax muscles, relieve tension and detoxify skin for a glowing complexion in one of our two infrared saunas<\/p>","button_text":"book now","button_link":"","link_text":"Learn More","text_link":"","address_title_1":"YONGE \/ SHUTER","add_exclusive_1":false,"address_1":"<p>225 Yonge Street, Toronto ON M5B 1N8<\/p><p>647-372-0225<\/p>","address_title_2":"YONGE \/ SHUTER","add_exclusive_2":false,"address_2":"<p>225 Yonge Street, Toronto ON M5B 2N8<\/p><p>647-372-0225<\/p>","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":""}},"62beee29-2f75-4ecd-b6c4-7153408a6162":{"type":"services","settings":{"location_filter":"Yonge\/Shuter, Front\/Spadina (The Well)","serviceType":"ALL","heading":"PHYSIOTHERAPY","detail":"<p>Restore and maintain optimal physical function, treat and prevent injuries, and address other aches and pains.<\/p>","button_text":"","button_link":"https:\/\/booking.mangomint.com\/sweattonic","link_text":"","text_link":"","address_title_1":"FRONT \/ SPADINA (THE WELL)","add_exclusive_1":false,"address_1":"<p>Coming soon<\/p>","address_title_2":"","add_exclusive_2":false,"address_2":"","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":"","image":"shopify:\/\/shop_images\/physiotherapy_sweatandtonic.jpg"}},"fb367775-0651-4839-87fd-2d4b416a63c5":{"type":"services","settings":{"location_filter":"Front\/Spadina (The Well)","serviceType":"ALL","heading":"POOL & HYDROTHERAPY","detail":"<p>Coming soon to The Well<\/p>","button_text":"","button_link":"","link_text":"","text_link":"","address_title_1":"FRONT \/ SPADINA (THE WELL)","add_exclusive_1":true,"address_1":"<p>486 Front Street W, Toronto ON M5V 0V2<\/p><p>Coming soon<\/p>","address_title_2":"","add_exclusive_2":false,"address_2":"","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":"","image":"shopify:\/\/shop_images\/Coming_soon.png"}},"e4eba09f-bd3a-4889-9d21-e8d4009a12f4":{"type":"services","settings":{"location_filter":"Front\/Spadina (The Well)","serviceType":"ALL, BIOHACKING TECH","heading":"RED LIGHT THERAPY","detail":"<p>Coming soon to The Well<\/p>","button_text":"","button_link":"","link_text":"","text_link":"","address_title_1":"FRONT \/ SPADINA (THE WELL)","add_exclusive_1":true,"address_1":"<p>486 Front Street W, Toronto ON M5V 0V2<\/p><p>Coming soon<\/p>","address_title_2":"","add_exclusive_2":false,"address_2":"","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":"","image":"shopify:\/\/shop_images\/Coming_soon.png"}},"4feec440-c0dd-4feb-9e9d-d2b1b92562b6":{"type":"services","settings":{"location_filter":"Front\/Spadina (The Well)","serviceType":"ALL, AESTHETIC, HIGH TOUCH","heading":"SKIN & BODY CARE","detail":"<p>Coming soon to The Well<\/p>","button_text":"","button_link":"","link_text":"","text_link":"","address_title_1":"FRONT \/ SPADINA (THE WELL)","add_exclusive_1":true,"address_1":"<p>486 Front Street W, Toronto ON M5V 0V2<\/p><p>Coming soon<\/p>","address_title_2":"","add_exclusive_2":false,"address_2":"","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":"","image":"shopify:\/\/shop_images\/Coming_soon.png"}},"c0925944-fd72-4c7e-b08d-85d82c7ebd73":{"type":"services","disabled":true,"settings":{"location_filter":"","serviceType":"","heading":"INFRARED SAUNA","detail":"<p>Relax muscles, relieve tension and detoxify skin for a glowing complexion in one of our two infrared saunas<\/p>","button_text":"book now","button_link":"","link_text":"Learn More","text_link":"","address_title_1":"YONGE \/ SHUTER","add_exclusive_1":false,"address_1":"<p>225 Yonge Street, Toronto ON M5B 1N8<\/p><p>647-372-0225<\/p>","address_title_2":"YONGE \/ SHUTER","add_exclusive_2":false,"address_2":"<p>225 Yonge Street, Toronto ON M5B 2N8<\/p><p>647-372-0225<\/p>","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":""}},"2a9151a8-8603-412b-bba3-9973049f0b02":{"type":"services","disabled":true,"settings":{"location_filter":"","serviceType":"","heading":"INFRARED SAUNA","detail":"<p>Relax muscles, relieve tension and detoxify skin for a glowing complexion in one of our two infrared saunas<\/p>","button_text":"book now","button_link":"","link_text":"Learn More","text_link":"","address_title_1":"YONGE \/ SHUTER","add_exclusive_1":false,"address_1":"<p>225 Yonge Street, Toronto ON M5B 1N8<\/p><p>647-372-0225<\/p>","address_title_2":"YONGE \/ SHUTER","add_exclusive_2":false,"address_2":"<p>225 Yonge Street, Toronto ON M5B 2N8<\/p><p>647-372-0225<\/p>","address_title_3":"","add_exclusive_3":false,"address_3":"","address_title_4":"","add_exclusive_4":false,"address_4":""}}},"block_order":["c1ea4c2b-0cbc-4dc3-ba8b-630e6daa52c0","976b4ad5-89d7-4a33-8792-b5a6a202b6a1","aaba282a-25a9-4737-854d-bcbfa6e87067","c3a2197b-6488-435e-a311-a064b151d08a","258f5bae-819a-4e01-a029-04680c92e6ef","188ae94c-bc14-4188-bd62-1199bc872443","ee21d118-d816-472c-a9b6-1075c016dfbe","9e92333c-1696-4094-a06f-9dc97da4fb29","5ee5ef11-1a84-40ac-b6ad-41e750ce76f7","7ed4ccec-8250-4dcb-a53a-464b30b0e777","7a92c0ba-a3dc-4a8d-b57f-2dbce8f3ee52","588b1c94-bcec-4b17-90f4-0e74603a2389","services_NhQAab","services_MbWVHn","62beee29-2f75-4ecd-b6c4-7153408a6162","fb367775-0651-4839-87fd-2d4b416a63c5","e4eba09f-bd3a-4889-9d21-e8d4009a12f4","4feec440-c0dd-4feb-9e9d-d2b1b92562b6","c0925944-fd72-4c7e-b08d-85d82c7ebd73","2a9151a8-8603-412b-bba3-9973049f0b02"],"settings":{"heading":"ALL SERVICES","top_padding_remove":false,"bottom_padding_remove":false}},"event-contact":{"type":"event-contact","disabled":true,"settings":{"bg_color_left":"#26221b","text_color_left":"#ffffff","sub_color_left":"#FEE4B1","subheading_left":"Ready to sweat?","heading_left":"LET’S GET YOU IN","text_left":"","p_name":"SARAH TRAN","p_tagline":"Events & Sales Manager","p_mail":"sarah@sweatandtonic.com","heading":"Contact form","btn_label":"Submit event inquiry","btn_url":"","success_msg":"<p>Thanks for inquiring. Your entry is submitted, and we'll reach out to you soon.<\/p>","color_scheme":"","top_padding_remove":false,"bottom_padding_remove":false,"embed-form":"<!-- Begin Connect Signup Form -->\n<link href=\"https:\/\/assets.brandbot.com\/forms\/embed\/embed.css\" rel=\"stylesheet\" type=\"text\/css\">\n<style type=\"text\/css\">\n\t#bb_form .field.form-group:after {display: none;}\n\t#bb_form .field.form-group input[type=\"text\"],.contact #bb_form .field.form-group input[type=\"email\"],.contact #bb_form .field.form-group input[type=\"tel\"]{border: none;border-bottom: 1px solid rgba(0,0,0,.2);border-radius: unset;}\n\t#bb_form .form-group.with-label {flex-wrap: wrap;flex-direction: column;}\n\t#bb_form .form-group.with-label label{font-weight:400;}\n\t#bb_form .form-group.with-label input[type=checkbox]{margin-left: 20px;}\n<\/style>\n\n<div id=\"bb_form\">\n\t<form method=\"post\" action=\"https:\/\/microservices.brndbot.net\/forms\/answers\" name=\"ibbxy\" id=\"bb_form_inner\">\n\t\t<div id=\"alert\"><\/div>\n\t\t<div class=\"contact__fields\">\n\t\t\t<div class=\"field form-group no-label\">\n\t\t\t\t<label for=\"bb_first_name\">First Name<\/label>\n\t\t\t\t<input type=\"text\" name=\"bb_first_name\" id=\"bb_first_name\" class=\"form-control\" required=\"required\" placeholder=\"First Name\">\n\t\t\t<\/div>\n\t\t\t<div class=\"field form-group no-label\">\n\t\t\t\t<label for=\"bb_last_name\">Last Name<\/label>\n\t\t\t\t<input type=\"text\" name=\"bb_last_name\" id=\"bb_last_name\" class=\"form-control\" required=\"required\" placeholder=\"Last Name\">\n\t\t\t<\/div>\n\t\t<\/div>\n\t\t<div class=\"field form-group no-label\">\n\t\t\t<label for=\"bb_email\">Email Address<\/label>\n\t\t\t<input type=\"email\" name=\"bb_email\" id=\"bb_email\" class=\"form-control\" required=\"required\" placeholder=\"Email Address\">\n\t\t<\/div>\n\t\t<div class=\"form-group\">\n\t\t\t<input type=\"hidden\" name=\"bb_uuid\" id=\"bb_uuid\" value=\"a4325c6c-fc7c-4b67-b8f2-c318441997f3\">\n\t\t\t<button type=\"submit\" class=\"button button--primary\" id=\"bb_submit\" style=\"background-color: #000000; border-color: #000000; color: white;\">RSVP NOW<\/button>\n\t\t<\/div>\n\t<\/form>\n<\/div>\n<script>window.jQuery || document.write('<scr'+'ipt src=\"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/jquery\/3.3.1\/jquery.min.js\"><\/scr'+'ipt>') <\/script>\n<script src=\"https:\/\/assets.brandbot.com\/forms\/embed\/embed.js?id=ibbxy\"><\/script>\n<!-- Ending Connect Signup Form -->"}}},"order":["spa-hero","spa-services-section","event-contact"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "spa-hero": {
+      "type": "spa-hero",
+      "blocks": {
+        "3d295c9e-10b8-4397-b3c8-b08733efc0db": {
+          "type": "text",
+          "settings": {
+            "text": "WELLNESS & RECOVERY AT SWEAT AND TONIC",
+            "text_style": "caption-with-letter-spacing",
+            "text_clr": "#ffffff"
+          }
+        },
+        "89ede07a-229a-4fd5-8064-eb065090ad93": {
+          "type": "heading",
+          "settings": {
+            "heading": "WELLNESS & RECOVERY HUB",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "943f29ad-f020-4899-974b-20f586c4dd6a": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "BOOK services",
+            "button_link_1": "https://booking.mangomint.com/sweattonic",
+            "button_style": "solid",
+            "applies_color_scheme": true,
+            "btn_text_clr": "#000000",
+            "btn_hvr_text_clr": "#000000",
+            "btn_bg_clr": "#FEE4B1",
+            "btn_hvr_bg_clr": "#ffffff"
+          }
+        },
+        "d41f6baf-924e-485e-ab85-303705a32897": {
+          "type": "spa_info",
+          "settings": {
+            "detail": "Relax, rejuvenate, and indulge with our diverse range of wellness services, treatments, and bio-hacking amenities.",
+            "link_text": "Learn More",
+            "url": "",
+            "enableScroll": true
+          }
+        }
+      },
+      "block_order": [
+        "3d295c9e-10b8-4397-b3c8-b08733efc0db",
+        "89ede07a-229a-4fd5-8064-eb065090ad93",
+        "943f29ad-f020-4899-974b-20f586c4dd6a",
+        "d41f6baf-924e-485e-ab85-303705a32897"
+      ],
+      "settings": {
+        "allow_transparent_header": true,
+        "image": "shopify://shop_images/Frame_5911.jpg",
+        "img_mobile": "shopify://shop_images/hero.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "color_scheme": "accent-1",
+        "image_behavior": "none"
+      }
+    },
+    "spa-services-section": {
+      "type": "spa-services-section",
+      "blocks": {
+        "c1ea4c2b-0cbc-4dc3-ba8b-630e6daa52c0": {
+          "type": "services",
+          "settings": {
+            "location_filter": "Yonge/Shuter, Front/Spadina (The Well)",
+            "serviceType": "ALL, BIOHACKING TECH",
+            "heading": "COMPRESSION THERAPY",
+            "detail": "<p>Recover, reshape, rejuvenate. Zip into the Ballancer Pro, a state-of-the-art compression therapy system that delivers lymphatic drainage technology to contour your body accelerate recovery, detox, and improve circulation in a 40-minute session.<br/><br/>Purchase credits first, then book your session at <a href=\"https://booking.mangomint.com/sweattonic\" target=\"_blank\" title=\"https://booking.mangomint.com/sweattonic\">booking.mangomint.com/sweattonic</a></p>",
+            "button_text": "BUY CREDITS",
+            "button_link": "https://www.sweatandtonic.com/pricing",
+            "link_text": "BOOK A SESSION",
+            "text_link": "https://booking.mangomint.com/sweattonic",
+            "address_title_1": "YONGE / SHUTER",
+            "add_exclusive_1": false,
+            "address_1": "<p>225 Yonge Street, Toronto ON M5B 1N8</p>",
+            "address_title_2": "FRONT / SPADINA (THE WELL)",
+            "add_exclusive_2": false,
+            "address_2": "<p>Coming soon</p>",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": "",
+            "image": "shopify://shop_images/SweatandTonic_CompressionTherapy.png"
+          }
+        },
+        "976b4ad5-89d7-4a33-8792-b5a6a202b6a1": {
+          "type": "services",
+          "settings": {
+            "location_filter": "Yonge/Shuter, Front/Spadina (The Well)",
+            "serviceType": "ALL, BIOHACKING TECH",
+            "heading": "CRYOTHERAPY",
+            "detail": "<p>Biohack and chill. Step into our -130°C cryochamber to promote recovery, reduce inflammation, boost your mood, energy & metabolism, and burn calories.<br/><br/>Purchase credits first, then book your session at <a href=\"https://booking.mangomint.com/sweattonic\" title=\"https://booking.mangomint.com/sweattonic\">booking.mangomint.com/sweattonic</a><br/><br/><a href=\"/pages/cryotherapy\" title=\"Cryotherapy\"><strong>LEARN MORE</strong></a></p>",
+            "button_text": "Buy credits",
+            "button_link": "shopify://pages/pricing",
+            "link_text": "Book a session",
+            "text_link": "https://booking.mangomint.com/sweattonic",
+            "address_title_1": "YONGE / SHUTER",
+            "add_exclusive_1": false,
+            "address_1": "<p>225 Yonge Street, Toronto ON M5B 1N8</p><p>647-372-0225</p>",
+            "address_title_2": "FRONT / SPADINA (THE WELL)",
+            "add_exclusive_2": false,
+            "address_2": "<p>Coming soon</p>",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": "",
+            "image": "shopify://shop_images/cryochamber_sweatandtonic_6ffc0165-a066-49b1-a0d4-fb84cf4e1739.jpg"
+          }
+        },
+        "aaba282a-25a9-4737-854d-bcbfa6e87067": {
+          "type": "services",
+          "settings": {
+            "location_filter": "Front/Spadina (The Well), Yonge/Shuter",
+            "serviceType": "ALL, MEDICAL",
+            "heading": "DIETETICS",
+            "detail": "<p>Find food freedom and develop an abundant relationship with food that supports your physical, mental, and emotional wellbeing.</p>",
+            "button_text": "Book now",
+            "button_link": "https://booking.mangomint.com/sweattonic",
+            "link_text": "",
+            "text_link": "",
+            "address_title_1": "VIRTUAL SESSIONS",
+            "add_exclusive_1": false,
+            "address_1": "<p>Now available</p>",
+            "address_title_2": "FRONT / SPADINA (THE WELL)",
+            "add_exclusive_2": false,
+            "address_2": "<p>Coming soon</p>",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": "",
+            "image": "shopify://shop_images/Dietetics.png"
+          }
+        },
+        "c3a2197b-6488-435e-a311-a064b151d08a": {
+          "type": "services",
+          "settings": {
+            "location_filter": "Yonge/Shuter, Front/Spadina (The Well)",
+            "serviceType": "ALL, BIOHACKING TECH",
+            "heading": "INFRARED SAUNA",
+            "detail": "<p>Relax muscles, relieve tension and detoxify from the inside out.</p>",
+            "button_text": "book now",
+            "button_link": "https://www.sweatandtonic.com/reserve",
+            "link_text": "LEARN MORE",
+            "text_link": "shopify://pages/sauna",
+            "address_title_1": "YONGE / SHUTER",
+            "add_exclusive_1": false,
+            "address_1": "<p>225 Yonge Street, Toronto ON M5B 1N8</p><p>Private saunas available</p>",
+            "address_title_2": "FRONT / SPADINA (THE WELL)",
+            "add_exclusive_2": false,
+            "address_2": "<p>Coming soon</p>",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": "",
+            "image": "shopify://shop_images/infrared-sauna-accessories-saunaray.png"
+          }
+        },
+        "258f5bae-819a-4e01-a029-04680c92e6ef": {
+          "type": "services",
+          "settings": {
+            "location_filter": "Yonge/Shuter, Front/Spadina (The Well)",
+            "serviceType": "ALL, HIGH TOUCH SERVICE",
+            "heading": "MASSAGE THERAPY",
+            "detail": "<p>Relax muscles, relieve tension and detoxify skin for a glowing complexion in one of our two infrared saunas</p>",
+            "button_text": "book now",
+            "button_link": "https://booking.mangomint.com/sweattonic",
+            "link_text": "",
+            "text_link": "",
+            "address_title_1": "YONGE / SHUTER",
+            "add_exclusive_1": false,
+            "address_1": "<p>225 Yonge Street, Toronto ON M5B 1N8</p><p>647-372-0225</p>",
+            "address_title_2": "FRONT / SPADINA (THE WELL)",
+            "add_exclusive_2": false,
+            "address_2": "<p>Coming soon</p>",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": "",
+            "image": "shopify://shop_images/massagetherapy_sweatandtonic.jpg"
+          }
+        },
+        "188ae94c-bc14-4188-bd62-1199bc872443": {
+          "type": "services",
+          "settings": {
+            "location_filter": "Yonge/Shuter",
+            "serviceType": "ALL, BIOHACKING TECH",
+            "heading": "SOMADOME MEDITATION",
+            "detail": "<p>Recharge, restore and achieve balance through a technology-enhanced guided meditation in only 20 minutes.<br/>Unlimited member access only.</p>",
+            "button_text": "BOOK NOW",
+            "button_link": "https://www.sweatandtonic.com/reserve",
+            "link_text": "Learn more",
+            "text_link": "shopify://pages/somadome",
+            "address_title_1": "YONGE / SHUTER",
+            "add_exclusive_1": true,
+            "address_1": "<p>225 Yonge Street, Toronto ON M5B 1N8</p><p>Unlimited Member access only</p>",
+            "address_title_2": "",
+            "add_exclusive_2": false,
+            "address_2": "",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": "",
+            "image": "shopify://shop_images/Somadome_blue.jpg"
+          }
+        },
+        "ee21d118-d816-472c-a9b6-1075c016dfbe": {
+          "type": "services",
+          "settings": {
+            "location_filter": "Yonge/Shuter, Front/Spadina (The Well)",
+            "serviceType": "ALL, MEDICAL",
+            "heading": "ACUPUNCTURE",
+            "detail": "<p>Enhance mental clarity, increase energy, reduce pain and tension, address sleep issues, and many more health concerns.</p>",
+            "button_text": "",
+            "button_link": "https://booking.mangomint.com/sweattonic",
+            "link_text": "",
+            "text_link": "",
+            "address_title_1": "YONGE / SHUTER",
+            "add_exclusive_1": false,
+            "address_1": "<p>225 Yonge Street, Toronto ON M5B 1N8</p><p>647-372-0225</p>",
+            "address_title_2": "FRONT / SPADINA (THE WELL)",
+            "add_exclusive_2": false,
+            "address_2": "<p>Coming soon</p>",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": "",
+            "image": "shopify://shop_images/acupuncture_sweatandtonic.jpg"
+          }
+        },
+        "9e92333c-1696-4094-a06f-9dc97da4fb29": {
+          "type": "services",
+          "settings": {
+            "location_filter": "Front/Spadina (The Well)",
+            "serviceType": "ALL",
+            "heading": "CHIROPRACTOR",
+            "detail": "<p>Coming soon to The Well</p>",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": "",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "add_exclusive_1": true,
+            "address_1": "<p>486 Front Street W, Toronto ON M5V 0V2</p><p>Coming soon</p>",
+            "address_title_2": "",
+            "add_exclusive_2": false,
+            "address_2": "",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": "",
+            "image": "shopify://shop_images/Coming_soon.png"
+          }
+        },
+        "5ee5ef11-1a84-40ac-b6ad-41e750ce76f7": {
+          "type": "services",
+          "settings": {
+            "location_filter": "Front/Spadina (The Well)",
+            "serviceType": "ALL, BIOHACKING TECH",
+            "heading": "DEXA SCAN",
+            "detail": "<p>Coming soon to The Well</p>",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": "",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "add_exclusive_1": true,
+            "address_1": "<p>486 Front Street W, Toronto ON M5V 0V2</p><p>Coming soon</p>",
+            "address_title_2": "",
+            "add_exclusive_2": false,
+            "address_2": "",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": "",
+            "image": "shopify://shop_images/Coming_soon.png"
+          }
+        },
+        "7ed4ccec-8250-4dcb-a53a-464b30b0e777": {
+          "type": "services",
+          "settings": {
+            "location_filter": "Front/Spadina (The Well)",
+            "serviceType": "ALL, BIOHACKING TECH",
+            "heading": "HOT & COLD THERAPY",
+            "detail": "<p>Coming soon to The Well</p>",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": "",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "add_exclusive_1": true,
+            "address_1": "<p>486 Front Street W, Toronto ON M5V 0V2</p><p>Coming soon</p>",
+            "address_title_2": "",
+            "add_exclusive_2": false,
+            "address_2": "",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": "",
+            "image": "shopify://shop_images/Coming_soon.png"
+          }
+        },
+        "7a92c0ba-a3dc-4a8d-b57f-2dbce8f3ee52": {
+          "type": "services",
+          "settings": {
+            "location_filter": "Front/Spadina (The Well)",
+            "serviceType": "ALL, MEDICAL",
+            "heading": "NATUROPATHY",
+            "detail": "<p>Coming soon to The Well</p>",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": "",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "add_exclusive_1": true,
+            "address_1": "<p>486 Front Street W, Toronto ON M5V 0V2</p><p>Coming soon</p>",
+            "address_title_2": "",
+            "add_exclusive_2": false,
+            "address_2": "",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": "",
+            "image": "shopify://shop_images/Coming_soon.png"
+          }
+        },
+        "588b1c94-bcec-4b17-90f4-0e74603a2389": {
+          "type": "services",
+          "settings": {
+            "location_filter": "Front/Spadina (The Well)",
+            "serviceType": "ALL, BIOHACKING TECH",
+            "heading": "IV THERAPY",
+            "detail": "<p>Coming soon to The Well</p>",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": "",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "add_exclusive_1": true,
+            "address_1": "<p>486 Front Street W, Toronto ON M5V 0V2</p><p>Coming soon</p>",
+            "address_title_2": "",
+            "add_exclusive_2": false,
+            "address_2": "",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": "",
+            "image": "shopify://shop_images/Coming_soon.png"
+          }
+        },
+        "services_NhQAab": {
+          "type": "services",
+          "disabled": true,
+          "settings": {
+            "location_filter": "",
+            "serviceType": "",
+            "heading": "INFRARED SAUNA",
+            "detail": "<p>Relax muscles, relieve tension and detoxify skin for a glowing complexion in one of our two infrared saunas</p>",
+            "button_text": "book now",
+            "button_link": "",
+            "link_text": "Learn More",
+            "text_link": "",
+            "address_title_1": "YONGE / SHUTER",
+            "add_exclusive_1": false,
+            "address_1": "<p>225 Yonge Street, Toronto ON M5B 1N8</p><p>647-372-0225</p>",
+            "address_title_2": "YONGE / SHUTER",
+            "add_exclusive_2": false,
+            "address_2": "<p>225 Yonge Street, Toronto ON M5B 2N8</p><p>647-372-0225</p>",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": ""
+          }
+        },
+        "services_MbWVHn": {
+          "type": "services",
+          "disabled": true,
+          "settings": {
+            "location_filter": "",
+            "serviceType": "",
+            "heading": "INFRARED SAUNA",
+            "detail": "<p>Relax muscles, relieve tension and detoxify skin for a glowing complexion in one of our two infrared saunas</p>",
+            "button_text": "book now",
+            "button_link": "",
+            "link_text": "Learn More",
+            "text_link": "",
+            "address_title_1": "YONGE / SHUTER",
+            "add_exclusive_1": false,
+            "address_1": "<p>225 Yonge Street, Toronto ON M5B 1N8</p><p>647-372-0225</p>",
+            "address_title_2": "YONGE / SHUTER",
+            "add_exclusive_2": false,
+            "address_2": "<p>225 Yonge Street, Toronto ON M5B 2N8</p><p>647-372-0225</p>",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": ""
+          }
+        },
+        "62beee29-2f75-4ecd-b6c4-7153408a6162": {
+          "type": "services",
+          "settings": {
+            "location_filter": "Yonge/Shuter, Front/Spadina (The Well)",
+            "serviceType": "ALL",
+            "heading": "PHYSIOTHERAPY",
+            "detail": "<p>Restore and maintain optimal physical function, treat and prevent injuries, and address other aches and pains.</p>",
+            "button_text": "",
+            "button_link": "https://booking.mangomint.com/sweattonic",
+            "link_text": "",
+            "text_link": "",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "add_exclusive_1": false,
+            "address_1": "<p>Coming soon</p>",
+            "address_title_2": "",
+            "add_exclusive_2": false,
+            "address_2": "",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": "",
+            "image": "shopify://shop_images/physiotherapy_sweatandtonic.jpg"
+          }
+        },
+        "fb367775-0651-4839-87fd-2d4b416a63c5": {
+          "type": "services",
+          "settings": {
+            "location_filter": "Front/Spadina (The Well)",
+            "serviceType": "ALL",
+            "heading": "POOL & HYDROTHERAPY",
+            "detail": "<p>Coming soon to The Well</p>",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": "",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "add_exclusive_1": true,
+            "address_1": "<p>486 Front Street W, Toronto ON M5V 0V2</p><p>Coming soon</p>",
+            "address_title_2": "",
+            "add_exclusive_2": false,
+            "address_2": "",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": "",
+            "image": "shopify://shop_images/Coming_soon.png"
+          }
+        },
+        "e4eba09f-bd3a-4889-9d21-e8d4009a12f4": {
+          "type": "services",
+          "settings": {
+            "location_filter": "Front/Spadina (The Well)",
+            "serviceType": "ALL, BIOHACKING TECH",
+            "heading": "RED LIGHT THERAPY",
+            "detail": "<p>Coming soon to The Well</p>",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": "",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "add_exclusive_1": true,
+            "address_1": "<p>486 Front Street W, Toronto ON M5V 0V2</p><p>Coming soon</p>",
+            "address_title_2": "",
+            "add_exclusive_2": false,
+            "address_2": "",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": "",
+            "image": "shopify://shop_images/Coming_soon.png"
+          }
+        },
+        "4feec440-c0dd-4feb-9e9d-d2b1b92562b6": {
+          "type": "services",
+          "settings": {
+            "location_filter": "Front/Spadina (The Well)",
+            "serviceType": "ALL, AESTHETIC, HIGH TOUCH",
+            "heading": "SKIN & BODY CARE",
+            "detail": "<p>Coming soon to The Well</p>",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": "",
+            "address_title_1": "FRONT / SPADINA (THE WELL)",
+            "add_exclusive_1": true,
+            "address_1": "<p>486 Front Street W, Toronto ON M5V 0V2</p><p>Coming soon</p>",
+            "address_title_2": "",
+            "add_exclusive_2": false,
+            "address_2": "",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": "",
+            "image": "shopify://shop_images/Coming_soon.png"
+          }
+        },
+        "c0925944-fd72-4c7e-b08d-85d82c7ebd73": {
+          "type": "services",
+          "disabled": true,
+          "settings": {
+            "location_filter": "",
+            "serviceType": "",
+            "heading": "INFRARED SAUNA",
+            "detail": "<p>Relax muscles, relieve tension and detoxify skin for a glowing complexion in one of our two infrared saunas</p>",
+            "button_text": "book now",
+            "button_link": "",
+            "link_text": "Learn More",
+            "text_link": "",
+            "address_title_1": "YONGE / SHUTER",
+            "add_exclusive_1": false,
+            "address_1": "<p>225 Yonge Street, Toronto ON M5B 1N8</p><p>647-372-0225</p>",
+            "address_title_2": "YONGE / SHUTER",
+            "add_exclusive_2": false,
+            "address_2": "<p>225 Yonge Street, Toronto ON M5B 2N8</p><p>647-372-0225</p>",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": ""
+          }
+        },
+        "2a9151a8-8603-412b-bba3-9973049f0b02": {
+          "type": "services",
+          "disabled": true,
+          "settings": {
+            "location_filter": "",
+            "serviceType": "",
+            "heading": "INFRARED SAUNA",
+            "detail": "<p>Relax muscles, relieve tension and detoxify skin for a glowing complexion in one of our two infrared saunas</p>",
+            "button_text": "book now",
+            "button_link": "",
+            "link_text": "Learn More",
+            "text_link": "",
+            "address_title_1": "YONGE / SHUTER",
+            "add_exclusive_1": false,
+            "address_1": "<p>225 Yonge Street, Toronto ON M5B 1N8</p><p>647-372-0225</p>",
+            "address_title_2": "YONGE / SHUTER",
+            "add_exclusive_2": false,
+            "address_2": "<p>225 Yonge Street, Toronto ON M5B 2N8</p><p>647-372-0225</p>",
+            "address_title_3": "",
+            "add_exclusive_3": false,
+            "address_3": "",
+            "address_title_4": "",
+            "add_exclusive_4": false,
+            "address_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "c1ea4c2b-0cbc-4dc3-ba8b-630e6daa52c0",
+        "976b4ad5-89d7-4a33-8792-b5a6a202b6a1",
+        "aaba282a-25a9-4737-854d-bcbfa6e87067",
+        "c3a2197b-6488-435e-a311-a064b151d08a",
+        "258f5bae-819a-4e01-a029-04680c92e6ef",
+        "188ae94c-bc14-4188-bd62-1199bc872443",
+        "ee21d118-d816-472c-a9b6-1075c016dfbe",
+        "9e92333c-1696-4094-a06f-9dc97da4fb29",
+        "5ee5ef11-1a84-40ac-b6ad-41e750ce76f7",
+        "7ed4ccec-8250-4dcb-a53a-464b30b0e777",
+        "7a92c0ba-a3dc-4a8d-b57f-2dbce8f3ee52",
+        "588b1c94-bcec-4b17-90f4-0e74603a2389",
+        "services_NhQAab",
+        "services_MbWVHn",
+        "62beee29-2f75-4ecd-b6c4-7153408a6162",
+        "fb367775-0651-4839-87fd-2d4b416a63c5",
+        "e4eba09f-bd3a-4889-9d21-e8d4009a12f4",
+        "4feec440-c0dd-4feb-9e9d-d2b1b92562b6",
+        "c0925944-fd72-4c7e-b08d-85d82c7ebd73",
+        "2a9151a8-8603-412b-bba3-9973049f0b02"
+      ],
+      "settings": {
+        "heading": "ALL SERVICES",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "event-contact": {
+      "type": "event-contact",
+      "disabled": true,
+      "settings": {
+        "bg_color_left": "#26221b",
+        "text_color_left": "#ffffff",
+        "sub_color_left": "#FEE4B1",
+        "subheading_left": "Ready to sweat?",
+        "heading_left": "LET’S GET YOU IN",
+        "text_left": "",
+        "p_name": "SARAH TRAN",
+        "p_tagline": "Events & Sales Manager",
+        "p_mail": "sarah@sweatandtonic.com",
+        "heading": "Contact form",
+        "btn_label": "Submit event inquiry",
+        "btn_url": "",
+        "success_msg": "<p>Thanks for inquiring. Your entry is submitted, and we'll reach out to you soon.</p>",
+        "color_scheme": "",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false,
+        "embed-form": "<!-- Begin Connect Signup Form -->\n<link href=\"https://assets.brandbot.com/forms/embed/embed.css\" rel=\"stylesheet\" type=\"text/css\">\n<style type=\"text/css\">\n\t#bb_form .field.form-group:after {display: none;}\n\t#bb_form .field.form-group input[type=\"text\"],.contact #bb_form .field.form-group input[type=\"email\"],.contact #bb_form .field.form-group input[type=\"tel\"]{border: none;border-bottom: 1px solid rgba(0,0,0,.2);border-radius: unset;}\n\t#bb_form .form-group.with-label {flex-wrap: wrap;flex-direction: column;}\n\t#bb_form .form-group.with-label label{font-weight:400;}\n\t#bb_form .form-group.with-label input[type=checkbox]{margin-left: 20px;}\n</style>\n\n<div id=\"bb_form\">\n\t<form method=\"post\" action=\"https://microservices.brndbot.net/forms/answers\" name=\"ibbxy\" id=\"bb_form_inner\">\n\t\t<div id=\"alert\"></div>\n\t\t<div class=\"contact__fields\">\n\t\t\t<div class=\"field form-group no-label\">\n\t\t\t\t<label for=\"bb_first_name\">First Name</label>\n\t\t\t\t<input type=\"text\" name=\"bb_first_name\" id=\"bb_first_name\" class=\"form-control\" required=\"required\" placeholder=\"First Name\">\n\t\t\t</div>\n\t\t\t<div class=\"field form-group no-label\">\n\t\t\t\t<label for=\"bb_last_name\">Last Name</label>\n\t\t\t\t<input type=\"text\" name=\"bb_last_name\" id=\"bb_last_name\" class=\"form-control\" required=\"required\" placeholder=\"Last Name\">\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"field form-group no-label\">\n\t\t\t<label for=\"bb_email\">Email Address</label>\n\t\t\t<input type=\"email\" name=\"bb_email\" id=\"bb_email\" class=\"form-control\" required=\"required\" placeholder=\"Email Address\">\n\t\t</div>\n\t\t<div class=\"form-group\">\n\t\t\t<input type=\"hidden\" name=\"bb_uuid\" id=\"bb_uuid\" value=\"a4325c6c-fc7c-4b67-b8f2-c318441997f3\">\n\t\t\t<button type=\"submit\" class=\"button button--primary\" id=\"bb_submit\" style=\"background-color: #000000; border-color: #000000; color: white;\">RSVP NOW</button>\n\t\t</div>\n\t</form>\n</div>\n<script>window.jQuery || document.write('<scr'+'ipt src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></scr'+'ipt>') </script>\n<script src=\"https://assets.brandbot.com/forms/embed/embed.js?id=ibbxy\"></script>\n<!-- Ending Connect Signup Form -->"
+      }
+    }
+  },
+  "order": [
+    "spa-hero",
+    "spa-services-section",
+    "event-contact"
+  ]
+}

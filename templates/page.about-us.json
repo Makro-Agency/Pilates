@@ -56,6 +56,19 @@
         "btn_url": "#"
       }
     },
+    "custom_hero_banner_yGiWQR": {
+      "type": "custom-hero-banner",
+      "name": "Custom Hero Banner",
+      "settings": {
+        "desktop_image": "shopify://shop_images/Section_7.png",
+        "overlay_opacity": 10,
+        "sale_title": "",
+        "sale_content": "",
+        "show_btn": false,
+        "btn_text": "",
+        "btn_url": ""
+      }
+    },
     "custom_our_location_MRtpzi": {
       "type": "custom-our-location",
       "blocks": {
@@ -169,6 +182,7 @@
     "0252110d-af5d-4cda-8cea-c72fe80a29f1",
     "custom_hero_banner_ddKzhU",
     "custom_hero_banner3_tKAhJB",
+    "custom_hero_banner_yGiWQR",
     "custom_our_location_MRtpzi",
     "custom_multigrid_section_JDeW6V",
     "b94628c5-aa61-4f88-8bc2-a9ef925836ad",
