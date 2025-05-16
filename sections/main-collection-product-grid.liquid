@@ -30,6 +30,7 @@
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding coll-list-main-wrapper">
+  <div class="coll-bg"></div>
   {%- paginate collection.products by section.settings.products_per_page -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
     {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
@@ -102,7 +103,6 @@
         </form>
       </facet-filters-form>
     {%- endif -%}
-
     <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical page-width{% endif %}">
       {{ 'component-facets.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
@@ -122,7 +122,6 @@
           %}
         </aside>
       {%- endif -%}
-
       <div
         class="product-grid-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         id="ProductGridContainer"
