@@ -181,11 +181,24 @@ body .swiper-button-next, body .swiper-button-prev{
   height: 50px;
   width: 50px;
   border-radius: 100px;
-  background: #FEE4B1;
-  background-image: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Rectangle_6.svg?v=1695643347');
+  background: white;
+  /* background-image: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Rectangle_6.svg?v=1695643347'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 25%;
+  color: #000;
+}
+.swiper-button-next:before, 
+.swiper-button-prev:before{
+  width: 20px;
+  height: 20px;
+  content: "";
+  display: block;
+  position: relative;
+  mask-image: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Rectangle_6.svg?v=1695643347');
+  background-color: currentColor;
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 body .swiper-button-next {
   right: 25px;
