@@ -32,6 +32,7 @@
 {%- liquid            
   assign has_drakness = 'dark'
   assign bright_temp = 'pre-sale-landing,index,product,cart,faq,terms-conditions' | split:','
+  assign bright_temp = 'index,pre-sale-landing,faq,terms-conditions,product,team,cart,press,about-us,404,accessibility-policy,contact,hiit-studio,ride-studio' | split:','
   for bt in bright_temp
     if bt == "page"
       if template.suffix == blank
@@ -392,10 +393,13 @@
         {%- endif -%}
       </a>
       {% endcomment %}
-
-      <div class="header-btn-wrap small-hide medium-hide">
-        <a href="https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750" class="button btn-small-width button--secondary">book classes {% render 'icon-left-arrow', type: 1 %}</a>
-        <a href="https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750" class="button btn-small-width button--primary">buy classes {% render 'icon-left-arrow', type: 1 %}</a>
+      
+      <div class="header-btn-wrap small-hide medium-hide">{%- if section.settings.buy_btn_1 != blank -%}
+        <a href="{{ section.settings.link_btn_1 | default: '#' }}" class="button btn-small-width button--secondary">{{ section.settings.buy_btn_1 }} {% render 'icon-left-arrow', type: 1 %}</a>
+        {%- endif -%}
+        {%- if section.settings.buy_btn_2 != blank -%}
+        <a href="{{ section.settings.link_btn_2 | default: '#' }}" class="button btn-small-width button--secondary">{{ section.settings.buy_btn_2 }} {% render 'icon-left-arrow', type: 1 %}</a>
+        {%- endif -%}
       </div>
     </div>
   </header>
@@ -707,6 +711,32 @@
       "id": "show_line_separator",
       "default": true,
       "label": "t:sections.header.settings.show_line_separator.label"
+    },
+    {
+      "type": "header",
+      "content": "Header Buy button"      
+    },
+    {
+      "type": "text",
+      "label": "Buy Button 1",
+      "id": "buy_btn_1",
+      "default": "Book classes"
+    },
+    {
+      "type": "url",
+      "label": "Provide link for button link 1",
+      "id": "link_btn_1"
+    },
+    {
+      "type": "text",
+      "label": "Buy Button 2",
+      "id": "buy_btn_2",
+      "default": "Buy classes"
+    },
+    {
+      "type": "url",
+      "label": "Provide link for button link 2",
+      "id": "link_btn_2"
     },
     {
       "type": "header",

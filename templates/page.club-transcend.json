@@ -1,1 +1,873 @@
-{"sections":{"spa-hero":{"type":"spa-hero","blocks":{"3d295c9e-10b8-4397-b3c8-b08733efc0db":{"type":"text","settings":{"text":"YOUR TICKET TO A HIGHER SELF","text_style":"caption-with-letter-spacing","text_clr":"#ffffff"}},"89ede07a-229a-4fd5-8064-eb065090ad93":{"type":"heading","settings":{"heading":"CLUB TRANSCEND","heading_size":"h1","text_clr":"#ffffff"}},"943f29ad-f020-4899-974b-20f586c4dd6a":{"type":"buttons","settings":{"button_label_1":"RESERVE A MEMBERSHIP","button_link_1":"https:\/\/sweatandtonic.com\/pages\/pricing?_mt=%2Fbuy%2F48750%3FactiveProduct%3Dmemberships-15359%26activeSection%3D1245","button_style":"solid","applies_color_scheme":true,"btn_text_clr":"#000000","btn_hvr_text_clr":"#000000","btn_bg_clr":"#FEE4B1","btn_hvr_bg_clr":"#ffffff"}},"d41f6baf-924e-485e-ab85-303705a32897":{"type":"spa_info","settings":{"detail":"Explore Canada's most exclusive 360 wellness membership","link_text":"Learn More","url":"https:\/\/sweatandtonic.com\/pages\/pricing?_mt=%2Fbuy%2F48750%3FactiveProduct%3Dmemberships-15359","enableScroll":true}}},"block_order":["3d295c9e-10b8-4397-b3c8-b08733efc0db","89ede07a-229a-4fd5-8064-eb065090ad93","943f29ad-f020-4899-974b-20f586c4dd6a","d41f6baf-924e-485e-ab85-303705a32897"],"disabled":true,"settings":{"allow_transparent_header":true,"image":"shopify:\/\/shop_images\/colored-lit-smoke.jpg","img_mobile":"shopify:\/\/shop_images\/colored-lit-smoke.jpg","image_overlay_opacity":30,"image_height":"medium","desktop_content_position":"middle-center","color_scheme":"accent-1","image_behavior":"ambient"}},"shogun-helper":{"type":"shogun-helper","settings":{}},"services_hero_NM6DqU":{"type":"services-hero","blocks":{"text_c7kM7R":{"type":"text","settings":{"text1":"YOUR TICKET TO A HIGHER SELF","text":"","text_style":"caption-with-letter-spacing","text_clr":"#ffffff"}},"heading_988n3H":{"type":"heading","settings":{"heading":"CLUB TRANSCEND","heading_size":"h1","text_clr":"#ffffff"}},"buttons_BJnWQm":{"type":"buttons","settings":{"button_label_1":"RESERVE A MEMBERSHIP","button_link_1":"#clubtranscend","button_style":"solid","applies_color_scheme":true,"btn_text_clr":"#121212","btn_hvr_text_clr":"#26221b","btn_bg_clr":"#FEE4B1","btn_hvr_bg_clr":"#ffffff"}},"description_7ELDUm":{"type":"description","settings":{"desc":"<p>Explore Canada's most exclusive 360 wellness membership<\/p>","anchor_label":"Learn More","anchor_link":"#clubtranscend","text_clr":"#ffffff"}}},"block_order":["text_c7kM7R","heading_988n3H","buttons_BJnWQm","description_7ELDUm"],"settings":{"allow_transparent_header":true,"image":"shopify:\/\/shop_images\/colored-lit-smoke.jpg","img_mobile":"shopify:\/\/shop_images\/colored-lit-smoke.jpg","image_overlay_opacity":20,"image_height":"adapt","desktop_content_position":"middle-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"accent-1","image_behavior":"ambient","mobile_content_alignment":"center"}},"spa_hero_8y8QCe":{"type":"spa-hero","blocks":{"heading_mLRGHj":{"type":"heading","settings":{"heading":"TRANSCEND","heading_size":"h2","text_clr":"#ffffff"}},"text_gkrezr":{"type":"text","settings":{"text":"<em>verb<\/em>  \/trænˈsend\/ to move beyond ordinary limitations; a state of existence above and beyond material experience","text_style":"subtitle","text_clr":"#ffffff"}},"buttons_mAy7Tf":{"type":"buttons","settings":{"button_label_1":"Shop now","button_link_1":"","button_style":"link","applies_color_scheme":false,"btn_text_clr":"#ffffff","btn_hvr_text_clr":"#ffffff","btn_bg_clr":"#ffffff","btn_hvr_bg_clr":"#ffffff"}}},"block_order":["heading_mLRGHj","text_gkrezr","buttons_mAy7Tf"],"disabled":true,"settings":{"allow_transparent_header":false,"image_overlay_opacity":100,"image_height":"small","desktop_content_position":"middle-center","color_scheme":"","image_behavior":"none"}},"tonic_welcome_RDKF8C":{"type":"tonic-welcome","blocks":{"features_MXCdTi":{"type":"features","settings":{"svg_code":"","title":"BE BOUNDLESS","desc":"<p>Get all-location access, including S&T at Yonge\/Shuter and Front\/Spadina in Toronto + <a href=\"https:\/\/silverspringsla.com\/\" target=\"_blank\" title=\"https:\/\/silverspringsla.com\/\">Silver Springs<\/a> in Los Angeles.<\/p><p>Includes 72-hour advanced priority booking and waived class cancellation fees.<\/p>"}},"features_jrMUXt":{"type":"features","settings":{"svg_code":"","title":"SWEAT","desc":"<p>Access unlimited classes + enjoy your choice of 4 Personal Training or 8 Small Group Training sessions monthly.<\/p>"}},"features_xA9HBA":{"type":"features","settings":{"svg_code":"","title":"RECOVER","desc":"<p>Recover and rejuvenate with unlimited access to the pool deck at Tonic Spa and essential biohacking treatments.<\/p>"}},"features_P6QE3V":{"type":"features","settings":{"svg_code":"","title":"TRANSFORM","desc":"<p>Achieve longevity - our wellness concierge team and dietician will work with you to develop a personalized protocol that integrates 360 wellness and recovery at Tonic Spa, designed and optimized for your unique needs and goals.<\/p>"}}},"block_order":["features_MXCdTi","features_jrMUXt","features_xA9HBA","features_P6QE3V"],"settings":{"title":"<span>TRANSCEND<\/span>\n<br>verb \/trænˈsend\/<br>\nto move beyond ordinary limitations; a state of existence above and beyond material experience.","anchor_label":""}},"anchor_WnMMxU":{"type":"anchor","settings":{"link_anchor":"clubtranscend"}},"spa-all-services":{"type":"spa-all-services","blocks":{"ee21d118-d816-472c-a9b6-1075c016dfbe":{"type":"services","settings":{"serviceType":"","serviceLocation":"","image":"shopify:\/\/shop_images\/S_T_01-28-2023-39.jpg","heading":"GROUP FITNESS CLASSES","detail":"<p>Access unlimited yoga, Pilates, HIIT, and Ride group fitness classes at all locations.<\/p>","location_lbl_dk":"","location_lbl_mb":"","address_title_1":"","address_1":"","address_title_2":"","address_2":"","address_title_3":"","address_3":"","button_text":"","button_link":"","link_text":"","text_link":""}},"services_MGERDD":{"type":"services","settings":{"serviceType":"","serviceLocation":"","image":"shopify:\/\/shop_images\/Sweat_and_Tonic_Personal_Training_Studio.jpg","heading":"PERSONAL & SMALL GROUP TRAINING","detail":"<p>Choice of 4 Personal Training sessions with our principal trainers or 8 Small Group Training sessions per month. <\/p>","location_lbl_dk":"","location_lbl_mb":"","address_title_1":"","address_1":"","address_title_2":"","address_2":"","address_title_3":"","address_3":"","button_text":"","button_link":"","link_text":"","text_link":""}},"c1ea4c2b-0cbc-4dc3-ba8b-630e6daa52c0":{"type":"services","settings":{"serviceType":"","serviceLocation":"Yonge\/Shuter,Front\/Spadina (The Well)","image":"shopify:\/\/shop_images\/Red_Light_Therapy_Lisa_Tonic_Spa_f424c5c0-ef36-45f6-b577-8f940a1c2e5b.jpg","heading":"RED LIGHT THERAPY","detail":"<p>Unlimited sessions per month<\/p><p>Recover & rejuvenate in the TheraLight 360+ and experience the most advanced full-body photobiomodulation system.<\/p>","location_lbl_dk":"","location_lbl_mb":"","address_title_1":"","address_1":"","address_title_2":"","address_2":"","address_title_3":"","address_3":"","button_text":"","button_link":"","link_text":"","text_link":""}},"976b4ad5-89d7-4a33-8792-b5a6a202b6a1":{"type":"services","settings":{"serviceType":"","serviceLocation":"Yonge\/Shuter,Front\/Spadina (The Well)","image":"shopify:\/\/shop_images\/CompressionTherapy_TonicSpa.jpg","heading":"COMPRESSION THERAPY","detail":"<p>Unlimited sessions per month<\/p><p>Recover & reshape with state-of-the-art lymphatic drainage technology to countour your body, accelerate recovery, detox, and improve circulation.<\/p>","location_lbl_dk":"","location_lbl_mb":"","address_title_1":"","address_1":"","address_title_2":"","address_2":"","address_title_3":"","address_3":"","button_text":"","button_link":"","link_text":"","text_link":""}},"7ed4ccec-8250-4dcb-a53a-464b30b0e777":{"type":"services","settings":{"serviceType":"","serviceLocation":"","image":"shopify:\/\/shop_images\/HotandColdTherapyTonicSpSweatandTonic.jpg","heading":"HOT & COLD THERAPY","detail":"<p>8 sessions per month + 8 guest allowances<\/p><p>Toronto's first and only private, four-person dual infrared and traditional high-heat sauna and cold plunge suite.<\/p>","location_lbl_dk":"","location_lbl_mb":"","address_title_1":"","address_1":"","address_title_2":"","address_2":"","address_title_3":"","address_3":"","button_text":"","button_link":"","link_text":"","text_link":""}},"services_DimNK9":{"type":"services","settings":{"serviceType":"","serviceLocation":"","image":"shopify:\/\/shop_images\/DexaScan_cc5c1287-1952-42e5-87d1-c780ca7f7722.png","heading":"DEXA SCAN","detail":"<p>4 scans per year (one every 3 months based on 12-month membership)<\/p><p>Gain accurate and detailed insights into your body composition with full-body imaging to help you improve your health, fitness goals, and physical well-being.<\/p>","location_lbl_dk":"","location_lbl_mb":"","address_title_1":"","address_1":"","address_title_2":"","address_2":"","address_title_3":"","address_3":"","button_text":"","button_link":"","link_text":"","text_link":""}},"aaba282a-25a9-4737-854d-bcbfa6e87067":{"type":"services","settings":{"serviceType":"","serviceLocation":"","image":"shopify:\/\/shop_images\/ClubTranscend_Dietetics.jpg","heading":"DIETETICS","detail":"<p>1 consultation per year<\/p><p>Find food freedom and develop an abundant relationship with food that supports your physical, mental, and emotional wellbeing.<\/p>","location_lbl_dk":"","location_lbl_mb":"","address_title_1":"","address_1":"","address_title_2":"","address_2":"","address_title_3":"","address_3":"","button_text":"","button_link":"","link_text":"","text_link":""}},"5ee5ef11-1a84-40ac-b6ad-41e750ce76f7":{"type":"services","settings":{"serviceType":"","serviceLocation":"","image":"shopify:\/\/shop_images\/ClubTranscend_IVTherapy.jpg","heading":"IV VITAMIN THERAPY","detail":"<p>1 session per month<\/p><p>Supercharge your body with personalized intravenous tonics carefully formulated to optimize your health.<\/p>","location_lbl_dk":"","location_lbl_mb":"","address_title_1":"","address_1":"","address_title_2":"","address_2":"","address_title_3":"","address_3":"","button_text":"","button_link":"","link_text":"","text_link":""}},"9e92333c-1696-4094-a06f-9dc97da4fb29":{"type":"services","settings":{"serviceType":"","serviceLocation":"","image":"shopify:\/\/shop_images\/Tonic_Spa_Pool_Deck_Sweat_and_Tonic.png","heading":"POOL DECK AT TONIC SPA","detail":"<p>Unlimited sessions per month<\/p><p>50 ft. saltwater lap pool, saltwater jetted hot tub, combined infrared & traditional electric sauna, rain & cold plunge showers, and all-season patio.<\/p>","location_lbl_dk":"","location_lbl_mb":"","address_title_1":"","address_1":"","address_title_2":"","address_2":"","address_title_3":"","address_3":"","button_text":"","button_link":"","link_text":"","text_link":""}},"e4eba09f-bd3a-4889-9d21-e8d4009a12f4":{"type":"services","settings":{"serviceType":"","serviceLocation":"","image":"shopify:\/\/shop_images\/South_Meeting_Room.jpg","heading":"PRIVATE MEETING ROOMS","detail":"<p>4 private one-hour meeting room bookings at Tonic House (Front\/Spadina) per month<\/p>","location_lbl_dk":"","location_lbl_mb":"","address_title_1":"","address_1":"","address_title_2":"","address_2":"","address_title_3":"","address_3":"","button_text":"","button_link":"","link_text":"","text_link":""}},"588b1c94-bcec-4b17-90f4-0e74603a2389":{"type":"services","settings":{"serviceType":"","serviceLocation":"","image":"shopify:\/\/shop_images\/Sweat_and_Tonic_Yoga_Studio_Restorative_V2.jpg","heading":"GUEST CREDITS","detail":"<p>5 guest class credits per month<\/p><p>Share the love and get your sweat on with family and friends in our yoga, Pilates, HIIT and ride classes.<\/p>","location_lbl_dk":"","location_lbl_mb":"","address_title_1":"","address_1":"","address_title_2":"","address_2":"","address_title_3":"","address_3":"","button_text":"","button_link":"","link_text":"","text_link":""}},"services_k4MnbW":{"type":"services","settings":{"serviceType":"","serviceLocation":"","image":"shopify:\/\/shop_images\/SweatandTonic_TonicSpa_MassageTherapy.jpg","heading":"ADDITIONAL BENEFITS","detail":"<ul><li>Unlimited Tonic House access<\/li><li>15% off massage, Ayurveda, and skin care treatments at Tonic Spa<\/li><li>10% off S&T shop<\/li><li>72-hour priority booking for classes, Small Group Training, pool deck, and biohacking at Tonic Spa<\/li><\/ul>","location_lbl_dk":"","location_lbl_mb":"","address_title_1":"","address_1":"","address_title_2":"","address_2":"","address_title_3":"","address_3":"","button_text":"","button_link":"","link_text":"","text_link":""}}},"block_order":["ee21d118-d816-472c-a9b6-1075c016dfbe","services_MGERDD","c1ea4c2b-0cbc-4dc3-ba8b-630e6daa52c0","976b4ad5-89d7-4a33-8792-b5a6a202b6a1","7ed4ccec-8250-4dcb-a53a-464b30b0e777","services_DimNK9","aaba282a-25a9-4737-854d-bcbfa6e87067","5ee5ef11-1a84-40ac-b6ad-41e750ce76f7","9e92333c-1696-4094-a06f-9dc97da4fb29","e4eba09f-bd3a-4889-9d21-e8d4009a12f4","588b1c94-bcec-4b17-90f4-0e74603a2389","services_k4MnbW"],"settings":{"heading":"ALL SERVICES","filter_pos_reverse":true,"hideServiceType":"#shopify-section-template--18643975274716__spa-all-services","top_padding_remove":false,"bottom_padding_remove":false,"color_scheme":"accent-1"}},"rich_text_2_UEkbyg":{"type":"rich-text-2","settings":{"color_scheme":"accent-1","full_width":true,"heading":"MEMBERSHIP BENEFITS","subHeading":"CLUB TRANSCEND MEMBERSHIP","text":"<p><strong>$1,000 \/ MONTH INCLUDES:<\/strong><\/p><ul><li>Unlimited classes at The Well, Yonge\/Shuter & Silver Springs Los Angeles<\/li><li>72-hr advanced priority class booking<\/li><li>Waived late\/cancellation fees for classes<\/li><li>Unlimited access to Tonic House<\/li><li>4 x Personal Training with our principal trainers or 8 x Small Group Training sessions per month<\/li><li>Unlimited pool deck access<\/li><li>Unlimited red light therapy and lymphatic compression therapy<\/li><li>8 x hot & cold therapy sessions per month + 8 guest credits<\/li><li>1 x dietetics consultation \/ year<\/li><li>1 x IV vitamin therapy \/ month<\/li><li>4 x DEXA scan \/ year (every 3 months, based on 12-month membership)<\/li><li>Private meeting room bookings (4 hrs \/ month)<\/li><li>5 guest class credits \/ month (valid at all locations)<\/li><li>15% off Tonic Spa treatments (massage & skin care)<\/li><li>10% off S&T Shop<\/li><\/ul><p><em>($3,000+ total value)<\/em><\/p><p><em>Only 50 memberships available<\/em><\/p>","button_label":"SIGN UP NOW","button_link":"https:\/\/sweatandtonic.com\/pages\/pricing?_mt=%2Fbuy%2F48750%3FactiveProduct%3Dmemberships-15359%26activeSection%3D1245","button_style_secondary":false,"button_label_2":"GET IN TOUCH","button_link_2":"mailto:clubtranscend@sweatandtonic.com","button_style_secondary_2":true,"padding_top":40,"padding_bottom":52}},"video_LFDwJp":{"type":"video","settings":{"heading":"","heading_size":"h2","enable_video_looping":true,"video":"shopify:\/\/files\/videos\/Club Transcend - HORIZONTAL - 2025.02.mp4","video_url":"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc","description":"Woman using luxurious facilities at Tonic Spa at Sweat and Tonic, in a dimly lit, vibey setting, including the pool, sauna, hot and cold therapy, red light therapy, and personal training studio.","full_width":false,"color_scheme":"","padding_top":36,"padding_bottom":36}},"rich_text_2_JeWFiN":{"type":"rich-text-2","settings":{"color_scheme":"background-1","full_width":true,"heading":"CLUB TRANSCEND+","subHeading":"MEMBERSHIP ADD-ON","text":"<p><strong>Transcend with a loved one: <\/strong>Add a family member or loved one to your membership and double up on Club Transcend benefits for only an additional $750.<\/p><p>Valid for one guest per year. Add-on guest cannot be pre-existing Club Transcend member.<\/p>","button_label":"MEMBERSHIP ADD-ON","button_link":"https:\/\/sweatandtonic.com\/pages\/pricing?_mt=%2Fbuy%2F48750%3FactiveSection%3D1245","button_style_secondary":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false,"padding_top":40,"padding_bottom":52}},"spa-image-banner":{"type":"spa-image-banner","blocks":{"text_RdYktc":{"type":"text","settings":{"text":"CLUB TRANSCEND","text_style":"caption-with-letter-spacing","text_clr":"#FEE4B1"}},"heading_rRRGgr":{"type":"heading","settings":{"heading":"TRANSFORM YOUR WELLNESS JOURNEY","heading_size":"h2","text_clr":"#ffffff"}},"buttons_FbbWnb":{"type":"buttons","settings":{"button_label_1":"LOOKING TO GET STARTED? GET IN TOUCH","button_link_1":"mailto:clubtranscend@sweatandtonic.com","button_style":"link","applies_color_scheme":false,"btn_text_clr":"#ffffff","btn_hvr_text_clr":"#ffffff","btn_bg_clr":"#ffffff","btn_hvr_bg_clr":"#ffffff"}}},"block_order":["text_RdYktc","heading_rRRGgr","buttons_FbbWnb"],"settings":{"allow_transparent_header":false,"image":"shopify:\/\/shop_images\/Frame_5999_1.jpg","img_mobile":"shopify:\/\/shop_images\/Frame_5988_dca22be5-d3ad-407a-aca5-f6c2bc9701f9.jpg","image_overlay_opacity":0,"image_height":"medium","desktop_content_position":"bottom-right","desktop_content_alignment":"left","color_scheme":"","image_behavior":"fixed","mobile_content_alignment":"left"}},"collapsible_content_atr6XP":{"type":"collapsible-content","blocks":{"collapsible_row_LQNVLd":{"type":"collapsible_row","settings":{"heading":"HOW MANY MEMBERSHIPS ARE AVAILABLE?","icon":"none","row_content":"<p>There are only 50 exclusive Club Transcend memberships available.<\/p>","page":""}},"collapsible_row_3wENLw":{"type":"collapsible_row","settings":{"heading":"HOW DO I SIGN UP?","icon":"none","row_content":"<p>You can purchase a membership in the S&T app or <a href=\"https:\/\/sweatandtonic.com\/pages\/pricing?_mt=%2Fbuy%2F48750%3FactiveSection%3D1245\" target=\"_blank\" title=\"https:\/\/sweatandtonic.com\/pages\/pricing?_mt=%2Fbuy%2F48750%3FactiveSection%3D1245\">online<\/a>, or <a href=\"mailto:clubtranscend@sweatandtonic.com\" target=\"_blank\" title=\"mailto:clubtranscend@sweatandtonic.com\">get in touch<\/a> with a wellness concierge at Tonic Spa to book a personalized tour and start your journey.<\/p>","page":""}},"collapsible_row_WQpmGQ":{"type":"collapsible_row","settings":{"heading":"CAN I BRING A GUEST?","icon":"none","row_content":"<p>Your Club Transcend membership includes:<\/p><ul><li>5 guest credits per month for yoga, Pilates, HIIT and ride classes. Your guest may attend classes on their own.<\/li><li>8 guest allowances per month for Hot & Cold therapy. You must accompany your guest for Hot & Cold Therapy sessions.<\/li><\/ul><p>As an exclusive Club Transcend member benefit, you can also add a loved one to your membership for only $750, and your loved one will get to enjoy all the same benefits!<\/p>","page":""}},"collapsible_row_rByMHm":{"type":"collapsible_row","settings":{"heading":"HOW DO I ADD A LOVED ONE TO MY MEMBERSHIP?","icon":"none","row_content":"<p>Add-ons can be purchased in the S&T app or <a href=\"https:\/\/sweatandtonic.com\/pages\/pricing?_mt=%2Fbuy%2F48750%3FactiveSection%3D1245\" target=\"_blank\" title=\"https:\/\/sweatandtonic.com\/pages\/pricing?_mt=%2Fbuy%2F48750%3FactiveSection%3D1245\">online<\/a>, or by <a href=\"mailto:clubtranscend@sweatandtonic.com\" target=\"_blank\" title=\"mailto:clubtranscend@sweatandtonic.com\">contacting our concierge team<\/a>.<\/p><p>The membership add-on should be purchased by the primary Club Transcend member. You can extend the add-on to one guest per year. The add-on guest cannot be a pre-existing Club Transcend member. <\/p><p><\/p><p><\/p>","page":""}},"collapsible_row_beagWH":{"type":"collapsible_row","settings":{"heading":"ARE THERE ANY CONTRACTS OR ANNUAL COMMITMENT?","icon":"none","row_content":"<p>As always at S&T, there is no annual commitment, no initiation fees, and you can cancel your membership at anytime.<\/p><p>And as long as your membership is active, your monthly rate is price-protected, always and forever.<\/p>","page":""}},"collapsible_row_C44RGh":{"type":"collapsible_row","settings":{"heading":"WAIVED CLASS CANCELLATION FEES","icon":"none","row_content":"<p>Sweat easy - all late cancellation \/ no show fees for classes are waived with a Club Transcend membership.<\/p>","page":""}},"collapsible_row_P7B7gB":{"type":"collapsible_row","settings":{"heading":"PERSONAL & SMALL GROUP TRAINING","icon":"none","row_content":"<p>Your membership includes a choice of 4 Personal Training sessions with our principal trainers or 8 Small Group Training sessions per month. If you'd like to mix and match - feel free to get in touch with our team for assistance.<\/p><p>If you are unable to attend your booked session, you must cancel your booking at least 12 hours in advance or you will lose the value of the session \/ credit.<\/p>","page":""}},"collapsible_row_AgYpzT":{"type":"collapsible_row","settings":{"heading":"BIOHACKING AT TONIC SPA","icon":"none","row_content":"<p>Your membership includes <\/p><ul><li>8 x hot & cold therapy sessions per month + 8 guest allowances<\/li><li>Unlimited red light therapy and compression therapy per month<\/li><\/ul><p>If you are unable to attend your booked session, you must cancel your booking at least 12 hours in advance or you will lose the value of the session \/ credit.<\/p>","page":""}},"collapsible_row_rA4ypr":{"type":"collapsible_row","settings":{"heading":"TONIC SPA TREATMENTS","icon":"none","row_content":"<p>Your membership includes:<\/p><ul><li>1 x dietetics consultation \/ year<\/li><li>1 x IV vitamin therapy \/ month<\/li><li>4 x DEXA scan \/ year (every 3 months, based on 12-month membership)<\/li><\/ul><p>If you are unable to attend your booked session, you must cancel your booking at least 24 hours in advance or you will be charged the full value of the session.<\/p><p><\/p>","page":""}},"collapsible_row_7KwG74":{"type":"collapsible_row","settings":{"heading":"DO SERVICES CARRY OVER?","icon":"none","row_content":"<p>Services and allowances expire within the billing month and do not carry over.<\/p>","page":""}},"collapsible_row_8dg7NJ":{"type":"collapsible_row","settings":{"heading":"CAN I FREEZE MY MEMBERSHIP?","icon":"none","row_content":"<p>Yes, you can request one (1) membership freeze up to 14 days for every 6 months of membership, up to a maximum of two (2) membership freezes in a 12-month period, beginning the first date of your membership. Your membership start date is the date you signed up for a membership. This does not include involuntary freezes, such as studio closures. In the case of an injury, you can request to freeze your membership for the duration of the injury with a doctor’s note. In the case of pregnancy, you can request to freeze your membership for the duration of your pregnancy with a doctor’s note up to 12 months. You must provide a minimum of three (3) days’ notice to ensure your account is not automatically charged. Please contact us at <a href=\"mailto:clubtranscend@sweatandtonic.com\" target=\"_blank\" title=\"mailto:clubtranscend@sweatandtonic.com\">clubtranscend@sweatandtonic.com<\/a> to put your account on hold.<\/p>","page":""}}},"block_order":["collapsible_row_LQNVLd","collapsible_row_3wENLw","collapsible_row_WQpmGQ","collapsible_row_rByMHm","collapsible_row_beagWH","collapsible_row_C44RGh","collapsible_row_P7B7gB","collapsible_row_AgYpzT","collapsible_row_rA4ypr","collapsible_row_7KwG74","collapsible_row_8dg7NJ"],"settings":{"caption":"CLUB TRANSCEND MEMBERSHIP","heading":"FAQ","heading_size":"h2","heading_alignment":"center","layout":"none","color_scheme":"","container_color_scheme":"","open_first_collapsible_row":false,"image_ratio":"adapt","desktop_layout":"image_second","padding_top":36,"padding_bottom":36}},"spa-multicolumn":{"type":"spa-multicolumn","blocks":{"column_4jWJTh":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/TonicHouse_party_2014x1105_3_f0d38410-a460-4aa4-85fe-bfbe587a43ee.jpg","title":"Yonge \/ Shuter","text":"","link_label":"VIEW FAQs","link":""}},"column_Qg9XWQ":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/TonicHouse_party_2014x1105_2.jpg","title":"the well","text":"","link_label":"","link":""}},"column_iW88NP":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Frame_13.jpg","title":"the well","text":"","link_label":"","link":""}},"column_D4VpG3":{"type":"column","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/TonicHouse_party_2014x1105_3_f0d38410-a460-4aa4-85fe-bfbe587a43ee.jpg","title":"the well","text":"","link_label":"","link":""}},"column_8tbkeh":{"type":"column","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/TonicHouse_party_2014x1105_2.jpg","title":"the well","text":"","link_label":"","link":""}},"column_UaAq6c":{"type":"column","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/TonicHouse_party_2014x1105_2.jpg","title":"the well","text":"","link_label":"","link":""}}},"block_order":["column_4jWJTh","column_Qg9XWQ","column_iW88NP","column_D4VpG3","column_8tbkeh","column_UaAq6c"],"disabled":true,"settings":{"title":"TONIC SPA","heading_size":"h2","image_ratio":"portrait","column_alignment":"left","button_label":"","button_link":"","color_scheme":"accent-1","top_padding_remove":true,"bottom_padding_remove":false}},"shogun-optimizer":{"type":"shogun-optimizer","settings":{}}},"order":["spa-hero","shogun-helper","services_hero_NM6DqU","spa_hero_8y8QCe","tonic_welcome_RDKF8C","anchor_WnMMxU","spa-all-services","rich_text_2_UEkbyg","video_LFDwJp","rich_text_2_JeWFiN","spa-image-banner","collapsible_content_atr6XP","spa-multicolumn","shogun-optimizer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "spa-hero": {
+      "type": "spa-hero",
+      "blocks": {
+        "3d295c9e-10b8-4397-b3c8-b08733efc0db": {
+          "type": "text",
+          "settings": {
+            "text": "YOUR TICKET TO A HIGHER SELF",
+            "text_style": "caption-with-letter-spacing",
+            "text_clr": "#ffffff"
+          }
+        },
+        "89ede07a-229a-4fd5-8064-eb065090ad93": {
+          "type": "heading",
+          "settings": {
+            "heading": "CLUB TRANSCEND",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "943f29ad-f020-4899-974b-20f586c4dd6a": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "RESERVE A MEMBERSHIP",
+            "button_link_1": "https://sweatandtonic.com/pages/pricing?_mt=%2Fbuy%2F48750%3FactiveProduct%3Dmemberships-15359%26activeSection%3D1245",
+            "button_style": "solid",
+            "applies_color_scheme": true,
+            "btn_text_clr": "#000000",
+            "btn_hvr_text_clr": "#000000",
+            "btn_bg_clr": "#FEE4B1",
+            "btn_hvr_bg_clr": "#ffffff"
+          }
+        },
+        "d41f6baf-924e-485e-ab85-303705a32897": {
+          "type": "spa_info",
+          "settings": {
+            "detail": "Explore Canada's most exclusive 360 wellness membership",
+            "link_text": "Learn More",
+            "url": "https://sweatandtonic.com/pages/pricing?_mt=%2Fbuy%2F48750%3FactiveProduct%3Dmemberships-15359",
+            "enableScroll": true
+          }
+        }
+      },
+      "block_order": [
+        "3d295c9e-10b8-4397-b3c8-b08733efc0db",
+        "89ede07a-229a-4fd5-8064-eb065090ad93",
+        "943f29ad-f020-4899-974b-20f586c4dd6a",
+        "d41f6baf-924e-485e-ab85-303705a32897"
+      ],
+      "disabled": true,
+      "settings": {
+        "allow_transparent_header": true,
+        "image": "shopify://shop_images/colored-lit-smoke.jpg",
+        "img_mobile": "shopify://shop_images/colored-lit-smoke.jpg",
+        "image_overlay_opacity": 30,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "color_scheme": "accent-1",
+        "image_behavior": "ambient"
+      }
+    },
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {}
+    },
+    "services_hero_NM6DqU": {
+      "type": "services-hero",
+      "blocks": {
+        "text_c7kM7R": {
+          "type": "text",
+          "settings": {
+            "text1": "YOUR TICKET TO A HIGHER SELF",
+            "text": "",
+            "text_style": "caption-with-letter-spacing",
+            "text_clr": "#ffffff"
+          }
+        },
+        "heading_988n3H": {
+          "type": "heading",
+          "settings": {
+            "heading": "CLUB TRANSCEND",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "buttons_BJnWQm": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "RESERVE A MEMBERSHIP",
+            "button_link_1": "#clubtranscend",
+            "button_style": "solid",
+            "applies_color_scheme": true,
+            "btn_text_clr": "#121212",
+            "btn_hvr_text_clr": "#26221b",
+            "btn_bg_clr": "#FEE4B1",
+            "btn_hvr_bg_clr": "#ffffff"
+          }
+        },
+        "description_7ELDUm": {
+          "type": "description",
+          "settings": {
+            "desc": "<p>Explore Canada's most exclusive 360 wellness membership</p>",
+            "anchor_label": "Learn More",
+            "anchor_link": "#clubtranscend",
+            "text_clr": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "text_c7kM7R",
+        "heading_988n3H",
+        "buttons_BJnWQm",
+        "description_7ELDUm"
+      ],
+      "settings": {
+        "allow_transparent_header": true,
+        "image": "shopify://shop_images/colored-lit-smoke.jpg",
+        "img_mobile": "shopify://shop_images/colored-lit-smoke.jpg",
+        "image_overlay_opacity": 20,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center"
+      }
+    },
+    "spa_hero_8y8QCe": {
+      "type": "spa-hero",
+      "blocks": {
+        "heading_mLRGHj": {
+          "type": "heading",
+          "settings": {
+            "heading": "TRANSCEND",
+            "heading_size": "h2",
+            "text_clr": "#ffffff"
+          }
+        },
+        "text_gkrezr": {
+          "type": "text",
+          "settings": {
+            "text": "<em>verb</em>  /trænˈsend/ to move beyond ordinary limitations; a state of existence above and beyond material experience",
+            "text_style": "subtitle",
+            "text_clr": "#ffffff"
+          }
+        },
+        "buttons_mAy7Tf": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop now",
+            "button_link_1": "",
+            "button_style": "link",
+            "applies_color_scheme": false,
+            "btn_text_clr": "#ffffff",
+            "btn_hvr_text_clr": "#ffffff",
+            "btn_bg_clr": "#ffffff",
+            "btn_hvr_bg_clr": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mLRGHj",
+        "text_gkrezr",
+        "buttons_mAy7Tf"
+      ],
+      "disabled": true,
+      "settings": {
+        "allow_transparent_header": false,
+        "image_overlay_opacity": 100,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "color_scheme": "",
+        "image_behavior": "none"
+      }
+    },
+    "tonic_welcome_RDKF8C": {
+      "type": "tonic-welcome",
+      "blocks": {
+        "features_MXCdTi": {
+          "type": "features",
+          "settings": {
+            "svg_code": "",
+            "title": "BE BOUNDLESS",
+            "desc": "<p>Get all-location access, including S&T at Yonge/Shuter and Front/Spadina in Toronto + <a href=\"https://silverspringsla.com/\" target=\"_blank\" title=\"https://silverspringsla.com/\">Silver Springs</a> in Los Angeles.</p><p>Includes 72-hour advanced priority booking and waived class cancellation fees.</p>"
+          }
+        },
+        "features_jrMUXt": {
+          "type": "features",
+          "settings": {
+            "svg_code": "",
+            "title": "SWEAT",
+            "desc": "<p>Access unlimited classes + enjoy your choice of 4 Personal Training or 8 Small Group Training sessions monthly.</p>"
+          }
+        },
+        "features_xA9HBA": {
+          "type": "features",
+          "settings": {
+            "svg_code": "",
+            "title": "RECOVER",
+            "desc": "<p>Recover and rejuvenate with unlimited access to the pool deck at Tonic Spa and essential biohacking treatments.</p>"
+          }
+        },
+        "features_P6QE3V": {
+          "type": "features",
+          "settings": {
+            "svg_code": "",
+            "title": "TRANSFORM",
+            "desc": "<p>Achieve longevity - our wellness concierge team and dietician will work with you to develop a personalized protocol that integrates 360 wellness and recovery at Tonic Spa, designed and optimized for your unique needs and goals.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "features_MXCdTi",
+        "features_jrMUXt",
+        "features_xA9HBA",
+        "features_P6QE3V"
+      ],
+      "settings": {
+        "title": "<span>TRANSCEND</span>\n<br>verb /trænˈsend/<br>\nto move beyond ordinary limitations; a state of existence above and beyond material experience.",
+        "anchor_label": ""
+      }
+    },
+    "anchor_WnMMxU": {
+      "type": "anchor",
+      "settings": {
+        "link_anchor": "clubtranscend"
+      }
+    },
+    "spa-all-services": {
+      "type": "spa-all-services",
+      "blocks": {
+        "ee21d118-d816-472c-a9b6-1075c016dfbe": {
+          "type": "services",
+          "settings": {
+            "serviceType": "",
+            "serviceLocation": "",
+            "image": "shopify://shop_images/S_T_01-28-2023-39.jpg",
+            "heading": "GROUP FITNESS CLASSES",
+            "detail": "<p>Access unlimited yoga, Pilates, HIIT, and Ride group fitness classes at all locations.</p>",
+            "location_lbl_dk": "",
+            "location_lbl_mb": "",
+            "address_title_1": "",
+            "address_1": "",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": ""
+          }
+        },
+        "services_MGERDD": {
+          "type": "services",
+          "settings": {
+            "serviceType": "",
+            "serviceLocation": "",
+            "image": "shopify://shop_images/Sweat_and_Tonic_Personal_Training_Studio.jpg",
+            "heading": "PERSONAL & SMALL GROUP TRAINING",
+            "detail": "<p>Choice of 4 Personal Training sessions with our principal trainers or 8 Small Group Training sessions per month. </p>",
+            "location_lbl_dk": "",
+            "location_lbl_mb": "",
+            "address_title_1": "",
+            "address_1": "",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": ""
+          }
+        },
+        "c1ea4c2b-0cbc-4dc3-ba8b-630e6daa52c0": {
+          "type": "services",
+          "settings": {
+            "serviceType": "",
+            "serviceLocation": "Yonge/Shuter,Front/Spadina (The Well)",
+            "image": "shopify://shop_images/Red_Light_Therapy_Lisa_Tonic_Spa_f424c5c0-ef36-45f6-b577-8f940a1c2e5b.jpg",
+            "heading": "RED LIGHT THERAPY",
+            "detail": "<p>Unlimited sessions per month</p><p>Recover & rejuvenate in the TheraLight 360+ and experience the most advanced full-body photobiomodulation system.</p>",
+            "location_lbl_dk": "",
+            "location_lbl_mb": "",
+            "address_title_1": "",
+            "address_1": "",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": ""
+          }
+        },
+        "976b4ad5-89d7-4a33-8792-b5a6a202b6a1": {
+          "type": "services",
+          "settings": {
+            "serviceType": "",
+            "serviceLocation": "Yonge/Shuter,Front/Spadina (The Well)",
+            "image": "shopify://shop_images/CompressionTherapy_TonicSpa.jpg",
+            "heading": "COMPRESSION THERAPY",
+            "detail": "<p>Unlimited sessions per month</p><p>Recover & reshape with state-of-the-art lymphatic drainage technology to countour your body, accelerate recovery, detox, and improve circulation.</p>",
+            "location_lbl_dk": "",
+            "location_lbl_mb": "",
+            "address_title_1": "",
+            "address_1": "",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": ""
+          }
+        },
+        "7ed4ccec-8250-4dcb-a53a-464b30b0e777": {
+          "type": "services",
+          "settings": {
+            "serviceType": "",
+            "serviceLocation": "",
+            "image": "shopify://shop_images/HotandColdTherapyTonicSpSweatandTonic.jpg",
+            "heading": "HOT & COLD THERAPY",
+            "detail": "<p>8 sessions per month + 8 guest allowances</p><p>Toronto's first and only private, four-person dual infrared and traditional high-heat sauna and cold plunge suite.</p>",
+            "location_lbl_dk": "",
+            "location_lbl_mb": "",
+            "address_title_1": "",
+            "address_1": "",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": ""
+          }
+        },
+        "services_DimNK9": {
+          "type": "services",
+          "settings": {
+            "serviceType": "",
+            "serviceLocation": "",
+            "image": "shopify://shop_images/DexaScan_cc5c1287-1952-42e5-87d1-c780ca7f7722.png",
+            "heading": "DEXA SCAN",
+            "detail": "<p>4 scans per year (one every 3 months based on 12-month membership)</p><p>Gain accurate and detailed insights into your body composition with full-body imaging to help you improve your health, fitness goals, and physical well-being.</p>",
+            "location_lbl_dk": "",
+            "location_lbl_mb": "",
+            "address_title_1": "",
+            "address_1": "",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": ""
+          }
+        },
+        "aaba282a-25a9-4737-854d-bcbfa6e87067": {
+          "type": "services",
+          "settings": {
+            "serviceType": "",
+            "serviceLocation": "",
+            "image": "shopify://shop_images/ClubTranscend_Dietetics.jpg",
+            "heading": "DIETETICS",
+            "detail": "<p>1 consultation per year</p><p>Find food freedom and develop an abundant relationship with food that supports your physical, mental, and emotional wellbeing.</p>",
+            "location_lbl_dk": "",
+            "location_lbl_mb": "",
+            "address_title_1": "",
+            "address_1": "",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": ""
+          }
+        },
+        "5ee5ef11-1a84-40ac-b6ad-41e750ce76f7": {
+          "type": "services",
+          "settings": {
+            "serviceType": "",
+            "serviceLocation": "",
+            "image": "shopify://shop_images/ClubTranscend_IVTherapy.jpg",
+            "heading": "IV VITAMIN THERAPY",
+            "detail": "<p>1 session per month</p><p>Supercharge your body with personalized intravenous tonics carefully formulated to optimize your health.</p>",
+            "location_lbl_dk": "",
+            "location_lbl_mb": "",
+            "address_title_1": "",
+            "address_1": "",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": ""
+          }
+        },
+        "9e92333c-1696-4094-a06f-9dc97da4fb29": {
+          "type": "services",
+          "settings": {
+            "serviceType": "",
+            "serviceLocation": "",
+            "image": "shopify://shop_images/Tonic_Spa_Pool_Deck_Sweat_and_Tonic.png",
+            "heading": "POOL DECK AT TONIC SPA",
+            "detail": "<p>Unlimited sessions per month</p><p>50 ft. saltwater lap pool, saltwater jetted hot tub, combined infrared & traditional electric sauna, rain & cold plunge showers, and all-season patio.</p>",
+            "location_lbl_dk": "",
+            "location_lbl_mb": "",
+            "address_title_1": "",
+            "address_1": "",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": ""
+          }
+        },
+        "e4eba09f-bd3a-4889-9d21-e8d4009a12f4": {
+          "type": "services",
+          "settings": {
+            "serviceType": "",
+            "serviceLocation": "",
+            "image": "shopify://shop_images/South_Meeting_Room.jpg",
+            "heading": "PRIVATE MEETING ROOMS",
+            "detail": "<p>4 private one-hour meeting room bookings at Tonic House (Front/Spadina) per month</p>",
+            "location_lbl_dk": "",
+            "location_lbl_mb": "",
+            "address_title_1": "",
+            "address_1": "",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": ""
+          }
+        },
+        "588b1c94-bcec-4b17-90f4-0e74603a2389": {
+          "type": "services",
+          "settings": {
+            "serviceType": "",
+            "serviceLocation": "",
+            "image": "shopify://shop_images/Sweat_and_Tonic_Yoga_Studio_Restorative_V2.jpg",
+            "heading": "GUEST CREDITS",
+            "detail": "<p>5 guest class credits per month</p><p>Share the love and get your sweat on with family and friends in our yoga, Pilates, HIIT and ride classes.</p>",
+            "location_lbl_dk": "",
+            "location_lbl_mb": "",
+            "address_title_1": "",
+            "address_1": "",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": ""
+          }
+        },
+        "services_k4MnbW": {
+          "type": "services",
+          "settings": {
+            "serviceType": "",
+            "serviceLocation": "",
+            "image": "shopify://shop_images/SweatandTonic_TonicSpa_MassageTherapy.jpg",
+            "heading": "ADDITIONAL BENEFITS",
+            "detail": "<ul><li>Unlimited Tonic House access</li><li>15% off massage, Ayurveda, and skin care treatments at Tonic Spa</li><li>10% off S&T shop</li><li>72-hour priority booking for classes, Small Group Training, pool deck, and biohacking at Tonic Spa</li></ul>",
+            "location_lbl_dk": "",
+            "location_lbl_mb": "",
+            "address_title_1": "",
+            "address_1": "",
+            "address_title_2": "",
+            "address_2": "",
+            "address_title_3": "",
+            "address_3": "",
+            "button_text": "",
+            "button_link": "",
+            "link_text": "",
+            "text_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "ee21d118-d816-472c-a9b6-1075c016dfbe",
+        "services_MGERDD",
+        "c1ea4c2b-0cbc-4dc3-ba8b-630e6daa52c0",
+        "976b4ad5-89d7-4a33-8792-b5a6a202b6a1",
+        "7ed4ccec-8250-4dcb-a53a-464b30b0e777",
+        "services_DimNK9",
+        "aaba282a-25a9-4737-854d-bcbfa6e87067",
+        "5ee5ef11-1a84-40ac-b6ad-41e750ce76f7",
+        "9e92333c-1696-4094-a06f-9dc97da4fb29",
+        "e4eba09f-bd3a-4889-9d21-e8d4009a12f4",
+        "588b1c94-bcec-4b17-90f4-0e74603a2389",
+        "services_k4MnbW"
+      ],
+      "settings": {
+        "heading": "ALL SERVICES",
+        "filter_pos_reverse": true,
+        "hideServiceType": "#shopify-section-template--18643975274716__spa-all-services",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false,
+        "color_scheme": "accent-1"
+      }
+    },
+    "rich_text_2_UEkbyg": {
+      "type": "rich-text-2",
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "heading": "MEMBERSHIP BENEFITS",
+        "subHeading": "CLUB TRANSCEND MEMBERSHIP",
+        "text": "<p><strong>$1,000 / MONTH INCLUDES:</strong></p><ul><li>Unlimited classes at The Well, Yonge/Shuter & Silver Springs Los Angeles</li><li>72-hr advanced priority class booking</li><li>Waived late/cancellation fees for classes</li><li>Unlimited access to Tonic House</li><li>4 x Personal Training with our principal trainers or 8 x Small Group Training sessions per month</li><li>Unlimited pool deck access</li><li>Unlimited red light therapy and lymphatic compression therapy</li><li>8 x hot & cold therapy sessions per month + 8 guest credits</li><li>1 x dietetics consultation / year</li><li>1 x IV vitamin therapy / month</li><li>4 x DEXA scan / year (every 3 months, based on 12-month membership)</li><li>Private meeting room bookings (4 hrs / month)</li><li>5 guest class credits / month (valid at all locations)</li><li>15% off Tonic Spa treatments (massage & skin care)</li><li>10% off S&T Shop</li></ul><p><em>($3,000+ total value)</em></p><p><em>Only 50 memberships available</em></p>",
+        "button_label": "SIGN UP NOW",
+        "button_link": "https://sweatandtonic.com/pages/pricing?_mt=%2Fbuy%2F48750%3FactiveProduct%3Dmemberships-15359%26activeSection%3D1245",
+        "button_style_secondary": false,
+        "button_label_2": "GET IN TOUCH",
+        "button_link_2": "mailto:clubtranscend@sweatandtonic.com",
+        "button_style_secondary_2": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "video_LFDwJp": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/Club Transcend - HORIZONTAL - 2025.02.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "Woman using luxurious facilities at Tonic Spa at Sweat and Tonic, in a dimly lit, vibey setting, including the pool, sauna, hot and cold therapy, red light therapy, and personal training studio.",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_2_JeWFiN": {
+      "type": "rich-text-2",
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "heading": "CLUB TRANSCEND+",
+        "subHeading": "MEMBERSHIP ADD-ON",
+        "text": "<p><strong>Transcend with a loved one: </strong>Add a family member or loved one to your membership and double up on Club Transcend benefits for only an additional $750.</p><p>Valid for one guest per year. Add-on guest cannot be pre-existing Club Transcend member.</p>",
+        "button_label": "MEMBERSHIP ADD-ON",
+        "button_link": "https://sweatandtonic.com/pages/pricing?_mt=%2Fbuy%2F48750%3FactiveSection%3D1245",
+        "button_style_secondary": false,
+        "button_label_2": "",
+        "button_link_2": "",
+        "button_style_secondary_2": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "spa-image-banner": {
+      "type": "spa-image-banner",
+      "blocks": {
+        "text_RdYktc": {
+          "type": "text",
+          "settings": {
+            "text": "CLUB TRANSCEND",
+            "text_style": "caption-with-letter-spacing",
+            "text_clr": "#FEE4B1"
+          }
+        },
+        "heading_rRRGgr": {
+          "type": "heading",
+          "settings": {
+            "heading": "TRANSFORM YOUR WELLNESS JOURNEY",
+            "heading_size": "h2",
+            "text_clr": "#ffffff"
+          }
+        },
+        "buttons_FbbWnb": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "LOOKING TO GET STARTED? GET IN TOUCH",
+            "button_link_1": "mailto:clubtranscend@sweatandtonic.com",
+            "button_style": "link",
+            "applies_color_scheme": false,
+            "btn_text_clr": "#ffffff",
+            "btn_hvr_text_clr": "#ffffff",
+            "btn_bg_clr": "#ffffff",
+            "btn_hvr_bg_clr": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "text_RdYktc",
+        "heading_rRRGgr",
+        "buttons_FbbWnb"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "image": "shopify://shop_images/Frame_5999_1.jpg",
+        "img_mobile": "shopify://shop_images/Frame_5988_dca22be5-d3ad-407a-aca5-f6c2bc9701f9.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "bottom-right",
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "left"
+      }
+    },
+    "collapsible_content_atr6XP": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_LQNVLd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "HOW MANY MEMBERSHIPS ARE AVAILABLE?",
+            "icon": "none",
+            "row_content": "<p>There are only 50 exclusive Club Transcend memberships available.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_3wENLw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "HOW DO I SIGN UP?",
+            "icon": "none",
+            "row_content": "<p>You can purchase a membership in the S&T app or <a href=\"https://sweatandtonic.com/pages/pricing?_mt=%2Fbuy%2F48750%3FactiveSection%3D1245\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/pricing?_mt=%2Fbuy%2F48750%3FactiveSection%3D1245\">online</a>, or <a href=\"mailto:clubtranscend@sweatandtonic.com\" target=\"_blank\" title=\"mailto:clubtranscend@sweatandtonic.com\">get in touch</a> with a wellness concierge at Tonic Spa to book a personalized tour and start your journey.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_WQpmGQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "CAN I BRING A GUEST?",
+            "icon": "none",
+            "row_content": "<p>Your Club Transcend membership includes:</p><ul><li>5 guest credits per month for yoga, Pilates, HIIT and ride classes. Your guest may attend classes on their own.</li><li>8 guest allowances per month for Hot & Cold therapy. You must accompany your guest for Hot & Cold Therapy sessions.</li></ul><p>As an exclusive Club Transcend member benefit, you can also add a loved one to your membership for only $750, and your loved one will get to enjoy all the same benefits!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_rByMHm": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "HOW DO I ADD A LOVED ONE TO MY MEMBERSHIP?",
+            "icon": "none",
+            "row_content": "<p>Add-ons can be purchased in the S&T app or <a href=\"https://sweatandtonic.com/pages/pricing?_mt=%2Fbuy%2F48750%3FactiveSection%3D1245\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/pricing?_mt=%2Fbuy%2F48750%3FactiveSection%3D1245\">online</a>, or by <a href=\"mailto:clubtranscend@sweatandtonic.com\" target=\"_blank\" title=\"mailto:clubtranscend@sweatandtonic.com\">contacting our concierge team</a>.</p><p>The membership add-on should be purchased by the primary Club Transcend member. You can extend the add-on to one guest per year. The add-on guest cannot be a pre-existing Club Transcend member. </p><p></p><p></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_beagWH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "ARE THERE ANY CONTRACTS OR ANNUAL COMMITMENT?",
+            "icon": "none",
+            "row_content": "<p>As always at S&T, there is no annual commitment, no initiation fees, and you can cancel your membership at anytime.</p><p>And as long as your membership is active, your monthly rate is price-protected, always and forever.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_C44RGh": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "WAIVED CLASS CANCELLATION FEES",
+            "icon": "none",
+            "row_content": "<p>Sweat easy - all late cancellation / no show fees for classes are waived with a Club Transcend membership.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_P7B7gB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "PERSONAL & SMALL GROUP TRAINING",
+            "icon": "none",
+            "row_content": "<p>Your membership includes a choice of 4 Personal Training sessions with our principal trainers or 8 Small Group Training sessions per month. If you'd like to mix and match - feel free to get in touch with our team for assistance.</p><p>If you are unable to attend your booked session, you must cancel your booking at least 12 hours in advance or you will lose the value of the session / credit.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_AgYpzT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "BIOHACKING AT TONIC SPA",
+            "icon": "none",
+            "row_content": "<p>Your membership includes </p><ul><li>8 x hot & cold therapy sessions per month + 8 guest allowances</li><li>Unlimited red light therapy and compression therapy per month</li></ul><p>If you are unable to attend your booked session, you must cancel your booking at least 12 hours in advance or you will lose the value of the session / credit.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_rA4ypr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "TONIC SPA TREATMENTS",
+            "icon": "none",
+            "row_content": "<p>Your membership includes:</p><ul><li>1 x dietetics consultation / year</li><li>1 x IV vitamin therapy / month</li><li>4 x DEXA scan / year (every 3 months, based on 12-month membership)</li></ul><p>If you are unable to attend your booked session, you must cancel your booking at least 24 hours in advance or you will be charged the full value of the session.</p><p></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_7KwG74": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "DO SERVICES CARRY OVER?",
+            "icon": "none",
+            "row_content": "<p>Services and allowances expire within the billing month and do not carry over.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8dg7NJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "CAN I FREEZE MY MEMBERSHIP?",
+            "icon": "none",
+            "row_content": "<p>Yes, you can request one (1) membership freeze up to 14 days for every 6 months of membership, up to a maximum of two (2) membership freezes in a 12-month period, beginning the first date of your membership. Your membership start date is the date you signed up for a membership. This does not include involuntary freezes, such as studio closures. In the case of an injury, you can request to freeze your membership for the duration of the injury with a doctor’s note. In the case of pregnancy, you can request to freeze your membership for the duration of your pregnancy with a doctor’s note up to 12 months. You must provide a minimum of three (3) days’ notice to ensure your account is not automatically charged. Please contact us at <a href=\"mailto:clubtranscend@sweatandtonic.com\" target=\"_blank\" title=\"mailto:clubtranscend@sweatandtonic.com\">clubtranscend@sweatandtonic.com</a> to put your account on hold.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_LQNVLd",
+        "collapsible_row_3wENLw",
+        "collapsible_row_WQpmGQ",
+        "collapsible_row_rByMHm",
+        "collapsible_row_beagWH",
+        "collapsible_row_C44RGh",
+        "collapsible_row_P7B7gB",
+        "collapsible_row_AgYpzT",
+        "collapsible_row_rA4ypr",
+        "collapsible_row_7KwG74",
+        "collapsible_row_8dg7NJ"
+      ],
+      "settings": {
+        "caption": "CLUB TRANSCEND MEMBERSHIP",
+        "heading": "FAQ",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "spa-multicolumn": {
+      "type": "spa-multicolumn",
+      "blocks": {
+        "column_4jWJTh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/TonicHouse_party_2014x1105_3_f0d38410-a460-4aa4-85fe-bfbe587a43ee.jpg",
+            "title": "Yonge / Shuter",
+            "text": "",
+            "link_label": "VIEW FAQs",
+            "link": ""
+          }
+        },
+        "column_Qg9XWQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/TonicHouse_party_2014x1105_2.jpg",
+            "title": "the well",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iW88NP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Frame_13.jpg",
+            "title": "the well",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_D4VpG3": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/TonicHouse_party_2014x1105_3_f0d38410-a460-4aa4-85fe-bfbe587a43ee.jpg",
+            "title": "the well",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_8tbkeh": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/TonicHouse_party_2014x1105_2.jpg",
+            "title": "the well",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UaAq6c": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/TonicHouse_party_2014x1105_2.jpg",
+            "title": "the well",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_4jWJTh",
+        "column_Qg9XWQ",
+        "column_iW88NP",
+        "column_D4VpG3",
+        "column_8tbkeh",
+        "column_UaAq6c"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "TONIC SPA",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "column_alignment": "left",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-1",
+        "top_padding_remove": true,
+        "bottom_padding_remove": false
+      }
+    },
+    "shogun-optimizer": {
+      "type": "shogun-optimizer",
+      "settings": {}
+    }
+  },
+  "order": [
+    "spa-hero",
+    "shogun-helper",
+    "services_hero_NM6DqU",
+    "spa_hero_8y8QCe",
+    "tonic_welcome_RDKF8C",
+    "anchor_WnMMxU",
+    "spa-all-services",
+    "rich_text_2_UEkbyg",
+    "video_LFDwJp",
+    "rich_text_2_JeWFiN",
+    "spa-image-banner",
+    "collapsible_content_atr6XP",
+    "spa-multicolumn",
+    "shogun-optimizer"
+  ]
+}
