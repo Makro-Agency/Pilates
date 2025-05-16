@@ -50,7 +50,7 @@
   margin-bottom: -3px;
 }
 .transparent_header main{
-  margin-top: calc(-1 * var(--header-height, 85px));
+  margin-top: calc(-1 * var(--header-height, 94px));
 }
 .transparent_header main section:first-child .banner__box{
   margin-top: var(--header-height, 85px));
