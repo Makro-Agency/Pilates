@@ -1,0 +1,151 @@
+.instructors-team {
+    position: relative;
+    padding: 143px 0 0;
+    color: #ffffff;
+    background-color: #000000;
+    overflow: hidden;
+  }
+  
+  .instructors-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .instructors-bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .instructors-team-wrapper {
+    z-index: 1;
+    position: relative;
+  }
+  .instructors-header {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    gap: 132px;
+  }
+  .instructors-header > * {
+    flex: 1 0 0;
+  }
+  
+  .instructors-heading {
+    font-size: 60px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+ }
+  
+  .instructors-description {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 160%;
+  }
+  
+  .instructors-cta {
+    margin-top: 40px;
+  }
+  
+  .instructors-button {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    font-family: var(--font-heading-family);
+    align-items: center;
+    gap: 8px;
+ }
+  
+  
+  .arrow-icon {
+    margin-left: 8px;
+    font-size: 20px;
+  }
+  
+  .instructors-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .instructor-card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .instructor-image {
+    position: relative;
+    aspect-ratio: 465/581;
+    overflow: hidden;
+  }
+  
+  .instructor-image::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    z-index: 1;
+  }
+  
+  .instructor-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  
+  .instructor-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .instructor-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .instructor-link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .instructors-header-content {
+      max-width: 100%;
+    }
+    
+    .instructors-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    .instructors-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .instructors-heading {
+      font-size: 28px;
+    }
+  }

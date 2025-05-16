@@ -36,8 +36,47 @@
         "enable_language_selector": false
       }
     },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "f3379ac4-a87c-4f04-aa79-b5edb88faf25": {
+          "type": "quick-menu",
+          "settings": {
+            "menu_quick_links": "quick-buy-links"
+          }
+        }
+      },
+      "block_order": [
+        "f3379ac4-a87c-4f04-aa79-b5edb88faf25"
+      ],
+      "settings": {
+        "logo_position": "top-center",
+        "hide-header": true,
+        "menu": "mega-menu",
+        "menu_type_desktop": "drawer_with_mega",
+        "title": "The best of boutique fitness & wellness under one roof",
+        "image_1": "shopify://shop_images/menu-1.png",
+        "title_1": "TRY 3 CLASSES FOR $60",
+        "button_1_title": "Get an intro pack",
+        "button_1_link": "shopify://pages/pricing",
+        "title_2": "S&T SHOP",
+        "button_2_title": "Sweat in style",
+        "button_2_link": "https://sweatandtonic.com/pages/shop",
+        "sticky_header_type": "always",
+        "show_line_separator": true,
+        "color_scheme": "background-1",
+        "menu_color_scheme": "background-1",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
     "global_header_jrHBy3": {
       "type": "global_header",
+      "disabled": true,
       "settings": {
         "desktop_logo": "shopify://shop_images/Vector.svg",
         "mobile_logo": "shopify://shop_images/Vector_8.png",
@@ -100,6 +139,7 @@
   },
   "order": [
     "announcement-bar",
+    "header",
     "global_header_jrHBy3",
     "4d342184-db41-43d6-bbe3-503423044f05"
   ]

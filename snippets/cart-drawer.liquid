@@ -75,10 +75,10 @@
           class=" is-empty"
         {% endif %}
       >
-        <div class="free-shipping-block">
+        {% comment %} <div class="free-shipping-block">
           <div class="text">Congrats! You've unlocked FREE SHIPPING!</div>
           <div class="progress-bar"><span></span></div>
-        </div>
+        </div> {% endcomment %}
 
         <form
           action="{{ routes.cart_url }}"
@@ -462,27 +462,6 @@
           </div>
           <div id="CartDrawer-CartErrors" role="alert"></div>
         </form>
-
-        <cart-item-recommended class="cart-item_outer-detail cart-item-recommended">
-          <h5 class="cait-reco-title">Recommended Product</h5>
-          <div class="cait-reco--wrapper">
-            <div class="cait-reco--image">
-              <img src="//reformd.com/cdn/shop/files/S_TxApresActif-21.jpg?v=1743076270&amp;width=300" alt="S&amp;T x Après Actif Quarter-Zip" loading="lazy" width="auto" height="auto">															
-            </div>
-            <div class="cait-reco--detail">
-              <div class="cait-reco--detail_wrapper">
-                <h6 class="heading">Azur x S&T Classic Fit Bike Shorts 5"</h6>
-                <div class="price">$96.00
-                  <div class="price-old">$110.00</div>
-                </div>
-              </div>
-              <div class="cait-reco-add-btn button button--primary">
-                Add
-              </div>
-            </div>
-          </div>
-          
-        </cart-item-recommended>
 
       </cart-drawer-items>
       <div class="drawer__footer">
