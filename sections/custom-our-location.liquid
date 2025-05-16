@@ -21,9 +21,9 @@
           <div class="services">
             <h4>{{ block.settings.services_heading }}</h4>
             <ul>
-              <li>{{ block.settings.service_1 }}</li>
-              <li>{{ block.settings.service_2 }}</li>
-              <li>{{ block.settings.service_3 }}</li>
+              <li><span>{% render 'custom-correct' %}</span>{{ block.settings.service_1 }}</li>
+              <li><span>{% render 'custom-correct' %}</span>{{ block.settings.service_2 }}</li>
+              <li><span>{% render 'custom-correct' %}</span>{{ block.settings.service_3 }}</li>
             </ul>
             <a href="{{ block.settings.link }}" class="learn-more-mobile">
               {{ block.settings.link_text }}

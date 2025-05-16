@@ -1,4 +1,5 @@
 .hero-banner-2 { position: relative; z-index: 2;}
+
 .hero-banner-2 .image figure {
     margin: 0;
     position: relative;
@@ -190,10 +191,11 @@ letter-spacing: 0;
     transition: all .3s linear;
   }
    .hero-banner-2 a.cta:hover:after{ opacity:1; }
-/*------------for home page------------------*/
-.template-index .hero-banner-2 .image figure {
-    height: 100%;
+
+@media screen and (max-width:767px){
+.template--about-us .shopify-section{ overflow:hidden;}
 }
+
 @media only screen and (min-width: 992px) {
     .template-index .hero-banner-2 .banner-content {
         align-items: center;
