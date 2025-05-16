@@ -5,9 +5,6 @@
 .team-banner-wrapper .banner-box .team-info { width:100%; padding:29px 5rem 0px 5rem; display: flex; flex-flow: column; }
 .team-banner-wrapper .banner-box .team-info .back-team { color: #000; font-size: 12px; font-style: normal; font-weight: 450; line-height: normal; gap:10px;
   letter-spacing: 0.24px; text-transform: uppercase; display:flex; align-items:center; text-decoration:none; }
-/* .team-banner-wrapper .banner-box .team-info .back-team:hover { text-decoration:underline; } */
-
-
 .team-banner-wrapper .banner-box .team-info .mem-details { display: flex; flex-flow: column; align-items: flex-start; margin-top:auto; margin-bottom:auto; }
 .team-banner-wrapper .banner-box .team-info .mem-details .team-title { color: #000; font-size: 60px; font-style: normal; font-weight: 420; line-height: 90%; 
     letter-spacing: -1.2px; text-transform: uppercase; margin:0; }
@@ -18,7 +15,6 @@ font-weight: 500;
 font-size: 20px;
 line-height: 100%;
 text-transform: uppercase; color:#ffffff;  margin-top:24px; }
-
 .team-banner-wrapper .banner-box .team-info .mem-details .book-case { margin-top:65px; border-radius: 2px; background: transparent; border:1px solid #ffffff;  text-decoration:none; display: flex;
   min-width: 164px; height: 48px; padding: 0px 20px; justify-content: center; align-items: center; color: #FFF;font-family: 'ITC Avant Garde Gothic Std';
 font-style: normal;
@@ -29,7 +25,6 @@ line-height: 100%;
 letter-spacing: 0.02em;
 text-transform: uppercase;  }
 .team-banner-wrapper .banner-box .team-info .mem-details .book-case:hover { background: #ffffff; color:#000; }
-
 .team-banner-wrapper .banner-box .team-info .mem-social { display:flex; align-items:center; border-top: 1px solid rgba(0, 0, 0, 0.05); padding:20px 5rem;
    border-bottom: 1px solid rgba(0, 0, 0, 0.05);  margin:0 -5rem; }
 .team-banner-wrapper .banner-box .team-info .mem-social .soci-item:not(.spotify) { display:flex; align-items:center; align-items:center; justify-content: center; border-radius: 30px;
@@ -40,7 +35,6 @@ text-transform: uppercase;  }
 .team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify { display:flex; align-items:center; color: #ffffff; 
   font-family: 'ITC Avant Garde Gothic Std';
 font-style: normal;
-/* font-weight: 600; */
 font-weight:500; 
 font-size: 12px;
 line-height: 100%;
@@ -56,12 +50,9 @@ text-transform:uppercase;
   height: 40px;
   width: 40px;
 }
-
 .team-banner-wrapper .banner-box .team-media { width:100%; display:flex; }
 .team-banner-wrapper .banner-box .team-media img { width:100%; height:100%; object-fit:cover;  z-index:1; }
-
 .team-banner-wrapper .banner-box{ margin-top:0px; }
-
 .team-banner-wrapper  .team-media{ position:relative; }
 .team-banner-wrapper  .team-media:before{
     content: '';
@@ -198,9 +189,7 @@ line-height: 100%;
 text-transform: uppercase;
 }
 }
-
 .team-banner-wrapper .banner-box .team-info .back-team svg path{ stroke:#ffffff; }
-
 .team-banner-wrapper .banner-box .team-info .back-team{
   font-family: 'ITC Avant Garde Gothic Std';
 font-style: normal;
@@ -242,7 +231,6 @@ position:relative;
  opacity:1; 
 } 
 .team-banner-wrapper .banner-box .team-info .mem-details .team-title{ color:#ffffff;  }
-
 
 
 
