@@ -162,7 +162,8 @@
       "name": "Custom Hero Banner",
       "settings": {
         "desktop_image": "shopify://shop_images/Section_8.png",
-        "overlay_opacity": 10,
+        "mobile_image": "shopify://shop_images/Section_054c23c7-cccd-4920-8957-d4cd4e0e09ea.png",
+        "overlay_opacity": 0,
         "sale_title": "A community built for growth",
         "sale_content": "Reformd delivers a curated fitness experience designed for those who crave challenge, connection, and consistency. Push your limits — physically and mentally.",
         "show_btn": false,
