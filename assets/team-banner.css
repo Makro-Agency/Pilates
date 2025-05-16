@@ -5,7 +5,7 @@
 .team-banner-wrapper .banner-box .team-info { width:100%; padding:29px 5rem 0px 5rem; display: flex; flex-flow: column; }
 .team-banner-wrapper .banner-box .team-info .back-team { color: #000; font-size: 12px; font-style: normal; font-weight: 450; line-height: normal; gap:10px;
   letter-spacing: 0.24px; text-transform: uppercase; display:flex; align-items:center; text-decoration:none; }
-.team-banner-wrapper .banner-box .team-info .back-team:hover { text-decoration:underline; }
+/* .team-banner-wrapper .banner-box .team-info .back-team:hover { text-decoration:underline; } */
 
 
 .team-banner-wrapper .banner-box .team-info .mem-details { display: flex; flex-flow: column; align-items: flex-start; margin-top:auto; margin-bottom:auto; }
@@ -60,7 +60,7 @@ text-transform:uppercase;
 .team-banner-wrapper .banner-box .team-media { width:100%; display:flex; }
 .team-banner-wrapper .banner-box .team-media img { width:100%; height:100%; object-fit:cover;  z-index:1; }
 
-.team-banner-wrapper .banner-box{ margin-top:140px; }
+.team-banner-wrapper .banner-box{ margin-top:0px; }
 
 .team-banner-wrapper  .team-media{ position:relative; }
 .team-banner-wrapper  .team-media:before{
@@ -166,7 +166,8 @@ text-transform: uppercase;
     text-decoration: none;
     padding-top: 52px;
     padding-left: 20px;
-    padding-bottom: 32px;
+    padding-bottom: 5px;
+    margin-bottom:27px; 
 }
 .team-banner-wrapper .banner-box .team-info .mem-details .book-case{ padding:0 18px; }
 .team-banner-wrapper .banner-box .team-info .mem-details{ margin-top:0 !Important; }
@@ -186,12 +187,13 @@ text-transform: uppercase;
   .team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify {  margin-left:0; padding-left:0; border:none; width: 100%;}
   
 }
+@media screen and (min-width:1024px){
+.team-banner-wrapper .banner-box .team-info .mem-details .team-title{ font-size:60px; } }
 @media screen and (min-width:750px){
 .team-banner-wrapper .banner-box .team-info .mem-details .team-title{
   font-family: 'ITC Avant Garde Gothic Std';
 font-style: normal;
 font-weight: 500;
-font-size: 60px;
 line-height: 100%;
 text-transform: uppercase;
 }
@@ -206,7 +208,39 @@ font-style: normal;
 font-size: 16px;
 line-height: 100%;
 color:#ffffff; 
+width:fit-content; 
+position:relative; 
 }
+.team-banner-wrapper .banner-box .team-info .back-team:after{
+   content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 1px;
+    top: unset;
+    bottom:-5px;
+    opacity:0;
+    z-index: 1;
+    border: none; transition:all 0.3s linear;  }
+ .team-banner-wrapper .banner-box .team-info .back-team:hover:after{
+ opacity:1; 
+} 
+ .team-banner-wrapper .back-team.mobile{ width:fit-content; position:relative; overflow:hidden;  }
+ .team-banner-wrapper .back-team.mobile:after{
+   content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 1px;
+    top: unset;
+    bottom:0px;
+    opacity:0;
+    z-index: 1;
+    border: none; transition:all 0.3s linear; 
+}
+ .team-banner-wrapper .back-team.mobile:hover:after{
+ opacity:1; 
+} 
 .team-banner-wrapper .banner-box .team-info .mem-details .team-title{ color:#ffffff;  }
 
 

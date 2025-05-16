@@ -1,5 +1,5 @@
 .team-main-wrapper .tabs-wrapper{ display:none; }
-.team-main-wrapper{ margin-top:100px; }
+.team-main-wrapper{ margin-top:0px; }
 .team-main-wrapper .sec-head{ margin-bottom:50px; }
 .team-main-wrapper .sec-head{ padding-top:80px; }
 .dark--true .sec-head .sec-title{
@@ -82,7 +82,7 @@ position: absolute;
 width:53.9%;    /* 776.37px; */
 height:33.54%;  /* 1275.1px; */
 left: 51.99%;
-top: -8.5%;
+top: -5.5%;
 display:block; 
 background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
 opacity: 0.3;
