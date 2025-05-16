@@ -1,6 +1,27 @@
 .sec-contact-map .main-page-title {
   margin: 0 0 120px;
 }
+.sec-contact-map{
+  position: relative;
+}
+.sec-contact-map:after{
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1163px;
+  height: 600px;
+  transform: rotate(68deg);
+  background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
+  opacity: 0.21;
+  filter: blur(200px);
+  top: 20%;
+  z-index: 0;
+  left: 50%;
+}
+.sec-contact-map{
+  position: relative;
+  overflow: hidden;
+}
 
 .secConMap .wrapper {
   display: flex;
@@ -457,6 +478,7 @@
 .template--contact-us .sec-contact-form .contact .button:after {
   opacity: 0;
 }
+
 @media only screen and (max-width: 1440px){
 .template--contact-us .sec-contact-map .page-width {
  max-width: 100%;
