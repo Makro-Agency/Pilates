@@ -113,7 +113,7 @@
   margin: 0;
   font-weight: 450;
   text-transform: uppercase;
-  color: #C79D5B;
+  color: #FEE4B1;
   float: right;
   flex: 0 0 auto;
   padding-left: 15px;
@@ -167,7 +167,7 @@
 }
 
 .contact-time .item .ct-title {
-  color: #C79D5B;
+  color: #FEE4B1;
   font-weight: 450;
   text-transform: uppercase;
   margin: 0 0 16px;
@@ -231,7 +231,7 @@
 
 .tabt-links .tabt-link-title:hover,
 .tabt-links .tabt-link-title.active {
-  color: #C79D5B;
+  color: #FEE4B1;
   border-bottom-color: currentColor;
 }
 

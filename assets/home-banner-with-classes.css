@@ -85,7 +85,7 @@
     border-top: none;
   }
   .banner-with-classes .classes-list:hover .link{
-    border-color: #C79D5B;
+    border-color: #FEE4B1;
   }
   .banner-with-classes .classes-list .global-link svg {
     transform: rotate(0deg);

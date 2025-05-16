@@ -56,9 +56,9 @@ html {
   stroke: #000;
 } */
 #program-block-container a.button.btn-big-width.button--secondary:hover {
-	background-color: #c79d5b;
+	background-color: #FEE4B1;
 	color: #000;
-	border-color: #c79d5b;
+	border-color: #FEE4B1;
 }
 
 .program-block__inner-container .section-heading-inner .btn-wrapper .btns {

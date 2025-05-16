@@ -8,7 +8,7 @@
 .faq-sLink li { line-height: 1.417; font-size: 12px; }
 .faq-sLink .link { text-decoration: none; color: rgba(var(--color-foreground), 1); font-size: inherit; font-weight: 450; /*letter-spacing: 0.24px;*/ text-transform: uppercase; display: inline-flex; align-items: center; position: relative; padding-top: 8px; padding-bottom: 8px; }
 .faq-sLink .link svg { position: absolute; left: -10px; opacity: 0; transition: left .3s ease 0.05s, opcity .3s ease 0s; }
-.faq-sLink .link:hover, .faq-sLink .link.active { padding-left: 20px; color: #C79D5B; }
+.faq-sLink .link:hover, .faq-sLink .link.active { padding-left: 20px; color: #FEE4B1; }
 .faq-sLink .link:hover svg, .faq-sLink .link.active svg { left: 0; opacity: 1; }
 
 
@@ -17,7 +17,7 @@
 
 .faq-sContent { color: rgba(var(--color-foreground), 1); }
   .f-sCon--item { border-top: 1px solid rgba(var(--color-foreground), .1); border-bottom: 1px solid rgba(var(--color-foreground), .1); padding: 30px 0; }
-    .f-sCon--item .h6 { color: #C79D5B; font-weight: 450; /*letter-spacing: 0.24px;*/ text-transform: uppercase; margin: 0 0 16px; display: block; }
+    .f-sCon--item .h6 { color: #FEE4B1; font-weight: 450; /*letter-spacing: 0.24px;*/ text-transform: uppercase; margin: 0 0 16px; display: block; }
     .f-sCon--item h4 { margin: 0 0 10px; line-height: 150%; text-transform: uppercase; font-weight: 450; }
     .f-sCon--item .rte { --color-foreground: 38, 34, 27; }
 
