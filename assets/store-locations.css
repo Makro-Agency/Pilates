@@ -1,6 +1,6 @@
 .store-locations {
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 .store-locations::before {
     content: "";
