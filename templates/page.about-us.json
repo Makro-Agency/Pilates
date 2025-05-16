@@ -33,8 +33,8 @@
       "name": "Custom Hero Banner",
       "settings": {
         "desktop_image": "shopify://shop_images/Section_9.png",
-        "mobile_image": "shopify://shop_images/Section_e114859d-53f4-4f5c-aa80-7fb798557750.png",
-        "overlay_opacity": 28,
+        "mobile_image": "shopify://shop_images/Section_9acdcf41-72f2-41a3-90f3-dccc274fb5d1.png",
+        "overlay_opacity": 0,
         "sale_title": "SCULPT & STRENGTHEN",
         "sale_content": "Lagree-inspired training in a state-of-the-art studio, designed for precision, intensity, and transformation. Experience the highest quality reformer classes led by Toronto’s top instructors — all under one immersive roof.",
         "show_btn": true,
