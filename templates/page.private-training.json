@@ -775,6 +775,25 @@
         "bottom_padding_remove": false
       }
     },
+    "contact_form_Dxy73n": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "bg_color_left": "#000000",
+        "text_color_left": "#fff",
+        "sub_color_left": "#FEE4B1",
+        "subheading_left": "Ready to sweat?",
+        "heading_left": "LET’S GET YOU IN",
+        "heading_size_left": "h1",
+        "btn_text_left": "JOIN THE SWEAT FAM",
+        "btn_link_left": "shopify://pages/hiit-studio",
+        "heading": "Send us a note",
+        "heading_size": "h1",
+        "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "event-contact": {
       "type": "event-contact",
       "disabled": true,
@@ -807,6 +826,7 @@
     "hit-multicolumn",
     "hit-banner-row",
     "hit-team",
+    "contact_form_Dxy73n",
     "event-contact"
   ]
 }
