@@ -156,6 +156,7 @@ transform: rotate(104.55deg);
 }
 
 @media screen and (max-width:767px) {
+  .custom-workout{ padding:80px 0; }
 .custom-workout .custom-workout__card{         background: #ffffff05; }
 .custom-workout	.custom-workout__heading,
 .custom-workout	p.custom-workout__subtitle {

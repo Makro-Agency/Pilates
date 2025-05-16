@@ -164,6 +164,20 @@ background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
 	z-index: 0;
 	pointer-events: none;
 }
+.custom-location .wrapper:after {
+content:'';
+position: absolute;
+width: 371.1%; 
+height: 45.1%; 
+left: -184%;
+top: 67%;
+background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%);
+opacity: 0.32;
+filter: blur(250px);
+transform: rotate(-115.27deg);
+	z-index: 0;
+	pointer-events: none;
+}
 }
 
 @media (max-width: 800px) {
@@ -271,9 +285,25 @@ background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
     z-index: 1;
     border: none;
     transition: all .3s linear; }
+.custom-location .card  .learn-more-mobile:hover:after{ opacity:1; }
+.custom-location .card  .learn-more-mobile{
+  position:relative; 
+  width:fit-content; 
+}
+.custom-location .card .learn-more-mobile:after{
+  content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 1px;
+    top: unset;
+    bottom: -5px;
+    opacity: 0;
+    z-index: 1;
+    border: none;
+    transition: all .3s linear; }
 .custom-location .card .info .learn-more:hover:after{ opacity:1; }
 @media screen and (max-width:1023px) {
-
 	.custom-location .card .info {
 		border-bottom: 1px solid #1f2120; 
 	}
