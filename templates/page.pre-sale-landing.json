@@ -13,6 +13,7 @@
       "type": "global_home-hero-banner",
       "disabled": true,
       "settings": {
+        "allow_transparent_header": false,
         "desktop_image": "shopify://shop_images/Hero_4.png",
         "mobile_image": "shopify://shop_images/Presale_Countdown.png",
         "overlay_opacity": 0,
@@ -26,6 +27,7 @@
     "global_hero_banner_PFid6R": {
       "type": "global_hero-banner",
       "settings": {
+        "allow_transparent_header": true,
         "desktop_image": "shopify://shop_images/Hero.png",
         "mobile_image": "shopify://shop_images/Hero-mobile.png",
         "overlay_opacity": 51,
@@ -109,12 +111,11 @@
             "mobile_image": "shopify://shop_images/slideshow-mob-3.png",
             "heading": "MEGAFORMER STUDIO",
             "heading_size": "h2",
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "center",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
             "image_overlay_opacity": 0,
-            "color_scheme": "inverse",
-            "text_alignment_mobile": "left"
+            "color_scheme": "inverse"
           }
         },
         "slide_DeQiWy": {
@@ -124,12 +125,11 @@
             "mobile_image": "shopify://shop_images/accordian-desktop.png",
             "heading": "RECEPTION",
             "heading_size": "h2",
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "center",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
             "image_overlay_opacity": 0,
-            "color_scheme": "inverse",
-            "text_alignment_mobile": "left"
+            "color_scheme": "inverse"
           }
         },
         "slide_PrVpCJ": {
@@ -139,12 +139,11 @@
             "mobile_image": "shopify://shop_images/slideshow-2.png",
             "heading": "WELCOME LOUNGE",
             "heading_size": "h2",
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "center",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
             "image_overlay_opacity": 0,
-            "color_scheme": "inverse",
-            "text_alignment_mobile": "left"
+            "color_scheme": "inverse"
           }
         }
       },

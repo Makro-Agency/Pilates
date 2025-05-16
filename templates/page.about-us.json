@@ -32,9 +32,9 @@
       "type": "custom-hero-banner",
       "name": "Custom Hero Banner",
       "settings": {
-        "desktop_image": "shopify://shop_images/Section_2.png",
-        "mobile_image": "shopify://shop_images/Section_e114859d-53f4-4f5c-aa80-7fb798557750.png",
-        "overlay_opacity": 40,
+        "desktop_image": "shopify://shop_images/Section_9.png",
+        "mobile_image": "shopify://shop_images/Section_9acdcf41-72f2-41a3-90f3-dccc274fb5d1.png",
+        "overlay_opacity": 0,
         "sale_title": "SCULPT & STRENGTHEN",
         "sale_content": "Lagree-inspired training in a state-of-the-art studio, designed for precision, intensity, and transformation. Experience the highest quality reformer classes led by Toronto’s top instructors — all under one immersive roof.",
         "show_btn": true,
@@ -47,7 +47,7 @@
       "name": "Custom Hero Banner Two",
       "settings": {
         "desktop_image": "shopify://shop_images/Section_4.png",
-        "mobile_image": "shopify://shop_images/Section_e114859d-53f4-4f5c-aa80-7fb798557750.png",
+        "mobile_image": "shopify://shop_images/Section_1ebc3a5f-7754-4fe1-bce1-2f957de7c3f5.png",
         "overlay_opacity": 40,
         "sale_title": "STAY & CONNECT",
         "sale_content": "After your session, unwind with a tonic or a post-class refuel in our lounge space. High-speed WiFi, charging stations, and a calm aesthetic make Reformd a place to linger, not just leave.",
@@ -80,9 +80,9 @@
             "link": "shopify://pages/team-member",
             "link_text": "Learn more",
             "services_heading": "Exclusive Services:",
-            "service_1": "Service A",
-            "service_2": "Service B",
-            "service_3": "Service C"
+            "service_1": "Service 1",
+            "service_2": "Service 2",
+            "service_3": "Service 3"
           }
         },
         "location_yc6LjR": {
@@ -93,9 +93,9 @@
             "link": "shopify://pages/hiit-studio",
             "link_text": "Learn more",
             "services_heading": "Exclusive Services:",
-            "service_1": "Service A",
-            "service_2": "Service B",
-            "service_3": "Service C"
+            "service_1": "Service 1",
+            "service_2": "Service 2",
+            "service_3": "Service 3"
           }
         }
       },
@@ -162,7 +162,7 @@
       "name": "Custom Hero Banner",
       "settings": {
         "desktop_image": "shopify://shop_images/Section_8.png",
-        "overlay_opacity": 20,
+        "overlay_opacity": 10,
         "sale_title": "A community built for growth",
         "sale_content": "Reformd delivers a curated fitness experience designed for those who crave challenge, connection, and consistency. Push your limits — physically and mentally.",
         "show_btn": false,

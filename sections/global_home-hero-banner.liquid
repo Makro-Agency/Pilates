@@ -15,7 +15,7 @@
   }
 {%- endstyle -%}
 
-<div id="Banner-{{ section.id }}" class="hero-banner global_home-hero-banner">
+<div id="Banner-{{ section.id }}" class="hero-banner global_home-hero-banner" {%- if section.settings.allow_transparent_header %} allow-transparent-header{% endif -%}>
   {% if section.settings.desktop_image != blank or section.settings.mobile_image != blank %}
     <div class="image">
       <figure>
@@ -198,6 +198,13 @@
   "name": "Home Hero Banner",
   "class": "global_home-hero",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "allow_transparent_header",
+      "label": "Allow transparent header",
+      "info": "This setting only applies when this section is the first one.",
+      "default": false
+    },
     {
       "type": "header",
       "content": "Image content"

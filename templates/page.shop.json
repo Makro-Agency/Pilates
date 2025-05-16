@@ -42,7 +42,7 @@
       ],
       "name": "collection image banner",
       "settings": {
-        "allow_transparent_header": false,
+        "allow_transparent_header": true,
         "image": "shopify://shop_images/Frame_5356.png",
         "img_mobile": "shopify://shop_images/Rectangle_52_1.png",
         "image_overlay_opacity": 0,
