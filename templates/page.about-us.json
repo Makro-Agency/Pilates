@@ -62,11 +62,11 @@
       "settings": {
         "desktop_image": "shopify://shop_images/Section_7.png",
         "overlay_opacity": 10,
-        "sale_title": "",
-        "sale_content": "",
-        "show_btn": false,
-        "btn_text": "",
-        "btn_url": ""
+        "sale_title": "RESET & RECHARGE",
+        "sale_content": "More than just a workout — Reformd offers premium amenities including fully equipped change rooms, saunas, and guided recovery tools. Every touchpoint is designed for holistic well-being",
+        "show_btn": true,
+        "btn_text": "Lorem ipsum",
+        "btn_url": "#"
       }
     },
     "custom_our_location_MRtpzi": {
