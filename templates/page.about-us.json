@@ -34,7 +34,7 @@
       "settings": {
         "desktop_image": "shopify://shop_images/Section_9.png",
         "mobile_image": "shopify://shop_images/Section_e114859d-53f4-4f5c-aa80-7fb798557750.png",
-        "overlay_opacity": 0,
+        "overlay_opacity": 28,
         "sale_title": "SCULPT & STRENGTHEN",
         "sale_content": "Lagree-inspired training in a state-of-the-art studio, designed for precision, intensity, and transformation. Experience the highest quality reformer classes led by Toronto’s top instructors — all under one immersive roof.",
         "show_btn": true,
@@ -162,7 +162,7 @@
       "name": "Custom Hero Banner",
       "settings": {
         "desktop_image": "shopify://shop_images/Section_8.png",
-        "overlay_opacity": 20,
+        "overlay_opacity": 40,
         "sale_title": "A community built for growth",
         "sale_content": "Reformd delivers a curated fitness experience designed for those who crave challenge, connection, and consistency. Push your limits — physically and mentally.",
         "show_btn": false,
