@@ -28,9 +28,15 @@ height: 4529px;
     line-height: 100%;
     letter-spacing: 0.32px;
     text-transform: uppercase; }
-.team-main-wrapper .team-content{ padding:30px 40px; }
-.team-list-box .team-list .box .team-box .team-name a{ padding:10px; }
-.team-list-box .team-list .box .team-box .team-name a:hover{ background-color: rgb(255, 255, 255, 0.13); }
+.team-main-wrapper .team-content{ padding:40px 40px; }
+/* .team-list-box .team-list .box .team-box .team-name a{ padding:10px; } */
+/* .team-list-box .team-list .box .team-box .team-name a:hover{ background-color: rgb(255, 255, 255, 0.13); } */
+.team-list-box .team-list .box .team-box .team-name a svg path{
+transition:all 0.2s linear; 
+}
+.team-list-box .team-list .box .team-box .team-name a:hover svg path{
+stroke: rgb(255,255,255,0.5);
+}
 .team-main-wrapper .team-list-box .team-list .box .team-box .team-info{ margin-top:10px; }
 .team-main-wrapper .box:nth-child(3){ position:relative; }
 .team-main-wrapper .team-list-box .team-list .box .team-box .team-info{ 
