@@ -75,9 +75,9 @@
         "location_E4MWxh": {
           "type": "location",
           "settings": {
-            "title": "THE WELL",
+            "title": "the well",
             "text": "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "link": "/",
+            "link": "shopify://pages/team-member",
             "link_text": "Learn more",
             "services_heading": "Exclusive Services:",
             "service_1": "Service A",
@@ -88,9 +88,9 @@
         "location_yc6LjR": {
           "type": "location",
           "settings": {
-            "title": "THE WELL",
+            "title": "Yonge / Shuter",
             "text": "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "link": "/",
+            "link": "shopify://pages/hiit-studio",
             "link_text": "Learn more",
             "services_heading": "Exclusive Services:",
             "service_1": "Service A",
@@ -105,7 +105,7 @@
       ],
       "name": "Custom our location",
       "settings": {
-        "heading": "OUR LOCATIONS",
+        "heading": "Our locations",
         "description": "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
       }
     },
