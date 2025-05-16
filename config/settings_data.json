@@ -132,7 +132,7 @@
     "checkout_logo_position": "left",
     "checkout_logo_size": "small",
     "checkout_input_background_color_mode": "white",
-    "checkout_accent_color": "#c79d5b",
+    "checkout_accent_color": "#FEE4B1",
     "checkout_button_color": "#000000",
     "sections": {
       "main-password-header": {
@@ -1511,10 +1511,10 @@
           "background": "#ffffff",
           "background_gradient": "",
           "text": "#000000",
-          "text_2": "#c79d5b",
+          "text_2": "#FEE4B1",
           "button": "#000000",
           "button_label": "#ffffff",
-          "secondary_button_label": "#c79d5b",
+          "secondary_button_label": "#FEE4B1",
           "shadow": "#000000"
         }
       },
@@ -1535,7 +1535,7 @@
           "background": "#26221b",
           "background_gradient": "",
           "text": "#ffffff",
-          "text_2": "#c79d5b",
+          "text_2": "#FEE4B1",
           "button": "#ffffff",
           "button_label": "#000000",
           "secondary_button_label": "#ffffff",
@@ -1547,7 +1547,7 @@
           "background": "#121212",
           "background_gradient": "",
           "text": "#ffffff",
-          "text_2": "#c79d5b",
+          "text_2": "#FEE4B1",
           "button": "#ffffff",
           "button_label": "#000000",
           "secondary_button_label": "#ffffff",
@@ -1559,7 +1559,7 @@
           "background": "#334fb4",
           "background_gradient": "",
           "text": "#ffffff",
-          "text_2": "#c79d5b",
+          "text_2": "#FEE4B1",
           "button": "#ffffff",
           "button_label": "#334fb4",
           "secondary_button_label": "#ffffff",
@@ -1574,7 +1574,7 @@
           "text_2": "#121212",
           "button": "#000000",
           "button_label": "#ffffff",
-          "secondary_button_label": "#c79d5b",
+          "secondary_button_label": "#FEE4B1",
           "shadow": "#000000"
         }
       },
@@ -1583,7 +1583,7 @@
           "background": "#000000",
           "background_gradient": "",
           "text": "#ffffff",
-          "text_2": "#c79d5b",
+          "text_2": "#FEE4B1",
           "button": "#ffffff",
           "button_label": "#000000",
           "secondary_button_label": "#ffffff",

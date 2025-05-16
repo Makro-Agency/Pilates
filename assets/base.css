@@ -1383,7 +1383,7 @@ button.shopify-payment-button__button--unbranded {
     gap: 8px;
     flex-shrink: 0;
     border-radius: 100px;
-    background: var(--Gold, #C79D5B);
+    background: var(--Gold, #FEE4B1);
     box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.15);
     position: fixed;
     z-index: 5;
@@ -3578,5 +3578,5 @@ a[href="https://sweatandtonicyongeandshuter.brandbot.io/forms/newsletter-sign-up
 }
 
 a[href="https://sweatandtonic.com/pages/contact-us"] {
-    color: #C79D5B;
+    color: #FEE4B1;
 }

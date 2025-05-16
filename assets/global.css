@@ -93,7 +93,7 @@ body .underlined-link:hover, body .customer a:hover, body .inline-richtext a:hov
   display: none;
 }
 .button--primary:hover, .header-btn-wrap .button--secondary:hover{
-  background-color: #C79D5B;
+  background-color: #FEE4B1;
   color: #000;
 }
 .btn-big-width{
@@ -110,7 +110,7 @@ body .underlined-link:hover, body .customer a:hover, body .inline-richtext a:hov
   border: 1px solid;
 }
 .header-btn-wrap .button--secondary:hover{
-  border-color: #C79D5B;
+  border-color: #FEE4B1;
 }
 .header-btn-wrap .button--secondary:before, .header-btn-wrap .button--secondary:after{
   display: none;
@@ -181,7 +181,7 @@ body .swiper-button-next, body .swiper-button-prev{
   height: 50px;
   width: 50px;
   border-radius: 100px;
-  background: #C79D5B;
+  background: #FEE4B1;
   background-image: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Rectangle_6.svg?v=1695643347');
   background-repeat: no-repeat;
   background-position: center;
@@ -264,8 +264,8 @@ a[href^="tel:"]{
   color: #000;
 }
 .drawer-classes-btns .button:hover{
-  background-color: #C79D5B;
-  border-color: #C79D5B;
+  background-color: #FEE4B1;
+  border-color: #FEE4B1;
   color: #000;
 }
 .sticky-classes-btns{

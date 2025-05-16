@@ -11,7 +11,7 @@
     margin-bottom: 35px;
 }
 /* .banner__content_top a.button {
-    background: #C79D5B;
+    background: #FEE4B1;
 }
 .banner__content_top a.button:after{
    box-shadaw:none
@@ -217,7 +217,7 @@ div#multifeatures_container {
     gap: 20px;
 }
 .field.field-grp.select-option input[type="radio"]{
-    accent-color: #C79D5B;
+    accent-color: #FEE4B1;
     width: 18px;
     height: 18px;
     margin: 0 8px 0px 0;
@@ -260,8 +260,8 @@ button#connect_account:hover:after {
     box-shadow: none;
 }
 button#connect_account:hover {
-    background: #C79D5B;
-    border-color: #C79D5B;
+    background: #FEE4B1;
+    border-color: #FEE4B1;
   color:#000;
 }
 div#eligibility_create_form-inner p.option-title {
