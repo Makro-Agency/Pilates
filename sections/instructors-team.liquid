@@ -1,7 +1,11 @@
 {{ 'instructors-team.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  #team-{{ section.id }} .instructors-bg-image::after {
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+  }
+{%- endstyle -%}
 
-
-<section class="instructors-team {% if section.settings.background_image != blank %}has-bg-image{% endif %}" id="instructors-team-{{ section.id }}">
+<section id="team-{{ section.id }}" class="instructors-team {% if section.settings.background_image != blank %}has-bg-image{% endif %}" id="instructors-team-{{ section.id }}">
   {% if section.settings.background_image != blank %}
     <div class="instructors-bg-image">
         <img src="{{ section.settings.background_image | image_url }}" height="auto" width="auto" class="background-img">
@@ -51,7 +55,9 @@
                 
                 {% if block.settings.profile_url != blank %}
                     <a href="{{ block.settings.profile_url }}" class="instructor-link cta">
-                    {% render 'icon-left-arrow' %}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                        <path d="M20.4454 24.25L27.9454 16.75M27.9454 16.75L20.4454 9.25M27.9454 16.75H4.05469" stroke="white" stroke-width="2"/>
+                      </svg>
                     </a>
                 {% endif %}
                 </div>
@@ -72,6 +78,16 @@
       "type": "image_picker",
       "label": "Background Image",
       "id": "background_image"
+    },
+    {
+      "type": "range",
+      "id": "image_overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Image Overlay",
+      "default": 0
     },
     {
       "type": "html",

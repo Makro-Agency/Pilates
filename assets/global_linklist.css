@@ -15,9 +15,9 @@
     opacity: 0.3;
     filter: blur(200px);
     position: absolute;
-    right: -0.058px;
-    bottom: -59.17%;
-    width: 40.43572916666667vw;
+    right: 6%;
+    bottom: -82.17%;
+    width: 40.436vw;
     height: 66.41125vw;
     transform: rotate(67.766deg);
     z-index: -1;
@@ -86,10 +86,10 @@
         opacity: 0.3;
         filter: blur(100px);
         position: absolute;
-        right: -42%;
-        bottom: -159.872px;
-        width: 142.29%;
-        height: 100%;
+        right: 0;
+        bottom: 0;
+        width: 127.595vw;
+        height: 209.56vw;
         transform: rotate(67.766deg);
         z-index: -1;
     }

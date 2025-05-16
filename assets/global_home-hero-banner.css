@@ -295,6 +295,10 @@ form.newsletter-form:not(#id) .newsletter-form__button:hover {
         gap: 16px;
         flex-direction: column;
     }
+    .global_home-hero-banner .banner-content > * {gap: 24px;}
+    .banner-contain .heading {
+        font-size: 40px !important;
+    }
 }
 
 

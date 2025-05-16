@@ -61,15 +61,15 @@
         "links_yeAjBV"
       ],
       "settings": {
-        "title": "THE BEST OF BOUTIQUE FITNESS & WELLNESS",
+        "title": "OUR STORY: <br>Where Movement Meets Performance",
         "content": "The Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts.⁠ Step inside Reformd for a Lagree experience unlike any other."
       }
     },
     "global_sudio_classes_qkDydH": {
       "type": "global_sudio-classes",
       "settings": {
-        "section_id": "studio-classes",
-        "title": "The studio",
+        "section_id": "The studio",
+        "title": "The studio / classes",
         "description": "30 Mega Pro Megaformers, state-of-the-art AV, custom chromotherapy lighting, heated flooring, and world-class programming - all expertly crafted and delivered in a signature Sweat and Tonic experience."
       }
     },
@@ -180,10 +180,74 @@
       "name": "Instructors Team",
       "settings": {
         "background_image": "shopify://shop_images/Frame_6418.png",
+        "image_overlay_opacity": 0,
         "heading": "Instructors <br> Who Lead the Way",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at justo a elit convallis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec non magna ac ante tincidunt sollicitudin.",
         "button_text": "SEE THE FULL Team",
         "button_url": "#"
+      }
+    },
+    "store_locations_hXbkmY": {
+      "type": "store-locations",
+      "blocks": {
+        "location_yxkeNt": {
+          "type": "location",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_76.png",
+            "title": "THE WELL",
+            "desc": "<p>Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </p>",
+            "btn_text": "Learn more",
+            "btn_url": "#",
+            "service_1": "Service 1",
+            "service_2": "Service 2",
+            "service_3": "Service 3",
+            "service_4": "Service 4",
+            "service_5": "",
+            "service_6": ""
+          }
+        },
+        "location_h939Va": {
+          "type": "location",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_76_1.png",
+            "title": "Yonge / Shuter",
+            "desc": "<p>Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </p>",
+            "btn_text": "Learn more",
+            "btn_url": "#",
+            "service_1": "Service 1",
+            "service_2": "Service 2",
+            "service_3": "Service 3",
+            "service_4": "Service 4",
+            "service_5": "",
+            "service_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "location_yxkeNt",
+        "location_h939Va"
+      ],
+      "name": "Store locations",
+      "settings": {
+        "full_width": true,
+        "title": "Two State ofthe Art Locations",
+        "content": "S&T creates a local, curated fitness experience for sweat addicts to challenge their minds and bodies within a community that grows, succeeds, and celebrates together.",
+        "color_scheme": "",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "global_image_banner_1_appf4n": {
+      "type": "global_image-banner-1",
+      "name": "Global Image Banner 1",
+      "settings": {
+        "desktop_image": "shopify://shop_images/Section_1_440f8a13-3b60-4fe1-8710-5c98608ab72a.png",
+        "mobile_image": "shopify://shop_images/Section_e5005f4b-abf6-4494-9493-0e6f5a07150a.png",
+        "overlay_opacity": 0,
+        "title": "INSIDE THE WORLD OF REFORMD",
+        "content": "Founded with the mission to unite movement, recovery, and connection, Sweat and Tonic redefines boutique wellness. From high-performance classes to immersive spaces, every detail is crafted to inspire.",
+        "btn_text": "Learn more",
+        "btn_url": "#"
       }
     }
   },
@@ -192,6 +256,8 @@
     "global_linklist_gKEx6Q",
     "global_sudio_classes_qkDydH",
     "slideshow_ghX64P",
-    "instructors_team_gF9wd7"
+    "instructors_team_gF9wd7",
+    "store_locations_hXbkmY",
+    "global_image_banner_1_appf4n"
   ]
 }
