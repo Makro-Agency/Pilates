@@ -157,6 +157,19 @@
         "subtitle": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora."
       }
     },
+    "custom_hero_banner_rq3k7C": {
+      "type": "custom-hero-banner",
+      "name": "Custom Hero Banner",
+      "settings": {
+        "desktop_image": "shopify://shop_images/Section_8.png",
+        "overlay_opacity": 20,
+        "sale_title": "A community built for growth",
+        "sale_content": "Reformd delivers a curated fitness experience designed for those who crave challenge, connection, and consistency. Push your limits — physically and mentally.",
+        "show_btn": false,
+        "btn_text": "",
+        "btn_url": ""
+      }
+    },
     "b94628c5-aa61-4f88-8bc2-a9ef925836ad": {
       "type": "about-today",
       "disabled": true,
@@ -185,6 +198,7 @@
     "custom_hero_banner_yGiWQR",
     "custom_our_location_MRtpzi",
     "custom_multigrid_section_JDeW6V",
+    "custom_hero_banner_rq3k7C",
     "b94628c5-aa61-4f88-8bc2-a9ef925836ad",
     "4447810a-31f8-4c13-bde9-c78a636e7b23"
   ]
