@@ -6,7 +6,7 @@
   }
 {%- endstyle -%}
 
-<div id="Banner-{{ section.id }}" class="banner hero-banner-1">
+<div id="Banner-{{ section.id }}" class="banner hero-banner-1" {%- if section.settings.allow_transparent_header %} allow-transparent-header{% endif -%}>
     {% if section.settings.desktop_image != blank or section.settings.mobile_image != blank %}
         <div class="image">
             <figure>
@@ -182,6 +182,13 @@
 {
   "name": "Hero Banner",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "allow_transparent_header",
+      "label": "Allow transparent header",
+      "info": "This setting only applies when this section is the first one.",
+      "default": false
+    },
     {
       "type": "header",
       "content": "Image content"
