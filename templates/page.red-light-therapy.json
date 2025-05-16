@@ -1,1 +1,242 @@
-{"sections":{"services-hero":{"type":"services-hero","blocks":{"3d295c9e-10b8-4397-b3c8-b08733efc0db":{"type":"text","settings":{"text1":"WELLNESS & RECOVERY AT SWEAT AND TONIC","text":"","text_style":"caption-with-letter-spacing","text_clr":"#ffffff"}},"89ede07a-229a-4fd5-8064-eb065090ad93":{"type":"heading","settings":{"heading":"RED LIGHT THERAPY","heading_size":"h1","text_clr":"#ffffff"}},"943f29ad-f020-4899-974b-20f586c4dd6a":{"type":"buttons","settings":{"button_label_1":"BOOK A SESSION","button_link_1":"https:\/\/sweatandtonic.com\/pages\/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3FclassType%3D8646%26locations%3D48784","button_style":"solid","applies_color_scheme":true,"btn_text_clr":"#000000","btn_hvr_text_clr":"#000000","btn_bg_clr":"#c79d5b","btn_hvr_bg_clr":"#ffffff"}},"1fe44382-9435-48ac-95f6-bf885137b352":{"type":"description","settings":{"desc":"<p>Restore & recover with wellness services and biohacking amenities at S&T<\/p>","anchor_label":"VIEW ALL SERVICES","anchor_link":"shopify:\/\/pages\/spa","text_clr":"#ffffff"}}},"block_order":["3d295c9e-10b8-4397-b3c8-b08733efc0db","89ede07a-229a-4fd5-8064-eb065090ad93","943f29ad-f020-4899-974b-20f586c4dd6a","1fe44382-9435-48ac-95f6-bf885137b352"],"settings":{"allow_transparent_header":true,"image":"shopify:\/\/shop_images\/RedLightTherapy.png","img_mobile":"shopify:\/\/shop_images\/RedLightTherapy.png","image_overlay_opacity":60,"image_height":"adapt","desktop_content_position":"middle-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"accent-1","image_behavior":"none","mobile_content_alignment":"center"}},"services-about":{"type":"services-about","blocks":{"48e16eca-3ca7-4acb-9be8-e995eab47ed4":{"type":"features","settings":{"svg_image_1":"<svg fill=\"#000000\" viewbox=\"0 0 56 56\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" stroke=\"#000000\" stroke-width=\"0.00056\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"><\/g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/g><g id=\"SVGRepo_iconCarrier\"><path d=\"M 30.0392 16.0820 C 30.0392 14.9571 29.1016 14.0195 28.0001 14.0195 C 26.8985 14.0195 25.9610 14.9571 25.9610 16.0820 L 25.9610 22.5976 C 25.9610 23.6992 26.8985 24.6367 28.0001 24.6367 C 29.1016 24.6367 30.0392 23.6992 30.0392 22.5976 Z M 14.1251 28.9492 C 14.8985 29.7461 16.2110 29.7461 16.9845 28.9492 C 17.7813 28.1758 17.7813 26.8633 16.9845 26.0898 L 12.4142 21.4727 C 11.6407 20.6758 10.3282 20.6524 9.5314 21.4492 C 8.7579 22.2227 8.7579 23.5352 9.5314 24.3320 Z M 38.7345 26.3242 C 37.9610 27.0976 37.9610 28.4102 38.7345 29.1836 C 39.5314 29.9805 40.8673 29.9805 41.6407 29.1836 L 46.2577 24.5898 C 47.0550 23.7930 47.0550 22.4571 46.2577 21.6836 C 45.4845 20.8867 44.1720 20.8867 43.3751 21.6836 Z M 51.8593 41.9805 C 52.9609 41.9805 53.8983 41.0430 53.8983 39.9414 C 53.8983 38.8164 52.9609 37.8789 51.8593 37.8789 L 45.3438 37.8789 C 44.2189 37.8789 43.2813 38.8164 43.2813 39.9414 C 43.2813 41.0430 44.2189 41.9805 45.3438 41.9805 Z M 4.1407 37.8789 C 3.0392 37.8789 2.1017 38.8164 2.1017 39.9414 C 2.1017 41.0430 3.0392 41.9805 4.1407 41.9805 L 10.6798 41.9805 C 11.8048 41.9805 12.7423 41.0430 12.7423 39.9414 C 12.7423 38.8164 11.8048 37.8789 10.6798 37.8789 Z M 20.1251 38.0195 C 19.0470 38.0195 18.1329 38.9102 18.1329 39.9883 C 18.1329 41.0430 19.0470 41.9336 20.1251 41.9336 L 35.8516 41.9336 C 36.9298 41.9336 37.8438 41.0430 37.8438 39.9883 C 37.8438 38.9102 36.9298 38.0195 35.8516 38.0195 Z\"><\/path><\/g><\/svg>","desc_1":"<p>Increase cell recovery and reduce oxidative stress by stimulating ATP production<\/p>","svg_image_2":"<svg height=\"200px\" width=\"200px\" version=\"1.1\" id=\"Capa_1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 244.285 244.285\" fill=\"#000000\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" xml:space=\"preserve\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"><\/g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/g><g id=\"SVGRepo_iconCarrier\"> <g> <g> <path style=\"fill:#010002;\" d=\"M29.317,2.189c-15.752,0-28.566,12.814-28.566,28.566s12.814,28.566,28.566,28.566 s28.566-12.814,28.566-28.566S45.068,2.189,29.317,2.189z M29.317,48.443c-9.752,0-17.688-7.936-17.688-17.688 s7.936-17.688,17.688-17.688c9.752,0,17.688,7.936,17.688,17.688S39.069,48.443,29.317,48.443z\"><\/path> <path style=\"fill:#010002;\" d=\"M121.77,2.189c-15.752,0-28.566,12.814-28.566,28.566s12.814,28.566,28.566,28.566 s28.566-12.814,28.566-28.566S137.521,2.189,121.77,2.189z M121.77,48.443c-9.752,0-17.688-7.936-17.688-17.688 s7.936-17.688,17.688-17.688s17.688,7.936,17.688,17.688S131.522,48.443,121.77,48.443z\"><\/path> <path style=\"fill:#010002;\" d=\"M215.719,59.321c15.752,0,28.566-12.814,28.566-28.566S231.47,2.189,215.719,2.189 s-28.566,12.814-28.566,28.566S199.967,59.321,215.719,59.321z M215.719,13.067c9.752,0,17.688,7.936,17.688,17.688 s-7.936,17.688-17.688,17.688c-9.752,0-17.688-7.936-17.688-17.688S205.967,13.067,215.719,13.067z\"><\/path> <path style=\"fill:#010002;\" d=\"M28.566,150.855c15.752,0,28.566-12.809,28.566-28.566c0-15.752-12.814-28.566-28.566-28.566 S0,106.538,0,122.289S12.814,150.855,28.566,150.855z M28.566,104.601c9.752,0,17.688,7.936,17.688,17.688 s-7.936,17.688-17.688,17.688s-17.688-7.936-17.688-17.688S18.814,104.601,28.566,104.601z\"><\/path> <path style=\"fill:#010002;\" d=\"M121.025,150.855c15.752,0,28.566-12.809,28.566-28.566c0-15.752-12.814-28.566-28.566-28.566 s-28.566,12.814-28.566,28.566S105.273,150.855,121.025,150.855z M121.025,104.601c9.752,0,17.688,7.936,17.688,17.688 s-7.936,17.688-17.688,17.688s-17.688-7.936-17.688-17.688S111.267,104.601,121.025,104.601z\"><\/path> <path style=\"fill:#010002;\" d=\"M214.974,150.855c15.752,0,28.566-12.809,28.566-28.566c0-15.752-12.814-28.566-28.566-28.566 s-28.566,12.814-28.566,28.566C186.402,138.041,199.222,150.855,214.974,150.855z M214.974,104.601 c9.752,0,17.688,7.936,17.688,17.688s-7.936,17.688-17.688,17.688c-9.752,0-17.688-7.936-17.688-17.688 S205.216,104.601,214.974,104.601z\"><\/path> <path style=\"fill:#010002;\" d=\"M29.224,184.964c-15.752,0-28.566,12.814-28.566,28.566c0,15.752,12.814,28.566,28.566,28.566 S57.79,229.286,57.79,213.53C57.79,197.783,44.976,184.964,29.224,184.964z M29.224,231.217c-9.752,0-17.688-7.936-17.688-17.688 c0-9.752,7.936-17.688,17.688-17.688s17.688,7.936,17.688,17.688C46.912,223.282,38.976,231.217,29.224,231.217z\"><\/path> <path style=\"fill:#010002;\" d=\"M121.683,184.964c-15.752,0-28.566,12.814-28.566,28.566c0,15.752,12.814,28.566,28.566,28.566 s28.566-12.809,28.566-28.566C150.249,197.783,137.434,184.964,121.683,184.964z M121.683,231.217 c-9.752,0-17.688-7.936-17.688-17.688c0-9.752,7.936-17.688,17.688-17.688s17.688,7.936,17.688,17.688 C139.371,223.282,131.435,231.217,121.683,231.217z\"><\/path> <path style=\"fill:#010002;\" d=\"M215.632,184.964c-15.752,0-28.566,12.814-28.566,28.566c0,15.752,12.814,28.566,28.566,28.566 s28.566-12.809,28.566-28.566C244.192,197.783,231.378,184.964,215.632,184.964z M215.632,231.217 c-9.752,0-17.688-7.936-17.688-17.688c0-9.752,7.936-17.688,17.688-17.688c9.752,0,17.688,7.936,17.688,17.688 C233.32,223.282,225.379,231.217,215.632,231.217z\"><\/path> <\/g> <\/g> <\/g><\/svg>","desc_2":"<p>Stimulate collagen production and trigger the skin’s natural rejuvenation and repair processes<\/p>","svg_image_3":"<svg viewbox=\"0 0 21 21\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" fill=\"#000000\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"><\/g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/g><g id=\"SVGRepo_iconCarrier\"><path d=\"m8.5 8.5c0-4.418278-3.581722-8-8-8m5 8c0-2.76142375-2.23857625-5-5-5m2 5c0-1.1045695-.8954305-2-2-2\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" transform=\"translate(6 6)\"><\/path><\/g><\/svg>","desc_3":"<p>Manage chronic pain, ease stiff joints, and promote muscle recovery<\/p>","svg_image_4":"<svg fill=\"#000000\" viewbox=\"0 0 56 56\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"><\/g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/g><g id=\"SVGRepo_iconCarrier\"><path d=\"M 27.9999 20.0313 C 29.4999 20.0313 30.7421 18.7891 30.7421 17.2891 C 30.7421 15.7656 29.4999 14.5469 27.9999 14.5469 C 26.4765 14.5469 25.2577 15.7656 25.2577 17.2891 C 25.2577 18.7891 26.4765 20.0313 27.9999 20.0313 Z M 40.9843 26.0078 C 42.0390 27.0860 43.7733 27.0860 44.8514 26.0078 C 45.9296 24.9063 45.9296 23.1953 44.8514 22.1407 C 43.7499 21.0625 42.0624 21.0391 40.9843 22.1407 C 39.9062 23.1953 39.9062 24.9297 40.9843 26.0078 Z M 11.1249 26.0313 C 12.1796 27.1094 13.9140 27.1094 14.9921 26.0313 C 16.0936 24.9297 16.0936 23.2187 14.9921 22.1641 C 13.8905 21.0860 12.2030 21.0625 11.1249 22.1641 C 10.0468 23.2187 10.0233 24.9297 11.1249 26.0313 Z M 6.7655 41.2891 C 8.2655 41.2891 9.5077 40.0469 9.5077 38.5469 C 9.5077 37.0234 8.2655 35.8047 6.7655 35.8047 C 5.2421 35.8047 4.0233 37.0234 4.0233 38.5469 C 4.0233 40.0469 5.2421 41.2891 6.7655 41.2891 Z M 49.2344 41.4531 C 50.7344 41.4531 51.9767 40.2109 51.9767 38.7109 C 51.9767 37.1875 50.7344 35.9687 49.2344 35.9687 C 47.7109 35.9687 46.4921 37.1875 46.4921 38.7109 C 46.4921 40.2109 47.7109 41.4531 49.2344 41.4531 Z M 20.1014 36.7187 C 19.0233 36.7187 18.1093 37.6094 18.1093 38.6875 C 18.1093 39.7422 19.0233 40.6328 20.1014 40.6328 L 35.8280 40.6328 C 36.9062 40.6328 37.8202 39.7422 37.8202 38.6875 C 37.8202 37.6094 36.9062 36.7187 35.8280 36.7187 Z\"><\/path><\/g><\/svg>","desc_4":"<p>Experience the most advanced full-body photobiomodulation system - TheraLight 360+<\/p>"}},"768dd085-f2fc-43e6-8512-3deaf1b1bcca":{"type":"about","settings":{"caption":"RECHARGE AND REJUVENATE","text_style":"caption-with-letter-spacing","heading":"RED LIGHT THERAPY","heading_size":"h1","text":"<p>Stimulate cellular renewal and revitalization. Red light therapy (photobiomodulation) uses red and near-infrared light wavelengths to stimulate the production of adenosine triphosphate (ATP) in your cells, allowing them to work more efficiently, produce fewer byproducts, and reduce oxidative stress.<\/p>","button_label":"","button_link":"shopify:\/\/pages\/reserve","button_style_secondary":false}},"a55b8a04-1b61-4712-b5c0-08cd27e57ddd":{"type":"location","settings":{"image":"shopify:\/\/shop_images\/Tonic_Spa_Sweat_and_Tonic_Front_Desk_1000_03b33f77-edcf-40fd-a087-1f3577c5b679.jpg","title":"TONIC SPA","address":"486 Front St W, Toronto, ON M5V 0V2","phone":"647-477-0539","button_label":"book now","button_link":"https:\/\/sweatandtonic.com\/pages\/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3FclassType%3D8646%26locations%3D48784"}}},"block_order":["48e16eca-3ca7-4acb-9be8-e995eab47ed4","768dd085-f2fc-43e6-8512-3deaf1b1bcca","a55b8a04-1b61-4712-b5c0-08cd27e57ddd"],"custom_css":[],"settings":{"layout":"text_first","desktop_content_position":"top","desktop_content_alignment":"left","color_scheme":"","mobile_content_alignment":"left","top_padding_remove":true,"bottom_padding_remove":false}},"services-multirow":{"type":"services-multirow","blocks":{"d356ff81-ab7f-488a-9806-1333a56344a7":{"type":"row","settings":{"image":"shopify:\/\/shop_images\/Red_Light_Therapy_Lisa_Tonic_Spa_f424c5c0-ef36-45f6-b577-8f940a1c2e5b.jpg","caption":"","heading":"BENEFITS OF RED LIGHT THERAPY","text":"<p><\/p><ul><li>Reduce post-injury swelling & inflammation<\/li><li>Reduce of oxidative stress<\/li><li>Increase athletic recovery<\/li><li>Treat acne inflammation & breakouts<\/li><li>Enhance weight loss<\/li><li>Reduce the apperance of fine lines, sun damage, and other skin concerns through collagen production and skin regeneration<\/li><li>Help stimulate hair growth <\/li><li>Promote skin cell and tissue regeneration<\/li><\/ul>","button_label":"BOOK A SESSION","button_link":"https:\/\/sweatandtonic.com\/pages\/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3FclassType%3D8646%26locations%3D48784"}},"1efc39ee-b62b-45e2-8255-78a72db12041":{"type":"row","settings":{"image":"shopify:\/\/shop_images\/Sweat_and_Tonic_March_22nd_Theralight_Detail.jpg","caption":"","heading":"THERALIGHT 360+","text":"<p>TheraLight is the only full-body photobiomodulation system engineered to provide 360° exposure to healing light energy.<\/p><p>The TheraLight 360+ combines 4 optimal therapeutic wavelengths to generate maximum results.<\/p><p>• 633nm Red Light<br\/>• 810nm Near Infrared Light<br\/>• 850nm Near Infrared Light<br\/>• 940nm Near Infrared Light<\/p>","button_label":"BUY CREDITS","button_link":"https:\/\/sweatandtonic.com\/pages\/pricing?_mt=%2Fbuy%2F48784"}},"row_TCBdNU":{"type":"row","settings":{"image":"shopify:\/\/shop_images\/Red_Light_Therapy_Sweat_and_Tonic_TheraLight360.jpg","caption":"","heading":"HOW DOES RED LIGHT THERAPY WORK?","text":"<p>Red light, at specific wavelengths, is readily absorbed by chromophores in the mitochondria of the body’s cells, which activates metabolic energy processes. Red and near-infrared wavelengths of light promote ATP production, which boosts energy transport within cells, leading to increased cell proliferation.<\/p><p>This boost in the body’s natural healing cycle helps reduce inflammation and promotes the healing of damaged tissue.<\/p>","button_label":"BOOK A SESSION","button_link":"https:\/\/sweatandtonic.com\/pages\/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3FclassType%3D8646%26locations%3D48784"}}},"block_order":["d356ff81-ab7f-488a-9806-1333a56344a7","1efc39ee-b62b-45e2-8255-78a72db12041","row_TCBdNU"],"settings":{"image_height":"small","desktop_image_width":"medium","heading_size":"h2","text_style":"body","button_style":"primary","desktop_content_position":"middle","desktop_content_alignment":"left","image_layout":"alternate-right","section_color_scheme":"","row_color_scheme":"","mobile_content_alignment":"left","top_padding_remove":true,"bottom_padding_remove":true}},"services-faq":{"type":"services-faq","blocks":{"3e86efb1-98de-4e11-8fe3-8a2d2bd2507a":{"type":"faq","settings":{"question":"HOW LONG IS EACH RED LIGHT THERAPY SESSION?","ans":"<p>Each Red Light Therapy session is 20 minutes long.<\/p>"}},"6d0403fd-7901-4e43-9a15-0a98fd95531e":{"type":"faq","settings":{"question":"HOW OFTEN SHOULD I DO RED LIGHT THERAPY?","ans":"<p>To experience optimal results, we recommend  1-3 sessions per week on a consistent basis. Red Light Therapy can be a standalone treatment or used as an adjunct to other treatments, such as the Hydrafacial®.<\/p>"}},"73388f87-f09d-4e79-a1be-432c9151ae0c":{"type":"faq","settings":{"question":"WHAT IS OXIDATIVE STRESS?","ans":"<p>Oxidative stress is when the amount of oxidants exceeds the capacity of our body's antioxidant defense system. <\/p>"}},"e192aa34-2ede-4993-87e6-84e5ba5e54f8":{"type":"faq","disabled":true,"settings":{"question":"HOW DOES IT DIFFER FROM THE USUAL MEDITATION?","ans":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>"}}},"block_order":["3e86efb1-98de-4e11-8fe3-8a2d2bd2507a","6d0403fd-7901-4e43-9a15-0a98fd95531e","73388f87-f09d-4e79-a1be-432c9151ae0c","e192aa34-2ede-4993-87e6-84e5ba5e54f8"],"settings":{"title":"RED LIGHT THERAPY FAQs","top_padding_remove":false,"bottom_padding_remove":false}}},"order":["services-hero","services-about","services-multirow","services-faq"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "services-hero": {
+      "type": "services-hero",
+      "blocks": {
+        "3d295c9e-10b8-4397-b3c8-b08733efc0db": {
+          "type": "text",
+          "settings": {
+            "text1": "WELLNESS & RECOVERY AT SWEAT AND TONIC",
+            "text": "",
+            "text_style": "caption-with-letter-spacing",
+            "text_clr": "#ffffff"
+          }
+        },
+        "89ede07a-229a-4fd5-8064-eb065090ad93": {
+          "type": "heading",
+          "settings": {
+            "heading": "RED LIGHT THERAPY",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "943f29ad-f020-4899-974b-20f586c4dd6a": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "BOOK A SESSION",
+            "button_link_1": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3FclassType%3D8646%26locations%3D48784",
+            "button_style": "solid",
+            "applies_color_scheme": true,
+            "btn_text_clr": "#000000",
+            "btn_hvr_text_clr": "#000000",
+            "btn_bg_clr": "#FEE4B1",
+            "btn_hvr_bg_clr": "#ffffff"
+          }
+        },
+        "1fe44382-9435-48ac-95f6-bf885137b352": {
+          "type": "description",
+          "settings": {
+            "desc": "<p>Restore & recover with wellness services and biohacking amenities at S&T</p>",
+            "anchor_label": "VIEW ALL SERVICES",
+            "anchor_link": "shopify://pages/spa",
+            "text_clr": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "3d295c9e-10b8-4397-b3c8-b08733efc0db",
+        "89ede07a-229a-4fd5-8064-eb065090ad93",
+        "943f29ad-f020-4899-974b-20f586c4dd6a",
+        "1fe44382-9435-48ac-95f6-bf885137b352"
+      ],
+      "settings": {
+        "allow_transparent_header": true,
+        "image": "shopify://shop_images/RedLightTherapy.png",
+        "img_mobile": "shopify://shop_images/RedLightTherapy.png",
+        "image_overlay_opacity": 60,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center"
+      }
+    },
+    "services-about": {
+      "type": "services-about",
+      "blocks": {
+        "48e16eca-3ca7-4acb-9be8-e995eab47ed4": {
+          "type": "features",
+          "settings": {
+            "svg_image_1": "<svg fill=\"#000000\" viewbox=\"0 0 56 56\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#000000\" stroke-width=\"0.00056\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"><path d=\"M 30.0392 16.0820 C 30.0392 14.9571 29.1016 14.0195 28.0001 14.0195 C 26.8985 14.0195 25.9610 14.9571 25.9610 16.0820 L 25.9610 22.5976 C 25.9610 23.6992 26.8985 24.6367 28.0001 24.6367 C 29.1016 24.6367 30.0392 23.6992 30.0392 22.5976 Z M 14.1251 28.9492 C 14.8985 29.7461 16.2110 29.7461 16.9845 28.9492 C 17.7813 28.1758 17.7813 26.8633 16.9845 26.0898 L 12.4142 21.4727 C 11.6407 20.6758 10.3282 20.6524 9.5314 21.4492 C 8.7579 22.2227 8.7579 23.5352 9.5314 24.3320 Z M 38.7345 26.3242 C 37.9610 27.0976 37.9610 28.4102 38.7345 29.1836 C 39.5314 29.9805 40.8673 29.9805 41.6407 29.1836 L 46.2577 24.5898 C 47.0550 23.7930 47.0550 22.4571 46.2577 21.6836 C 45.4845 20.8867 44.1720 20.8867 43.3751 21.6836 Z M 51.8593 41.9805 C 52.9609 41.9805 53.8983 41.0430 53.8983 39.9414 C 53.8983 38.8164 52.9609 37.8789 51.8593 37.8789 L 45.3438 37.8789 C 44.2189 37.8789 43.2813 38.8164 43.2813 39.9414 C 43.2813 41.0430 44.2189 41.9805 45.3438 41.9805 Z M 4.1407 37.8789 C 3.0392 37.8789 2.1017 38.8164 2.1017 39.9414 C 2.1017 41.0430 3.0392 41.9805 4.1407 41.9805 L 10.6798 41.9805 C 11.8048 41.9805 12.7423 41.0430 12.7423 39.9414 C 12.7423 38.8164 11.8048 37.8789 10.6798 37.8789 Z M 20.1251 38.0195 C 19.0470 38.0195 18.1329 38.9102 18.1329 39.9883 C 18.1329 41.0430 19.0470 41.9336 20.1251 41.9336 L 35.8516 41.9336 C 36.9298 41.9336 37.8438 41.0430 37.8438 39.9883 C 37.8438 38.9102 36.9298 38.0195 35.8516 38.0195 Z\"></path></g></svg>",
+            "desc_1": "<p>Increase cell recovery and reduce oxidative stress by stimulating ATP production</p>",
+            "svg_image_2": "<svg height=\"200px\" width=\"200px\" version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 244.285 244.285\" fill=\"#000000\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xml:space=\"preserve\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <g> <g> <path style=\"fill:#010002;\" d=\"M29.317,2.189c-15.752,0-28.566,12.814-28.566,28.566s12.814,28.566,28.566,28.566 s28.566-12.814,28.566-28.566S45.068,2.189,29.317,2.189z M29.317,48.443c-9.752,0-17.688-7.936-17.688-17.688 s7.936-17.688,17.688-17.688c9.752,0,17.688,7.936,17.688,17.688S39.069,48.443,29.317,48.443z\"></path> <path style=\"fill:#010002;\" d=\"M121.77,2.189c-15.752,0-28.566,12.814-28.566,28.566s12.814,28.566,28.566,28.566 s28.566-12.814,28.566-28.566S137.521,2.189,121.77,2.189z M121.77,48.443c-9.752,0-17.688-7.936-17.688-17.688 s7.936-17.688,17.688-17.688s17.688,7.936,17.688,17.688S131.522,48.443,121.77,48.443z\"></path> <path style=\"fill:#010002;\" d=\"M215.719,59.321c15.752,0,28.566-12.814,28.566-28.566S231.47,2.189,215.719,2.189 s-28.566,12.814-28.566,28.566S199.967,59.321,215.719,59.321z M215.719,13.067c9.752,0,17.688,7.936,17.688,17.688 s-7.936,17.688-17.688,17.688c-9.752,0-17.688-7.936-17.688-17.688S205.967,13.067,215.719,13.067z\"></path> <path style=\"fill:#010002;\" d=\"M28.566,150.855c15.752,0,28.566-12.809,28.566-28.566c0-15.752-12.814-28.566-28.566-28.566 S0,106.538,0,122.289S12.814,150.855,28.566,150.855z M28.566,104.601c9.752,0,17.688,7.936,17.688,17.688 s-7.936,17.688-17.688,17.688s-17.688-7.936-17.688-17.688S18.814,104.601,28.566,104.601z\"></path> <path style=\"fill:#010002;\" d=\"M121.025,150.855c15.752,0,28.566-12.809,28.566-28.566c0-15.752-12.814-28.566-28.566-28.566 s-28.566,12.814-28.566,28.566S105.273,150.855,121.025,150.855z M121.025,104.601c9.752,0,17.688,7.936,17.688,17.688 s-7.936,17.688-17.688,17.688s-17.688-7.936-17.688-17.688S111.267,104.601,121.025,104.601z\"></path> <path style=\"fill:#010002;\" d=\"M214.974,150.855c15.752,0,28.566-12.809,28.566-28.566c0-15.752-12.814-28.566-28.566-28.566 s-28.566,12.814-28.566,28.566C186.402,138.041,199.222,150.855,214.974,150.855z M214.974,104.601 c9.752,0,17.688,7.936,17.688,17.688s-7.936,17.688-17.688,17.688c-9.752,0-17.688-7.936-17.688-17.688 S205.216,104.601,214.974,104.601z\"></path> <path style=\"fill:#010002;\" d=\"M29.224,184.964c-15.752,0-28.566,12.814-28.566,28.566c0,15.752,12.814,28.566,28.566,28.566 S57.79,229.286,57.79,213.53C57.79,197.783,44.976,184.964,29.224,184.964z M29.224,231.217c-9.752,0-17.688-7.936-17.688-17.688 c0-9.752,7.936-17.688,17.688-17.688s17.688,7.936,17.688,17.688C46.912,223.282,38.976,231.217,29.224,231.217z\"></path> <path style=\"fill:#010002;\" d=\"M121.683,184.964c-15.752,0-28.566,12.814-28.566,28.566c0,15.752,12.814,28.566,28.566,28.566 s28.566-12.809,28.566-28.566C150.249,197.783,137.434,184.964,121.683,184.964z M121.683,231.217 c-9.752,0-17.688-7.936-17.688-17.688c0-9.752,7.936-17.688,17.688-17.688s17.688,7.936,17.688,17.688 C139.371,223.282,131.435,231.217,121.683,231.217z\"></path> <path style=\"fill:#010002;\" d=\"M215.632,184.964c-15.752,0-28.566,12.814-28.566,28.566c0,15.752,12.814,28.566,28.566,28.566 s28.566-12.809,28.566-28.566C244.192,197.783,231.378,184.964,215.632,184.964z M215.632,231.217 c-9.752,0-17.688-7.936-17.688-17.688c0-9.752,7.936-17.688,17.688-17.688c9.752,0,17.688,7.936,17.688,17.688 C233.32,223.282,225.379,231.217,215.632,231.217z\"></path> </g> </g> </g></svg>",
+            "desc_2": "<p>Stimulate collagen production and trigger the skin’s natural rejuvenation and repair processes</p>",
+            "svg_image_3": "<svg viewbox=\"0 0 21 21\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"#000000\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"><path d=\"m8.5 8.5c0-4.418278-3.581722-8-8-8m5 8c0-2.76142375-2.23857625-5-5-5m2 5c0-1.1045695-.8954305-2-2-2\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" transform=\"translate(6 6)\"></path></g></svg>",
+            "desc_3": "<p>Manage chronic pain, ease stiff joints, and promote muscle recovery</p>",
+            "svg_image_4": "<svg fill=\"#000000\" viewbox=\"0 0 56 56\" xmlns=\"http://www.w3.org/2000/svg\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"><path d=\"M 27.9999 20.0313 C 29.4999 20.0313 30.7421 18.7891 30.7421 17.2891 C 30.7421 15.7656 29.4999 14.5469 27.9999 14.5469 C 26.4765 14.5469 25.2577 15.7656 25.2577 17.2891 C 25.2577 18.7891 26.4765 20.0313 27.9999 20.0313 Z M 40.9843 26.0078 C 42.0390 27.0860 43.7733 27.0860 44.8514 26.0078 C 45.9296 24.9063 45.9296 23.1953 44.8514 22.1407 C 43.7499 21.0625 42.0624 21.0391 40.9843 22.1407 C 39.9062 23.1953 39.9062 24.9297 40.9843 26.0078 Z M 11.1249 26.0313 C 12.1796 27.1094 13.9140 27.1094 14.9921 26.0313 C 16.0936 24.9297 16.0936 23.2187 14.9921 22.1641 C 13.8905 21.0860 12.2030 21.0625 11.1249 22.1641 C 10.0468 23.2187 10.0233 24.9297 11.1249 26.0313 Z M 6.7655 41.2891 C 8.2655 41.2891 9.5077 40.0469 9.5077 38.5469 C 9.5077 37.0234 8.2655 35.8047 6.7655 35.8047 C 5.2421 35.8047 4.0233 37.0234 4.0233 38.5469 C 4.0233 40.0469 5.2421 41.2891 6.7655 41.2891 Z M 49.2344 41.4531 C 50.7344 41.4531 51.9767 40.2109 51.9767 38.7109 C 51.9767 37.1875 50.7344 35.9687 49.2344 35.9687 C 47.7109 35.9687 46.4921 37.1875 46.4921 38.7109 C 46.4921 40.2109 47.7109 41.4531 49.2344 41.4531 Z M 20.1014 36.7187 C 19.0233 36.7187 18.1093 37.6094 18.1093 38.6875 C 18.1093 39.7422 19.0233 40.6328 20.1014 40.6328 L 35.8280 40.6328 C 36.9062 40.6328 37.8202 39.7422 37.8202 38.6875 C 37.8202 37.6094 36.9062 36.7187 35.8280 36.7187 Z\"></path></g></svg>",
+            "desc_4": "<p>Experience the most advanced full-body photobiomodulation system - TheraLight 360+</p>"
+          }
+        },
+        "768dd085-f2fc-43e6-8512-3deaf1b1bcca": {
+          "type": "about",
+          "settings": {
+            "caption": "RECHARGE AND REJUVENATE",
+            "text_style": "caption-with-letter-spacing",
+            "heading": "RED LIGHT THERAPY",
+            "heading_size": "h1",
+            "text": "<p>Stimulate cellular renewal and revitalization. Red light therapy (photobiomodulation) uses red and near-infrared light wavelengths to stimulate the production of adenosine triphosphate (ATP) in your cells, allowing them to work more efficiently, produce fewer byproducts, and reduce oxidative stress.</p>",
+            "button_label": "",
+            "button_link": "shopify://pages/reserve",
+            "button_style_secondary": false
+          }
+        },
+        "a55b8a04-1b61-4712-b5c0-08cd27e57ddd": {
+          "type": "location",
+          "settings": {
+            "image": "shopify://shop_images/Tonic_Spa_Sweat_and_Tonic_Front_Desk_1000_03b33f77-edcf-40fd-a087-1f3577c5b679.jpg",
+            "title": "TONIC SPA",
+            "address": "486 Front St W, Toronto, ON M5V 0V2",
+            "phone": "647-477-0539",
+            "button_label": "book now",
+            "button_link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3FclassType%3D8646%26locations%3D48784"
+          }
+        }
+      },
+      "block_order": [
+        "48e16eca-3ca7-4acb-9be8-e995eab47ed4",
+        "768dd085-f2fc-43e6-8512-3deaf1b1bcca",
+        "a55b8a04-1b61-4712-b5c0-08cd27e57ddd"
+      ],
+      "custom_css": [],
+      "settings": {
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "mobile_content_alignment": "left",
+        "top_padding_remove": true,
+        "bottom_padding_remove": false
+      }
+    },
+    "services-multirow": {
+      "type": "services-multirow",
+      "blocks": {
+        "d356ff81-ab7f-488a-9806-1333a56344a7": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Red_Light_Therapy_Lisa_Tonic_Spa_f424c5c0-ef36-45f6-b577-8f940a1c2e5b.jpg",
+            "caption": "",
+            "heading": "BENEFITS OF RED LIGHT THERAPY",
+            "text": "<p></p><ul><li>Reduce post-injury swelling & inflammation</li><li>Reduce of oxidative stress</li><li>Increase athletic recovery</li><li>Treat acne inflammation & breakouts</li><li>Enhance weight loss</li><li>Reduce the apperance of fine lines, sun damage, and other skin concerns through collagen production and skin regeneration</li><li>Help stimulate hair growth </li><li>Promote skin cell and tissue regeneration</li></ul>",
+            "button_label": "BOOK A SESSION",
+            "button_link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3FclassType%3D8646%26locations%3D48784"
+          }
+        },
+        "1efc39ee-b62b-45e2-8255-78a72db12041": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Sweat_and_Tonic_March_22nd_Theralight_Detail.jpg",
+            "caption": "",
+            "heading": "THERALIGHT 360+",
+            "text": "<p>TheraLight is the only full-body photobiomodulation system engineered to provide 360° exposure to healing light energy.</p><p>The TheraLight 360+ combines 4 optimal therapeutic wavelengths to generate maximum results.</p><p>• 633nm Red Light<br/>• 810nm Near Infrared Light<br/>• 850nm Near Infrared Light<br/>• 940nm Near Infrared Light</p>",
+            "button_label": "BUY CREDITS",
+            "button_link": "https://sweatandtonic.com/pages/pricing?_mt=%2Fbuy%2F48784"
+          }
+        },
+        "row_TCBdNU": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Red_Light_Therapy_Sweat_and_Tonic_TheraLight360.jpg",
+            "caption": "",
+            "heading": "HOW DOES RED LIGHT THERAPY WORK?",
+            "text": "<p>Red light, at specific wavelengths, is readily absorbed by chromophores in the mitochondria of the body’s cells, which activates metabolic energy processes. Red and near-infrared wavelengths of light promote ATP production, which boosts energy transport within cells, leading to increased cell proliferation.</p><p>This boost in the body’s natural healing cycle helps reduce inflammation and promotes the healing of damaged tissue.</p>",
+            "button_label": "BOOK A SESSION",
+            "button_link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3FclassType%3D8646%26locations%3D48784"
+          }
+        }
+      },
+      "block_order": [
+        "d356ff81-ab7f-488a-9806-1333a56344a7",
+        "1efc39ee-b62b-45e2-8255-78a72db12041",
+        "row_TCBdNU"
+      ],
+      "settings": {
+        "image_height": "small",
+        "desktop_image_width": "medium",
+        "heading_size": "h2",
+        "text_style": "body",
+        "button_style": "primary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "top_padding_remove": true,
+        "bottom_padding_remove": true
+      }
+    },
+    "services-faq": {
+      "type": "services-faq",
+      "blocks": {
+        "3e86efb1-98de-4e11-8fe3-8a2d2bd2507a": {
+          "type": "faq",
+          "settings": {
+            "question": "HOW LONG IS EACH RED LIGHT THERAPY SESSION?",
+            "ans": "<p>Each Red Light Therapy session is 20 minutes long.</p>"
+          }
+        },
+        "6d0403fd-7901-4e43-9a15-0a98fd95531e": {
+          "type": "faq",
+          "settings": {
+            "question": "HOW OFTEN SHOULD I DO RED LIGHT THERAPY?",
+            "ans": "<p>To experience optimal results, we recommend  1-3 sessions per week on a consistent basis. Red Light Therapy can be a standalone treatment or used as an adjunct to other treatments, such as the Hydrafacial®.</p>"
+          }
+        },
+        "73388f87-f09d-4e79-a1be-432c9151ae0c": {
+          "type": "faq",
+          "settings": {
+            "question": "WHAT IS OXIDATIVE STRESS?",
+            "ans": "<p>Oxidative stress is when the amount of oxidants exceeds the capacity of our body's antioxidant defense system. </p>"
+          }
+        },
+        "e192aa34-2ede-4993-87e6-84e5ba5e54f8": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "question": "HOW DOES IT DIFFER FROM THE USUAL MEDITATION?",
+            "ans": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "3e86efb1-98de-4e11-8fe3-8a2d2bd2507a",
+        "6d0403fd-7901-4e43-9a15-0a98fd95531e",
+        "73388f87-f09d-4e79-a1be-432c9151ae0c",
+        "e192aa34-2ede-4993-87e6-84e5ba5e54f8"
+      ],
+      "settings": {
+        "title": "RED LIGHT THERAPY FAQs",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    }
+  },
+  "order": [
+    "services-hero",
+    "services-about",
+    "services-multirow",
+    "services-faq"
+  ]
+}

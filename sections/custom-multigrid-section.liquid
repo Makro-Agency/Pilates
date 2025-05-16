@@ -1,0 +1,114 @@
+
+{{ 'custom-multi-grid.css' | asset_url | stylesheet_tag }}
+
+<section class="custom-workout">
+  <div class="custom-workout__wrapper">
+    <h2 class="custom-workout__heading">{{ section.settings.heading }}</h2>
+    <p class="custom-workout__subtitle">{{ section.settings.subtitle }}</p>
+
+    <div class="custom-workout__cards">
+      {% for block in section.blocks %}
+        <div class="custom-workout__card">
+          <div class="card-inner">
+            <h3 class="custom-workout__card-title">{{ block.settings.card_title }}</h3>
+            <p class="custom-workout__card-text">{{ block.settings.card_text }}</p>
+          </div>
+          <div class="card-inner-benefits">
+            <div class="custom-workout__benefits-label">
+              {{ block.settings.benefits_label }}
+            </div>
+            <ul class="custom-workout__benefits-list">
+              {% if block.settings.benefit_1 != blank %}
+                <li>{{ block.settings.benefit_1 }}</li>
+              {% endif %}
+              {% if block.settings.benefit_2 != blank %}
+                <li>{{ block.settings.benefit_2 }}</li>
+              {% endif %}
+              {% if block.settings.benefit_3 != blank %}
+                <li>{{ block.settings.benefit_3 }}</li>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+
+{% schema %}
+{
+  "name": "Custom Workout Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section heading",
+      "default": "MORE THAN A WORKOUT"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Section subtitle",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Workout Card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "card_title",
+          "label": "Card title",
+          "default": "REFORMD EXPERIENCE"
+        },
+        {
+          "type": "textarea",
+          "id": "card_text",
+          "label": "Card text",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora."
+        },
+        {
+          "type": "text",
+          "id": "benefits_label",
+          "label": "Benefits label",
+          "default": "Benefits"
+        },
+        {
+          "type": "text",
+          "id": "benefit_1",
+          "label": "Benefit #1",
+          "default": "Advanced Lagree machines"
+        },
+        {
+          "type": "text",
+          "id": "benefit_2",
+          "label": "Benefit #2",
+          "default": "Theatrical lighting & sound"
+        },
+        {
+          "type": "text",
+          "id": "benefit_3",
+          "label": "Benefit #3",
+          "default": "Immersive studio concept"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Custom Workout",
+      "category": "Custom",
+      "blocks": [
+        { "type": "card" },
+        { "type": "card" },
+        { "type": "card" }
+      ]
+    }
+  ]
+}
+{% endschema %}

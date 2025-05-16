@@ -12,6 +12,7 @@
     "global_home_hero_banner_BKhfkg": {
       "type": "global_home-hero-banner",
       "settings": {
+        "allow_transparent_header": true,
         "desktop_image": "shopify://shop_images/slideshow-1.png",
         "mobile_image": "shopify://shop_images/slideshow-mob-1.png",
         "overlay_opacity": 20,

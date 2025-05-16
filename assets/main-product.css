@@ -283,18 +283,15 @@ variant-selects .select {
 }
 .product__media-wrapper .swiper-button-next:before, 
 .product__media-wrapper .swiper-button-prev:before{
-  width: 200%;
-  height: 200%;
+  width: 20px;
+  height: 20px;
   content: "";
   display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  position: relative;
+  mask-image: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Rectangle_6.svg?v=1695643347');
+  background-color: currentColor;
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 #paybright-widget-container p {
   font-family: inherit !important;

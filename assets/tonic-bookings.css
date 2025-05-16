@@ -2,7 +2,7 @@
 
 .tonic-bookings-wrapper .sec-head { width:100%; display:flex; justify-content:space-between; }
 .tonic-bookings-wrapper .sec-head .left-part { width:45%; }
-.tonic-bookings-wrapper .sec-head .left-part .sub-title { color: #C79D5B; font-size: 12px; font-style: normal; font-weight: 450; line-height: normal; 
+.tonic-bookings-wrapper .sec-head .left-part .sub-title { color: #FEE4B1; font-size: 12px; font-style: normal; font-weight: 450; line-height: normal; 
   text-transform: uppercase; margin-bottom:42px; display: flex; margin-top: -59px; }
 .tonic-bookings-wrapper .sec-head .left-part .title { color: #000; font-style: normal; line-height: 90%; text-transform: uppercase; margin:0 0 0 0; }
 

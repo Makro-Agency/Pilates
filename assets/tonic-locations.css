@@ -1,7 +1,7 @@
 .topic-locations-wrapper { width:100%; position:relative; margin:200px 0 !important; }
 
 .topic-locations-wrapper .sec-head { width:100%; margin:0; display:flex; flex-flow:column; }
-.topic-locations-wrapper .sec-head .sub-title { color: #C79D5B; text-align: center; font-size: 12px; font-style: normal; font-weight: 450; line-height: normal;
+.topic-locations-wrapper .sec-head .sub-title { color: #FEE4B1; text-align: center; font-size: 12px; font-style: normal; font-weight: 450; line-height: normal;
   /*letter-spacing: 0.24px;*/ text-transform: uppercase; margin:0 0 40px 0; }
 .topic-locations-wrapper .sec-head .title { color: #000; text-align: center; font-style: normal; line-height: 90%; text-transform: uppercase; margin:0; }
 
