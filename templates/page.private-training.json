@@ -15,7 +15,7 @@
         "3d295c9e-10b8-4397-b3c8-b08733efc0db": {
           "type": "text",
           "settings": {
-            "text": "HIIT AT SWEAT AND TONIC",
+            "text": "Private classes",
             "text_style": "caption-with-letter-spacing",
             "text_clr": "#ffffff"
           }
@@ -23,7 +23,7 @@
         "89ede07a-229a-4fd5-8064-eb065090ad93": {
           "type": "heading",
           "settings": {
-            "heading": "HIIT STUDIO",
+            "heading": "Private Training",
             "heading_size": "h1",
             "text_clr": "#ffffff"
           }
@@ -37,14 +37,14 @@
             "applies_color_scheme": true,
             "btn_text_clr": "#ffffff",
             "btn_hvr_text_clr": "#000000",
-            "btn_bg_clr": "#FEE4B1",
+            "btn_bg_clr": "#fee4b1",
             "btn_hvr_bg_clr": "#ffffff"
           }
         },
         "1fe44382-9435-48ac-95f6-bf885137b352": {
           "type": "description",
           "settings": {
-            "desc": "<p>Move through high-intensity interval workouts that sculpt and define your body. </p>",
+            "desc": "<p>High-intensity workouts to chisel and tone your best body with a trifecta of creative intervals. You’ll HIIT hard while having the time of your life.</p>",
             "anchor_label": "Learn More",
             "anchor_link": "shopify://pages/pricing",
             "text_clr": "#ffffff"
@@ -77,7 +77,7 @@
         "2fc049c5-7369-409d-b14a-69872fa3a417": {
           "type": "heading",
           "settings": {
-            "heading": "HIIT YOUR PEAK PERFORMANCE",
+            "heading": "Lorem ipsum dolor  amet, consectetur adipiscing elit",
             "heading_size": "h1",
             "text_clr": "#ffffff"
           }
@@ -593,8 +593,8 @@
       ],
       "settings": {
         "subHeading": "EXPLORE CLASSES",
-        "heading": "HIIT CLASSES",
-        "detail": "<p><strong>What is HIIT?</strong><br/><br/>HIIT, or high intensity interval training, involves short bursts of high intensity movements at maximal effort with periods of rest or low-intensity exercises for recovery. HIIT is a robust method of inducing remarkable physiological adaptations and health benefits in a short amount of time, and has shown to burn more calories post-workout compared to steady-state cardio.<br/><br/>Classes marked with an asterisk (*) are open to all levels, but prior class experience is recommended for the best results.</p>",
+        "heading": "Private Training",
+        "detail": "<p>High-intensity workouts to chisel and tone your best body with a trifecta of creative intervals. You’ll HIIT hard while having the time of your life.</p>",
         "top_padding_remove": false,
         "bottom_padding_remove": false
       }
@@ -663,7 +663,7 @@
             "btn_text_clr": "#ffffff",
             "btn_hvr_text_clr": "#ffffff",
             "btn_bg_clr": "#ffffff",
-            "btn_hvr_bg_clr": "#FEE4B1"
+            "btn_hvr_bg_clr": "#fee4b1"
           }
         },
         "486c1659-7943-4d3f-a46d-0d16c16aa358": {
@@ -781,7 +781,7 @@
       "settings": {
         "bg_color_left": "#26221b",
         "text_color_left": "#ffffff",
-        "sub_color_left": "#FEE4B1",
+        "sub_color_left": "#fee4b1",
         "subheading_left": "Ready to sweat?",
         "heading_left": "LET’S GET YOU IN",
         "text_left": "",
