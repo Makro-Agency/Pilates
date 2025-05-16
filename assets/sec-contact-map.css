@@ -1,10 +1,12 @@
 .sec-contact-map .main-page-title {
   margin: 0 0 120px;
 }
-.sec-contact-map{
+
+.sec-contact-map {
   position: relative;
 }
-.sec-contact-map:after{
+
+.sec-contact-map:after {
   position: absolute;
   content: "";
   display: block;
@@ -15,18 +17,21 @@
   opacity: 0.21;
   filter: blur(200px);
   top: 20%;
-  z-index: 0;
+  z-index: 1;
   left: 50%;
 }
-.sec-contact-map{
+
+.sec-contact-map {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .secConMap .wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
 .secConMap .wrapper .content {
@@ -479,11 +484,11 @@
   opacity: 0;
 }
 
-@media only screen and (max-width: 1440px){
-.template--contact-us .sec-contact-map .page-width {
- max-width: 100%;
- padding-right: 0;
-}
+@media only screen and (max-width: 1440px) {
+  .template--contact-us .sec-contact-map .page-width {
+    max-width: 100%;
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -505,9 +510,11 @@
   .secConMap .wrapper {
     flex-wrap: wrap;
   }
+
   .template--contact-us .sec-contact-map .page-width {
     padding-right: 3.2rem;
   }
+
   .secConMap .wrapper .content,
   .secConMap .wrapper .map-wrapper {
     width: 100%;
