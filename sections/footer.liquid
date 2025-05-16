@@ -8,6 +8,13 @@
 
 {%- for block in section.blocks -%}
 
+  {%- capture footer_logo -%}
+    {%- if footer_logo != blank -%}{{ footer_logo }}{%- endif -%}
+    {%- if block.type  == 'footer_logo' -%}
+      <img src="{{block.settings.logo_img | image_url}}" height="auto" width="auto">
+    {% endif %}
+  {%- endcapture -%}
+
   {%- capture linked_lists -%}
     {%- if linked_lists != blank -%}{{ linked_lists }}{%- endif -%}
     {%- if block.type  == 'link_list' and block.settings.menu != blank -%}
@@ -35,7 +42,7 @@
   {%- endcapture -%}
 
 
-  {%- capture store_information -%}
+  {% comment %} {%- capture store_information -%}
     {%- if store_information != blank -%}{{ store_information }}{%- endif -%}
     
     {%- if block.type  == 'store_info' -%}
@@ -68,7 +75,7 @@
         </div>
       {%- endif -%}
     {%- endif -%}
-  {%- endcapture -%}
+  {%- endcapture -%} {% endcomment %}
 
   
   {%- capture additional_info -%}
@@ -120,26 +127,24 @@
 {% if display_footer %}
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
 
-  {%- if linked_lists != blank -%}
+  {%- if footer_logo != blank -%}
     <div class="footer-top">
       <div class="page--width">
-        <div
-          class="footer__blocks-wrapper footer-blocks-menu-links grid grid--1-col grid--2-col grid--4-col-tablet{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          {%- if settings.animations_reveal_on_scroll %} data-cascade{% endif -%}
-        >
-          {{ linked_lists }}
+        <div class="footer-logo">
+          <span class="powered-by-text">Powered by</span>
+          {{ footer_logo }}
         </div>
       </div>
     </div>
-  {%- endif -%}
+  {%- endif -%} 
 
   <div class="footer-center{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {%- if settings.animations_reveal_on_scroll %} data-cascade{% endif -%}
     >
     <div class="page--width">
       <div class="row">
-        {%- if store_information != blank -%}
-          <div class="col-left col">{{ store_information }}</div>
+        {%- if linked_lists != blank -%}
+          <div class="col-left col">{{ linked_lists }}</div>
         {%- endif -%}
     
         <div class="col-right col">
@@ -247,7 +252,7 @@
                     </div>
                     <div class="form-group field-grp newsletter-form__field-wrapper">
                       <input type="hidden" name="bb_uuid" id="bb_uuid" value="53a73ff3-2f80-4f2f-86ab-ec2233d6b793" />
-                      <button type="submit" class="btn newsletter-form__button field__button button button--secondary button--full-width" id="bb_submit" style="background-color: #000000; border-color: #FFF; color: white;margin-top: 24px;">SIGN UP</button>
+                      <button type="submit" class="btn newsletter-form__button field__button button button--secondary button--full-width" id="bb_submit" style="background-color: #000000; border-color: #FFF; color: white;margin-top: 24px;">Subscribe</button>
                     </div>
                   </form>
                 </div>
@@ -325,6 +330,17 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "footer_logo",
+      "name": "Footer Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Footer Logo",
+          "id": "logo_img"
+        }
+      ]
     },
     {
       "type": "link_list",

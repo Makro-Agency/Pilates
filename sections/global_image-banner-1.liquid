@@ -1,0 +1,160 @@
+
+{{ 'global_image-banner.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  #Banner-{{ section.id }}::after {
+    opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+  }
+  .image-banner-1 {position: relative;
+    z-index: 2;}
+  .global_image-banner.hero-banner::before {
+    background: linear-gradient(270deg, rgba(11, 7, 6, 0.00) 50%, rgba(11, 7, 6, 0.60) 84.2%);
+  }
+  .global_image-banner .banner-content {
+    justify-content: left;
+    height: auto;
+    max-width: 42%;
+    gap: 40px;
+    align-items: flex-start;
+    margin: 0;
+  }
+  .global_image-banner .banner-content > * {
+    text-align: left;
+  }
+  .banner-contain .heading { font-size: 48px; }
+  .banner-contain .description { margin: 24px 0 0; }
+  .image-banner-1 .global_image-banner a.cta {
+    border: none;
+    padding: 0;
+    background: none;
+    color: #fff;
+    height: auto;
+  }
+  @media screen and (max-width: 989px){
+    .global_image-banner .banner-content {
+      max-width: 70%;
+    }
+  }
+  @media screen and (max-width: 767px){
+    .global_image-banner .banner-content {
+      max-width: 100%;
+      padding: 40px 20px;
+    }
+    .banner-contain .heading {
+        font-size: 36px !important;
+    }
+  }
+{%- endstyle -%}
+
+<div id="Banner-{{ section.id }}" class="banner hero-banner global_image-banner">
+    {%if section.settings.desktop_image != blank or section.settings.mobile_image != blank %}
+        <div class="image">
+            <figure>
+                {%if section.settings.desktop_image != blank %}
+                    {{
+                        section.settings.desktop_image
+                        | image_url: width: 3840
+                        | image_tag:
+                            class: 'desktop-img',
+                            alt: section.settings.desktop_image.alt | default: section.settings.title |escape
+                    }}
+                    {{
+                        section.settings.mobile_image
+                        | image_url: width: 1100
+                        | image_tag:
+                            class: 'mobile-img',
+                            alt: section.settings.mobile_image.alt | default: section.settings.title |escape
+                    }}
+                {% endif %}
+            </figure>
+        </div>
+        {% if section.settings.title != blank %}
+            <div class="banner-content padding-sections">
+                <div class="banner-contain">
+                    {% if section.settings.title != blank%}
+                        <h2 class="h1 heading">{{ section.settings.title }}</h2>
+                    {% endif %}
+                    {% if section.settings.content != blank%}
+                        <p class="description">{{ section.settings.content }}</p>
+                    {% endif %}
+                    {% if section.settings.btn_text != blank %}
+                      <div class="banner-button">
+                        <a href="{{ section.settings.btn_url }}" class="cta">{{ section.settings.btn_text }}</a>
+                      </div>
+                    {% endif %}
+                </div>
+                {% if section.settings.btn_text != blank %}
+                  <div class="banner-button">
+                    <a href="{{ section.settings.btn_url }}" class="cta">{{ section.settings.btn_text }}</a>
+                  </div>
+                {% endif %}
+            </div>
+        {% endif %}
+        
+    {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Image Banner 1",
+  "class": "image-banner-1",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image content"
+    },
+    {
+      "type": "image_picker",
+      "label": "Desktop Image",
+      "id": "desktop_image"
+    },
+    {
+      "type": "image_picker",
+      "label": "Mobile Image",
+      "id": "mobile_image"
+    },
+    {
+        "type": "range",
+        "id": "overlay_opacity",
+        "label": "Image ovrlay opacity",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "label": "Title",
+      "id": "title"
+    },
+    {
+      "type": "textarea",
+      "label": "Content",
+      "id": "content"
+    },
+    {
+      "type": "header",
+      "content": "Button Content"
+    },
+    {
+      "type": "text",
+      "label": "Button Text",
+      "id": "btn_text"
+    },
+    {
+      "type": "url",
+      "label": "Button URL",
+      "id": "btn_url"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Global Image Banner 1"
+    }
+  ]
+}
+{% endschema %}

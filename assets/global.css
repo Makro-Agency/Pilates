@@ -292,7 +292,7 @@ a[href^="tel:"]{
   z-index: 2;
 }
 .footer{
-  padding-bottom: 67px;
+  padding-top: 6rem;
 }
 body.template--accessibility-policy,
 body.template--terms-conditions,

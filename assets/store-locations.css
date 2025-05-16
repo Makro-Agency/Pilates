@@ -1,18 +1,50 @@
+.store-locations {
+    position: relative;
+    z-index: 2;
+}
+.store-locations::before {
+    content: "";
+    background: var(--Neon-Blue, radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%));
+    opacity: 0.32;
+    filter: blur(250px);
+    width: 67.287vw;
+    height: 29.265vw;
+    transform: rotate(-115.265deg);
+    position: absolute;
+    bottom: 54%;
+    top: auto;
+    left: -7%;
+    right: auto;
+    z-index: -1;
+}
+.multicolumn1.color-background-1.gradient {
+    background: transparent;
+}
 .store-locations .grid {
     column-gap: 0;
     row-gap: 0;
 }
-.store-locations .section-head{
-  margin-bottom: 30px; 
+.store-locations .section-head {
+  margin-bottom: 60px;
+  display: flex;
+  gap: 40px;
+  padding: 0 132px;
 }
 .store-locations .section-head h6{
   margin: 0;
+  text-transform: uppercase;
+}
+.section-head > * {
+    flex: 1 0 0;
+    margin: 0;
 }
 .store-locations .content-container{
   border: none;
   height: 100%;
   display: flex;
   flex-direction: column;
+  box-shadow: -5px -5px 60px 0px rgba(255, 255, 255, 0.02) inset;
+  backdrop-filter: blur(4px);
 }
 .store-locations .grid--2-col-desktop .grid__item {
     width: 50%;
@@ -26,29 +58,56 @@
   font-weight: 500;
   margin-bottom: 20px;
 }
+.store-locations-item .cta {
+  border-bottom: 1.5px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  color: var(--White, #FFF);
+  font-family: var(--font-heading-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 2px;
+}
+.store-locations-item .cta:hover {
+  border-color: #FEE4B1;
+}
 .store-locations-item .multicolumn-card__info, .store-locations-item .multicolumn-card__services{
   padding: 40px;
 }
 .store-locations-item .multicolumn-card__info_wraper{
   display: flex;
-  border: 1px solid #E6E6E6;
   border-top: none;
   flex: 1 0 0;
+  border: 1px solid #FFF;
+}
+.store-locations-item:first-child .multicolumn-card__info_wraper {
+    margin-left: -1px;
 }
 .store-locations-item:last-child .multicolumn-card__info_wraper{
   border-left: none;
 }
 .store-locations-item .multicolumn-card__info{
   width: calc(100% - 220px);
+  border-right: 1px solid #FFF;
 }
 .store-locations-item .multicolumn-card__services{
   width: 220px;
   border-left: 1px solid #E6E6E6;
 }
-.store-locations-item .service-title{
+.store-locations-item .service-title {
   text-transform: uppercase;
-  color: #FEE4B1;
   margin: 0 0 15px;
+  font-weight: 500;
 }
 .store-locations-item .service-title-wrap{
   list-style: none;
@@ -59,6 +118,7 @@
   padding-left: 24px;
   position: relative;
   margin-bottom: 10px;
+  font-weight: 300;
 }
 .store-locations-item .service_line svg{
   position: absolute;
@@ -70,8 +130,12 @@
   .store-locations-item .multicolumn-card__info, .store-locations-item .multicolumn-card__services {
     padding: 30px;
   }
+  .store-locations .section-head {
+    padding: 0 60px;
+  }
 }
 @media screen and (max-width: 1199px){
+  .store-locations .section-head h6 { font-size: 36px;}
   .store-locations-item .multicolumn-card__info_wraper{
     flex-direction: column;
   }
@@ -101,6 +165,11 @@
   .store-locations-item .service_line{
     width: 50%;
   }
+  .store-locations .section-head {
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 @media screen and (max-width: 749px){
   .store-locations .grid--2-col-desktop .grid__item {
@@ -114,9 +183,20 @@
   .store-locations-item .multicolumn-card__info_wraper{
     border-right: 0;
     border-left: 0;
+    padding: 4rem 0;
   }
   .store-locations .section-head {
-    margin-bottom: 20px;
+    display: none;
+  }
+  .store-locations::before {
+    background: var(--Neon-Cherry, radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%));
+    opacity: 0.3;
+    filter: blur(250px);
+    transform: rotate(151.969deg);
+    width: 219.457vw;
+    height: 359.608vw;
+    bottom: -25%;
+    left: -50%;
   }
 }
 @media screen and (max-width: 374px){
