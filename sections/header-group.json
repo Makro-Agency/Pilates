@@ -53,7 +53,7 @@
         "logo_position": "top-center",
         "hide-header": true,
         "menu": "home-menu",
-        "menu_type_desktop": "mega",
+        "menu_type_desktop": "drawer_with_mega",
         "title": "",
         "image_1": "shopify://shop_images/Rectangle_70.png",
         "title_1": "Explore our world-class studio",
