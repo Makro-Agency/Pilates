@@ -1,6 +1,6 @@
 .section-slideshow {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 slideshow-component {
@@ -57,6 +57,7 @@ slideshow-component .slideshow.banner {
   .slideshow--placeholder.banner--adapt_image:not(.banner--mobile-bottom) {
     height: 28rem;
   }
+  slideshow-component {padding-bottom: 8rem;}
 }
 
 @media screen and (min-width: 1501px) {

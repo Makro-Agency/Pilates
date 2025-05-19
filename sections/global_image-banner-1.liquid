@@ -24,10 +24,14 @@
   .banner-contain .description { margin: 24px 0 0; }
   .image-banner-1 .global_image-banner a.cta {
     border: none;
-    padding: 0;
+    border-bottom: 1.8px solid transparent;
+    padding: 0 0 2px;
     background: none;
     color: #fff;
     height: auto;
+  }
+  .image-banner-1 .global_image-banner a.cta:hover {
+    border-bottom: 1.8px solid var(--Highlight, #FEE4B1);
   }
   @media screen and (max-width: 989px){
     .global_image-banner .banner-content {
@@ -45,6 +49,7 @@
   }
 {%- endstyle -%}
 
+<div id="{{ section.settings.section_id | handle }}">
 <div id="Banner-{{ section.id }}" class="banner hero-banner global_image-banner">
     {%if section.settings.desktop_image != blank or section.settings.mobile_image != blank %}
         <div class="image">
@@ -84,7 +89,7 @@
                 </div>
                 {% if section.settings.btn_text != blank %}
                   <div class="banner-button">
-                    <a href="{{ section.settings.btn_url }}" class="cta">{{ section.settings.btn_text }}</a>
+                    <a href="{{ section.settings.btn_url }}" class="cta">{{ section.settings.btn_text }}{% render 'icon-left-arrow' %}</a>
                   </div>
                 {% endif %}
             </div>
@@ -92,12 +97,18 @@
         
     {% endif %}
 </div>
+</div>
 
 {% schema %}
 {
   "name": "Image Banner 1",
   "class": "image-banner-1",
   "settings": [
+    {
+      "type": "text",
+      "label": "Add Section Id",
+      "id": "section_id"
+    },
     {
       "type": "header",
       "content": "Image content"

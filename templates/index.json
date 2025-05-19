@@ -37,21 +37,21 @@
           "type": "links",
           "settings": {
             "link_lable": "Our team",
-            "section_id": "membership-credits"
+            "section_id": "team"
           }
         },
         "links_YWPPcV": {
           "type": "links",
           "settings": {
             "link_lable": "Locations",
-            "section_id": "experience"
+            "section_id": "locations"
           }
         },
         "links_yeAjBV": {
           "type": "links",
           "settings": {
             "link_lable": "About",
-            "section_id": "FAQ"
+            "section_id": "about"
           }
         }
       },
@@ -69,7 +69,7 @@
     "global_sudio_classes_qkDydH": {
       "type": "global_sudio-classes",
       "settings": {
-        "section_id": "The studio",
+        "section_id": "studio-classes",
         "title": "The studio / classes",
         "description": "30 Mega Pro Megaformers, state-of-the-art AV, custom chromotherapy lighting, heated flooring, and world-class programming - all expertly crafted and delivered in a signature Sweat and Tonic experience."
       }
@@ -180,8 +180,10 @@
       ],
       "name": "Instructors Team",
       "settings": {
+        "section_id": "team",
         "background_image": "shopify://shop_images/Frame_6418.png",
-        "image_overlay_opacity": 0,
+        "mobile_background_image": "shopify://shop_images/Frame_6418_aa253290-a495-443a-921b-2413b935bbcf.png",
+        "image_overlay_opacity": 40,
         "heading": "Instructors <br> Who Lead the Way",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at justo a elit convallis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec non magna ac ante tincidunt sollicitudin.",
         "button_text": "SEE THE FULL Team",
@@ -230,6 +232,7 @@
       ],
       "name": "Store locations",
       "settings": {
+        "section_id": "locations",
         "full_width": true,
         "title": "Two State ofthe Art Locations",
         "content": "S&T creates a local, curated fitness experience for sweat addicts to challenge their minds and bodies within a community that grows, succeeds, and celebrates together.",
@@ -242,6 +245,7 @@
       "type": "global_image-banner-1",
       "name": "Global Image Banner 1",
       "settings": {
+        "section_id": "about",
         "desktop_image": "shopify://shop_images/Section_1_440f8a13-3b60-4fe1-8710-5c98608ab72a.png",
         "mobile_image": "shopify://shop_images/Section_e5005f4b-abf6-4494-9493-0e6f5a07150a.png",
         "overlay_opacity": 0,

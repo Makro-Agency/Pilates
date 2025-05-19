@@ -4,15 +4,20 @@
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 {%- endstyle -%}
-
+<div id="{{ section.settings.section_id | handle }}">
 <section id="team-{{ section.id }}" class="instructors-team {% if section.settings.background_image != blank %}has-bg-image{% endif %}" id="instructors-team-{{ section.id }}">
   {% if section.settings.background_image != blank %}
-    <div class="instructors-bg-image">
+    <div class="instructors-bg-image desktop-img">
         <img src="{{ section.settings.background_image | image_url }}" height="auto" width="auto" class="background-img">
-      {% comment %} {{ section.settings.background_image | image_url | img_tag: 'Background image', 'background-img' }} {% endcomment %}
+      
     </div>
   {% endif %}
-
+  {% if section.settings.mobile_background_image != blank %}
+    <div class="instructors-bg-image mobile-img">
+        <img src="{{ section.settings.mobile_background_image | image_url }}" height="auto" width="auto" class="background-img">
+      
+    </div>
+  {% endif %}
     <div class="instructors-team-wrapper">
   
         <div class="padding-sections">
@@ -66,8 +71,8 @@
         {% endfor %}
         </div>
     </div>
-
 </section>
+</div>
 
 {% schema %}
 {
@@ -75,9 +80,19 @@
   "max_blocks": 4,
   "settings": [
     {
+      "type": "text",
+      "label": "Add Section Id",
+      "id": "section_id"
+    },
+    {
       "type": "image_picker",
       "label": "Background Image",
       "id": "background_image"
+    },
+    {
+      "type": "image_picker",
+      "label": "Mobile Background Image",
+      "id": "mobile_background_image"
     },
     {
       "type": "range",

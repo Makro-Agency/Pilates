@@ -22,6 +22,10 @@
     .studio-content { flex-direction: column;}
     .studio-content > * {
         max-width: 100%;
-        margin: 16px 0 0;
+    }
+}
+@media only screen and (max-width: 749px) {
+    .studio-content p.description {
+        display: none;
     }
 }

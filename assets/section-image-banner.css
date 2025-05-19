@@ -57,7 +57,7 @@
 
   .banner--medium.banner--mobile-bottom:not(.banner--adapt) .banner__media,
   .banner--medium.banner--stacked:not(.banner--mobile-bottom):not(.banner--adapt) > .banner__media {
-    height: 34rem;
+    height: 54.8rem;
   }
 
   .banner--large.banner--mobile-bottom:not(.banner--adapt) .banner__media,
@@ -332,7 +332,7 @@
     bottom: 0;
     left: 0;
     margin-bottom: 1rem;
-    padding-inline: 1rem;
+    padding: 4rem 2rem;
   }
 
   .banner:not(.banner--mobile-bottom) .field__input,
