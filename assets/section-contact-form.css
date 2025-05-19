@@ -197,7 +197,7 @@
 .contact_form .field input,
 .contact_form .field textarea {
   background: transparent;
-  border-bottom: 1px solid rgba(var(--color-foreground), 0.2);
+  border-bottom: 1px solid rgba(var(--color-foreground), 1);
   box-shadow: none;
   padding: 15px 0;
   color: rgba(var(--color-foreground), 1);
@@ -240,7 +240,7 @@
   position: relative;
   overflow: hidden;
 }
-.sec-contact-form { overflow: visible;}
+/* .sec-contact-form { overflow: visible;} */
 .sec-contact-form:before {
   position: absolute;
   content: "";
@@ -269,7 +269,19 @@
   filter: blur(200px);
   top: 152%;
 }
-
+.template--private-training .sec-contact-form:after {
+  content: '';
+  position: absolute;
+  width: 1057.73px;
+  height: 1733.22px;
+  right: -50%;
+  top: -50%;
+  background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%);
+  opacity: 0.3;
+  filter: blur(250px);
+  transform: rotate(104.55deg);
+  z-index: 0;
+}
 @media screen and (min-width: 1200px) {
   .rightContactPart .contact__fields {
     grid-column-gap: 3.42857rem;
@@ -365,6 +377,11 @@
 @media screen and (max-width: 749px) {
   .sec-contact-form .contact .leftBGPart:before {
     background-size: 70.5px;
+  }
+  .template--private-training .sec-contact-form::after {
+    opacity: 0.2;
+    height: 700px;
+    top:0;
   }
 
 }
