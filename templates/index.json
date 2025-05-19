@@ -86,7 +86,7 @@
             "heading_size": "h2",
             "subheading": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "button_label": "Explore Studio",
-            "link": "",
+            "link": "#",
             "image_overlay_opacity": 0,
             "color_scheme": "inverse"
           }
