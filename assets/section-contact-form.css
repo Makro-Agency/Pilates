@@ -45,6 +45,35 @@
   font-size: 14px;
   min-width: 190px;
 }
+ .sec-contact-form .contact .button {
+  min-width: 190px;
+  display: flex;
+  min-height: 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1.5px solid #FFF;
+  background-color: transparent;
+  color: #FFF;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+ .sec-contact-form .contact .button:hover {
+  background-color: white;
+  color: #000;
+}
+
+ .sec-contact-form .contact .button:before,
+ .sec-contact-form .contact .button:after {
+  opacity: 0;
+}
 
 .sec-contact-form .contact>* {
   padding: 120px 50px;
@@ -53,6 +82,10 @@
 .sec-contact-form .contact .leftBGPart {
   background: #26221B;
   color: #fff;
+}
+.sec-contact-form .contact .leftBGPart >* {
+  z-index: 1;
+  position: relative;
 }
 
 
@@ -63,7 +96,7 @@
 .sec-contact-form .contact .leftBGPart {
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-end;
+  align-content: flex-start;
 }
 
 .sec-contact-form .contact .leftBGPart h6,
@@ -92,10 +125,48 @@
   --color-button: 255, 255, 255;
   --color-button-text: 255, 255, 255;
 }
+.sec-contact-form .contact .leftBGPart .button--secondary {
+  color: #FFF;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  border-width: 0;
+  padding: 0;
+  border-bottom: 1.5px solid transparent;
+  margin-top: 40px;
+  min-height: unset;
+}
 
+ .sec-contact-form .contact .leftBGPart .button--secondary:hover {
+  border-color: #fee4b1;
+  background-color: transparent;
+  color: white;
+}
+ .sec-contact-form .contact .leftBGPart .button--secondary:after,
+ .sec-contact-form .contact .leftBGPart .button--secondary::before {
+  opacity: 0;
+}
 
+ .sec-contact-form .contact .leftBGPart .button--secondary svg {
+  margin-left: 8px;
+}
+
+ .sec-contact-form .contact .rightContactPart .title {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  /* 40px */
+  text-transform: uppercase;
+}
 .sec-contact-form .contact .rightContactPart {
   background: rgb(var(--gradient-background));
+  z-index: 3;
 }
 
 .contact .form-status {
@@ -126,7 +197,7 @@
 .contact_form .field input,
 .contact_form .field textarea {
   background: transparent;
-  border-bottom: 1px solid rgba(var(--color-foreground), 0.2);
+  border-bottom: 1px solid rgba(var(--color-foreground), 1);
   box-shadow: none;
   padding: 15px 0;
   color: rgba(var(--color-foreground), 1);
@@ -169,7 +240,7 @@
   position: relative;
   overflow: hidden;
 }
-
+/* .sec-contact-form { overflow: visible;} */
 .sec-contact-form:before {
   position: absolute;
   content: "";
@@ -198,7 +269,19 @@
   filter: blur(200px);
   top: 152%;
 }
-
+.template--private-training .sec-contact-form:after {
+  content: '';
+  position: absolute;
+  width: 1057.73px;
+  height: 1733.22px;
+  right: -50%;
+  top: -50%;
+  background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%);
+  opacity: 0.3;
+  filter: blur(250px);
+  transform: rotate(104.55deg);
+  z-index: 0;
+}
 @media screen and (min-width: 1200px) {
   .rightContactPart .contact__fields {
     grid-column-gap: 3.42857rem;
@@ -220,7 +303,13 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
+  .template--private-training  .sec-contact-form:before{
+    opacity: 0;
+  }
+  .template--private-training .hit-team:before {
+    left: 0;
+    top: -17%;
+  }
   @media (min-width: 750px) {
     .sec-contact-form .contact>* {
       padding-left: 3.2rem;
@@ -289,13 +378,18 @@
   .sec-contact-form .contact .leftBGPart:before {
     background-size: 70.5px;
   }
+  .template--private-training .sec-contact-form::after {
+    opacity: 0.2;
+    height: 700px;
+    top:0;
+  }
 
 }
 
 @media screen and (max-width: 511px) {
-  .sec-contact-form .contact .leftBGPart {
+  /* .sec-contact-form .contact .leftBGPart {
     min-height: 80vw;
-  }
+  } */
 }
 
 

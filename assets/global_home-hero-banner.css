@@ -128,7 +128,6 @@
     text-transform: uppercase;
 }
 .global_home-hero-banner a.cta {
-    border-bottom: 1.5px solid transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,19 +135,23 @@
     flex-shrink: 0;
     color: var(--White, #FFF);
     font-family: var(--font-heading-family);
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 100%;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    border: 1.5px solid var(--White, #FFF);
+    padding: 16px 20px 14px 20px;
 }
 .global_home-hero-banner a.cta:hover {
-    border-color: #FEE4B1;
+    background: #ffffff;
+    color: #000000;
 }
+.global_home-hero-banner a.cta svg { display: none; }
 .global_home-hero .newsletter {
     position: absolute;
     bottom: 80px;
@@ -253,7 +256,7 @@ form.newsletter-form:not(#id) .newsletter-form__button:hover {
     }
     .global_home-hero-banner.hero-banner .image figure {
         height: 100%;
-        padding-bottom: 100%;
+        padding-bottom: 179.5%;
     }
     .global_home-hero-banner.hero-banner .image figure img {
         position: absolute;

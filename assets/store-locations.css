@@ -1,6 +1,6 @@
 .store-locations {
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 .store-locations::before {
     content: "";
@@ -198,9 +198,7 @@
     bottom: -25%;
     left: -50%;
   }
-}
-@media screen and (max-width: 374px){
   .store-locations-item .service_line{
-    width: 50%;
+    width: 100%;
   }
 }
