@@ -192,9 +192,9 @@ letter-spacing: 0;
   }
    .hero-banner-2 a.cta:hover:after{ opacity:1; }
 
-@media screen and (max-width:767px){
+/* @media screen and (max-width:767px){
 .template--about-us .shopify-section{ overflow:hidden;}
-}
+} */
 
 @media only screen and (min-width: 992px) {
     .template-index .hero-banner-2 .banner-content {

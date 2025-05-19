@@ -59,8 +59,22 @@ text-transform: uppercase;
    }
   
 }
-
-
+@media screen and (max-width:767px){
+.about-our-mission-wrapper .banner-content-wrapper{ position:relative; }
+ .about-our-mission-wrapper .banner-content-wrapper:after{
+content:'';
+position: absolute;
+width: 142%; 
+height: 258.6%; 
+left: -15%; 
+top: -37%; 
+background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
+opacity: 0.3;
+filter: blur(100px);
+transform: rotate(67.77deg);
+}
+}
+ 
 
 
 
