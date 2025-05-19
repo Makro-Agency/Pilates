@@ -53,7 +53,7 @@
         "logo_position": "top-center",
         "hide-header": true,
         "menu": "mega-menu",
-        "menu_type_desktop": "dropdown",
+        "menu_type_desktop": "drawer_with_mega",
         "title": "The best of boutique fitness & wellness under one roof",
         "image_1": "shopify://shop_images/menu-1.png",
         "title_1": "TRY 3 CLASSES FOR $60",
