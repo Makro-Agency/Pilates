@@ -9,6 +9,7 @@
 
 .hit-hero .banner__heading {
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .hit-hero-info .link:before {
@@ -39,6 +40,7 @@
   letter-spacing: 0.32px;
   text-transform: uppercase;
   padding: 16px 20px 12px 20px;
+  border-radius: 0;
 }
 
 .hit-hero .banner__buttons .button:hover {
@@ -140,5 +142,12 @@
 
   .hit-hero .banner__box {
     padding-top: 180px;
+  }
+  .hit-hero-info-row p{
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
   }
 }

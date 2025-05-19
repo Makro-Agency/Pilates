@@ -12,6 +12,7 @@
   opacity: 0.4;
   filter: blur(200px);
   transform: rotate(148.5deg);
+  z-index: 1;
 }
 
 .hit-classes:after {
@@ -28,6 +29,7 @@
   filter: blur(250px);
   top: 141px;
   left: 679px;
+  z-index: 1;
 }
 
 .hit-classes .row {
@@ -103,21 +105,22 @@
 }
 
 .hit-classes-table .btn-row .button {
-  min-width: auto;
-  width: 49%;
-  border: 1px solid #FFF;
-  border-radius: 0;
-  height: 47px;
-  text-align: center;
-  justify-content: center;
-  margin-left: 0;
-  color: #FFF;
-  font-family: "ITC Avant Garde Gothic Std";
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 100%;
-  letter-spacing: 0.32px;
-  background-color: transparent;
+      min-width: auto;
+    width: 49%;
+    border: 1px solid #FFF;
+    border-radius: 0;
+    min-height: 47px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 0;
+    color: #FFF;
+    font-family: "ITC Avant Garde Gothic Std";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    background-color: transparent;
+    padding: 0 20px;
 }
 
 .hit-classes-table .btn-row .button--secondary {

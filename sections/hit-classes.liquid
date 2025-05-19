@@ -158,7 +158,7 @@
           <div class="hit-classes-more" data-hit-classes>
             {%- assign showMore = _size | minus: 9 -%}
             <div class="h5 click-to-show" data-show="9" data-total-show="{{ showMore }}">+ {% if showMore > 9 %}9{% else %}{{ _size | minus: 9 }}{% endif %} MORE</div>
-            <a class="link global-link" href="#" data-show-all>Show all<span class="icon-wrap">{% render 'icon-link-arrow' %}</span></a>
+            <a class="link global-link" href="#" data-show-all>Show all<span class="icon-wrap">{% render 'btn-down-arrow' %}</span></a>
           </div>
         {%- endif -%}    
       </div>

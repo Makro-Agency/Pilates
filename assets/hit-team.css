@@ -9,16 +9,19 @@
   opacity: 0.3;
   filter: blur(250px);
   transform: rotate(104.55deg);
-  z-index: 0;
+  z-index: 1;
 }
-
+.section.hit-team{
+  overflow: visible;
+}
 .hit-team {
   position: relative;
   overflow: hidden;
 }
 
-.hit-team .multicolumn {
+.hit-team .multicolumn .page-width {
   z-index: 2;
+  position: relative;
 }
 
 .hit-team .background-none .multicolumn-card__image-wrapper {
@@ -118,14 +121,18 @@
   height: 100%;
   width: 100%;
   content: "";
-  background-image: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Vector-1.svg?v=1701258878');
+  /* background-image: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Vector-1.svg?v=1701258878'); */
   background-repeat: repeat;
   background-size: 60%;
   opacity: .2;
   background-position: top right;
-  opacity: 0;
-}
 
+}
+.template--private-training .hit-team .full-tema-li .link:after{
+  opacity: 1;
+  background-color: grey;
+  z-index: -1;
+}
 .hit-team .section-padding {
   padding-top: 180px;
   padding-bottom: 180px;
