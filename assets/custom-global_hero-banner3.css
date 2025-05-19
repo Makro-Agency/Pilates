@@ -179,9 +179,9 @@ letter-spacing: 0;
   .hero-banner-3 a.cta:after{
     content: "";
     position: absolute;
-    background-color: #fff;
+    background-color: rgba(254, 228, 177, 1);
     width: 100%;
-    height: 1px;
+    height: 1.8px;
     top: unset;
     bottom: -5px;
     opacity: 0;
