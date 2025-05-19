@@ -276,9 +276,9 @@ transform: rotate(-115.27deg);
 .custom-location .card .info .learn-more:after{
   content: "";
     position: absolute;
-    background-color: #fff;
+    background-color: rgba(254, 228, 177, 1);
     width: 100%;
-    height: 1px;
+    height: 1.8px;
     top: unset;
     bottom: -5px;
     opacity: 0;
@@ -293,9 +293,9 @@ transform: rotate(-115.27deg);
 .custom-location .card .learn-more-mobile:after{
   content: "";
     position: absolute;
-    background-color: #fff;
+    background-color:rgba(254, 228, 177, 1);
     width: 100%;
-    height: 1px;
+    height: 1.8px;
     top: unset;
     bottom: -5px;
     opacity: 0;
