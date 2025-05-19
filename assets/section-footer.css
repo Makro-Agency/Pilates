@@ -788,6 +788,13 @@ body footer #bb_form .form-group .form-control::placeholder {opacity: 0.4;}
 body footer #bb_form .form-group .form-control:focus{
   border-color: #fff;
 }
+body footer #bb_form button#bb_submit {
+  border-radius: 0;
+}
+body footer #bb_form button#bb_submit:hover {
+  background: #ffffff !important;
+  color: #000 !important;
+}
 .footer-logo {
   display: flex;
   flex-direction: column;
@@ -877,6 +884,10 @@ body footer #bb_form .form-group .form-control:focus{
   .footer-top .footer-block--menu, .footer-center .col-right .inner-col, .footer-center .col-left{
     padding: 40px 20px;
     flex-direction: column;
+  }
+  .footer-center .col-left {
+    padding-left: 0;
+    padding-right: 0;
   }
   .footer-center .col-time {
     padding-left: 20px;

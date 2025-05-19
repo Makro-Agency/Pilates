@@ -34,7 +34,7 @@
     {%- endcapture -%}
 
     <div
-      id="Slide-{{ section.id }}-{{ forloop.index }}"
+      id="Slide-{{ section.id }}-{{ forloop.index }} {{ section.settings.section_id | handle }}"
       class="multicolumn-list__item store-locations-item grid__item{{ empty_column }}"
       {{ block.shopify_attributes }}
     >
@@ -122,7 +122,7 @@
     </style>
   {%- endif -%}
   
-  <div class="multicolumn1 color-{{ section.settings.color_scheme }} gradient{% if section.settings.title == blank %} no-heading{% endif %}">
+  <div id="{{ section.settings.section_id | handle }}" class="multicolumn1 color-{{ section.settings.color_scheme }} gradient{% if section.settings.title == blank %} no-heading{% endif %}">
     <div
       class="isolate{% if settings.animations_reveal_on_scroll %} scroll--trigger animate-slide-in{% endif %}"
       {% if settings.animations_reveal_on_scroll %}data-cascade{% endif %}
@@ -163,6 +163,11 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "text",
+      "label": "Add Section Id",
+      "id": "section_id"
+    },
     {
       "type": "checkbox",
       "id": "full_width",

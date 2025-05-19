@@ -18,7 +18,7 @@
   color: #ffffff;
   background-color: #000000;
   margin-bottom: 15px;
-  z-index: 2;
+  z-index: 1;
 }
   .instructors-team::after {
     content: "";
@@ -131,6 +131,7 @@
   .instructor-image {
     position: relative;
     aspect-ratio: 465/581;
+    line-height: 0;
   }
   
   .instructor-image::after {
@@ -188,6 +189,9 @@
     text-decoration: none;
     line-height: 0;
   }
+  .instructor-link:hover svg path {
+    stroke:  #FEE4B1;
+  }
   @media screen and (max-width: 1600px) {
     .instructor-name {
       font-size: 20px;
@@ -214,6 +218,7 @@
   @media screen and (max-width: 749px) {
     .instructors-grid {
       grid-template-columns: 1fr;
+      padding: 0 2rem;
     }
     
     .instructors-heading {
@@ -232,5 +237,11 @@
       right: -70%;
       top: auto;
       bottom: 0%;
+    }
+    .instructor-image { 
+      aspect-ratio: 350.00/437.50;
+    }
+    .instructors-team {
+      padding: 8rem 0;
     }
   }
