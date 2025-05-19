@@ -156,15 +156,32 @@ transform: rotate(104.55deg);
 }
 
 @media screen and (max-width:767px) {
+.custom-workout .custom-workout__cards:after{
+content:'';
+position: absolute;
+width:219.3%;
+height: 94.7%; 
+left: -64%;
+top: 2%; 
+background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%);
+opacity: 0.3;
+filter: blur(250px);
+transform: rotate(151.97deg);
+z-index:0;
+pointer-events:none; 
+	}
   .custom-workout{ padding:80px 0; }
-.custom-workout .custom-workout__card{         background: #ffffff05; }
+.custom-workout .custom-workout__card{  background: rgba(255, 255, 255, 0.02);
+box-shadow: inset -5px -5px 60px rgba(255, 255, 255, 0.02);
+backdrop-filter: blur(4px);
+border-radius: 2px;      }
 .custom-workout	.custom-workout__heading,
 .custom-workout	p.custom-workout__subtitle {
 		padding: 0 20px;
 	}
 
 	.custom-workout .custom-workout__card {
-		padding: 20px;
+		padding: 60px 40px 40px 40px;
 	}
 
 .custom-workout	.custom-workout__cards {

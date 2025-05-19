@@ -151,18 +151,18 @@
 }
 @media screen and (max-width:768px){
 .custom-location .wrapper:before {
-	content: '';
-	position: absolute;
+content: '';
+position: absolute;
 width: 144.5%;
 height: 77.2%;
 left: -101%;
 top: -41%;
 background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
-	opacity: 0.32;
-	filter: blur(250px);
-	transform: rotate(-115.27deg);
-	z-index: 0;
-	pointer-events: none;
+opacity: 0.32;
+filter: blur(250px);
+transform: rotate(-115.27deg);
+z-index: 0;
+pointer-events: none;
 }
 .custom-location .wrapper:after {
 content:'';
@@ -170,7 +170,7 @@ position: absolute;
 width: 371.1%; 
 height: 45.1%; 
 left: -184%;
-top: 67%;
+top: 74.5%;
 background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%);
 opacity: 0.32;
 filter: blur(250px);
