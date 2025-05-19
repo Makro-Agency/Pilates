@@ -669,7 +669,7 @@
         "486c1659-7943-4d3f-a46d-0d16c16aa358": {
           "type": "function",
           "settings": {
-            "enable_accord": true,
+            "enable_accord": false,
             "text_clr": "#ffffff",
             "svg_1": "<svg viewbox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"#ffffff\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <defs> <style>.cls-1{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style> </defs> <g id=\"ic-sport-dumbbell\"> <line class=\"cls-1\" x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"></line> <line class=\"cls-1\" x1=\"5\" y1=\"10\" x2=\"5\" y2=\"14\"></line> <line class=\"cls-1\" x1=\"8\" y1=\"8\" x2=\"8\" y2=\"16\"></line> <line class=\"cls-1\" x1=\"16\" y1=\"8\" x2=\"16\" y2=\"16\"></line> <line class=\"cls-1\" x1=\"19\" y1=\"10\" x2=\"19\" y2=\"14\"></line> </g> </g></svg>",
             "title_1": "IMPROVE PERFORMANCE",
@@ -780,7 +780,7 @@
       "name": "t:sections.contact-form.presets.name",
       "settings": {
         "bg_color_left": "#000000",
-        "text_color_left": "#fff",
+        "text_color_left": "#ffffff",
         "sub_color_left": "#ffffff",
         "subheading_left": "Ready to sweat?",
         "heading_left": "LET’S GET YOU IN",
