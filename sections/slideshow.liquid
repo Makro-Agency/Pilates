@@ -292,6 +292,166 @@
   <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
+
+
+<script>
+
+  class SlideshowComponent extends HTMLElement {
+  constructor() {
+    super();
+    this.slider = this.querySelector('.slider');
+    this.slides = this.slider.querySelectorAll('.slider__slide');
+    this.prevButton = this.querySelector('.slider-button--prev');
+    this.nextButton = this.querySelector('.slider-button--next');
+    this.indicatorButtons = this.querySelectorAll('.slider-counter__link');
+    this.autoplayToggle = this.querySelector('.slideshow__autoplay');
+
+    this.currentIndex = 0;
+    this.totalSlides = this.slides.length;
+    this.autoplay = this.dataset.autoplay === 'true';
+    this.speed = parseInt(this.dataset.speed) || 5000;
+    this.timer = null;
+
+    this.startX = 0;
+    this.isDragging = false;
+    this.dragThreshold = 50;
+
+    this.init();
+  }
+
+  init() {
+    this.updateSlides();
+    this.attachEventListeners();
+
+    if (this.autoplay) {
+      this.startAutoplay();
+    }
+  }
+
+  attachEventListeners() {
+    if (this.prevButton && this.nextButton) {
+      this.prevButton.addEventListener('click', () => this.showPrevSlide());
+      this.nextButton.addEventListener('click', () => this.showNextSlide());
+    }
+
+    if (this.indicatorButtons.length) {
+      this.indicatorButtons.forEach((btn, i) => {
+        btn.addEventListener('click', () => this.showSlide(i));
+      });
+    }
+
+    if (this.autoplayToggle) {
+      this.autoplayToggle.addEventListener('click', () => this.toggleAutoplay());
+    }
+
+    // Drag Events
+    this.slider.addEventListener('mousedown', this.onDragStart.bind(this));
+    this.slider.addEventListener('touchstart', this.onDragStart.bind(this), { passive: true });
+    window.addEventListener('mouseup', this.onDragEnd.bind(this));
+    window.addEventListener('touchend', this.onDragEnd.bind(this));
+    window.addEventListener('mousemove', this.onDragMove.bind(this));
+    window.addEventListener('touchmove', this.onDragMove.bind(this), { passive: false });
+  }
+
+  showSlide(index) {
+    if (index < 0) index = this.totalSlides - 1;
+    if (index >= this.totalSlides) index = 0;
+
+    this.slides[this.currentIndex].removeAttribute('tabindex');
+    this.slides[this.currentIndex].setAttribute('aria-hidden', 'true');
+
+    this.currentIndex = index;
+
+    this.updateSlides();
+
+    if (this.autoplay) {
+      this.restartAutoplay();
+    }
+  }
+
+  showPrevSlide() {
+    this.showSlide(this.currentIndex - 1);
+  }
+
+  showNextSlide() {
+    this.showSlide(this.currentIndex + 1);
+  }
+
+  updateSlides() {
+    this.slides.forEach((slide, i) => {
+      slide.style.display = i === this.currentIndex ? 'block' : 'none';
+      slide.setAttribute('aria-hidden', i !== this.currentIndex);
+    });
+
+    const counterCurrent = this.querySelector('.slider-counter--current');
+    if (counterCurrent) {
+      counterCurrent.textContent = this.currentIndex + 1;
+    }
+
+    this.indicatorButtons.forEach((btn, i) => {
+      btn.classList.toggle('active', i === this.currentIndex);
+    });
+  }
+
+  startAutoplay() {
+    this.timer = setInterval(() => {
+      this.showNextSlide();
+    }, this.speed);
+  }
+
+  stopAutoplay() {
+    clearInterval(this.timer);
+    this.timer = null;
+  }
+
+  toggleAutoplay() {
+    if (this.timer) {
+      this.stopAutoplay();
+      this.classList.add('slideshow__autoplay--paused');
+    } else {
+      this.startAutoplay();
+      this.classList.remove('slideshow__autoplay--paused');
+    }
+  }
+
+  restartAutoplay() {
+    if (this.timer) {
+      this.stopAutoplay();
+      this.startAutoplay();
+    }
+  }
+
+  onDragStart(e) {
+    this.isDragging = true;
+    this.startX = e.touches ? e.touches[0].clientX : e.clientX;
+  }
+
+  onDragMove(e) {
+    if (!this.isDragging) return;
+
+    const currentX = e.touches ? e.touches[0].clientX : e.clientX;
+    const diff = currentX - this.startX;
+
+    if (Math.abs(diff) > this.dragThreshold) {
+      this.isDragging = false;
+
+      if (diff > 0) {
+        this.showPrevSlide();
+      } else {
+        this.showNextSlide();
+      }
+    }
+  }
+
+  onDragEnd() {
+    this.isDragging = false;
+  }
+}
+
+customElements.define('slideshow-component', SlideshowComponent);
+
+</script>
+
 {% schema %}
 {
   "name": "t:sections.slideshow.name",
