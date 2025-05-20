@@ -115,7 +115,7 @@ body:has(.drawer-with-mega header-drawer.active) { overflow:hidden; }
 .drawer-with-mega header-drawer .drawer-mega-icon { display:flex; position: relative; z-index: 3; height:40px; width:40px; display:flex; 
   justify-content:center; align-items:center; }
 .drawer-with-mega header-drawer .drawer-mega-icon .icon { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); transition: all .3s ease 0s; }
-.drawer-with-mega header-drawer .drawer-mega-icon .icon-hamburger { width:40px; height:20px; left:80%; top:80%; cursor:pointer; transition: all .3s ease 0s; }
+.drawer-with-mega header-drawer .drawer-mega-icon .icon-hamburger { width:40px; height:20px; left:80%; top:50%; cursor:pointer; transition: all .3s ease 0s; }
 .drawer-with-mega header-drawer .drawer-mega-icon .icon-close { width:20px; height:auto; cursor:pointer; transform:translate(-50%,-50%) scale(0); transition: all .3s ease 0s; }
 
 .drawer-with-mega header-drawer .drawer-mega-content { position:absolute; background: #000; color:#fff; padding:113px 50px 15px 50px; width: 100%; z-index: 1;
