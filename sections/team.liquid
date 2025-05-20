@@ -1,7 +1,6 @@
 {{ 'team.css' | asset_url | stylesheet_tag: preload: true }}
 {{ 'custom-team.css' | asset_url | stylesheet_tag: preload: true }}
 {%- assign placeholderImg = 'https://cdn.shopify.com/s/files/1/0277/8280/7635/files/user-pacleholder.png?v=1701148515' -%}
-
 {%- capture sizes -%}
 (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)
 {%- endcapture -%}
@@ -49,6 +48,52 @@
   {%- endfor -%}
 {%- endcapture -%}
 
+{%- capture teamDatamobile -%}
+  {%- assign loading = 'eager' -%}
+  {%- assign fetchPriority = 'high' -%}
+
+  {%- for block in section.blocks -%}
+    {%- if forloop.index > 4 -%}
+      {%- assign loading = 'lazy' -%}
+      {%- assign fetchPriority = 'auto' -%}
+    {%- endif -%}
+    {%- if block.settings.name != blank -%}
+      <div class="box paginated-box" data-tags="{{ block.settings.sp_tag | downcase }}">
+        <div class="team-box">
+          {%- if block.settings.image != blank -%}
+            <figure>
+              {{- block.settings.image | image_url: width: 533 | image_tag: loading: loading, fetchPriority: fetchPriority, widths: '165,360,533,720,940,1066', sizes: sizes -}}
+            </figure>
+          {%- else -%}
+            <div class="placeholder-img">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {%- endif -%}
+          <div class="team-content">
+          {%- if block.settings.name != blank -%}
+            <h3 class="team-name">
+              {{ block.settings.name }} 
+              {% if block.settings.url != blank %}
+                <a href="{{ block.settings.url }}">{% render 'custom-icon-right-arrow' %}</a>
+              {% endif %}
+            </h3>
+            {%- endif -%}
+          {%- if block.settings.sp_tag != blank -%}
+            <div class="team-info">{{ block.settings.sp_tag }}</div>
+            {%- assign totalSpecialtags = totalSpecialtags | append: block.settings.sp_tag | append: ', ' -%}
+          {%- endif -%}
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
+  <div class="custom-pagination">
+  <span class="arrow-prev">{% render 'custom-pagination-arrow-left' %}</span>
+  <span class="page-count"><span id="currentPage">1</span> / <span id="totalPages">1</span></span>
+  <span class="arrow-next">{% render 'custom-pagination-arrow-right' %}</span>
+</div>
+{%- endcapture -%}
+
 
 {%- assign filterdTags = totalSpecialtags | split: ", " | uniq -%}
 
@@ -59,7 +104,28 @@
   </div>
 
   {%- if teamData != blank -%}
-    <div class="team-list-box">
+    <div class="team-list-box desktop">
+    
+      {%- if filterdTags[0] != blank -%}
+        <div class="tabs-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-team-filter-btn>
+          <button class="active btn" data-tags="all">Show All</button>
+          {%- for tag in filterdTags -%}
+            <button class="btn" data-tags="{{ tag | downcase }}">{{ tag }}</button>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+      <div id="parent" class="team-list{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-profile>
+  
+        {{- teamData -}}
+      </div>
+    </div>
+  {%- endif -%}
+
+
+
+  
+  {%- if teamDatamobile != blank -%}
+    <div class="team-list-box mobile">
     
       {%- if filterdTags[0] != blank -%}
         <div class="tabs-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-team-filter-btn>
@@ -78,13 +144,59 @@
        <div class="new5"></div>
         <div class="new6"></div>
          <div class="new7"></div>
-        {{- teamData -}}
+        {{- teamDatamobile -}}
       </div>
     </div>
   {%- endif -%}
   
 </div>
 
+
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const itemsPerPage = 12;
+  const boxes = Array.from(document.querySelectorAll(".team-list-box.mobile .paginated-box"));
+  const totalPages = Math.ceil(boxes.length / itemsPerPage);
+  let currentPage = 1;
+
+  const currentPageEl = document.getElementById("currentPage");
+  const totalPagesEl = document.getElementById("totalPages");
+  const prevBtn = document.querySelector(".arrow-prev");
+  const nextBtn = document.querySelector(".arrow-next");
+
+  if (boxes.length === 0) return;
+
+  totalPagesEl.textContent = totalPages;
+
+  function showPage(page) {
+    const start = (page - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+
+    boxes.forEach((box, index) => {
+      box.style.display = (index >= start && index < end) ? "block" : "none";
+    });
+
+    currentPageEl.textContent = page;
+
+  }
+
+  showPage(currentPage);
+
+  prevBtn.addEventListener("click", () => {
+    if (currentPage > 1) {
+      currentPage--;
+      showPage(currentPage);
+    }
+  });
+
+  nextBtn.addEventListener("click", () => {
+    if (currentPage < totalPages) {
+      currentPage++;
+      showPage(currentPage);
+    }
+  });
+});
+</script>
 
 
 {% schema %}
