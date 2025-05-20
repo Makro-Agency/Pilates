@@ -122,11 +122,8 @@
   {%- endif -%}
 
 
-
-  
   {%- if teamDatamobile != blank -%}
     <div class="team-list-box mobile">
-    
       {%- if filterdTags[0] != blank -%}
         <div class="tabs-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-team-filter-btn>
           <button class="active btn" data-tags="all">Show All</button>
@@ -148,9 +145,7 @@
       </div>
     </div>
   {%- endif -%}
-  
 </div>
-
 
  <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -158,12 +153,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const boxes = Array.from(document.querySelectorAll(".team-list-box.mobile .paginated-box"));
   const totalPages = Math.ceil(boxes.length / itemsPerPage);
   let currentPage = 1;
-
   const currentPageEl = document.getElementById("currentPage");
   const totalPagesEl = document.getElementById("totalPages");
   const prevBtn = document.querySelector(".arrow-prev");
   const nextBtn = document.querySelector(".arrow-next");
-
   if (boxes.length === 0) return;
 
   totalPagesEl.textContent = totalPages;
@@ -175,20 +168,15 @@ document.addEventListener("DOMContentLoaded", function () {
     boxes.forEach((box, index) => {
       box.style.display = (index >= start && index < end) ? "block" : "none";
     });
-
     currentPageEl.textContent = page;
-
   }
-
   showPage(currentPage);
-
   prevBtn.addEventListener("click", () => {
     if (currentPage > 1) {
       currentPage--;
       showPage(currentPage);
     }
   });
-
   nextBtn.addEventListener("click", () => {
     if (currentPage < totalPages) {
       currentPage++;
