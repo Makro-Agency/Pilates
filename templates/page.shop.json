@@ -1,1 +1,230 @@
-{"sections":{"banner":{"type":"landing-banner","blocks":{"4b7c0903-23e4-4df5-825b-419064497c97":{"type":"heading","settings":{"heading":"NEW COLLECTION","heading_size":"h1"}},"5a98698d-e878-434f-9d9e-7432c1389c08":{"type":"text","settings":{"text":"Style your workouts with S&T's latest collection – designed for peak performance and comfort.","text_style":"subtitle"}},"204d9368-80bf-474b-9832-3449e7b7f664":{"type":"buttons","settings":{"button_label_1":"Shop now","button_link_1":"shopify:\/\/collections\/new-collection","button_style_secondary_1":false}}},"block_order":["4b7c0903-23e4-4df5-825b-419064497c97","5a98698d-e878-434f-9d9e-7432c1389c08","204d9368-80bf-474b-9832-3449e7b7f664"],"disabled":true,"settings":{"allow_transparent_header":true,"image":"shopify:\/\/shop_images\/STxApresActif_half-zip_Rory.jpg","img_mobile":"shopify:\/\/shop_images\/STxApresActif_half-zip_Rory.jpg","image_overlay_opacity":30,"image_height":"adapt","maxWindowHeight":true,"desktop_content_position":"bottom-left","show_text_box":false,"desktop_content_alignment":"left","color_scheme":"inverse","image_behavior":"none","mobile_content_alignment":"left","show_text_below":false}},"6fbef022-0ebe-41f6-aef8-f36a8807efd3":{"type":"landing-half-banner","blocks":{"template--16876988825820__6fbef022-0ebe-41f6-aef8-f36a8807efd3-column-2":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/DSC07534.jpg","content_alignment":"bottom","title":"WOMENSWEAR","text":"COMFORT & PERFORMANCE DRIVEN","link_label":"Shop all","link":"shopify:\/\/collections\/s-t-womens"}},"template--16876988825820__6fbef022-0ebe-41f6-aef8-f36a8807efd3-column-1":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/18.png","content_alignment":"bottom","title":"MENSWEAR","text":"TRAIN, SWEAT, MOVE","link_label":"Shop all","link":"shopify:\/\/collections\/s-t-mens"}}},"block_order":["template--16876988825820__6fbef022-0ebe-41f6-aef8-f36a8807efd3-column-2","template--16876988825820__6fbef022-0ebe-41f6-aef8-f36a8807efd3-column-1"],"settings":{"allow_transparent_header":false,"image_ratio":"adapt","column_alignment":"left","color_scheme":"","padding_top":0,"padding_bottom":0}},"5b2a0859-5a12-489b-bace-b40270fc9fa6":{"type":"product-carousel","settings":{"title":"LATEST DROPS","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"new-collection","products_to_show":12,"columns_desktop":4,"enable_desktop_slider":true,"show_view_all":true,"view_all_style":"solid","color_scheme":"","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"columns_mobile":"2","swipe_on_mobile":false,"top_padding_remove":false,"bottom_padding_remove":false}},"4956a163-f607-4f23-baf2-ebb7cc629fe4":{"type":"product-carousel","settings":{"title":"ACCESSORIES","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"accessories","products_to_show":16,"columns_desktop":4,"enable_desktop_slider":true,"show_view_all":true,"view_all_style":"solid","color_scheme":"","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"columns_mobile":"2","swipe_on_mobile":false,"top_padding_remove":true,"bottom_padding_remove":false}},"00ca4ca8-cfe5-4072-a3aa-bc1a99794fe0":{"type":"product-carousel","settings":{"title":"SALE","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"sale","products_to_show":16,"columns_desktop":4,"enable_desktop_slider":true,"show_view_all":true,"view_all_style":"solid","color_scheme":"","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"columns_mobile":"2","swipe_on_mobile":false,"top_padding_remove":true,"bottom_padding_remove":false}}},"order":["banner","6fbef022-0ebe-41f6-aef8-f36a8807efd3","5b2a0859-5a12-489b-bace-b40270fc9fa6","4956a163-f607-4f23-baf2-ebb7cc629fe4","00ca4ca8-cfe5-4072-a3aa-bc1a99794fe0"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "landing-banner",
+      "blocks": {
+        "4b7c0903-23e4-4df5-825b-419064497c97": {
+          "type": "heading",
+          "settings": {
+            "heading": "NEW COLLECTION",
+            "heading_size": "h1"
+          }
+        },
+        "5a98698d-e878-434f-9d9e-7432c1389c08": {
+          "type": "text",
+          "settings": {
+            "text": "Style your workouts with S&T's latest collection – designed for peak performance and comfort.",
+            "text_style": "subtitle"
+          }
+        },
+        "204d9368-80bf-474b-9832-3449e7b7f664": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop now",
+            "button_link_1": "shopify://collections/new-collection",
+            "button_style_secondary_1": false
+          }
+        }
+      },
+      "block_order": [
+        "4b7c0903-23e4-4df5-825b-419064497c97",
+        "5a98698d-e878-434f-9d9e-7432c1389c08",
+        "204d9368-80bf-474b-9832-3449e7b7f664"
+      ],
+      "disabled": true,
+      "settings": {
+        "allow_transparent_header": true,
+        "image": "shopify://shop_images/STxApresActif_half-zip_Rory.jpg",
+        "img_mobile": "shopify://shop_images/STxApresActif_half-zip_Rory.jpg",
+        "image_overlay_opacity": 30,
+        "image_height": "adapt",
+        "maxWindowHeight": true,
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "show_text_below": false
+      }
+    },
+    "6fbef022-0ebe-41f6-aef8-f36a8807efd3": {
+      "type": "landing-half-banner",
+      "blocks": {
+        "template--16876988825820__6fbef022-0ebe-41f6-aef8-f36a8807efd3-column-2": {
+          "type": "column",
+          "settings": {
+            "content_alignment": "bottom",
+            "title": "WOMENSWEAR",
+            "text": "COMFORT & PERFORMANCE DRIVEN",
+            "link_label": "Shop all",
+            "link": "shopify://collections/s-t-womens"
+          }
+        },
+        "template--16876988825820__6fbef022-0ebe-41f6-aef8-f36a8807efd3-column-1": {
+          "type": "column",
+          "settings": {
+            "content_alignment": "bottom",
+            "title": "MENSWEAR",
+            "text": "TRAIN, SWEAT, MOVE",
+            "link_label": "Shop all",
+            "link": "shopify://collections/s-t-mens"
+          }
+        }
+      },
+      "block_order": [
+        "template--16876988825820__6fbef022-0ebe-41f6-aef8-f36a8807efd3-column-2",
+        "template--16876988825820__6fbef022-0ebe-41f6-aef8-f36a8807efd3-column-1"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "5b2a0859-5a12-489b-bace-b40270fc9fa6": {
+      "type": "product-carousel",
+      "settings": {
+        "title": "LATEST DROPS",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-collection",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "4956a163-f607-4f23-baf2-ebb7cc629fe4": {
+      "type": "product-carousel",
+      "settings": {
+        "title": "ACCESSORIES",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "accessories",
+        "products_to_show": 16,
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "top_padding_remove": true,
+        "bottom_padding_remove": false
+      }
+    },
+    "00ca4ca8-cfe5-4072-a3aa-bc1a99794fe0": {
+      "type": "product-carousel",
+      "settings": {
+        "title": "SALE",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "sale",
+        "products_to_show": 16,
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "top_padding_remove": true,
+        "bottom_padding_remove": false
+      }
+    },
+    "slideshow_acLXdC": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_PBjp6j": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_VCHrhx": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_PBjp6j",
+        "slide_VCHrhx"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "6fbef022-0ebe-41f6-aef8-f36a8807efd3",
+    "5b2a0859-5a12-489b-bace-b40270fc9fa6",
+    "4956a163-f607-4f23-baf2-ebb7cc629fe4",
+    "00ca4ca8-cfe5-4072-a3aa-bc1a99794fe0",
+    "slideshow_acLXdC"
+  ]
+}
