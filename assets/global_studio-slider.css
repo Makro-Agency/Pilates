@@ -1,0 +1,88 @@
+.featured-studios-section .studio-slider-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 5rem;
+    gap: 24px;
+    text-align: left;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.featured-studios-section .studio-slider-content > * {
+    flex: 1 0 0;
+}
+.featured-studios-section .studio-slider-content  .studio-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 0;
+}
+.featured-studios-section .studio-slider-content .studio-description p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 150%;
+    margin: 0 0 16px;
+}
+.featured-studios-section .studio-slider-content .studio-button {
+    background: none;
+    border-bottom: 1.5px solid transparent;
+    padding: 0 0 2px;
+    font-family: var(--font-heading-family);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    color: #fff;
+    min-width: unset;
+    min-height: unset;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+.featured-studios-section .studio-slider-content .studio-button:hover {
+    border-color: #fee4b1;
+}
+.studio-slider {
+    padding: 0 132px;
+    margin-bottom: 132px;
+}
+.slider-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 24px;
+    z-index: 2;
+    position: relative;
+}
+.slider-nav-button {
+    background: none;
+    padding: 0;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1199px) {
+    .featured-studios-section .studio-slider-content {
+        padding: 4rem 2rem;
+    }
+}
+@media only screen and (max-width: 989px) {
+    .featured-studios-section .studio-slider-content {
+        flex-direction: column;
+    }
+    .studio-slider {
+        padding: 0 20px;
+    }
+    .slider-navigation {
+        margin-top: 40px;
+    }
+    .studio-slider { margin-bottom: 80px; }
+}

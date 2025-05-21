@@ -1,0 +1,155 @@
+{{ 'global_studio-slider.css' | asset_url | stylesheet_tag }}
+
+<div class="featured-studios-section">
+    <div class="studio-slider">
+        <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+                {% if block.type == 'studio' %}
+                <div class="studio-slide swiper-slide" {{ block.shopify_attributes }}>
+                    <div class="studio-image-container">
+                    {% if block.settings.image_desktop %}
+                        {{ block.settings.image_desktop | image_url: width: 1800 | image_tag: 
+                        loading: 'lazy',
+                        class: 'studio-image desktop-img',
+                        alt: block.settings.title }}
+                    {% else %}
+                        {{ 'lifestyle-1' | placeholder_svg_tag: 'studio-image desktop-img placeholder' }}
+                    {% endif %}
+
+                    {% if block.settings.image_mobile %}
+                        {{ block.settings.image_mobile | image_url: width: 900 | image_tag: 
+                        loading: 'lazy',
+                        class: 'studio-image mobile-img',
+                        alt: block.settings.title }}
+                    {% else %}
+                        {{ 'lifestyle-1' | placeholder_svg_tag: 'studio-image mobile-img placeholder' }}
+                    {% endif %}
+                    
+                    </div>
+                    
+                    <div class="studio-slider-content">
+                        {% if block.settings.title != blank %}<h2 class="studio-title">{{ block.settings.title }}</h2> {% endif %}
+                        <div class="content-btn-wrapper">
+                            {% if block.settings.description != blank %}<div class="studio-description">{{ block.settings.description }}</div> {% endif %}
+                            {% if block.settings.button_text %}
+                                <a href="{{ block.settings.button_link }}" class="cta studio-button">
+                                {{ block.settings.button_text }}
+                                {% render 'icon-left-arrow' %}
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        
+        <div class="slider-navigation">
+            <button class="slider-nav-button prev-slide">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M13.75 17.5L6.25 10L13.75 2.5" stroke="white" stroke-width="1.5"/>
+                </svg>
+            </button>
+        
+            <div class="slider-counter">
+                <span class="current-slide">1</span> / <span class="total-slides">{{ section.blocks.size }}</span>
+            </div>
+        
+            <button class="slider-nav-button next-slide">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M6.25 17.5L13.75 10L6.25 2.5" stroke="white" stroke-width="1.5"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize the slider
+    const studioSlider = new Swiper('.studio-slider', {
+      slidesPerView: 1,
+      spaceBetween: 5,
+      loop: true,
+      grabCursor: true,
+      navigation: {
+        nextEl: '.next-slide',
+        prevEl: '.prev-slide'
+      },
+      on: {
+        slideChange: function() {
+          document.querySelector('.current-slide').textContent = this.realIndex + 1;
+        }
+      },
+      breakpoints: {
+        992: {
+          spaceBetween: 24,
+        },
+      }
+    });
+    
+    // Update total slides count
+    document.querySelector('.total-slides').textContent = document.querySelectorAll('.studio-slide').length;
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Studio Slider",
+  "tag": "section",
+  "class": "studios-slider-section",
+  "settings": [
+    
+  ],
+  "blocks": [
+    {
+      "type": "studio",
+      "name": "Studio",
+      "limit": 12,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_desktop",
+          "label": "Desktop Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Mobile Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Studio Title"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Studio Description"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "EXPLORE STUDIO"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Studio Slider",
+      "blocks": [
+        {
+          "type": "studio"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
