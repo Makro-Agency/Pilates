@@ -167,7 +167,7 @@ text-transform: uppercase; }
 .drawer-with-mega header-drawer .drawer-mega-content .mega-nav-content-wrapper .cont-list .cont-item .cont-info .item-title { color: #FFF; font-size: 20px; 
   font-weight: 500; line-height: 100%; letter-spacing:0; margin:0 0 0 0; text-transform:uppercase;  }
 .drawer-with-mega header-drawer .drawer-mega-content .mega-nav-content-wrapper .cont-list .cont-item .cont-info .more-link { display:flex; align-items:center; color: #ffffff;
-    font-size: 12px; font-style: normal; font-weight: 450; line-height: normal; letter-spacing: 0.24px; text-transform: uppercase; margin-top:16px; text-decoration:none; 
+    font-size: 12px; font-style: normal; font-weight: 600; line-height: normal; letter-spacing: 0.24px; text-transform: uppercase; margin-top:16px; text-decoration:none; 
     font-family: Brandon Grotesque; font-family: Brandon Grotesque; } 
 .drawer-with-mega header-drawer .drawer-mega-content .mega-nav-content-wrapper .cont-list .cont-item .cont-info .more-link svg { margin-left:10px; }
 .drawer-with-mega header-drawer .drawer-mega-content .mega-nav-content-wrapper .cont-list .cont-item .cont-info .more-link svg path { stroke:#ffffff; }
