@@ -478,7 +478,7 @@ body.template--terms-conditions .rte  b{
   }
 }
 
-.template--shop #MainContent{
+/* .template--shop #MainContent{
   background-image: url("https://cdn.shopify.com/s/files/1/0915/3917/7843/files/collection_page.png?v=1747123504");
   background-size: cover;
   background-repeat: no-repeat;
@@ -486,4 +486,78 @@ body.template--terms-conditions .rte  b{
   width: 100%;
   height: 100%;
   display: block;
+} */
+ .template--shop main#MainContent:before {
+    position: absolute;
+    width: 1677.99px;
+    height: 727.5px;
+    left: -200px;
+    bottom: 69px;
+    background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%);
+    opacity: 0.4;
+    filter: blur(200px);
+    transform: rotate(148.5deg);
+    content: '';
+    pointer-events: none;
+}
+
+.template--shop main#MainContent:after {
+    position: absolute;
+    width: 1097.14px;
+    height: 561.88px;
+    right: -362px;
+    bottom: 240px;
+    background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%);
+    opacity: 0.4;
+    filter: blur(250px);
+    transform: rotate(-48.36deg);
+    content: "";
+    z-index: 0;
+    pointer-events: none;
+    /* mix-blend-mode: multiply; */
+}
+.template--shop main#MainContent >* {
+  position: relative;
+  z-index: 1;
+}
+.template--shop main#MainContent {
+  overflow: hidden;
+  position: relative;
+}
+
+@media only screen and (max-width: 480px) {
+   .template--shop main#MainContent:before{
+    width: 739.82px;
+    height: 320.75px;
+    left: -350px;
+    bottom: 25%;
+    background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%);
+    opacity: 0.4;
+    filter: blur(100px);
+    transform: rotate(179.6deg);
+  }
+  .template--shop main#MainContent:after{
+    width: 508.11px;
+    height: 260.22px;
+    left: -70.28px;
+    bottom: 20%;
+    background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%);
+    opacity: 0.4;
+    filter: blur(100px);
+    transform: rotate(-0.87deg);
+  }
+  .template--shop main#MainContent section:last-child:after{
+  content: "";
+  z-index: -1;
+  pointer-events: none;
+  position: absolute;
+  width: 563.35px;
+  height: 923.11px;
+  left: -288px;
+  bottom: -80px;
+  background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
+  opacity: 0.4;
+  filter: blur(100px);
+  transform: rotate(-91.39deg);
+  }
 }
