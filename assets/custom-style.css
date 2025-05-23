@@ -502,7 +502,7 @@ img {
 }
 .text-center {text-align: center;}
 main#MainContent {
-  overflow-x: hidden; 
+  overflow: hidden; 
 }
 main#MainContent:not(.dark--false,body.template--terms-conditions .dark--true) {
   background-color: #000;
