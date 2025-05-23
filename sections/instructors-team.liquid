@@ -5,73 +5,99 @@
   }
 {%- endstyle -%}
 <div id="{{ section.settings.section_id | handle }}">
-<section id="team-{{ section.id }}" class="instructors-team {% if section.settings.background_image != blank %}has-bg-image{% endif %}" id="instructors-team-{{ section.id }}">
-  {% if section.settings.background_image != blank %}
-    <div class="instructors-bg-image desktop-img">
-        <img src="{{ section.settings.background_image | image_url }}" height="auto" width="auto" class="background-img">
-      
-    </div>
-  {% endif %}
-  {% if section.settings.mobile_background_image != blank %}
-    <div class="instructors-bg-image mobile-img">
-        <img src="{{ section.settings.mobile_background_image | image_url }}" height="auto" width="auto" class="background-img">
-      
-    </div>
-  {% endif %}
+  <section
+    id="team-{{ section.id }}"
+    class="instructors-team {% if section.settings.background_image != blank %}has-bg-image{% endif %} scroll-trigger animate--fade-in"
+    id="instructors-team-{{ section.id }}"
+  >
+    {% if section.settings.background_image != blank %}
+      <div class="instructors-bg-image desktop-img">
+        <img
+          src="{{ section.settings.background_image | image_url }}"
+          height="auto"
+          width="auto"
+          class="background-img"
+        >
+      </div>
+    {% endif %}
+    {% if section.settings.mobile_background_image != blank %}
+      <div class="instructors-bg-image mobile-img">
+        <img
+          src="{{ section.settings.mobile_background_image | image_url }}"
+          height="auto"
+          width="auto"
+          class="background-img"
+        >
+      </div>
+    {% endif %}
     <div class="instructors-team-wrapper">
-  
-        <div class="padding-sections">
-            <div class="instructors-header">
-                {% if section.settings.heading != blank %}
-                    <h2 class="instructors-heading">{{ section.settings.heading }}</h2>
-                {% endif %}
-                
-                <div class="instructors-header-content">
-                    {% if section.settings.description != blank %}
-                    <div class="instructors-description">{{ section.settings.description }}</div>
-                    {% endif %}
-                    
-                    {% if section.settings.button_text != blank and section.settings.button_url != blank %}
-                    <div class="instructors-cta">
-                        <a href="{{ section.settings.button_url }}" class="instructors-button cta">
-                        {{ section.settings.button_text }}
-                        {% render 'icon-left-arrow' %}
-                        </a>
-                    </div>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-        
-        <div class="instructors-grid">
-        {% for block in section.blocks %}
-            {% if block.type == 'team' %}
-            <div class="instructor-card" {{ block.shopify_attributes }}>
-                {% if block.settings.instructor_image != blank %}
-                <div class="instructor-image">
-                    <img src="{{ block.settings.instructor_image | image_url }}" height="auto" width="auto" class="instructor-img">
-                </div>
-                {% endif %}
-                
-                <div class="instructor-info">
-                {% if block.settings.instructor_title != blank %}
-                    <h3 class="instructor-name">{{ block.settings.instructor_title }}</h3>
-                {% endif %}
-                
-                {% if block.settings.profile_url != blank %}
-                    <a href="{{ block.settings.profile_url }}" class="instructor-link cta">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
-                        <path d="M20.4454 24.25L27.9454 16.75M27.9454 16.75L20.4454 9.25M27.9454 16.75H4.05469" stroke="white" stroke-width="2"/>
-                      </svg>
-                    </a>
-                {% endif %}
-                </div>
-            </div>
+      <div class="padding-sections">
+        <div
+          class="instructors-header{% if settings.animations_reveal_on_scroll %} scroll-trigger--offscreen scroll-trigger animate--slide-in{% endif %}"
+          {% if settings.animations_reveal_on_scroll %}
+          data-cascade
+          style="--animation-order: 2;"
+          {% endif %}
+        >
+          {% if section.settings.heading != blank %}
+            <h2 class="instructors-heading">{{ section.settings.heading }}</h2>
+          {% endif %}
+
+          <div class="instructors-header-content">
+            {% if section.settings.description != blank %}
+              <div class="instructors-description">{{ section.settings.description }}</div>
             {% endif %}
-        {% endfor %}
+
+            {% if section.settings.button_text != blank and section.settings.button_url != blank %}
+              <div class="instructors-cta">
+                <a href="{{ section.settings.button_url }}" class="instructors-button cta">
+                  {{ section.settings.button_text }}
+                  {% render 'icon-left-arrow' %}
+                </a>
+              </div>
+            {% endif %}
+          </div>
         </div>
+      </div>
+
+      <div class="instructors-grid">
+        {% for block in section.blocks %}
+          {% if block.type == 'team' %}
+            <div class="instructor-card{% if settings.animations_reveal_on_scroll %} scroll-trigger--offscreen scroll-trigger animate--slide-in{% endif %}" 
+              {% if settings.animations_reveal_on_scroll %}
+              data-cascade style="--animation-order: {{ forloop.index | plus: 2 }};"
+              {% endif %}
+              {{ block.shopify_attributes }}>
+              {% if block.settings.instructor_image != blank %}
+                <div class="instructor-image">
+                  <img
+                    src="{{ block.settings.instructor_image | image_url }}"
+                    height="auto"
+                    width="auto"
+                    class="instructor-img"
+                  >
+                </div>
+              {% endif %}
+
+              <div class="instructor-info">
+                {% if block.settings.instructor_title != blank %}
+                  <h3 class="instructor-name">{{ block.settings.instructor_title }}</h3>
+                {% endif %}
+
+                {% if block.settings.profile_url != blank %}
+                  <a href="{{ block.settings.profile_url }}" class="instructor-link cta">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                      <path d="M20.4454 24.25L27.9454 16.75M27.9454 16.75L20.4454 9.25M27.9454 16.75H4.05469" stroke="white" stroke-width="2"/>
+                    </svg>
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
-</section>
+  </section>
 </div>
 
 {% schema %}
@@ -156,4 +182,3 @@
   ]
 }
 {% endschema %}
-

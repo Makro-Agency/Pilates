@@ -450,7 +450,15 @@ div#eligibility_create_form-inner p.option-title {
 
 }
 .banner__content_top a.button {
-  min-height: 45px;
+  min-height: 40px;
+  --buttons-radius-outset: 0;
+  padding: 1.4rem 2rem 1.2rem;
+  font-size: 1.2rem;
+  line-height: 1;
+  width: auto;
+  min-width: 1px;
+  letter-spacing: 0.02em;
+  font-family: var(--font-heading-family);
 }
 
 

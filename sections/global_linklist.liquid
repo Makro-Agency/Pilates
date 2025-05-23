@@ -5,9 +5,13 @@
     <div class="padding-sections">
         {% if section.settings.title != blank %}
             <div class="content-wrapper">
-                {% if section.settings.title != blank %}<div class="headings"><h2 class="h2 heading">{{ section.settings.title }}</h2></div>{% endif %}
+                {% if section.settings.title != blank %}
+                <div class="headings {% if settings.animations_reveal_on_scroll %} scroll-trigger--offscreen scroll-trigger animate--slide-in{% endif %}" {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: 0;"{% endif %}>
+                    <h2 class="h2 heading">{{ section.settings.title }}</h2>
+                </div>
+                {% endif %}
                 {% if section.settings.content != blank or section.blocks.size > 0 %}
-                    <div class="links-wrappper">
+                    <div class="links-wrappper {% if settings.animations_reveal_on_scroll %} scroll-trigger--offscreen scroll-trigger animate--slide-in{% endif %}" {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: 1;"{% endif %}>
                         {% if section.settings.content != blank %}<p class="description">{{ section.settings.content }}</p>{% endif %}
                         {% if section.blocks.size > 0 %}
                         <div class="link-list">
