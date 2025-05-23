@@ -1,9 +1,13 @@
 
 {{ 'custom-location.css' | asset_url | stylesheet_tag }}
 
-<div class="custom-location">
+<div class="custom-location{% if settings.animations_reveal_on_scroll %} scroll-trigger--offscreen scroll-trigger animate--fade-in{% endif %}"
+  {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: {{ section.index }};"{% endif %}
+>
   <div class="wrapper">
-    <div class="wrapper-inner">
+    <div class="wrapper-inner{% if settings.animations_reveal_on_scroll %} scroll-trigger--offscreen scroll-trigger animate--slide-in{% endif %}"
+      {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: 0;"{% endif %}
+    >
       <h2>{{ section.settings.heading }}</h2>
       <p class="description">{{ section.settings.description }}</p>
     </div>

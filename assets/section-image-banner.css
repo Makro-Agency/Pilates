@@ -36,6 +36,7 @@
   .banner--content-align-right.banner--desktop-transparent .banner__box,
   .banner--medium.banner--desktop-transparent .banner__box {
     max-width: 68rem;
+    max-width: 65.4rem;
   }
 }
 
@@ -356,6 +357,7 @@
   .banner--desktop-transparent .banner__box {
     background: transparent;
     max-width: 89rem;
+    max-width: 65.4rem;
     border: none;
     border-radius: 0;
     box-shadow: none;

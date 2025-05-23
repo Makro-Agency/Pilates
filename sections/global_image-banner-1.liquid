@@ -54,7 +54,9 @@
 {%- endstyle -%}
 
 <div id="{{ section.settings.section_id | handle }}">
-<div id="Banner-{{ section.id }}" class="banner hero-banner global_image-banner">
+<div id="Banner-{{ section.id }}" class="banner hero-banner global_image-banner {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+  {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: {{ section.index }};"{% endif %}
+>
     {%if section.settings.desktop_image != blank or section.settings.mobile_image != blank %}
         <div class="image">
             <figure>

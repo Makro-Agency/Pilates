@@ -1,4 +1,7 @@
 .hero-banner-2 { position: relative; z-index: 2;}
+.hero-banner-2 .image figure.animate--zoom-in {
+  clip-path: inset(0px);
+}
 
 .hero-banner-2 .image figure {
     margin: 0;

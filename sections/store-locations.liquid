@@ -124,8 +124,8 @@
   
   <div id="{{ section.settings.section_id | handle }}" class="multicolumn1 color-{{ section.settings.color_scheme }} gradient{% if section.settings.title == blank %} no-heading{% endif %}">
     <div
-      class="isolate{% if settings.animations_reveal_on_scroll %} scroll--trigger animate-slide-in{% endif %}"
-      {% if settings.animations_reveal_on_scroll %}data-cascade{% endif %}
+      class="isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+      {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: {{ section.index }};"{% endif %}
     >
       {%- unless section.settings.title == blank -%}
         

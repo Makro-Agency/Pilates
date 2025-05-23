@@ -1,8 +1,12 @@
 
 {{ 'custom-multi-grid.css' | asset_url | stylesheet_tag }}
 
-<section class="custom-workout">
-  <div class="custom-workout__wrapper">
+<section class="custom-workout{% if settings.animations_reveal_on_scroll %} scroll-trigger--offscreen scroll-trigger animate--fade-in{% endif %}"
+  {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: {{ section.index }};"{% endif %}
+>
+  <div class="custom-workout__wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger--offscreen scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: {{ section.index | plus: 1 }};"{% endif %}
+  >
     <h2 class="custom-workout__heading">{{ section.settings.heading }}</h2>
     <p class="custom-workout__subtitle">{{ section.settings.subtitle }}</p>
 
@@ -19,13 +23,19 @@
             </div>
             <ul class="custom-workout__benefits-list">
               {% if block.settings.benefit_1 != blank %}
-                <li>{{ block.settings.benefit_1 }}</li>
+                <li class="{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                  {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: {{ section.index | plus: 3 }};"{% endif %}
+                >{{ block.settings.benefit_1 }}</li>
               {% endif %}
               {% if block.settings.benefit_2 != blank %}
-                <li>{{ block.settings.benefit_2 }}</li>
+                <li class="{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                  {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: {{ section.index | plus: 3 }};"{% endif %}
+                >{{ block.settings.benefit_2 }}</li>
               {% endif %}
               {% if block.settings.benefit_3 != blank %}
-                <li>{{ block.settings.benefit_3 }}</li>
+                <li class="{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                  {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: {{ section.index | plus: 4 }};"{% endif %}
+                >{{ block.settings.benefit_3 }}</li>
               {% endif %}
             </ul>
           </div>

@@ -6,10 +6,11 @@
   }
 {%- endstyle -%}
 
-<div id="Banner-{{ section.id }}" class="banner hero-banner-3">
+<div id="Banner-{{ section.id }}" class="banner hero-banner-3{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {% if section.settings.desktop_image != blank or section.settings.mobile_image != blank %}
         <div class="image">
-            <figure>
+            <figure class="{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}
+              {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
                 {%if section.settings.desktop_image != blank %}
                     {{
                         section.settings.desktop_image
@@ -32,7 +33,7 @@
         </div>
           {% if section.settings.sale_title != blank  %}
             <div class="banner-content padding-sections">
-              <div class="banner-contain">
+              <div class="banner-contain{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
                   {% if section.settings.sale_title != blank%}
                       <h2 class="h1 heading">{{ section.settings.sale_title }}</h2>
                   {% endif %}
@@ -78,6 +79,30 @@
         "step": 1,
         "unit": "%",
         "default": 20
+    },
+    {
+      "type": "select",
+      "id": "image_behavior",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.all.animation.image_behavior.options__1.label"
+        },
+        {
+          "value": "ambient",
+          "label": "t:sections.all.animation.image_behavior.options__2.label"
+        },
+        {
+          "value": "fixed",
+          "label": "t:sections.all.animation.image_behavior.options__3.label"
+        },
+        {
+          "value": "zoom-in",
+          "label": "t:sections.all.animation.image_behavior.options__4.label"
+        }
+      ],
+      "default": "none",
+      "label": "t:sections.all.animation.image_behavior.label"
     },
     {
       "type": "header",

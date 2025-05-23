@@ -67,12 +67,22 @@
             {%- assign linkLabel = block.settings[link_label] -%}
             {%- capture link_url -%}link_{{i}}{%- endcapture -%}
             {%- assign linkUrl = block.settings[link_url] -%}
+            {%- assign has_refe_id = false -%}
+            {%- assign linkUrl_first_char = linkUrl | slice: 0 -%}
+            {%- assign linkUrl_size = linkUrl | size -%}
             {%- if linkLabel != blank -%}
+              {%- if linkUrl_first_char == "#" and linkUrl_size > 1 -%}
+                {%- assign has_refe_id = true -%}
+              {%- endif -%}
               <div class="link-li">
                 <a {% if linkUrl == blank %}role="link" aria-disabled="true"{% else %}href="{{ linkUrl }}"{% endif %} class="link global-link"
                   {%- if block.settings.link_clr != blank and block.settings.link_clr != 'rgba(0,0,0,0)' %} style="color: {{ block.settings.link_clr }};"{% endif -%}
                   >{{- linkLabel -}}
-                  <span class="icon-wrap">{% render 'icon-link-arrow' %}</span>
+                  {%- if has_refe_id -%}
+                    <span class="icon-wrap down-arrow">{% render 'down-arrow' %}</span>                  
+                  {%- else -%}
+                    <span class="icon-wrap">{% render 'icon-link-arrow' %}</span>
+                  {%- endif -%}
                 </a>
               </div>
             {%- endif -%}
@@ -290,9 +300,9 @@
                 <div class="banner__buttons btn-clr--{{ block.id }}" {{ block.shopify_attributes }}>
                   {%- assign btn_class = blank -%}
                   {%- if block.settings.button_style == 'solid' -%}
-                    {%- assign btn_class = 'button btn-big-width button--primary' -%}
+                    {%- assign btn_class = 'button _btn-big-width button--primary' -%}
                   {%- elsif block.settings.button_style == 'outline' -%}
-                    {%- assign btn_class = 'button btn-big-width button--secondary' -%}
+                    {%- assign btn_class = 'button _btn-big-width button--secondary' -%}
                   {%- else -%}
                     {%- assign btn_class = 'link global-link' -%}
                   {%- endif -%} 
