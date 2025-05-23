@@ -37,7 +37,7 @@
         "2543d9fc-b376-4836-85cf-14fc5c3fbc1d": {
           "type": "additional_info",
           "settings": {
-            "title": "Access the best of boutique fitness",
+            "title": "Download the Reformd app and Access the best of boutique fitness",
             "image": "shopify://shop_images/image_36_783c25ea-2282-4380-a970-84380c8ea1b4.png",
             "google_play_link": "https://play.google.com/store/apps/details?id=com.marianatek.sweatandtonic&pcampaignid=web_share",
             "app_store_link": "https://apps.apple.com/ca/app/sweat-tonic/id1610642208"
@@ -65,5 +65,3 @@
     "footer"
   ]
 }
-
-
