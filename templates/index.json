@@ -214,32 +214,32 @@
         "team_wUWXPL": {
           "type": "team",
           "settings": {
-            "instructor_image": "shopify://shop_images/Frame_19.png",
-            "instructor_title": "Brendan Bornstein",
+            "instructor_image": "shopify://shop_images/EEA_9383.png",
+            "instructor_title": "BLAIR MYERS",
             "profile_url": "#"
           }
         },
         "team_HqB3ga": {
           "type": "team",
           "settings": {
-            "instructor_image": "shopify://shop_images/Frame_15.png",
-            "instructor_title": "David Kim-MacKinnon",
+            "instructor_image": "shopify://shop_images/DSCF8134.png",
+            "instructor_title": "BRENDAN BORNSTEIN",
             "profile_url": "#"
           }
         },
         "team_bRe4jx": {
           "type": "team",
           "settings": {
-            "instructor_image": "shopify://shop_images/Frame_17.png",
-            "instructor_title": "Blake Copeland",
+            "instructor_image": "shopify://shop_images/EEA_9383.png",
+            "instructor_title": "JORDAN SCHOLL",
             "profile_url": "#"
           }
         },
         "team_4HJ9Kd": {
           "type": "team",
           "settings": {
-            "instructor_image": "shopify://shop_images/Frame_18.png",
-            "instructor_title": "Brendan Bornstein",
+            "instructor_image": "shopify://shop_images/DSCF8134.png",
+            "instructor_title": "RORY BRAY",
             "profile_url": "#"
           }
         }
@@ -253,9 +253,9 @@
       "name": "Instructors Team",
       "settings": {
         "section_id": "team",
-        "background_image": "shopify://shop_images/hit-classes-bg.svg",
-        "mobile_background_image": "shopify://shop_images/Frame_6418_aa253290-a495-443a-921b-2413b935bbcf.png",
-        "image_overlay_opacity": 40,
+        "background_image": "shopify://shop_images/benifits-bg.svg",
+        "mobile_background_image": "shopify://shop_images/Frame_6837.png",
+        "image_overlay_opacity": 100,
         "heading": "CANADA'S TOP LAGREE INSTRUCTORS",
         "description": "World-class teachers for a world-class experience",
         "button_text": "SEE THE FULL Team",
