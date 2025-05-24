@@ -36,7 +36,7 @@
         "bottom_title_7zMBCc": {
           "type": "bottom_title",
           "settings": {
-            "title": "The world’s largest-capacity Lagree studio",
+            "title": "GRAND OPENING: SATURDAY, JUNE 21",
             "text_clr": "#ffffff"
           }
         },
@@ -68,10 +68,10 @@
       "name": "Hero banner",
       "settings": {
         "allow_transparent_header": true,
-        "image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL-edit.jpg",
-        "img_mobile": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL.jpg",
+        "image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL-edit_14cac92a-1437-4d5e-907f-bfd82f8f184f.jpg",
+        "img_mobile": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL-edit_14cac92a-1437-4d5e-907f-bfd82f8f184f.jpg",
         "video_url": "",
-        "image_overlay_opacity": 30,
+        "image_overlay_opacity": 50,
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -101,28 +101,28 @@
         "links_6yzb4R": {
           "type": "links",
           "settings": {
-            "link_lable": "The studio / classes",
+            "link_lable": "THE STUDIO",
             "section_id": "studio-classes"
           }
         },
         "links_wgtLej": {
           "type": "links",
           "settings": {
-            "link_lable": "Our team",
+            "link_lable": "OUR TEAM",
             "section_id": "team"
           }
         },
         "links_YWPPcV": {
           "type": "links",
           "settings": {
-            "link_lable": "Locations",
+            "link_lable": "CLASSES",
             "section_id": "locations"
           }
         },
         "links_yeAjBV": {
           "type": "links",
           "settings": {
-            "link_lable": "About",
+            "link_lable": "MEMBERSHIPS & CREDITS",
             "section_id": "about"
           }
         }
@@ -134,7 +134,7 @@
         "links_yeAjBV"
       ],
       "settings": {
-        "title": "OUR STORY: <br>Where Movement Meets Performance",
+        "title": "The world’s largest-capacity Lagree studio",
         "content": "The Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts.⁠ Step inside Reformd for a Lagree experience unlike any other."
       }
     },
@@ -142,7 +142,7 @@
       "type": "global_sudio-classes",
       "settings": {
         "section_id": "studio-classes",
-        "title": "The studio / classes",
+        "title": "The studio",
         "description": "30 Mega Pro Megaformers, state-of-the-art AV, custom chromotherapy lighting, heated flooring, and world-class programming - all expertly crafted and delivered in a signature Sweat and Tonic experience."
       }
     },
@@ -152,12 +152,12 @@
         "slide_ciinLM": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/slideshow-3.png",
-            "mobile_image": "shopify://shop_images/slideshow-mob-3.png",
+            "image": "shopify://shop_images/STE_MARIE_-_Reformd_Renders_-_Studio_-_2025-01-20-edit.jpg",
+            "mobile_image": "shopify://shop_images/STE_MARIE_-_Reformd_Renders_-_Studio_-_2025-01-20-edit.jpg",
             "heading": "MEGAFORMER STUDIO",
             "heading_size": "h2",
-            "subheading": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "button_label": "Explore Studio",
+            "subheading": "Over 70 expertly curated high-intensity, low-impact classes to sculpt, tone, and strengthen.",
+            "button_label": "CLASS SCHEDULE COMING SOON",
             "link": "#",
             "image_overlay_opacity": 0,
             "color_scheme": "inverse"
@@ -170,10 +170,10 @@
             "mobile_image": "shopify://shop_images/accordian-desktop.png",
             "heading": "RECEPTION",
             "heading_size": "h2",
-            "subheading": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "button_label": "Explore Studio",
+            "subheading": "Tonic Bar delivery, changing rooms, showers, towel service, grip socks for purchase, and full-service machine cleaning between every class. Come as you are, and we'll do the rest",
+            "button_label": "VIEW MEMBERSHIPS & CREDITS",
             "link": "#",
-            "image_overlay_opacity": 0,
+            "image_overlay_opacity": 30,
             "color_scheme": "inverse"
           }
         },
@@ -182,10 +182,10 @@
           "settings": {
             "image": "shopify://shop_images/slideshow-2.png",
             "mobile_image": "shopify://shop_images/slideshow-2.png",
-            "heading": "WELCOME LOUNGE",
+            "heading": "",
             "heading_size": "h2",
-            "subheading": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "button_label": "Explore Studio",
+            "subheading": "",
+            "button_label": "",
             "link": "#",
             "image_overlay_opacity": 0,
             "color_scheme": "inverse"
