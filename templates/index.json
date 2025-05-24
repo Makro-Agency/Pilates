@@ -227,19 +227,19 @@
             "profile_url": "#"
           }
         },
-        "team_bRe4jx": {
-          "type": "team",
-          "settings": {
-            "instructor_image": "shopify://shop_images/EEA_9383.png",
-            "instructor_title": "JORDAN SCHOLL",
-            "profile_url": "#"
-          }
-        },
         "team_4HJ9Kd": {
           "type": "team",
           "settings": {
-            "instructor_image": "shopify://shop_images/DSCF8134.png",
+            "instructor_image": "shopify://shop_images/EEA_9383.png",
             "instructor_title": "RORY BRAY",
+            "profile_url": "#"
+          }
+        },
+        "team_bRe4jx": {
+          "type": "team",
+          "settings": {
+            "instructor_image": "shopify://shop_images/DSCF8134.png",
+            "instructor_title": "JORDAN SCHOLL",
             "profile_url": "#"
           }
         }
@@ -247,8 +247,8 @@
       "block_order": [
         "team_wUWXPL",
         "team_HqB3ga",
-        "team_bRe4jx",
-        "team_4HJ9Kd"
+        "team_4HJ9Kd",
+        "team_bRe4jx"
       ],
       "name": "Instructors Team",
       "settings": {
