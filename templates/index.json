@@ -68,10 +68,10 @@
       "name": "Hero banner",
       "settings": {
         "allow_transparent_header": true,
-        "image": "shopify://shop_images/slideshow-1.png",
-        "img_mobile": "shopify://shop_images/slideshow-mob-1.png",
+        "image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL-edit.jpg",
+        "img_mobile": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL.jpg",
         "video_url": "",
-        "image_overlay_opacity": 20,
+        "image_overlay_opacity": 30,
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
