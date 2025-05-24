@@ -253,11 +253,11 @@
       "name": "Instructors Team",
       "settings": {
         "section_id": "team",
-        "background_image": "shopify://shop_images/Frame_6418.png",
+        "background_image": "shopify://shop_images/hit-classes-bg.svg",
         "mobile_background_image": "shopify://shop_images/Frame_6418_aa253290-a495-443a-921b-2413b935bbcf.png",
         "image_overlay_opacity": 40,
-        "heading": "Instructors <br> Who Lead the Way",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at justo a elit convallis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec non magna ac ante tincidunt sollicitudin.",
+        "heading": "CANADA'S TOP LAGREE INSTRUCTORS",
+        "description": "World-class teachers for a world-class experience",
         "button_text": "SEE THE FULL Team",
         "button_url": "#"
       }
@@ -269,20 +269,21 @@
           "type": "location",
           "settings": {
             "image": "shopify://shop_images/Rectangle_76.png",
-            "title": "THE WELL",
+            "title": "REFORMD | FRONT/SPADINA",
             "desc": "<p>Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </p>",
-            "btn_text": "Learn more",
+            "btn_text": "JOIN US",
             "btn_url": "#",
-            "service_1": "Service 1",
-            "service_2": "Service 2",
-            "service_3": "Service 3",
-            "service_4": "Service 4",
-            "service_5": "",
-            "service_6": ""
+            "service_1": "Tonic Bar delivery",
+            "service_2": "Full-service unisex locker room",
+            "service_3": "Private showers & change rooms",
+            "service_4": "Towel service",
+            "service_5": "Heated flooring",
+            "service_6": "1-1 education room"
           }
         },
         "location_h939Va": {
           "type": "location",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Rectangle_76_1.png",
             "title": "Yonge / Shuter",
@@ -306,8 +307,8 @@
       "settings": {
         "section_id": "locations",
         "full_width": true,
-        "title": "Two State of <br>the Art Locations",
-        "content": "S&T creates a local, curated fitness experience for sweat addicts to challenge their minds and bodies within a community that grows, succeeds, and celebrates together.",
+        "title": "LOCATIONS",
+        "content": "ACCESS THE BEST OF BOUTIQUE FITNESS AND WELLNESS. LOREM IPSUM DOLOR SIT AMET.",
         "color_scheme": "",
         "top_padding_remove": false,
         "bottom_padding_remove": false
