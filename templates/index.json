@@ -44,17 +44,17 @@
           "type": "bottom_links",
           "settings": {
             "link_clr": "#ffffff",
-            "link_label_1": "Explore Studios",
+            "link_label_1": "EXPLORE",
             "link_1": "#studio-classes",
-            "link_label_2": "",
+            "link_label_2": "Explore test 1",
             "link_2": "",
-            "link_label_3": "",
+            "link_label_3": "Explore test 2",
             "link_3": "",
-            "link_label_4": "",
+            "link_label_4": "Explore test 3",
             "link_4": "",
-            "link_label_5": "",
+            "link_label_5": "Explore test 4",
             "link_5": "",
-            "link_label_6": "",
+            "link_label_6": "Explore test 5",
             "link_6": ""
           }
         }
