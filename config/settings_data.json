@@ -153,10 +153,20 @@
           "image_Ljtj6n": {
             "type": "image",
             "settings": {
-              "title": "Adam Kunder",
+              "title": "First Name Last Name",
               "image": "shopify://shop_images/Rectangle_50.png",
-              "name": "Blake Copeland",
-              "sp_tag": "RIDE",
+              "name": "First Name Last Name",
+              "sp_tag": "",
+              "url": "shopify://metaobjects/teammember/baylee-joy"
+            }
+          },
+          "image_8UgEeK": {
+            "type": "image",
+            "settings": {
+              "title": "First Name Last Name",
+              "image": "shopify://shop_images/EEA_9383.png",
+              "name": "First Name Last Name",
+              "sp_tag": "",
               "url": "shopify://metaobjects/teammember/baylee-joy"
             }
           },
@@ -1050,6 +1060,7 @@
         },
         "block_order": [
           "image_Ljtj6n",
+          "image_8UgEeK",
           "image_yhKexK",
           "image_eNjriY",
           "image_DpRnWB",
@@ -1511,10 +1522,10 @@
           "background": "#ffffff",
           "background_gradient": "",
           "text": "#000000",
-          "text_2": "#FEE4B1",
+          "text_2": "#fee4b1",
           "button": "#000000",
           "button_label": "#ffffff",
-          "secondary_button_label": "#FEE4B1",
+          "secondary_button_label": "#fee4b1",
           "shadow": "#000000"
         }
       },
@@ -1535,7 +1546,7 @@
           "background": "#26221b",
           "background_gradient": "",
           "text": "#ffffff",
-          "text_2": "#FEE4B1",
+          "text_2": "#fee4b1",
           "button": "#ffffff",
           "button_label": "#000000",
           "secondary_button_label": "#ffffff",
@@ -1547,7 +1558,7 @@
           "background": "#121212",
           "background_gradient": "",
           "text": "#ffffff",
-          "text_2": "#FEE4B1",
+          "text_2": "#fee4b1",
           "button": "#ffffff",
           "button_label": "#000000",
           "secondary_button_label": "#ffffff",
@@ -1559,7 +1570,7 @@
           "background": "#334fb4",
           "background_gradient": "",
           "text": "#ffffff",
-          "text_2": "#FEE4B1",
+          "text_2": "#fee4b1",
           "button": "#ffffff",
           "button_label": "#334fb4",
           "secondary_button_label": "#ffffff",
@@ -1574,7 +1585,7 @@
           "text_2": "#121212",
           "button": "#000000",
           "button_label": "#ffffff",
-          "secondary_button_label": "#FEE4B1",
+          "secondary_button_label": "#fee4b1",
           "shadow": "#000000"
         }
       },
@@ -1583,7 +1594,7 @@
           "background": "#000000",
           "background_gradient": "",
           "text": "#ffffff",
-          "text_2": "#FEE4B1",
+          "text_2": "#fee4b1",
           "button": "#ffffff",
           "button_label": "#000000",
           "secondary_button_label": "#ffffff",
