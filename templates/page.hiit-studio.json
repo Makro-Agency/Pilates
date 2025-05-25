@@ -635,7 +635,7 @@
         "ab06944c-e56b-4aaa-962a-25c5bdcc7f46"
       ],
       "settings": {
-        "title": "S&T HIIT STUDIOS",
+        "title": "EXPLORE S&T STUDIOS",
         "heading_size": "h2",
         "image_ratio": "portrait",
         "column_alignment": "left",
@@ -807,9 +807,9 @@
     "hit-hero",
     "hit-banner-column",
     "hit-classes",
-    "hit-multicolumn",
     "hit-banner-row",
     "hit-team",
+    "hit-multicolumn",
     "event-contact"
   ]
 }
