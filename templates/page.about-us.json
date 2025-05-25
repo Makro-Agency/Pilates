@@ -14,7 +14,7 @@
       "settings": {
         "allow_transparent_header": true,
         "sub_title": "",
-        "title": "About Reformd",
+        "title": "",
         "desktop_image": "shopify://shop_images/Frame_5911.png",
         "mobile_image": "shopify://shop_images/hero_244a1198-d208-4c8c-be68-15563ebad63c.png"
       }
@@ -24,8 +24,8 @@
       "custom_css": [],
       "settings": {
         "sub_title": "Our mission",
-        "title": "we challenge sweat addicts’ minds & bodies within a community that grows, succeeds, and celebrates together.",
-        "description": ""
+        "title": "THE BEST OF BOUTIQUE FITNESS & WELLNESS UNDER ONE ROOF",
+        "description": "SWEAT, RECOVER, CONNECT.\nWe bring the best of boutique fitness & wellness, all under one roof."
       }
     },
     "custom_hero_banner_ddKzhU": {
