@@ -101,11 +101,25 @@
             "service_2": "Service 2",
             "service_3": "Service 3"
           }
+        },
+        "location_niM47h": {
+          "type": "location",
+          "settings": {
+            "title": "THE WELL",
+            "text": "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "link": "/",
+            "link_text": "Learn more",
+            "services_heading": "Exclusive Services:",
+            "service_1": "Service A",
+            "service_2": "Service B",
+            "service_3": "Service C"
+          }
         }
       },
       "block_order": [
         "location_E4MWxh",
-        "location_yc6LjR"
+        "location_yc6LjR",
+        "location_niM47h"
       ],
       "name": "Custom our location",
       "settings": {
