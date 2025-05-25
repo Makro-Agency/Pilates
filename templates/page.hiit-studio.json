@@ -77,7 +77,7 @@
         "2fc049c5-7369-409d-b14a-69872fa3a417": {
           "type": "heading",
           "settings": {
-            "heading": "HIIT YOUR PEAK PERFORMANCE",
+            "heading": "THE LAGREE METHOD",
             "heading_size": "h1",
             "text_clr": "#ffffff"
           }
@@ -216,7 +216,7 @@
             "dur_heading": "DURATION",
             "duration": "50 min",
             "skl_heading": "LEVEL",
-            "skillLevel": "Advanced (30+ classes)",
+            "skillLevel": "Advanced (35+ classes)",
             "detail": "<p>Tone, shred and strengthen your core as you engage your abdominal muscles through treadmill, resistance band, and dumbbell stations. A strong, stable center will improve your balance, stability and improve the quality of your overall movement practice.</p>",
             "button_text_1": "BOOK",
             "button_url_1": "shopify://pages/reserve",
@@ -595,7 +595,7 @@
         "2b51f841-a50e-4f3b-a5bc-c9b8a6415301"
       ],
       "settings": {
-        "subHeading": "EXPLORE CLASSES",
+        "subHeading": "OUR CLASSES",
         "heading": "MEGAFORMER CLASSES",
         "detail": "<p><strong>What is Lagree?</strong></p><p>Founded on five components of physical fitness – endurance, cardiovascular fitness, body composition, flexibility, and strength – Lagree is a patented high-intensity, low-impact exercise method that tightens, tones, and deeply activates slow-twitch muscle fibers. The method integrates body-building principles and focuses on slow, controlled movements and progressive load to build strength.</p><p><strong>New to Lagree?</strong> We recommend booking our Fundamentals class to understand the basics and get familiar with the Megaformer.</p>",
         "top_padding_remove": false,
