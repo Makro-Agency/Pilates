@@ -15,7 +15,7 @@
         "3d295c9e-10b8-4397-b3c8-b08733efc0db": {
           "type": "text",
           "settings": {
-            "text": "HIIT AT SWEAT AND TONIC",
+            "text": "",
             "text_style": "caption-with-letter-spacing",
             "text_clr": "#ffffff"
           }
@@ -23,7 +23,7 @@
         "89ede07a-229a-4fd5-8064-eb065090ad93": {
           "type": "heading",
           "settings": {
-            "heading": "HIIT STUDIO",
+            "heading": "MEGAFORMER STUDIO",
             "heading_size": "h1",
             "text_clr": "#ffffff"
           }
@@ -37,7 +37,7 @@
             "applies_color_scheme": true,
             "btn_text_clr": "#ffffff",
             "btn_hvr_text_clr": "#000000",
-            "btn_bg_clr": "#FEE4B1",
+            "btn_bg_clr": "#fee4b1",
             "btn_hvr_bg_clr": "#ffffff"
           }
         },
@@ -59,7 +59,7 @@
       ],
       "settings": {
         "allow_transparent_header": true,
-        "image": "shopify://shop_images/TheWell_HIIT_1.jpg",
+        "image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL.jpg",
         "img_mobile": "shopify://shop_images/hero-min_0ae1c4a7-01e4-485e-a82d-a80711f9b865.jpg",
         "image_overlay_opacity": 60,
         "image_height": "adapt",
@@ -122,44 +122,10 @@
     "hit-classes": {
       "type": "hit-classes",
       "blocks": {
-        "704e6416-7383-410f-9de1-7ac0beeec85f": {
-          "type": "hit_box",
-          "settings": {
-            "heading": "TOP HIIT",
-            "int_heading": "INTENSITY",
-            "intensity_level": 3,
-            "dur_heading": "DURATION",
-            "duration": "50 min",
-            "skl_heading": "LEVELS",
-            "skillLevel": "All levels",
-            "detail": "<p>Your one-stop shop for sculpted abs, back, shoulders, and arms. Move through three stations of dumbbell, resistance band, and treadmill work that's expertly programmed to tone, shred, and strengthen everything above the belt. The ultimate 360 upper body workout.</p>",
-            "button_text_1": "BOOK",
-            "button_url_1": "shopify://pages/reserve",
-            "button_text_2": "",
-            "button_url_2": "shopify://pages/pricing"
-          }
-        },
-        "4fb95e56-cda7-408b-a55c-63a88396079d": {
-          "type": "hit_box",
-          "settings": {
-            "heading": "CORE HIIT",
-            "int_heading": "INTENSITY",
-            "intensity_level": 3,
-            "dur_heading": "DURATION",
-            "duration": "50 min",
-            "skl_heading": "LEVEL",
-            "skillLevel": "All levels",
-            "detail": "<p>Tone, shred and strengthen your core as you engage your abdominal muscles through treadmill, resistance band, and dumbbell stations. A strong, stable center will improve your balance, stability and improve the quality of your overall movement practice.</p>",
-            "button_text_1": "BOOK",
-            "button_url_1": "shopify://pages/reserve",
-            "button_text_2": "",
-            "button_url_2": ""
-          }
-        },
         "c280bdb2-65e1-4092-aced-67cacc1ff117": {
           "type": "hit_box",
           "settings": {
-            "heading": "ABS & ASSETS HIIT",
+            "heading": "FULL BODY",
             "int_heading": "INTENSITY",
             "intensity_level": 3,
             "dur_heading": "DURATION",
@@ -176,7 +142,7 @@
         "a716f6c2-86fa-42e7-8de5-71a119a3d638": {
           "type": "hit_box",
           "settings": {
-            "heading": "BOOTY HIIT",
+            "heading": "ABS & ASSETS",
             "int_heading": "INTENSITY",
             "intensity_level": 3,
             "dur_heading": "DURATION",
@@ -193,13 +159,13 @@
         "9341e57a-ca56-4c76-9088-0360e926d39c": {
           "type": "hit_box",
           "settings": {
-            "heading": "LIFT HIIT",
+            "heading": "ARMS & ABS",
             "int_heading": "INTENSITY",
             "intensity_level": 3,
             "dur_heading": "DURATION",
             "duration": "50 min",
             "skl_heading": "LEVEL",
-            "skillLevel": "All levels*",
+            "skillLevel": "All levels",
             "detail": "<p>Get stronger and leaner with purpose and precision in this full-body-shredding weight-lifting sweat session. This strength class has a highly coached environment to take your physique and fitness to new heights.</p>",
             "button_text_1": "BOOK",
             "button_url_1": "https://www.sweatandtonic.com/reserve/",
@@ -210,7 +176,7 @@
         "f3f0b93c-d995-4fe7-8d41-8abb3d720bc9": {
           "type": "hit_box",
           "settings": {
-            "heading": "PILATES HIIT",
+            "heading": "CORE & MOBILITY",
             "int_heading": "INTENSITY",
             "intensity_level": 2,
             "dur_heading": "DURATION",
@@ -224,8 +190,43 @@
             "button_url_2": ""
           }
         },
+        "704e6416-7383-410f-9de1-7ac0beeec85f": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "FUNDAMENTALS",
+            "int_heading": "INTENSITY",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "LEVELS",
+            "skillLevel": "Beginner",
+            "detail": "<p>Your one-stop shop for sculpted abs, back, shoulders, and arms. Move through three stations of dumbbell, resistance band, and treadmill work that's expertly programmed to tone, shred, and strengthen everything above the belt. The ultimate 360 upper body workout.</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "shopify://pages/reserve",
+            "button_text_2": "",
+            "button_url_2": "shopify://pages/pricing"
+          }
+        },
+        "4fb95e56-cda7-408b-a55c-63a88396079d": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "ADVANCED",
+            "int_heading": "INTENSITY",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "LEVEL",
+            "skillLevel": "Advanced (35+ classes)",
+            "detail": "<p>Tone, shred and strengthen your core as you engage your abdominal muscles through treadmill, resistance band, and dumbbell stations. A strong, stable center will improve your balance, stability and improve the quality of your overall movement practice.</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "shopify://pages/reserve",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
         "4dfd51f6-d80a-49fb-8aed-855f28370947": {
           "type": "hit_box",
+          "disabled": true,
           "settings": {
             "heading": "BOX HIIT",
             "int_heading": "INTENSITY",
@@ -243,6 +244,7 @@
         },
         "ad356b5d-7d1b-4c74-9bb5-926fb4cf31ae": {
           "type": "hit_box",
+          "disabled": true,
           "settings": {
             "heading": "BEAT BOXING HIIT",
             "int_heading": "INTENSITY LEVEL",
@@ -260,6 +262,7 @@
         },
         "5afe78e2-53aa-47c6-96e8-d83d44d51028": {
           "type": "hit_box",
+          "disabled": true,
           "settings": {
             "heading": "ACTIVE RECOVERY",
             "int_heading": "INTENSITY LEVEL",
@@ -565,12 +568,12 @@
         }
       },
       "block_order": [
-        "704e6416-7383-410f-9de1-7ac0beeec85f",
-        "4fb95e56-cda7-408b-a55c-63a88396079d",
         "c280bdb2-65e1-4092-aced-67cacc1ff117",
         "a716f6c2-86fa-42e7-8de5-71a119a3d638",
         "9341e57a-ca56-4c76-9088-0360e926d39c",
         "f3f0b93c-d995-4fe7-8d41-8abb3d720bc9",
+        "704e6416-7383-410f-9de1-7ac0beeec85f",
+        "4fb95e56-cda7-408b-a55c-63a88396079d",
         "4dfd51f6-d80a-49fb-8aed-855f28370947",
         "ad356b5d-7d1b-4c74-9bb5-926fb4cf31ae",
         "5afe78e2-53aa-47c6-96e8-d83d44d51028",
@@ -594,7 +597,7 @@
       "settings": {
         "subHeading": "EXPLORE CLASSES",
         "heading": "HIIT CLASSES",
-        "detail": "<p><strong>What is HIIT?</strong><br/><br/>HIIT, or high intensity interval training, involves short bursts of high intensity movements at maximal effort with periods of rest or low-intensity exercises for recovery. HIIT is a robust method of inducing remarkable physiological adaptations and health benefits in a short amount of time, and has shown to burn more calories post-workout compared to steady-state cardio.<br/><br/>Classes marked with an asterisk (*) are open to all levels, but prior class experience is recommended for the best results.</p>",
+        "detail": "<p><strong>What is Lagree?</strong></p><p>Founded on five components of physical fitness – endurance, cardiovascular fitness, body composition, flexibility, and strength – Lagree is a patented high-intensity, low-impact exercise method that tightens, tones, and deeply activates slow-twitch muscle fibers. The method integrates body-building principles and focuses on slow, controlled movements and progressive load to build strength.</p><p><strong>New to Lagree?</strong> We recommend booking our Fundamentals class first to understand the basics and get familiar with the Megaformer.</p>",
         "top_padding_remove": false,
         "bottom_padding_remove": false
       }
@@ -663,7 +666,7 @@
             "btn_text_clr": "#ffffff",
             "btn_hvr_text_clr": "#ffffff",
             "btn_bg_clr": "#ffffff",
-            "btn_hvr_bg_clr": "#FEE4B1"
+            "btn_hvr_bg_clr": "#fee4b1"
           }
         },
         "486c1659-7943-4d3f-a46d-0d16c16aa358": {
@@ -781,7 +784,7 @@
       "settings": {
         "bg_color_left": "#26221b",
         "text_color_left": "#ffffff",
-        "sub_color_left": "#FEE4B1",
+        "sub_color_left": "#fee4b1",
         "subheading_left": "Ready to sweat?",
         "heading_left": "LET’S GET YOU IN",
         "text_left": "",
