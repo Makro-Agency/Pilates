@@ -1232,10 +1232,10 @@
         ],
         "settings": {
           "allow_transparent_header": true,
-          "image": "shopify://shop_images/press-desktop.png",
+          "image": "shopify://shop_images/STE_MARIE_-_Reformd_Renders_-_Studio_-_2025-01-20-edit.jpg",
           "img_mobile": "shopify://shop_images/press-mob.png",
           "image_overlay_opacity": 100,
-          "image_height": "adapt",
+          "image_height": "small",
           "desktop_content_position": "middle-left",
           "show_text_box": false,
           "desktop_content_alignment": "left",
