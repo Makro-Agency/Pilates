@@ -68,8 +68,7 @@
       "name": "Hero banner",
       "settings": {
         "allow_transparent_header": true,
-        "image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL-edit_14cac92a-1437-4d5e-907f-bfd82f8f184f.jpg",
-        "img_mobile": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL-edit_14cac92a-1437-4d5e-907f-bfd82f8f184f.jpg",
+        "video": "shopify://files/videos/Website Hero - Compressed edit for web - 2025.03.mp4",
         "video_url": "",
         "image_overlay_opacity": 50,
         "desktop_content_position": "middle-center",
