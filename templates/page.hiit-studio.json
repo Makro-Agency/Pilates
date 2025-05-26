@@ -87,17 +87,17 @@
           "settings": {
             "text_clr": "#ffffff",
             "svg_1": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"currentColor\">\n<path d=\"M5.55493 23.1751H0.638374C0.533478 23.1751 0.430577 23.1464 0.340832 23.0921C0.251087 23.0378 0.177922 22.96 0.129273 22.867C0.0806243 22.7741 0.0583477 22.6696 0.06486 22.5649C0.0713722 22.4602 0.106424 22.3593 0.166215 22.2731L5.49892 14.5875L0.166215 6.90375C0.105929 6.81755 0.0704658 6.71645 0.0636924 6.61148C0.0569191 6.50651 0.0790957 6.4017 0.127804 6.30847C0.176512 6.21524 0.249883 6.13717 0.339915 6.08277C0.429948 6.02838 0.533186 5.99975 0.638374 6H5.55493C5.64773 5.99998 5.73916 6.02244 5.82138 6.06546C5.90361 6.10848 5.97419 6.17078 6.02709 6.24703L11.5867 14.2601C11.6534 14.3563 11.6892 14.4705 11.6892 14.5875C11.6892 14.7046 11.6534 14.8188 11.5867 14.915L6.02709 22.9281C5.97419 23.0043 5.90361 23.0666 5.82138 23.1096C5.73916 23.1527 5.64773 23.1751 5.55493 23.1751ZM1.73637 22.0261H5.25512L10.4155 14.5875L5.2544 7.14898H1.73565L6.67052 14.2601C6.73723 14.3563 6.77298 14.4705 6.77298 14.5875C6.77298 14.7046 6.73723 14.8188 6.67052 14.915L1.73637 22.0261Z\" fill=\"currentColor\"></path>\n              <path d=\"M14.6758 23.1752H9.76069C9.65591 23.175 9.5532 23.1461 9.46366 23.0917C9.37412 23.0373 9.30116 22.9594 9.25269 22.8666C9.20421 22.7737 9.18206 22.6693 9.18863 22.5647C9.1952 22.4602 9.23024 22.3594 9.28996 22.2733L14.6212 14.5877L9.28996 6.9039C9.23019 6.81774 9.19514 6.71686 9.18862 6.6122C9.18209 6.50754 9.20433 6.40308 9.25294 6.31016C9.30155 6.21724 9.37466 6.1394 9.46435 6.08507C9.55405 6.03074 9.6569 6.00199 9.76177 6.00195H14.6758C14.7686 6.00193 14.86 6.02439 14.9423 6.06741C15.0245 6.11043 15.0951 6.17273 15.148 6.24898L20.7079 14.2602C20.7747 14.3564 20.8104 14.4707 20.8104 14.5877C20.8104 14.7047 20.7747 14.819 20.7079 14.9152L15.1494 22.9282C15.0964 23.0047 15.0256 23.0671 14.9431 23.1101C14.8606 23.1532 14.7689 23.1755 14.6758 23.1752ZM10.8572 22.0263H14.376L19.5378 14.5877L14.3767 7.14914H10.858L15.7925 14.2602C15.8592 14.3564 15.8949 14.4707 15.8949 14.5877C15.8949 14.7047 15.8592 14.819 15.7925 14.9152L10.8572 22.0263Z\" fill=\"currentColor\"></path>\n              <path d=\"M23.8037 23.1752H18.8868C18.7819 23.1752 18.679 23.1465 18.5894 23.0921C18.4997 23.0378 18.4265 22.96 18.3779 22.867C18.3293 22.7741 18.3071 22.6697 18.3136 22.565C18.3201 22.4603 18.3552 22.3595 18.415 22.2733L23.7473 14.5877L18.415 6.9039C18.3552 6.81774 18.3201 6.71686 18.3136 6.6122C18.3071 6.50754 18.3293 6.40308 18.3779 6.31016C18.4265 6.21724 18.4997 6.1394 18.5894 6.08507C18.679 6.03074 18.7819 6.00199 18.8868 6.00195H23.8037C23.8964 6.00199 23.9878 6.02448 24.0699 6.0675C24.1521 6.11051 24.2226 6.17278 24.2755 6.24898L29.8355 14.2602C29.9022 14.3564 29.9379 14.4707 29.9379 14.5877C29.9379 14.7047 29.9022 14.819 29.8355 14.9152L24.2755 22.9282C24.2226 23.0044 24.1521 23.0667 24.0699 23.1097C23.9878 23.1527 23.8964 23.1752 23.8037 23.1752ZM19.9848 22.0263H23.5035L28.6642 14.5877L23.5028 7.14914H19.984L24.9185 14.2602C24.9853 14.3564 25.021 14.4707 25.021 14.5877C25.021 14.7047 24.9853 14.819 24.9185 14.9152L19.9848 22.0263Z\" fill=\"currentColor\"></path>\n</svg>",
-            "title_1": "3-STATION WORKOUTS",
-            "desc_1": "<p>Cycle through dynamic intervals including weight & resistance training, treadmill drills, boxing, and conditioning.</p>",
+            "title_1": "2 AND 3-STATION WORKOUTS",
+            "desc_1": "<p>Treadmill drills, weight & resistance training and boxing work together to deliver a trifecta of creative intervals</p>",
             "svg_2": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"currentColor\">\n<path d=\"M23.9066 3.75019L6.09375 3.75L6.09415 4.21875C6.09414 4.28031 6.10625 4.34127 6.1298 4.39815C6.15335 4.45503 6.18788 4.50671 6.23141 4.55024C6.27494 4.59377 6.32662 4.6283 6.3835 4.65185C6.44038 4.6754 6.50134 4.68752 6.5629 4.6875H13.5243C13.3483 5.05756 13.3177 5.48026 13.4387 5.8718C13.5596 6.26334 13.8233 6.59515 14.1773 6.80147C12.5743 8.70787 7.5004 15.1085 7.5004 19.7461C7.5004 24.3663 10.865 28.125 15.0004 28.125C19.1358 28.125 22.5004 24.3663 22.5004 19.7461C22.5004 15.1085 17.4265 8.70787 15.8235 6.80148C16.1776 6.59516 16.4412 6.26334 16.5621 5.8718C16.6831 5.48025 16.6525 5.05756 16.4764 4.6875H23.4379C23.4995 4.68754 23.5604 4.67543 23.6173 4.65189C23.6742 4.62835 23.7259 4.59382 23.7694 4.55028C23.813 4.50675 23.8475 4.45506 23.871 4.39817C23.8946 4.34129 23.9067 4.28032 23.9066 4.21875V3.75019ZM15.0004 27.1875C14.0217 27.1875 12.6567 24.3567 12.6567 19.7461C12.6567 15.8894 14.2149 10.5144 15.0004 8.04977C15.7859 10.5144 17.3442 15.8894 17.3442 19.7461C17.3442 24.3567 15.9791 27.1875 15.0004 27.1875ZM8.4379 19.7461C8.4379 16.2471 11.7431 11.4331 13.7827 8.79521C12.9409 11.5672 11.7192 16.1998 11.7192 19.7461C11.7192 22.4872 12.2448 25.3394 13.2405 26.9077C10.475 26.0325 8.4379 23.1574 8.4379 19.7461ZM16.7603 26.9077C19.6138 22.1175 17.7806 13.6555 16.218 8.79502C18.2577 11.4329 21.5629 16.247 21.5629 19.7461C21.5629 23.1574 19.5257 26.0325 16.7603 26.9077ZM15.7035 5.39062C15.7008 5.57533 15.6256 5.75155 15.494 5.88121C15.3624 6.01086 15.1851 6.08354 15.0004 6.08354C14.8157 6.08354 14.6384 6.01085 14.5068 5.88119C14.3752 5.75152 14.3 5.5753 14.2973 5.3906C14.3 5.2059 14.3753 5.02967 14.5068 4.90002C14.6384 4.77036 14.8157 4.69768 15.0004 4.69768C15.1851 4.69769 15.3624 4.77037 15.494 4.90004C15.6256 5.0297 15.7008 5.20592 15.7035 5.39062Z\" fill=\"currentColor\"></path>\n</svg>",
             "title_2": "STATE-OF-THE-ART EQUIPMENT",
-            "desc_2": "<p>Technogym Skillrun Treadmills designed for athletes, Aqua punching bags, and theatre-quality lights and sound systems set the stage.</p>",
+            "desc_2": "<p>Technogym Skillrun Treadmills designed for professional athletes, Aqua punching bags, and a theatre-quality light and sound system set the stage</p>",
             "svg_3": "<svg width=\"24\" height=\"32\" viewbox=\"0 0 24 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M1 9.33333H23M8.85714 16V9.33333H15.1429V18.6C15.1435 19.3009 14.9358 19.9841 14.5493 20.5526C14.1628 21.1211 13.6172 21.5459 12.99 21.7667L7.86714 23.5667C7.23997 23.7874 6.69437 24.2123 6.30788 24.7807C5.92139 25.3492 5.71369 26.0325 5.71429 26.7333V31M19.0714 31C16.391 28.4403 14.1289 25.4273 12.3771 22.0833M15.1429 4.33333C15.1429 4.9926 14.9585 5.63707 14.6132 6.18523C14.2678 6.7334 13.777 7.16064 13.2027 7.41293C12.6284 7.66522 11.9965 7.73124 11.3869 7.60262C10.7772 7.474 10.2172 7.15653 9.77767 6.69036C9.33813 6.22418 9.0388 5.63024 8.91753 4.98363C8.79626 4.33703 8.8585 3.66681 9.09638 3.05772C9.33425 2.44863 9.73708 1.92804 10.2539 1.56177C10.7708 1.1955 11.3784 1 12 1C12.8335 1 13.6329 1.35119 14.2223 1.97631C14.8117 2.60143 15.1429 3.44928 15.1429 4.33333Z\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
             "title_3": "CHISEL & TONE",
-            "desc_3": "<p>The perfect balance of efficiency, adaptability, and inspiration to build your best body. Uplift while breaking down barriers.</p>",
+            "desc_3": "<p>Efficiency, adaptability and inspiration strike the perfect balance to build your best body. Get lifted up while breaking down mental and physical barriers.</p>",
             "svg_4": "<svg width=\"32\" height=\"22\" viewbox=\"0 0 32 22\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M11 16C11 15.0111 10.7068 14.0444 10.1573 13.2221C9.60794 12.3999 8.82705 11.759 7.91342 11.3806C6.99979 11.0022 5.99446 10.9031 5.02455 11.0961C4.05465 11.289 3.16373 11.7652 2.46447 12.4645C1.76521 13.1637 1.289 14.0546 1.09608 15.0245C0.90315 15.9945 1.00217 16.9998 1.3806 17.9134C1.75904 18.827 2.39991 19.6079 3.22215 20.1573C4.0444 20.7068 5.0111 21 6 21C7.32608 21 8.59785 20.4732 9.53554 19.5355C10.4732 18.5979 11 17.3261 11 16ZM16 21C15.0111 21 14.0444 20.7068 13.2221 20.1573C12.3999 19.6079 11.759 18.827 11.3806 17.9134C11.0022 16.9998 10.9031 15.9945 11.0961 15.0245C11.289 14.0546 11.7652 13.1637 12.4645 12.4645C13.1637 11.7652 14.0546 11.289 15.0245 11.0961C15.9945 10.9031 16.9998 11.0022 17.9134 11.3806C18.827 11.759 19.6079 12.3999 20.1573 13.2221C20.7068 14.0444 21 15.0111 21 16C21 17.3261 20.4732 18.5979 19.5355 19.5355C18.5979 20.4732 17.3261 21 16 21ZM26 21C25.0111 21 24.0444 20.7068 23.2221 20.1573C22.3999 19.6079 21.759 18.827 21.3806 17.9134C21.0022 16.9998 20.9031 15.9945 21.0961 15.0245C21.289 14.0546 21.7652 13.1637 22.4645 12.4645C23.1637 11.7652 24.0546 11.289 25.0245 11.0961C25.9945 10.9031 26.9998 11.0022 27.9134 11.3806C28.827 11.759 29.6079 12.3999 30.1573 13.2221C30.7068 14.0444 31 15.0111 31 16C31 17.3261 30.4732 18.5979 29.5355 19.5355C28.5979 20.4732 27.3261 21 26 21ZM11 11C10.0111 11 9.0444 10.7068 8.22215 10.1573C7.3999 9.60794 6.75904 8.82705 6.3806 7.91342C6.00217 6.99979 5.90315 5.99446 6.09608 5.02455C6.289 4.05465 6.76521 3.16373 7.46447 2.46447C8.16373 1.76521 9.05465 1.289 10.0246 1.09608C10.9945 0.90315 11.9998 1.00217 12.9134 1.38061C13.827 1.75904 14.6079 2.39991 15.1573 3.22215C15.7068 4.0444 16 5.0111 16 6C16 7.32608 15.4732 8.59785 14.5355 9.53554C13.5979 10.4732 12.3261 11 11 11ZM21 11C20.0111 11 19.0444 10.7068 18.2221 10.1573C17.3999 9.60794 16.759 8.82705 16.3806 7.91342C16.0022 6.99979 15.9031 5.99446 16.0961 5.02455C16.289 4.05465 16.7652 3.16373 17.4645 2.46447C18.1637 1.76521 19.0546 1.289 20.0245 1.09608C20.9945 0.90315 21.9998 1.00217 22.9134 1.38061C23.827 1.75904 24.6079 2.39991 25.1573 3.22215C25.7068 4.0444 26 5.0111 26 6C26 7.32608 25.4732 8.59785 24.5355 9.53554C23.5979 10.4732 22.3261 11 21 11Z\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
-            "title_4": "9 CLASS STYLES",
-            "desc_4": "<p>Build strength, increase endurance, and target your assets - options for every body to get moving from top to bottom. </p>"
+            "title_4": "5 CLASS STYLES",
+            "desc_4": "<p>Options for every body to get moving. Go 3 rounds, hit the slow jams, work together to achieve goals, build your best assets or get lifted to the beat.</p>"
           }
         }
       },
@@ -117,77 +117,6 @@
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "section_title_mobtop": true
-      }
-    },
-    "hit-team": {
-      "type": "hit-team",
-      "blocks": {
-        "d8c76e3a-9682-4e98-ad54-de25dc96e3e2": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "image": "shopify://shop_images/Baylee.png",
-            "link_label": "BAYLEE JOY",
-            "link": "shopify://metaobjects/teammember/baylee-joy"
-          }
-        },
-        "344bccad-18c9-45fe-a9fa-30f6d5343214": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "image": "shopify://shop_images/Dustin_a25365df-6d70-4dbe-8d06-2651c021daba.jpg",
-            "link_label": "DUSTIN PYM",
-            "link": "shopify://metaobjects/teammember/dustin-pym"
-          }
-        },
-        "a746ac32-ac4e-4cf0-a968-b3c4d0a06e4d": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "image": "shopify://shop_images/Kaivan.png",
-            "link_label": "KAIVAN SHIMI",
-            "link": "shopify://metaobjects/teammember/kaivan-shimi"
-          }
-        },
-        "5fcac650-cebb-403f-b694-e8cb80d71fc5": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "image": "shopify://shop_images/Lisa.png",
-            "link_label": "LISA DAMLA",
-            "link": "shopify://metaobjects/teammember/lisa-damla"
-          }
-        },
-        "2dd6497d-fb1f-42b9-aec9-c251fab4097a": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "image": "shopify://shop_images/Perez_03ba3e74-7ad2-4354-bcb9-04f82780bd44.png",
-            "link_label": "PEREZ TIEKU",
-            "link": "shopify://metaobjects/teammember/perez-tieku"
-          }
-        }
-      },
-      "block_order": [
-        "d8c76e3a-9682-4e98-ad54-de25dc96e3e2",
-        "344bccad-18c9-45fe-a9fa-30f6d5343214",
-        "a746ac32-ac4e-4cf0-a968-b3c4d0a06e4d",
-        "5fcac650-cebb-403f-b694-e8cb80d71fc5",
-        "2dd6497d-fb1f-42b9-aec9-c251fab4097a"
-      ],
-      "settings": {
-        "sub_title": "MEET THE TEAM",
-        "title": "OUR TEAM",
-        "heading_size": "h2",
-        "image_ratio": "square",
-        "columns_desktop": 6,
-        "background_style": "none",
-        "button_label": "SEE THE FULL TEAM",
-        "button_link": "#",
-        "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
-        "columns_mobile": "2",
-        "top_padding_remove": true,
-        "bottom_padding_remove": false
       }
     },
     "hit-classes": {
@@ -670,6 +599,77 @@
         "heading": "MEGAFORMER CLASSES",
         "detail": "<p><strong>What is Lagree?</strong></p><p>Founded on five components of physical fitness – endurance, cardiovascular fitness, body composition, flexibility, and strength – Lagree is a patented high-intensity, low-impact exercise method that tightens, tones, and deeply activates slow-twitch muscle fibers. The method integrates body-building principles and focuses on slow, controlled movements and progressive load to build strength.</p><p><strong>New to Lagree?</strong> We recommend booking our Fundamentals class to understand the basics and get familiar with the Megaformer.</p>",
         "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "hit-team": {
+      "type": "hit-team",
+      "blocks": {
+        "d8c76e3a-9682-4e98-ad54-de25dc96e3e2": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Baylee.png",
+            "link_label": "BAYLEE JOY",
+            "link": "shopify://metaobjects/teammember/baylee-joy"
+          }
+        },
+        "344bccad-18c9-45fe-a9fa-30f6d5343214": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Dustin_a25365df-6d70-4dbe-8d06-2651c021daba.jpg",
+            "link_label": "DUSTIN PYM",
+            "link": "shopify://metaobjects/teammember/dustin-pym"
+          }
+        },
+        "a746ac32-ac4e-4cf0-a968-b3c4d0a06e4d": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Kaivan.png",
+            "link_label": "KAIVAN SHIMI",
+            "link": "shopify://metaobjects/teammember/kaivan-shimi"
+          }
+        },
+        "5fcac650-cebb-403f-b694-e8cb80d71fc5": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Lisa.png",
+            "link_label": "LISA DAMLA",
+            "link": "shopify://metaobjects/teammember/lisa-damla"
+          }
+        },
+        "2dd6497d-fb1f-42b9-aec9-c251fab4097a": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Perez_03ba3e74-7ad2-4354-bcb9-04f82780bd44.png",
+            "link_label": "PEREZ TIEKU",
+            "link": "shopify://metaobjects/teammember/perez-tieku"
+          }
+        }
+      },
+      "block_order": [
+        "d8c76e3a-9682-4e98-ad54-de25dc96e3e2",
+        "344bccad-18c9-45fe-a9fa-30f6d5343214",
+        "a746ac32-ac4e-4cf0-a968-b3c4d0a06e4d",
+        "5fcac650-cebb-403f-b694-e8cb80d71fc5",
+        "2dd6497d-fb1f-42b9-aec9-c251fab4097a"
+      ],
+      "settings": {
+        "sub_title": "MEET THE TEAM",
+        "title": "OUR TEAM",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "background_style": "none",
+        "button_label": "SEE THE FULL TEAM",
+        "button_link": "#",
+        "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
+        "columns_mobile": "2",
+        "top_padding_remove": true,
         "bottom_padding_remove": false
       }
     },
