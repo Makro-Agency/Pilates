@@ -73,6 +73,54 @@
         "btn_url": "#"
       }
     },
+    "custom_multigrid_section_JDeW6V": {
+      "type": "custom-multigrid-section",
+      "blocks": {
+        "card_WE48TE": {
+          "type": "card",
+          "settings": {
+            "card_title": "REFORMD EXPERIENCE",
+            "card_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
+            "benefits_label": "Benefits",
+            "benefit_1": "Advanced Lagree machines",
+            "benefit_2": "Theatrical lighting & sound",
+            "benefit_3": ""
+          }
+        },
+        "card_fVhhLp": {
+          "type": "card",
+          "settings": {
+            "card_title": "Amenities",
+            "card_text": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
+            "benefits_label": "Benefits",
+            "benefit_1": "Torem ipsum dolor sit amet, consectetur",
+            "benefit_2": "Ipsum dolor sit amet, consectetur adipiscing",
+            "benefit_3": ""
+          }
+        },
+        "card_XrPFXc": {
+          "type": "card",
+          "settings": {
+            "card_title": "Flexible Access",
+            "card_text": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
+            "benefits_label": "Benefits",
+            "benefit_1": "Torem ipsum dolor sit amet, consectetur",
+            "benefit_2": "Ipsum dolor sit amet, consectetur adipiscing",
+            "benefit_3": "Nunc vulputate libero"
+          }
+        }
+      },
+      "block_order": [
+        "card_WE48TE",
+        "card_fVhhLp",
+        "card_XrPFXc"
+      ],
+      "name": "Custom Workout",
+      "settings": {
+        "heading": "More Than a Workout",
+        "subtitle": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora."
+      }
+    },
     "custom_our_location_MRtpzi": {
       "type": "custom-our-location",
       "blocks": {
@@ -141,54 +189,6 @@
         "description": "The best of boutique fitness and wellness: sweat it out in over 500 yoga, Pilates, HIIT, ride, Small Group Training, and Lagree group fitness classes weekly."
       }
     },
-    "custom_multigrid_section_JDeW6V": {
-      "type": "custom-multigrid-section",
-      "blocks": {
-        "card_WE48TE": {
-          "type": "card",
-          "settings": {
-            "card_title": "REFORMD EXPERIENCE",
-            "card_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
-            "benefits_label": "Benefits",
-            "benefit_1": "Advanced Lagree machines",
-            "benefit_2": "Theatrical lighting & sound",
-            "benefit_3": "Immersive studio concept"
-          }
-        },
-        "card_fVhhLp": {
-          "type": "card",
-          "settings": {
-            "card_title": "Amenities",
-            "card_text": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
-            "benefits_label": "Benefits",
-            "benefit_1": "Torem ipsum dolor sit amet, consectetur",
-            "benefit_2": "Ipsum dolor sit amet, consectetur adipiscing",
-            "benefit_3": "Nunc vulputate libero"
-          }
-        },
-        "card_XrPFXc": {
-          "type": "card",
-          "settings": {
-            "card_title": "Flexible Access",
-            "card_text": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora.",
-            "benefits_label": "Benefits",
-            "benefit_1": "Torem ipsum dolor sit amet, consectetur",
-            "benefit_2": "Ipsum dolor sit amet, consectetur adipiscing",
-            "benefit_3": "Nunc vulputate libero"
-          }
-        }
-      },
-      "block_order": [
-        "card_WE48TE",
-        "card_fVhhLp",
-        "card_XrPFXc"
-      ],
-      "name": "Custom Workout",
-      "settings": {
-        "heading": "More Than a Workout",
-        "subtitle": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora."
-      }
-    },
     "custom_hero_banner_rq3k7C": {
       "type": "custom-hero-banner",
       "name": "Custom Hero Banner",
@@ -230,8 +230,8 @@
     "custom_hero_banner_ddKzhU",
     "custom_hero_banner3_tKAhJB",
     "custom_hero_banner_yGiWQR",
-    "custom_our_location_MRtpzi",
     "custom_multigrid_section_JDeW6V",
+    "custom_our_location_MRtpzi",
     "custom_hero_banner_rq3k7C",
     "b94628c5-aa61-4f88-8bc2-a9ef925836ad",
     "4447810a-31f8-4c13-bde9-c78a636e7b23"
