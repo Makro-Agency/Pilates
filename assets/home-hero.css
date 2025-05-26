@@ -106,10 +106,10 @@ body .home-hero .banner__box_top{
 .transparent_header main section.home-hero:first-child .banner__box {
   margin-top: 0;
 }
-.template-index main:has(.home-hero .animate--paralex-effect video) .shopify-section:not(.home-hero),
+/* .template-index main:has(.home-hero .animate--paralex-effect video) .shopify-section:not(.home-hero),
 .template-index main:has(.home-hero .animate--paralex-effect iframe) .shopify-section:not(.home-hero){
   background-color: #fff; 
-}
+} */
 .home-hero .animate--paralex-effect .banner__media video, 
 .home-hero .animate--paralex-effect .banner__media iframe{
   position: fixed !important;
