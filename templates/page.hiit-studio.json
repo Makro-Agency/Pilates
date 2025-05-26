@@ -119,6 +119,77 @@
         "section_title_mobtop": true
       }
     },
+    "hit-team": {
+      "type": "hit-team",
+      "blocks": {
+        "d8c76e3a-9682-4e98-ad54-de25dc96e3e2": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Baylee.png",
+            "link_label": "BAYLEE JOY",
+            "link": "shopify://metaobjects/teammember/baylee-joy"
+          }
+        },
+        "344bccad-18c9-45fe-a9fa-30f6d5343214": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Dustin_a25365df-6d70-4dbe-8d06-2651c021daba.jpg",
+            "link_label": "DUSTIN PYM",
+            "link": "shopify://metaobjects/teammember/dustin-pym"
+          }
+        },
+        "a746ac32-ac4e-4cf0-a968-b3c4d0a06e4d": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Kaivan.png",
+            "link_label": "KAIVAN SHIMI",
+            "link": "shopify://metaobjects/teammember/kaivan-shimi"
+          }
+        },
+        "5fcac650-cebb-403f-b694-e8cb80d71fc5": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Lisa.png",
+            "link_label": "LISA DAMLA",
+            "link": "shopify://metaobjects/teammember/lisa-damla"
+          }
+        },
+        "2dd6497d-fb1f-42b9-aec9-c251fab4097a": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Perez_03ba3e74-7ad2-4354-bcb9-04f82780bd44.png",
+            "link_label": "PEREZ TIEKU",
+            "link": "shopify://metaobjects/teammember/perez-tieku"
+          }
+        }
+      },
+      "block_order": [
+        "d8c76e3a-9682-4e98-ad54-de25dc96e3e2",
+        "344bccad-18c9-45fe-a9fa-30f6d5343214",
+        "a746ac32-ac4e-4cf0-a968-b3c4d0a06e4d",
+        "5fcac650-cebb-403f-b694-e8cb80d71fc5",
+        "2dd6497d-fb1f-42b9-aec9-c251fab4097a"
+      ],
+      "settings": {
+        "sub_title": "MEET THE TEAM",
+        "title": "OUR TEAM",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "background_style": "none",
+        "button_label": "SEE THE FULL TEAM",
+        "button_link": "#",
+        "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
+        "columns_mobile": "2",
+        "top_padding_remove": true,
+        "bottom_padding_remove": false
+      }
+    },
     "hit-classes": {
       "type": "hit-classes",
       "blocks": {
@@ -599,77 +670,6 @@
         "heading": "MEGAFORMER CLASSES",
         "detail": "<p><strong>What is Lagree?</strong></p><p>Founded on five components of physical fitness – endurance, cardiovascular fitness, body composition, flexibility, and strength – Lagree is a patented high-intensity, low-impact exercise method that tightens, tones, and deeply activates slow-twitch muscle fibers. The method integrates body-building principles and focuses on slow, controlled movements and progressive load to build strength.</p><p><strong>New to Lagree?</strong> We recommend booking our Fundamentals class to understand the basics and get familiar with the Megaformer.</p>",
         "top_padding_remove": false,
-        "bottom_padding_remove": false
-      }
-    },
-    "hit-team": {
-      "type": "hit-team",
-      "blocks": {
-        "d8c76e3a-9682-4e98-ad54-de25dc96e3e2": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "image": "shopify://shop_images/Baylee.png",
-            "link_label": "BAYLEE JOY",
-            "link": "shopify://metaobjects/teammember/baylee-joy"
-          }
-        },
-        "344bccad-18c9-45fe-a9fa-30f6d5343214": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "image": "shopify://shop_images/Dustin_a25365df-6d70-4dbe-8d06-2651c021daba.jpg",
-            "link_label": "DUSTIN PYM",
-            "link": "shopify://metaobjects/teammember/dustin-pym"
-          }
-        },
-        "a746ac32-ac4e-4cf0-a968-b3c4d0a06e4d": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "image": "shopify://shop_images/Kaivan.png",
-            "link_label": "KAIVAN SHIMI",
-            "link": "shopify://metaobjects/teammember/kaivan-shimi"
-          }
-        },
-        "5fcac650-cebb-403f-b694-e8cb80d71fc5": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "image": "shopify://shop_images/Lisa.png",
-            "link_label": "LISA DAMLA",
-            "link": "shopify://metaobjects/teammember/lisa-damla"
-          }
-        },
-        "2dd6497d-fb1f-42b9-aec9-c251fab4097a": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "image": "shopify://shop_images/Perez_03ba3e74-7ad2-4354-bcb9-04f82780bd44.png",
-            "link_label": "PEREZ TIEKU",
-            "link": "shopify://metaobjects/teammember/perez-tieku"
-          }
-        }
-      },
-      "block_order": [
-        "d8c76e3a-9682-4e98-ad54-de25dc96e3e2",
-        "344bccad-18c9-45fe-a9fa-30f6d5343214",
-        "a746ac32-ac4e-4cf0-a968-b3c4d0a06e4d",
-        "5fcac650-cebb-403f-b694-e8cb80d71fc5",
-        "2dd6497d-fb1f-42b9-aec9-c251fab4097a"
-      ],
-      "settings": {
-        "sub_title": "MEET THE TEAM",
-        "title": "OUR TEAM",
-        "heading_size": "h2",
-        "image_ratio": "square",
-        "columns_desktop": 6,
-        "background_style": "none",
-        "button_label": "SEE THE FULL TEAM",
-        "button_link": "#",
-        "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
-        "columns_mobile": "2",
-        "top_padding_remove": true,
         "bottom_padding_remove": false
       }
     },

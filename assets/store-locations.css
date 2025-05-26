@@ -104,6 +104,7 @@
   width: 220px;
   border-left: 1px solid #E6E6E6;
 }
+
 .store-locations-item .service-title {
   text-transform: uppercase;
   margin: 0 0 15px;
@@ -125,7 +126,9 @@
   top: 6px;
   left: 0;
 }
-
+@media screen and (min-width: 992px){
+  .store-locations-item:only-child .multicolumn-card__services {width: 260px;}
+}
 @media screen and (max-width: 1500px){
   .store-locations-item .multicolumn-card__info, .store-locations-item .multicolumn-card__services {
     padding: 30px;
