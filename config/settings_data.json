@@ -1167,12 +1167,13 @@
           "4fec6b6d-89ba-441b-b173-3d1ac5786441": {
             "type": "heading",
             "settings": {
-              "heading": "SWEAT AND TONIC IN THE MEDIA",
+              "heading": "REFORMD IN THE LIMELIGHT",
               "heading_size": "h1"
             }
           },
           "c30e8f43-61db-4861-834a-9a40936b1649": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/image_30.png",
               "logo_link": ""
@@ -1180,6 +1181,7 @@
           },
           "e5379787-d6dd-4fde-8973-6c153d18d4cd": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/Frame_5779.png",
               "logo_link": ""
@@ -1187,6 +1189,7 @@
           },
           "d2bf2a39-cc1a-41b5-b312-b10ae0eabe32": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/Group_10.png",
               "logo_link": ""
@@ -1194,6 +1197,7 @@
           },
           "9f2b795f-cd42-4e68-9e19-6ecdc91a6178": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/Vector.png",
               "logo_link": ""
@@ -1201,6 +1205,7 @@
           },
           "1e3ce6cd-27be-4246-8a76-40795c173136": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/Group_11.png",
               "logo_link": ""
@@ -1208,6 +1213,7 @@
           },
           "805b440f-b1b7-4cce-9c66-d648a00b18af": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/Group_12.png",
               "logo_link": ""
@@ -1228,7 +1234,7 @@
           "allow_transparent_header": true,
           "image": "shopify://shop_images/press-desktop.png",
           "img_mobile": "shopify://shop_images/press-mob.png",
-          "image_overlay_opacity": 50,
+          "image_overlay_opacity": 100,
           "image_height": "adapt",
           "desktop_content_position": "middle-left",
           "show_text_box": false,
@@ -1245,45 +1251,56 @@
           "image_LDKN8m": {
             "type": "image",
             "settings": {
-              "logo": "shopify://shop_images/image_14.png",
-              "title": "<p>Sweat and Tonic, Toronto's Most Innovative Group Fitness and Wellness Hub, Opens Second Location This Fall at The Well™</p>",
-              "date": "13.02.2025",
-              "link_label": "Read more",
-              "link": "https://www.marianatek.com/the-mariana-tek-studio-awards/"
-            }
-          },
-          "image_GmJRNJ": {
-            "type": "image",
-            "settings": {
-              "logo": "shopify://shop_images/image_5.png",
-              "title": "<p>Wellness practices fuel fitness sector growth: Experts</p>",
+              "logo": "shopify://shop_images/fitt-insider.png",
+              "title": "<p>Sweat and Tonic Unveils Lagree Studio REFORMD</p>",
               "date": "04.02.2025",
               "link_label": "Read more",
               "link": "https://insider.fitt.co/sweat-and-tonic-reformd-lagree-studio/"
             }
           },
+          "image_FT6N49": {
+            "type": "image",
+            "settings": {
+              "logo": "shopify://shop_images/Cision_Ltd_logo_svg.png",
+              "title": "<p>Sweat and Tonic Unveils New Concept Studio REFORMD - the Highest-Capacity Lagree Studio Worldwide</p>",
+              "date": "22.01.2025",
+              "link_label": "Read more",
+              "link": "https://www.newswire.ca/news-releases/sweat-and-tonic-unveils-new-concept-studio-reformd-the-highest-capacity-lagree-studio-worldwide-876657894.html"
+            }
+          },
+          "image_GmJRNJ": {
+            "type": "image",
+            "settings": {
+              "logo": "shopify://shop_images/blogto.jpg",
+              "title": "<p>Luxury Toronto Gym Opening New Studio Next Door To Other Location</p>",
+              "date": "21.01.2025",
+              "link_label": "Read more",
+              "link": "https://www.blogto.com/sports_play/2025/01/sweat-and-tonic-toronto-new-studio-reformd/"
+            }
+          },
           "image_739Y3Q": {
             "type": "image",
             "settings": {
-              "logo": "shopify://shop_images/image_16.png",
-              "title": "<p>The best spinning classes in Toronto</p>",
-              "date": "23.01.2025",
-              "link_label": "Read more",
-              "link": "https://retail-insider.com/retail-insider/2025/01/sweat-and-tonic-unveils-new-concept-studio-reformd-renderings/"
-            }
-          },
-          "image_QJgyp8": {
-            "type": "image",
-            "settings": {
-              "logo": "shopify://shop_images/image_17.png",
-              "title": "<p>Indoor fitness reopens today</p>",
+              "logo": "shopify://shop_images/trendhunter.png",
+              "title": "<p>Sweat and Tonic Announces the Launch of REFORMD</p>",
               "date": "23.01.2025",
               "link_label": "Read more",
               "link": "https://www.trendhunter.com/trends/sweat-and-tonics"
             }
           },
+          "image_QJgyp8": {
+            "type": "image",
+            "settings": {
+              "logo": "shopify://shop_images/RetailInsiderLogo-1.png",
+              "title": "<p>Sweat and Tonic Unveils New Concept Studio REFORMD (Renderings)</p>",
+              "date": "23.01.2025",
+              "link_label": "Read more",
+              "link": "https://retail-insider.com/retail-insider/2025/01/sweat-and-tonic-unveils-new-concept-studio-reformd-renderings/"
+            }
+          },
           "image_rJkcmF": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/image_18.png",
               "title": "<p>Gyms Can Finally Reopen Next Week In Ontario & Here's What You Can Expect</p>",
@@ -1294,6 +1311,7 @@
           },
           "image_7EryYm": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/image_18.png",
               "title": "<p>6 Outdoor Workout Classes With Stunning Views You Can Book In Toronto This Summer</p>",
@@ -1304,6 +1322,7 @@
           },
           "image_tpDBLQ": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/image_19.png",
               "title": "<p>Ontario enters Stage 1 of reopening after several months of lockdown</p>",
@@ -1312,18 +1331,9 @@
               "link": "https://fashionmagazine.com/beauty-grooming/experiential-christmas-gifts/"
             }
           },
-          "image_FT6N49": {
-            "type": "image",
-            "settings": {
-              "logo": "shopify://shop_images/image_14.png",
-              "title": "<p>Toronto's most innovative and luxurious Fitness & Wellness Hub 'Sweat and Tonic' To Unveil Second Location at 'The Well' in Toronto</p>",
-              "date": "07.11.2024",
-              "link_label": "Read more",
-              "link": "https://torontolife.com/city/sweat-and-tonic-tonic-spa-the-well/"
-            }
-          },
           "image_fknipE": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/image_20.png",
               "title": "<p>RioCan and Allied Provide Progress Update for The Well™: 110,000 Square Feet of Retail and ~One Million Square Feet of Office Leased To-date</p>",
@@ -1334,6 +1344,7 @@
           },
           "image_9JQP4P": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/image_6.png",
               "title": "<p>Toronto's most innovative and luxurious Fitness & Wellness Hub 'Sweat and Tonic' To Unveil Second Location at 'The Well' in</p>",
@@ -1344,6 +1355,7 @@
           },
           "image_n9NVbH": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/image_22.png",
               "title": "<p>Toronto's most innovative and luxurious Fitness & Wellness Hub 'Sweat and Tonic' To Unveil Second Location at 'The Well' in Toronto</p>",
@@ -1354,6 +1366,7 @@
           },
           "image_jBEULm": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/image_16.png",
               "title": "<p>Toronto getting new a fitness centre that will be one of its largest</p>",
@@ -1364,6 +1377,7 @@
           },
           "image_jWPMWJ": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/image_7.png",
               "title": "<p>Toronto getting new a fitness centre that will be one of its largest</p>",
@@ -1374,6 +1388,7 @@
           },
           "image_PMhpQ7": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/image_16.png",
               "title": "<p>Toronto gyms told to close for another month just as they were about to open again</p>",
@@ -1384,6 +1399,7 @@
           },
           "image_JYVL9A": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/image_16.png",
               "title": "<p>Toronto gym owners say their facilities are safe and shutdown is unfair</p>",
@@ -1394,6 +1410,7 @@
           },
           "image_zt8xRE": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/image_18.png",
               "title": "<p>Toronto Fitness Manager Says Gyms Should Stay Open Because They Are 'Keeping People Sane</p>",
@@ -1404,6 +1421,7 @@
           },
           "image_yYmLyU": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/image_7.png",
               "title": "<p>\"Devastating\" second wave closure leaves Toronto's fitness studios in jeopardy</p>",
@@ -1414,6 +1432,7 @@
           },
           "image_w3c8aa": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/Frame_5396.png",
               "title": "<p>Gym, restaurant owners dismayed by province’s COVID-19 restrictions</p>",
@@ -1424,6 +1443,7 @@
           },
           "image_EYWBcX": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/image_25.png",
               "title": "<p>“We’re disinfecting shower stalls after every use”: What reopening looks like at five Toronto gyms</p>",
@@ -1434,6 +1454,7 @@
           },
           "image_DUhd3H": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/Frame_5396_1.png",
               "title": "<p>Sweat and Tonic Brings Luxury To Group Fitness With New Toronto Location</p>",
@@ -1444,6 +1465,7 @@
           },
           "image_nGx7gt": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/Frame_5396_2.png",
               "title": "<p>Canadian businesses to support this holiday season</p>",
@@ -1454,6 +1476,7 @@
           },
           "image_jBrEdM": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/Mask_group_1.png",
               "title": "<p>7 Fitness Studios In Toronto That Are Finally Reopening</p>",
@@ -1464,6 +1487,7 @@
           },
           "image_WtcJ6F": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/Mask_group.png",
               "title": "<p>Reviews: Power pilates @ Sweat and tonic</p>",
@@ -1474,6 +1498,7 @@
           },
           "image_rnajgf": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "logo": "shopify://shop_images/image_18.png",
               "title": "<p>Multiple Toronto Gyms Are Opening As Soon As Friday & They Will Be Totally Different</p>",
@@ -1485,13 +1510,13 @@
         },
         "block_order": [
           "image_LDKN8m",
+          "image_FT6N49",
           "image_GmJRNJ",
           "image_739Y3Q",
           "image_QJgyp8",
           "image_rJkcmF",
           "image_7EryYm",
           "image_tpDBLQ",
-          "image_FT6N49",
           "image_fknipE",
           "image_9JQP4P",
           "image_n9NVbH",
@@ -1510,7 +1535,7 @@
           "image_rnajgf"
         ],
         "settings": {
-          "title": "IN THE NEWS",
+          "title": "THE LATEST NEWS",
           "enable": true
         }
       }
