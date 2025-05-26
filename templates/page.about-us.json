@@ -76,6 +76,19 @@
     "custom_our_location_MRtpzi": {
       "type": "custom-our-location",
       "blocks": {
+        "location_qB4kJM": {
+          "type": "location",
+          "settings": {
+            "title": "REFORMD",
+            "text": "The world's largest capacity Lagree Fitness studio, located at The Well in Toronto.",
+            "link": "/",
+            "link_text": "Learn more",
+            "services_heading": "HIGHLIGHTS",
+            "service_1": "32 Megaformers",
+            "service_2": "Chromotherapy",
+            "service_3": "Full-service change rooms & showers"
+          }
+        },
         "location_E4MWxh": {
           "type": "location",
           "settings": {
@@ -117,6 +130,7 @@
         }
       },
       "block_order": [
+        "location_qB4kJM",
         "location_E4MWxh",
         "location_yc6LjR",
         "location_niM47h"
