@@ -32,7 +32,7 @@
 {%- liquid            
   assign has_drakness = 'dark'
   assign bright_temp = 'pre-sale-landing,index,product,cart,faq,terms-conditions' | split:','
-  assign bright_temp = 'index,pre-sale-landing,faq,terms-conditions,product,team,cart,press,about-us,404,accessibility-policy,contact,hiit-studio,ride-studio' | split:','
+  assign bright_temp = 'index,pre-sale-landing,faq,terms-conditions,product,team,cart,press,about-us,404,accessibility-policy,contact,hiit-studio,ride-studio,private-training' | split:','
   for bt in bright_temp
     if bt == "page"
       if template.suffix == blank
