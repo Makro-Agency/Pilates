@@ -115,7 +115,9 @@
   line-height: 100%;
   letter-spacing: 0.32px;
 }
-
+.hit-team .full-tema-li .link:hover svg{
+  color: #FEE4B1;
+}
 .hit-team .full-tema-li .link:after {
   position: absolute;
   height: 100%;
@@ -137,9 +139,7 @@
   padding-top: 180px;
   padding-bottom: 180px;
 }
-.template--hiit-studio #shopify-section-template--24480261636467__hit-team.section.hit-team .section-padding {
-      padding-top: 180px !important;
-}
+
 
 .hit-team .all-btn-wrap .button--primary {
   background-color: #FEE4B1;
