@@ -126,6 +126,7 @@
   top: 6px;
   left: 0;
 }
+.store-locations .multicolumn-list__item:only-child {max-width: 100%;}
 @media screen and (min-width: 992px){
   .store-locations-item:only-child .multicolumn-card__services {width: 260px;}
 }
