@@ -11,6 +11,11 @@
   transform: rotate(104.55deg);
   z-index: 1;
 }
+.template--hiit-studio .hit-banner-row:before,
+.template--hiit-studio .hit-team:before { 
+  opacity: 0;
+}
+
 .section.hit-team{
   /* overflow: visible; */
 }
