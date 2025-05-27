@@ -11,7 +11,9 @@
   padding-top: 180px;
   padding-bottom: 180px;
 }
-
+.template--hiit-studio .hit-multicolumn .section-padding {
+  padding-top: 0;
+}
 .hit-multicolumn .multicolumn .title {
   font-size: 40px;
   font-weight: 500;

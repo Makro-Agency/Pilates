@@ -160,7 +160,7 @@
     {% sections 'header-group' %}
     {%- liquid            
       assign has_drakness = false
-      assign bright_temp = 'index,pre-sale-landing,faq,terms-conditions,product,team,cart,press,about-us,404,accessibility-policy,contact,hiit-studio,ride-studio,collection,shop' | split:','
+      assign bright_temp = 'index,pre-sale-landing,faq,terms-conditions,product,team,cart,press,about-us,404,accessibility-policy,contact,hiit-studio,ride-studio,collection,shop,private-training' | split:','
       for bt in bright_temp
         if bt == "page"
           if template.suffix == blank

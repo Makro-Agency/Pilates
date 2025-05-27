@@ -130,12 +130,15 @@
 }
 .template--private-training .hit-team .full-tema-li .link:after{
   opacity: 1;
-  background-color: rgba(255, 255, 255, 0.40);
+  /* background-color: rgba(255, 255, 255, 0.40); */
   z-index: -1;
 }
 .hit-team .section-padding {
   padding-top: 180px;
   padding-bottom: 180px;
+}
+.template--hiit-studio #shopify-section-template--24480261636467__hit-team.section.hit-team .section-padding {
+      padding-top: 180px !important;
 }
 
 .hit-team .all-btn-wrap .button--primary {
