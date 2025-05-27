@@ -33,7 +33,6 @@
 }
 .custom-workout .custom-workout__card {
 	border-radius: 2px;
-	border: 1px solid rgba(255, 255, 255, 0.04);
 	background: rgba(255, 255, 255, 0.02);
 	box-shadow: -5px -5px 60px 0px rgba(255, 255, 255, 0.02) inset;
 	backdrop-filter: blur(4px);
