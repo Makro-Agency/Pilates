@@ -115,7 +115,9 @@
   line-height: 100%;
   letter-spacing: 0.32px;
 }
-
+.hit-team .full-tema-li .link:hover svg{
+  color: #FEE4B1;
+}
 .hit-team .full-tema-li .link:after {
   position: absolute;
   height: 100%;
@@ -130,13 +132,14 @@
 }
 .template--private-training .hit-team .full-tema-li .link:after{
   opacity: 1;
-  background-color: rgba(255, 255, 255, 0.40);
+  /* background-color: rgba(255, 255, 255, 0.40); */
   z-index: -1;
 }
 .hit-team .section-padding {
   padding-top: 180px;
   padding-bottom: 180px;
 }
+
 
 .hit-team .all-btn-wrap .button--primary {
   background-color: #FEE4B1;

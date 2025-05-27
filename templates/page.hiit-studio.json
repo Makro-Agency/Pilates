@@ -602,6 +602,135 @@
         "bottom_padding_remove": false
       }
     },
+    "event-contact": {
+      "type": "event-contact",
+      "disabled": true,
+      "settings": {
+        "bg_color_left": "#26221b",
+        "text_color_left": "#ffffff",
+        "sub_color_left": "#fee4b1",
+        "subheading_left": "Ready to sweat?",
+        "heading_left": "LET’S GET YOU IN",
+        "text_left": "",
+        "p_name": "SARAH TRAN",
+        "p_tagline": "Events & Sales Manager",
+        "p_mail": "sarah@sweatandtonic.com",
+        "heading": "Contact form",
+        "btn_label": "Submit event inquiry",
+        "btn_url": "",
+        "success_msg": "<p>Thanks for inquiring. Your entry is submitted, and we'll reach out to you soon.</p>",
+        "color_scheme": "",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false,
+        "show_current_activity_dropdown": false,
+        "embed-form": "<!-- Begin Connect Signup Form -->\n<link href=\"https://assets.brandbot.com/forms/embed/embed.css\" rel=\"stylesheet\" type=\"text/css\">\n<style type=\"text/css\">\n\t#bb_form .field.form-group:after {display: none;}\n\t#bb_form .field.form-group input[type=\"text\"],.contact #bb_form .field.form-group input[type=\"email\"],.contact #bb_form .field.form-group input[type=\"tel\"]{border: none;border-bottom: 1px solid rgba(0,0,0,.2);border-radius: unset;}\n\t#bb_form .form-group.with-label {flex-wrap: wrap;flex-direction: column;}\n\t#bb_form .form-group.with-label label{font-weight:400;}\n\t#bb_form .form-group.with-label input[type=checkbox]{margin-left: 20px;}\n</style>\n\n<div id=\"bb_form\">\n\t<form method=\"post\" action=\"https://microservices.brndbot.net/forms/answers\" name=\"ibbxy\" id=\"bb_form_inner\">\n\t\t<div id=\"alert\"></div>\n\t\t<div class=\"contact__fields\">\n\t\t\t<div class=\"field form-group no-label\">\n\t\t\t\t<label for=\"bb_first_name\">First Name</label>\n\t\t\t\t<input type=\"text\" name=\"bb_first_name\" id=\"bb_first_name\" class=\"form-control\" required=\"required\" placeholder=\"First Name\">\n\t\t\t</div>\n\t\t\t<div class=\"field form-group no-label\">\n\t\t\t\t<label for=\"bb_last_name\">Last Name</label>\n\t\t\t\t<input type=\"text\" name=\"bb_last_name\" id=\"bb_last_name\" class=\"form-control\" required=\"required\" placeholder=\"Last Name\">\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"field form-group no-label\">\n\t\t\t<label for=\"bb_email\">Email Address</label>\n\t\t\t<input type=\"email\" name=\"bb_email\" id=\"bb_email\" class=\"form-control\" required=\"required\" placeholder=\"Email Address\">\n\t\t</div>\n\t\t<div class=\"form-group\">\n\t\t\t<input type=\"hidden\" name=\"bb_uuid\" id=\"bb_uuid\" value=\"a4325c6c-fc7c-4b67-b8f2-c318441997f3\">\n\t\t\t<button type=\"submit\" class=\"button button--primary\" id=\"bb_submit\" style=\"background-color: #000000; border-color: #000000; color: white;\">RSVP NOW</button>\n\t\t</div>\n\t</form>\n</div>\n<script>window.jQuery || document.write('<scr'+'ipt src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></scr'+'ipt>') </script>\n<script src=\"https://assets.brandbot.com/forms/embed/embed.js?id=ibbxy\"></script>\n<!-- Ending Connect Signup Form -->"
+      }
+    },
+    "hit-multicolumn": {
+      "type": "hit-multicolumn",
+      "blocks": {
+        "5f339c27-a2d8-4ed9-9d14-fd9c115bad81": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/YongeShuter_hiitstudio.jpg",
+            "title": "YONGE / SHUTER",
+            "text": "<p>Dive into a high-intensity interval training with Technogym Skillrun treadmills, Aqua boxing bags, and full dumbbell racks and resistance band stations.</p>",
+            "address": "225 Yonge Street, Toronto ON M5B 1N8",
+            "phone": "Studio capacity: 48 people",
+            "link_label": "see classes",
+            "link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48717"
+          }
+        },
+        "ab06944c-e56b-4aaa-962a-25c5bdcc7f46": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SweatandTonic_HIITalt.png",
+            "title": "FRONT / SPADINA (THE WELL)",
+            "text": "<p>Reach your potential with Technogym Skillrun treadmills, Aqua boxing bags, and premium FXD benches complete with dumbbells, kettlebells and slam balls.</p>",
+            "address": "486 Front Street West, Toronto ON M5V 0V2",
+            "phone": "Studio capacity: 60 people",
+            "link_label": "see classes",
+            "link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48750"
+          }
+        }
+      },
+      "block_order": [
+        "5f339c27-a2d8-4ed9-9d14-fd9c115bad81",
+        "ab06944c-e56b-4aaa-962a-25c5bdcc7f46"
+      ],
+      "settings": {
+        "title": "EXPLORE S&T STUDIOS",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "hit-banner-row": {
+      "type": "hit-banner-row",
+      "blocks": {
+        "2fc049c5-7369-409d-b14a-69872fa3a417": {
+          "type": "heading",
+          "settings": {
+            "heading": "BENEFITS OF HIIT & WEIGHT TRAINING",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "816d62d0-da59-4074-9bf1-9c214ed815fe": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "JOIN US",
+            "button_link_1": "shopify://collections/all",
+            "button_style": "link",
+            "applies_color_scheme": true,
+            "btn_text_clr": "#ffffff",
+            "btn_hvr_text_clr": "#ffffff",
+            "btn_bg_clr": "#ffffff",
+            "btn_hvr_bg_clr": "#fee4b1"
+          }
+        },
+        "486c1659-7943-4d3f-a46d-0d16c16aa358": {
+          "type": "function",
+          "settings": {
+            "enable_accord": true,
+            "text_clr": "#ffffff",
+            "svg_1": "<svg viewbox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"#ffffff\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <defs> <style>.cls-1{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style> </defs> <g id=\"ic-sport-dumbbell\"> <line class=\"cls-1\" x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"></line> <line class=\"cls-1\" x1=\"5\" y1=\"10\" x2=\"5\" y2=\"14\"></line> <line class=\"cls-1\" x1=\"8\" y1=\"8\" x2=\"8\" y2=\"16\"></line> <line class=\"cls-1\" x1=\"16\" y1=\"8\" x2=\"16\" y2=\"16\"></line> <line class=\"cls-1\" x1=\"19\" y1=\"10\" x2=\"19\" y2=\"14\"></line> </g> </g></svg>",
+            "title_1": "IMPROVE PERFORMANCE",
+            "desc_1": "<p>Experience full-body transformation. Build muscle, increase strength and endurance, and improve movement, mobility and coordination.</p>",
+            "svg_2": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\">\n  <g clip-path=\"url(#clip0_1042_1892)\">\n    <path d=\"M3.75 15H8.4375L10.3125 12.1875L14.0625 17.8125L15.9375 15H18.75\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    <path d=\"M2.8125 11.25C2.8125 11.1715 2.8125 11.0941 2.8125 11.0156C2.8125 9.3373 3.47921 7.72772 4.66596 6.54096C5.85272 5.35421 7.4623 4.6875 9.14062 4.6875C11.7879 4.6875 14.0555 6.13008 15 8.4375C15.9445 6.13008 18.2121 4.6875 20.8594 4.6875C22.5377 4.6875 24.1473 5.35421 25.334 6.54096C26.5208 7.72772 27.1875 9.3373 27.1875 11.0156C27.1875 18.75 15 25.3125 15 25.3125C15 25.3125 10.0781 22.6641 6.49453 18.75\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  </g>\n  <defs>\n    <clippath id=\"clip0_1042_1892\">\n      <rect width=\"30\" height=\"30\" fill=\"currentColor\"></rect>\n    </clippath>\n  </defs>\n</svg>",
+            "title_2": "BOOST CARDIOVASCULAR HEALTH",
+            "desc_2": "<p>Lower your risk of cardiovascular disease by improving your anaerobic threshold and increasing your peak oxygen consumption (VO2 max).</p>",
+            "svg_3": "<svg viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <path d=\"M12 2.84955C17.0537 2.84955 21.1505 6.94637 21.1505 12.0001C21.1505 17.0537 17.0537 21.1506 12 21.1506C6.94631 21.1506 2.84949 17.0537 2.84949 12.0001C2.84949 6.94637 6.94631 2.84955 12 2.84955Z\" stroke=\"#ffffff\" stroke-width=\"1.69905\" stroke-linecap=\"round\"></path> <path d=\"M7 12.6842H8.67217C8.75916 12.6842 8.83616 12.628 8.86266 12.5451L10.3761 7.81366C10.4405 7.61227 10.7327 7.63557 10.7643 7.84463L11.8836 15.2319C11.9146 15.4363 12.1974 15.4651 12.269 15.2712L14.0716 10.3871C14.1375 10.2086 14.3918 10.2142 14.4497 10.3954L15.1373 12.5451C15.1638 12.628 15.2408 12.6842 15.3278 12.6842H17\" stroke=\"#ffffff\" stroke-width=\"1.7\" stroke-linecap=\"round\"></path> </g></svg>",
+            "title_3": "IMPROVE HEALTH OUTCOMES",
+            "desc_3": "<p>Improve your metabolic rate, insulin sensitivity, glycemic control and cognitive function, and decrease your risk of metabolic syndrome, osteoarthritis, and type 2 diabetes.</p>",
+            "svg_4": "<svg width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.5882 15C21.5882 16.303 21.2018 17.5768 20.4779 18.6602C19.754 19.7437 18.7251 20.5881 17.5212 21.0867C16.3174 21.5854 14.9927 21.7159 13.7147 21.4616C12.4367 21.2074 11.2628 20.58 10.3414 19.6586C9.42003 18.7372 8.79256 17.5633 8.53836 16.2853C8.28415 15.0073 8.41462 13.6826 8.91326 12.4788C9.41191 11.2749 10.2563 10.246 11.3398 9.52208C12.4232 8.79816 13.697 8.41176 15 8.41176M21.5882 15C21.5882 13.2527 20.8941 11.5769 19.6586 10.3414C18.4231 9.10588 16.7473 8.41176 15 8.41176M21.5882 15H28.1765M15 8.41176V1.82353M24.3224 5.67765L19.6612 10.3388M24.3224 24.3224L19.6612 19.6612M15 28.1765V21.5882M5.67765 24.3224L10.3388 19.6612M1.82353 15H8.41176M5.67765 5.67765L10.3388 10.3388M14.9176 1H15.0824M24.8494 5.03529L24.9647 5.15059M29 14.9176V15.0824M24.9647 24.8494L24.8494 24.9647M15.0824 29H14.9176M5.15059 24.9647L5.03529 24.8494M1 15.0824V14.9176M5.03529 5.15059L5.15059 5.03529\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "title_4": "RELIEVE STRESS",
+            "desc_4": "<p>Improve your mental health and help reduce symptoms of stress and anxiety through a well-balanced exercise regimen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "2fc049c5-7369-409d-b14a-69872fa3a417",
+        "816d62d0-da59-4074-9bf1-9c214ed815fe",
+        "486c1659-7943-4d3f-a46d-0d16c16aa358"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "image": "shopify://shop_images/7bf7be5d46c147b9f1ee72e1594a9d89_1.jpg",
+        "img_mobile": "shopify://shop_images/Frame_6085_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "section_title_mobtop": true
+      }
+    },
     "hit-team": {
       "type": "hit-team",
       "blocks": {
@@ -669,137 +798,8 @@
         "button_link": "#",
         "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
         "columns_mobile": "2",
-        "top_padding_remove": true,
-        "bottom_padding_remove": false
-      }
-    },
-    "hit-banner-row": {
-      "type": "hit-banner-row",
-      "blocks": {
-        "2fc049c5-7369-409d-b14a-69872fa3a417": {
-          "type": "heading",
-          "settings": {
-            "heading": "BENEFITS OF HIIT & WEIGHT TRAINING",
-            "heading_size": "h1",
-            "text_clr": "#ffffff"
-          }
-        },
-        "816d62d0-da59-4074-9bf1-9c214ed815fe": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "JOIN US",
-            "button_link_1": "shopify://collections/all",
-            "button_style": "link",
-            "applies_color_scheme": true,
-            "btn_text_clr": "#ffffff",
-            "btn_hvr_text_clr": "#ffffff",
-            "btn_bg_clr": "#ffffff",
-            "btn_hvr_bg_clr": "#fee4b1"
-          }
-        },
-        "486c1659-7943-4d3f-a46d-0d16c16aa358": {
-          "type": "function",
-          "settings": {
-            "enable_accord": true,
-            "text_clr": "#ffffff",
-            "svg_1": "<svg viewbox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"#ffffff\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <defs> <style>.cls-1{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style> </defs> <g id=\"ic-sport-dumbbell\"> <line class=\"cls-1\" x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"></line> <line class=\"cls-1\" x1=\"5\" y1=\"10\" x2=\"5\" y2=\"14\"></line> <line class=\"cls-1\" x1=\"8\" y1=\"8\" x2=\"8\" y2=\"16\"></line> <line class=\"cls-1\" x1=\"16\" y1=\"8\" x2=\"16\" y2=\"16\"></line> <line class=\"cls-1\" x1=\"19\" y1=\"10\" x2=\"19\" y2=\"14\"></line> </g> </g></svg>",
-            "title_1": "IMPROVE PERFORMANCE",
-            "desc_1": "<p>Experience full-body transformation. Build muscle, increase strength and endurance, and improve movement, mobility and coordination.</p>",
-            "svg_2": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\">\n  <g clip-path=\"url(#clip0_1042_1892)\">\n    <path d=\"M3.75 15H8.4375L10.3125 12.1875L14.0625 17.8125L15.9375 15H18.75\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    <path d=\"M2.8125 11.25C2.8125 11.1715 2.8125 11.0941 2.8125 11.0156C2.8125 9.3373 3.47921 7.72772 4.66596 6.54096C5.85272 5.35421 7.4623 4.6875 9.14062 4.6875C11.7879 4.6875 14.0555 6.13008 15 8.4375C15.9445 6.13008 18.2121 4.6875 20.8594 4.6875C22.5377 4.6875 24.1473 5.35421 25.334 6.54096C26.5208 7.72772 27.1875 9.3373 27.1875 11.0156C27.1875 18.75 15 25.3125 15 25.3125C15 25.3125 10.0781 22.6641 6.49453 18.75\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  </g>\n  <defs>\n    <clippath id=\"clip0_1042_1892\">\n      <rect width=\"30\" height=\"30\" fill=\"currentColor\"></rect>\n    </clippath>\n  </defs>\n</svg>",
-            "title_2": "BOOST CARDIOVASCULAR HEALTH",
-            "desc_2": "<p>Lower your risk of cardiovascular disease by improving your anaerobic threshold and increasing your peak oxygen consumption (VO2 max).</p>",
-            "svg_3": "<svg viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <path d=\"M12 2.84955C17.0537 2.84955 21.1505 6.94637 21.1505 12.0001C21.1505 17.0537 17.0537 21.1506 12 21.1506C6.94631 21.1506 2.84949 17.0537 2.84949 12.0001C2.84949 6.94637 6.94631 2.84955 12 2.84955Z\" stroke=\"#ffffff\" stroke-width=\"1.69905\" stroke-linecap=\"round\"></path> <path d=\"M7 12.6842H8.67217C8.75916 12.6842 8.83616 12.628 8.86266 12.5451L10.3761 7.81366C10.4405 7.61227 10.7327 7.63557 10.7643 7.84463L11.8836 15.2319C11.9146 15.4363 12.1974 15.4651 12.269 15.2712L14.0716 10.3871C14.1375 10.2086 14.3918 10.2142 14.4497 10.3954L15.1373 12.5451C15.1638 12.628 15.2408 12.6842 15.3278 12.6842H17\" stroke=\"#ffffff\" stroke-width=\"1.7\" stroke-linecap=\"round\"></path> </g></svg>",
-            "title_3": "IMPROVE HEALTH OUTCOMES",
-            "desc_3": "<p>Improve your metabolic rate, insulin sensitivity, glycemic control and cognitive function, and decrease your risk of metabolic syndrome, osteoarthritis, and type 2 diabetes.</p>",
-            "svg_4": "<svg width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.5882 15C21.5882 16.303 21.2018 17.5768 20.4779 18.6602C19.754 19.7437 18.7251 20.5881 17.5212 21.0867C16.3174 21.5854 14.9927 21.7159 13.7147 21.4616C12.4367 21.2074 11.2628 20.58 10.3414 19.6586C9.42003 18.7372 8.79256 17.5633 8.53836 16.2853C8.28415 15.0073 8.41462 13.6826 8.91326 12.4788C9.41191 11.2749 10.2563 10.246 11.3398 9.52208C12.4232 8.79816 13.697 8.41176 15 8.41176M21.5882 15C21.5882 13.2527 20.8941 11.5769 19.6586 10.3414C18.4231 9.10588 16.7473 8.41176 15 8.41176M21.5882 15H28.1765M15 8.41176V1.82353M24.3224 5.67765L19.6612 10.3388M24.3224 24.3224L19.6612 19.6612M15 28.1765V21.5882M5.67765 24.3224L10.3388 19.6612M1.82353 15H8.41176M5.67765 5.67765L10.3388 10.3388M14.9176 1H15.0824M24.8494 5.03529L24.9647 5.15059M29 14.9176V15.0824M24.9647 24.8494L24.8494 24.9647M15.0824 29H14.9176M5.15059 24.9647L5.03529 24.8494M1 15.0824V14.9176M5.03529 5.15059L5.15059 5.03529\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
-            "title_4": "RELIEVE STRESS",
-            "desc_4": "<p>Improve your mental health and help reduce symptoms of stress and anxiety through a well-balanced exercise regimen.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "2fc049c5-7369-409d-b14a-69872fa3a417",
-        "816d62d0-da59-4074-9bf1-9c214ed815fe",
-        "486c1659-7943-4d3f-a46d-0d16c16aa358"
-      ],
-      "settings": {
-        "allow_transparent_header": false,
-        "image": "shopify://shop_images/7bf7be5d46c147b9f1ee72e1594a9d89_1.jpg",
-        "img_mobile": "shopify://shop_images/Frame_6085_1.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_alignment": "left",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "section_title_mobtop": true
-      }
-    },
-    "hit-multicolumn": {
-      "type": "hit-multicolumn",
-      "blocks": {
-        "5f339c27-a2d8-4ed9-9d14-fd9c115bad81": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/YongeShuter_hiitstudio.jpg",
-            "title": "YONGE / SHUTER",
-            "text": "<p>Dive into a high-intensity interval training with Technogym Skillrun treadmills, Aqua boxing bags, and full dumbbell racks and resistance band stations.</p>",
-            "address": "225 Yonge Street, Toronto ON M5B 1N8",
-            "phone": "Studio capacity: 48 people",
-            "link_label": "see classes",
-            "link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48717"
-          }
-        },
-        "ab06944c-e56b-4aaa-962a-25c5bdcc7f46": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/SweatandTonic_HIITalt.png",
-            "title": "FRONT / SPADINA (THE WELL)",
-            "text": "<p>Reach your potential with Technogym Skillrun treadmills, Aqua boxing bags, and premium FXD benches complete with dumbbells, kettlebells and slam balls.</p>",
-            "address": "486 Front Street West, Toronto ON M5V 0V2",
-            "phone": "Studio capacity: 60 people",
-            "link_label": "see classes",
-            "link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48750"
-          }
-        }
-      },
-      "block_order": [
-        "5f339c27-a2d8-4ed9-9d14-fd9c115bad81",
-        "ab06944c-e56b-4aaa-962a-25c5bdcc7f46"
-      ],
-      "settings": {
-        "title": "EXPLORE S&T STUDIOS",
-        "heading_size": "h2",
-        "image_ratio": "portrait",
-        "column_alignment": "left",
-        "background_style": "none",
-        "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
         "top_padding_remove": false,
         "bottom_padding_remove": false
-      }
-    },
-    "event-contact": {
-      "type": "event-contact",
-      "disabled": true,
-      "settings": {
-        "bg_color_left": "#26221b",
-        "text_color_left": "#ffffff",
-        "sub_color_left": "#fee4b1",
-        "subheading_left": "Ready to sweat?",
-        "heading_left": "LET’S GET YOU IN",
-        "text_left": "",
-        "p_name": "SARAH TRAN",
-        "p_tagline": "Events & Sales Manager",
-        "p_mail": "sarah@sweatandtonic.com",
-        "heading": "Contact form",
-        "btn_label": "Submit event inquiry",
-        "btn_url": "",
-        "success_msg": "<p>Thanks for inquiring. Your entry is submitted, and we'll reach out to you soon.</p>",
-        "color_scheme": "",
-        "top_padding_remove": false,
-        "bottom_padding_remove": false,
-        "show_current_activity_dropdown": false,
-        "embed-form": "<!-- Begin Connect Signup Form -->\n<link href=\"https://assets.brandbot.com/forms/embed/embed.css\" rel=\"stylesheet\" type=\"text/css\">\n<style type=\"text/css\">\n\t#bb_form .field.form-group:after {display: none;}\n\t#bb_form .field.form-group input[type=\"text\"],.contact #bb_form .field.form-group input[type=\"email\"],.contact #bb_form .field.form-group input[type=\"tel\"]{border: none;border-bottom: 1px solid rgba(0,0,0,.2);border-radius: unset;}\n\t#bb_form .form-group.with-label {flex-wrap: wrap;flex-direction: column;}\n\t#bb_form .form-group.with-label label{font-weight:400;}\n\t#bb_form .form-group.with-label input[type=checkbox]{margin-left: 20px;}\n</style>\n\n<div id=\"bb_form\">\n\t<form method=\"post\" action=\"https://microservices.brndbot.net/forms/answers\" name=\"ibbxy\" id=\"bb_form_inner\">\n\t\t<div id=\"alert\"></div>\n\t\t<div class=\"contact__fields\">\n\t\t\t<div class=\"field form-group no-label\">\n\t\t\t\t<label for=\"bb_first_name\">First Name</label>\n\t\t\t\t<input type=\"text\" name=\"bb_first_name\" id=\"bb_first_name\" class=\"form-control\" required=\"required\" placeholder=\"First Name\">\n\t\t\t</div>\n\t\t\t<div class=\"field form-group no-label\">\n\t\t\t\t<label for=\"bb_last_name\">Last Name</label>\n\t\t\t\t<input type=\"text\" name=\"bb_last_name\" id=\"bb_last_name\" class=\"form-control\" required=\"required\" placeholder=\"Last Name\">\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"field form-group no-label\">\n\t\t\t<label for=\"bb_email\">Email Address</label>\n\t\t\t<input type=\"email\" name=\"bb_email\" id=\"bb_email\" class=\"form-control\" required=\"required\" placeholder=\"Email Address\">\n\t\t</div>\n\t\t<div class=\"form-group\">\n\t\t\t<input type=\"hidden\" name=\"bb_uuid\" id=\"bb_uuid\" value=\"a4325c6c-fc7c-4b67-b8f2-c318441997f3\">\n\t\t\t<button type=\"submit\" class=\"button button--primary\" id=\"bb_submit\" style=\"background-color: #000000; border-color: #000000; color: white;\">RSVP NOW</button>\n\t\t</div>\n\t</form>\n</div>\n<script>window.jQuery || document.write('<scr'+'ipt src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></scr'+'ipt>') </script>\n<script src=\"https://assets.brandbot.com/forms/embed/embed.js?id=ibbxy\"></script>\n<!-- Ending Connect Signup Form -->"
       }
     }
   },
@@ -807,9 +807,9 @@
     "hit-hero",
     "hit-banner-column",
     "hit-classes",
-    "hit-team",
-    "hit-banner-row",
+    "event-contact",
     "hit-multicolumn",
-    "event-contact"
+    "hit-banner-row",
+    "hit-team"
   ]
 }
