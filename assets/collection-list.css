@@ -82,6 +82,9 @@
   color: #FFFFFF;
   
   }
+  .facets-wrapper .facets-container #FacetFiltersForm .facet-filters .facet-filters__sort option{
+    color: #000;
+  }
 .facets-wrapper .facets-container #FacetFiltersForm .facet-filters .facet-filters__sort:focus-visible,
 .facets-wrapper .facets-container #FacetFiltersForm .facet-filters .facet-filters__sort:focus-within,
 .facets-wrapper .facets-container #FacetFiltersForm .facet-filters .facet-filters__sort:focus { outline:none; box-shadow:none; border:none; }
