@@ -2,6 +2,9 @@
 .collection-hero .collection-hero__inner { position:relative; z-index: 2; }
 .collection-hero .collection-hero__inner .content-wrapper .collection-hero__text-wrapper { padding:0; }
 .collection-hero .collection-hero__inner .content-wrapper .collection-hero__text-wrapper .collection-hero__title {  margin:0; }
+.template-collection .breadcrumbs .breadcrumbs__list .breadcrumbs__item .breadcrumbs__link, .template-collection .breadcrumbs .breadcrumbs__list .breadcrumbs__item a {
+ color: #fff;
+}
 
 /* .template-collection:has(#MainContent .collection-hero.collection-hero--with-image) .section-header { }
 .template-collection:has(#MainContent .collection-hero.collection-hero--with-image) .section-header:not(.scrolled-past-header) .header-wrapper { background:transparent; 
