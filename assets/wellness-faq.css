@@ -312,14 +312,15 @@
 		flex-direction: column;
 		gap: 14px;
 	}
-	.wellness-faq > .padding-sections:before {
+	.wellness-faq>.padding-sections:before {
 		filter: blur(100px);
-		right: -98.3%;
-		top: 30%;
-		width: 271.3746153846154vw;
-		height: 157.5828205128205vw;
+		right: -77%;
+		top: 18%;
+		width: 1058.361px;
+		height: 766.573px;
 		transform: rotate(-113.331deg);
 		bottom: auto;
 		left: auto;
+		bottom: 0;
 	}
 }
