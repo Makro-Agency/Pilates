@@ -281,11 +281,9 @@ border-left: 1px solid #39514d;
 	.custom-location .card .info .learn-more {
 		display: none;
 	}
-
 	.custom-location .card .info {
 		border-right: none;	
 	}
-
 	.custom-location .card {
 		border-radius: 2px;
 		background: rgba(255, 255, 255, 0.02);
@@ -295,18 +293,15 @@ border-left: 1px solid #39514d;
 	.custom-location .card .services h4 {
 		text-align: left;
 	}
-
 	.custom-location .card .info {
 		text-align: left;
 	}
-
 	.custom-location .card {
 		padding: 40px 20px;
 	}
 	.custom-location .wrapper-inner {
 		padding: 0 20px;
 	}
-
 	.custom-location .cards {
 		grid-template-columns: 1fr;
 	}

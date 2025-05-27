@@ -104,14 +104,14 @@ pointer-events:none;
 @media (max-width: 1023px) {
 .team-information-wrapper .sec-box .content-sec{ padding-left:0; }
 .team-information-wrapper { padding:80px 0; }
-.team-information-wrapper .sec-box .heading-sec .head-slogan { font-family: ITC Avant Garde Gothic Std;
+.team-information-wrapper .sec-box .heading-sec .head-slogan { 
 font-weight: 500;
 font-size: 20px;
 line-height: 100%;
 letter-spacing: 0%;
 text-transform: uppercase;
  }
-.team-information-wrapper .sec-box .heading-sec .sec-title { font-family: ITC Avant Garde Gothic Std;
+.team-information-wrapper .sec-box .heading-sec .sec-title { 
 font-weight: 500;
 font-size: 32px;
 line-height: 100%;
