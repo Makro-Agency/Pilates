@@ -2,11 +2,9 @@
 	color: #fff;
 	padding: 132px 0px;
 }
-
 .custom-workout .custom-workout__wrapper {
 	margin: 0 auto;
 }
-
 .custom-workout h2.custom-workout__heading {
 	font-family: ITC Avant Garde Gothic Std;
 	font-weight: 500;
@@ -18,7 +16,6 @@
 	margin-top: 0;
 	margin-bottom: 16px;
 }
-
 .custom-workout p.custom-workout__subtitle {
 	font-family: New Frank;
 	font-weight: 300;
@@ -29,13 +26,11 @@
 	max-width: 1080px;
 	margin: 0 auto;
 }
-
 .custom-workout .custom-workout__cards {
 	display: flex;
 	gap: 24px;
 	margin-top: 60px;
 }
-
 .custom-workout .custom-workout__card {
 	border-radius: 2px;
 	border: 1px solid rgba(255, 255, 255, 0.04);
@@ -45,18 +40,16 @@
 	padding: 60px 40px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 }
 
 .custom-workout .custom-workout__card .card-inner {
 	padding-bottom: 32px;
 	border-bottom: 1px solid rgb(255, 255, 255, 0.2);
 }
-
 .card-inner-benefits {
 	padding-top: 32px;
 }
-
 .custom-workout h3.custom-workout__card-title {
 	color: var(--White, #FFF);
 	font-family: "ITC Avant Garde Gothic Std";
@@ -69,12 +62,10 @@
 	margin-top: 0;
 	text-align: left;
 }
-
 .custom-workout .custom-workout__card-title {
 	font-size: 1.5rem;
 	margin-bottom: 12px;
 }
-
 .custom-workout .custom-workout__card-text {
 	color: #FFF;
 	font-family: "New Frank";
@@ -85,7 +76,6 @@
 	line-height: 24px;
 	text-align: left;
 }
-
 .custom-workout .custom-workout__benefits-label {
 	color: var(--White, #FFF);
 	font-family: "ITC Avant Garde Gothic Std";
@@ -93,17 +83,14 @@
 	font-style: normal;
 	font-weight: 500;
 	line-height: 100%;
-	/* 20px */
 	text-transform: uppercase;
 	text-align: left;
 }
-
 .custom-workout .custom-workout__benefits-list {
 	list-style: none;
 	padding: 0;
 	margin: 0 0 0px;
 }
-
 .custom-workout .custom-workout__benefits-list li {
 	position: relative;
 	padding-left: 18px;
@@ -116,7 +103,6 @@
 	line-height: 24px;
 	text-align: left;
 }
-
 .custom-workout .custom-workout__benefits-list li::before {
 	content: " ";
 	position: absolute;
@@ -126,15 +112,12 @@
 	height: 6px;
 	border-radius: 100%;
 	background-color: #F7D8CF;
-	/* or your accent color */
 }
-
 .custom-workout .custom-workout__cards{
   position:relative;
 }
-
 .custom-workout .custom-workout__cards:after{
-  content:'';
+content:'';
 position: absolute;
 width: 55.1%;
 height: 402.2%;
@@ -144,17 +127,14 @@ background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%);
 opacity: 0.3;
 filter: blur(250px);
 transform: rotate(104.55deg);
+pointer-events:none; 
 }
-
-
-
 /* Responsive */
 @media screen and (min-width:768px) and (max-width:989px) {
 	.custom-workout .custom-workout__cards {
 		grid-template-columns: 1fr 1fr;
 	}
 }
-
 @media screen and (max-width:767px) {
 .custom-workout .custom-workout__cards:after{
 content:'';
@@ -169,43 +149,21 @@ filter: blur(250px);
 transform: rotate(151.97deg);
 z-index:0;
 pointer-events:none; 
-	}
-  .custom-workout{ padding:80px 0; }
+}
+.custom-workout{ padding:80px 0; }
 .custom-workout .custom-workout__card{  background: rgba(255, 255, 255, 0.02);
 box-shadow: inset -5px -5px 60px rgba(255, 255, 255, 0.02);
 backdrop-filter: blur(4px);
 border-radius: 2px;      }
 .custom-workout	.custom-workout__heading,
-.custom-workout	p.custom-workout__subtitle {
-		padding: 0 20px;
-	}
-
-	.custom-workout .custom-workout__card {
-		padding: 60px 40px 40px 40px;
-	}
-
-.custom-workout	.custom-workout__cards {
-		margin-top: 40px;
-	}
-
-.custom-workout	.custom-workout__wrapper {
-		padding: 0 0px;
-	}
-
-.custom-workout	h2.custom-workout__heading {
-		font-size: 36px;
-	}
-
-.custom-workout	.custom-workout__cards {
-		grid-template-columns: 1fr;
-	}
-}
-
+.custom-workout	p.custom-workout__subtitle { padding: 0 20px; }
+.custom-workout .custom-workout__card { padding: 60px 40px 40px 40px; }
+.custom-workout	.custom-workout__cards { margin-top: 40px; }
+.custom-workout	.custom-workout__wrapper { padding: 0 0px; }
+.custom-workout	h2.custom-workout__heading { font-size: 36px; }
+.custom-workout	.custom-workout__cards { grid-template-columns: 1fr;} }
 @media (max-width: 900px) {
-	.custom-workout .custom-workout__cards {
-		flex-direction: column;
-	}
-
+	.custom-workout .custom-workout__cards { flex-direction: column; }
 	.custom-workout .custom-workout__card {
 		flex: 1 1 100%;
 		text-align: center;

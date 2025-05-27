@@ -2,11 +2,9 @@
 	color: #fff;
 	padding: 132px 0px;
 }
-
 .custom-location .wrapper {
 	margin: 0 auto;
 }
-
 .custom-location h2 {
 	font-family: ITC Avant Garde Gothic Std;
 	font-weight: 500;
@@ -19,7 +17,6 @@
 	margin-bottom: 40px;
 	margin-top: 0;
 }
-
 .custom-location .description {
 	font-family: New Frank;
 	font-weight: 300;
@@ -31,32 +28,25 @@
 	margin: 0 auto;
 	max-width: 1075px;
 }
-
 .custom-location .cards {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 24px;
 	margin-top: 60px;
 }
-
 .custom-location .card {
 	flex: 1 1 calc(50% - 10px);
 	background: rgba(255, 255, 255, 0.02);
 	box-shadow: -5px -5px 60px 0px rgba(255, 255, 255, 0.02) inset;
-  border:1px solid #202a28; 
 	backdrop-filter: blur(4px);
 	display: flex;
-	gap: 40px;
+	gap:0px;
 	padding: 60px 40px;
-
 }
-
 .custom-location .card .info {
 	max-width: 67.8%;
 	padding-right: 40px;
-	border-right: 1px solid #39514d; 
 }
-
 .custom-location .card .info h3 {
 	color: var(--White, #FFF);
 	font-family: "ITC Avant Garde Gothic Std";
@@ -65,10 +55,10 @@
 	font-weight: 500;
 	line-height: 100%;
 	text-transform: uppercase;
+	word-break:break-all;
 	margin-top: 0;
 	margin-bottom: 10px;
 }
-
 .custom-location .card .info p {
 	color: var(--White, #FFF);
 	font-family: "New Frank";
@@ -79,7 +69,6 @@
 	margin-top: 0;
 	margin-bottom: 50px;
 }
-
 .custom-location .card .info .learn-more {
 	color: var(--White, #FFF);
 	font-family: "ITC Avant Garde Gothic Std";
@@ -94,7 +83,6 @@
 	display: flex;
 	gap: 8px;
 }
-
 .custom-location .card .services h4 {
 	color: var(--White, #FFF);
 	font-family: "ITC Avant Garde Gothic Std";
@@ -106,13 +94,11 @@
 	margin-top: 0;
 	margin-bottom: 15px;
 }
-
 .custom-location .card .services ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
-
 .custom-location .card .services li {
 	position: relative;
 	padding-left: 0;
@@ -124,16 +110,16 @@
 	font-style: normal;
 	font-weight: 300;
 	line-height: 24px;
+	text-align:left; 
 }
-
 .custom-location .card .services li span {
 	margin-right: 12px;
 }
-
 .custom-location .wrapper {
 	position: relative;
 }
 @media screen and (min-width:769px){
+.custom-location .services{ padding-left:40px; }
 .custom-location .wrapper:before {
 	content: '';
 	position: absolute;
@@ -175,37 +161,33 @@ background: radial-gradient(50% 50% at 50% 50%, #2DF8FF 0%, #7EFFDB 80%);
 opacity: 0.32;
 filter: blur(250px);
 transform: rotate(-115.27deg);
-	z-index: 0;
-	pointer-events: none;
+z-index: 0;
+pointer-events: none;
 }
 }
-
+@media (min-width: 801px) {
+.custom-location .services{
+border-left: 1px solid #39514d; 
+}}
 @media (max-width: 800px) {
-	.custom-location .cards {
-		flex-direction: column;
-	}
-
+	.custom-location .card .info { border-bottom: 1px solid #39514d;}
+	.custom-location .cards { flex-direction: column;}
 	.custom-location .card {
 		flex-direction: column;
 		text-align: center;
 	}
-
 	.custom-location .card .info,
 	.custom-location .card .services {
 		max-width: 100%;
 	}
-
 	.custom-location .card .services {
 		margin-top: 24px;
 	}
 }
-
 @media screen and (max-width:768px) {
-
 	.custom-location {
 		padding: 80px 0;
 	}
-
 	.custom-location h2 {
 		color: var(--White, #FFF);
 		text-align: center;
@@ -214,14 +196,11 @@ transform: rotate(-115.27deg);
 		font-style: normal;
 		font-weight: 500;
 		line-height: 100%;
-		/* 36px */
 		text-transform: uppercase;
 	}
-
 	.custom-location .card .info p {
 		margin-bottom: 40px;
 	}
-
 	.custom-location .card .info h3 {
 		color: var(--White, #FFF);
 		font-family: "ITC Avant Garde Gothic Std";
@@ -231,30 +210,25 @@ transform: rotate(-115.27deg);
 		line-height: 100%;
 		text-transform: uppercase;
 	}
-
 }
-
+@media screen and (min-width:1024px) and (max-width:1280px) {
+.custom-location .card .info{ max-width:52%; } }
+@media screen and (min-width:768px) and (max-width:1199px) {
+.custom-location .card { gap: 0px; } }
 @media screen and (max-width:1199px) {
 	.custom-location .card .info {
 		border-right: none;
 	}
-
-	.custom-location .card {
-		gap: 20px;
-	}
-
 	.custom-location .card .info {
 		padding-right: 20px;
 	}
 }
-
 @media screen and (min-width:1024px) {
 	.custom-location .learn-more-mobile {
 		display: none !Important;
 	}
 }
-
-.learn-more-mobile {
+.custom-location .learn-more-mobile {
 	color: var(--White, #FFF);
 	font-family: ITC Avant Garde Gothic Std;
 	font-size: 16px;
@@ -291,7 +265,7 @@ transform: rotate(-115.27deg);
   width:fit-content; 
 }
 .custom-location .card .learn-more-mobile:after{
-  content: "";
+    content: "";
     position: absolute;
     background-color:rgba(254, 228, 177, 1);
     width: 100%;
@@ -304,28 +278,20 @@ transform: rotate(-115.27deg);
     transition: all .3s linear; }
 .custom-location .card .info .learn-more:hover:after{ opacity:1; }
 @media screen and (max-width:1023px) {
-	.custom-location .card .info {
-		border-bottom: 1px solid #1f2120; 
-	}
-
 	.custom-location .card .info .learn-more {
 		display: none;
 	}
 
 	.custom-location .card .info {
-		border-right: none;
-		border-bottom: 1px solid #1f2120;
+		border-right: none;	
 	}
 
 	.custom-location .card {
 		border-radius: 2px;
-		border: 1px solid #25201d; 
 		background: rgba(255, 255, 255, 0.02);
 		box-shadow: -5px -5px 60px 0px rgba(255, 255, 255, 0.02) inset;
 		backdrop-filter: blur(4px);
 	}
-
-
 	.custom-location .card .services h4 {
 		text-align: left;
 	}
@@ -337,7 +303,6 @@ transform: rotate(-115.27deg);
 	.custom-location .card {
 		padding: 40px 20px;
 	}
-
 	.custom-location .wrapper-inner {
 		padding: 0 20px;
 	}

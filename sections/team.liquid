@@ -51,7 +51,6 @@
 {%- capture teamDatamobile -%}
   {%- assign loading = 'eager' -%}
   {%- assign fetchPriority = 'high' -%}
-
   {%- for block in section.blocks -%}
     {%- if forloop.index > 4 -%}
       {%- assign loading = 'lazy' -%}
@@ -93,19 +92,13 @@
   <span class="arrow-next">{% render 'custom-pagination-arrow-right' %}</span>
 </div>
 {%- endcapture -%}
-
-
 {%- assign filterdTags = totalSpecialtags | split: ", " | uniq -%}
-
 <div class="page-width">
-  
   <div class="sec-head">
     <h1 class="sec-title">{{ section.settings.page_title | default: page.title }}</h1>
   </div>
-
   {%- if teamData != blank -%}
     <div class="team-list-box desktop">
-    
       {%- if filterdTags[0] != blank -%}
         <div class="tabs-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-team-filter-btn>
           <button class="active btn" data-tags="all">Show All</button>
@@ -115,20 +108,20 @@
         </div>
       {%- endif -%}
       <div id="parent" class="team-list{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-profile>
+        {% comment %}
          <div class="new0"></div>
-      <div class="new1"></div>
-     <div class="new2"></div>
-      <div class="new3"></div>
-       <div class="new4"></div>
-       <div class="new5"></div>
-        <div class="new6"></div>
+         <div class="new1"></div>
+         <div class="new2"></div>
+         <div class="new3"></div>
+         <div class="new4"></div>
+         <div class="new5"></div>
+         <div class="new6"></div>
          <div class="new7"></div>
+        {% endcomment %}
         {{- teamData -}}
       </div>
     </div>
   {%- endif -%}
-
-
   {%- if teamDatamobile != blank -%}
     <div class="team-list-box mobile">
       {%- if filterdTags[0] != blank -%}
@@ -141,21 +134,20 @@
       {%- endif -%}
       <div id="parent" class="team-list{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-profile>
        <div class="new0"></div>
-      <div class="new1"></div>
-     <div class="new2"></div>
-      <div class="new3"></div>
+       <div class="new1"></div>
+       <div class="new2"></div>
+       <div class="new3"></div>
        <div class="new4"></div>
        <div class="new5"></div>
-        <div class="new6"></div>
-         <div class="new7"></div>
+       <div class="new6"></div>
+       <div class="new7"></div>
         {{- teamDatamobile -}}
       </div>
     </div>
   {%- endif -%}
 </div>
-
  <script>
-document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
   const itemsPerPage = 12;
   const boxes = Array.from(document.querySelectorAll(".team-list-box.mobile .paginated-box"));
   const totalPages = Math.ceil(boxes.length / itemsPerPage);
@@ -165,13 +157,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const prevBtn = document.querySelector(".arrow-prev");
   const nextBtn = document.querySelector(".arrow-next");
   if (boxes.length === 0) return;
-
   totalPagesEl.textContent = totalPages;
-
   function showPage(page) {
     const start = (page - 1) * itemsPerPage;
     const end = start + itemsPerPage;
-
     boxes.forEach((box, index) => {
       box.style.display = (index >= start && index < end) ? "block" : "none";
     });
@@ -192,8 +181,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
-
-
 {% schema %}
 {
   "name": "Team",
