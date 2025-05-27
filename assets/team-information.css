@@ -1,5 +1,4 @@
 .team-information-wrapper { width:100%; padding:180px 0 95px 0; }
-
 .team-information-wrapper .sec-box { display:flex; align-items:flex-start; justify-content:space-between;  }
 .team-information-wrapper .sec-box .content-sec .con-item{ max-width:651px; }
 .team-information-wrapper .sec-box .heading-sec { width:100%; max-width:535px; }
@@ -8,7 +7,7 @@ font-weight: 500;
 font-size: 20px;
 line-height: 100%;
 letter-spacing: 0;
-    text-transform: uppercase; margin:0; color:#ffffff; }
+text-transform: uppercase; margin:0; color:#ffffff; }
 .team-information-wrapper .sec-box .heading-sec .sec-title { font-family: ITC Avant Garde Gothic Std;
 font-weight: 500;
 font-size: 40px;
@@ -16,7 +15,6 @@ line-height: 100%;
 letter-spacing: 0%;
 text-transform: uppercase;
 color:#ffffff;  margin:40px 0 0 0; }
-
 .team-information-wrapper .sec-box .content-sec { width:100%;  }
 .team-information-wrapper .sec-box .content-sec .con-item { width:100%; border-bottom:rgba(0,0,0,0.1) 1px solid; padding-bottom:32px; margin-bottom:32px; display:flex; flex-flow:column; }
 .team-information-wrapper .sec-box .content-sec .con-item h5 { color: #ffffff;  font-family: ITC Avant Garde Gothic Std;
@@ -30,7 +28,6 @@ text-transform: uppercase;
 /* .team-information-wrapper .sec-box .content-sec .con-item .texts p { color: #000; font-size: 14px;  font-weight: 400; line-height: 150%;} */
 .team-information-wrapper .sec-box .content-sec .con-item .texts p:first-child { margin-top:0; }
 .team-information-wrapper .sec-box .content-sec .con-item .texts p:last-child { margin-bottom:0; }
-
 .team-information-wrapper .sec-box .content-sec .con-item .texts p:last-child{
     font-family: New Frank;
     font-weight: 300;
@@ -49,10 +46,9 @@ text-transform: uppercase;
 .team-banner-wrapper .banner-box{ margin-top:0; }
 }
 @media screen and (max-width:749px){
-
   /* Vector */
-  .team-information-wrapper .sec-box:before{
-    content:'';
+  /* .team-information-wrapper .sec-box:before{
+content:'';
 position: absolute;
 width: 145.2%;
 height: 21.46%;
@@ -64,9 +60,9 @@ filter: blur(100px);
 transform: rotate(-45deg);
 pointer-events:none;
 z-index:0; 
-}
-  .team-information-wrapper .sec-box:after{
-  content:'';
+} */
+/* .team-information-wrapper .sec-box:after{
+content:'';
 position: absolute;
 width: 211.4%;
 height: 26.4%;
@@ -78,14 +74,14 @@ filter: blur(100px);
 transform: rotate(148.5deg);
 pointer-events:none;
 z-index:0; 
-}
-  .team-banner-wrapper .banner-box .team-info .mem-social{         border-top: 1px solid rgb(255, 255, 255, 0.1);         border-bottom: 1px solid rgb(255, 255, 255, 0.1); }
+} */
+.team-banner-wrapper .banner-box .team-info .mem-social{         border-top: 1px solid rgb(255, 255, 255, 0.1);         border-bottom: 1px solid rgb(255, 255, 255, 0.1); }
 .team-information-wrapper .page-width{ padding-left:20px; padding-right:20px; }
 }
 
 @media (min-width: 750px){
-  .team-information-wrapper .sec-box:after{
-  content:'';
+/* .team-information-wrapper .sec-box:after{
+content:'';
 position: absolute;
 width: 125.2%;
 height: 72.7%;
@@ -96,26 +92,26 @@ opacity: 0.4;
 filter: blur(200px);
 transform: rotate(148.5deg);
 pointer-events:none; 
-}
-  .team-information-wrapper .page-width{ padding-left:50px; padding-right:50px; }
-  .team-information-wrapper .sec-box .content-sec, .team-information-wrapper .sec-box .heading-sec{
+} */
+.team-information-wrapper .page-width{ padding-left:50px; padding-right:50px; }
+.team-information-wrapper .sec-box .content-sec, .team-information-wrapper .sec-box .heading-sec{
     width: 50%;
   }
-  .team-information-wrapper .sec-box .heading-sec{
+.team-information-wrapper .sec-box .heading-sec{
     padding-right: 40px;
   }
 }
 @media (max-width: 1023px) {
 .team-information-wrapper .sec-box .content-sec{ padding-left:0; }
-  .team-information-wrapper { padding:80px 0; }
-  .team-information-wrapper .sec-box .heading-sec .head-slogan { font-family: ITC Avant Garde Gothic Std;
+.team-information-wrapper { padding:80px 0; }
+.team-information-wrapper .sec-box .heading-sec .head-slogan { 
 font-weight: 500;
 font-size: 20px;
 line-height: 100%;
 letter-spacing: 0%;
 text-transform: uppercase;
  }
-  .team-information-wrapper .sec-box .heading-sec .sec-title { font-family: ITC Avant Garde Gothic Std;
+.team-information-wrapper .sec-box .heading-sec .sec-title { 
 font-weight: 500;
 font-size: 32px;
 line-height: 100%;
@@ -124,17 +120,12 @@ text-transform: uppercase;
 margin-top:30px; 
  }
 .team-information-wrapper .sec-box .heading-sec .sec-title{ margin-bottom:50px; }
-  .team-information-wrapper .sec-box .content-sec .con-item { padding-bottom: 20px; margin-bottom: 20px; }  
+.team-information-wrapper .sec-box .content-sec .con-item { padding-bottom: 20px; margin-bottom: 20px; }  
   /* .team-information-wrapper .sec-box .content-sec .con-item .texts p { font-size:13px; } */
-  
 }
-
 @media (max-width: 749px) {
- 
   .team-information-wrapper { padding: 80px 0 80px 0; }
   .team-information-wrapper .sec-box { flex-flow: column; }
-  
-  
 }
 
 

@@ -11,7 +11,7 @@
   {%- capture footer_logo -%}
     {%- if footer_logo != blank -%}{{ footer_logo }}{%- endif -%}
     {%- if block.type  == 'footer_logo' -%}
-    <a href="{{ routes.root_url }}" class="footer-logo">
+    <a href="{{ block.settings.link }}" class="footer-logo">
       <img src="{{block.settings.logo_img | image_url}}" height="auto" width="auto">
     </a>
     {% endif %}
@@ -341,6 +341,12 @@
           "type": "image_picker",
           "label": "Footer Logo",
           "id": "logo_img"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link",
+          "default": "/"
         }
       ]
     },
