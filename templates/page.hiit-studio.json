@@ -798,7 +798,7 @@
         "button_link": "#",
         "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
         "columns_mobile": "2",
-        "top_padding_remove": true,
+        "top_padding_remove": false,
         "bottom_padding_remove": false
       }
     }
