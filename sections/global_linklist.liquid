@@ -16,7 +16,14 @@
                         {% if section.blocks.size > 0 %}
                         <div class="link-list">
                             {%- for block in section.blocks -%}
-                                {% if block.settings.link_lable != blank %}<a href="#{{ block.settings.section_id | handle }}">{{ block.settings.link_lable }}{% render 'down-arrow' %}</a>{% endif %}
+                                {% assign scrolllink = 'scroll' %}
+                                {% assign blocklink = block.settings.section_id | handle | prepend: '#' %}
+                                {% if block.settings.page_url != blank %}
+                                    {% assign blocklink = block.settings.page_url %}
+                                    {%  assign scrolllink = '' %}
+                                {% endif %}
+                               
+                                {% if block.settings.link_lable != blank %}<a href="{{ blocklink }}" class="{{ scrolllink }}">{{ block.settings.link_lable }}{% render 'down-arrow' %}</a>{% endif %}
                             {% endfor %}
                         </div>
                         {% endif %} 
@@ -63,6 +70,11 @@
                         "label": "Add Section Id",
                         "id": "section_id",
                         "info": "<strong>Add the same section id given in the section here.</strong>"
+                    },
+                    {
+                        "type": "url",
+                        "label": "Add Page URL",
+                        "id": "page_url"
                     }
                 ]
             }

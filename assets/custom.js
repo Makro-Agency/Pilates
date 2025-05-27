@@ -381,7 +381,7 @@ $(function() {
   /* Footer section */
 
   /* global_linklist */
-  $(document).on('click', '.link-list a', function(event){    
+  $(document).on('click', '.link-list a.scroll', function(event){    
     var href = $(this).attr('href');
     if( href.length > 1 ){
       event.preventDefault();

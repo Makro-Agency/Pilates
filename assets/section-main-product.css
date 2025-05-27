@@ -1,6 +1,6 @@
 .template-product .custom-header-section { position: static;}
 .product {
-  margin: 0;
+  margin: 0 0 24px;
   position: relative;
   align-items: flex-start;
   z-index: 1;
@@ -12,9 +12,9 @@
   filter: blur(200px);
   position: absolute;
   right: 0;
-  bottom: -30.17%;
-  width: 53.914vw;
-  height: 88.548vw;
+  bottom: -70.17%;
+  width: 40.417vw;
+  height: 66.41vw;
   transform: rotate(67.766deg);
   z-index: -1;
 }

@@ -192,6 +192,11 @@
   .instructor-link:hover svg path {
     stroke:  #FEE4B1;
   }
+  @media screen and (max-width: 1750px) {
+    .instructor-name {
+      font-size: 24px;
+    }
+  }
   @media screen and (max-width: 1600px) {
     .instructor-name {
       font-size: 20px;

@@ -11,9 +11,18 @@
   transform: rotate(104.55deg);
   z-index: 1;
 }
-.section.hit-team{
-  /* overflow: visible; */
+.template--hiit-studio .hit-banner-row:before,
+.template--hiit-studio .hit-team:before { 
+  opacity: 0;
 }
+
+.template--private-training .hit-banner-row:before,
+.template--private-training .hit-team:before { 
+  opacity: 0;
+}
+/* .section.hit-team{
+  overflow: visible;
+} */
 .hit-team {
   position: relative;
   overflow: hidden;
