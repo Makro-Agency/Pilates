@@ -109,11 +109,13 @@ body .home-hero .banner__box_top{
 .template-index main:has(.home-hero .animate--paralex-effect video) .shopify-section:not(.home-hero),
 .template-index main:has(.home-hero .animate--paralex-effect iframe) .shopify-section:not(.home-hero){
   background-color: #000000; 
+  z-index: 1;
+  position: relative;
 }
 .home-hero .animate--paralex-effect .banner__media video, 
 .home-hero .animate--paralex-effect .banner__media iframe{
   position: fixed !important;
-  z-index: -1;
+  z-index: 0;  
 }
 .home-hero .animate--paralex-effect .banner__media iframe{
   height: 200%;
