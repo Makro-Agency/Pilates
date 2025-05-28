@@ -93,7 +93,7 @@ slideshow-component .slideshow.banner {
 }
 .slideshow__text .banner__heading {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 100%;
   text-transform: uppercase;
 }
@@ -275,7 +275,7 @@ slideshow-component:not(.page-width) .slider-buttons {
   padding: 0;
   font-family: var(--font-heading-family);
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 100%;
   letter-spacing: 0.02em;
   text-transform: uppercase;

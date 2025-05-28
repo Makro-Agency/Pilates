@@ -6,8 +6,7 @@
 	margin: 0 auto;
 }
 .custom-workout h2.custom-workout__heading {
-	font-family: ITC Avant Garde Gothic Std;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 48px;
 	line-height: 100%;
 	letter-spacing: 0;
@@ -51,10 +50,9 @@
 }
 .custom-workout h3.custom-workout__card-title {
 	color: var(--White, #FFF);
-	font-family: "ITC Avant Garde Gothic Std";
 	font-size: 32px;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 100%;
 	text-transform: uppercase;
 	margin-bottom: 12px;
@@ -67,7 +65,6 @@
 }
 .custom-workout .custom-workout__card-text {
 	color: #FFF;
-	font-family: "New Frank";
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 300;
@@ -77,10 +74,10 @@
 }
 .custom-workout .custom-workout__benefits-label {
 	color: var(--White, #FFF);
-	font-family: "ITC Avant Garde Gothic Std";
+	font-family: var(--font-heading-family); 
 	font-size: 20px;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 100%;
 	text-transform: uppercase;
 	text-align: left;
@@ -95,7 +92,7 @@
 	padding-left: 18px;
 	color: #FFF;
 	margin-top: 12px;
-	font-family: "New Frank";
+	font-family: var(--font-body-family); 
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 300;

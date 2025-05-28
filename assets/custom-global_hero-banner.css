@@ -16,15 +16,13 @@
     max-width:100%; 
 }
 .hero-banner-2 h2.h1.heading{
-    font-family: ITC Avant Garde Gothic Std;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 48px;
     line-height: 100%;
     letter-spacing: 0;
     text-transform: uppercase;
 }
 .hero-banner-2 .description{
-font-family: New Frank;
 font-weight: 300;
 font-size: 20px;
 line-height: 150%;
@@ -219,8 +217,7 @@ letter-spacing: 0;
 @media only screen and (max-width: 989px) {
 .hero-banner-2 .banner-button{ margin-top:40px; }
 .hero-banner-2 h2.h1.heading{
-font-family: ITC Avant Garde Gothic Std;
-font-weight: 500;
+font-weight: 400;
 font-size: 36px;
 line-height: 100%;
 letter-spacing: 0;

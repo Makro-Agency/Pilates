@@ -25,7 +25,7 @@
   color: currentColor;
   text-transform: uppercase;
   font-family: var(--font-heading-family);
-  font-weight: 600;
+  font-weight: 500;
   box-sizing: border-box;
   letter-spacing: .02em;
   margin-block: 0;
@@ -38,7 +38,7 @@
   min-height: 4.6rem;
   margin-left: 10px;
   font-family: var(--font-heading-family);
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 0;
   padding-inline: 2rem;
   box-sizing: border-box;

@@ -11,7 +11,7 @@
 .product-card-wrapper .card .card__content .card__information .price * { letter-spacing:0; line-height: 1; }
 .product-card-wrapper .card .card__content .card__information .price .price__container .price__regular .price-item--regular { 
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   }
