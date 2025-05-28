@@ -182,7 +182,7 @@ slideshow-component .slideshow.banner {
 @media screen and (min-width: 750px) {
   .slideshow__controls {
     position: static;
-    margin-top: 60px;
+    padding-top: 60px;
   }
 }
 
