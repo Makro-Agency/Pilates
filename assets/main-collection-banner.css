@@ -25,7 +25,7 @@
   background: rgba(0, 0, 0, 0.3); z-index:1; }
 .collection-hero.collection-hero--with-image .content-wrapper .collection-hero__text-wrapper .collection-hero__title {  
   margin:0; color:#fff; 
-  font-weight: 500;
+  /* font-weight: 500; */
   line-height: 100%;
   text-transform: uppercase;
 }

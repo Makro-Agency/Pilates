@@ -2,14 +2,14 @@
 .team-information-wrapper .sec-box { display:flex; align-items:flex-start; justify-content:space-between;  }
 .team-information-wrapper .sec-box .content-sec .con-item{ max-width:651px; }
 .team-information-wrapper .sec-box .heading-sec { width:100%; max-width:535px; }
-.team-information-wrapper .sec-box .heading-sec .head-slogan {  font-family: ITC Avant Garde Gothic Std;
-font-weight: 500;
+.team-information-wrapper .sec-box .heading-sec .head-slogan {  
+font-weight: 400;
 font-size: 20px;
 line-height: 100%;
 letter-spacing: 0;
 text-transform: uppercase; margin:0; color:#ffffff; }
-.team-information-wrapper .sec-box .heading-sec .sec-title { font-family: ITC Avant Garde Gothic Std;
-font-weight: 500;
+.team-information-wrapper .sec-box .heading-sec .sec-title { 
+font-weight: 400;
 font-size: 40px;
 line-height: 100%;
 letter-spacing: 0%;
@@ -18,7 +18,7 @@ color:#ffffff;  margin:40px 0 0 0; }
 .team-information-wrapper .sec-box .content-sec { width:100%;  }
 .team-information-wrapper .sec-box .content-sec .con-item { width:100%; border-bottom:rgba(0,0,0,0.1) 1px solid; padding-bottom:32px; margin-bottom:32px; display:flex; flex-flow:column; }
 .team-information-wrapper .sec-box .content-sec .con-item h5 { color: #ffffff;  font-family: ITC Avant Garde Gothic Std;
-font-weight: 500;
+font-weight: 400;
 font-size: 20px;
 line-height: 100%;
 letter-spacing: 0;
@@ -29,7 +29,6 @@ text-transform: uppercase;
 .team-information-wrapper .sec-box .content-sec .con-item .texts p:first-child { margin-top:0; }
 .team-information-wrapper .sec-box .content-sec .con-item .texts p:last-child { margin-bottom:0; }
 .team-information-wrapper .sec-box .content-sec .con-item .texts p:last-child{
-    font-family: New Frank;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -105,14 +104,14 @@ pointer-events:none;
 .team-information-wrapper .sec-box .content-sec{ padding-left:0; }
 .team-information-wrapper { padding:80px 0; }
 .team-information-wrapper .sec-box .heading-sec .head-slogan { 
-font-weight: 500;
+font-weight: 400;
 font-size: 20px;
 line-height: 100%;
-letter-spacing: 0%;
+letter-spacing: 0;
 text-transform: uppercase;
  }
 .team-information-wrapper .sec-box .heading-sec .sec-title { 
-font-weight: 500;
+font-weight: 400;
 font-size: 32px;
 line-height: 100%;
 letter-spacing: 0;

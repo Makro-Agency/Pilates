@@ -1,19 +1,17 @@
 h2.banner__heading.inline-richtext.h1 {
     color: #FFF;
-    font-family: "ITC Avant Garde Gothic Std";
     font-size: 60px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 100%;
     text-transform: uppercase;
     padding-bottom: 15px;
 }
 .banner__text.rte{
     color: #FFF;
-    font-family: "New Frank";
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 24px;
     text-transform: none;
     display: block;
@@ -31,7 +29,7 @@ h2.banner__heading.inline-richtext.h1 {
     color: #fff;
     background: transparent;
     color: var(--White, #FFF);
-    font-family: "ITC Avant Garde Gothic Std";
+    font-family: var(--font-heading-family);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;

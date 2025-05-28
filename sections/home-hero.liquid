@@ -19,6 +19,11 @@
 {%- endif -%}
 
 {%- style -%}
+{%- for block in section.blocks -%}
+.btn-clr--{{ block.id }} .button--secondary:hover{
+background-color:{{ block.settings.btn_hvr_bg_clr }};
+}
+{% endfor %}
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }

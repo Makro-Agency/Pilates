@@ -84,7 +84,7 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   margin: 0;
   font-size: 24px;
   line-height: 100%;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -354,14 +354,14 @@ cart-drawer-items {
   justify-content: space-between;
   margin: 0;
 }
-.cart-drawer .totals__total { font-weight: 500; }
+.cart-drawer .totals__total { font-weight: 400; }
 .cart-drawer .totals__total-value {
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 .cart-drawer .price {
   line-height: 1;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .cart-drawer .tax-note {
@@ -392,7 +392,7 @@ cart-drawer-items {
   color: #fff;
   font-size: 16px;
   line-height: 100%;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.02em;
 }
 .cart-drawer .cart__checkout-button::after {

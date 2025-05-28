@@ -16,7 +16,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .main-pro-price .price, .f
   font-family: var(--font-heading-family);
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
-  font-weight: 500;
+  font-weight: 400;
   line-height: 100%;
   letter-spacing: 0;
 }
@@ -71,7 +71,7 @@ h6, .h6, .hit-team .multicolumn-card__info .link{
 
 .subtitle{
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 150%;
 }
@@ -83,7 +83,7 @@ body .underlined-link:hover, body .customer a:hover, body .inline-richtext a:hov
 }
 .button, .shopify-challenge__button, .customer button{
   font-size: 12px;
-  font-weight: 450;
+  font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
   font-family: var(--font-body-family);
@@ -116,7 +116,7 @@ body .underlined-link:hover, body .customer a:hover, body .inline-richtext a:hov
 }
 .global-link, body .multicolumn-card__info .global-link{
   font-size: 12px;
-  font-weight: 450;
+  font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
   display: inline-flex;
@@ -312,7 +312,7 @@ body.template--accessibility-policy .h5,
 body.template--shipping-policy h5,  body.template--shipping-policy .h5
 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 120%;
   letter-spacing: .1em;
 }
@@ -325,7 +325,7 @@ body.template--shipping-policy h1 {
   font-family: "ITC Avant Garde Gothic Std";
   font-size: 60px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 100%;
   text-transform: uppercase;
 }
@@ -339,7 +339,7 @@ body.template--shipping-policy .h3 {
   font-family: "ITC Avant Garde Gothic Std";
   font-size: 32px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 100%; 
   text-transform: uppercase;
   letter-spacing: 0;

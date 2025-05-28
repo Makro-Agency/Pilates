@@ -523,11 +523,11 @@
 }
 .footer-block--menu .footer-block__heading{
   margin-bottom: 25px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .footer-block__details-content .list-menu__item--link{
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 150%;
   padding: 0;
   font-family: var(--font-body-family);
@@ -578,6 +578,7 @@ footer p{
   font-size: 12px;
   font-weight: 300;
   opacity: 0.6;
+  line-height: 20px;
 }
 .footer-center .col-address .text-wrap, .footer-center .col-time .text-wrap{
   line-height: 1;

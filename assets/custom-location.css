@@ -6,8 +6,7 @@
 	margin: 0 auto;
 }
 .custom-location h2 {
-	font-family: ITC Avant Garde Gothic Std;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 48px;
 	line-height: 100%;
 	letter-spacing: 0;
@@ -18,7 +17,6 @@
 	margin-top: 0;
 }
 .custom-location .description {
-	font-family: New Frank;
 	font-weight: 300;
 	font-size: 20px;
 	line-height: 32px;
@@ -49,10 +47,9 @@
 }
 .custom-location .card .info h3 {
 	color: var(--White, #FFF);
-	font-family: "ITC Avant Garde Gothic Std";
 	font-size: 32px;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 100%;
 	text-transform: uppercase;
 	word-break:break-all;
@@ -85,10 +82,9 @@
 }
 .custom-location .card .services h4 {
 	color: var(--White, #FFF);
-	font-family: "ITC Avant Garde Gothic Std";
 	font-size: 12px;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 100%;
 	text-transform: uppercase;
 	margin-top: 0;
@@ -104,8 +100,7 @@
 	padding-left: 0;
 	display: flex;
 	margin-bottom: 10px;
-	color: var(--White, #FFF);
-	font-family: "New Frank";
+	color: var(--White, #FFF);;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 300;
@@ -191,10 +186,9 @@ border-left: 1px solid #39514d;
 	.custom-location h2 {
 		color: var(--White, #FFF);
 		text-align: center;
-		font-family: "ITC Avant Garde Gothic Std";
 		font-size: 36px;
 		font-style: normal;
-		font-weight: 500;
+		font-weight: 400;
 		line-height: 100%;
 		text-transform: uppercase;
 	}
@@ -203,10 +197,9 @@ border-left: 1px solid #39514d;
 	}
 	.custom-location .card .info h3 {
 		color: var(--White, #FFF);
-		font-family: "ITC Avant Garde Gothic Std";
 		font-size: 28px;
 		font-style: normal;
-		font-weight: 500;
+		font-weight: 400;
 		line-height: 100%;
 		text-transform: uppercase;
 	}

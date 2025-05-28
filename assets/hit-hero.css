@@ -8,7 +8,6 @@
 }
 
 .hit-hero .banner__heading {
-  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -26,23 +25,20 @@
   line-height: 100%;
   text-transform: uppercase;
 }
-
 .hit-hero .button:after {
   border-radius: 0;
 }
-
 .hit-hero .banner__buttons .button {
-  font-family: "ITC Avant Garde Gothic Std";
+  font-family: var(--font-heading-family); 
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 100%;
   letter-spacing: 0.32px;
   text-transform: uppercase;
   padding: 16px 20px 12px 20px;
   border-radius: 0;
 }
-
 .hit-hero .banner__buttons .button:hover {
   background-color: white;
   color: black
@@ -71,7 +67,7 @@
   margin-top: 30px;
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 100%;
   letter-spacing: 0.32px;
   text-transform: uppercase;
@@ -147,7 +143,7 @@
     color: #FFF;
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 150%; /* 18px */
   }
 }

@@ -74,7 +74,7 @@
 .press-hero .banner__box{
   margin-bottom: 160px;
 }
-.press-news .section-head h2 { font-weight: 500; }
+/* .press-news .section-head h2 { font-weight: 500; } */
 @media screen and (min-width: 1200px){
   .press-news .section-head h2 {
     font-size: 40px;
