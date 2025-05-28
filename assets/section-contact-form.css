@@ -55,10 +55,10 @@
   border: 1.5px solid #FFF;
   background-color: transparent;
   color: #FFF;
-  font-family: "ITC Avant Garde Gothic Std";
+  font-family: var(--font-heading-family); 
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 100%;
   letter-spacing: 0.32px;
   text-transform: uppercase;
@@ -127,10 +127,10 @@
 }
 .sec-contact-form .contact .leftBGPart .button--secondary {
   color: #FFF;
-  font-family: "ITC Avant Garde Gothic Std";
+  font-family: var(--font-heading-family); 
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 100%;
   letter-spacing: 0.32px;
   text-transform: uppercase;
@@ -156,10 +156,8 @@
 }
 
  .sec-contact-form .contact .rightContactPart .title {
-  font-family: "ITC Avant Garde Gothic Std";
   font-size: 40px;
   font-style: normal;
-  font-weight: 500;
   line-height: 100%;
   /* 40px */
   text-transform: uppercase;

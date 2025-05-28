@@ -4,18 +4,15 @@
 }
 .mainFaq{ overflow:hidden; }
 .mainFaq .rightPart  .faq-sTitle .h3{
-font-family: ITC Avant Garde Gothic Std;
-font-weight: 500;
+font-weight: 400;
 font-size: 32px;
 line-height: 100%;
 letter-spacing: 0;
 text-transform: uppercase;
-
 }
 .mainFaq .rightPart{ margin-top:0; }
 .mainFaq .faq-sContent .h6{
-font-family: ITC Avant Garde Gothic Std;
-font-weight: 600;
+font-weight: 500;
 font-size: 12px;
 line-height: 100%;
 letter-spacing: 0.02em;
@@ -36,8 +33,7 @@ color:#ffffff;
      color:rgb(255, 255, 255, 1);
 }
 .mainFaq .f-sCon--item h4{
-font-family: ITC Avant Garde Gothic Std;
-font-weight: 500;
+font-weight: 400;
 font-size: 20px;
 line-height: 100%;
 letter-spacing: 0;

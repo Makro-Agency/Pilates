@@ -60,7 +60,7 @@
   font-family: "ITC Avant Garde Gothic Std";
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 100%;
   text-transform: uppercase;
 }
@@ -69,8 +69,9 @@
   margin: 30px 0 0;
   color: #FFF;
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 100%;
+  text-transform:uppercase; 
 }
 
 .hit-classes .section-head .text-wrap p {
@@ -116,7 +117,7 @@
     color: #FFF;
     font-family: "ITC Avant Garde Gothic Std";
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 100%;
     letter-spacing: 0.32px;
     background-color: transparent;
@@ -161,7 +162,7 @@
   font-family: "ITC Avant Garde Gothic Std";
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 100%;
   text-transform: uppercase;
 }

@@ -53,7 +53,7 @@
   font-family: "ITC Avant Garde Gothic Std";
   font-size: 48px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 100%;
   text-transform: uppercase;
 }
@@ -85,7 +85,7 @@
 
 .hit-banner-row .content-container .banner__buttons .global-link {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 100%;
   letter-spacing: 0.32px;
   text-transform: uppercase;
@@ -129,7 +129,7 @@
   color: currentColor;
   margin: 40px 0 0;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 100%;
 }
 .hit-banner-row .banner-column-block .col:not(.accord-type) h6 {

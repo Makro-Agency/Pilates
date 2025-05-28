@@ -133,8 +133,8 @@ body:has(.drawer-with-mega header-drawer.active) { overflow:hidden; }
 
 .drawer-with-mega header-drawer .drawer-mega-content .menu-drawer__menu { /*  column-count:2; */  margin:0; padding:0; }
 .drawer-with-mega header-drawer .drawer-mega-content .menu-drawer__menu li { margin:0; padding:0; margin-bottom: 10px; break-inside: avoid; }
-.drawer-with-mega header-drawer .drawer-mega-content .menu-drawer__menu li > a { color:#ffffff; font-size: 20px; font-family: ITC Avant Garde Gothic Std;
-font-weight: 500;
+.drawer-with-mega header-drawer .drawer-mega-content .menu-drawer__menu li > a { color:#ffffff; font-size: 20px; font-family: var(--font-heading-family); 
+font-weight: 400;
 font-size: 20px;
 line-height: 100%;
 letter-spacing: 0;
@@ -165,9 +165,9 @@ text-transform: uppercase; }
 
 .drawer-with-mega header-drawer .drawer-mega-content .mega-nav-content-wrapper .cont-list .cont-item .cont-info { display:flex; flex-flow:column; margin-top:15px; }
 .drawer-with-mega header-drawer .drawer-mega-content .mega-nav-content-wrapper .cont-list .cont-item .cont-info .item-title { color: #FFF; font-size: 20px; 
-  font-weight: 500; line-height: 100%; letter-spacing:0; margin:0 0 0 0; text-transform:uppercase;  }
+  font-weight: 400; line-height: 100%; letter-spacing:0; margin:0 0 0 0; text-transform:uppercase;  }
 .drawer-with-mega header-drawer .drawer-mega-content .mega-nav-content-wrapper .cont-list .cont-item .cont-info .more-link { display:flex; align-items:center; color: #ffffff;
-    font-size: 12px; font-style: normal; font-weight: 600; line-height: normal; letter-spacing: 0.24px; text-transform: uppercase; margin-top:16px; text-decoration:none; 
+    font-size: 12px; font-style: normal; font-weight: 500; line-height: normal; letter-spacing: 0.24px; text-transform: uppercase; margin-top:16px; text-decoration:none; 
     font-family: Brandon Grotesque; font-family: Brandon Grotesque; } 
 .drawer-with-mega header-drawer .drawer-mega-content .mega-nav-content-wrapper .cont-list .cont-item .cont-info .more-link svg { margin-left:10px; }
 .drawer-with-mega header-drawer .drawer-mega-content .mega-nav-content-wrapper .cont-list .cont-item .cont-info .more-link svg path { stroke:#ffffff; }

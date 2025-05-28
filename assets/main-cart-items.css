@@ -40,7 +40,7 @@
   background-color: #bdbdbd40;
 }
 .main-cart-section .cart-item__price{
-  font-weight: 500;
+  font-weight: 400;
 }
 .main-cart-section .quantity{
   border-radius: 2px;
@@ -65,7 +65,7 @@
 }
 .main-cart-section .cart-item__totals .price{
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0;
 }
 .cart__footer-wrapper{
@@ -80,7 +80,7 @@
 .cart__footer-wrapper .left-link .global-link {
   color: #fff;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.02em;
 }
 .cart__footer-wrapper .left-link .global-link svg{
@@ -104,7 +104,7 @@
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0.02em;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 0;
 }
 .cart__footer-wrapper .shopify-cleanslate ul{
@@ -127,7 +127,7 @@
 }
 .cart__footer-wrapper .totals__total-value, .cart__footer-wrapper .totals__total{
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0;
   line-height: 160%;
 }
