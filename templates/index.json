@@ -183,6 +183,7 @@
         },
         "slide_PrVpCJ": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/slideshow-2.png",
             "mobile_image": "shopify://shop_images/slideshow-2.png",
