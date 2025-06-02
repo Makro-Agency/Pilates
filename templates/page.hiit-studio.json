@@ -43,6 +43,7 @@
         },
         "1fe44382-9435-48ac-95f6-bf885137b352": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "desc": "<p>Move through high-intensity interval workouts that sculpt and define your body. </p>",
             "anchor_label": "Learn More",
@@ -127,7 +128,9 @@
           "settings": {
             "heading": "FULL BODY",
             "int_heading": "INTENSITY",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "50 min",
             "skl_heading": "LEVEL",
@@ -144,7 +147,9 @@
           "settings": {
             "heading": "ABS & ASSETS",
             "int_heading": "INTENSITY",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "50 min",
             "skl_heading": "LEVEL",
@@ -161,7 +166,9 @@
           "settings": {
             "heading": "ARMS & ABS",
             "int_heading": "INTENSITY",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "50 min",
             "skl_heading": "LEVEL",
@@ -178,7 +185,9 @@
           "settings": {
             "heading": "CORE & MOBILITY",
             "int_heading": "INTENSITY",
+            "enable_intensity": true,
             "intensity_level": 2,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "50 min",
             "skl_heading": "LEVEL",
@@ -195,7 +204,9 @@
           "settings": {
             "heading": "FUNDAMENTALS",
             "int_heading": "INTENSITY",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "50 min",
             "skl_heading": "LEVELS",
@@ -212,7 +223,9 @@
           "settings": {
             "heading": "ADVANCED",
             "int_heading": "INTENSITY",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "50 min",
             "skl_heading": "LEVEL",
@@ -230,7 +243,9 @@
           "settings": {
             "heading": "BOX HIIT",
             "int_heading": "INTENSITY",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "50 min",
             "skl_heading": "LEVEL",
@@ -248,7 +263,9 @@
           "settings": {
             "heading": "BEAT BOXING HIIT",
             "int_heading": "INTENSITY LEVEL",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "50 min",
             "skl_heading": "SKILL LEVEL",
@@ -266,7 +283,9 @@
           "settings": {
             "heading": "ACTIVE RECOVERY",
             "int_heading": "INTENSITY LEVEL",
+            "enable_intensity": true,
             "intensity_level": 1,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "50 min",
             "skl_heading": "SKILL LEVEL",
@@ -284,7 +303,9 @@
           "settings": {
             "heading": "TRIPLE SWEAT",
             "int_heading": "INTENSITY",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "90 min",
             "skl_heading": "LEVEL",
@@ -302,7 +323,9 @@
           "settings": {
             "heading": "BOX HIIT",
             "int_heading": "INTENSITY LEVEL",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "1h 30m",
             "skl_heading": "SKILL LEVEL",
@@ -320,7 +343,9 @@
           "settings": {
             "heading": "BOX HIIT",
             "int_heading": "INTENSITY LEVEL",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "1h 30m",
             "skl_heading": "SKILL LEVEL",
@@ -338,7 +363,9 @@
           "settings": {
             "heading": "BOX HIIT",
             "int_heading": "INTENSITY LEVEL",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "1h 30m",
             "skl_heading": "SKILL LEVEL",
@@ -356,7 +383,9 @@
           "settings": {
             "heading": "BOX HIIT",
             "int_heading": "INTENSITY LEVEL",
+            "enable_intensity": true,
             "intensity_level": 1,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "1h 30m",
             "skl_heading": "SKILL LEVEL",
@@ -374,7 +403,9 @@
           "settings": {
             "heading": "BOX HIIT",
             "int_heading": "INTENSITY LEVEL",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "1h 30m",
             "skl_heading": "SKILL LEVEL",
@@ -392,7 +423,9 @@
           "settings": {
             "heading": "BOX HIIT",
             "int_heading": "INTENSITY LEVEL",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "1h 30m",
             "skl_heading": "SKILL LEVEL",
@@ -410,7 +443,9 @@
           "settings": {
             "heading": "BOX HIIT",
             "int_heading": "INTENSITY LEVEL",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "1h 30m",
             "skl_heading": "SKILL LEVEL",
@@ -428,7 +463,9 @@
           "settings": {
             "heading": "BOX HIIT",
             "int_heading": "INTENSITY LEVEL",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "1h 30m",
             "skl_heading": "SKILL LEVEL",
@@ -446,7 +483,9 @@
           "settings": {
             "heading": "BOX HIIT",
             "int_heading": "INTENSITY LEVEL",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "1h 30m",
             "skl_heading": "SKILL LEVEL",
@@ -464,7 +503,9 @@
           "settings": {
             "heading": "BOX HIIT",
             "int_heading": "INTENSITY LEVEL",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "1h 30m",
             "skl_heading": "SKILL LEVEL",
@@ -482,7 +523,9 @@
           "settings": {
             "heading": "BOX HIIT",
             "int_heading": "INTENSITY LEVEL",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "1h 30m",
             "skl_heading": "SKILL LEVEL",
@@ -500,7 +543,9 @@
           "settings": {
             "heading": "BOX HIIT",
             "int_heading": "INTENSITY LEVEL",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "1h 30m",
             "skl_heading": "SKILL LEVEL",
@@ -518,7 +563,9 @@
           "settings": {
             "heading": "BOX HIIT",
             "int_heading": "INTENSITY LEVEL",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "1h 30m",
             "skl_heading": "SKILL LEVEL",
@@ -536,7 +583,9 @@
           "settings": {
             "heading": "BOX HIIT",
             "int_heading": "INTENSITY LEVEL",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "1h 30m",
             "skl_heading": "SKILL LEVEL",
@@ -554,7 +603,9 @@
           "settings": {
             "heading": "BOX HIIT",
             "int_heading": "INTENSITY LEVEL",
+            "enable_intensity": true,
             "intensity_level": 3,
+            "intensity_text": "Intensity Field Text",
             "dur_heading": "DURATION",
             "duration": "1h 30m",
             "skl_heading": "SKILL LEVEL",
