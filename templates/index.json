@@ -48,13 +48,13 @@
             "link_1": "#studio-classes",
             "link_label_2": "Explore test 1",
             "link_2": "",
-            "link_label_3": "Explore test 2",
+            "link_label_3": "",
             "link_3": "",
-            "link_label_4": "Explore test 3",
+            "link_label_4": "",
             "link_4": "",
-            "link_label_5": "Explore test 4",
+            "link_label_5": "",
             "link_5": "",
-            "link_label_6": "Explore test 5",
+            "link_label_6": "",
             "link_6": ""
           }
         }
@@ -68,6 +68,7 @@
       "name": "Hero banner",
       "settings": {
         "allow_transparent_header": true,
+        "image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL-edit.jpg",
         "video": "shopify://files/videos/Website Hero - Compressed edit for web - 2025.03.mp4",
         "video_url": "",
         "image_overlay_opacity": 50,
@@ -101,28 +102,32 @@
           "type": "links",
           "settings": {
             "link_lable": "THE STUDIO",
-            "section_id": "studio-classes"
+            "section_id": "studio-classes",
+            "page_url": ""
           }
         },
         "links_wgtLej": {
           "type": "links",
           "settings": {
             "link_lable": "OUR TEAM",
-            "section_id": "team"
+            "section_id": "team",
+            "page_url": ""
           }
         },
         "links_YWPPcV": {
           "type": "links",
           "settings": {
             "link_lable": "CLASSES",
-            "section_id": "locations"
+            "section_id": "locations",
+            "page_url": ""
           }
         },
         "links_yeAjBV": {
           "type": "links",
           "settings": {
             "link_lable": "MEMBERSHIPS & CREDITS",
-            "section_id": "about"
+            "section_id": "about",
+            "page_url": ""
           }
         }
       },
@@ -256,7 +261,7 @@
         "mobile_background_image": "shopify://shop_images/Frame_6837.png",
         "image_overlay_opacity": 100,
         "heading": "CANADA'S TOP LAGREE INSTRUCTORS",
-        "description": "World-class teachers for a world-class experience",
+        "description": "Bring the sweat with world-class teachers in a world-class workout.",
         "button_text": "SEE OUR TEAM",
         "button_url": "#"
       }
@@ -282,10 +287,9 @@
         },
         "location_h939Va": {
           "type": "location",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Rectangle_76_1.png",
-            "title": "Yonge / Shuter",
+            "title": "S&T | YONGE/SHUTER",
             "desc": "<p>Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </p>",
             "btn_text": "Learn more",
             "btn_url": "#",
@@ -307,7 +311,7 @@
         "section_id": "locations",
         "full_width": true,
         "title": "LOCATIONS",
-        "content": "Access the best of boutique fitness and wellness. Lorem ipsum dolor sit amet.",
+        "content": "Explore all Sweat and Tonic locations and access the best of boutique fitness and wellness",
         "color_scheme": "",
         "top_padding_remove": false,
         "bottom_padding_remove": false
