@@ -103,7 +103,7 @@
           "settings": {
             "link_lable": "LAGREE CLASSES",
             "section_id": "studio-classes",
-            "page_url": ""
+            "page_url": "shopify://pages/the-studio"
           }
         },
         "links_wgtLej": {
@@ -111,7 +111,7 @@
           "settings": {
             "link_lable": "OUR TEAM",
             "section_id": "team",
-            "page_url": ""
+            "page_url": "shopify://pages/team"
           }
         },
         "links_YWPPcV": {
