@@ -1,1 +1,36 @@
-{"sections":{"accessibility-policy-page":{"type":"accessibility-policy-page","settings":{}},"accessibility-contact":{"type":"accessibility-contact","settings":{}}},"order":["accessibility-policy-page","accessibility-contact"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "accessibility-policy-page": {
+      "type": "accessibility-policy-page",
+      "settings": {
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "accessibility-contact": {
+      "type": "accessibility-contact",
+      "settings": {
+        "heading": "SWEAT AND TONIC CONTINUOUSLY STRIVES TO IMPROVE OUR GOODS, SERVICES, AND USER EXPERIENCE FOR ALL.",
+        "text": "This document is publicly available. A copy of our feedback policy and full accessibility policy can be requested in accessible formats via:",
+        "email": "hello@sweatandtonic.com",
+        "telephone": "437-291-7171",
+        "address": "486 Front Street W, Toronto, ON M5V 0V2",
+        "button_label": "Learn more about our AODA multi-year plan",
+        "button_link": ""
+      }
+    }
+  },
+  "order": [
+    "accessibility-policy-page",
+    "accessibility-contact"
+  ]
+}
