@@ -856,7 +856,7 @@
         "faq_Nz8aJU": {
           "type": "faq",
           "settings": {
-            "question": "If I purchase a membership or credit pack now, when will it be activated / when will my monthly billing begin?",
+            "question": "If I purchase a membership or credit pack before Reformd opens, when will it be activated / when will my monthly billing begin?",
             "ans": "<p>Your purchase will be processed immediately. Credits are valid for use at S&T and Reformd and activate at the time of purchase. Memberships and recurring credit packs will activate when Reformd opens, and your next payment will be charged at the start of your second billing month, after Reformd opens.</p>"
           }
         },
