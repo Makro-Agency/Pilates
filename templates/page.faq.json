@@ -97,6 +97,7 @@
         },
         "que_ans_prKExh": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "When does the pre-opening sale start?",
             "detail": "<p>Our pre-opening sale will start on Thursday, April 17 at 9 AM (ET).</p>"
