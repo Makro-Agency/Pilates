@@ -35,6 +35,7 @@
         },
         "bottom_title_7zMBCc": {
           "type": "bottom_title",
+          "disabled": true,
           "settings": {
             "title": "GRAND OPENING: SATURDAY, JUNE 21",
             "text_clr": "#ffffff"
@@ -42,6 +43,7 @@
         },
         "bottom_links_aCpw9R": {
           "type": "bottom_links",
+          "disabled": true,
           "settings": {
             "link_clr": "#ffffff",
             "link_label_1": "EXPLORE THE STUDIO",
@@ -101,7 +103,7 @@
         "links_6yzb4R": {
           "type": "links",
           "settings": {
-            "link_lable": "LAGREE CLASSES",
+            "link_lable": "STUDIO & CLASSES",
             "section_id": "studio-classes",
             "page_url": "shopify://pages/the-studio"
           }
@@ -116,18 +118,16 @@
         },
         "links_YWPPcV": {
           "type": "links",
-          "disabled": true,
           "settings": {
-            "link_lable": "CLASSES",
+            "link_lable": "MEMBERSHIPS & CREDITS",
             "section_id": "locations",
-            "page_url": ""
+            "page_url": "shopify://pages/memberships-credits"
           }
         },
         "links_yeAjBV": {
           "type": "links",
-          "disabled": true,
           "settings": {
-            "link_lable": "MEMBERSHIPS & CREDITS",
+            "link_lable": "SCHEDULE (COMING SOON)",
             "section_id": "about",
             "page_url": ""
           }
