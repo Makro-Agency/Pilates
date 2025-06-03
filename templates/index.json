@@ -44,10 +44,10 @@
           "type": "bottom_links",
           "settings": {
             "link_clr": "#ffffff",
-            "link_label_1": "EXPLORE",
+            "link_label_1": "EXPLORE THE STUDIO",
             "link_1": "#studio-classes",
-            "link_label_2": "Explore test 1",
-            "link_2": "",
+            "link_label_2": "MEMBERSHIPS & CREDITS",
+            "link_2": "shopify://pages/memberships-credits",
             "link_label_3": "",
             "link_3": "",
             "link_label_4": "",
@@ -101,7 +101,7 @@
         "links_6yzb4R": {
           "type": "links",
           "settings": {
-            "link_lable": "THE STUDIO",
+            "link_lable": "LAGREE CLASSES",
             "section_id": "studio-classes",
             "page_url": ""
           }
@@ -116,6 +116,7 @@
         },
         "links_YWPPcV": {
           "type": "links",
+          "disabled": true,
           "settings": {
             "link_lable": "CLASSES",
             "section_id": "locations",
@@ -124,6 +125,7 @@
         },
         "links_yeAjBV": {
           "type": "links",
+          "disabled": true,
           "settings": {
             "link_lable": "MEMBERSHIPS & CREDITS",
             "section_id": "about",
