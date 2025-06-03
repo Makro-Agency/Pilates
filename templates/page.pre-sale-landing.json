@@ -33,8 +33,8 @@
         "overlay_opacity": 51,
         "countdown_title": "Pre-opening sale: launching April, 10",
         "countdown_content": "Introducing the world's highest capacity Lagree Method™ studio, powered by Sweat and Tonic. Coming to The Well at Front/Spadina in spring 2025.",
-        "sale_title": "COMING SPRING 2025",
-        "sale_content": "Introducing the world's highest capacity Lagree Method™ studio, powered by Sweat and Tonic. Coming to The Well at Front/Spadina in spring 2025.\n<br>\n<br>\nOur pre-opening sale packages are now SOLD OUT. You can still get in on classes by purchasing a regular S&T credit pack, valid for use at S&T and Reformd.",
+        "sale_title": "GRAND OPENING: JUNE 21",
+        "sale_content": "Introducing the world's highest capacity Lagree Method™ studio, powered by Sweat and Tonic. Coming to The Well at Front/Spadina.",
         "show_btn": false,
         "btn_text": "Buy S&T credits",
         "btn_url": "",
@@ -45,7 +45,7 @@
         "presale_on_title": "",
         "sale_end_date": "2025-04-17 09:00 AM",
         "show_btn_pre": true,
-        "btn_text_pre": "Buy a S&T credit pack",
+        "btn_text_pre": "BUY A MEMBERSHIP OR CREDIT PACK",
         "btn_url_pre": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750"
       }
     },
@@ -56,7 +56,8 @@
           "type": "links",
           "settings": {
             "link_lable": "THE STUDIO",
-            "section_id": "studio-classes"
+            "section_id": "studio-classes",
+            "page_url": ""
           }
         },
         "links_wgtLej": {
@@ -64,21 +65,24 @@
           "disabled": true,
           "settings": {
             "link_lable": "Memberships & credits",
-            "section_id": "membership-credits"
+            "section_id": "membership-credits",
+            "page_url": ""
           }
         },
         "links_YWPPcV": {
           "type": "links",
           "settings": {
             "link_lable": "THE S&T EXPERIENCE",
-            "section_id": "experience"
+            "section_id": "experience",
+            "page_url": ""
           }
         },
         "links_yeAjBV": {
           "type": "links",
           "settings": {
             "link_lable": "FAQ",
-            "section_id": "FAQ"
+            "section_id": "FAQ",
+            "page_url": ""
           }
         }
       },
@@ -88,13 +92,15 @@
         "links_YWPPcV",
         "links_yeAjBV"
       ],
+      "disabled": true,
       "settings": {
-        "title": "THE BEST OF BOUTIQUE FITNESS & WELLNESS",
+        "title": "THE BEST OF BOUTIQUE FITNESS &amp; WELLNESS",
         "content": "The Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts.⁠ Step inside Reformd for a Lagree experience unlike any other."
       }
     },
     "global_sudio_classes_qkDydH": {
       "type": "global_sudio-classes",
+      "disabled": true,
       "settings": {
         "section_id": "studio-classes",
         "title": "The studio",
@@ -152,6 +158,7 @@
         "slide_DeQiWy",
         "slide_PrVpCJ"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
@@ -249,7 +256,6 @@
         "membership_card_U67qN8",
         "membership_card_GJKEWW"
       ],
-      "disabled": true,
       "settings": {
         "section_id": "membership",
         "main_title": "Memberships",
