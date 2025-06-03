@@ -85,6 +85,7 @@
         "links_YWPPcV",
         "links_yeAjBV"
       ],
+      "disabled": true,
       "settings": {
         "title": "THE BEST OF BOUTIQUE FITNESS & WELLNESS",
         "content": "The Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts.⁠ Step inside Reformd for a Lagree experience unlike any other."
@@ -92,6 +93,7 @@
     },
     "global_sudio_classes_qkDydH": {
       "type": "global_sudio-classes",
+      "disabled": true,
       "settings": {
         "section_id": "studio-classes",
         "title": "The studio",
@@ -152,6 +154,7 @@
         "slide_DeQiWy",
         "slide_PrVpCJ"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
