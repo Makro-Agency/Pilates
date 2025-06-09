@@ -154,28 +154,28 @@
         "88eef28f-11aa-41e2-96f1-65617d2b3755": {
           "type": "title",
           "settings": {
-            "title": "CLASSES & STUDIO POLICIES"
+            "title": "ACCOUNT & BILLING"
           }
         },
         "f01c3501-f8e6-44b9-ab49-1b639a6ec3b8": {
           "type": "que_ans",
           "settings": {
-            "title": "It’s my first visit! What do I need to know?",
-            "detail": "<p>Welcome – we can’t wait to meet you!  Please arrive 30 minutes prior to your first class so you can get familiar with the studios you’ll be in, and make sure you’re all set to get your sweat on!</p><p>During peak studio times, our team may not be able to step away from the front desk, but would be happy to provide a tour after class or at any other time at your convenience. </p><p>All you need to bring is a water bottle, workout clothes (or come dressed for movement), running shoes if you're taking a HIIT class, and any personal items you'd like (e.g., makeup, hair brush, shower slides). We provide complimentary sweat towels, yoga mats, cycling shoes, and boxing gloves, and our change rooms are stocked with bath towels, toiletries (shampoo, conditioner, body wash, face wash, and body lotion), and Dyson hairdryers.</p><p>We also sell everything except shoes in our retail shop, in case you forget something.</p><p>We provide lockers with built-in locks to your store your belongings (one locker permitted per guest).</p><p>Check out more <a href=\"https://sweatandtonic.com/pages/first-timers\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/first-timers\">hot tips here</a> prior to your first sweat!</p>"
+            "title": "What happens if I want to cancel my S&T Unlimited membership, and keep my Reformd membership add-on?",
+            "detail": "<p>You can cancel your membership at any time. If you do not have a S&T Unlimited membership, you are not eligible to receive the 50% off discount on your Reformd membership add-on, and you will be charged the regular price. Anytime you cancel a membership, you will lose your current rate; however, as long as you don’t cancel your membership, your rate is price-protected forever. </p>"
           }
         },
         "b847ba64-6c33-4d0d-9549-5cced3f8e822": {
           "type": "que_ans",
           "settings": {
-            "title": "Do I have to book online in advance, or can I just show up?",
-            "detail": "<p>Booking online is recommended to ensure you secure a spot in class, but walk-ins are welcome, provided there are spots available in the class!</p>"
+            "title": "Are purchases refundable?",
+            "detail": "<p>No, just like at S&T, purchases are non-refundable.</p>"
           }
         },
         "70316a9b-847d-447a-9313-7d52ca66f24d": {
           "type": "que_ans",
           "settings": {
-            "title": "What’s your refund policy?",
-            "detail": "<p>We do not allow refunds and do not accept refund requests for price adjustments.</p>"
+            "title": "If I purchase a Reformd membership or credit pack now, when will the credits be activated / when will my monthly billing begin?",
+            "detail": "<p>Your purchase will be processed immediately. Credits are valid for use at S&T and Reformd and activate at the time of purchase. Memberships and recurring credit packs will activate when Reformd opens, and your next payment will be charged at the start of your second billing month, after Reformd opens.</p>"
           }
         },
         "que_ans_VzY3bt": {
