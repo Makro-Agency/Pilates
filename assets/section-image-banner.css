@@ -12,7 +12,25 @@
 .banner__box.gradient {
   transform: perspective(0);
 }
-
+.template-index .section-slideshow .content-btn-wrapper .banner__buttons .button{
+  position: relative;
+  border-width: 0 0 0 0;
+} 
+.template-index .section-slideshow .content-btn-wrapper .banner__buttons .button:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    bottom: -4px;
+    height: 1.8px;
+    width: 0%;
+    background: #FEE4B1;
+    transition: all 0.3s ease 0s;
+    top: unset;
+}
+.template-index .section-slideshow .content-btn-wrapper .banner__buttons .button:hover:before{
+    width: 100%;
+}
 @media only screen and (max-width: 749px) {
   .banner--content-align-mobile-right .banner__box {
     text-align: right;
