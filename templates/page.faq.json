@@ -239,6 +239,7 @@
         },
         "que_ans_FUTk9g": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "Self check-in policy",
             "detail": "<p>Our standard no show and late cancellation policies apply.</p><p>You must attend a class that you’ve checked in for. Once you’ve checked in, make sure to head to the correct spot number you’ve booked!</p><p>Checking in and not attending class will result in double the no show fee ($24 x 2) for the first violation; the second violation will result in double the fee and a permanent ban from Sweat and Tonic.</p><p>Be considerate of your Sweat Fam - do not book overlapping classes or more classes than you intend to take. If you no longer wish to attend a class, please cancel reservations at least 12 hours in advance to ensure spots are not taken up that could have been available to someone else.</p>"
@@ -246,6 +247,7 @@
         },
         "05a40f69-e3df-4da1-9362-79a359552aaa": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "How do I use self check-in?",
             "detail": "<p>Open your S&T app to view your upcoming reservations. If you are at S&T and within the self check-in window, you’ll see a ‘Check In’ button for the class you’re attending. You must have location access enabled on your phone, and be physically present within the S&T facility in order for self check-in to work.<br/><br/>Once you've checked in, you can head straight to the studio. For Ride, you can pick up your shoes from the self-service area next to the Ride studio.</p><p>As always, feel free to stop by the front desk if you have any questions or need assistance.</p>"
@@ -253,6 +255,7 @@
         },
         "167edd31-ca29-4a8a-9f25-293e736cae46": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "Who can use self check-in?",
             "detail": "<p>Self check-in is available to all customers who have booked classes with the S&T app or online, with the exception of first-time customers and accounts with unsigned waivers. If you’ve booked a class through ClassPass, please check in at the front desk.</p>"
@@ -268,12 +271,14 @@
         },
         "b6dc976d-ad1b-496c-ad57-098d79015d8a": {
           "type": "title",
+          "disabled": true,
           "settings": {
             "title": "SERVICES & FACILITIES"
           }
         },
         "53b9eede-d807-4755-a93e-7a642e287030": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "Do you have showers? Do I need to bring my own towel?",
             "detail": "<p>We’ve got it all – showers, towel service, toiletries, hair dryers, and other bathroom accessories.</p>"
@@ -281,6 +286,7 @@
         },
         "fa3b7eb5-4406-4d97-b977-ada64ccb4d3c": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "Do I need to bring my own yoga mat, boxing gloves, or cycling shoes?",
             "detail": "<p>No, we provide all of those for you at no additional cost. All you have to do is show up and get ready to sweat.</p>"
@@ -288,6 +294,7 @@
         },
         "0d913360-fe79-4169-a182-ce5dcdaa197e": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "Who can access Tonic House?",
             "detail": "<p>For the majority of the time, Tonic House is a lounge and workspace available to Unlimited members only by access card. Tonic House is also a space to host community and private events. These events will be posted outside of Tonic House and on our social channels. To book a private event at Tonic House, please email our Sales & Events team at <a href=\"mailto:salesandevents@sweatandtonic.com\" target=\"_blank\" title=\"mailto:salesandevents@sweatandtonic.com\">salesandevents@sweatandtonic.com</a>.</p><p>Plugging in for your workday or kicking back with your Sweat Fam in Tonic House? Please check out our <a href=\"https://sweatandtonic.com/pages/tonic-house-etiquette\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/tonic-house-etiquette\">house rules</a> to ensure a pleasant and productive environment for all to enjoy.</p>"
@@ -295,6 +302,7 @@
         },
         "8160d95d-d9f2-41e7-bde6-8f08cdef7f84": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "I am an Unlimited member. How do I get a Tonic House access card?",
             "detail": "<p>You can pick up your access card at the front desk. There is a $10 deposit for Tonic House access cards. If you cancel your membership, you will need to return your card to receive your deposit back.<br/><br/>If you lose your access card or are an existing Unlimited member who did not originally leave a deposit, you are subject to a $10 charge for unreturned cards upon membership cancellation. Replacement fee for lost cards is $10.</p>"
@@ -302,6 +310,7 @@
         },
         "9f7bf4b8-6e33-46b8-9dab-402cb691f594": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "What are 'XL' spots on the spot map when booking a class?",
             "detail": "<p>Spots marked 'XL' in all three studios are suitable for everyone, but individuals who are taller than 6 ft. may find XL spots more comfortable.</p><p>Bikes in our Ride studio marked ‘XL’ are suitable for between 160 and 210 cm in height. XL bikes are equipped with a slightly more extended handlebar, which can be more comfortable to perform upper body movements for taller guests.</p><p>Floor spots marked 'XL' in Box HIIT at The Well have boxing bags that are hung higher.</p><p>Mats marked 'XL' in our yoga studio at The Well provide extra room behind your mat.</p>"
@@ -309,6 +318,7 @@
         },
         "que_ans_gCWn8c": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "What is Tonic Spa?",
             "detail": "<p>We offer recovery and wellness services at both our Yonge/Shuter and Front/Spadina locations. Tonic Spa is our 360 wellness and recovery hub at Front/Spadina that offers traditional recovery services along with high-tech biohacking treatments, a 50 ft. saltwater lap pool, sauna, hydrotherapies, and more. For more information, check out our <a href=\"https://sweatandtonic.com/pages/spa\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/spa\">Tonic Spa page</a> and <a href=\"https://sweatandtonic.com/pages/faq-tonic-spa\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/faq-tonic-spa\">Tonic Spa FAQs.</a></p>"
@@ -316,6 +326,7 @@
         },
         "2a090433-7c59-43de-b1da-327b4320a224": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "Do you have private saunas?",
             "detail": "<p>Yes, we have two private infrared saunas at our Yonge/Shuter location, and you can also bring guests! The small sauna fits up to two people, and the large sauna fits up to four people. It’s up to you how much space you want!</p><p>Our private Hot & Cold Therapy suite features a private four-person dual infrared and traditional electric high heat sauna and cold plunge.</p><p>Our sauna at the Tonic Spa Pool Deck at Front/Spadina is a shared sauna that accommodates up to 20 people.</p>"
@@ -323,6 +334,7 @@
         },
         "f0ef32be-f0e4-4f8c-b98a-637b3476fd3a": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "What should I wear in the sauna?",
             "detail": "<p>You’re welcome to wear whatever you feel most comfortable in. Common attire includes: swimwear, underwear, and athletic wear. Please put a towel down before relaxing in the sauna.</p>"
@@ -330,6 +342,7 @@
         },
         "4bb562d7-6573-47b8-9ce1-ec47b2c10fb0": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "Do you accept cash?",
             "detail": "<p>No, we are a cashless and mostly paperless facility.</p>"
@@ -337,6 +350,7 @@
         },
         "f7062d00-7e1c-4775-9311-2dd464625296": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "Can I purchase items from Tonic Bar even if I don’t work out here?",
             "detail": "<p>Absolutely – the more the merrier. Come on in!</p>"
@@ -344,6 +358,7 @@
         },
         "que_ans_PFQqn9": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "Are you hiring?",
             "detail": "<p>You can check our careers page to <a href=\"https://sweatandtonic.talentnest.com/en/jobs\" target=\"_blank\">view all current job openings</a>. We are always open to accepting applications for all positions, even if we don’t currently have open spots. Please send an introduction and a bit about what you’re looking for to <a href=\"mailto:hello@sweatandtonic.com\" target=\"_blank\">hello@sweatandtonic.com</a>.</p>"
@@ -351,6 +366,7 @@
         },
         "que_ans_P7NnGR": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "Where can I store my belongings?",
             "detail": "<p>We provide lockers with built-in locks, and several with built-in USB ports so you can charge up while you sweat it out!</p><p>S&T is not responsible for misplaced or lost property - all guests are responsible for their own belongings.</p>"
