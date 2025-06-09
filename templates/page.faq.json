@@ -14,6 +14,7 @@
       "blocks": {
         "3c88c7a8-87e2-447f-853b-29fde4997cba": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "SWEAT ETIQUETTE",
             "title_1": "Be present",
@@ -29,28 +30,28 @@
         "title_zYcA3w": {
           "type": "title",
           "settings": {
-            "title": "GETTING HERE"
+            "title": "THE STUDIO"
           }
         },
         "que_ans_G9aRwm": {
           "type": "que_ans",
           "settings": {
-            "title": "Where are you located?",
-            "detail": "<p>Our <strong>Yonge/Shuter</strong> location is at 225 Yonge Street, right across the street from the CF Toronto Eaton Centre, on the northeast corner of Yonge St and Shuter St.</p><p>Our <strong>Front/Spadina</strong> location is at 486 Front Street in The Well, on the 'Terrace Level' (level 2).</p>"
+            "title": "What is the Lagree Method? How is it different from reformer Pilates?",
+            "detail": "<p>Lagree is not Pilates, and the Megaformer is not a reformer. Since its inception over 25 years ago, the Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts.</p><p>Founded on five components of physical fitness – endurance, cardiovascular fitness, body composition, flexibility, and strength – Lagree is a patented high-intensity, low-impact exercise method that tightens, tones, and deeply activates slow-twitch muscle fibers. The method integrates body-building principles and focuses on slow, controlled movements and progressive load to build strength.</p>"
           }
         },
         "que_ans_DkfcPE": {
           "type": "que_ans",
           "settings": {
-            "title": "How do I get to S&T at Front/Spadina (The Well)?",
-            "detail": "<p><strong>From parking level LG:</strong> Look for the Market Elevator lobby. Walk straight down the corridor out into the Grand Atrium. Make a right as you exit the doors, and take the 'West Av' elevator next to Shoppers Drug Mart to Terrace Level (TR). Turn right as you exit the elevator, head straight, and Sweat and Tonic will be on your right side.</p><p><strong>From parking level P3 or P5:</strong> Look for signs for BMO (West Av. elevators) or 8 Spadina (East Lane elevators), and take the elevator up to Terrace Level (TR). From East Lane elevators, turn right as you exit the elevator, continue to walk west, and Sweat and Tonic will be on your left (across the pedestrian bridge).<br/>From West Av. elevators, turn right as you exit the elevator, head straight, and Sweat and Tonic will be on your right side.</p><p><strong>From 8 Spadina Ave (Front/Spadina):</strong> Take the escalator from the Grand Atrium up to Terrace Level (level 2). Continue to walk straight (west) - Sweat and Tonic will be on your left (across the pedestrian bridge).</p><p><strong>From Front St. or Wellington St:</strong> Take the ‘West Ave’ elevator located next to Indigo on the ground level and head up to Terrace Level (TR). Turn right as you exit the elevator, head straight, and Sweat and Tonic will be on your right side.</p>"
+            "title": "What is a Mega Pro Megaformer?",
+            "detail": "<p>A Megaformer is a fitness machine with a moving carriage, static platforms, and springs for resistance with quick-release technology. It's similar to the reformer, but has more features and attachments than the traditional Pilates reformer, including platform lifts that allow for easier stabilization and impact of joints and less inflammation in connective tissues during and post-workout.. The Mega Pro is the latest Megaformer, and is considered to be the best of the past and future of the Megaformer series.</p>"
           }
         },
         "6beaa2ad-e3e7-4b02-9db6-25c2cae1a7bc": {
           "type": "que_ans",
           "settings": {
-            "title": "Do you have dedicated parking?",
-            "detail": "<p>We do not have dedicated or validated parking, however, there are several paid public parking and transit options nearby.<br/><br/><strong>Yonge/Shuter: </strong>We're right across the street from the Queen St. TTC stop and from the Eaton Centre parking garage. There is also a Green P parking garage at Dundas Square and Victoria St, as well as more parking options on Victoria St.<br/><br/><strong>Front/Spadina (The Well): </strong>Public underground parking is available at The Well. There is one entrance located at 421 Wellington St. W, and another entrance located near 482 Front St. W. The Well is accessible by TTC streetcar from Spadina Ave, as well as King St.</p>"
+            "title": "Where is Reformd located?",
+            "detail": "<p>Reformd is located at 486 Front St. W on the Terrace Level at The Well across from S&T, accessible via the pedestrian bridge.</p>"
           }
         },
         "e491b7f7-2e86-42db-9739-797a6fbb5195": {
@@ -415,4 +416,3 @@
     "main"
   ]
 }
-
