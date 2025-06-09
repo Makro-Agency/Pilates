@@ -220,21 +220,21 @@
         "0c90dbed-c9e0-448d-8967-022bb2dd36a5": {
           "type": "title",
           "settings": {
-            "title": "CHECKING IN"
+            "title": "CONTACT US"
           }
         },
         "60f81ea4-844e-4e74-b276-2fbbd44be5ab": {
           "type": "que_ans",
           "settings": {
-            "title": "How do I check in for class?",
-            "detail": "<p>There are three ways to check in for your class!</p><p><strong>1. Self check-in on the S&T app.</strong> If its your first visit, please check in at the front desk.</p><p><strong>2. Check in at studio doors.</strong> A S&T team member will be stationed in front of studio doors prior to class beginning. If you have any account inquiries, please visit the front desk.</p><p><strong>3. Check in at the front desk. </strong>Visit the front desk if this is your first visit, or if you have any account inquiries.</p>"
+            "title": "I'm interested in joining the team. Are you hiring?",
+            "detail": "<p>Keep your eyes out for job postings to be released.<br/>Fitness instructor inquiries: emily@reformd.com<br/>All other job inquiries: hello@reformd.com</p>"
           }
         },
         "c59ccd3b-4159-4933-b5a8-405abd2d353f": {
           "type": "que_ans",
           "settings": {
-            "title": "How does self check-in work?",
-            "detail": "<p>You can check yourself in for Yoga, HIIT & Ride classes, as well as sauna and Somadome sessions on the S&T app. Self check-in opens 30 minutes before your class start time, and closes 5 minutes before the class starts. For example, if your class starts at 12 PM, self check-in on the app will open at 11:30 AM, and close at 11:55 AM. After the window closes, you’ll need to check in for class at the front desk.</p>"
+            "title": "I have a question that isn't answered here. How can I get in touch?",
+            "detail": "<p>Please contact us at hello@reformd.com with details of your inquiry and our team will be happy to help!</p>"
           }
         },
         "que_ans_FUTk9g": {
