@@ -168,6 +168,9 @@
 }
 
 .hit-banner-row .banner-column-block .accord-tab.active svg {
+  transform: rotate(0deg);
+}
+.hit-banner-row .banner-column-block .accord-tab svg {
   transform: rotate(180deg);
 }
 

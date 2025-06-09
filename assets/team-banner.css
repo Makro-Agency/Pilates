@@ -14,8 +14,9 @@ font-weight: 400;
 font-size: 20px;
 line-height: 100%;
 text-transform: uppercase; color:#ffffff;  margin-top:24px; }
-.team-banner-wrapper .banner-box .team-info .mem-details .book-case { margin-top:65px; border-radius: 2px; background: transparent; border:1px solid #ffffff;  text-decoration:none; display: flex;
-  min-width: 164px; height: 48px; padding: 0px 20px; justify-content: center; align-items: center; color: #FFF;font-family: 'ITC Avant Garde Gothic Std';
+.team-banner-wrapper .banner-box .team-info .mem-details .book-case { 
+margin-top:65px; border-radius: 0px; background: transparent; border:1px solid #ffffff;  text-decoration:none; display: flex;
+min-width: 164px; height: 48px; padding: 0px 20px; justify-content: center; align-items: center; color: #FFF;font-family: 'ITC Avant Garde Gothic Std';
 font-style: normal;
 /* font-weight: 600; */
 font-weight:500; 

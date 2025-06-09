@@ -20,6 +20,9 @@
 .multicolumn1.color-background-1.gradient {
     background: transparent;
 }
+.store-locations-item  .multicolumn-card__info {
+  border-right-width: 0 !important;
+}
 .store-locations .grid {
     column-gap: 0;
     row-gap: 0;
@@ -95,6 +98,7 @@
 }
 .store-locations-item:last-child .multicolumn-card__info_wraper{
   border-left: none;
+  border-right: none;
 }
 .store-locations-item .multicolumn-card__info{
   width: calc(100% - 220px);

@@ -44,7 +44,10 @@
 .hit-multicolumn .multicolumn-card__info .icon-wrap {
   margin-left: 0;
 }
-
+.hit-multicolumn .multicolumn-card__info .icon-wrap svg {
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
 .hit-multicolumn .multicolumn-list h3 {
   line-height: inherit;
   font-weight: 500;

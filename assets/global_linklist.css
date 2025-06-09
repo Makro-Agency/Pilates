@@ -1,6 +1,25 @@
 .global-linklist {
     background: #000000;
 }
+.global-linklist .link-list a {
+    border-color: #FEE4B1;
+    border-width: 0;
+    position: relative;
+    padding-bottom: 2px;
+}
+.global-linklist .link-list a:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 1.8px;
+    width: 0%;
+    background: #FEE4B1;
+    transition: all 0.3s ease 0s;
+}
+.global-linklist .link-list a:hover:before{
+    width: 100%;
+}
 .content-wrapper {
     display: flex;
     align-items: center;
