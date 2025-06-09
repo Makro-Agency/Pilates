@@ -130,6 +130,27 @@
             "detail": "<p>No, the<strong> 3 for $60 intro pack</strong> is valid for first-timers only at both S&T and Reformd.</p>"
           }
         },
+        "13ea47b8-18dc-4449-adec-639f034e7805": {
+          "type": "que_ans",
+          "settings": {
+            "title": "If I have a Reformd Unlimited membership with no S&T membership, can I access facilities at S&T?",
+            "detail": "<p>No, you’ll need to have a S&T membership to access facilities at S&T.</p>"
+          }
+        },
+        "e4fe30f0-e977-419f-8d79-0f1dc06ec885": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Can I book classes for friends wtih a recurring monthly credit pack?",
+            "detail": "<p>No, monthly recurring credits cannot be used to book classes for other people. To book classes for friends, you can purchase standard S&T class credits that can be used for classes, Small Group Training, biohacking, the pool deck, or as guest credits.</p>"
+          }
+        },
+        "f327a534-4931-43b9-808d-a10caa75f1ab": {
+          "type": "que_ans",
+          "settings": {
+            "title": "Do you offer a corporate membership discount at Reformd?",
+            "detail": "<p>At this time, we do not have corporate membership discounts available for Reformd. If you are an existing corporate discount member at S&T, you may purchase a pre-opening sale package at Reformd; however, your corporate discount will not apply to Reformd.</p>"
+          }
+        },
         "88eef28f-11aa-41e2-96f1-65617d2b3755": {
           "type": "title",
           "settings": {
@@ -148,27 +169,6 @@
           "settings": {
             "title": "Do I have to book online in advance, or can I just show up?",
             "detail": "<p>Booking online is recommended to ensure you secure a spot in class, but walk-ins are welcome, provided there are spots available in the class!</p>"
-          }
-        },
-        "e4fe30f0-e977-419f-8d79-0f1dc06ec885": {
-          "type": "que_ans",
-          "settings": {
-            "title": "What time do I need to show up for class?",
-            "detail": "<p>If it’s your first visit, please arrive 30 minutes prior to class. If it’s not your first visit, please arrive a minimum of 10 minutes before class to make sure you’re all set for doors to open. If you are not checked in before your class start time, your spot will be opened up to guests on the waitlist and your account will be subject to a no show fee.</p>"
-          }
-        },
-        "13ea47b8-18dc-4449-adec-639f034e7805": {
-          "type": "que_ans",
-          "settings": {
-            "title": "If I arrive late, can I still take a class?",
-            "detail": "<p>Out of respect and safety for your fellow classmates and instructors, classes start on time. Doors will open 5 minutes prior to your class start time, and will remain open for 2 minutes after the class starts. Once the studio doors close, any other latecomers will not be allowed in. We are firm with this policy because opening the studio door once it’s been closed disturbs the flow of the class, and also puts guests who are stationed next to the door at risk of injury. Classes also begin with an introduction, including proper form and technique, that is required to be successful in the class. If you arrive late for your class, we would be happy to find a spot for you in the next class, if there are available spots. Your studio time is a gift to yourself – make time for you!</p>"
-          }
-        },
-        "f327a534-4931-43b9-808d-a10caa75f1ab": {
-          "type": "que_ans",
-          "settings": {
-            "title": "What’s your cancellation policy?",
-            "detail": "<p>You must cancel class at least 12 hours in advance or you will lose a credit. For Unlimited and 9 to 5 Sweat memberships, you will be charged a $24 fee for no shows and $19 for any late cancellations. This includes switching time slots under the 12-hour notice time period. This is to prevent spots from being booked up and unattended in classes that otherwise would have been available for another guest to book, and to give those who are on the waitlists for our most popular classes a chance to get a spot in class. If you are unable to make it to class, we encourage you to cancel at least 12 hours in advance to avoid any charges, and so that your spot can be made available to another fellow Sweat Fam member. To cancel your booking, please access your account online or in our app. If you have any questions, please feel free to contact us at <a href=\"mailto:hello@sweatandtonic.com\" target=\"_blank\">hello@sweatandtonic.com</a>.</p><p></p>"
           }
         },
         "70316a9b-847d-447a-9313-7d52ca66f24d": {
@@ -372,12 +372,12 @@
         "3ba96673-528e-457a-8524-171c4ebf84ac",
         "22e4de22-4b8c-4f02-a061-11408cf91e8a",
         "que_ans_prKExh",
+        "13ea47b8-18dc-4449-adec-639f034e7805",
+        "e4fe30f0-e977-419f-8d79-0f1dc06ec885",
+        "f327a534-4931-43b9-808d-a10caa75f1ab",
         "88eef28f-11aa-41e2-96f1-65617d2b3755",
         "f01c3501-f8e6-44b9-ab49-1b639a6ec3b8",
         "b847ba64-6c33-4d0d-9549-5cced3f8e822",
-        "e4fe30f0-e977-419f-8d79-0f1dc06ec885",
-        "13ea47b8-18dc-4449-adec-639f034e7805",
-        "f327a534-4931-43b9-808d-a10caa75f1ab",
         "70316a9b-847d-447a-9313-7d52ca66f24d",
         "que_ans_VzY3bt",
         "83dfdfe3-9459-4c30-bc14-42e274ce06ba",
