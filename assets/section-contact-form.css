@@ -164,7 +164,7 @@
 }
 .sec-contact-form .contact .rightContactPart {
   background: rgb(var(--gradient-background));
-  z-index: 3;
+  z-index: 2;
 }
 
 .contact .form-status {
@@ -217,7 +217,8 @@
 .contact_form .field__input:focus~.field__label,
 .contact_form .field__input:not(:placeholder-shown)~.field__label,
 .contact_form .field__input:-webkit-autofill~.field__label {
-  top: 0;
+  top: -6px;
+  font-size: 12px;
 }
 
 .sec-contact-form .contact .leftBGPart:before {
