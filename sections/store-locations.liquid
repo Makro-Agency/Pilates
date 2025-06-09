@@ -90,7 +90,7 @@
           </div>
           {%- if exclusive_services != blank -%}
             <div class="multicolumn-card__services">
-              <div class="service-title h6">{{ 'Services include:' }}</div>
+              <div class="service-title h6">{{ block.settings.service_heading }}</div>
               <ul class="service-title-wrap">{{ exclusive_services }}</ul>
             </div>
           {%- endif -%}
@@ -244,6 +244,12 @@
         {
           "type": "header",
           "content": "Exclusive services:"
+        },
+        {
+          "type": "text",
+          "id": "service_heading",
+          "default": "Services Include:",
+          "label": "Service Heading"
         },
         {
           "type": "text",

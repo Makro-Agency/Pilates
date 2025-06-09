@@ -28,7 +28,7 @@
     
     
       {% if metaobject.spotify.value != blank %}
-      <a href="{{ metaobject.spotify.value }}" class="soci-item spotify new"><img stye=" height: 40px; width: 40px;" src="https://cdn.shopify.com/s/files/1/0915/3917/7843/files/Frame_9.svg?v=1747198522" alt="Spotify" /> Follow me on Spotify </a>
+      <a href="{{ metaobject.spotify.value }}" class="soci-item spotify new {%  if metaobject.facebook.value == blank and metaobject.tiktok.value == blank %} single-icon {% endif %}"><img stye=" height: 40px; width: 40px;" src="https://cdn.shopify.com/s/files/1/0915/3917/7843/files/Frame_9.svg?v=1747198522" alt="Spotify" /> Follow me on Spotify </a>
       {% endif %}
     </div>
   </div>

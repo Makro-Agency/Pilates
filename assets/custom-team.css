@@ -167,7 +167,7 @@
   }
   .team-main-wrapper .team-content {
     border-right: 1px solid rgba(255, 255, 255, 0.25);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.25); */
   }
   .team-list-box .new0 {
     content: "";

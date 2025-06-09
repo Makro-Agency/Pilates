@@ -52,6 +52,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 32px;
 }
+.template-index .global-linklist .link-list a svg{
+  transform:rotate(-90deg);
+}
 @media only screen and (max-width: 1650px) {
     .links-wrappper {
         max-width: 40%;
