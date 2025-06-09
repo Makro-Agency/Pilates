@@ -181,12 +181,13 @@
         "que_ans_VzY3bt": {
           "type": "que_ans",
           "settings": {
-            "title": "Can I bring my phone into class?",
-            "detail": "<p>Use of a phone during active exercise is prohibited. Phones are not permitted in the yoga studio. You may bring your phone into the Ride and HIIT studios, but please be mindful of your Sweat Fam around you and be present. Your studio time is a gift to yourself – make time for you!</p><p>Please feel free to let your instructor know should you require your mobile device for accessibility or medical reasons.</p>"
+            "title": "Can I freeze my membership?",
+            "detail": "<p>Memberships and monthly credit packs can be frozen for a maximum of 14 days at a time in a six month period, and you can request your first freeze at any time after starting your membership. At the end of each freeze, 6 months must pass before you are eligible for another. Eligibility does not reset if you cancel and purchase a new membership. If you purchase a pre-opening sale membership, your start date will be the first day Reformd opens.</p>"
           }
         },
         "83dfdfe3-9459-4c30-bc14-42e274ce06ba": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "When do class schedules get released?",
             "detail": "<p>Our class schedule opens up for booking every weekend. You can book classes up to two weeks in advance, every Saturday at 5 PM for Unlimited and 9 to 5 Sweat members, and Sunday at 5 PM for everyone else.</p>"
@@ -194,6 +195,7 @@
         },
         "7645ce0f-ffea-4e13-ae63-97cdd9c3bbf3": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "How does the waitlist work?",
             "detail": "<p>Our waitlist is designed to move quickly and ensures that guests who want to take a class will have the best chance of getting into that class. As soon as a spot opens up, you will be <strong>automatically enrolled </strong>on a first come, first served basis, up to 10 minutes before class start time. If you do not wish or intend to take the class, we encourage you to remove yourself from the waitlist to avoid automatic enrolment and a penalty should you no longer be able to make it. You can remove yourself from the waitlist at anytime without penalty. Once you are enrolled, our standard no-show / late cancellation policy will apply. Removing yourself from the waitlist will allow other guests who are on the waitlist and able to make it to class the chance to get in. Expect waitlists to move quickly – if you can’t make it to class within 10 minutes of being notified, we recommend that you remove yourself from the waitlist.</p>"
