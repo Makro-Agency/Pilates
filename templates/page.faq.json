@@ -78,56 +78,56 @@
         "e491b7f7-2e86-42db-9739-797a6fbb5195": {
           "type": "title",
           "settings": {
-            "title": "CLASS CREDITS & MEMBERSHIPS"
+            "title": "CREDITS & MEMBERSHIPS"
           }
         },
         "7064720d-0420-40f1-803f-d9b0235d07ef": {
           "type": "que_ans",
           "settings": {
-            "title": "How many credits does a class or service cost?",
-            "detail": "<p>1 credit</p>"
+            "title": "How can I buy and book classes at Reformd? Is there an app?",
+            "detail": "<p>You’ll be able to access Reformd in the S&T app, in the location drop-down. This means you only need one account to access products at both S&T and Reformd.</p><p>If you already have a Sweat and Tonic account, you’ll be able to book classes, make purchases, and manage your account at Reformd, using the same account you use for S&T, in the S&T app! </p>"
           }
         },
         "d7696939-47e4-410d-9584-55d9659a7c55": {
           "type": "que_ans",
           "settings": {
-            "title": "What services and offerings can I use credits for?",
-            "detail": "<p>You can use standard S&T credits for:</p><ul><li>Any yoga, Pilates, HIIT, and Ride classes</li><li>Small Group Training sessions at Front/Spadina</li><li>Sauna sessions at Yonge/Shuter</li><li>Pool deck sessions at Tonic Spa</li><li>Private Hot/Cold Therapy suite at Tonic Spa</li><li>Red Light Therapy at Tonic Spa</li><li>Lymphatic Compression Therapy at Tonic Spa</li></ul><p>Exceptions apply - certain credit types allow booking for specific services only, including but not limited to milestone credits or gifted credits.</p><p>Unlimited member guest credits are valid only for group fitness classes.<br/><br/>Additional products and services are available for purchase with credit card, including massages & wellness services, retail, café and bar items.</p>"
+            "title": "What can I use credits for?",
+            "detail": "<p>Credits, including the 3 for $60 intro pack, are valid for use at both S&T and Reformd! A credit can be used to book:</p><ul><li>A class at Reformd</li><li>A yoga, Pilates, Ride, or HIIT class at any S&T location</li><li>Small Group Training at Front/Spadina</li><li>Pool deck at Front/Spadina</li><li>Sauna session at Yonge/Shuter</li><li>Biohacking: red light therapy, compression therapy, private hot & cold therapy suite</li></ul><p>Credits activate at the time of purchase.</p>"
           }
         },
         "03005134-1b24-4879-8a85-c338503355d3": {
           "type": "que_ans",
           "settings": {
-            "title": "Are there membership contracts or initiation fees?",
-            "detail": "<p>Sweat easy - no initiation fees, no annual commitment with your membership, cancel anytime with no minimum notice periods. And as long as your membership remains active, your monthly rate is price-protected, forever and always. We like fun surprises only.</p>"
+            "title": "How do I purchase a membership / credits?",
+            "detail": "<p>You can view and purchase memberships and credits online or in the S&T app by selecting 'REFORMD' in the location - drop down.</p>"
           }
         },
         "df72df29-8093-40fa-83f3-c8def3f9bcfa": {
           "type": "que_ans",
           "settings": {
-            "title": "If I’m on a monthly membership, can I put my account on hold?",
-            "detail": "<p>Yes! Memberships can be frozen for a maximum of 14 days at a time every six months, and you can request your first freeze at any time after starting your membership. At the end of each freeze, 6 months must pass before you are eligible for another. Eligibility does not reset if you cancel and purchase a new membership. Your membership start date is the very first date you signed up for a membership.</p><p>This does not include involuntary freezes, such as studio closures. In the case of an injury, you can request to freeze your membership for the duration of the injury with a doctor’s note. In the case of pregnancy, you can request to freeze your membership for the duration of your pregnancy with a doctor’s note up to 12 months. You must provide a minimum of three (3) days’ notice to ensure your account is not automatically charged. Please contact us at <a href=\"mailto:hello@sweatandtonic.com\" target=\"_blank\">hello@sweatandtonic.com </a>to put your account on hold.</p>"
+            "title": "I’m an Unlimited member at S&T. Do I have access to Reformd?",
+            "detail": "<p>As an active Unlimited member at S&T, you can purchase a Reformd Unlimited membership add-on at a 50% discount to get access to Reformd. The add-on gives you unlimited access to classes at Reformd. </p>"
           }
         },
         "3ba96673-528e-457a-8524-171c4ebf84ac": {
           "type": "que_ans",
           "settings": {
-            "title": "Do you offer corporate rates or private bookings?",
-            "detail": "<p>Yes, we offer private classes and a corporate wellness program. To inquire, please reach out to our Corporate Sales & Events team at <a href=\"mailto:salesandevents@sweatandtonic.com\" target=\"_blank\" title=\"mailto:salesandevents@sweatandtonic.com\">salesandevents@sweatandtonic.com</a>.</p>"
+            "title": "Who can purchase a Reformd Unlimited membership add-on?",
+            "detail": "<p>Guests with an active Yonge/Shuter or The Well Unlimited membership can purchase a membership add-on at 50% off.</p>"
           }
         },
         "22e4de22-4b8c-4f02-a061-11408cf91e8a": {
           "type": "que_ans",
           "settings": {
-            "title": "How do I create an account / update my account information?",
-            "detail": "<p>You can create an account and update your information <a href=\"https://www.sweatandtonic.com/my-account/?_mt=%2Faccount%2Fcreate%3FredirectURL%3D%252Faccount\">online</a> or in the S&T app. One account is permitted per customer. For more information, visit our <a href=\"https://www.sweatandtonic.com/terms-and-conditions/\">Terms & Conditions</a>.</p>"
+            "title": "Can I use credits I purchase during the Reformd pre-opening sale at Sweat and Tonic?",
+            "detail": "<p>No, credits purchased during the Reformd pre-opening sale are valid only for classes at Reformd. However, regular-priced credits will be valid for use at Reformd and S&T.</p>"
           }
         },
         "que_ans_prKExh": {
           "type": "que_ans",
           "settings": {
-            "title": "Can I share my membership or account?",
-            "detail": "<p>No, taking classes under an account that is not your own, modifying account information from one individual to another, creating multiple accounts, or allowing another individual to take classes on your membership is strictly prohibited.<br/><br/>Accounts found in conflict with this policy will be charged the full value of one-month’s membership and will be permanently banned from Sweat and Tonic.</p>"
+            "title": "I’ve taken a class at S&T before. Can I purchase 3 for $60 intro pack?",
+            "detail": "<p>No, the<strong> 3 for $60 intro pack</strong> is valid for first-timers only at both S&T and Reformd.</p>"
           }
         },
         "88eef28f-11aa-41e2-96f1-65617d2b3755": {
