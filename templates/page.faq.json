@@ -54,6 +54,27 @@
             "detail": "<p>Reformd is located at 486 Front St. W on the Terrace Level at The Well across from S&T, accessible via the pedestrian bridge.</p>"
           }
         },
+        "4cdf833b-812d-4a9a-84a9-bc2b229a449d": {
+          "type": "que_ans",
+          "settings": {
+            "title": "When is Reformd opening?",
+            "detail": "<p>Our grand opening date is Saturday, June 21.</p>"
+          }
+        },
+        "ab3a0bf7-e7e2-4232-9cf4-65d41c889a85": {
+          "type": "que_ans",
+          "settings": {
+            "title": "What amenities are at Reformd?",
+            "detail": "<p>We’ll have a welcome lounge, a gender-neutral locker room with seven private changing spaces that include three showers and washrooms, heated flooring throughout the studio and locker room, Tonic Bar ordering kiosks, and an education room for 1-1 guidance that will also be available for private bookings.</p>"
+          }
+        },
+        "que_ans_J97CWR": {
+          "type": "que_ans",
+          "settings": {
+            "title": "When will the class schedule be available? When can I start booking classes?",
+            "detail": "<p>Our class schedule will be released in the weeks leading up to our opening date. Booking opens on Saturday, June 14 at 5 PM for Unlimited members and Sunday at 5 PM for everyone else! Make sure to sign up for our newsletter and follow Reformd on Instagram for the latest updates.</p>"
+          }
+        },
         "e491b7f7-2e86-42db-9739-797a6fbb5195": {
           "type": "title",
           "settings": {
@@ -72,27 +93,6 @@
           "settings": {
             "title": "What services and offerings can I use credits for?",
             "detail": "<p>You can use standard S&T credits for:</p><ul><li>Any yoga, Pilates, HIIT, and Ride classes</li><li>Small Group Training sessions at Front/Spadina</li><li>Sauna sessions at Yonge/Shuter</li><li>Pool deck sessions at Tonic Spa</li><li>Private Hot/Cold Therapy suite at Tonic Spa</li><li>Red Light Therapy at Tonic Spa</li><li>Lymphatic Compression Therapy at Tonic Spa</li></ul><p>Exceptions apply - certain credit types allow booking for specific services only, including but not limited to milestone credits or gifted credits.</p><p>Unlimited member guest credits are valid only for group fitness classes.<br/><br/>Additional products and services are available for purchase with credit card, including massages & wellness services, retail, café and bar items.</p>"
-          }
-        },
-        "ab3a0bf7-e7e2-4232-9cf4-65d41c889a85": {
-          "type": "que_ans",
-          "settings": {
-            "title": "Can I use my credits to book classes or services for other people?",
-            "detail": "<p>Absolutely – the more the merrier! You can use class credits to book classes for a guest, and Unlimited members can use guest credits.<br/>As with all class reservations, our standard 12-hour no-show / late cancellation policy also applies to guest reservations. If your guest does not show up for class you booked for them, your account is subject to the no-show penalty as per our studio policy.</p>"
-          }
-        },
-        "4cdf833b-812d-4a9a-84a9-bc2b229a449d": {
-          "type": "que_ans",
-          "settings": {
-            "title": "Do credits expire?",
-            "detail": "<p>Credits expire 3 months after purchase. Intro pack credits expire 1 month after purchase. Exceptions may apply, including Fundraiser Class Credits which expire at the conclusion of the fundraiser class / event.</p>"
-          }
-        },
-        "que_ans_J97CWR": {
-          "type": "que_ans",
-          "settings": {
-            "title": "I'm an Unlimited member. What can I use my guest credit for?",
-            "detail": "<p>Unlimited member guest credits are valid for booking guests in group fitness classes (yoga, Pilates, HIIT, and ride classes).</p>"
           }
         },
         "03005134-1b24-4879-8a85-c338503355d3": {
@@ -361,12 +361,12 @@
         "que_ans_G9aRwm",
         "que_ans_DkfcPE",
         "6beaa2ad-e3e7-4b02-9db6-25c2cae1a7bc",
+        "4cdf833b-812d-4a9a-84a9-bc2b229a449d",
+        "ab3a0bf7-e7e2-4232-9cf4-65d41c889a85",
+        "que_ans_J97CWR",
         "e491b7f7-2e86-42db-9739-797a6fbb5195",
         "7064720d-0420-40f1-803f-d9b0235d07ef",
         "d7696939-47e4-410d-9584-55d9659a7c55",
-        "ab3a0bf7-e7e2-4232-9cf4-65d41c889a85",
-        "4cdf833b-812d-4a9a-84a9-bc2b229a449d",
-        "que_ans_J97CWR",
         "03005134-1b24-4879-8a85-c338503355d3",
         "df72df29-8093-40fa-83f3-c8def3f9bcfa",
         "3ba96673-528e-457a-8524-171c4ebf84ac",
