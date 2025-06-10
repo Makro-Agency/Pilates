@@ -2,10 +2,8 @@
 
 .mainFaq .leftPart { max-width: 400px; flex: 1 0 auto; width: 100%; align-self: flex-start; position: sticky;  /* top: calc(var(--header-height,0) + 20px); */ }
 .mainFaq .rightPart { max-width: 825px; width: 100%; padding-left: 60px; margin-top: 22px; }
-
-.faq-sLink { margin-top: -8px; }
-.faq-sLink li { line-height: 1.417; font-size: 12px; }
-.faq-sLink .link { text-decoration: none; color: rgba(var(--color-foreground), 1); font-size: inherit; font-weight: 450; /*letter-spacing: 0.24px;*/ text-transform: uppercase; display: inline-flex; align-items: center; position: relative; padding-top: 8px; padding-bottom: 8px; }
+.faq-sLink li { line-height: 100%; font-size: 12px; }
+.faq-sLink .link { text-decoration: none; color: rgba(var(--color-foreground), 1); font-size: inherit; font-weight: 500; /*letter-spacing: 0.24px;*/ text-transform: uppercase; display: inline-flex; align-items: center; position: relative; padding-top: 8px; padding-bottom: 8px; }
 .faq-sLink .link svg { position: absolute; left: -10px; opacity: 0; transition: left .3s ease 0.05s, opcity .3s ease 0s; }
 .faq-sLink .link:hover, .faq-sLink .link.active { padding-left: 20px; color: #FEE4B1; }
 .faq-sLink .link:hover svg, .faq-sLink .link.active svg { left: 0; opacity: 1; }
@@ -41,13 +39,15 @@ main.dark--true .faq-sLink .link.active {
 }  
 
 @media only screen and (min-width: 1200px ){
-  .mainFaq .leftPart .main-page-title { margin-bottom: 70px; }
+  .mainFaq .leftPart .main-page-title { margin-bottom: 64px; }
 }
 
 @media only screen and (max-width: 1199px ){
   .mainFaq .rightPart { width: 100%; max-width: 100%; padding-left: 30px; }  
   .mainFaq .leftPart { max-width: 290px; }
 }
+@media only screen and (max-width: 1440px ){
+.mainFaq .page-width{ margin:0 auto 0 0;} }
 @media only screen and (max-width: 989px ){
   .mainFaq .page-width { flex-wrap: wrap; }
   .mainFaq .rightPart,
@@ -55,12 +55,16 @@ main.dark--true .faq-sLink .link.active {
   
   .mainFaq .leftPart{ position: static; }
   .mainFaq .rightPart { padding-left: 0; margin-top: 60px; }  
-
   .faqBlock+.faqBlock { margin-top: 60px; }
   .faq-sTitle h2 { margin-bottom: 30px; }
   .f-sCon--item { padding: 25px 0; }  
   .faq-sQA .tab .tab-title { padding-top: 25px; padding-bottom: 25px; }
   .faq-sQA .tab .tabWrapper { padding: 25px 0; }
+}
+@media screen and (max-width:767px){
+ .mainFaq .faq-sLink{ margin-top:0; }
+.template--faq .mainFaq .faq-sLink li .link{ padding-bottom:20px; }
+.template--faq .mainFaq .faq-sLink li:last-child .link{ padding-bottom:0px; }
 }
 
 

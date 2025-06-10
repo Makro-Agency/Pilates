@@ -26,7 +26,9 @@ color:#ffffff;
 }
 .template--faq .mainFaq .faq-sLink .link{
     padding-bottom: 16px;
+    letter-spacing: 0.02em;
     padding-top:0; 
+    line-height:100%; 
 }
  .mainFaq .faq-sLink .link:hover, main.dark--true .faq-sLink .link.active{ color:rgb(255, 255, 255, 1); }
 .mainFaq main.dark--true .faq-sLink .link.active{

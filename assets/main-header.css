@@ -298,5 +298,7 @@ text-transform: uppercase; }
   .drawer-with-mega header-drawer .drawer-mega-content .mega-nav-content-wrapper .cont-list .cont-item:not(:first-child) { margin-top:0px; }
   
 }
-
+@media screen and (min-width:1024px){
+  .drawer-with-mega header-drawer .drawer-mega-content .mega-nav-content-wrapper{ width:100%;  max-width: 535px; }
+}
 
