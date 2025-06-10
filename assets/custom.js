@@ -1130,7 +1130,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (dropdownContent.classList.contains('open')) {
           // Close animation
-          dropdownContent.style.maxHeight = dropdownContent.scrollHeight + 'px';
+          dropdownContent.style.maxHeight = (dropdownContent.scrollHeight + 30) + 'px';
           // Force reflow
           void dropdownContent.offsetWidth;
           dropdownContent.style.maxHeight = '0';
@@ -1148,7 +1148,7 @@ document.addEventListener('DOMContentLoaded', function() {
           
           // Force reflow
           void dropdownContent.offsetWidth;
-          dropdownContent.style.maxHeight = dropdownContent.scrollHeight + 'px';
+          dropdownContent.style.maxHeight = (dropdownContent.scrollHeight + 30) + 'px';
           dropdownContent.style.opacity = '1';
         }
         

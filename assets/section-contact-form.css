@@ -209,16 +209,21 @@
 }
 
 .contact_form .field .field__label {
+  /* left: 0;
+  top: 15.5px; */
   left: 0;
-  top: 15.5px;
+  top: 15px;
   color: rgba(var(--color-foreground), 0.4);
+  letter-spacing: 0;
 }
 
-.contact_form .field__input:focus~.field__label,
+/* .contact_form .field__input:focus~.field__label, */
 .contact_form .field__input:not(:placeholder-shown)~.field__label,
 .contact_form .field__input:-webkit-autofill~.field__label {
-  top: -6px;
-  font-size: 12px;
+  /* top: -6px;
+  font-size: 12px; */
+  opacity: 0;
+  letter-spacing: 0;
 }
 
 .sec-contact-form .contact .leftBGPart:before {

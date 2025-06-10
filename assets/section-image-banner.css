@@ -32,6 +32,9 @@
     width: 100%;
 }
 @media only screen and (max-width: 749px) {
+  .template-index custom-slideshow .banner:not(.banner--stacked) {
+    flex-wrap: nowrap;
+  }
   .banner--content-align-mobile-right .banner__box {
     text-align: right;
   }

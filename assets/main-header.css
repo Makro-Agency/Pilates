@@ -255,7 +255,8 @@ text-transform: uppercase; }
   /* .header__icon--cart .icon { width: auto; height: 30px; margin-top: 3px; } */
   .header__heading-logo {
     /* max-width: 187px; */
-    max-height: 1.603rem;
+    /* max-height: 1.603rem; */
+    max-width: max-content;
   }
   body .header {
     padding: 1.8rem 2rem;

@@ -46,6 +46,7 @@
     left: auto;
     right: -44%;
     z-index: -1;
+    pointer-events: none;
   }
 
   .instructors-bg-image {
@@ -263,5 +264,8 @@
     }
     .instructors-team {
       padding: 8rem 0;
+    }
+    .instructors-cta {
+      padding-left: 20px;
     }
   }
