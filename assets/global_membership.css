@@ -407,9 +407,12 @@
         max-width: 100%;
     }
     .btn-wrap {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
         gap: 20px;
         min-height: 100%;
+    }
+    .monthly-credits .membership-card-wrapper {
+        flex-direction: column;
     }
 }

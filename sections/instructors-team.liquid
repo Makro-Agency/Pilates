@@ -49,8 +49,8 @@
             {% endif %}
 
             {% if section.settings.button_text != blank and section.settings.button_url != blank %}
-              <div class="instructors-cta">
-                <a href="{{ section.settings.button_url }}" class="instructors-button cta">
+              <div class="instructors-cta small-hide">
+                <a href="{{ section.settings.button_url }}" class="instructors-button cta small-hide">
                   {{ section.settings.button_text }}
                   {% render 'icon-left-arrow' %}
                 </a>
@@ -96,7 +96,16 @@
           {% endif %}
         {% endfor %}
       </div>
+      {% if section.settings.button_text != blank and section.settings.button_url != blank %}
+              <div class="instructors-cta medium-hide large-up-hide">
+                <a href="{{ section.settings.button_url }}" class="instructors-button cta ">
+                  {{ section.settings.button_text }}
+                  {% render 'icon-left-arrow' %}
+                </a>
+              </div>
+      {% endif %}
     </div>
+    
   </section>
 </div>
 
