@@ -70,7 +70,6 @@
       "name": "Hero banner",
       "settings": {
         "allow_transparent_header": true,
-        "image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL-edit.jpg",
         "video": "shopify://files/videos/Website Hero - Compressed edit for web - 2025.03.mp4",
         "video_url": "",
         "image_overlay_opacity": 50,
@@ -280,6 +279,7 @@
             "desc": "<p>Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </p>",
             "btn_text": "VISIT S&T",
             "btn_url": "https://sweatandtonic.com/",
+            "service_heading": "Services Include:",
             "service_1": "Tonic Bar delivery",
             "service_2": "Full-service unisex locker room",
             "service_3": "Private showers & change rooms",
@@ -296,6 +296,7 @@
             "desc": "<p>Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </p>",
             "btn_text": "VISIT S&T",
             "btn_url": "https://sweatandtonic.com/",
+            "service_heading": "Services Include:",
             "service_1": "Service 1",
             "service_2": "Service 2",
             "service_3": "Service 3",
