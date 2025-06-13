@@ -110,7 +110,7 @@
         "links_wgtLej": {
           "type": "links",
           "settings": {
-            "link_lable": "OUR TEAM",
+            "link_lable": "OUR TEAM - COMING SOON",
             "section_id": "team",
             "page_url": "shopify://pages/team"
           }
@@ -128,7 +128,7 @@
           "settings": {
             "link_lable": "SCHEDULE (COMING SOON)",
             "section_id": "about",
-            "page_url": ""
+            "page_url": "shopify://pages/book-classes"
           }
         }
       },
