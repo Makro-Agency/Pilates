@@ -464,7 +464,9 @@
 
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
 
-      if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+      
+
+      if (scrollTop > (this.currentScrollTop / 2) && scrollTop > (this.headerBounds.bottom / 2)) {
         this.header.classList.add('scrolled-past-header');
         if(heroSectionEle) heroSectionEle.classList.add('active');
         if (this.preventHide) return;

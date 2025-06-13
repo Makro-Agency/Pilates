@@ -265,7 +265,7 @@ a[href^="tel:"]{
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
-  display: none;
+  /* display: none; */
 }
 .drawer-classes-btns .button{
   border: 1px solid #fff;
@@ -292,6 +292,7 @@ a[href^="tel:"]{
 }
 .footer{
   padding-top: 6rem;
+  padding-bottom: 67px;
 }
 body.template--accessibility-policy,
 body.template--terms-conditions,

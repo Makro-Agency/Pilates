@@ -185,7 +185,8 @@
     .hero-banner-1 .banner-content {
         flex-direction: column;
         gap: 50px;
-        padding-top: 60px;
+        /* padding-top: 60px; */
+        padding-top: calc(var(--header-height) + 20px);
         padding-bottom: 60px;
     }
     .hero-banner-1 .banner-content > * {
