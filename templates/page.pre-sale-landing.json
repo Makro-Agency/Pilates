@@ -62,7 +62,6 @@
         },
         "links_wgtLej": {
           "type": "links",
-          "disabled": true,
           "settings": {
             "link_lable": "Memberships & credits",
             "section_id": "membership-credits",
@@ -836,7 +835,7 @@
           "type": "faq",
           "settings": {
             "question": "WHEN IS REFORMD OPENING?",
-            "ans": "<p>We're opening this spring - stay tuned for updates!</p>"
+            "ans": "<p>Our grand opening will be on Saturday, June 21, 2025.</p>"
           }
         },
         "faq_9tkn6E": {
@@ -857,21 +856,21 @@
           "type": "faq",
           "settings": {
             "question": "How can I buy and book classes at Reformd? Is there an app?",
-            "ans": "<p>You’ll be able to access Reformd in the S&T app, by selecting 'Reformd' in the location drop-down. This means you only need one account to access products at both S&T and Reformd.</p><p>If you already have a Sweat and Tonic account, you’ll be able to book classes, make purchases, and manage your account at Reformd, using the same account you use for S&T, all in one place!</p>"
+            "ans": "<p>You’ll be able to access Reformd in the S&T app, by selecting Reformd in the location drop-down. This means you only need one account to access products at both S&T and Reformd.</p><p>If you already have a Sweat and Tonic account, you’ll be able to book classes, make purchases, and manage your account at Reformd, using the same account you use for S&T, all in one place!</p>"
           }
         },
         "faq_Nz8aJU": {
           "type": "faq",
           "settings": {
-            "question": "If I purchase a membership or credit pack now, when will it be activated / when will my monthly billing begin?",
-            "ans": "<p>Your purchase will be processed immediately to secure your pre-opening sale rate. Memberships and credits will activate when Reformd opens. For memberships and recurring credit packs, your next payment will be charged at the start of your second billing month, after Reformd opens.</p>"
+            "question": "If I purchase a membership or credit pack before Reformd opens, when will it be activated / when will my monthly billing begin?",
+            "ans": "<p>Your purchase will be processed immediately. Credits are valid for use at S&T and Reformd and activate at the time of purchase. Memberships and recurring credit packs will activate when Reformd opens, and your next payment will be charged at the start of your second billing month, after Reformd opens.</p>"
           }
         },
         "faq_j6hX6y": {
           "type": "faq",
           "settings": {
             "question": "When will the class schedule be available? When can I start booking classes?",
-            "ans": "<p>Keep your eyes out for the class schedule to be released approximately two weeks prior to the opening date. More details will be available soon - make sure to sign up for our newsletter and follow Reformd on Instagram for the latest updates.</p>"
+            "ans": "<p>Our class schedule will be released in the weeks leading up to our opening date. Booking opens on Saturday, June 14 at 5 PM for Unlimited members and Sunday at 5 PM for everyone else! Make sure to sign up for our newsletter and follow Reformd on Instagram for the latest updates.</p>"
           }
         }
       },
