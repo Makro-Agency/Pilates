@@ -256,6 +256,7 @@
         "team_4HJ9Kd",
         "team_bRe4jx"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "team",
         "background_image": "shopify://shop_images/benifits-bg.svg",
@@ -273,35 +274,35 @@
         "location_yxkeNt": {
           "type": "location",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_76.png",
+            "image": "shopify://shop_images/Sweat_and_Tonic_Yoga_Studio_Restorative_V2.jpg",
             "title": "S&T | FRONT/SPADINA",
-            "desc": "<p>Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </p>",
+            "desc": "<p>Our biggest location - 25,000 sq.ft. of immersive fitness & wellness located near the vibrant King West neighbourhood at The Well, Canada's most ambitious mixed-use development.</p>",
             "btn_text": "VISIT S&T",
             "btn_url": "https://sweatandtonic.com/",
-            "service_heading": "Services Include:",
-            "service_1": "Tonic Bar delivery",
-            "service_2": "Full-service unisex locker room",
-            "service_3": "Private showers & change rooms",
-            "service_4": "Towel service",
-            "service_5": "Heated flooring",
-            "service_6": "1-1 education room"
+            "service_heading": "OFFERINGS INCLUDE:",
+            "service_1": "Yoga & Pilates",
+            "service_2": "HIIT",
+            "service_3": "Ride",
+            "service_4": "Tonic Spa",
+            "service_5": "Tonic Bar",
+            "service_6": "Tonic House"
           }
         },
         "location_h939Va": {
           "type": "location",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_76_1.png",
+            "image": "shopify://shop_images/Value_Block_1_Alternative_Option1.png",
             "title": "S&T | YONGE/SHUTER",
-            "desc": "<p>Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </p>",
+            "desc": "<p>Centrally located in the historic Ryrie Building, S&T at Yonge/Shuter is just a 30-second walk from the north exit of the Queen Street subway station and directly across from the Eaton Centre.</p>",
             "btn_text": "VISIT S&T",
             "btn_url": "https://sweatandtonic.com/",
-            "service_heading": "Services Include:",
-            "service_1": "Service 1",
-            "service_2": "Service 2",
-            "service_3": "Service 3",
-            "service_4": "Service 4",
-            "service_5": "",
-            "service_6": ""
+            "service_heading": "OFFERINGS INCLUDE:",
+            "service_1": "Yoga & Pilates",
+            "service_2": "HIIT",
+            "service_3": "Ride",
+            "service_4": "Tonic House",
+            "service_5": "Tonic Bar",
+            "service_6": "Sauna & Somadome"
           }
         }
       },
