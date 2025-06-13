@@ -67,9 +67,9 @@
         "bottom_title_7zMBCc",
         "bottom_links_aCpw9R"
       ],
-      "name": "Hero banner",
       "settings": {
         "allow_transparent_header": true,
+        "image": "shopify://shop_images/STE_MARIE_-_Reformd_Renders_-_Studio_-_2025-01-20-edit.jpg",
         "video": "shopify://files/videos/Website Hero - Compressed edit for web - 2025.03.mp4",
         "video_url": "",
         "image_overlay_opacity": 50,
@@ -157,13 +157,13 @@
         "slide_ciinLM": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/STE_MARIE_-_Reformd_Renders_-_Studio_-_2025-01-20-edit.jpg",
-            "mobile_image": "shopify://shop_images/STE_MARIE_-_Reformd_Renders_-_Studio_-_2025-01-20-edit.jpg",
+            "image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL.jpg",
+            "mobile_image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL.jpg",
             "heading": "MEGAFORMER STUDIO",
             "heading_size": "h2",
             "subheading": "Over 70 expertly curated high-intensity, low-impact classes to sculpt, tone, and strengthen.",
-            "button_label": "CLASS SCHEDULE COMING SOON",
-            "link": "#",
+            "button_label": "CLASS SCHEDULE",
+            "link": "shopify://pages/book-classes",
             "image_overlay_opacity": 0,
             "color_scheme": "inverse"
           }
@@ -256,7 +256,6 @@
         "team_4HJ9Kd",
         "team_bRe4jx"
       ],
-      "name": "Instructors Team",
       "settings": {
         "section_id": "team",
         "background_image": "shopify://shop_images/benifits-bg.svg",
@@ -310,7 +309,6 @@
         "location_yxkeNt",
         "location_h939Va"
       ],
-      "name": "Store locations",
       "settings": {
         "section_id": "locations",
         "full_width": true,
@@ -323,7 +321,6 @@
     },
     "global_image_banner_1_appf4n": {
       "type": "global_image-banner-1",
-      "name": "Global Image Banner 1",
       "settings": {
         "section_id": "about",
         "desktop_image": "shopify://shop_images/Section_1_440f8a13-3b60-4fe1-8710-5c98608ab72a.png",
