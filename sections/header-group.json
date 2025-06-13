@@ -36,8 +36,52 @@
         "enable_language_selector": false
       }
     },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "f3379ac4-a87c-4f04-aa79-b5edb88faf25": {
+          "type": "quick-menu",
+          "settings": {
+            "menu_quick_links": "quick-buy-links"
+          }
+        }
+      },
+      "block_order": [
+        "f3379ac4-a87c-4f04-aa79-b5edb88faf25"
+      ],
+      "settings": {
+        "logo_position": "top-center",
+        "hide-header": true,
+        "menu": "home-menu",
+        "menu_type_desktop": "drawer_with_mega",
+        "title": "",
+        "image_1": "shopify://shop_images/DSCF8134.png",
+        "title_1": "TRY 3 CLASSES FOR $60",
+        "button_1_title": "GET AN INTRO PACK",
+        "button_1_link": "shopify://pages/pricing",
+        "image_2": "shopify://shop_images/EEA_9383_1.png",
+        "title_2": "EXPLORE S&T",
+        "button_2_title": "LEARN MORE",
+        "button_2_link": "https://sweatandtonic.com/",
+        "sticky_header_type": "always",
+        "show_line_separator": true,
+        "buy_btn_1": "Test",
+        "link_btn_1": "shopify://pages/book-classes",
+        "buy_btn_2": "Buy classes",
+        "link_btn_2": "",
+        "color_scheme": "background-1",
+        "menu_color_scheme": "background-1",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
     "global_header_jrHBy3": {
       "type": "global_header",
+      "disabled": true,
       "settings": {
         "desktop_logo": "shopify://shop_images/Vector.svg",
         "mobile_logo": "shopify://shop_images/Vector_8.png",
@@ -100,6 +144,7 @@
   },
   "order": [
     "announcement-bar",
+    "header",
     "global_header_jrHBy3",
     "4d342184-db41-43d6-bbe3-503423044f05"
   ]

@@ -214,8 +214,8 @@
     width: 18px;
     left: 25px;
     border-radius: 2px;
-    border: 1px solid #C79D5B;
-    background: #C79D5B;
+    border: 1px solid #FEE4B1;
+    background: #FEE4B1;
     z-index:0;
     opacity: 0;
     visibility: hidden;
@@ -242,7 +242,7 @@
   }
   
   .mobile_sub_menu ul li input.filter_checkbox[type=checkbox]:checked, .mobile_sub_menu ul li input.filter_radio[type=radio]:checked {
-    accent-color: #C79D5B;
+    accent-color: #FEE4B1;
   }
   .mobile_sub_menu {
     display: none;
@@ -281,8 +281,8 @@
     border-radius: 2px;
   }
   .mobile_filter_footer .mobile-filter_clear {
-      background: #C79D5B;
-      border-color: #C79D5B;
+      background: #FEE4B1;
+      border-color: #FEE4B1;
       color: #001424;
   }
   .mobile_facet_list {

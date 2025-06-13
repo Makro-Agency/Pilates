@@ -2,53 +2,175 @@
   margin-left: 0;
   margin-right: 0;
 }
-.hit-multicolumn .multicolumn-card__info{
-  max-width: 600px;
+
+.hit-multicolumn .multicolumn-card__info {
+  max-width: 590px;
 }
-.hit-multicolumn .background-none .multicolumn-card__info{
+
+.hit-multicolumn .section-padding {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+.template--hiit-studio .hit-multicolumn .section-padding {
+  padding-top: 0;
+}
+.hit-multicolumn .multicolumn .title {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.hit-multicolumn .background-none .multicolumn-card__info {
   padding-bottom: 0;
 }
-.hit-multicolumn .background-none .multicolumn-list .multicolumn-card__info, 
+
+.hit-multicolumn .background-none .multicolumn-list .multicolumn-card__info,
 .hit-multicolumn .background-none .multicolumn-list:not(.slider) .center .multicolumn-card__info {
   padding-left: 0;
   padding-right: 0;
 }
-.hit-multicolumn .grid{
+
+.hit-multicolumn .grid {
   row-gap: 40px;
 }
+
 .hit-multicolumn .media--portrait {
   padding-bottom: 46%;
 }
-.hit-multicolumn .multicolumn-card__info>*:not(:first-child){
+
+.hit-multicolumn .multicolumn-card__info>*:not(:first-child) {
   margin: 15px 0 0;
 }
+
 .hit-multicolumn .multicolumn-card__info .icon-wrap {
   margin-left: 0;
 }
+.hit-multicolumn .multicolumn-card__info .icon-wrap svg {
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
 .hit-multicolumn .multicolumn-list h3 {
   line-height: inherit;
+  font-weight: 500;
+  line-height: 100%;
 }
-.hit-multicolumn .link{
+
+.hit-multicolumn .multicolumn-list .text-wrap p {
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.hit-multicolumn .store-address,
+.hit-multicolumn .store-phone {
+  color: var(--White, #FFF);
+  font-family: "New Frank";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.hit-multicolumn .store-phone {
+  margin-top: 10px;
+}
+
+.hit-multicolumn .link {
   color: currentcolor;
 }
-.hit-multicolumn .title-wrapper-with-link{
+
+.hit-multicolumn .multicolumn-card__info .global-link {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.32px;
+}
+
+.hit-multicolumn .multicolumn-card__info .global-link:before {
+  height: 1.8px;
+  background: #FEE4B1;
+}
+
+.hit-multicolumn .title-wrapper-with-link {
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 750px){
+.hit-multicolumn {
+  position: relative;
+}
+
+.hit-multicolumn:before {
+  position: absolute;
+  width: 1057.73px;
+  height: 1733.224px;
+  transform: rotate(104.546deg);
+  flex-shrink: 0;
+  content: '';
+  display: block;
+  background: var(--Neon-Peach, radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%));
+  opacity: 0.3;
+  filter: blur(250px);
+  z-index: 0;
+  background-size: cover;
+  top: -300px;
+  background-position: right top;
+  opacity: 0.3;
+  left: 1200px;
+}
+
+@media screen and (min-width: 750px) {
   .hit-multicolumn .grid--2-col-desktop .grid__item {
     width: calc(50% - 40px / 2);
     max-width: calc(50% - 40px / 2);
   }
+
   .hit-multicolumn .grid--2-col-desktop {
     column-gap: 40px;
   }
 }
-@media screen and (max-width: 749px){
-  .hit-multicolumn .grid{
+
+@media screen and (max-width: 749px) {
+  .hit-multicolumn .grid {
     row-gap: 30px;
   }
+
   .hit-multicolumn .title-wrapper-with-link {
     margin-bottom: 30px;
+  }
+
+  .hit-multicolumn .multicolumn .title {
+    font-family: "ITC Avant Garde Gothic Std";
+    font-size: 32px;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+
+  .hit-multicolumn .multicolumn .title-wrapper-with-link {
+    margin-bottom: 40px;
+  }
+
+  .hit-multicolumn .media--portrait {
+    padding-bottom: 57%;
+  }
+
+  .hit-multicolumn .section-padding {
+    padding-top: 0px;
+    padding-bottom: 80px;
+  }
+
+  .hit-multicolumn:before {
+    filter: blur(250px);
+    z-index: 0;
+    background-size: cover;
+    top: 0;
+    background-position: right top;
+    opacity: 1;
+    left: 0;
+    width: 80%;
+    height: 300px;
+    transform: rotate(163deg);
+  }
+
+  .hit-multicolumn .multicolumn-list:not(.slider) {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }

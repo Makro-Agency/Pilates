@@ -1383,7 +1383,7 @@ button.shopify-payment-button__button--unbranded {
     gap: 8px;
     flex-shrink: 0;
     border-radius: 100px;
-    background: var(--Gold, #C79D5B);
+    background: var(--Gold, #FEE4B1);
     box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.15);
     position: fixed;
     z-index: 5;
@@ -1958,7 +1958,7 @@ input[type='checkbox'] {
 .quantity__input {
   color: currentColor;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 400;
   opacity: 0.85;
   text-align: center;
   background-color: transparent;
@@ -2602,6 +2602,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 .header__icon {
@@ -2626,13 +2627,6 @@ product-info .loading-overlay:not(.hidden) ~ *,
   width: 2rem;
   fill: none;
   vertical-align: middle;
-}
-
-.header__icon,
-.header__icon--cart .icon {
-  height: 4.4rem;
-  width: 4.4rem;
-  padding: 0;
 }
 
 .header__icon--cart {
@@ -3251,7 +3245,7 @@ details-disclosure > details {
 
 .rte a {
   color: rgba(var(--color-link), var(--alpha-link));
-  text-underline-offset: 0.3rem;
+  text-underline-offset: 0.1rem;
   text-decoration-thickness: 0.1rem;
   transition: text-decoration-thickness var(--duration-short) ease;
 }
@@ -3584,5 +3578,5 @@ a[href="https://sweatandtonicyongeandshuter.brandbot.io/forms/newsletter-sign-up
 }
 
 a[href="https://sweatandtonic.com/pages/contact-us"] {
-    color: #C79D5B;
+    color: #FEE4B1;
 }

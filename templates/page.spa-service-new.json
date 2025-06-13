@@ -41,7 +41,7 @@
             "applies_color_scheme": true,
             "btn_text_clr": "#000000",
             "btn_hvr_text_clr": "#000000",
-            "btn_bg_clr": "#c79d5b",
+            "btn_bg_clr": "#FEE4B1",
             "btn_hvr_bg_clr": "#ffffff"
           }
         },
@@ -107,7 +107,7 @@
             "btn_text_clr": "#000000",
             "btn_hvr_text_clr": "#000000",
             "btn_bg_clr": "#ffffff",
-            "btn_hvr_bg_clr": "#c79d5b"
+            "btn_hvr_bg_clr": "#FEE4B1"
           }
         },
         "cdab86f8-0a2a-43c0-94c7-7f3bfbc177e0": {
@@ -678,7 +678,7 @@
           "settings": {
             "heading": "CLUB TRANSCEND",
             "heading_size": "h2",
-            "text_clr": "#c79d5b"
+            "text_clr": "#FEE4B1"
           }
         },
         "buttons_FbbWnb": {

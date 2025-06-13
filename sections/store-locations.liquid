@@ -34,7 +34,7 @@
     {%- endcapture -%}
 
     <div
-      id="Slide-{{ section.id }}-{{ forloop.index }}"
+      id="Slide-{{ section.id }}-{{ forloop.index }} {{ section.settings.section_id | handle }}"
       class="multicolumn-list__item store-locations-item grid__item{{ empty_column }}"
       {{ block.shopify_attributes }}
     >
@@ -84,16 +84,13 @@
             {%- if block.settings.desc != blank -%}
               <div class="rte text-wrap">{{ block.settings.desc }}</div>
             {%- endif -%}
-            {%- if block.settings.address != blank -%}
-              <div class="store-address">{{ block.settings.address }}</div>
-            {%- endif -%}
-            {%- if block.settings.phone != blank -%}
-              <div class="store-phone">{{ block.settings.phone }}</div>
+            {%- if block.settings.btn_text != blank -%}
+              <a href="{{ block.settings.btn_url }}" class="cta">{{ block.settings.btn_text }}{% render 'icon-left-arrow' %}</a>
             {%- endif -%}
           </div>
           {%- if exclusive_services != blank -%}
             <div class="multicolumn-card__services">
-              <div class="service-title h6">{{ 'Services include:' }}</div>
+              <div class="service-title h6">{{ block.settings.service_heading }}</div>
               <ul class="service-title-wrap">{{ exclusive_services }}</ul>
             </div>
           {%- endif -%}
@@ -125,17 +122,18 @@
     </style>
   {%- endif -%}
   
-  <div class="multicolumn1 color-{{ section.settings.color_scheme }} gradient{% if section.settings.title == blank %} no-heading{% endif %}">
+  <div id="{{ section.settings.section_id | handle }}" class="multicolumn1 color-{{ section.settings.color_scheme }} gradient{% if section.settings.title == blank %} no-heading{% endif %}">
     <div
-      class="isolate{% if settings.animations_reveal_on_scroll %} scroll--trigger animate-slide-in{% endif %}"
-      {% if settings.animations_reveal_on_scroll %}data-cascade{% endif %}
+      class="isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+      {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: {{ section.index }};"{% endif %}
     >
       {%- unless section.settings.title == blank -%}
-        <div class="section-head">
-          <div class="page-width">
-            <h6 class="h6">{{- section.settings.title -}}</h6>
+        
+          <div class="section-head">
+            <h6 class="h1">{{- section.settings.title -}}</h6>
+            <p class="description">{{ section.settings.content }}</p>
           </div>
-        </div>
+        
       {%- endunless -%}
   
       {%- unless section.settings.full_width -%}<div class="page-width">{%- endunless -%}
@@ -166,6 +164,11 @@
   },
   "settings": [
     {
+      "type": "text",
+      "label": "Add Section Id",
+      "id": "section_id"
+    },
+    {
       "type": "checkbox",
       "id": "full_width",
       "default": true,
@@ -176,6 +179,11 @@
       "id": "title",
       "default": "S&T LOCATIONS",
       "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "content",
+      "label": "Content"
     },
     {
       "type": "color_scheme",
@@ -204,7 +212,6 @@
     {
       "type": "location",
       "name": "Location card",
-      "limit": 2,
       "settings": [
         {
           "type": "image_picker",
@@ -225,19 +232,23 @@
         },
         {
           "type": "text",
-          "id": "address",
-          "default": "486 Front St W, Toronto, ON M5V 0V2",
-          "label": "Address"
+          "id": "btn_text",
+          "label": "Button Text"
         },
         {
-          "type": "text",
-          "id": "phone",
-          "default": "647-372-0225",
-          "label": "Phone number"
+          "type": "url",
+          "id": "btn_url",
+          "label": "Button URL"
         },
         {
           "type": "header",
           "content": "Exclusive services:"
+        },
+        {
+          "type": "text",
+          "id": "service_heading",
+          "default": "Services Include:",
+          "label": "Service Heading"
         },
         {
           "type": "text",

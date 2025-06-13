@@ -1,0 +1,60 @@
+.products-carousel .title-description-wrap .title{
+    color: var(--White, #FFF);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.collection__view-all a{
+    color: var(--White, #FFF);
+    font-family: "ITC Avant Garde Gothic Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; 
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+}
+.product-card-wrapper .card .card__content .card__information .card__heading {
+    color: var(--White, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+.product-card-wrapper .card .card__content .card__information .price .price__container .price__regular .price-item--regular{
+    color: var(--White, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+body .swiper-button-next, body .swiper-button-prev{
+    background:#fff;
+    background-image: url("https://cdn.shopify.com/s/files/1/0915/3917/7843/files/arrow.png?v=1747128051");
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22%;
+}
+
+.products-carousel .card--standard .card__inner,.card--standard .card__inner:after{
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(4px);
+}
+
+@media only screen and (max-width:768px) {
+    .products-carousel .collection__view-all{
+        text-align: left;
+    }
+    .products-carousel.section-padding {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .products-carousel .title-description-wrap .title{
+        font-size: 32px;
+    }
+}

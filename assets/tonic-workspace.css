@@ -1,6 +1,6 @@
 .tonic-workspace-wrapper { width:100%; position:relative; margin:200px 0 !important; }
 .tonic-workspace-wrapper .image-with-text__content { padding-top:0; padding-bottom:0; }
-.tonic-workspace-wrapper .image-with-text__text--caption { color: #C79D5B; font-size: 12px; font-weight: 450; line-height: normal;
+.tonic-workspace-wrapper .image-with-text__text--caption { color: #FEE4B1; font-size: 12px; font-weight: 450; line-height: normal;
   text-transform: uppercase; margin-bottom:42px; display: flex; margin-bottom: 40px; }
 .tonic-workspace-wrapper .image-with-text__heading { color: #000; line-height: 90%; text-transform: uppercase; margin:0 0 15px 0; }
 
@@ -37,7 +37,7 @@
 .tonic-workspace-wrapper .workspac-box .media-box img { width:100%; object-fit:cover; }
 
 .tonic-workspace-wrapper .workspac-box .content-box { width:45%; }
-.tonic-workspace-wrapper .workspac-box .content-box .sub-title { color: #C79D5B; font-size: 12px; font-style: normal; font-weight: 450; line-height: normal;
+.tonic-workspace-wrapper .workspac-box .content-box .sub-title { color: #FEE4B1; font-size: 12px; font-style: normal; font-weight: 450; line-height: normal;
   text-transform: uppercase; margin-bottom:42px; display: flex; margin-bottom: 40px; }
 .tonic-workspace-wrapper .workspac-box .content-box .title { color: #000; font-style: normal; line-height: 90%; text-transform: uppercase; margin:0 0 15px 0; }
  

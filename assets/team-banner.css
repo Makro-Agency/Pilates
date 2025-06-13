@@ -1,92 +1,218 @@
 .team-banner-wrapper { width:100%; }
-
-.team-banner-wrapper .banner-box { width:100%; display:flex; }
-
-.team-banner-wrapper .banner-box .team-info { width:100%; padding:40px 5rem 0 5rem; display: flex; flex-flow: column; }
-.team-banner-wrapper .banner-box .team-info .back-team { color: #000; font-size: 12px; font-style: normal; font-weight: 450; line-height: normal; gap:10px;
+.team-banner-wrapper .banner-box .team-info .mem-details{ max-width:640px; }
+.team-banner-wrapper .banner-box { width:100%; display:flex; justify-content:space-between;  }
+/* .team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify.single-icon{ margin-left:0; padding-left:40px; } */
+.team-banner-wrapper .banner-box .team-info { width:100%; padding:29px 5rem 0px 5rem; display: flex; flex-flow: column; }
+.team-banner-wrapper .banner-box .team-info .back-team { color: #000; font-size: 12px; font-style: normal; font-weight: 500; line-height: normal; gap:10px;
   letter-spacing: 0.24px; text-transform: uppercase; display:flex; align-items:center; text-decoration:none; }
-.team-banner-wrapper .banner-box .team-info .back-team:hover { text-decoration:underline; }
-
-
 .team-banner-wrapper .banner-box .team-info .mem-details { display: flex; flex-flow: column; align-items: flex-start; margin-top:auto; margin-bottom:auto; }
 .team-banner-wrapper .banner-box .team-info .mem-details .team-title { color: #000; font-size: 60px; font-style: normal; font-weight: 420; line-height: 90%; 
     letter-spacing: -1.2px; text-transform: uppercase; margin:0; }
-
-.team-banner-wrapper .banner-box .team-info .mem-details .team-slogan { color: #C79D5B; font-size: 20px; font-style: normal; font-weight: 450;
-  line-height: 90%; letter-spacing: -0.4px; text-transform: uppercase; margin-top:24px; }
-
-.team-banner-wrapper .banner-box .team-info .mem-details .book-case { margin-top:65px; border-radius: 2px; background: #000; text-decoration:none; display: flex;
-  min-width: 190px; height: 45px; padding: 0px 20px; justify-content: center; align-items: center; color: #FFF; font-size: 12px; font-style: normal;
-  font-weight: 450; line-height: normal; letter-spacing: 0.24px; text-transform: uppercase; }
-.team-banner-wrapper .banner-box .team-info .mem-details .book-case:hover { background: #C79D5B; color:#000; }
-
-.team-banner-wrapper .banner-box .team-info .mem-social { display:flex; align-items:center; border-top: 1px solid rgba(0, 0, 0, 0.05); padding:20px 5rem;
-   border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: #FFF; margin:0 -5rem; }
+.team-banner-wrapper .banner-box .team-info .mem-details .team-slogan { font-family: var(--font-heading-family); 
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 100%;
+text-transform: uppercase; color:#ffffff;  margin-top:24px; }
+.team-banner-wrapper .banner-box .team-info .mem-details .book-case { 
+margin-top:65px; border-radius: 0px; background: transparent; border:1px solid #ffffff;  text-decoration:none; display: flex;
+min-width: 164px; height: 48px; padding: 0px 20px; justify-content: center; align-items: center; color: #FFF;font-family: 'ITC Avant Garde Gothic Std';
+font-style: normal;
+/* font-weight: 600; */
+font-weight:500; 
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0.02em;
+text-transform: uppercase;  }
+.team-banner-wrapper .banner-box .team-info .mem-details .book-case:hover { background: #ffffff; color:#000; }
+.team-banner-wrapper .banner-box .team-info .mem-social { display:flex; align-items:center; border-top: 1px solid rgba(255,255,255, 0.1); padding:20px 5rem;
+   border-bottom: 1px solid rgba(255,255,255, 0.1);  margin:0 -5rem; }
 .team-banner-wrapper .banner-box .team-info .mem-social .soci-item:not(.spotify) { display:flex; align-items:center; align-items:center; justify-content: center; border-radius: 30px;
-  border: 1px solid rgba(199, 157, 91, 0.40); background: #FFF; width: 40px; height: 40px; margin-right:14px; }
+   width: 40px; height: 40px; margin-right:14px; }
 .team-banner-wrapper .banner-box .team-info .mem-social .soci-item:not(.spotify):last-child { margin-right:0; }
 .team-banner-wrapper .banner-box .team-info .mem-social .soci-item:not(.spotify):hover { background:#000; border-color:#000; }    
-
-.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify { display:flex; align-items:center; color: #C79D5B; font-size: 12px; font-style: normal;
-   font-weight: 450; line-height: normal; letter-spacing: 0.24px; text-transform: uppercase; border-left:rgba(0,0,0,0.1) 1px solid; 
-   padding-left:40px; margin-left:40px; text-decoration:none; }
-
-.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify:first-child{
-  border-left:none;
-}
-.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify img { margin-right:10px; }
-.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.instagram img{
-  padding: 4px;
-  height: 35px;
-  width: 35px;
-}
-
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify { display:flex; align-items:center; color: #ffffff; font-family: var(--font-heading-family); font-style: normal;font-weight:500; font-size: 12px;line-height: 100%;text-transform:uppercase; padding-left:66px; margin-left:0px; text-decoration:none; }
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify:first-child{border-left:none;}
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify img{ width:35px;}
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify img { margin-right:14px; }
+.team-banner-wrapper .banner-box .team-info .mem-social a.soci-item.spotify.new{ position:relative; }
+.team-banner-wrapper .banner-box .team-info .mem-social a.soci-item.spotify.new:before{ content: '';width: 1px; height: 100%;background-color: #fff;position: absolute; opacity: 0.1; left:26px;  }
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.instagram img{height: 40px;width: 40px;}
 .team-banner-wrapper .banner-box .team-media { width:100%; display:flex; }
-.team-banner-wrapper .banner-box .team-media img { width:100%; height:100%; object-fit:cover; }
-
-
+.team-banner-wrapper .banner-box .team-media img { width:100%; height:100%; object-fit:cover;  z-index:1; }
+.team-banner-wrapper .banner-box{ margin-top:0px; }
+.team-banner-wrapper  .team-media{ position:relative; }
+/* .team-banner-wrapper  .team-media:before{
+    content: '';
+    position: absolute;
+    width: 112.8%;
+    height: 185.2%; 
+    left: 0;
+    top: -15%;
+    background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
+    opacity: 0.3;
+    filter: blur(200px);
+    transform: rotate(67.77deg);
+    pointer-events:none; 
+    z-index:0; 
+} */
 @media (min-width: 750px){
   .team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify:first-child{
     margin-left: 0;
     padding-left: 0;
   }
   .team-banner-wrapper .banner-box .team-info, .team-banner-wrapper .banner-box .team-media{
-    width: 50%;
+    width: 100%; 
   }
+   .team-banner-wrapper .banner-box .team-info{
+    max-width:100%;
+   }
+   .team-banner-wrapper .banner-box .team-media{
+     max-width:700px;
+   }
+}
+@Media screen and (max-width:749px){
+  .team-banner-wrapper .banner-box .team-info .mem-social a.soci-item.spotify.new:before{left:-11px;}
+}
+@media screen and (min-width:750px) and (max-width:1024px){
+  .team-banner-wrapper .banner-box .team-info .mem-social a.soci-item.spotify.new:before{left:-4px;}
 }
 @media (max-width: 1023px) {
-
-  .team-banner-wrapper .banner-box .team-info .mem-details .team-title { font-size:40px; }
-  .team-banner-wrapper .banner-box .team-info .mem-details .team-slogan { font-size:16px; margin-top: 17px; }
-  
-  .team-banner-wrapper .banner-box .team-info .mem-social .soci-item:not(.spotify) { width: 30px; height: 30px; margin-right: 10px; }
-  .team-banner-wrapper .banner-box .team-info .mem-social .soci-item:not(.spotify) img { width: 55%; }
-  .team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify  { padding-left: 20px; margin-left: 20px; }  
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify.new img{ margin-right:5px; }
+.team-banner-wrapper .mem-social a.soci-item.spotify.new{ margin-left:19px !Important;   }
+.team-banner-wrapper .banner-box .team-info .mem-details .team-title { font-size:40px; }
+.team-banner-wrapper .banner-box .team-info .mem-details .team-slogan { font-size:20px; margin-top: 17px; }
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item:not(.spotify) { width: 40px; height: 40px; margin-right: 8px; }
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify  { padding-left: 20px; margin-left: 20px; }  
 }
-
+@media screen and (min-width:750px){
+.team-banner-wrapper .back-team.mobile{ display:none; }
+}
+@media screen and (max-width:989px){
+  .team-banner-wrapper .banner-box .team-info .mem-details .team-title{ font-size:40px; }
+  .team-banner-wrapper .banner-box .team-info .mem-details .team-title{ margin-top:15px; }
+ .team-banner-wrapper .banner-box .team-info .mem-social{ padding: 20px 2rem; } }
 @media (max-width: 749px) {
-
-  .team-banner-wrapper .banner-box { flex-flow:column; }
-  .team-banner-wrapper .banner-box .team-info { padding: 25px 3rem 0; }
-
-  .team-banner-wrapper .banner-box .team-info .back-team { font-size:10px; gap: 5px; }
-  .team-banner-wrapper .banner-box .team-info .back-team svg { width: 10px; height: auto; }
-
-  .team-banner-wrapper .banner-box .team-info .mem-details { margin-top:30px; }
-  .team-banner-wrapper .banner-box .team-info .mem-details .book-case { margin-top:30px; }
-  .team-banner-wrapper .banner-box .team-info .mem-details .team-title { font-size: 35px; }
-  .team-banner-wrapper .banner-box .team-info .mem-details .team-slogan { font-size: 14px; }
-  
-  .team-banner-wrapper .banner-box .team-info .mem-social { flex-wrap: wrap;  padding:20px 3rem; margin: 0 -3rem;  margin-top:40px;  }
-  .team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify { margin-top:10px; margin-left:-3px; padding-left:0; border:none; width: 100%;}
-  
+.team-information-wrapper .page-width{ padding-left:20px; padding-right:20px; }
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify.new{
+font-family: ITC Avant Garde Gothic Std;
+font-weight: 500;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 2%;
+text-transform: uppercase;
 }
-
-
-
-
-
-
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.instagram img{ margin-right:8px; }
+.team-banner-wrapper .banner-box .team-info .mem-social{ margin:0; }
+/* .team-banner-wrapper  .team-media:before{
+position: absolute;
+width: 127.6%;
+height: 136.2%; 
+left: 0; 
+top: -30px; 
+background: radial-gradient(50% 50% at 50% 50%, #FF5983 0%, #FF9A42 80%);
+opacity: 0.3;
+filter: blur(100px);
+transform: rotate(67.77deg);
+pointer-events:none; 
+z-index:0; 
+} */
+.team-banner-wrapper .banner-box .team-info .mem-details .team-title{
+font-weight: 400;
+font-size: 40px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: uppercase;
+}
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify{ width:fit-content !Important; }
+.team-banner-wrapper .banner-box .team-info .mem-details .book-case{ margin-top:24px; }
+.team-banner-wrapper .banner-box .team-info .mem-details .team-slogan{ margin-top:24px; }
+.team-banner-wrapper .banner-box .team-info .back-team{ display:none; }
+.team-banner-wrapper .banner-box .team-media img{ min-height:500px; }
+.team-banner-wrapper .banner-box .back-team.mobile svg path { stroke:#fff; }
+.team-banner-wrapper .banner-box .back-team.mobile svg{ width:10px; height:auto; }
+.team-banner-wrapper .banner-box .team-media .back-team.mobile { gap:5px; }
+.team-banner-wrapper .banner-box .team-media .back-team.mobile{     font-family: ITC Avant Garde Gothic Std;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    letter-spacing: .24px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 52px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    margin-bottom:27px; 
+}
+.team-banner-wrapper .banner-box .team-info .mem-details .book-case{ padding:0 18px; }
+.team-banner-wrapper .banner-box .team-info .mem-details{ margin-top:0 !Important; }
+.team-banner-wrapper .banner-box .team-media{ flex-direction:column; }
+.team-banner-wrapper .banner-box { flex-flow:column-reverse; }
+.team-banner-wrapper .banner-box .team-info { padding: 30px 2rem 0 2rem; }
+.team-banner-wrapper .banner-box .team-info .back-team { font-size:10px; gap: 5px; }
+.team-banner-wrapper .banner-box .team-info .back-team svg { width: 10px; height: auto; }
+.team-banner-wrapper .banner-box .team-info .mem-details { margin-top:30px; }
+.team-banner-wrapper .banner-box .team-info .mem-details .book-case { margin-top:30px; }
+.team-banner-wrapper .banner-box .team-info .mem-details .team-title { font-size: 40px; }
+.team-banner-wrapper .banner-box .team-info .mem-details .team-slogan { font-size: 20px; }
+.team-banner-wrapper .banner-box .team-info .mem-social {   padding:20px 0;  margin-top:30px;  }
+.team-banner-wrapper .banner-box .team-info .mem-social .soci-item.spotify {  margin-left:0; padding-left:0; border:none; width: 100%;}
+}
+@media screen and (min-width:1024px){
+.team-banner-wrapper .banner-box .team-info .mem-details .team-title{ font-size:60px; } }
+@media screen and (min-width:750px){
+.team-banner-wrapper .banner-box .team-info .mem-details .team-title{
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+text-transform: uppercase;
+}
+}
+.team-banner-wrapper .banner-box .team-info .back-team svg path{ stroke:#ffffff; }
+.team-banner-wrapper .banner-box .team-info .back-team{
+font-family: 'ITC Avant Garde Gothic Std';
+font-style: normal;
+font-size: 16px;
+line-height: 100%;
+color:#ffffff; 
+width:fit-content; 
+position:relative; 
+}
+.team-banner-wrapper .banner-box .team-info .back-team:after{
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 1px;
+  top: unset;
+  bottom:-5px;
+  opacity:0;
+  z-index: 1;
+  border: none; transition:all 0.3s linear;  }
+.team-banner-wrapper .banner-box .team-info .back-team:hover:after{
+ opacity:1; 
+} 
+.team-banner-wrapper .back-team.mobile{ width:fit-content; position:relative; overflow:hidden;  }
+.team-banner-wrapper .back-team.mobile:after{
+   content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 1px;
+    top: unset;
+    bottom:0px;
+    opacity:0;
+    z-index: 1;
+    border: none; transition:all 0.3s linear; 
+}
+.team-banner-wrapper .back-team.mobile:hover:after{
+ opacity:1; 
+} 
+.team-banner-wrapper .banner-box .team-info .mem-details .team-title{ color:#ffffff;  }
 
 
 

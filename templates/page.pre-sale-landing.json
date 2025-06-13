@@ -13,6 +13,7 @@
       "type": "global_home-hero-banner",
       "disabled": true,
       "settings": {
+        "allow_transparent_header": false,
         "desktop_image": "shopify://shop_images/Hero_4.png",
         "mobile_image": "shopify://shop_images/Presale_Countdown.png",
         "overlay_opacity": 0,
@@ -26,11 +27,12 @@
     "global_hero_banner_PFid6R": {
       "type": "global_hero-banner",
       "settings": {
+        "allow_transparent_header": true,
         "desktop_image": "shopify://shop_images/Hero.png",
         "mobile_image": "shopify://shop_images/Hero-mobile.png",
         "overlay_opacity": 51,
         "countdown_title": "Pre-opening sale: launching April, 10",
-        "countdown_content": "Introducing the world's highest capacity Lagree Method™ studio, powered by Sweat and Tonic. Coming to The Well at Front/Spadina.",
+        "countdown_content": "Introducing the world's highest capacity Lagree Method™ studio, powered by Sweat and Tonic. Coming to The Well at Front/Spadina in spring 2025.",
         "sale_title": "GRAND OPENING: JUNE 21",
         "sale_content": "Introducing the world's highest capacity Lagree Method™ studio, powered by Sweat and Tonic. Coming to The Well at Front/Spadina.",
         "show_btn": false,
@@ -43,7 +45,7 @@
         "presale_on_title": "",
         "sale_end_date": "2025-04-17 09:00 AM",
         "show_btn_pre": true,
-        "btn_text_pre": "Buy a membership or credit pack",
+        "btn_text_pre": "BUY A MEMBERSHIP OR CREDIT PACK",
         "btn_url_pre": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750"
       }
     },
@@ -54,28 +56,32 @@
           "type": "links",
           "settings": {
             "link_lable": "THE STUDIO",
-            "section_id": "studio-classes"
+            "section_id": "studio-classes",
+            "page_url": ""
           }
         },
         "links_wgtLej": {
           "type": "links",
           "settings": {
             "link_lable": "Memberships & credits",
-            "section_id": "membership"
+            "section_id": "membership-credits",
+            "page_url": ""
           }
         },
         "links_YWPPcV": {
           "type": "links",
           "settings": {
             "link_lable": "THE S&T EXPERIENCE",
-            "section_id": "experience"
+            "section_id": "experience",
+            "page_url": ""
           }
         },
         "links_yeAjBV": {
           "type": "links",
           "settings": {
             "link_lable": "FAQ",
-            "section_id": "FAQ"
+            "section_id": "FAQ",
+            "page_url": ""
           }
         }
       },
@@ -87,7 +93,7 @@
       ],
       "disabled": true,
       "settings": {
-        "title": "THE BEST OF BOUTIQUE FITNESS & WELLNESS",
+        "title": "THE BEST OF BOUTIQUE FITNESS &amp; WELLNESS",
         "content": "The Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts.⁠ Step inside Reformd for a Lagree experience unlike any other."
       }
     },
@@ -110,12 +116,11 @@
             "mobile_image": "shopify://shop_images/slideshow-mob-3.png",
             "heading": "MEGAFORMER STUDIO",
             "heading_size": "h2",
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "center",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
             "image_overlay_opacity": 0,
-            "color_scheme": "inverse",
-            "text_alignment_mobile": "left"
+            "color_scheme": "inverse"
           }
         },
         "slide_DeQiWy": {
@@ -125,12 +130,11 @@
             "mobile_image": "shopify://shop_images/accordian-desktop.png",
             "heading": "RECEPTION",
             "heading_size": "h2",
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "center",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
             "image_overlay_opacity": 0,
-            "color_scheme": "inverse",
-            "text_alignment_mobile": "left"
+            "color_scheme": "inverse"
           }
         },
         "slide_PrVpCJ": {
@@ -140,12 +144,11 @@
             "mobile_image": "shopify://shop_images/slideshow-2.png",
             "heading": "WELCOME LOUNGE",
             "heading_size": "h2",
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "center",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
             "image_overlay_opacity": 0,
-            "color_scheme": "inverse",
-            "text_alignment_mobile": "left"
+            "color_scheme": "inverse"
           }
         }
       },
@@ -211,7 +214,7 @@
             "total_membership_number": "",
             "remain_membership_number": "",
             "button_text": "BUY NOW",
-            "btn_url": "shopify://pages/pricing"
+            "btn_url": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48817%3FactiveSection%3D1851"
           }
         },
         "membership_card_U67qN8": {
@@ -227,7 +230,7 @@
             "total_membership_number": "",
             "remain_membership_number": "",
             "button_text": "BUY NOW",
-            "btn_url": "shopify://pages/pricing"
+            "btn_url": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48817%3FactiveSection%3D1851"
           }
         },
         "membership_card_GJKEWW": {
@@ -243,7 +246,7 @@
             "total_membership_number": "",
             "remain_membership_number": "",
             "button_text": "BUY NOW",
-            "btn_url": "shopify://pages/pricing"
+            "btn_url": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48817%3FactiveSection%3D1851"
           }
         }
       },
@@ -256,6 +259,121 @@
         "section_id": "membership",
         "main_title": "Memberships",
         "main_description": "Unlimited means unlimited. Reserve a membership now - activates on opening day."
+      }
+    },
+    "global_credits_PpejdD": {
+      "type": "global_credits",
+      "blocks": {
+        "credits_card_Y8kcA3": {
+          "type": "credits_card",
+          "settings": {
+            "title": "Intro pack: 3 for $60",
+            "price_per_class": "FIRST-TIMERS ONLY",
+            "description": "For first-time guests only. Valid for use at Reformd and S&T. Credits expire one month from purchase.",
+            "sale_label": "$20 / class",
+            "sale_price": "$60",
+            "original_price": "",
+            "benefits": "<p>Valid for:</p><ul><li>Yoga, Pilates, Ride & HIIT classes at S&T</li><li>Classes at Reformd</li><li>Small Group Training at S&T</li><li>Biohacking at Tonic Spa: Red Light Therapy, Compression Therapy, Private Hot & Cold Therapy Suite</li><li>Pool deck at Tonic Spa</li></ul>",
+            "total_membership_number": "",
+            "remain_membership_number": "",
+            "button_text": "BUY NOW",
+            "btn_url": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750"
+          }
+        },
+        "credits_card_7jT9h4": {
+          "type": "credits_card",
+          "settings": {
+            "title": "SINGLE CREDIT",
+            "price_per_class": "$34 / CREDIT",
+            "description": "Valid for use at Reformd and S&T. Expires three months from purchase.",
+            "sale_label": "1 CREDIT",
+            "sale_price": "$34",
+            "original_price": "",
+            "benefits": "<p>Valid for:</p><ul><li>Yoga, Pilates, Ride & HIIT classes at S&T</li><li>Classes at Reformd</li><li>Small Group Training at S&T</li><li>Biohacking: Red Light Therapy, Compression Therapy, Private Hot & Cold Therapy Suite</li><li>Pool deck at Tonic Spa</li></ul>",
+            "total_membership_number": "",
+            "remain_membership_number": "",
+            "button_text": "BUY NOW",
+            "btn_url": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750"
+          }
+        },
+        "credits_card_EKgxAt": {
+          "type": "credits_card",
+          "settings": {
+            "title": "5 CREDIT PACK",
+            "price_per_class": "$31 / CREDIT",
+            "description": "Valid for use at Reformd and S&T. Expires three months from purchase.",
+            "sale_label": "5 CREDITS",
+            "sale_price": "$155",
+            "original_price": "",
+            "benefits": "<p>Valid for:</p><ul><li>Yoga, Pilates, Ride & HIIT classes at S&T</li><li>Classes at Reformd</li><li>Small Group Training at S&T</li><li>Biohacking: Red Light Therapy, Compression Therapy, Private Hot & Cold Therapy Suite</li><li>Pool deck at Tonic Spa</li></ul>",
+            "total_membership_number": "",
+            "remain_membership_number": "",
+            "button_text": "BUY NOW",
+            "btn_url": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750"
+          }
+        },
+        "credits_card_79cFzr": {
+          "type": "credits_card",
+          "settings": {
+            "title": "10 Credit Pack",
+            "price_per_class": "$29 / CREDIT",
+            "description": "Valid for use at Reformd and S&T. Expires three months from purchase.",
+            "sale_label": "10 CREDITS",
+            "sale_price": "$290",
+            "original_price": "",
+            "benefits": "<p>Valid for:</p><ul><li>Yoga, Pilates, Ride & HIIT classes at S&T</li><li>Classes at Reformd</li><li>Small Group Training at S&T</li><li>Biohacking: Red Light Therapy, Compression Therapy, Private Hot & Cold Therapy Suite</li><li>Pool deck at Tonic Spa</li></ul>",
+            "total_membership_number": "",
+            "remain_membership_number": "",
+            "button_text": "BUY NOW",
+            "btn_url": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750"
+          }
+        },
+        "credits_card_mRgXam": {
+          "type": "credits_card",
+          "settings": {
+            "title": "15 Credit Pack",
+            "price_per_class": "$26.33 / CLASS",
+            "description": "Valid for use at Reformd and S&T. Expires three months from purchase.",
+            "sale_label": "15 CREDITS",
+            "sale_price": "$395",
+            "original_price": "",
+            "benefits": "<p>Valid for:</p><ul><li>Yoga, Pilates, Ride & HIIT classes at S&T</li><li>Classes at Reformd</li><li>Small Group Training at S&T</li><li>Biohacking: Red Light Therapy, Compression Therapy, Private Hot & Cold Therapy Suite</li><li>Pool deck at Tonic Spa</li></ul>",
+            "total_membership_number": "",
+            "remain_membership_number": "",
+            "button_text": "BUY NOW",
+            "btn_url": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750"
+          }
+        },
+        "credits_card_YtBKPz": {
+          "type": "credits_card",
+          "disabled": true,
+          "settings": {
+            "title": "8x monthly credit pack",
+            "price_per_class": "$20 / Class (Regular: $34)",
+            "description": "Renews monthly, minimum of two months. Credits expire in billing month and do not roll over. Valid for use at Reformd only.",
+            "sale_label": "+ ADDITIONAL 20% OFF",
+            "sale_price": "$160",
+            "original_price": "$200",
+            "benefits": "<ul><li>Save $14 per credit with a recurring credit pack.</li><li>Price-protected, forever and always - keep your rate as long as your membership remains active</li></ul>",
+            "total_membership_number": "75",
+            "remain_membership_number": "0",
+            "button_text": "",
+            "btn_url": "shopify://pages/pricing"
+          }
+        }
+      },
+      "block_order": [
+        "credits_card_Y8kcA3",
+        "credits_card_7jT9h4",
+        "credits_card_EKgxAt",
+        "credits_card_79cFzr",
+        "credits_card_mRgXam",
+        "credits_card_YtBKPz"
+      ],
+      "settings": {
+        "section_id": "credits",
+        "main_title": "Credit packs",
+        "main_description": "Credit packs activate at time of purchase and are valid for use at S&T and Reformd."
       }
     },
     "global_competitor_comparison_iiBDkL": {
@@ -442,121 +560,6 @@
         "section_id_1": "membership"
       }
     },
-    "global_credits_PpejdD": {
-      "type": "global_credits",
-      "blocks": {
-        "credits_card_Y8kcA3": {
-          "type": "credits_card",
-          "settings": {
-            "title": "Intro pack: 3 for $60",
-            "price_per_class": "FIRST-TIMERS ONLY",
-            "description": "For first-time guests only. Valid for use at Reformd and S&T. Credits expire one month from purchase.",
-            "sale_label": "$20 / class",
-            "sale_price": "$60",
-            "original_price": "",
-            "benefits": "<p>Valid for:</p><ul><li>Yoga, Pilates, Ride & HIIT classes at S&T</li><li>Classes at Reformd</li><li>Small Group Training at S&T</li><li>Biohacking at Tonic Spa: Red Light Therapy, Compression Therapy, Private Hot & Cold Therapy Suite</li><li>Pool deck at Tonic Spa</li></ul>",
-            "total_membership_number": "",
-            "remain_membership_number": "",
-            "button_text": "BUY NOW",
-            "btn_url": "shopify://pages/pricing"
-          }
-        },
-        "credits_card_7jT9h4": {
-          "type": "credits_card",
-          "settings": {
-            "title": "SINGLE CREDIT",
-            "price_per_class": "$34 / CREDIT",
-            "description": "Valid for use at Reformd and S&T. Expires three months from purchase.",
-            "sale_label": "1 CREDIT",
-            "sale_price": "$34",
-            "original_price": "",
-            "benefits": "<p>Valid for:</p><ul><li>Yoga, Pilates, Ride & HIIT classes at S&T</li><li>Classes at Reformd</li><li>Small Group Training at S&T</li><li>Biohacking at Tonic Spa: Red Light Therapy, Compression Therapy, Private Hot & Cold Therapy Suite</li><li>Pool deck at Tonic Spa</li></ul>",
-            "total_membership_number": "",
-            "remain_membership_number": "",
-            "button_text": "BUY NOW",
-            "btn_url": "shopify://pages/pricing"
-          }
-        },
-        "credits_card_EKgxAt": {
-          "type": "credits_card",
-          "settings": {
-            "title": "5 CREDIT PACK",
-            "price_per_class": "$31 / CREDIT",
-            "description": "Valid for use at Reformd and S&T. Expires three months from purchase.",
-            "sale_label": "5 CREDITS",
-            "sale_price": "$155",
-            "original_price": "",
-            "benefits": "<p>Valid for:</p><ul><li>Yoga, Pilates, Ride & HIIT classes at S&T</li><li>Classes at Reformd</li><li>Small Group Training at S&T</li><li>Biohacking at Tonic Spa: Red Light Therapy, Compression Therapy, Private Hot & Cold Therapy Suite</li><li>Pool deck at Tonic Spa</li></ul>",
-            "total_membership_number": "",
-            "remain_membership_number": "",
-            "button_text": "BUY NOW",
-            "btn_url": "shopify://pages/pricing"
-          }
-        },
-        "credits_card_79cFzr": {
-          "type": "credits_card",
-          "settings": {
-            "title": "10 Credit Pack",
-            "price_per_class": "$29 / CREDIT",
-            "description": "Valid for use at Reformd and S&T. Expires three months from purchase.",
-            "sale_label": "10 CREDITS",
-            "sale_price": "$290",
-            "original_price": "",
-            "benefits": "<p>Valid for:</p><ul><li>Yoga, Pilates, Ride & HIIT classes at S&T</li><li>Classes at Reformd</li><li>Small Group Training at S&T</li><li>Biohacking at Tonic Spa: Red Light Therapy, Compression Therapy, Private Hot & Cold Therapy Suite</li><li>Pool deck at Tonic Spa</li></ul>",
-            "total_membership_number": "",
-            "remain_membership_number": "",
-            "button_text": "BUY NOW",
-            "btn_url": "shopify://pages/pricing"
-          }
-        },
-        "credits_card_mRgXam": {
-          "type": "credits_card",
-          "settings": {
-            "title": "15 Credit Pack",
-            "price_per_class": "$26.33 / CLASS",
-            "description": "Valid for use at Reformd and S&T. Expires three months from purchase.",
-            "sale_label": "15 CREDITS",
-            "sale_price": "$395",
-            "original_price": "",
-            "benefits": "<p>Valid for:</p><ul><li>Yoga, Pilates, Ride & HIIT classes at S&T</li><li>Classes at Reformd</li><li>Small Group Training at S&T</li><li>Biohacking at Tonic Spa: Red Light Therapy, Compression Therapy, Private Hot & Cold Therapy Suite</li><li>Pool deck at Tonic Spa</li></ul>",
-            "total_membership_number": "",
-            "remain_membership_number": "",
-            "button_text": "BUY NOW",
-            "btn_url": "shopify://pages/pricing"
-          }
-        },
-        "credits_card_YtBKPz": {
-          "type": "credits_card",
-          "disabled": true,
-          "settings": {
-            "title": "8x monthly credit pack",
-            "price_per_class": "$20 / Class (Regular: $34)",
-            "description": "Renews monthly, minimum of two months. Credits expire in billing month and do not roll over. Valid for use at Reformd only.",
-            "sale_label": "+ ADDITIONAL 20% OFF",
-            "sale_price": "$160",
-            "original_price": "$200",
-            "benefits": "<ul><li>Save $14 per credit with a recurring credit pack.</li><li>Price-protected, forever and always - keep your rate as long as your membership remains active</li></ul>",
-            "total_membership_number": "75",
-            "remain_membership_number": "0",
-            "button_text": "",
-            "btn_url": "shopify://pages/pricing"
-          }
-        }
-      },
-      "block_order": [
-        "credits_card_Y8kcA3",
-        "credits_card_7jT9h4",
-        "credits_card_EKgxAt",
-        "credits_card_79cFzr",
-        "credits_card_mRgXam",
-        "credits_card_YtBKPz"
-      ],
-      "settings": {
-        "section_id": "credits",
-        "main_title": "Credit packs",
-        "main_description": "Credit packs activate at time of purchase and are valid for use at S&T and Reformd."
-      }
-    },
     "global_monthly_credits_4bKxDX": {
       "type": "global_monthly-credits",
       "blocks": {
@@ -573,7 +576,7 @@
             "total_membership_number": "",
             "remain_membership_number": "",
             "button_text": "BUY NOW",
-            "btn_url": "shopify://pages/pricing"
+            "btn_url": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48817"
           }
         },
         "credits_card_p6xjkN": {
@@ -589,7 +592,7 @@
             "total_membership_number": "",
             "remain_membership_number": "",
             "button_text": "BUY NOW",
-            "btn_url": "shopify://pages/pricing"
+            "btn_url": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48817"
           }
         }
       },
@@ -811,7 +814,7 @@
           "type": "faq",
           "settings": {
             "question": "What is the Lagree Method? How is it different from reformer Pilates?",
-            "ans": "<p>Lagree is not Pilates, and the Megaformer is not a reformer. Since its inception over 25 years ago, the Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts. </p><p>Founded on five components of physical fitness – endurance, cardiovascular fitness, body composition, flexibility, and strength – Lagree is a patented high-intensity, low-impact exercise method that tightens, tones, and deeply activates slow-twitch muscle fibers. The method integrates body-building principles and focuses on slow, controlled movements and progressive load to build strength.</p>"
+            "ans": "<p>Lagree is not Pilates, and the Megaformer is not a reformer. Since its inception over 25 years ago, the Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts.</p><p>Founded on five components of physical fitness – endurance, cardiovascular fitness, body composition, flexibility, and strength – Lagree is a patented high-intensity, low-impact exercise method that tightens, tones, and deeply activates slow-twitch muscle fibers. The method integrates body-building principles and focuses on slow, controlled movements and progressive load to build strength.</p>"
           }
         },
         "faq_9VUbfX": {
@@ -917,8 +920,8 @@
     "slideshow_ghX64P",
     "global_membership_credits_z7nw6j",
     "global_membership_cxtXW9",
-    "global_competitor_comparison_iiBDkL",
     "global_credits_PpejdD",
+    "global_competitor_comparison_iiBDkL",
     "global_monthly_credits_4bKxDX",
     "global_competitor_comparison_AX9gmg",
     "global_access_accordion_Uj7RDF",

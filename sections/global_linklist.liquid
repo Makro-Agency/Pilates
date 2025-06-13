@@ -5,14 +5,25 @@
     <div class="padding-sections">
         {% if section.settings.title != blank %}
             <div class="content-wrapper">
-                {% if section.settings.title != blank %}<div class="headings"><h2 class="h2 heading">{{ section.settings.title }}</h2></div>{% endif %}
+                {% if section.settings.title != blank %}
+                <div class="headings {% if settings.animations_reveal_on_scroll %} scroll-trigger--offscreen scroll-trigger animate--slide-in{% endif %}" {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: 0;"{% endif %}>
+                    <h2 class="h2 heading">{{ section.settings.title }}</h2>
+                </div>
+                {% endif %}
                 {% if section.settings.content != blank or section.blocks.size > 0 %}
-                    <div class="links-wrappper">
+                    <div class="links-wrappper {% if settings.animations_reveal_on_scroll %} scroll-trigger--offscreen scroll-trigger animate--slide-in{% endif %}" {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: 1;"{% endif %}>
                         {% if section.settings.content != blank %}<p class="description">{{ section.settings.content }}</p>{% endif %}
                         {% if section.blocks.size > 0 %}
                         <div class="link-list">
                             {%- for block in section.blocks -%}
-                                {% if block.settings.link_lable != blank %}<a href="#{{ block.settings.section_id | handle }}">{{ block.settings.link_lable }}{% render 'down-arrow' %}</a>{% endif %}
+                                {% assign scrolllink = 'scroll' %}
+                                {% assign blocklink = block.settings.section_id | handle | prepend: '#' %}
+                                {% if block.settings.page_url != blank %}
+                                    {% assign blocklink = block.settings.page_url %}
+                                    {%  assign scrolllink = '' %}
+                                {% endif %}
+                               
+                                {% if block.settings.link_lable != blank %}<a href="{{ blocklink }}" class="{{ scrolllink }}">{{ block.settings.link_lable }}{% render 'down-arrow' %}</a>{% endif %}
                             {% endfor %}
                         </div>
                         {% endif %} 
@@ -33,7 +44,7 @@
                 "content": "Content"
             },
             {
-                "type": "inline_richtext",
+                "type": "html",
                 "label": "Title",
                 "id": "title"
             },
@@ -59,6 +70,11 @@
                         "label": "Add Section Id",
                         "id": "section_id",
                         "info": "<strong>Add the same section id given in the section here.</strong>"
+                    },
+                    {
+                        "type": "url",
+                        "label": "Add Page URL",
+                        "id": "page_url"
                     }
                 ]
             }

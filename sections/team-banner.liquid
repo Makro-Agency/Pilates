@@ -14,25 +14,27 @@
     </div>
 
     <div class="mem-social">
+      {% if metaobject.instagram.value != blank %}
+      <a href="{{ metaobject.instagram.value }}" class="soci-item instagram spotify"><img stye=" height: 40px;width: 40px;" src="https://cdn.shopify.com/s/files/1/0915/3917/7843/files/Frame_10.svg?v=1747198253" alt="Instagram" /> </a>
+      {% endif %}
       {% if metaobject.facebook.value != blank %}
-      <a href="{{ metaobject.facebook.value }}" class="soci-item"><img src="https://cdn.shopify.com/s/files/1/0277/8280/7635/files/m-facebook.svg?v=1698314177" alt="Facebook" /></a>
+      <a href="{{ metaobject.facebook.value }}" class="soci-item facebook "><img src="https://cdn.shopify.com/s/files/1/0915/3917/7843/files/Frame_10_1.svg?v=1747198297" stye=" height: 40px;width: 40px;" alt="Facebook" /></a>
       {% endif %}
     
       {% if metaobject.tiktok.value != blank %}
-      <a href="{{ metaobject.tiktok.value }}" class="soci-item"><img src="https://cdn.shopify.com/s/files/1/0277/8280/7635/files/m-tiktok.svg?v=1698314177" alt="Tiktok" /></a>
+      <a href="{{ metaobject.tiktok.value }}" class="soci-item tiktok"><img src="https://cdn.shopify.com/s/files/1/0915/3917/7843/files/Frame_12.svg?v=1747198336" stye=" height: 40px; width: 40px;"  alt="Tiktok" /></a>
       {% endif %}
     
-      {% if metaobject.instagram.value != blank %}
-      <a href="{{ metaobject.instagram.value }}" class="soci-item instagram spotify"><img stye="padding: 3px;height: 35px;width: 35px;" src="https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Frame_10.svg?v=1701929492" alt="Instagram" /> Connect with me</a>
-      {% endif %}
+    
     
       {% if metaobject.spotify.value != blank %}
-      <a href="{{ metaobject.spotify.value }}" class="soci-item spotify"><img src="https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Frame_11.svg?v=1701930054" alt="Spotify" /> Follow me on Spotify</a>
+      <a href="{{ metaobject.spotify.value }}" class="soci-item spotify new {%  if metaobject.facebook.value == blank and metaobject.tiktok.value == blank %} single-icon {% endif %}"><img stye=" height: 40px; width: 40px;" src="https://cdn.shopify.com/s/files/1/0915/3917/7843/files/Frame_9.svg?v=1747198522" alt="Spotify" /> Follow me on Spotify </a>
       {% endif %}
     </div>
   </div>
   {% if metaobject.image.value != blank %}
-  <div class="team-media">    
+  <div class="team-media">  
+   <a href="{{ section.settings.back | default:"/" }}" class="back-team mobile">{% render 'left-arrow' %} Back to Team</a>  
     {{ metaobject.image.value | image_url: width: 1200 | image_tag: loading: 'lazy', sizes: "50vw", widths: "375,500,750,900,1200", alt: metaobject.image.value.alt }}    
   </div>
   {% endif %}

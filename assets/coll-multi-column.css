@@ -1,0 +1,56 @@
+.landing-half-banner.coll-multi-column .multicolumn-card__info {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.multicolumn-card__info h6{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+}
+.multicolumn-card__info h3.inline-richtext{
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; 
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.multicolumn-card__info a{
+    color: var(--White, #FFF);
+    font-family: "ITC Avant Garde Gothic Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+    .multicolumn-card__info h6, .landing-half-banner .multicolumn-card__info .link{
+        text-align: center;
+        justify-content: center;
+    }
+    .cust-link {
+        text-align: center;
+    }
+    .multicolumn-card__info h3.inline-richtext{
+        font-size: 36px;
+    }
+    .landing-half-banner .background-none .multicolumn-list .multicolumn-card__info {
+        padding: 20px 0 30px;
+    }   
+}

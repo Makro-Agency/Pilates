@@ -7,7 +7,7 @@
   margin: 0;
 }
 .spa-services-head .count {
-  color: #c79d5b;
+  color: #FEE4B1;
 }
 .spa-services-head .select-div:not(:last-child){
   margin-right: 40px;
@@ -132,13 +132,13 @@
   flex-direction: column;
 }
 .spa-services-box .button--primary{
-  background-color: #c79d5b;
+  background-color: #FEE4B1;
 }
 .spa-services-box .button--primary:hover{
   background-color: #fff;
 }
 .spa-services-box .btn-row .link{
-  color: #c79d5b;
+  color: #FEE4B1;
   margin-left: 40px;
 }
 .spa-services-box .spa-services-info-top .text-wrap{
@@ -158,7 +158,7 @@
   display: inline-block;
 }
 .spa-services-box .text-wrap-more:hover{
-  color: #c79d5b;
+  color: #FEE4B1;
   text-decoration-thickness: 0.1rem;
 }
 .spa-services-box .location-link{
@@ -217,7 +217,7 @@
 .spa-services-list-title{
   line-height: 150%;
   text-transform: uppercase;
-  color: #C79D5B;
+  color: #FEE4B1;
   margin: 0 0 27px;
 }
 .spa-services-box:not(.location-expand) .services-location-info:not(.hover-box){
@@ -257,7 +257,7 @@
   transition: all 0.3s ease 0s;
 }
 .spa-all-services .services--options ul li:hover{
-  border-color: #C79D5B;
+  border-color: #FEE4B1;
 }
 .spa-all-services .services--options ul li:after{
   position: absolute;
@@ -266,7 +266,7 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #C79D5B;
+  background-color: #FEE4B1;
   opacity: 0;
   visibility: hidden;
 }

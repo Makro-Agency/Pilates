@@ -708,8 +708,11 @@ class SliderComponent extends HTMLElement {
     });
   }
 }
-
 customElements.define('slider-component', SliderComponent);
+
+if (typeof SliderComponeSlideshowComponentnt == 'function') {
+  customElements.define('slider-component', SliderComponeSlideshowComponentnt);
+}
 
 class SlideshowComponent extends SliderComponent {
   constructor() {

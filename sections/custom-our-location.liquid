@@ -1,0 +1,159 @@
+
+{{ 'custom-location.css' | asset_url | stylesheet_tag }}
+
+<div class="custom-location{% if settings.animations_reveal_on_scroll %} scroll-trigger--offscreen scroll-trigger animate--fade-in{% endif %}"
+  {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: {{ section.index }};"{% endif %}
+>
+  <div class="wrapper">
+    <div class="wrapper-inner{% if settings.animations_reveal_on_scroll %} scroll-trigger--offscreen scroll-trigger animate--slide-in{% endif %}" {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: 0;"{% endif %}>
+      <h2>{{ section.settings.heading }}</h2>
+      <p class="description">{{ section.settings.description }}</p>
+    </div>
+    <div class="cards">
+      {% for block in section.blocks %}
+        <div class="card">
+          <div class="info">
+            {% if block.settings.title != blank %} <h3>{{ block.settings.title }}</h3>{% endif %}
+            {% if block.settings.text != blank %}<p>{{ block.settings.text }}</p>{% endif %}
+            {% if block.settings.link_text != blank %} 
+            <a href="{{ block.settings.link }}" class="learn-more"> {{ block.settings.link_text }}  <span>{% render 'custom-arrow-right' %}</span> </a>
+            {% endif %}
+          </div>
+          {%if block.settings.services_heading != blank %}
+          <div class="services">
+            <h4>{{ block.settings.services_heading }}</h4>
+            <ul>
+              {% if block.settings.service_1 != blank %}<li><span>{% render 'custom-correct' %}</span>{{ block.settings.service_1 }}</li>{% endif %}
+              {% if block.settings.service_2 != blank %}<li><span>{% render 'custom-correct' %}</span>{{ block.settings.service_2 }}</li>{% endif %}
+              {% if block.settings.service_3 != blank %}<li><span>{% render 'custom-correct' %}</span>{{ block.settings.service_3 }}</li>{% endif %}
+              {% if block.settings.service_4 != blank %}<li><span>{% render 'custom-correct' %}</span>{{ block.settings.service_4 }}</li>{% endif %}
+              {% if block.settings.service_5 != blank %}<li><span>{% render 'custom-correct' %}</span>{{ block.settings.service_5 }}</li>{% endif %}
+              {% if block.settings.service_6 != blank %}<li><span>{% render 'custom-correct' %}</span>{{ block.settings.service_6 }}</li>{% endif %}
+              {% if block.settings.service_7 != blank %}<li><span>{% render 'custom-correct' %}</span>{{ block.settings.service_7 }}</li>{% endif %}
+              {% if block.settings.service_8 != blank %}<li><span>{% render 'custom-correct' %}</span>{{ block.settings.service_8 }}</li>{% endif %}
+            </ul>
+            {% if block.settings.link_text != blank %}
+            <a href="{{ block.settings.link }}" class="learn-more-mobile">
+               {{ block.settings.link_text }} 
+              <span>{% render 'custom-arrow-right' %}</span>
+            </a>
+            {% endif %}
+          </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Custom Locations",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section heading",
+      "default": "OUR LOCATIONS"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Section description",
+      "default": "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "location",
+      "name": "Location card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Card title",
+          "default": "THE WELL"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Card text",
+          "default": "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Learn more URL",
+          "default": "/"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Learn more text",
+          "default": "Learn more"
+        },
+        {
+          "type": "text",
+          "id": "services_heading",
+          "label": "Services heading",
+          "default": "Exclusive Services:"
+        },
+        {
+          "type": "text",
+          "id": "service_1",
+          "label": "Service 1",
+          "default": "Service A"
+        },
+        {
+          "type": "text",
+          "id": "service_2",
+          "label": "Service 2",
+          "default": "Service B"
+        },
+        {
+          "type": "text",
+          "id": "service_3",
+          "label": "Service 3",
+          "default": "Service C"
+        },
+          {
+          "type": "text",
+          "id": "service_4",
+          "label": "Service 4"
+        },
+        {
+          "type": "text",
+          "id": "service_5",
+          "label": "Service 5"
+        },
+        {
+          "type": "text",
+          "id": "service_6",
+          "label": "Service 6"
+        },
+         {
+          "type": "text",
+          "id": "service_7",
+          "label": "Service 7"
+        },
+         {
+          "type": "text",
+          "id": "service_8",
+          "label": "Service 8"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Locations",
+      "category": "Sections",
+      "blocks": [
+        { "type": "location" },
+        { "type": "location" }
+      ]
+    }
+  ]
+}
+{% endschema %}

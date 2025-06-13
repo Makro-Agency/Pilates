@@ -1,5 +1,5 @@
-.home-hero{
-  overflow: hidden;
+.home-hero {
+    overflow: hidden;
 }
 .home-hero .banner__box .banner__heading+* {
   margin-top: 15px;
@@ -53,22 +53,39 @@
   color: #fff;
   margin: 0;
 }
+.banner__box_bottom h2 {
+  text-transform: uppercase;
+}
 .home-hero .banner__box_bottom .col{
-  max-width: 580px;
+  max-width: 54.2rem;
   width: 100%;
   text-align: left;
 }
 .home-hero .banner__box_bottom .col-right{
   max-width: 400px;
+  align-self: flex-end;
 }
-.home-hero .banner__box_bottom .link{
+.banner__box_bottom .col-right .link-li:only-child {
+  text-align: right;
+}
+.home-hero .banner__box_bottom .link {
   color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1;
 }
 .home-hero .banner__box_bottom .link svg{
   width: 16px;
   height: 12px;
   top: -3px;
   margin-left: 12px;
+}
+.home-hero .banner__box_bottom .link .down-arrow svg {
+  top: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-left: 0.8rem;
 }
 .home-hero .banner__box_bottom .link path{
   stroke-width: 2px;
@@ -91,12 +108,14 @@ body .home-hero .banner__box_top{
 }
 .template-index main:has(.home-hero .animate--paralex-effect video) .shopify-section:not(.home-hero),
 .template-index main:has(.home-hero .animate--paralex-effect iframe) .shopify-section:not(.home-hero){
-  background-color: #fff; 
+  background-color: #000000; 
+  z-index: 1;
+  position: relative;
 }
 .home-hero .animate--paralex-effect .banner__media video, 
 .home-hero .animate--paralex-effect .banner__media iframe{
   position: fixed !important;
-  z-index: -1;
+  z-index: 0;  
 }
 .home-hero .animate--paralex-effect .banner__media iframe{
   height: 200%;
@@ -107,6 +126,10 @@ body .home-hero .banner__box_top{
 }
 
 @media screen and (min-width: 750px){
+  .banner__box_top_wrap{
+    min-height: calc( 100vh - 5rem );
+  }
+
   .home-hero .banner--desktop-transparent .banner__box{
     padding: 0;
   }

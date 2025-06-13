@@ -11,7 +11,7 @@
     margin-bottom: 35px;
 }
 /* .banner__content_top a.button {
-    background: #C79D5B;
+    background: #FEE4B1;
 }
 .banner__content_top a.button:after{
    box-shadaw:none
@@ -217,7 +217,7 @@ div#multifeatures_container {
     gap: 20px;
 }
 .field.field-grp.select-option input[type="radio"]{
-    accent-color: #C79D5B;
+    accent-color: #FEE4B1;
     width: 18px;
     height: 18px;
     margin: 0 8px 0px 0;
@@ -260,8 +260,8 @@ button#connect_account:hover:after {
     box-shadow: none;
 }
 button#connect_account:hover {
-    background: #C79D5B;
-    border-color: #C79D5B;
+    background: #FEE4B1;
+    border-color: #FEE4B1;
   color:#000;
 }
 div#eligibility_create_form-inner p.option-title {
@@ -276,6 +276,42 @@ div#eligibility_create_form-inner p.option-title {
 .program_block_inner_wrapper .icon-wrapper.mbl-icon{
   display:none;
 }
+.global-linklist .content-wrapper .headings{
+    max-width: 536px;
+}
+.global-linklist .content-wrapper .heading{
+  font-weight: 400;
+}
+.template-index .banner-contain .heading {
+  font-size: 60px;
+  font-weight: 400;
+}
+.template-index .global-linklist .link-list a{
+  font-weight: 500;
+}
+.template-index .studio-classes .heading{
+  font-weight: 400;
+}
+.template-index .multicolumn-card__info h3{
+  font-weight: 400;
+}
+.template-index .multicolumn-card__info p{
+  font-weight: 300;
+}
+.template-index .store-locations-item .cta{
+  font-weight: 500;
+}
+.template-index .image-banner-1 .banner-contain .heading{
+  font-size: 48px;
+}
+.image-banner-1 .global_image-banner a.cta{
+  font-weight: 500;
+}
+.footer .col-head{
+  font-weight: 400;
+}
+
+
 @media only screen and (max-width: 1024px){
   .multifeatures_container .multifeatures__row {
     grid-template-columns: repeat(2,1fr);
@@ -414,7 +450,15 @@ div#eligibility_create_form-inner p.option-title {
 
 }
 .banner__content_top a.button {
-  min-height: 45px;
+  min-height: 40px;
+  --buttons-radius-outset: 0;
+  padding: 1.4rem 2rem 1.2rem;
+  font-size: 1.2rem;
+  line-height: 1;
+  width: auto;
+  min-width: 1px;
+  letter-spacing: 0.02em;
+  font-family: var(--font-heading-family);
 }
 
 
@@ -458,7 +502,7 @@ img {
 }
 .text-center {text-align: center;}
 main#MainContent {
-  overflow-x: hidden; 
+  overflow: hidden; 
 }
 main#MainContent:not(.dark--false,body.template--terms-conditions .dark--true) {
   background-color: #000;
@@ -491,4 +535,7 @@ main#MainContent:not(.dark--false,body.template--terms-conditions .dark--true) {
 }
 @media only screen and (max-width: 767px) {
   .desktop-img { display: none; }
+    .slideshow__text .banner__heading{
+      margin-bottom:16px;
+    }
 }

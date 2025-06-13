@@ -20,57 +20,36 @@
     "contact-map": {
       "type": "sec-contact-map",
       "blocks": {
-        "0a52f8c2-d800-4743-b0f7-c43d1170eec5": {
+        "b2baf1dc-68ca-423c-b144-8ed36dc9e938": {
           "type": "tab",
-          "disabled": true,
           "settings": {
-            "title": "YONGE / SHUTER",
+            "title": "REFORMD",
             "tabComeSoon": false,
-            "contactDetail": "<p>225 Yonge Street Toronto ON M5B 1N8</p><p>647-372-0225</p><p><a href=\"mailto:hello@sweatandtonic.com\">hello@sweatandtonic.com</a></p>",
-            "hoursDetail": "MON – FRI_5:45 AM – 10 PM\nSAT_6:45 AM – 10 PM\nSUN_7:45 AM – 10 PM",
+            "contactDetail": "<p>486 Front Street West, Terrace Level (Level 2), Toronto ON M5V 0V2 </p><p>hello@reformd.com</p>",
+            "hoursDetail": "*_COMING SOON  *",
             "tabTitle_1": "DRIVING",
-            "tabDetail_1": "<p><strong>Street Parking</strong></p><p>Paid street parking is available along Shuter Street from east of Victoria Street to Jarvis Street.</p><p><strong>Parking Garage</strong></p><p>Parking is available at the Eaton Centre. Entrance to the parking garage is directly opposite Sweat and Tonic, adjacent to Shuter Street, on the west side of Yonge Street. Underground Green P parking is also available at the northwest corner of Dundas Square and Victoria Street</p>",
+            "tabDetail_1": "<h5>Parking Garage</h5><p>Paid public parking is available at The Well. There are two entrances to the parking garage - one is located at 421 Wellington St. W, and another is near 482 Front St. W.</p><p><strong>From parking level LG:</strong> Look for the Market Elevator lobby. Walk straight down the corridor out into the Grand Atrium. Make a right as you exit the doors, and take the 'West Av' elevator next to Shoppers Drug Mart to Terrace Level (level 2). Turn right as you exit the elevator, continue straight, and Reformd will be on your left side.</p><p><strong>From parking level P3 or P5:</strong> Look for signs for BMO (West Av. elevators) or 8 Spadina (East Lane elevators), and take the elevator up to Terrace Level (level 2). From East Lane elevators, turn right as you exit the elevator, continue to walk west, and Reformd will be on your left<br/><br/>From West Av. elevators, turn right as you exit the elevator, head straight, and Reformd will be on your left</p>",
             "tabTitle_2": "WALKING",
-            "tabDetail_2": "<p>From Dundas Square area: walk south on Yonge Street toward Shuter Street for approximately 300 meters. You’ll find Sweat and Tonic on your right at 225 Yonge Street.</p>",
+            "tabDetail_2": "<p><strong>From 8 Spadina Ave (Front/Spadina):</strong> Take the escalator from the Grand Atrium up to Terrace Level (level 2). Continue to walk straight (west) - Reformd will be on your right.</p><p><strong>From Front St. or Wellington St:</strong> Take the ‘West Ave’ elevator located next to Indigo on the ground level and head up to Terrace Level (level 2). Turn right as you exit the elevator, head straight, and Reformd will be on your left.</p>",
             "tabTitle_3": "TRANSIT",
-            "tabDetail_3": "<p><strong>Subway</strong></p><p>Take Line 1 (Yonge-University) and exit at Dundas Station. Walk southeast on Dundas Street toward Yonge Street. Turn right onto Yonge and continue walking for about 150 meters. You’ll find Sweat and Tonic on your right at 225 Yonge Street.</p><p><strong>Streetcar</strong></p><p>Take the 505 Dundas streetcar and get off at Yonge Street. Walk south on Yonge Street for about 150 meters. You’ll find Sweat and Tonic on your right at 225 Yonge Street.</p><p>Queen Street car stop at Yonge. Walk north on Yonge to Shuter. Entrance on east side of Yonge Street at Shuter.</p>",
-            "tabTitle_4": "Tab 4",
-            "tabDetail_4": "",
-            "tabTitle_5": "",
-            "tabDetail_5": "",
-            "map_iframe": "<iframe loading=\"lazy\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11546.864493566878!2d-79.3799578!3d43.6540742!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8841263092426d54!2sSWEAT+AND+TONIC!5e0!3m2!1sen!2sin!4v1564700001605!5m2!1sen!2sin\" width=\"100%\" height=\"100%\" frameborder=\"0\" allowfullscreen=\"\" data-rocket-lazyload=\"fitvidscompatible\" data-lazy-src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11546.864493566878!2d-79.3799578!3d43.6540742!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8841263092426d54!2sSWEAT+AND+TONIC!5e0!3m2!1sen!2sin!4v1564700001605!5m2!1sen!2sin\" data-ll-status=\"loaded\" class=\"entered lazyloaded\" data-gtm-yt-inspected-8=\"true\"></iframe>"
-          }
-        },
-        "tab_qY3Wr9": {
-          "type": "tab",
-          "disabled": true,
-          "settings": {
-            "title": "Tab title",
-            "tabComeSoon": false,
-            "contactDetail": "<p>225 Yonge StreetToronto ONM5B 1N8</p><p>647-372-0225</p><p><a href=\"mailto:hello@sweatandtonic.com\">hello@sweatandtonic.com</a></p>",
-            "hoursDetail": "MON – THURS_5:45 AM – 10 PM\nFRI_5:45 AM - 9 PM\nSAT_7 AM – 7:30 PM\nSUN_7:45 AM – 9 PM",
-            "tabTitle_1": "DRIVING",
-            "tabDetail_1": "<p>Detail</p>",
-            "tabTitle_2": "WALKING",
-            "tabDetail_2": "<p>Detail</p>",
-            "tabTitle_3": "TRANSIT",
-            "tabDetail_3": "<p>Detail</p>",
+            "tabDetail_3": "<h5>Subway</h5><p>Take Line 1 (Yonge-University) and exit at Union Station. Walk west on Front Street West toward Bathurst Street. Continue walking for about 300 meters, and you'll find Sweat and Tonic and Reformd on your right at 486 Front Street West, Terrace Level.</p><h5>Streetcar</h5><p><strong>From the west</strong>: take the 511 Bathurst streetcar and get off at Front Street West. Walk east on Front Street West for about 200 meters.<br/><br/><strong>From the east</strong>: take the 504 King streetcar and get off at Spadina Ave West. Walk south on Spadina Ave for about 400 meters.</p><p><strong>From the north</strong>: take the 510 Spadina streetcar and get off at Front Street West (8 Spadina Ave).</p><p><strong>From 8 Spadina Ave</strong>: Take the escalator from the Grand Atrium up to level 2. Continue to walk west, and you’ll Reformd on your right.</p><p><strong>From Front St. or Wellington St</strong>: Take the ‘West Ave’ elevator located next to Indigo on the ground level and head up to level 2. Turn right as you exit the elevator, head straight, and Reformd will be on your left.</p>",
             "tabTitle_4": "",
             "tabDetail_4": "",
             "tabTitle_5": "",
             "tabDetail_5": "",
-            "map_iframe": ""
+            "map_iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2887.262353001084!2d-79.3960347!3d43.6427097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b35a2a410fe71%3A0x7b0913efe8cd3800!2sSweat%20and%20Tonic!5e0!3m2!1sen!2sin!4v1701948860846!5m2!1sen!2sin\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
           }
         },
-        "b2baf1dc-68ca-423c-b144-8ed36dc9e938": {
+        "tab_JLVNni": {
           "type": "tab",
+          "disabled": true,
           "settings": {
-            "title": "FRONT / SPADINA (THE WELL)",
+            "title": "The Well",
             "tabComeSoon": false,
-            "contactDetail": "<p>486 Front Street West, Terrace Level (Level 2), Toronto ON M5V 0V2 </p><p>647-477-1446</p><p><a href=\"mailto:hello@sweatandtonic.com\">hello@sweatandtonic.com</a></p>",
-            "hoursDetail": "MON – FRI_5:45 AM – 10 PM\nSAT_6:45 AM - 10 PM\nSUN_7:45 AM – 10 PM",
+            "contactDetail": "<p>486 Front Street West, Terrace Level (Level 2), Toronto ON M5V 0V2 </p><p>437-291-7171</p><p>hello@reformd.com</p>",
+            "hoursDetail": "*_COMING SOON  *",
             "tabTitle_1": "DRIVING",
-            "tabDetail_1": "<p><strong>Parking Garage</strong></p><p>Paid public parking is available at The Well. There are two entrances to the parking garage - one is located at 421 Wellington St. W, and another is near 482 Front St. W.</p><p><strong>From parking level LG:</strong> Look for the Market Elevator lobby. Walk straight down the corridor out into the Grand Atrium. Make a right as you exit the doors, and take the 'West Av' elevator next to Shoppers Drug Mart to Terrace Level (level 2). Turn right as you exit the elevator, head straight, and Sweat and Tonic will be on your right side.</p><p><strong>From parking level P3 or P5:</strong> Look for signs for BMO (West Av. elevators) or 8 Spadina (East Lane elevators), and take the elevator up to Terrace Level (level 2). From East Lane elevators, turn right as you exit the elevator, continue to walk west, and Sweat and Tonic will be on your left (across the pedestrian bridge).<br/><br/>From West Av. elevators, turn right as you exit the elevator, head straight, and Sweat and Tonic will be on your right side.</p>",
+            "tabDetail_1": "<h5>Street Parking</h5><p>Paid street parking is available along Shuter Street from east of Victoria Street to Jarvis Street.</p><h5>Parking Garage</h5><p>Parking is available at the Eaton Centre. Entrance to the parking garage is directly opposite Sweat and Tonic, adjacent to Shuter Street, on the west side of Yonge Street.Underground Green P parking is also available at the northwest corner of Dundas Square and Victoria Street</p>",
             "tabTitle_2": "WALKING",
             "tabDetail_2": "<p><strong>From 8 Spadina Ave (Front/Spadina):</strong> Take the escalator from the Grand Atrium up to Terrace Level (level 2). Continue to walk straight (west) - Sweat and Tonic will be on your left (across the pedestrian bridge).</p><p><strong>From Front St. or Wellington St:</strong> Take the ‘West Ave’ elevator located next to Indigo on the ground level and head up to Terrace Level (level 2). Turn right as you exit the elevator, head straight, and Sweat and Tonic will be on your right side.</p>",
             "tabTitle_3": "TRANSIT",
@@ -81,104 +60,14 @@
             "tabDetail_5": "",
             "map_iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2887.262353001084!2d-79.3960347!3d43.6427097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b35a2a410fe71%3A0x7b0913efe8cd3800!2sSweat%20and%20Tonic!5e0!3m2!1sen!2sin!4v1701948860846!5m2!1sen!2sin\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
           }
-        },
-        "tab_y4zgDj": {
-          "type": "tab",
-          "disabled": true,
-          "settings": {
-            "title": "Tab title",
-            "tabComeSoon": false,
-            "contactDetail": "<p>225 Yonge StreetToronto ONM5B 1N8</p><p>647-372-0225</p><p><a href=\"mailto:hello@sweatandtonic.com\">hello@sweatandtonic.com</a></p>",
-            "hoursDetail": "MON – THURS_5:45 AM – 10 PM\nFRI_5:45 AM - 9 PM\nSAT_7 AM – 7:30 PM\nSUN_7:45 AM – 9 PM",
-            "tabTitle_1": "DRIVING",
-            "tabDetail_1": "<p>Detail</p>",
-            "tabTitle_2": "WALKING",
-            "tabDetail_2": "<p>Detail</p>",
-            "tabTitle_3": "TRANSIT",
-            "tabDetail_3": "<p>Detail</p>",
-            "tabTitle_4": "",
-            "tabDetail_4": "",
-            "tabTitle_5": "",
-            "tabDetail_5": "",
-            "map_iframe": ""
-          }
-        },
-        "tab_aAWkQF": {
-          "type": "tab",
-          "disabled": true,
-          "settings": {
-            "title": "Tab title",
-            "tabComeSoon": false,
-            "contactDetail": "<p>225 Yonge StreetToronto ONM5B 1N8</p><p>647-372-0225</p><p><a href=\"mailto:hello@sweatandtonic.com\">hello@sweatandtonic.com</a></p>",
-            "hoursDetail": "MON – THURS_5:45 AM – 10 PM\nFRI_5:45 AM - 9 PM\nSAT_7 AM – 7:30 PM\nSUN_7:45 AM – 9 PM",
-            "tabTitle_1": "DRIVING",
-            "tabDetail_1": "<p>Detail</p>",
-            "tabTitle_2": "WALKING",
-            "tabDetail_2": "<p>Detail</p>",
-            "tabTitle_3": "TRANSIT",
-            "tabDetail_3": "<p>Detail</p>",
-            "tabTitle_4": "",
-            "tabDetail_4": "",
-            "tabTitle_5": "",
-            "tabDetail_5": "",
-            "map_iframe": ""
-          }
-        },
-        "tab_nQh7hD": {
-          "type": "tab",
-          "disabled": true,
-          "settings": {
-            "title": "TONIC SPA",
-            "tabComeSoon": false,
-            "contactDetail": "<p>486 Front St W, Toronto, ON M5V 0V2</p><p>647-477-0539</p><p><a href=\"mailto:hello@sweatandtonic.com\">tonicspa@sweatandtonic.com</a></p>",
-            "hoursDetail": "MON – SAT_6 AM – 9 PM\nSUN_8 AM - 9 PM",
-            "tabTitle_1": "DRIVING",
-            "tabDetail_1": "<p><strong>Parking Garage</strong></p><p>Paid public parking is available at The Well. There are two entrances to the parking garage - one is located at 421 Wellington St. W, and another is near 482 Front St. W.</p><p>Look for signs for the West Av. elevators or East Lane elevators, and take the elevator up to level 2.\u0003From East Lane elevators, turn right as you exit the elevator, continue to walk west, and S&T will be on your left side (across the pedestrian bridge). From West Av. elevators, turn right as you exit the elevator, head straight, and S&T will be on your right side.</p>",
-            "tabTitle_2": "WALKING",
-            "tabDetail_2": "<p>From 8 Spadina Ave: Take the escalator from the Grand Atrium up to level 2. Continue to walk west, and you’ll see Sweat and Tonic on your left side (across the pedestrian bridge).</p><p>From Front St. or Wellington St: Take the ‘West Ave’ elevator located next to Indigo on the ground level and head up to level 2. Turn right as you exit the elevator, head straight, and Sweat and Tonic will be on your right side.</p>",
-            "tabTitle_3": "TRANSIT",
-            "tabDetail_3": "<p><strong>Subway</strong></p><p>Take Line 1 (Yonge-University) and exit at Union Station. Walk west on Front Street West toward Bathurst Street. Continue walking for about 300 meters, and you'll find Sweat and Tonic on your right at 486 Front Street West.</p><p><strong>Streetcar</strong></p><p>From the west: take the 511 Bathurst streetcar and get off at Front Street West. Walk east on Front Street West for about 200 meters. You'll find Sweat and Tonic on your left at 486 Front Street West.<br/><br/>From the east: take the 504 King streetcar and get off at Spadina Ave West. Walk south on Spadina Ave for about 400 meters. You'll find Sweat and Tonic on your right at 486 Front Street West.</p><p>From the north: take the 510 Spadina streetcar and get off at Front Street West (8 Spadina Ave).</p><p>From 8 Spadina Ave: Take the escalator from the Grand Atrium up to level 2. Continue to walk west, and you’ll see Sweat and Tonic on your left side (across the pedestrian bridge).</p><p>From Front St. or Wellington St: Take the ‘West Ave’ elevator located next to Indigo on the ground level and head up to level 2. Turn right as you exit the elevator, head straight, and Sweat and Tonic will be on your right side.</p><p></p>",
-            "tabTitle_4": "",
-            "tabDetail_4": "",
-            "tabTitle_5": "",
-            "tabDetail_5": "",
-            "map_iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2887.262353001084!2d-79.3960347!3d43.6427097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b35a2a410fe71%3A0x7b0913efe8cd3800!2sSweat%20and%20Tonic!5e0!3m2!1sen!2sin!4v1701948860846!5m2!1sen!2sin\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-          }
-        },
-        "tab_jMPX4i": {
-          "type": "tab",
-          "disabled": true,
-          "settings": {
-            "title": "Tab title",
-            "tabComeSoon": false,
-            "contactDetail": "<p>225 Yonge StreetToronto ONM5B 1N8</p><p>647-372-0225</p><p><a href=\"mailto:hello@sweatandtonic.com\">hello@sweatandtonic.com</a></p>",
-            "hoursDetail": "MON – THURS_5:45 AM – 10 PM\nFRI_5:45 AM - 9 PM\nSAT_7 AM – 7:30 PM\nSUN_7:45 AM – 9 PM",
-            "tabTitle_1": "DRIVING",
-            "tabDetail_1": "<p>Detail</p>",
-            "tabTitle_2": "WALKING",
-            "tabDetail_2": "<p>Detail</p>",
-            "tabTitle_3": "TRANSIT",
-            "tabDetail_3": "<p>Detail</p>",
-            "tabTitle_4": "",
-            "tabDetail_4": "",
-            "tabTitle_5": "",
-            "tabDetail_5": "",
-            "map_iframe": ""
-          }
         }
       },
       "block_order": [
-        "0a52f8c2-d800-4743-b0f7-c43d1170eec5",
-        "tab_qY3Wr9",
         "b2baf1dc-68ca-423c-b144-8ed36dc9e938",
-        "tab_y4zgDj",
-        "tab_aAWkQF",
-        "tab_nQh7hD",
-        "tab_jMPX4i"
+        "tab_JLVNni"
       ],
-      "disabled": true,
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
         "title": "",
         "padding_top": 92,
         "padding_bottom": 100
@@ -191,13 +80,13 @@
         "text_color_left": "#ffffff",
         "sub_color_left": "#f3f3f3",
         "subheading_left": "Ready to sweat?",
-        "heading_left": "LET’S GET YOU IN",
+        "heading_left": "LET’S GET <br> YOU IN",
         "heading_size_left": "h1",
-        "btn_text_left": "JOIN THE REFORMD FAM",
+        "btn_text_left": "JOIN THE MOVEMENT",
         "btn_link_left": "shopify://pages/pricing",
         "heading": "Send us a note",
         "heading_size": "h2",
-        "color_scheme": "scheme-4c1a74af-8622-41b0-8be5-f4c2bac68732",
+        "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
         "padding_top": 0,
         "padding_bottom": 0
       }

@@ -37,7 +37,7 @@
             "applies_color_scheme": true,
             "btn_text_clr": "#000000",
             "btn_hvr_text_clr": "#000000",
-            "btn_bg_clr": "#c79d5b",
+            "btn_bg_clr": "#FEE4B1",
             "btn_hvr_bg_clr": "#ffffff"
           }
         },
@@ -265,7 +265,7 @@
             "btn_text_clr": "#000000",
             "btn_hvr_text_clr": "#000000",
             "btn_bg_clr": "#ffffff",
-            "btn_hvr_bg_clr": "#c79d5b"
+            "btn_hvr_bg_clr": "#FEE4B1"
           }
         },
         "486c1659-7943-4d3f-a46d-0d16c16aa358": {
@@ -425,7 +425,7 @@
       "settings": {
         "bg_color_left": "#26221b",
         "text_color_left": "#ffffff",
-        "sub_color_left": "#c79d5b",
+        "sub_color_left": "#FEE4B1",
         "subheading_left": "Ready to sweat?",
         "heading_left": "LET’S GET YOU IN",
         "text_left": "",

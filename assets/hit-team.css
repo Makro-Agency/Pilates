@@ -1,107 +1,256 @@
+.hit-team:before {
+  content: '';
+  position: absolute;
+  width: 1057.73px;
+  height: 1733.22px;
+  left: 68%;
+  top: 47%;
+  background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%);
+  opacity: 0.3;
+  filter: blur(250px);
+  transform: rotate(104.55deg);
+  z-index: 1;
+}
+.template--hiit-studio .hit-banner-row:before,
+.template--hiit-studio .hit-team:before { 
+  opacity: 0;
+}
+
+.template--private-training .hit-banner-row:before,
+.template--private-training .hit-team:before { 
+  opacity: 0;
+}
+/* .section.hit-team{
+  overflow: visible;
+} */
+.hit-team {
+  position: relative;
+  overflow: hidden;
+}
+
+.hit-team .multicolumn .page-width {
+  z-index: 2;
+  position: relative;
+}
+
 .hit-team .background-none .multicolumn-card__image-wrapper {
   margin-left: 0;
   margin-right: 0;
 }
-.hit-team .background-none .multicolumn-card__info{
+
+.hit-team .background-none .multicolumn-card__info {
   padding-bottom: 0;
 }
-.hit-team .background-none .multicolumn-list .multicolumn-card__info, 
+
+.hit-team .background-none .multicolumn-list .multicolumn-card__info,
 .hit-team .background-none .multicolumn-list:not(.slider) .center .multicolumn-card__info {
   padding-left: 0;
   padding-right: 0;
 }
+
 .hit-team .background-none .multicolumn-card__image-wrapper+.multicolumn-card__info {
   padding-top: 15px;
 }
-.hit-team .multicolumn-card__info .link{
+
+.hit-team .multicolumn-card__info .link {
   margin: 0;
   display: flex;
   align-items: center;
   width: 100%;
   color: currentcolor;
 }
-.hit-team .grid{
+
+.hit-team .multicolumn-card__info .link:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 1.8px;
+  width: 0%;
+  background: currentColor;
+  transition: all 0.3s ease 0s;
+  background: #FEE4B1;
+}
+
+.hit-team .multicolumn-card__info .link:hover:before {
+  width: 100%;
+}
+
+.hit-team .grid {
   row-gap: 40px;
 }
-.hit-team .title-wrapper-with-link{
-  margin-bottom: 40px;
+
+.hit-team .title-wrapper-with-link {
+  margin-bottom: 33px;
   display: block;
 }
-.hit-team .title-wrapper-with-link h6{
-  color: #C79D5B;
+
+.hit-team .title-wrapper-with-link h6 {
+  color: #FFF;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
   margin: 0 0 20px;
 }
-.hit-team .full-tema-li .link{
+
+.hit-team .paragraph-styling-link span.team-link-text .first-para-link {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+}
+
+.hit-team .multicolumn .title {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.hit-team .full-tema-li .link {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #C79D5B;
+  background-color: transparent;
   color: #fff;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.32px;
 }
-.hit-team .full-tema-li .link:after{
+.hit-team .full-tema-li .link:hover svg{
+  color: #FEE4B1;
+}
+.hit-team .full-tema-li .link:after {
   position: absolute;
   height: 100%;
   width: 100%;
   content: "";
-  background-image: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Vector-1.svg?v=1701258878');
+  /* background-image: url('https://cdn.shopify.com/s/files/1/0277/8280/7635/files/Vector-1.svg?v=1701258878'); */
   background-repeat: repeat;
   background-size: 60%;
   opacity: .2;
   background-position: top right;
+
 }
-.hit-team .all-btn-wrap .button--primary{
-  background-color: #C79D5B;
+.template--private-training .hit-team .full-tema-li .link:after{
+  opacity: 1;
+  /* background-color: rgba(255, 255, 255, 0.40); */
+  z-index: -1;
 }
-.hit-team .all-btn-wrap .button--primary:hover{
-  background-color: #000;
-  color: #fff;
-}
-.hit-team .all-btn-wrap .button {
-    margin-top: 40px;
+.hit-team .section-padding {
+  padding-top: 180px;
+  padding-bottom: 180px;
 }
 
-@media screen and (min-width: 750px){
+
+.hit-team .all-btn-wrap .button--primary {
+  background-color: #FEE4B1;
+}
+
+.hit-team .all-btn-wrap .button--primary:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.hit-team .all-btn-wrap .button {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 750px) {
+
   .hit-team .grid--6-col-desktop .grid__item {
     width: calc(33.33% - 40px * 2 / 3);
     max-width: calc(33.33% - 40px * 2 / 3);
   }
+
   .hit-team .grid--6-col-desktop {
     column-gap: 40px;
   }
-  .hit-team .multicolumn-card__info .link{
+
+  .hit-team .multicolumn-card__info .link {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 1200px){
+
+@media screen and (min-width: 1200px) {
   .hit-team .grid--6-col-desktop .grid__item {
     width: calc(16.66% - 40px * 5 / 6);
     max-width: calc(16.66% - 40px * 5 / 6);
   }
 }
-@media screen and (max-width: 749px){
-  .hit-team .grid{
+
+@media screen and (max-width: 749px) {
+  
+  .hit-team .multicolumn-card__info .link {
+    justify-content: space-between;
+  }
+
+  .hit-team .all-btn-wrap .button {
+    margin-top: 30px;
+  }
+
+  .hit-team .section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .hit-team .grid {
     row-gap: 40px;
     column-gap: 10px;
   }
+
+  .hit-team .title-wrapper-with-link h6 {
+    font-size: 12px;
+  }
+
+  .hit-team .multicolumn .title {
+    font-size: 32px;
+  }
+
   .hit-team .title-wrapper-with-link {
     margin-bottom: 30px;
   }
-  .hit-team .title-wrapper-with-link h6{
+
+  .hit-team .title-wrapper-with-link h6 {
     margin: 0 0 15px;
   }
+
   .grid--2-col-tablet-down .grid__item {
     width: calc(50% - 10px / 2);
   }
-  .hit-team .multicolumn-list__item:nth-child(n+5){
+
+  .hit-team .multicolumn-list__item:nth-child(n+5) {
     display: none;
   }
-  .hit-team .all-btn-wrap{
+
+  .hit-team .all-btn-wrap {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-  .hit-team .all-btn-wrap .icon-wrap{
+
+  .hit-team .all-btn-wrap .icon-wrap {
     position: relative;
     top: 1px;
     margin-left: 10px;
+  }
+
+  .hit-team .all-btn-wrap .button--primary {
+    background-color: transparent;
+    color: white;
+    font-family: "ITC Avant Garde Gothic Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    min-height: unset;
   }
 }

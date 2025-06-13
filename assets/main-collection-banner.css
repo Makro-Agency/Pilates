@@ -2,6 +2,9 @@
 .collection-hero .collection-hero__inner { position:relative; z-index: 2; }
 .collection-hero .collection-hero__inner .content-wrapper .collection-hero__text-wrapper { padding:0; }
 .collection-hero .collection-hero__inner .content-wrapper .collection-hero__text-wrapper .collection-hero__title {  margin:0; }
+.template-collection .breadcrumbs .breadcrumbs__list .breadcrumbs__item .breadcrumbs__link, .template-collection .breadcrumbs .breadcrumbs__list .breadcrumbs__item a {
+ color: #fff;
+}
 
 /* .template-collection:has(#MainContent .collection-hero.collection-hero--with-image) .section-header { }
 .template-collection:has(#MainContent .collection-hero.collection-hero--with-image) .section-header:not(.scrolled-past-header) .header-wrapper { background:transparent; 
@@ -20,10 +23,16 @@
 .collection-hero.collection-hero--with-image .collection-hero__image-container { margin:0; position:absolute; left:0; top:0; height:100%; width:100%; z-index:1; }
 .collection-hero.collection-hero--with-image .collection-hero__image-container:before { content:""; position:absolute; left:0; top:0; height:100%; width:100%;
   background: rgba(0, 0, 0, 0.3); z-index:1; }
-.collection-hero.collection-hero--with-image .content-wrapper .collection-hero__text-wrapper .collection-hero__title {  margin:0; color:#fff; }
+.collection-hero.collection-hero--with-image .content-wrapper .collection-hero__text-wrapper .collection-hero__title {  
+  margin:0; color:#fff; 
+  /* font-weight: 500; */
+  line-height: 100%;
+  text-transform: uppercase;
+}
 .collection-hero.collection-hero--with-image .breadcrumbs .breadcrumbs__list .breadcrumbs__item,
 .collection-hero.collection-hero--with-image .breadcrumbs .breadcrumbs__list .breadcrumbs__item .breadcrumbs__link,
-.collection-hero.collection-hero--with-image .breadcrumbs .breadcrumbs__list .breadcrumbs__item a { color:#fff; }
+.collection-hero.collection-hero--with-image .breadcrumbs .breadcrumbs__list .breadcrumbs__item a { color:#fff;
+font-size: 16px;font-weight: 300;line-height: 24px;text-decoration: none;}
 
 .collection-hero.collection-hero--with-image .collection-hero__inner {  }
 .collection-hero.collection-hero--with-image .collection-hero__inner { margin: 0; width: 100%; }

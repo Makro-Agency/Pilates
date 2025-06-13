@@ -25,7 +25,7 @@
   {%- endstyle -%}
 {%- endif -%}
 
-<slideshow-component
+<custom-slideshow
   class="slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}"
   role="region"
   aria-roledescription="{{ 'sections.slideshow.carousel' | t }}"
@@ -186,25 +186,28 @@
                 {{ block.settings.heading }}
               </h2>
             {%- endif -%}
-            {%- if block.settings.subheading != blank -%}
-              <div class="banner__text rte" {{ block.shopify_attributes }}>
-                <p>{{ block.settings.subheading }}</p>
-              </div>
-            {%- endif -%}
-            {%- if block.settings.button_label != blank -%}
-              <div class="banner__buttons">
-                <a
-                  {% if block.settings.link %}
-                    href="{{ block.settings.link }}"
-                  {% else %}
-                    role="link" aria-disabled="true"
-                  {% endif %}
-                  class="button {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}"
-                >
-                  {{- block.settings.button_label | escape -}}
-                </a>
-              </div>
-            {%- endif -%}
+            <div class="content-btn-wrapper">
+              {%- if block.settings.subheading != blank -%}
+                <div class="banner__text rte" {{ block.shopify_attributes }}>
+                  <p>{{ block.settings.subheading }}</p>
+                </div>
+              {%- endif -%}
+              {%- if block.settings.button_label != blank -%}
+                <div class="banner__buttons">
+                  <a
+                    {% if block.settings.link %}
+                      href="{{ block.settings.link }}"
+                    {% else %}
+                      role="link" aria-disabled="true"
+                    {% endif %}
+                    class="button {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}"
+                  >
+                    {{- block.settings.button_label | escape -}}
+                    {% render 'icon-left-arrow' %}
+                  </a>
+                </div>
+              {%- endif -%}
+            </div>
           </div>
         </div>
       </div>
@@ -274,7 +277,7 @@
             <a
               href="#Slide-{{ section.id }}-{{ forloop.index }}"
               class="slider-counter__link link"
-              aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
+              aria-label=" {{ forloop.index }}  {{ forloop.length }}"
             >
               {{ forloop.index }}
             </a>
@@ -283,11 +286,190 @@
       </div>
     </noscript>
   {%- endif -%}
-</slideshow-component>
+</custom-slideshow>
 
 {%- if request.design_mode -%}
   <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
+<style>
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 10vw; /* Adds padding to left and right */
+}
+
+.slider__slide {
+  flex: 0 0 auto;
+  width: 80vw; /* Make the slide a bit smaller than full width */
+  scroll-snap-align: center;
+  margin: 0 1vw; /* Optional spacing between slides */
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+.slider.dragging {
+  scroll-behavior: auto;
+  cursor: grabbing;
+}
+.slideshow__controls{
+  padding-bottom: 132px;
+}
+.content-btn-wrapper {
+    margin-top: 0 !important;
+}
+
+</style>
+
+
+<script>
+
+ class SlideshowComponent extends HTMLElement {
+  constructor() {
+    super();
+    this.slider = this.querySelector('.slider');
+    this.slides = Array.from(this.querySelectorAll('.slider__slide'));
+    this.prevButton = this.querySelector('.slider-button--prev');
+    this.nextButton = this.querySelector('.slider-button--next');
+    this.counter = this.querySelector('.slider-counter--current');
+    this.currentIndex = 0;
+
+    // Drag variables
+    this.isDragging = false;
+    this.startX = 0;
+    this.scrollStart = 0;
+    this.velocity = 0;
+    this.animationFrame;
+
+    this.attachEvents();
+    this.updateUI();
+  }
+
+  attachEvents() {
+    this.prevButton?.addEventListener('click', () => this.goToSlide(this.currentIndex - 1));
+    this.nextButton?.addEventListener('click', () => this.goToSlide(this.currentIndex + 1));
+
+    // Mouse drag
+    this.slider.addEventListener('mousedown', this.dragStart.bind(this));
+    this.slider.addEventListener('mousemove', this.dragMove.bind(this));
+    this.slider.addEventListener('mouseup', this.dragEnd.bind(this));
+    this.slider.addEventListener('mouseleave', this.dragEnd.bind(this));
+
+    // Touch drag
+    this.slider.addEventListener('touchstart', this.dragStart.bind(this), { passive: true });
+    this.slider.addEventListener('touchmove', this.dragMove.bind(this), { passive: true });
+    this.slider.addEventListener('touchend', this.dragEnd.bind(this));
+
+    // Scroll update
+    this.slider.addEventListener('scroll', () => {
+      const index = this.getClosestSlideIndex();
+      if (index !== this.currentIndex) {
+        this.currentIndex = index;
+        this.updateUI();
+      }
+    });
+  }
+
+  dragStart(e) {
+    this.isDragging = true;
+    this.slider.classList.add('dragging');
+    this.startX = e.pageX || e.touches[0].pageX;
+    this.scrollStart = this.slider.scrollLeft;
+    this.lastMoveTime = Date.now();
+    this.lastX = this.startX;
+    cancelAnimationFrame(this.animationFrame);
+  }
+
+  dragMove(e) {
+    if (!this.isDragging) return;
+
+    const x = e.pageX || e.touches[0].pageX;
+    const walk = this.startX - x;
+    this.slider.scrollLeft = this.scrollStart + walk;
+
+    // Calculate velocity
+    const now = Date.now();
+    const deltaTime = now - this.lastMoveTime;
+    if (deltaTime > 0) {
+      this.velocity = (this.lastX - x) / deltaTime;
+      this.lastMoveTime = now;
+      this.lastX = x;
+    }
+  }
+
+  dragEnd() {
+    if (!this.isDragging) return;
+    this.isDragging = false;
+    this.slider.classList.remove('dragging');
+
+    this.applyMomentumScroll();
+  }
+
+  applyMomentumScroll() {
+    const decay = 0.95;
+    const minVelocity = 0.02;
+
+    const animate = () => {
+      if (Math.abs(this.velocity) > minVelocity) {
+        this.slider.scrollLeft += this.velocity * 20;
+        this.velocity *= decay;
+        this.animationFrame = requestAnimationFrame(animate);
+      } else {
+        cancelAnimationFrame(this.animationFrame);
+        this.goToSlide(this.getClosestSlideIndex());
+      }
+    };
+
+    this.animationFrame = requestAnimationFrame(animate);
+  }
+
+  getClosestSlideIndex() {
+    const center = this.slider.scrollLeft + this.slider.offsetWidth / 2;
+    let closest = 0;
+    let minDist = Infinity;
+
+    this.slides.forEach((slide, index) => {
+      const slideCenter = slide.offsetLeft + slide.offsetWidth / 2;
+      const dist = Math.abs(center - slideCenter);
+      if (dist < minDist) {
+        closest = index;
+        minDist = dist;
+      }
+    });
+
+    return closest;
+  }
+
+  goToSlide(index) {
+    if (index < 0) index = 0;
+    if (index >= this.slides.length) index = this.slides.length - 1;
+    this.currentIndex = index;
+    this.slider.scrollTo({
+      left: this.slides[index].offsetLeft - (this.slider.offsetWidth - this.slides[index].offsetWidth) / 2,
+      behavior: 'smooth'
+    });
+    this.updateUI();
+  }
+
+  updateUI() {
+    if (this.counter) {
+      this.counter.textContent = this.currentIndex + 1;
+    }
+
+    const dots = this.querySelectorAll('.slider-counter__link');
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === this.currentIndex);
+    });
+  }
+}
+
+customElements.define('custom-slideshow', SlideshowComponent);
+
+
+
+</script>
 
 {% schema %}
 {
@@ -458,7 +640,7 @@
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
         },
-        /* {
+        {
           "type": "inline_richtext",
           "id": "subheading",
           "default": "Tell your brand's story through images",
@@ -476,12 +658,12 @@
           "id": "link",
           "label": "t:sections.slideshow.blocks.slide.settings.link.label"
         },
-        {
+        /*{
           "type": "checkbox",
           "id": "button_style_secondary",
           "label": "t:sections.slideshow.blocks.slide.settings.secondary_style.label",
           "default": false
-        },*/
+        },
         {
           "type": "select",
           "id": "box_align",
@@ -552,7 +734,7 @@
           ],
           "default": "center",
           "label": "t:sections.slideshow.blocks.slide.settings.text_alignment.label"
-        },
+        },*/
         {
           "type": "range",
           "id": "image_overlay_opacity",
@@ -569,7 +751,7 @@
           "label": "t:sections.all.colors.label",
           "default": "background-1"
         },
-        {
+        /* {
           "type": "header",
           "content": "t:sections.slideshow.settings.mobile.content"
         },
@@ -592,7 +774,7 @@
           ],
           "default": "center",
           "label": "t:sections.slideshow.blocks.slide.settings.text_alignment_mobile.label"
-        }
+        }*/
       ]
     }
   ],

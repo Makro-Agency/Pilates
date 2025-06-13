@@ -4,10 +4,10 @@
     {%if section.settings.title != blank or section.settings.description != blank %}
         <div class="studio-content">
             {%if section.settings.title != blank %}
-                <h2 class="h1 heading">{{ section.settings.title }}</h2>
+                <h2 class="h1 heading{% if settings.animations_reveal_on_scroll %} scroll-trigger--offscreen scroll-trigger animate--slide-in{% endif %}" {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: 0;"{% endif %}>{{ section.settings.title }}</h2>
             {% endif %}
             {%if section.settings.description != blank %}
-                <p class="description">{{ section.settings.description }}</p>
+                <p class="description{% if settings.animations_reveal_on_scroll %} scroll-trigger--offscreen scroll-trigger animate--slide-in{% endif %}" {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: 1;"{% endif %}>{{ section.settings.description }}</p>
             {% endif %}
         </div>
     {% endif %}
