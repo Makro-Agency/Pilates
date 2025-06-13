@@ -63,9 +63,9 @@
       ],
       "settings": {
         "allow_transparent_header": true,
-        "image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL.jpg",
-        "img_mobile": "shopify://shop_images/hero-min_0ae1c4a7-01e4-485e-a82d-a80711f9b865.jpg",
-        "image_overlay_opacity": 60,
+        "image": "shopify://shop_images/Reformd-Renders---Interior-Studio_2025.03.011-FINAL-editweb.jpg",
+        "img_mobile": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL.jpg",
+        "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
@@ -132,39 +132,39 @@
           "settings": {
             "text_clr": "#ffffff",
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewbox=\"0 0 40 40\" fill=\"none\">              \n                <path d=\"M31.25 13.75L35 10L31.25 6.25\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                <path d=\"M5 20C5 17.3478 6.05357 14.8043 7.92893 12.9289C9.8043 11.0536 12.3478 10 15 10H35\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                <path d=\"M8.75 26.25L5 30L8.75 33.75\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                <path d=\"M35 20C35 22.6522 33.9464 25.1957 32.0711 27.0711C30.1957 28.9464 27.6522 30 25 30H5\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>              \n              </svg>",
-            "title": "Immersive Environment",
-            "subheading": "HIIT YOUR PEAK PERFORMANCE",
-            "desc": "<p>Technogym Skillrun Treadmills designed for professional athletes, Aqua punching bags, and a theatre-quality light and sound system set the stage</p>"
+            "title": "LAGREE MEGAFORMER STUDIO",
+            "subheading": "SHAKE, SWEAT, SORE",
+            "desc": "<p>Featuring 32 Mega Pro Megaformers, state-of-the-art AV, and an elevated instructor podium for optimal visbility.</p>"
           }
         },
         "features_r7PqMB": {
           "type": "features",
           "settings": {
             "text_clr": "#ffffff",
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewbox=\"0 0 40 40\" fill=\"none\">  \n                  <path d=\"M23.75 16.25H16.25V23.75H23.75V16.25Z\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                  <path d=\"M31.25 7.5H8.75C8.05964 7.5 7.5 8.05964 7.5 8.75V31.25C7.5 31.9404 8.05964 32.5 8.75 32.5H31.25C31.9404 32.5 32.5 31.9404 32.5 31.25V8.75C32.5 8.05964 31.9404 7.5 31.25 7.5Z\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                  <path d=\"M32.5 16.25H36.25\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                  <path d=\"M32.5 23.75H36.25\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                  <path d=\"M3.75 16.25H7.5\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                  <path d=\"M3.75 23.75H7.5\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                  <path d=\"M23.75 32.5V36.25\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                  <path d=\"M16.25 32.5V36.25\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                  <path d=\"M23.75 3.75V7.5\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                  <path d=\"M16.25 3.75V7.5\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                </svg>",
-            "title": "STATE-OF-THE-ART EQUIPMENT",
-            "subheading": "HIIT YOUR PEAK PERFORMANCE",
-            "desc": "<p>Technogym Skillrun Treadmills designed for professional athletes, Aqua punching bags, and a theatre-quality light and sound system set the stage</p>"
+            "svg": "",
+            "title": "THE MEGA PRO",
+            "subheading": "SHAKE, SWEAT, SORE",
+            "desc": "<p>The 8th and latest installment of the Megaformer series, the Mega Pro is delicately designed with a moving carriage, static platforms, and springs for resistance with quick-release technology. With more features and attachments than the traditional Pilates reformer, it allows for easier stabilization, minimal impact on joints, and less inflammation in connective tissues during and post-workout.</p>"
           }
         },
         "features_qb9EHF": {
           "type": "features",
           "settings": {
             "text_clr": "#ffffff",
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewbox=\"0 0 40 40\" fill=\"none\">              \n                <path d=\"M20 11.25C22.0711 11.25 23.75 9.57107 23.75 7.5C23.75 5.42893 22.0711 3.75 20 3.75C17.9289 3.75 16.25 5.42893 16.25 7.5C16.25 9.57107 17.9289 11.25 20 11.25Z\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                <path d=\"M6.25 16.25H33.75\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                <path d=\"M20 16.25V22.5L7.5 33.75\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                <path d=\"M20 22.5L28.75 26.25V33.75\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>              \n              </svg>",
-            "title": "Instructor Stage",
-            "subheading": "HIIT YOUR PEAK PERFORMANCE",
-            "desc": "<p>Technogym Skillrun Treadmills designed for professional athletes, Aqua punching bags, and a theatre-quality light and sound system set the stage</p>"
+            "svg": "",
+            "title": "CHROMOTHERAPY",
+            "subheading": "SHAKE, SWEAT, SORE",
+            "desc": "<p>Immersive spectrum of visible light to power your body and mind through one of the best workouts in the world.</p>"
           }
         },
         "features_ELdcLX": {
           "type": "features",
           "settings": {
             "text_clr": "#ffffff",
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewbox=\"0 0 40 40\" fill=\"none\">                \n                  <path d=\"M30 6.25H10C7.92893 6.25 6.25 7.92893 6.25 10V30C6.25 32.0711 7.92893 33.75 10 33.75H30C32.0711 33.75 33.75 32.0711 33.75 30V10C33.75 7.92893 32.0711 6.25 30 6.25Z\" stroke=\"white\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n                  <path d=\"M14.375 16.25C15.4105 16.25 16.25 15.4105 16.25 14.375C16.25 13.3395 15.4105 12.5 14.375 12.5C13.3395 12.5 12.5 13.3395 12.5 14.375C12.5 15.4105 13.3395 16.25 14.375 16.25Z\" fill=\"white\"></path>\n                  <path d=\"M25.625 16.25C26.6605 16.25 27.5 15.4105 27.5 14.375C27.5 13.3395 26.6605 12.5 25.625 12.5C24.5895 12.5 23.75 13.3395 23.75 14.375C23.75 15.4105 24.5895 16.25 25.625 16.25Z\" fill=\"white\"></path>\n                  <path d=\"M14.375 27.5C15.4105 27.5 16.25 26.6605 16.25 25.625C16.25 24.5895 15.4105 23.75 14.375 23.75C13.3395 23.75 12.5 24.5895 12.5 25.625C12.5 26.6605 13.3395 27.5 14.375 27.5Z\" fill=\"white\"></path>\n                  <path d=\"M20 21.875C21.0355 21.875 21.875 21.0355 21.875 20C21.875 18.9645 21.0355 18.125 20 18.125C18.9645 18.125 18.125 18.9645 18.125 20C18.125 21.0355 18.9645 21.875 20 21.875Z\" fill=\"white\"></path>\n                  <path d=\"M25.625 27.5C26.6605 27.5 27.5 26.6605 27.5 25.625C27.5 24.5895 26.6605 23.75 25.625 23.75C24.5895 23.75 23.75 24.5895 23.75 25.625C23.75 26.6605 24.5895 27.5 25.625 27.5Z\" fill=\"white\"></path>                \n                </svg>",
+            "svg": "",
             "title": "Premium Amenities",
-            "subheading": "HIIT YOUR PEAK PERFORMANCE",
-            "desc": "<p>Technogym Skillrun Treadmills designed for professional athletes, Aqua punching bags, and a theatre-quality light and sound system set the stage</p>"
+            "subheading": "SHAKE, SWEAT, SORE",
+            "desc": "<p>Heated flooring throughout the studio and change room, towel service, and full-service machine cleaning between every class.</p>"
           }
         }
       },
@@ -176,9 +176,9 @@
       ],
       "settings": {
         "allow_transparent_header": false,
-        "image": "shopify://shop_images/Value_Block_1_Alternative_Option1.png",
-        "img_mobile": "shopify://shop_images/Value_Block_Mobile.png",
-        "image_overlay_opacity": 0,
+        "image": "shopify://shop_images/Screen_Shot_2025-06-13_at_5.12.18_PM.png",
+        "img_mobile": "shopify://shop_images/Screen_Shot_2025-06-13_at_5.12.18_PM.png",
+        "image_overlay_opacity": 40,
         "image_height": "adapt",
         "show_text_box": true,
         "image_behavior": "none"
@@ -773,6 +773,7 @@
         "5f339c27-a2d8-4ed9-9d14-fd9c115bad81",
         "ab06944c-e56b-4aaa-962a-25c5bdcc7f46"
       ],
+      "disabled": true,
       "settings": {
         "title": "EXPLORE S&T STUDIOS",
         "heading_size": "h2",
@@ -790,7 +791,7 @@
         "2fc049c5-7369-409d-b14a-69872fa3a417": {
           "type": "heading",
           "settings": {
-            "heading": "BENEFITS OF HIIT & WEIGHT TRAINING",
+            "heading": "BENEFITS OF THE LAGREE METHOD",
             "heading_size": "h1",
             "text_clr": "#ffffff"
           }
@@ -835,9 +836,9 @@
       ],
       "settings": {
         "allow_transparent_header": false,
-        "image": "shopify://shop_images/7bf7be5d46c147b9f1ee72e1594a9d89_1.jpg",
-        "img_mobile": "shopify://shop_images/Frame_6085_1.jpg",
-        "image_overlay_opacity": 0,
+        "image": "shopify://shop_images/Screen_Shot_2025-06-13_at_5.31.13_PM.png",
+        "img_mobile": "shopify://shop_images/Screen_Shot_2025-06-13_at_5.31.13_PM.png",
+        "image_overlay_opacity": 60,
         "image_height": "adapt",
         "desktop_content_alignment": "left",
         "color_scheme": "",
@@ -902,6 +903,7 @@
         "5fcac650-cebb-403f-b694-e8cb80d71fc5",
         "2dd6497d-fb1f-42b9-aec9-c251fab4097a"
       ],
+      "disabled": true,
       "settings": {
         "sub_title": "MEET THE TEAM",
         "title": "OUR TEAM",
