@@ -107,14 +107,6 @@
             "page_url": "shopify://pages/the-studio"
           }
         },
-        "links_wgtLej": {
-          "type": "links",
-          "settings": {
-            "link_lable": "OUR TEAM - COMING SOON",
-            "section_id": "team",
-            "page_url": "shopify://pages/team"
-          }
-        },
         "links_YWPPcV": {
           "type": "links",
           "settings": {
@@ -126,17 +118,26 @@
         "links_yeAjBV": {
           "type": "links",
           "settings": {
-            "link_lable": "SCHEDULE (COMING SOON)",
+            "link_lable": "CLASS SCHEDULE",
             "section_id": "about",
             "page_url": "shopify://pages/book-classes"
+          }
+        },
+        "links_wgtLej": {
+          "type": "links",
+          "disabled": true,
+          "settings": {
+            "link_lable": "OUR TEAM - COMING SOON",
+            "section_id": "team",
+            "page_url": "shopify://pages/team"
           }
         }
       },
       "block_order": [
         "links_6yzb4R",
-        "links_wgtLej",
         "links_YWPPcV",
-        "links_yeAjBV"
+        "links_yeAjBV",
+        "links_wgtLej"
       ],
       "settings": {
         "title": "The world’s largest-capacity Lagree studio",
