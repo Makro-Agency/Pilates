@@ -187,57 +187,38 @@
     "hit-classes": {
       "type": "hit-classes",
       "blocks": {
+        "704e6416-7383-410f-9de1-7ac0beeec85f": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "LAGREE FUNDAMENTALS",
+            "int_heading": "INTENSITY",
+            "enable_intensity": false,
+            "intensity_level": 3,
+            "intensity_text": "Moderate - High",
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "LEVEL",
+            "skillLevel": "Beginner",
+            "detail": "<p>Build confidence on the Megaformer and master the basics in this slower-paced, foundational class designed for beginners. Build the burn with extra time to perfect your form and plenty of modifications to suit your comfort level.</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "shopify://pages/reserve",
+            "button_text_2": "",
+            "button_url_2": "shopify://pages/pricing"
+          }
+        },
         "c280bdb2-65e1-4092-aced-67cacc1ff117": {
           "type": "hit_box",
           "settings": {
-            "heading": "FULL BODY",
+            "heading": "LAGREE FULL BODY",
             "int_heading": "INTENSITY",
-            "enable_intensity": true,
+            "enable_intensity": false,
             "intensity_level": 3,
-            "intensity_text": "Intensity Field Text",
+            "intensity_text": "High",
             "dur_heading": "DURATION",
             "duration": "50 min",
             "skl_heading": "LEVEL",
             "skillLevel": "All levels",
-            "detail": "<p>Fire up your glutes and core as you move through high intensity intervals that utilize heavy weights, resistance bands, and conditioning on the treadmill to tone, sculpt, and turn up the burn in all the right places.</p>",
-            "button_text_1": "BOOK",
-            "button_url_1": "https://www.sweatandtonic.com/reserve/",
-            "button_text_2": "",
-            "button_url_2": ""
-          }
-        },
-        "a716f6c2-86fa-42e7-8de5-71a119a3d638": {
-          "type": "hit_box",
-          "settings": {
-            "heading": "ABS & ASSETS",
-            "int_heading": "INTENSITY",
-            "enable_intensity": true,
-            "intensity_level": 3,
-            "intensity_text": "Intensity Field Text",
-            "dur_heading": "DURATION",
-            "duration": "50 min",
-            "skl_heading": "LEVEL",
-            "skillLevel": "All levels",
-            "detail": "<p>Hello, leg day! Grow, shape, and strengthen one of the body’s biggest assets by sweating it out on the treadmill, weights, and resistance bands. Focus on form and technique to maximize every move.</p>",
-            "button_text_1": "BOOK",
-            "button_url_1": "https://www.sweatandtonic.com/reserve/",
-            "button_text_2": "",
-            "button_url_2": ""
-          }
-        },
-        "9341e57a-ca56-4c76-9088-0360e926d39c": {
-          "type": "hit_box",
-          "settings": {
-            "heading": "ARMS & ABS",
-            "int_heading": "INTENSITY",
-            "enable_intensity": true,
-            "intensity_level": 3,
-            "intensity_text": "Intensity Field Text",
-            "dur_heading": "DURATION",
-            "duration": "50 min",
-            "skl_heading": "LEVEL",
-            "skillLevel": "All levels",
-            "detail": "<p>Get stronger and leaner with purpose and precision in this full-body-shredding weight-lifting sweat session. This strength class has a highly coached environment to take your physique and fitness to new heights.</p>",
+            "detail": "<p>Dial in on your core, lower body, and upper body - one muscle group at a time - in this signature low impact, high intensity workout designed to tone from head to toe. All levels welcome.</p>",
             "button_text_1": "BOOK",
             "button_url_1": "https://www.sweatandtonic.com/reserve/",
             "button_text_2": "",
@@ -247,49 +228,68 @@
         "f3f0b93c-d995-4fe7-8d41-8abb3d720bc9": {
           "type": "hit_box",
           "settings": {
-            "heading": "CORE & MOBILITY",
+            "heading": "LAGREE CORE & MOBILITY - COMING SOON",
             "int_heading": "INTENSITY",
-            "enable_intensity": true,
+            "enable_intensity": false,
             "intensity_level": 2,
-            "intensity_text": "Intensity Field Text",
+            "intensity_text": "Moderate",
             "dur_heading": "DURATION",
             "duration": "50 min",
             "skl_heading": "LEVEL",
             "skillLevel": "All levels",
-            "detail": "<p>Level up your Pilates practice. Slow down to raise the heat using treadmills, weights, and resistance bands in this full-body, lower impact workout that brings Pilates principles and movements to the HIIT Studio. With an emphasis on slow, controlled movements and longer holds to turn up the burn, you’ll get those muscles shaking, challenge your limits, and build strength, stamina and long, lean muscles. Slow, steady, and extra spicy.</p>",
+            "detail": "<p>A 50/50 blend of sweat and restoration. You'll fire up your core and explore mobility work to build strength, improve joint movement, and enhance flexibility, with a focus on breath to power you through movements and guided stretches.</p>",
             "button_text_1": "BOOK",
             "button_url_1": "https://www.sweatandtonic.com/reserve/",
             "button_text_2": "",
             "button_url_2": ""
           }
         },
-        "704e6416-7383-410f-9de1-7ac0beeec85f": {
+        "a716f6c2-86fa-42e7-8de5-71a119a3d638": {
           "type": "hit_box",
           "settings": {
-            "heading": "FUNDAMENTALS",
+            "heading": "LAGREE ABS & ASSETS - COMING SOON",
             "int_heading": "INTENSITY",
-            "enable_intensity": true,
+            "enable_intensity": false,
             "intensity_level": 3,
-            "intensity_text": "Intensity Field Text",
+            "intensity_text": "High",
             "dur_heading": "DURATION",
             "duration": "50 min",
-            "skl_heading": "LEVELS",
-            "skillLevel": "Beginner",
-            "detail": "<p>Your one-stop shop for sculpted abs, back, shoulders, and arms. Move through three stations of dumbbell, resistance band, and treadmill work that's expertly programmed to tone, shred, and strengthen everything above the belt. The ultimate 360 upper body workout.</p>",
+            "skl_heading": "LEVEL",
+            "skillLevel": "Intermediate",
+            "detail": "<p>Get sculpted in this workout designed to target your abs, obliques, glutes, and legs. For best results, this class is recommended for who have taken 5+ Fundamental or Full Body classes.</p>",
             "button_text_1": "BOOK",
-            "button_url_1": "shopify://pages/reserve",
+            "button_url_1": "https://www.sweatandtonic.com/reserve/",
             "button_text_2": "",
-            "button_url_2": "shopify://pages/pricing"
+            "button_url_2": ""
+          }
+        },
+        "9341e57a-ca56-4c76-9088-0360e926d39c": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "LAGREE ARMS & ABS - COMING SOON",
+            "int_heading": "INTENSITY",
+            "enable_intensity": false,
+            "intensity_level": 3,
+            "intensity_text": "High",
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "LEVEL",
+            "skillLevel": "Intermediate",
+            "detail": "<p>Fire up that upper body - sculpt your arms, shoulders, back, abs and obliques. For best results, this class is recommended for who have taken 5+ Fundamental or Full Body classes.</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "https://www.sweatandtonic.com/reserve/",
+            "button_text_2": "",
+            "button_url_2": ""
           }
         },
         "4fb95e56-cda7-408b-a55c-63a88396079d": {
           "type": "hit_box",
           "settings": {
-            "heading": "ADVANCED",
+            "heading": "ADVANCED LAGREE - COMING SOON",
             "int_heading": "INTENSITY",
-            "enable_intensity": true,
+            "enable_intensity": false,
             "intensity_level": 3,
-            "intensity_text": "Intensity Field Text",
+            "intensity_text": "Very High",
             "dur_heading": "DURATION",
             "duration": "50 min",
             "skl_heading": "LEVEL",
@@ -683,11 +683,11 @@
         }
       },
       "block_order": [
+        "704e6416-7383-410f-9de1-7ac0beeec85f",
         "c280bdb2-65e1-4092-aced-67cacc1ff117",
+        "f3f0b93c-d995-4fe7-8d41-8abb3d720bc9",
         "a716f6c2-86fa-42e7-8de5-71a119a3d638",
         "9341e57a-ca56-4c76-9088-0360e926d39c",
-        "f3f0b93c-d995-4fe7-8d41-8abb3d720bc9",
-        "704e6416-7383-410f-9de1-7ac0beeec85f",
         "4fb95e56-cda7-408b-a55c-63a88396079d",
         "4dfd51f6-d80a-49fb-8aed-855f28370947",
         "ad356b5d-7d1b-4c74-9bb5-926fb4cf31ae",
