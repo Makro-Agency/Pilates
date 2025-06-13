@@ -201,8 +201,8 @@
             "skillLevel": "Beginner",
             "detail": "<p>Build confidence on the Megaformer and master the basics in this slower-paced, foundational class designed for beginners. Build the burn with extra time to perfect your form and plenty of modifications to suit your comfort level.</p>",
             "button_text_1": "BOOK",
-            "button_url_1": "shopify://pages/reserve",
-            "button_text_2": "",
+            "button_url_1": "shopify://pages/book-classes",
+            "button_text_2": "BUY",
             "button_url_2": "shopify://pages/pricing"
           }
         },
@@ -220,9 +220,9 @@
             "skillLevel": "All levels",
             "detail": "<p>Dial in on your core, lower body, and upper body - one muscle group at a time - in this signature low impact, high intensity workout designed to tone from head to toe. All levels welcome.</p>",
             "button_text_1": "BOOK",
-            "button_url_1": "https://www.sweatandtonic.com/reserve/",
-            "button_text_2": "",
-            "button_url_2": ""
+            "button_url_1": "shopify://pages/book-classes",
+            "button_text_2": "BUY",
+            "button_url_2": "shopify://pages/pricing"
           }
         },
         "f3f0b93c-d995-4fe7-8d41-8abb3d720bc9": {
@@ -238,8 +238,8 @@
             "skl_heading": "LEVEL",
             "skillLevel": "All levels",
             "detail": "<p>A 50/50 blend of sweat and restoration. You'll fire up your core and explore mobility work to build strength, improve joint movement, and enhance flexibility, with a focus on breath to power you through movements and guided stretches.</p>",
-            "button_text_1": "BOOK",
-            "button_url_1": "https://www.sweatandtonic.com/reserve/",
+            "button_text_1": "",
+            "button_url_1": "",
             "button_text_2": "",
             "button_url_2": ""
           }
@@ -257,8 +257,8 @@
             "skl_heading": "LEVEL",
             "skillLevel": "Intermediate",
             "detail": "<p>Get sculpted in this workout designed to target your abs, obliques, glutes, and legs. For best results, this class is recommended for who have taken 5+ Fundamental or Full Body classes.</p>",
-            "button_text_1": "BOOK",
-            "button_url_1": "https://www.sweatandtonic.com/reserve/",
+            "button_text_1": "",
+            "button_url_1": "",
             "button_text_2": "",
             "button_url_2": ""
           }
@@ -276,8 +276,8 @@
             "skl_heading": "LEVEL",
             "skillLevel": "Intermediate",
             "detail": "<p>Fire up that upper body - sculpt your arms, shoulders, back, abs and obliques. For best results, this class is recommended for who have taken 5+ Fundamental or Full Body classes.</p>",
-            "button_text_1": "BOOK",
-            "button_url_1": "https://www.sweatandtonic.com/reserve/",
+            "button_text_1": "",
+            "button_url_1": "",
             "button_text_2": "",
             "button_url_2": ""
           }
@@ -295,7 +295,7 @@
             "skl_heading": "LEVEL",
             "skillLevel": "Advanced (35+ classes)",
             "detail": "<p>Tone, shred and strengthen your core as you engage your abdominal muscles through treadmill, resistance band, and dumbbell stations. A strong, stable center will improve your balance, stability and improve the quality of your overall movement practice.</p>",
-            "button_text_1": "BOOK",
+            "button_text_1": "",
             "button_url_1": "shopify://pages/reserve",
             "button_text_2": "",
             "button_url_2": ""
