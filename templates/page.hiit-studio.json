@@ -712,7 +712,7 @@
       "settings": {
         "subHeading": "OUR CLASSES",
         "heading": "MEGAFORMER CLASSES",
-        "detail": "<p><strong>What is Lagree?</strong></p><p>Founded on five components of physical fitness – endurance, cardiovascular fitness, body composition, flexibility, and strength – Lagree is a patented high-intensity, low-impact exercise method that tightens, tones, and deeply activates slow-twitch muscle fibres. The method integrates body-building principles and focuses on slow, controlled movements and progressive load to build strength.</p><p><strong>New to Lagree?</strong> We recommend booking our Fundamentals class to understand the basics and get familiar with the Megaformer.</p>",
+        "detail": "<p><strong>What is Lagree?</strong></p><p>Lagree is not Pilates, and the Megaformer is not a reformer. Founded on five components of physical fitness – endurance, cardiovascular fitness, body composition, flexibility, and strength – Lagree is a patented high-intensity, low-impact exercise method that tightens, tones, and deeply activates slow-twitch muscle fibres. The method integrates body-building principles and focuses on slow, controlled movements and progressive load to build strength.</p><p><strong>New to Lagree?</strong> We recommend booking our Fundamentals class to understand the basics and get familiar with the Megaformer.</p>",
         "top_padding_remove": false,
         "bottom_padding_remove": false
       }
@@ -800,7 +800,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "JOIN US",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify://pages/memberships-credits",
             "button_style": "link",
             "applies_color_scheme": true,
             "btn_text_clr": "#ffffff",
@@ -814,16 +814,16 @@
           "settings": {
             "enable_accord": true,
             "text_clr": "#ffffff",
-            "svg_1": "<svg viewbox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"#ffffff\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <defs> <style>.cls-1{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style> </defs> <g id=\"ic-sport-dumbbell\"> <line class=\"cls-1\" x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"></line> <line class=\"cls-1\" x1=\"5\" y1=\"10\" x2=\"5\" y2=\"14\"></line> <line class=\"cls-1\" x1=\"8\" y1=\"8\" x2=\"8\" y2=\"16\"></line> <line class=\"cls-1\" x1=\"16\" y1=\"8\" x2=\"16\" y2=\"16\"></line> <line class=\"cls-1\" x1=\"19\" y1=\"10\" x2=\"19\" y2=\"14\"></line> </g> </g></svg>",
-            "title_1": "IMPROVE PERFORMANCE",
-            "desc_1": "<p>Experience full-body transformation. Build muscle, increase strength and endurance, and improve movement, mobility and coordination.</p>",
-            "svg_2": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\">\n  <g clip-path=\"url(#clip0_1042_1892)\">\n    <path d=\"M3.75 15H8.4375L10.3125 12.1875L14.0625 17.8125L15.9375 15H18.75\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    <path d=\"M2.8125 11.25C2.8125 11.1715 2.8125 11.0941 2.8125 11.0156C2.8125 9.3373 3.47921 7.72772 4.66596 6.54096C5.85272 5.35421 7.4623 4.6875 9.14062 4.6875C11.7879 4.6875 14.0555 6.13008 15 8.4375C15.9445 6.13008 18.2121 4.6875 20.8594 4.6875C22.5377 4.6875 24.1473 5.35421 25.334 6.54096C26.5208 7.72772 27.1875 9.3373 27.1875 11.0156C27.1875 18.75 15 25.3125 15 25.3125C15 25.3125 10.0781 22.6641 6.49453 18.75\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  </g>\n  <defs>\n    <clippath id=\"clip0_1042_1892\">\n      <rect width=\"30\" height=\"30\" fill=\"currentColor\"></rect>\n    </clippath>\n  </defs>\n</svg>",
-            "title_2": "BOOST CARDIOVASCULAR HEALTH",
-            "desc_2": "<p>Lower your risk of cardiovascular disease by improving your anaerobic threshold and increasing your peak oxygen consumption (VO2 max).</p>",
-            "svg_3": "<svg viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <path d=\"M12 2.84955C17.0537 2.84955 21.1505 6.94637 21.1505 12.0001C21.1505 17.0537 17.0537 21.1506 12 21.1506C6.94631 21.1506 2.84949 17.0537 2.84949 12.0001C2.84949 6.94637 6.94631 2.84955 12 2.84955Z\" stroke=\"#ffffff\" stroke-width=\"1.69905\" stroke-linecap=\"round\"></path> <path d=\"M7 12.6842H8.67217C8.75916 12.6842 8.83616 12.628 8.86266 12.5451L10.3761 7.81366C10.4405 7.61227 10.7327 7.63557 10.7643 7.84463L11.8836 15.2319C11.9146 15.4363 12.1974 15.4651 12.269 15.2712L14.0716 10.3871C14.1375 10.2086 14.3918 10.2142 14.4497 10.3954L15.1373 12.5451C15.1638 12.628 15.2408 12.6842 15.3278 12.6842H17\" stroke=\"#ffffff\" stroke-width=\"1.7\" stroke-linecap=\"round\"></path> </g></svg>",
+            "svg_1": "",
+            "title_1": "STRENGTHEN, TIGHTEN & TONE",
+            "desc_1": "<p>The Lagree Method is specifically engineered to strengthen, tighten, and tone the muscles effectively and efficiently without any excess stress on the joints, connective tissues, or spine. Built on the Magic 8 principles, each workout builds in intensity to force physical changes, also known as positive adaptation.</p>",
+            "svg_2": "",
+            "title_2": "BOOST ENDURANCE",
+            "desc_2": "<p>With constant and continuous muscle contraction, the cardiorespiratory system kicks in after the first 60 seconds of exercise. A heart rate of 135-200+, depending on and sequence, should be expected.</p>",
+            "svg_3": "",
             "title_3": "IMPROVE HEALTH OUTCOMES",
             "desc_3": "<p>Improve your metabolic rate, insulin sensitivity, glycemic control and cognitive function, and decrease your risk of metabolic syndrome, osteoarthritis, and type 2 diabetes.</p>",
-            "svg_4": "<svg width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.5882 15C21.5882 16.303 21.2018 17.5768 20.4779 18.6602C19.754 19.7437 18.7251 20.5881 17.5212 21.0867C16.3174 21.5854 14.9927 21.7159 13.7147 21.4616C12.4367 21.2074 11.2628 20.58 10.3414 19.6586C9.42003 18.7372 8.79256 17.5633 8.53836 16.2853C8.28415 15.0073 8.41462 13.6826 8.91326 12.4788C9.41191 11.2749 10.2563 10.246 11.3398 9.52208C12.4232 8.79816 13.697 8.41176 15 8.41176M21.5882 15C21.5882 13.2527 20.8941 11.5769 19.6586 10.3414C18.4231 9.10588 16.7473 8.41176 15 8.41176M21.5882 15H28.1765M15 8.41176V1.82353M24.3224 5.67765L19.6612 10.3388M24.3224 24.3224L19.6612 19.6612M15 28.1765V21.5882M5.67765 24.3224L10.3388 19.6612M1.82353 15H8.41176M5.67765 5.67765L10.3388 10.3388M14.9176 1H15.0824M24.8494 5.03529L24.9647 5.15059M29 14.9176V15.0824M24.9647 24.8494L24.8494 24.9647M15.0824 29H14.9176M5.15059 24.9647L5.03529 24.8494M1 15.0824V14.9176M5.03529 5.15059L5.15059 5.03529\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "svg_4": "",
             "title_4": "RELIEVE STRESS",
             "desc_4": "<p>Improve your mental health and help reduce symptoms of stress and anxiety through a well-balanced exercise regimen.</p>"
           }
