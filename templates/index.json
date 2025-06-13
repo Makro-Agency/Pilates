@@ -322,6 +322,7 @@
     },
     "global_image_banner_1_appf4n": {
       "type": "global_image-banner-1",
+      "disabled": true,
       "settings": {
         "section_id": "about",
         "desktop_image": "shopify://shop_images/Section_1_440f8a13-3b60-4fe1-8710-5c98608ab72a.png",
