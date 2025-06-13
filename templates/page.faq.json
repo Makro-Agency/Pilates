@@ -72,7 +72,7 @@
           "type": "que_ans",
           "settings": {
             "title": "When will the class schedule be available? When can I start booking classes?",
-            "detail": "<p>Our class schedule will be released in the weeks leading up to our opening date. Booking opens on Saturday, June 7 at 5 PM for Unlimited members and Sunday at 5 PM for everyone else! Make sure to sign up for our newsletter and follow Reformd on Instagram for the latest updates.</p>"
+            "detail": "<p>Our class schedule will be released in the weeks leading up to our opening date. Booking opens on Saturday, June 14 at 5 PM for Unlimited members and Sunday at 5 PM for everyone else! Make sure to sign up for our newsletter and follow Reformd on Instagram for the latest updates.</p>"
           }
         },
         "title_W6aazN": {
@@ -92,11 +92,12 @@
           "type": "que_ans",
           "settings": {
             "title": "What can I use credits for?",
-            "detail": "<p>Credits, including the 3 for $60 intro pack, are valid for use at both S&T and Reformd! A credit can be used to book:</p><ul><li>A class at Reformd</li><li>A yoga, Pilates, Ride, or HIIT class at any S&T location</li><li>Small Group Training at Front/Spadina</li><li>Pool deck at Front/Spadina</li><li>Red light therapy at Front/Spadina</li><li>Compression therapy at Front/Spadina</li><li>Private hot & cold therapy suite at Front/Spadina</li><li>Sauna session at Yonge/Shuter</li><li>Compression therapy at Yonge/Shuter</li></ul><p>Credits activate at the time of purchase.</p>"
+            "detail": "<p>Credits, including the 3 for $60 intro pack, are valid for use at both S&T and Reformd! A credit can be used to book:</p><ul><li>A class at Reformd</li><li>A yoga, Pilates, Ride, or HIIT class at any S&T location</li><li>Small Group Training at Front/Spadina</li><li>Pool deck at Front/Spadina</li><li>Sauna session at Yonge/Shuter</li><li>Biohacking: red light therapy, compression therapy, private hot & cold therapy suite</li></ul><p>Credits activate at the time of purchase.</p>"
           }
         },
         "que_ans_prKExh": {
           "type": "que_ans",
+          "disabled": true,
           "settings": {
             "title": "When does the pre-opening sale start?",
             "detail": "<p>Our pre-opening sale will start on Thursday, April 17 at 9 AM (ET).</p>"

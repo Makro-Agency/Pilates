@@ -85,6 +85,7 @@
         "links_YWPPcV",
         "links_yeAjBV"
       ],
+      "disabled": true,
       "settings": {
         "title": "THE BEST OF BOUTIQUE FITNESS & WELLNESS",
         "content": "The Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts.⁠ Step inside Reformd for a Lagree experience unlike any other."
@@ -92,6 +93,7 @@
     },
     "global_sudio_classes_qkDydH": {
       "type": "global_sudio-classes",
+      "disabled": true,
       "settings": {
         "section_id": "studio-classes",
         "title": "The studio",
@@ -152,6 +154,7 @@
         "slide_DeQiWy",
         "slide_PrVpCJ"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
@@ -808,7 +811,7 @@
           "type": "faq",
           "settings": {
             "question": "What is the Lagree Method? How is it different from reformer Pilates?",
-            "ans": "<p>Lagree is not Pilates, and the Megaformer is not a reformer. Since its inception over 25 years ago, the Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts. </p><p>Founded on five components of physical fitness – endurance, cardiovascular fitness, body composition, flexibility, and strength – Lagree is a patented high-intensity, low-impact exercise method that tightens, tones, and deeply activates slow-twitch muscle fibers. The method integrates body-building principles and focuses on slow, controlled movements and progressive load to build strength. It was founded on the five components of physical fitness: endurance, cardiovascular fitness, body composition, flexibility and strength. </p>"
+            "ans": "<p>Lagree is not Pilates, and the Megaformer is not a reformer. Since its inception over 25 years ago, the Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts. </p><p>Founded on five components of physical fitness – endurance, cardiovascular fitness, body composition, flexibility, and strength – Lagree is a patented high-intensity, low-impact exercise method that tightens, tones, and deeply activates slow-twitch muscle fibers. The method integrates body-building principles and focuses on slow, controlled movements and progressive load to build strength.</p>"
           }
         },
         "faq_9VUbfX": {
@@ -856,7 +859,7 @@
         "faq_Nz8aJU": {
           "type": "faq",
           "settings": {
-            "question": "If I purchase a membership or credit pack now, when will it be activated / when will my monthly billing begin?",
+            "question": "If I purchase a membership or credit pack before Reformd opens, when will it be activated / when will my monthly billing begin?",
             "ans": "<p>Your purchase will be processed immediately. Credits are valid for use at S&T and Reformd and activate at the time of purchase. Memberships and recurring credit packs will activate when Reformd opens, and your next payment will be charged at the start of your second billing month, after Reformd opens.</p>"
           }
         },
@@ -864,7 +867,7 @@
           "type": "faq",
           "settings": {
             "question": "When will the class schedule be available? When can I start booking classes?",
-            "ans": "<p>Our class schedule will be released in the weeks leading up to our opening date. Booking opens on Saturday, June 7 at 5 PM for Unlimited members and Sunday at 5 PM for everyone else! Make sure to sign up for our newsletter and follow Reformd on Instagram for the latest updates.</p>"
+            "ans": "<p>Our class schedule will be released in the weeks leading up to our opening date. Booking opens on Saturday, June 14 at 5 PM for Unlimited members and Sunday at 5 PM for everyone else! Make sure to sign up for our newsletter and follow Reformd on Instagram for the latest updates.</p>"
           }
         }
       },
