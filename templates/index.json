@@ -69,9 +69,9 @@
       ],
       "settings": {
         "allow_transparent_header": true,
-        "image": "shopify://shop_images/STE_MARIE_-_Reformd_Renders_-_Studio_-_2025-01-20-edit.jpg",
+        "image": "shopify://shop_images/S-T-REFORMD_001.jpg",
         "video_url": "",
-        "image_overlay_opacity": 50,
+        "image_overlay_opacity": 60,
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
