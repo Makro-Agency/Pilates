@@ -320,12 +320,29 @@
             "service_5": "Service 5",
             "service_6": "Service 6"
           }
+        },
+        "location_B8mQQH": {
+          "type": "location",
+          "settings": {
+            "title": "THE WELL",
+            "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Qorem ipsum dolor sit amet.</p>",
+            "btn_text": "",
+            "btn_url": "",
+            "service_heading": "Services Include:",
+            "service_1": "Service 1",
+            "service_2": "Service 2",
+            "service_3": "Service 3",
+            "service_4": "Service 4",
+            "service_5": "Service 5",
+            "service_6": "Service 6"
+          }
         }
       },
       "block_order": [
         "location_yxkeNt",
         "location_h939Va",
-        "location_iCNHyN"
+        "location_iCNHyN",
+        "location_B8mQQH"
       ],
       "settings": {
         "section_id": "locations",
