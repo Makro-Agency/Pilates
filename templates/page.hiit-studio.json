@@ -800,7 +800,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "JOIN US",
-            "button_link_1": "shopify://pages/memberships-credits",
+            "button_link_1": "shopify://pages/pricing",
             "button_style": "link",
             "applies_color_scheme": true,
             "btn_text_clr": "#ffffff",
