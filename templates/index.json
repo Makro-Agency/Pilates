@@ -307,6 +307,7 @@
         },
         "location_iCNHyN": {
           "type": "location",
+          "disabled": true,
           "settings": {
             "title": "THE WELL",
             "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Qorem ipsum dolor sit amet.</p>",
@@ -323,6 +324,7 @@
         },
         "location_B8mQQH": {
           "type": "location",
+          "disabled": true,
           "settings": {
             "title": "THE WELL",
             "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Qorem ipsum dolor sit amet.</p>",
