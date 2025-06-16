@@ -64,8 +64,8 @@
       "settings": {
         "allow_transparent_header": true,
         "image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL.jpg",
-        "img_mobile": "shopify://shop_images/hero-min_0ae1c4a7-01e4-485e-a82d-a80711f9b865.jpg",
-        "image_overlay_opacity": 60,
+        "img_mobile": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL.jpg",
+        "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
@@ -109,6 +109,7 @@
         "2fc049c5-7369-409d-b14a-69872fa3a417",
         "d57f9c4c-bb8d-4416-994b-eb28dc4afba4"
       ],
+      "disabled": true,
       "settings": {
         "allow_transparent_header": false,
         "image": "shopify://shop_images/SweatandTonic_HIITYongeShuter_studio.png",
@@ -123,24 +124,122 @@
         "section_title_mobtop": true
       }
     },
+    "global_vertical_tab_banner_qLrqUf": {
+      "type": "global_vertical-tab-banner",
+      "blocks": {
+        "features_qX8Vrc": {
+          "type": "features",
+          "settings": {
+            "text_clr": "#ffffff",
+            "svg": "",
+            "title": "LAGREE MEGAFORMER STUDIO",
+            "subheading": "SHAKE, SWEAT, SORE",
+            "desc": "<p>Featuring 32 Mega Pro Megaformers, state-of-the-art AV, and an elevated instructor podium for optimal visbility.</p>"
+          }
+        },
+        "features_r7PqMB": {
+          "type": "features",
+          "settings": {
+            "text_clr": "#ffffff",
+            "svg": "",
+            "title": "THE MEGA PRO",
+            "subheading": "SHAKE, SWEAT, SORE",
+            "desc": "<p>The 8th and most advanced installment of the Megaformer series, the Mega Pro is designed with a moving carriage, static platforms, and springs for resistance with quick-release technology. With more features and attachments than the traditional Pilates reformer, it allows for easier stabilization, minimal impact on joints, and less inflammation in connective tissues during and post-workout.</p>"
+          }
+        },
+        "features_qb9EHF": {
+          "type": "features",
+          "settings": {
+            "text_clr": "#ffffff",
+            "svg": "",
+            "title": "CHROMOTHERAPY",
+            "subheading": "SHAKE, SWEAT, SORE",
+            "desc": "<p>Immersive spectrum of visible light to power your body and mind through one of the best workouts in the world.</p>"
+          }
+        },
+        "features_ELdcLX": {
+          "type": "features",
+          "settings": {
+            "text_clr": "#ffffff",
+            "svg": "",
+            "title": "Premium Amenities",
+            "subheading": "SHAKE, SWEAT, SORE",
+            "desc": "<p>Heated flooring throughout the studio and change room, towel service, and full-service machine cleaning between every class.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "features_qX8Vrc",
+        "features_r7PqMB",
+        "features_qb9EHF",
+        "features_ELdcLX"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "image": "shopify://shop_images/Screen_Shot_2025-06-13_at_5.54.58_PM.png",
+        "img_mobile": "shopify://shop_images/Screen_Shot_2025-06-13_at_5.54.58_PM.png",
+        "image_overlay_opacity": 40,
+        "image_height": "adapt",
+        "show_text_box": true,
+        "image_behavior": "none"
+      }
+    },
     "hit-classes": {
       "type": "hit-classes",
       "blocks": {
+        "704e6416-7383-410f-9de1-7ac0beeec85f": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "LAGREE FUNDAMENTALS",
+            "int_heading": "INTENSITY",
+            "enable_intensity": false,
+            "intensity_level": 3,
+            "intensity_text": "Moderate - High",
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "LEVEL",
+            "skillLevel": "Beginner",
+            "detail": "<p>Build confidence on the Megaformer and master the basics in this slower-paced, foundational class designed for beginners. Build the burn with extra time to perfect your form and plenty of modifications to suit your comfort level.</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "shopify://pages/book-classes",
+            "button_text_2": "BUY",
+            "button_url_2": "shopify://pages/pricing"
+          }
+        },
         "c280bdb2-65e1-4092-aced-67cacc1ff117": {
           "type": "hit_box",
           "settings": {
-            "heading": "FULL BODY",
+            "heading": "LAGREE FULL BODY",
             "int_heading": "INTENSITY",
-            "enable_intensity": true,
+            "enable_intensity": false,
             "intensity_level": 3,
-            "intensity_text": "Intensity Field Text",
+            "intensity_text": "High",
             "dur_heading": "DURATION",
             "duration": "50 min",
             "skl_heading": "LEVEL",
             "skillLevel": "All levels",
-            "detail": "<p>Fire up your glutes and core as you move through high intensity intervals that utilize heavy weights, resistance bands, and conditioning on the treadmill to tone, sculpt, and turn up the burn in all the right places.</p>",
+            "detail": "<p>Dial in on your core, lower body, and upper body - one muscle group at a time - in this signature low impact, high intensity workout designed to tone from head to toe. All levels welcome.</p>",
             "button_text_1": "BOOK",
-            "button_url_1": "https://www.sweatandtonic.com/reserve/",
+            "button_url_1": "shopify://pages/book-classes",
+            "button_text_2": "BUY",
+            "button_url_2": "shopify://pages/pricing"
+          }
+        },
+        "f3f0b93c-d995-4fe7-8d41-8abb3d720bc9": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "LAGREE CORE & MOBILITY - COMING SOON",
+            "int_heading": "INTENSITY",
+            "enable_intensity": false,
+            "intensity_level": 2,
+            "intensity_text": "Moderate",
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "LEVEL",
+            "skillLevel": "All levels",
+            "detail": "<p>A 50/50 blend of sweat and restoration. You'll fire up your core and explore mobility work to build strength, improve joint movement, and enhance flexibility, with a focus on breath to power you through movements and guided stretches.</p>",
+            "button_text_1": "",
+            "button_url_1": "",
             "button_text_2": "",
             "button_url_2": ""
           }
@@ -148,18 +247,18 @@
         "a716f6c2-86fa-42e7-8de5-71a119a3d638": {
           "type": "hit_box",
           "settings": {
-            "heading": "ABS & ASSETS",
+            "heading": "LAGREE ABS & ASSETS - COMING SOON",
             "int_heading": "INTENSITY",
-            "enable_intensity": true,
+            "enable_intensity": false,
             "intensity_level": 3,
-            "intensity_text": "Intensity Field Text",
+            "intensity_text": "High",
             "dur_heading": "DURATION",
             "duration": "50 min",
             "skl_heading": "LEVEL",
-            "skillLevel": "All levels",
-            "detail": "<p>Hello, leg day! Grow, shape, and strengthen one of the body’s biggest assets by sweating it out on the treadmill, weights, and resistance bands. Focus on form and technique to maximize every move.</p>",
-            "button_text_1": "BOOK",
-            "button_url_1": "https://www.sweatandtonic.com/reserve/",
+            "skillLevel": "Intermediate",
+            "detail": "<p>Get sculpted in this workout designed to target your abs, obliques, glutes, and legs. For best results, this class is recommended for who have taken 5+ Fundamental or Full Body classes.</p>",
+            "button_text_1": "",
+            "button_url_1": "",
             "button_text_2": "",
             "button_url_2": ""
           }
@@ -167,74 +266,36 @@
         "9341e57a-ca56-4c76-9088-0360e926d39c": {
           "type": "hit_box",
           "settings": {
-            "heading": "ARMS & ABS",
+            "heading": "LAGREE ARMS & ABS - COMING SOON",
             "int_heading": "INTENSITY",
-            "enable_intensity": true,
+            "enable_intensity": false,
             "intensity_level": 3,
-            "intensity_text": "Intensity Field Text",
+            "intensity_text": "High",
             "dur_heading": "DURATION",
             "duration": "50 min",
             "skl_heading": "LEVEL",
-            "skillLevel": "All levels",
-            "detail": "<p>Get stronger and leaner with purpose and precision in this full-body-shredding weight-lifting sweat session. This strength class has a highly coached environment to take your physique and fitness to new heights.</p>",
-            "button_text_1": "BOOK",
-            "button_url_1": "https://www.sweatandtonic.com/reserve/",
+            "skillLevel": "Intermediate",
+            "detail": "<p>Fire up that upper body - sculpt your arms, shoulders, back, abs and obliques. For best results, this class is recommended for who have taken 5+ Fundamental or Full Body classes.</p>",
+            "button_text_1": "",
+            "button_url_1": "",
             "button_text_2": "",
             "button_url_2": ""
-          }
-        },
-        "f3f0b93c-d995-4fe7-8d41-8abb3d720bc9": {
-          "type": "hit_box",
-          "settings": {
-            "heading": "CORE & MOBILITY",
-            "int_heading": "INTENSITY",
-            "enable_intensity": true,
-            "intensity_level": 2,
-            "intensity_text": "Intensity Field Text",
-            "dur_heading": "DURATION",
-            "duration": "50 min",
-            "skl_heading": "LEVEL",
-            "skillLevel": "All levels",
-            "detail": "<p>Level up your Pilates practice. Slow down to raise the heat using treadmills, weights, and resistance bands in this full-body, lower impact workout that brings Pilates principles and movements to the HIIT Studio. With an emphasis on slow, controlled movements and longer holds to turn up the burn, you’ll get those muscles shaking, challenge your limits, and build strength, stamina and long, lean muscles. Slow, steady, and extra spicy.</p>",
-            "button_text_1": "BOOK",
-            "button_url_1": "https://www.sweatandtonic.com/reserve/",
-            "button_text_2": "",
-            "button_url_2": ""
-          }
-        },
-        "704e6416-7383-410f-9de1-7ac0beeec85f": {
-          "type": "hit_box",
-          "settings": {
-            "heading": "FUNDAMENTALS",
-            "int_heading": "INTENSITY",
-            "enable_intensity": true,
-            "intensity_level": 3,
-            "intensity_text": "Intensity Field Text",
-            "dur_heading": "DURATION",
-            "duration": "50 min",
-            "skl_heading": "LEVELS",
-            "skillLevel": "Beginner",
-            "detail": "<p>Your one-stop shop for sculpted abs, back, shoulders, and arms. Move through three stations of dumbbell, resistance band, and treadmill work that's expertly programmed to tone, shred, and strengthen everything above the belt. The ultimate 360 upper body workout.</p>",
-            "button_text_1": "BOOK",
-            "button_url_1": "shopify://pages/reserve",
-            "button_text_2": "",
-            "button_url_2": "shopify://pages/pricing"
           }
         },
         "4fb95e56-cda7-408b-a55c-63a88396079d": {
           "type": "hit_box",
           "settings": {
-            "heading": "ADVANCED",
+            "heading": "ADVANCED LAGREE - COMING SOON",
             "int_heading": "INTENSITY",
-            "enable_intensity": true,
+            "enable_intensity": false,
             "intensity_level": 3,
-            "intensity_text": "Intensity Field Text",
+            "intensity_text": "Very High",
             "dur_heading": "DURATION",
             "duration": "50 min",
             "skl_heading": "LEVEL",
             "skillLevel": "Advanced (35+ classes)",
             "detail": "<p>Tone, shred and strengthen your core as you engage your abdominal muscles through treadmill, resistance band, and dumbbell stations. A strong, stable center will improve your balance, stability and improve the quality of your overall movement practice.</p>",
-            "button_text_1": "BOOK",
+            "button_text_1": "",
             "button_url_1": "shopify://pages/reserve",
             "button_text_2": "",
             "button_url_2": ""
@@ -622,11 +683,11 @@
         }
       },
       "block_order": [
+        "704e6416-7383-410f-9de1-7ac0beeec85f",
         "c280bdb2-65e1-4092-aced-67cacc1ff117",
+        "f3f0b93c-d995-4fe7-8d41-8abb3d720bc9",
         "a716f6c2-86fa-42e7-8de5-71a119a3d638",
         "9341e57a-ca56-4c76-9088-0360e926d39c",
-        "f3f0b93c-d995-4fe7-8d41-8abb3d720bc9",
-        "704e6416-7383-410f-9de1-7ac0beeec85f",
         "4fb95e56-cda7-408b-a55c-63a88396079d",
         "4dfd51f6-d80a-49fb-8aed-855f28370947",
         "ad356b5d-7d1b-4c74-9bb5-926fb4cf31ae",
@@ -651,7 +712,7 @@
       "settings": {
         "subHeading": "OUR CLASSES",
         "heading": "MEGAFORMER CLASSES",
-        "detail": "<p><strong>What is Lagree?</strong></p><p>Founded on five components of physical fitness – endurance, cardiovascular fitness, body composition, flexibility, and strength – Lagree is a patented high-intensity, low-impact exercise method that tightens, tones, and deeply activates slow-twitch muscle fibres. The method integrates body-building principles and focuses on slow, controlled movements and progressive load to build strength.</p><p><strong>New to Lagree?</strong> We recommend booking our Fundamentals class to understand the basics and get familiar with the Megaformer.</p>",
+        "detail": "<p><strong>What is Lagree?</strong></p><p>Lagree is not Pilates, and the Megaformer is not a reformer. Founded on five components of physical fitness – endurance, cardiovascular fitness, body composition, flexibility, and strength – Lagree is a patented high-intensity, low-impact exercise method that tightens, tones, and deeply activates slow-twitch muscle fibres. The method integrates body-building principles and focuses on slow, controlled movements and progressive load to build strength.</p><p><strong>New to Lagree?</strong> We recommend booking our Fundamentals class to understand the basics and get familiar with the Megaformer.</p>",
         "top_padding_remove": false,
         "bottom_padding_remove": false
       }
@@ -712,6 +773,7 @@
         "5f339c27-a2d8-4ed9-9d14-fd9c115bad81",
         "ab06944c-e56b-4aaa-962a-25c5bdcc7f46"
       ],
+      "disabled": true,
       "settings": {
         "title": "EXPLORE S&T STUDIOS",
         "heading_size": "h2",
@@ -729,7 +791,7 @@
         "2fc049c5-7369-409d-b14a-69872fa3a417": {
           "type": "heading",
           "settings": {
-            "heading": "BENEFITS OF HIIT & WEIGHT TRAINING",
+            "heading": "BENEFITS OF THE LAGREE METHOD",
             "heading_size": "h1",
             "text_clr": "#ffffff"
           }
@@ -737,8 +799,8 @@
         "816d62d0-da59-4074-9bf1-9c214ed815fe": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "JOIN US",
-            "button_link_1": "shopify://collections/all",
+            "button_label_1": "GET AN INTRO PACK",
+            "button_link_1": "shopify://pages/pricing",
             "button_style": "link",
             "applies_color_scheme": true,
             "btn_text_clr": "#ffffff",
@@ -752,18 +814,18 @@
           "settings": {
             "enable_accord": true,
             "text_clr": "#ffffff",
-            "svg_1": "<svg viewbox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"#ffffff\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <defs> <style>.cls-1{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style> </defs> <g id=\"ic-sport-dumbbell\"> <line class=\"cls-1\" x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"></line> <line class=\"cls-1\" x1=\"5\" y1=\"10\" x2=\"5\" y2=\"14\"></line> <line class=\"cls-1\" x1=\"8\" y1=\"8\" x2=\"8\" y2=\"16\"></line> <line class=\"cls-1\" x1=\"16\" y1=\"8\" x2=\"16\" y2=\"16\"></line> <line class=\"cls-1\" x1=\"19\" y1=\"10\" x2=\"19\" y2=\"14\"></line> </g> </g></svg>",
-            "title_1": "IMPROVE PERFORMANCE",
-            "desc_1": "<p>Experience full-body transformation. Build muscle, increase strength and endurance, and improve movement, mobility and coordination.</p>",
-            "svg_2": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\">\n  <g clip-path=\"url(#clip0_1042_1892)\">\n    <path d=\"M3.75 15H8.4375L10.3125 12.1875L14.0625 17.8125L15.9375 15H18.75\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    <path d=\"M2.8125 11.25C2.8125 11.1715 2.8125 11.0941 2.8125 11.0156C2.8125 9.3373 3.47921 7.72772 4.66596 6.54096C5.85272 5.35421 7.4623 4.6875 9.14062 4.6875C11.7879 4.6875 14.0555 6.13008 15 8.4375C15.9445 6.13008 18.2121 4.6875 20.8594 4.6875C22.5377 4.6875 24.1473 5.35421 25.334 6.54096C26.5208 7.72772 27.1875 9.3373 27.1875 11.0156C27.1875 18.75 15 25.3125 15 25.3125C15 25.3125 10.0781 22.6641 6.49453 18.75\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  </g>\n  <defs>\n    <clippath id=\"clip0_1042_1892\">\n      <rect width=\"30\" height=\"30\" fill=\"currentColor\"></rect>\n    </clippath>\n  </defs>\n</svg>",
-            "title_2": "BOOST CARDIOVASCULAR HEALTH",
-            "desc_2": "<p>Lower your risk of cardiovascular disease by improving your anaerobic threshold and increasing your peak oxygen consumption (VO2 max).</p>",
-            "svg_3": "<svg viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <path d=\"M12 2.84955C17.0537 2.84955 21.1505 6.94637 21.1505 12.0001C21.1505 17.0537 17.0537 21.1506 12 21.1506C6.94631 21.1506 2.84949 17.0537 2.84949 12.0001C2.84949 6.94637 6.94631 2.84955 12 2.84955Z\" stroke=\"#ffffff\" stroke-width=\"1.69905\" stroke-linecap=\"round\"></path> <path d=\"M7 12.6842H8.67217C8.75916 12.6842 8.83616 12.628 8.86266 12.5451L10.3761 7.81366C10.4405 7.61227 10.7327 7.63557 10.7643 7.84463L11.8836 15.2319C11.9146 15.4363 12.1974 15.4651 12.269 15.2712L14.0716 10.3871C14.1375 10.2086 14.3918 10.2142 14.4497 10.3954L15.1373 12.5451C15.1638 12.628 15.2408 12.6842 15.3278 12.6842H17\" stroke=\"#ffffff\" stroke-width=\"1.7\" stroke-linecap=\"round\"></path> </g></svg>",
-            "title_3": "IMPROVE HEALTH OUTCOMES",
-            "desc_3": "<p>Improve your metabolic rate, insulin sensitivity, glycemic control and cognitive function, and decrease your risk of metabolic syndrome, osteoarthritis, and type 2 diabetes.</p>",
-            "svg_4": "<svg width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.5882 15C21.5882 16.303 21.2018 17.5768 20.4779 18.6602C19.754 19.7437 18.7251 20.5881 17.5212 21.0867C16.3174 21.5854 14.9927 21.7159 13.7147 21.4616C12.4367 21.2074 11.2628 20.58 10.3414 19.6586C9.42003 18.7372 8.79256 17.5633 8.53836 16.2853C8.28415 15.0073 8.41462 13.6826 8.91326 12.4788C9.41191 11.2749 10.2563 10.246 11.3398 9.52208C12.4232 8.79816 13.697 8.41176 15 8.41176M21.5882 15C21.5882 13.2527 20.8941 11.5769 19.6586 10.3414C18.4231 9.10588 16.7473 8.41176 15 8.41176M21.5882 15H28.1765M15 8.41176V1.82353M24.3224 5.67765L19.6612 10.3388M24.3224 24.3224L19.6612 19.6612M15 28.1765V21.5882M5.67765 24.3224L10.3388 19.6612M1.82353 15H8.41176M5.67765 5.67765L10.3388 10.3388M14.9176 1H15.0824M24.8494 5.03529L24.9647 5.15059M29 14.9176V15.0824M24.9647 24.8494L24.8494 24.9647M15.0824 29H14.9176M5.15059 24.9647L5.03529 24.8494M1 15.0824V14.9176M5.03529 5.15059L5.15059 5.03529\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
-            "title_4": "RELIEVE STRESS",
-            "desc_4": "<p>Improve your mental health and help reduce symptoms of stress and anxiety through a well-balanced exercise regimen.</p>"
+            "svg_1": "",
+            "title_1": "STRENGTHEN, TIGHTEN & TONE",
+            "desc_1": "<p>The Lagree Method is specifically engineered to strengthen, tighten, and tone the muscles effectively and efficiently without any excess stress on the joints, connective tissues, or spine. Built on the Magic 8 principles, each workout builds in intensity through slow controlled movements to force physical changes, also known as positive adaptation.</p>",
+            "svg_2": "",
+            "title_2": "BOOST ENDURANCE",
+            "desc_2": "<p>Improve your cardiovascular health - with constant and continuous muscle contraction, the cardiorespiratory system kicks in after the first 60 seconds of exercise. A heart rate of 135-200+, depending on and sequence can be expected.</p>",
+            "svg_3": "",
+            "title_3": "INCREASE MOBILITY",
+            "desc_3": "<p>Improve flexibility and range of motion in low-impact, high intensity exercises to prevent injury and improve physical performance to help you move better in everyday life.</p>",
+            "svg_4": "",
+            "title_4": "ENHANCE METABOLISM",
+            "desc_4": "<p>Lagree workouts combine strength and endurance training to boost metabolism, leading to increased calorie burn even after the workout is finished.</p>"
           }
         }
       },
@@ -774,10 +836,10 @@
       ],
       "settings": {
         "allow_transparent_header": false,
-        "image": "shopify://shop_images/7bf7be5d46c147b9f1ee72e1594a9d89_1.jpg",
-        "img_mobile": "shopify://shop_images/Frame_6085_1.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
+        "image": "shopify://shop_images/Screen_Shot_2025-06-13_at_5.31.13_PM.png",
+        "img_mobile": "shopify://shop_images/Screen_Shot_2025-06-13_at_5.31.13_PM.png",
+        "image_overlay_opacity": 70,
+        "image_height": "medium",
         "desktop_content_alignment": "left",
         "color_scheme": "",
         "image_behavior": "none",
@@ -841,6 +903,7 @@
         "5fcac650-cebb-403f-b694-e8cb80d71fc5",
         "2dd6497d-fb1f-42b9-aec9-c251fab4097a"
       ],
+      "disabled": true,
       "settings": {
         "sub_title": "MEET THE TEAM",
         "title": "OUR TEAM",
@@ -860,6 +923,7 @@
   "order": [
     "hit-hero",
     "hit-banner-column",
+    "global_vertical_tab_banner_qLrqUf",
     "hit-classes",
     "event-contact",
     "hit-multicolumn",

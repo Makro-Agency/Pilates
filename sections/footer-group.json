@@ -17,7 +17,8 @@
         "footer_logo_RhnAhP": {
           "type": "footer_logo",
           "settings": {
-            "logo_img": "shopify://shop_images/footer-logo_2.png"
+            "logo_img": "shopify://shop_images/footer-logo_2.png",
+            "link": "https://sweatandtonic.com/"
           }
         },
         "bf572ea4-074e-4f4b-af7f-747a1395bc69": {

@@ -9,29 +9,824 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-page",
+    "hit-hero": {
+      "type": "hit-hero",
       "blocks": {
-        "41795091-c48a-4bc4-96fe-b758a484c94c": {
-          "type": "book_classes",
-          "disabled": true,
+        "3d295c9e-10b8-4397-b3c8-b08733efc0db": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/SpaWellness_desktop_2024.03.jpg",
-            "image_mobile": "shopify://shop_images/SpaWellness_mobile_2024.03.png",
-            "url": "https://booking.mangomint.com/sweattonic"
+            "text": "Private classes",
+            "text_style": "caption-with-letter-spacing",
+            "text_clr": "#ffffff"
+          }
+        },
+        "89ede07a-229a-4fd5-8064-eb065090ad93": {
+          "type": "heading",
+          "settings": {
+            "heading": "Private Training",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "943f29ad-f020-4899-974b-20f586c4dd6a": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "BOOK CLASSES",
+            "button_link_1": "shopify://pages/reserve",
+            "button_style": "outline",
+            "applies_color_scheme": true,
+            "btn_text_clr": "#ffffff",
+            "btn_hvr_text_clr": "#000000",
+            "btn_bg_clr": "#fee4b1",
+            "btn_hvr_bg_clr": "#ffffff"
+          }
+        },
+        "1fe44382-9435-48ac-95f6-bf885137b352": {
+          "type": "description",
+          "settings": {
+            "desc": "<p>High-intensity workouts to chisel and tone your best body with a trifecta of creative intervals. You’ll HIIT hard while having the time of your life.</p>",
+            "anchor_label": "Learn More",
+            "anchor_link": "shopify://pages/pricing",
+            "text_clr": "#ffffff"
           }
         }
       },
       "block_order": [
-        "41795091-c48a-4bc4-96fe-b758a484c94c"
+        "3d295c9e-10b8-4397-b3c8-b08733efc0db",
+        "89ede07a-229a-4fd5-8064-eb065090ad93",
+        "943f29ad-f020-4899-974b-20f586c4dd6a",
+        "1fe44382-9435-48ac-95f6-bf885137b352"
       ],
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "allow_transparent_header": true,
+        "image": "shopify://shop_images/TheWell_HIIT_1.jpg",
+        "img_mobile": "shopify://shop_images/hero-min_0ae1c4a7-01e4-485e-a82d-a80711f9b865.jpg",
+        "image_overlay_opacity": 60,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center"
+      }
+    },
+    "hit-banner-column": {
+      "type": "hit-banner-column",
+      "blocks": {
+        "2fc049c5-7369-409d-b14a-69872fa3a417": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lorem ipsum dolor  amet, consectetur adipiscing elit",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "d57f9c4c-bb8d-4416-994b-eb28dc4afba4": {
+          "type": "features",
+          "settings": {
+            "text_clr": "#ffffff",
+            "svg_1": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\">\n<g clip-path=\"url(#clip0_877_8142)\">\n<path d=\"M50 22L56 16L50 10\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M8 32C8 27.7565 9.68571 23.6869 12.6863 20.6863C15.6869 17.6857 19.7565 16 24 16H56\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M14 42L8 48L14 54\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M56 32C56 36.2435 54.3143 40.3131 51.3137 43.3137C48.3131 46.3143 44.2435 48 40 48H8\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_877_8142\">\n<rect width=\"64\" height=\"64\" fill=\"white\"></rect>\n</clippath>\n</defs>\n</svg>",
+            "title_1": "2 AND 3-STATION WORKOUTS",
+            "desc_1": "<p>Treadmill drills, weight & resistance training and boxing work together to deliver a trifecta of creative intervals</p>",
+            "svg_2": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\">\n<g clip-path=\"url(#clip0_877_8155)\">\n<path d=\"M38 26H26V38H38V26Z\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M50 12H14C12.8954 12 12 12.8954 12 14V50C12 51.1046 12.8954 52 14 52H50C51.1046 52 52 51.1046 52 50V14C52 12.8954 51.1046 12 50 12Z\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M52 26H58\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M52 38H58\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M6 26H12\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M6 38H12\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M38 52V58\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M26 52V58\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M38 6V12\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M26 6V12\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_877_8155\">\n<rect width=\"64\" height=\"64\" fill=\"white\"></rect>\n</clippath>\n</defs>\n</svg>",
+            "title_2": "STATE-OF-THE-ART EQUIPMENT",
+            "desc_2": "<p>Technogym Skillrun Treadmills designed for professional athletes, Aqua punching bags, and a theatre-quality light and sound system set the stage</p>",
+            "svg_3": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\">\n<g clip-path=\"url(#clip0_877_8174)\">\n<path d=\"M32 18C35.3137 18 38 15.3137 38 12C38 8.68629 35.3137 6 32 6C28.6863 6 26 8.68629 26 12C26 15.3137 28.6863 18 32 18Z\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M10 26H54\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M32 26V36L12 54\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M32 36L46 42V54\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_877_8174\">\n<rect width=\"64\" height=\"64\" fill=\"white\"></rect>\n</clippath>\n</defs>\n</svg>",
+            "title_3": "CHISEL & TONE",
+            "desc_3": "<p>Efficiency, adaptability and inspiration strike the perfect balance to build your best body. Get lifted up while breaking down mental and physical barriers.</p>",
+            "svg_4": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\">\n<g clip-path=\"url(#clip0_877_8187)\">\n<path d=\"M48 10H16C12.6863 10 10 12.6863 10 16V48C10 51.3137 12.6863 54 16 54H48C51.3137 54 54 51.3137 54 48V16C54 12.6863 51.3137 10 48 10Z\" stroke=\"white\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M23 26C24.6569 26 26 24.6569 26 23C26 21.3431 24.6569 20 23 20C21.3431 20 20 21.3431 20 23C20 24.6569 21.3431 26 23 26Z\" fill=\"white\"></path>\n<path d=\"M41 26C42.6569 26 44 24.6569 44 23C44 21.3431 42.6569 20 41 20C39.3431 20 38 21.3431 38 23C38 24.6569 39.3431 26 41 26Z\" fill=\"white\"></path>\n<path d=\"M23 44C24.6569 44 26 42.6569 26 41C26 39.3431 24.6569 38 23 38C21.3431 38 20 39.3431 20 41C20 42.6569 21.3431 44 23 44Z\" fill=\"white\"></path>\n<path d=\"M32 35C33.6569 35 35 33.6569 35 32C35 30.3431 33.6569 29 32 29C30.3431 29 29 30.3431 29 32C29 33.6569 30.3431 35 32 35Z\" fill=\"white\"></path>\n<path d=\"M41 44C42.6569 44 44 42.6569 44 41C44 39.3431 42.6569 38 41 38C39.3431 38 38 39.3431 38 41C38 42.6569 39.3431 44 41 44Z\" fill=\"white\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_877_8187\">\n<rect width=\"64\" height=\"64\" fill=\"white\"></rect>\n</clippath>\n</defs>\n</svg>",
+            "title_4": "5 CLASS STYLES",
+            "desc_4": "<p>Options for every body to get moving. Go 3 rounds, hit the slow jams, work together to achieve goals, build your best assets or get lifted to the beat.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "2fc049c5-7369-409d-b14a-69872fa3a417",
+        "d57f9c4c-bb8d-4416-994b-eb28dc4afba4"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "image": "shopify://shop_images/Frame_5925.png",
+        "img_mobile": "shopify://shop_images/SweatandTonic_HIITYongeShuter_studio_1.png",
+        "image_overlay_opacity": 20,
+        "image_height": "adapt",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "section_title_mobtop": true
+      }
+    },
+    "hit-classes": {
+      "type": "hit-classes",
+      "blocks": {
+        "704e6416-7383-410f-9de1-7ac0beeec85f": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "TOP HIIT",
+            "int_heading": "INTENSITY",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "LEVELS",
+            "skillLevel": "All levels",
+            "detail": "<p>Your one-stop shop for sculpted abs, back, shoulders, and arms. Move through three stations of dumbbell, resistance band, and treadmill work that's expertly programmed to tone, shred, and strengthen everything above the belt. The ultimate 360 upper body workout.</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "shopify://pages/reserve",
+            "button_text_2": "",
+            "button_url_2": "shopify://pages/pricing"
+          }
+        },
+        "4fb95e56-cda7-408b-a55c-63a88396079d": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "CORE HIIT",
+            "int_heading": "INTENSITY",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "LEVEL",
+            "skillLevel": "All levels",
+            "detail": "<p>Tone, shred and strengthen your core as you engage your abdominal muscles through treadmill, resistance band, and dumbbell stations. A strong, stable center will improve your balance, stability and improve the quality of your overall movement practice.</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "shopify://pages/reserve",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "c280bdb2-65e1-4092-aced-67cacc1ff117": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "ABS & ASSETS HIIT",
+            "int_heading": "INTENSITY",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "LEVEL",
+            "skillLevel": "All levels",
+            "detail": "<p>Fire up your glutes and core as you move through high intensity intervals that utilize heavy weights, resistance bands, and conditioning on the treadmill to tone, sculpt, and turn up the burn in all the right places.</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "https://www.sweatandtonic.com/reserve/",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "a716f6c2-86fa-42e7-8de5-71a119a3d638": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "BOOTY HIIT",
+            "int_heading": "INTENSITY",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "LEVEL",
+            "skillLevel": "All levels",
+            "detail": "<p>Hello, leg day! Grow, shape, and strengthen one of the body’s biggest assets by sweating it out on the treadmill, weights, and resistance bands. Focus on form and technique to maximize every move.</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "https://www.sweatandtonic.com/reserve/",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "9341e57a-ca56-4c76-9088-0360e926d39c": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "LIFT HIIT",
+            "int_heading": "INTENSITY",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "LEVEL",
+            "skillLevel": "All levels*",
+            "detail": "<p>Get stronger and leaner with purpose and precision in this full-body-shredding weight-lifting sweat session. This strength class has a highly coached environment to take your physique and fitness to new heights.</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "https://www.sweatandtonic.com/reserve/",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "f3f0b93c-d995-4fe7-8d41-8abb3d720bc9": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "PILATES HIIT",
+            "int_heading": "INTENSITY",
+            "intensity_level": 2,
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "LEVEL",
+            "skillLevel": "All levels",
+            "detail": "<p>Level up your Pilates practice. Slow down to raise the heat using treadmills, weights, and resistance bands in this full-body, lower impact workout that brings Pilates principles and movements to the HIIT Studio. With an emphasis on slow, controlled movements and longer holds to turn up the burn, you’ll get those muscles shaking, challenge your limits, and build strength, stamina and long, lean muscles. Slow, steady, and extra spicy.</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "https://www.sweatandtonic.com/reserve/",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "4dfd51f6-d80a-49fb-8aed-855f28370947": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "BOX HIIT",
+            "int_heading": "INTENSITY",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "LEVEL",
+            "skillLevel": "All levels*",
+            "detail": "<p>HIIT the treadmill, boxing bag and weights as you get strong and shredded from top to bottom in this S&T signature 3-station, definition building class.</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "https://www.sweatandtonic.com/reserve/",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "ad356b5d-7d1b-4c74-9bb5-926fb4cf31ae": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "BEAT BOXING HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "All levels",
+            "detail": "<p>Box to the rhythm in this high energy, high intensity, full-body workout that incorporates two rounds of rhythm-based boxing and one round of treadmill work. Step into the ring and build stamina, speed, coordination, and strength - you'll leave feeling like a champ!</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "https://sweatandtonic.com/pages/reserve/?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48750%2C48750%2C48717",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "5afe78e2-53aa-47c6-96e8-d83d44d51028": {
+          "type": "hit_box",
+          "settings": {
+            "heading": "ACTIVE RECOVERY",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 1,
+            "dur_heading": "DURATION",
+            "duration": "50 min",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "All levels",
+            "detail": "<p>Recover and rebuild in this low-impact, feel-good class designed to help you increase mobility, strengthen joints, and improve flexibility in between your high-intensity workouts. Through mobility drills, low-intensity steady-state cardio (LISS) on the treadmill, and exercises that utilize resistance bands and weights to improve movement quality and control, you’ll increase strength and prep your body to maximize output for your next high-impact sweat.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "https://sweatandtonic.com/pages/reserve/?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48750%2C48750%2C48717",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "6198ef3c-e742-4196-9423-5408f950c6b9": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "TRIPLE SWEAT",
+            "int_heading": "INTENSITY",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "90 min",
+            "skl_heading": "LEVEL",
+            "skillLevel": "All levels",
+            "detail": "<p>For the ultimate workout warrior, utilize all 3 studios in one 90-minute class. You’ll spend 30 minutes in each studio alongside fellow sweat addicts for a full-body, well-balanced and limit-pushing workout.</p>",
+            "button_text_1": "BOOK",
+            "button_url_1": "https://www.sweatandtonic.com/reserve/",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "hit_box_zmEiBE": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "BOX HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "1h 30m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>HIIT the treadmill, boxing bag and weights as you get strong and shredded from top to bottom in this S&amp;T signature 3-station, definition building class.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "LEARN MORE",
+            "button_url_2": ""
+          }
+        },
+        "ed253477-2265-431d-8356-54eb44fc3e5c": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "BOX HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "1h 30m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>HIIT the treadmill, boxing bag and weights as you get strong and shredded from top to bottom in this S&amp;T signature 3-station, definition building class.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "LEARN MORE",
+            "button_url_2": ""
+          }
+        },
+        "1140545b-9ce8-4127-9b3e-6ff0f0ebc64b": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "BOX HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "1h 30m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>HIIT the treadmill, boxing bag and weights as you get strong and shredded from top to bottom in this S&amp;T signature 3-station, definition building class.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "LEARN MORE",
+            "button_url_2": ""
+          }
+        },
+        "ef8f831a-21fc-49cf-b261-db8899bb6eaf": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "BOX HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 1,
+            "dur_heading": "DURATION",
+            "duration": "1h 30m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>HIIT the treadmill, boxing bag and weights as you get strong and shredded from top to bottom in this S&T signature 3-station, definition building class.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "LEARN MORE",
+            "button_url_2": ""
+          }
+        },
+        "2c94bb3e-2028-4561-a7f2-c49008c2f6ee": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "BOX HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "1h 30m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>HIIT the treadmill, boxing bag and weights as you get strong and shredded from top to bottom in this S&amp;T signature 3-station, definition building class.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "LEARN MORE",
+            "button_url_2": ""
+          }
+        },
+        "547790b4-3778-4baf-8f33-08120cc07610": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "BOX HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "1h 30m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>HIIT the treadmill, boxing bag and weights as you get strong and shredded from top to bottom in this S&T signature 3-station, definition building class.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "LEARN MORE",
+            "button_url_2": ""
+          }
+        },
+        "f20d4a56-99eb-4628-998a-79853634650b": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "BOX HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "1h 30m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>HIIT the treadmill, boxing bag and weights as you get strong and shredded from top to bottom in this S&amp;T signature 3-station, definition building class.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "LEARN MORE",
+            "button_url_2": ""
+          }
+        },
+        "4d7f3de4-44f0-442b-83b4-771899ca5137": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "BOX HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "1h 30m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>HIIT the treadmill, boxing bag and weights as you get strong and shredded from top to bottom in this S&amp;T signature 3-station, definition building class.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "LEARN MORE",
+            "button_url_2": ""
+          }
+        },
+        "eb858390-0d5e-47e9-bb71-c9f3043b400c": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "BOX HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "1h 30m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>HIIT the treadmill, boxing bag and weights as you get strong and shredded from top to bottom in this S&amp;T signature 3-station, definition building class.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "LEARN MORE",
+            "button_url_2": ""
+          }
+        },
+        "42ebd2e8-65f9-4fd8-a1ad-6e2abbb2f801": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "BOX HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "1h 30m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>HIIT the treadmill, boxing bag and weights as you get strong and shredded from top to bottom in this S&amp;T signature 3-station, definition building class.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "LEARN MORE",
+            "button_url_2": ""
+          }
+        },
+        "af6d20e5-79b7-47b0-9258-e3237c2b8916": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "BOX HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "1h 30m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>HIIT the treadmill, boxing bag and weights as you get strong and shredded from top to bottom in this S&amp;T signature 3-station, definition building class.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "LEARN MORE",
+            "button_url_2": ""
+          }
+        },
+        "437307b9-6f72-4570-81ea-47d28248ab00": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "BOX HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "1h 30m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>HIIT the treadmill, boxing bag and weights as you get strong and shredded from top to bottom in this S&amp;T signature 3-station, definition building class.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "LEARN MORE",
+            "button_url_2": ""
+          }
+        },
+        "3fbce8a9-6ca5-435e-b203-f8ee2fc8f757": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "BOX HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "1h 30m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>HIIT the treadmill, boxing bag and weights as you get strong and shredded from top to bottom in this S&amp;T signature 3-station, definition building class.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "LEARN MORE",
+            "button_url_2": ""
+          }
+        },
+        "86e05189-4829-4a29-ab35-d32743b7b983": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "BOX HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "1h 30m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>HIIT the treadmill, boxing bag and weights as you get strong and shredded from top to bottom in this S&amp;T signature 3-station, definition building class.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "LEARN MORE",
+            "button_url_2": ""
+          }
+        },
+        "2b51f841-a50e-4f3b-a5bc-c9b8a6415301": {
+          "type": "hit_box",
+          "disabled": true,
+          "settings": {
+            "heading": "BOX HIIT",
+            "int_heading": "INTENSITY LEVEL",
+            "intensity_level": 3,
+            "dur_heading": "DURATION",
+            "duration": "1h 30m",
+            "skl_heading": "SKILL LEVEL",
+            "skillLevel": "Advanced +",
+            "detail": "<p>HIIT the treadmill, boxing bag and weights as you get strong and shredded from top to bottom in this S&amp;T signature 3-station, definition building class.</p>",
+            "button_text_1": "BOOK THIS CLASS",
+            "button_url_1": "",
+            "button_text_2": "LEARN MORE",
+            "button_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "704e6416-7383-410f-9de1-7ac0beeec85f",
+        "4fb95e56-cda7-408b-a55c-63a88396079d",
+        "c280bdb2-65e1-4092-aced-67cacc1ff117",
+        "a716f6c2-86fa-42e7-8de5-71a119a3d638",
+        "9341e57a-ca56-4c76-9088-0360e926d39c",
+        "f3f0b93c-d995-4fe7-8d41-8abb3d720bc9",
+        "4dfd51f6-d80a-49fb-8aed-855f28370947",
+        "ad356b5d-7d1b-4c74-9bb5-926fb4cf31ae",
+        "5afe78e2-53aa-47c6-96e8-d83d44d51028",
+        "6198ef3c-e742-4196-9423-5408f950c6b9",
+        "hit_box_zmEiBE",
+        "ed253477-2265-431d-8356-54eb44fc3e5c",
+        "1140545b-9ce8-4127-9b3e-6ff0f0ebc64b",
+        "ef8f831a-21fc-49cf-b261-db8899bb6eaf",
+        "2c94bb3e-2028-4561-a7f2-c49008c2f6ee",
+        "547790b4-3778-4baf-8f33-08120cc07610",
+        "f20d4a56-99eb-4628-998a-79853634650b",
+        "4d7f3de4-44f0-442b-83b4-771899ca5137",
+        "eb858390-0d5e-47e9-bb71-c9f3043b400c",
+        "42ebd2e8-65f9-4fd8-a1ad-6e2abbb2f801",
+        "af6d20e5-79b7-47b0-9258-e3237c2b8916",
+        "437307b9-6f72-4570-81ea-47d28248ab00",
+        "3fbce8a9-6ca5-435e-b203-f8ee2fc8f757",
+        "86e05189-4829-4a29-ab35-d32743b7b983",
+        "2b51f841-a50e-4f3b-a5bc-c9b8a6415301"
+      ],
+      "settings": {
+        "subHeading": "EXPLORE CLASSES",
+        "heading": "Private Training",
+        "detail": "<p>High-intensity workouts to chisel and tone your best body with a trifecta of creative intervals. You’ll HIIT hard while having the time of your life.</p>",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "hit-multicolumn": {
+      "type": "hit-multicolumn",
+      "blocks": {
+        "5f339c27-a2d8-4ed9-9d14-fd9c115bad81": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/YongeShuter_hiitstudio.jpg",
+            "title": "YONGE / SHUTER",
+            "text": "<p>Dive into a high-intensity interval training with Technogym Skillrun treadmills, Aqua boxing bags, and full dumbbell racks and resistance band stations.</p>",
+            "address": "225 Yonge Street, Toronto ON M5B 1N8",
+            "phone": "Studio capacity: 48 people",
+            "link_label": "see classes",
+            "link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48717"
+          }
+        },
+        "ab06944c-e56b-4aaa-962a-25c5bdcc7f46": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SweatandTonic_HIITalt.png",
+            "title": "FRONT / SPADINA (THE WELL)",
+            "text": "<p>Reach your potential with Technogym Skillrun treadmills, Aqua boxing bags, and premium FXD benches complete with dumbbells, kettlebells and slam balls.</p>",
+            "address": "486 Front Street West, Toronto ON M5V 0V2",
+            "phone": "Studio capacity: 60 people",
+            "link_label": "see classes",
+            "link": "https://sweatandtonic.com/pages/reserve?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48750"
+          }
+        }
+      },
+      "block_order": [
+        "5f339c27-a2d8-4ed9-9d14-fd9c115bad81",
+        "ab06944c-e56b-4aaa-962a-25c5bdcc7f46"
+      ],
+      "settings": {
+        "title": "S&T HIIT STUDIOS",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "hit-banner-row": {
+      "type": "hit-banner-row",
+      "blocks": {
+        "2fc049c5-7369-409d-b14a-69872fa3a417": {
+          "type": "heading",
+          "settings": {
+            "heading": "BENEFITS OF HIIT & WEIGHT TRAINING",
+            "heading_size": "h1",
+            "text_clr": "#ffffff"
+          }
+        },
+        "816d62d0-da59-4074-9bf1-9c214ed815fe": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "JOIN US",
+            "button_link_1": "shopify://collections/all",
+            "button_style": "link",
+            "applies_color_scheme": true,
+            "btn_text_clr": "#ffffff",
+            "btn_hvr_text_clr": "#ffffff",
+            "btn_bg_clr": "#ffffff",
+            "btn_hvr_bg_clr": "#fee4b1"
+          }
+        },
+        "486c1659-7943-4d3f-a46d-0d16c16aa358": {
+          "type": "function",
+          "settings": {
+            "enable_accord": false,
+            "text_clr": "#ffffff",
+            "svg_1": "<svg viewbox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"#ffffff\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <defs> <style>.cls-1{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style> </defs> <g id=\"ic-sport-dumbbell\"> <line class=\"cls-1\" x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"></line> <line class=\"cls-1\" x1=\"5\" y1=\"10\" x2=\"5\" y2=\"14\"></line> <line class=\"cls-1\" x1=\"8\" y1=\"8\" x2=\"8\" y2=\"16\"></line> <line class=\"cls-1\" x1=\"16\" y1=\"8\" x2=\"16\" y2=\"16\"></line> <line class=\"cls-1\" x1=\"19\" y1=\"10\" x2=\"19\" y2=\"14\"></line> </g> </g></svg>",
+            "title_1": "IMPROVE PERFORMANCE",
+            "desc_1": "<p>Experience full-body transformation. Build muscle, increase strength and endurance, and improve movement, mobility and coordination.</p>",
+            "svg_2": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\">\n  <g clip-path=\"url(#clip0_1042_1892)\">\n    <path d=\"M3.75 15H8.4375L10.3125 12.1875L14.0625 17.8125L15.9375 15H18.75\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    <path d=\"M2.8125 11.25C2.8125 11.1715 2.8125 11.0941 2.8125 11.0156C2.8125 9.3373 3.47921 7.72772 4.66596 6.54096C5.85272 5.35421 7.4623 4.6875 9.14062 4.6875C11.7879 4.6875 14.0555 6.13008 15 8.4375C15.9445 6.13008 18.2121 4.6875 20.8594 4.6875C22.5377 4.6875 24.1473 5.35421 25.334 6.54096C26.5208 7.72772 27.1875 9.3373 27.1875 11.0156C27.1875 18.75 15 25.3125 15 25.3125C15 25.3125 10.0781 22.6641 6.49453 18.75\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  </g>\n  <defs>\n    <clippath id=\"clip0_1042_1892\">\n      <rect width=\"30\" height=\"30\" fill=\"currentColor\"></rect>\n    </clippath>\n  </defs>\n</svg>",
+            "title_2": "BOOST CARDIOVASCULAR HEALTH",
+            "desc_2": "<p>Lower your risk of cardiovascular disease by improving your anaerobic threshold and increasing your peak oxygen consumption (VO2 max).</p>",
+            "svg_3": "<svg viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#ffffff\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <path d=\"M12 2.84955C17.0537 2.84955 21.1505 6.94637 21.1505 12.0001C21.1505 17.0537 17.0537 21.1506 12 21.1506C6.94631 21.1506 2.84949 17.0537 2.84949 12.0001C2.84949 6.94637 6.94631 2.84955 12 2.84955Z\" stroke=\"#ffffff\" stroke-width=\"1.69905\" stroke-linecap=\"round\"></path> <path d=\"M7 12.6842H8.67217C8.75916 12.6842 8.83616 12.628 8.86266 12.5451L10.3761 7.81366C10.4405 7.61227 10.7327 7.63557 10.7643 7.84463L11.8836 15.2319C11.9146 15.4363 12.1974 15.4651 12.269 15.2712L14.0716 10.3871C14.1375 10.2086 14.3918 10.2142 14.4497 10.3954L15.1373 12.5451C15.1638 12.628 15.2408 12.6842 15.3278 12.6842H17\" stroke=\"#ffffff\" stroke-width=\"1.7\" stroke-linecap=\"round\"></path> </g></svg>",
+            "title_3": "IMPROVE HEALTH OUTCOMES",
+            "desc_3": "<p>Improve your metabolic rate, insulin sensitivity, glycemic control and cognitive function, and decrease your risk of metabolic syndrome, osteoarthritis, and type 2 diabetes.</p>",
+            "svg_4": "<svg width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.5882 15C21.5882 16.303 21.2018 17.5768 20.4779 18.6602C19.754 19.7437 18.7251 20.5881 17.5212 21.0867C16.3174 21.5854 14.9927 21.7159 13.7147 21.4616C12.4367 21.2074 11.2628 20.58 10.3414 19.6586C9.42003 18.7372 8.79256 17.5633 8.53836 16.2853C8.28415 15.0073 8.41462 13.6826 8.91326 12.4788C9.41191 11.2749 10.2563 10.246 11.3398 9.52208C12.4232 8.79816 13.697 8.41176 15 8.41176M21.5882 15C21.5882 13.2527 20.8941 11.5769 19.6586 10.3414C18.4231 9.10588 16.7473 8.41176 15 8.41176M21.5882 15H28.1765M15 8.41176V1.82353M24.3224 5.67765L19.6612 10.3388M24.3224 24.3224L19.6612 19.6612M15 28.1765V21.5882M5.67765 24.3224L10.3388 19.6612M1.82353 15H8.41176M5.67765 5.67765L10.3388 10.3388M14.9176 1H15.0824M24.8494 5.03529L24.9647 5.15059M29 14.9176V15.0824M24.9647 24.8494L24.8494 24.9647M15.0824 29H14.9176M5.15059 24.9647L5.03529 24.8494M1 15.0824V14.9176M5.03529 5.15059L5.15059 5.03529\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "title_4": "RELIEVE STRESS",
+            "desc_4": "<p>Improve your mental health and help reduce symptoms of stress and anxiety through a well-balanced exercise regimen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "2fc049c5-7369-409d-b14a-69872fa3a417",
+        "816d62d0-da59-4074-9bf1-9c214ed815fe",
+        "486c1659-7943-4d3f-a46d-0d16c16aa358"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "image": "shopify://shop_images/7bf7be5d46c147b9f1ee72e1594a9d89_1.jpg",
+        "img_mobile": "shopify://shop_images/Frame_6085_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "section_title_mobtop": true
+      }
+    },
+    "hit-team": {
+      "type": "hit-team",
+      "blocks": {
+        "d8c76e3a-9682-4e98-ad54-de25dc96e3e2": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Baylee.png",
+            "link_label": "BAYLEE JOY",
+            "link": "shopify://metaobjects/teammember/baylee-joy"
+          }
+        },
+        "344bccad-18c9-45fe-a9fa-30f6d5343214": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Dustin_a25365df-6d70-4dbe-8d06-2651c021daba.jpg",
+            "link_label": "DUSTIN PYM",
+            "link": "shopify://metaobjects/teammember/dustin-pym"
+          }
+        },
+        "a746ac32-ac4e-4cf0-a968-b3c4d0a06e4d": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Kaivan.png",
+            "link_label": "KAIVAN SHIMI",
+            "link": "shopify://metaobjects/teammember/kaivan-shimi"
+          }
+        },
+        "5fcac650-cebb-403f-b694-e8cb80d71fc5": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Lisa.png",
+            "link_label": "LISA DAMLA",
+            "link": "shopify://metaobjects/teammember/lisa-damla"
+          }
+        },
+        "2dd6497d-fb1f-42b9-aec9-c251fab4097a": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/Perez_03ba3e74-7ad2-4354-bcb9-04f82780bd44.png",
+            "link_label": "PEREZ TIEKU",
+            "link": "shopify://metaobjects/teammember/perez-tieku"
+          }
+        }
+      },
+      "block_order": [
+        "d8c76e3a-9682-4e98-ad54-de25dc96e3e2",
+        "344bccad-18c9-45fe-a9fa-30f6d5343214",
+        "a746ac32-ac4e-4cf0-a968-b3c4d0a06e4d",
+        "5fcac650-cebb-403f-b694-e8cb80d71fc5",
+        "2dd6497d-fb1f-42b9-aec9-c251fab4097a"
+      ],
+      "settings": {
+        "sub_title": "MEET THE TEAM",
+        "title": "HIIT INSTRUCTORS",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "background_style": "none",
+        "button_label": "SEE THE FULL TEAM",
+        "button_link": "#",
+        "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
+        "columns_mobile": "2",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "contact_form_Dxy73n": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "bg_color_left": "#000000",
+        "text_color_left": "#ffffff",
+        "sub_color_left": "#ffffff",
+        "subheading_left": "Ready to sweat?",
+        "heading_left": "LET’S GET YOU IN",
+        "heading_size_left": "h1",
+        "btn_text_left": "JOIN THE SWEAT FAM",
+        "btn_link_left": "shopify://pages/studio-classes",
+        "heading": "Send us a note",
+        "heading_size": "h1",
+        "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "event-contact": {
+      "type": "event-contact",
+      "disabled": true,
+      "settings": {
+        "bg_color_left": "#26221b",
+        "text_color_left": "#ffffff",
+        "sub_color_left": "#fee4b1",
+        "subheading_left": "Ready to sweat?",
+        "heading_left": "LET’S GET YOU IN",
+        "text_left": "",
+        "p_name": "SARAH TRAN",
+        "p_tagline": "Events & Sales Manager",
+        "p_mail": "sarah@sweatandtonic.com",
+        "heading": "Contact form",
+        "btn_label": "Submit event inquiry",
+        "btn_url": "",
+        "success_msg": "<p>Thanks for inquiring. Your entry is submitted, and we'll reach out to you soon.</p>",
+        "color_scheme": "",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false,
+        "show_current_activity_dropdown": false,
+        "embed-form": "<!-- Begin Connect Signup Form -->\n<link href=\"https://assets.brandbot.com/forms/embed/embed.css\" rel=\"stylesheet\" type=\"text/css\">\n<style type=\"text/css\">\n\t#bb_form .field.form-group:after {display: none;}\n\t#bb_form .field.form-group input[type=\"text\"],.contact #bb_form .field.form-group input[type=\"email\"],.contact #bb_form .field.form-group input[type=\"tel\"]{border: none;border-bottom: 1px solid rgba(0,0,0,.2);border-radius: unset;}\n\t#bb_form .form-group.with-label {flex-wrap: wrap;flex-direction: column;}\n\t#bb_form .form-group.with-label label{font-weight:400;}\n\t#bb_form .form-group.with-label input[type=checkbox]{margin-left: 20px;}\n</style>\n\n<div id=\"bb_form\">\n\t<form method=\"post\" action=\"https://microservices.brndbot.net/forms/answers\" name=\"ibbxy\" id=\"bb_form_inner\">\n\t\t<div id=\"alert\"></div>\n\t\t<div class=\"contact__fields\">\n\t\t\t<div class=\"field form-group no-label\">\n\t\t\t\t<label for=\"bb_first_name\">First Name</label>\n\t\t\t\t<input type=\"text\" name=\"bb_first_name\" id=\"bb_first_name\" class=\"form-control\" required=\"required\" placeholder=\"First Name\">\n\t\t\t</div>\n\t\t\t<div class=\"field form-group no-label\">\n\t\t\t\t<label for=\"bb_last_name\">Last Name</label>\n\t\t\t\t<input type=\"text\" name=\"bb_last_name\" id=\"bb_last_name\" class=\"form-control\" required=\"required\" placeholder=\"Last Name\">\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"field form-group no-label\">\n\t\t\t<label for=\"bb_email\">Email Address</label>\n\t\t\t<input type=\"email\" name=\"bb_email\" id=\"bb_email\" class=\"form-control\" required=\"required\" placeholder=\"Email Address\">\n\t\t</div>\n\t\t<div class=\"form-group\">\n\t\t\t<input type=\"hidden\" name=\"bb_uuid\" id=\"bb_uuid\" value=\"a4325c6c-fc7c-4b67-b8f2-c318441997f3\">\n\t\t\t<button type=\"submit\" class=\"button button--primary\" id=\"bb_submit\" style=\"background-color: #000000; border-color: #000000; color: white;\">RSVP NOW</button>\n\t\t</div>\n\t</form>\n</div>\n<script>window.jQuery || document.write('<scr'+'ipt src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></scr'+'ipt>') </script>\n<script src=\"https://assets.brandbot.com/forms/embed/embed.js?id=ibbxy\"></script>\n<!-- Ending Connect Signup Form -->"
       }
     }
   },
   "order": [
-    "main"
+    "hit-hero",
+    "hit-banner-column",
+    "hit-classes",
+    "hit-multicolumn",
+    "hit-banner-row",
+    "hit-team",
+    "contact_form_Dxy73n",
+    "event-contact"
   ]
 }

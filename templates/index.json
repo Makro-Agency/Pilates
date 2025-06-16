@@ -67,12 +67,11 @@
         "bottom_title_7zMBCc",
         "bottom_links_aCpw9R"
       ],
-      "name": "Hero banner",
       "settings": {
         "allow_transparent_header": true,
-        "video": "shopify://files/videos/Website Hero - Compressed edit for web - 2025.03.mp4",
+        "image": "shopify://shop_images/S-T-REFORMD_001.jpg",
         "video_url": "",
-        "image_overlay_opacity": 50,
+        "image_overlay_opacity": 60,
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -85,13 +84,14 @@
       "type": "global_home-hero-banner",
       "disabled": true,
       "settings": {
-        "desktop_image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL.jpg",
-        "mobile_image": "shopify://shop_images/Reformd_Renders_-_Interior_Studio_2025.03.011_FINAL.jpg",
-        "overlay_opacity": 100,
-        "title": "WELCOME TO THE MOVEMENT",
-        "btn_text": "Explore memberships & credits",
+        "allow_transparent_header": true,
+        "desktop_image": "shopify://shop_images/slideshow-1.png",
+        "mobile_image": "shopify://shop_images/slideshow-mob-1.png",
+        "overlay_opacity": 20,
+        "title": "Welcome to the movement",
+        "btn_text": "Join us",
         "btn_url": "shopify://pages/memberships-credits",
-        "newsletter": true,
+        "newsletter": false,
         "newsletter_text": "SIGN UP TO GET NOTIFIED"
       }
     },
@@ -106,14 +106,6 @@
             "page_url": "shopify://pages/the-studio"
           }
         },
-        "links_wgtLej": {
-          "type": "links",
-          "settings": {
-            "link_lable": "OUR TEAM",
-            "section_id": "team",
-            "page_url": "shopify://pages/team"
-          }
-        },
         "links_YWPPcV": {
           "type": "links",
           "settings": {
@@ -125,38 +117,257 @@
         "links_yeAjBV": {
           "type": "links",
           "settings": {
-            "link_lable": "SCHEDULE (COMING SOON)",
+            "link_lable": "CLASS SCHEDULE",
             "section_id": "about",
-            "page_url": ""
+            "page_url": "shopify://pages/book-classes"
+          }
+        },
+        "links_wgtLej": {
+          "type": "links",
+          "disabled": true,
+          "settings": {
+            "link_lable": "OUR TEAM - COMING SOON",
+            "section_id": "team",
+            "page_url": "shopify://pages/team"
           }
         }
       },
       "block_order": [
         "links_6yzb4R",
-        "links_wgtLej",
         "links_YWPPcV",
-        "links_yeAjBV"
+        "links_yeAjBV",
+        "links_wgtLej"
       ],
       "settings": {
-        "desktop_image": "shopify://shop_images/Presale.png",
-        "mobile_image": "shopify://shop_images/Presale-mobile.png",
-        "overlay_opacity": 58,
-        "countdown_title": "Pre-opening sale: April 17",
-        "countdown_content": "Introducing REFORMD by Sweat and Tonic - the largest capacity Lagree® studio in the world and the next step in our mission to bring the best of boutique fitness & wellness to Toronto.",
-        "sale_title": "OPENING JUNE 21, 2025",
-        "sale_content": "Introducing REFORMD by Sweat and Tonic - the largest capacity Lagree® studio in the world and the next step in our mission to bring the best of boutique fitness & wellness to Toronto.",
-        "show_btn": true,
-        "btn_text": "SEE PRICING DETAILS",
-        "btn_url": "https://reformd.com/pages/pricing?_mt=%2Fbuy%2F48750",
-        "show_hide_date": true,
-        "presale_countdown_title": "",
-        "countdown_end_date": "2025-04-17 09:00 AM",
-        "show_date_pre_on": true,
-        "presale_on_title": "Presale Ends",
-        "sale_end_date": "2025-04-12 09:00 AM",
-        "show_btn_pre": true,
-        "btn_text_pre": "Purchase a membership or credit pack",
-        "btn_url_pre": "shopify://pages/pricing"
+        "title": "The world’s largest-capacity Lagree studio",
+        "content": "The Lagree Method stands in a category of its own and has continuously evolved, earning its reputation as one of the world’s most effective and transformative workouts.⁠ Step inside Reformd for a Lagree experience unlike any other."
+      }
+    },
+    "global_sudio_classes_qkDydH": {
+      "type": "global_sudio-classes",
+      "settings": {
+        "section_id": "studio-classes",
+        "title": "The studio",
+        "description": "30 Mega Pro Megaformers, state-of-the-art AV, custom chromotherapy lighting, heated flooring, and world-class programming - all expertly crafted and delivered in a signature Sweat and Tonic experience."
+      }
+    },
+    "slideshow_ghX64P": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_ciinLM": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Reformd-Renders---Interior-Studio_2025.03.011-FINAL-editweb.jpg",
+            "mobile_image": "shopify://shop_images/Reformd-Renders---Interior-Studio_2025.03.011-FINAL-editweb.jpg",
+            "heading": "MEGAFORMER STUDIO",
+            "heading_size": "h2",
+            "subheading": "Over 70 expertly curated high-intensity, low-impact classes weekly to sculpt, tone, and strengthen.",
+            "button_label": "CLASS SCHEDULE",
+            "link": "shopify://pages/book-classes",
+            "image_overlay_opacity": 0,
+            "color_scheme": "inverse"
+          }
+        },
+        "slide_DeQiWy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/accordian-desktop.png",
+            "mobile_image": "shopify://shop_images/accordian-desktop.png",
+            "heading": "RECEPTION",
+            "heading_size": "h2",
+            "subheading": "Tonic Bar delivery, changing rooms, showers, towel service, grip socks for purchase, and full-service machine cleaning between every class. Come as you are, and we'll do the rest",
+            "button_label": "VIEW MEMBERSHIPS & CREDITS",
+            "link": "#",
+            "image_overlay_opacity": 30,
+            "color_scheme": "inverse"
+          }
+        },
+        "slide_PrVpCJ": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/slideshow-2.png",
+            "mobile_image": "shopify://shop_images/slideshow-2.png",
+            "heading": "",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "",
+            "link": "#",
+            "image_overlay_opacity": 0,
+            "color_scheme": "inverse"
+          }
+        }
+      },
+      "block_order": [
+        "slide_ciinLM",
+        "slide_DeQiWy",
+        "slide_PrVpCJ"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "instructors_team_gF9wd7": {
+      "type": "instructors-team",
+      "blocks": {
+        "team_wUWXPL": {
+          "type": "team",
+          "settings": {
+            "instructor_image": "shopify://shop_images/EEA_9383.png",
+            "instructor_title": "BLAIR MYERS",
+            "profile_url": "#"
+          }
+        },
+        "team_HqB3ga": {
+          "type": "team",
+          "settings": {
+            "instructor_image": "shopify://shop_images/DSCF8134.png",
+            "instructor_title": "BRENDAN BORNSTEIN",
+            "profile_url": "#"
+          }
+        },
+        "team_4HJ9Kd": {
+          "type": "team",
+          "settings": {
+            "instructor_image": "shopify://shop_images/EEA_9383.png",
+            "instructor_title": "RORY BRAY",
+            "profile_url": "#"
+          }
+        },
+        "team_bRe4jx": {
+          "type": "team",
+          "settings": {
+            "instructor_image": "shopify://shop_images/DSCF8134.png",
+            "instructor_title": "JORDAN SCHOLL",
+            "profile_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "team_wUWXPL",
+        "team_HqB3ga",
+        "team_4HJ9Kd",
+        "team_bRe4jx"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "team",
+        "background_image": "shopify://shop_images/benifits-bg.svg",
+        "mobile_background_image": "shopify://shop_images/Frame_6837.png",
+        "image_overlay_opacity": 100,
+        "heading": "CANADA'S TOP LAGREE INSTRUCTORS",
+        "description": "Bring the sweat with world-class teachers in a world-class workout.",
+        "button_text": "SEE OUR TEAM",
+        "button_url": "#"
+      }
+    },
+    "store_locations_hXbkmY": {
+      "type": "store-locations",
+      "blocks": {
+        "location_yxkeNt": {
+          "type": "location",
+          "settings": {
+            "image": "shopify://shop_images/Sweat_and_Tonic_Yoga_Studio_Restorative_V2.jpg",
+            "title": "S&T | FRONT/SPADINA",
+            "desc": "<p>Our biggest location - 25,000 sq.ft. of immersive fitness & wellness located near the vibrant King West neighbourhood at The Well, Canada's most ambitious mixed-use development.</p>",
+            "btn_text": "VISIT S&T",
+            "btn_url": "https://sweatandtonic.com/",
+            "service_heading": "OFFERINGS INCLUDE:",
+            "service_1": "Yoga & Pilates",
+            "service_2": "HIIT",
+            "service_3": "Ride",
+            "service_4": "Tonic Spa Wellness & Recovery Hub",
+            "service_5": "Tonic Bar",
+            "service_6": "Tonic House"
+          }
+        },
+        "location_h939Va": {
+          "type": "location",
+          "settings": {
+            "image": "shopify://shop_images/Value_Block_1_Alternative_Option1.png",
+            "title": "S&T | YONGE/SHUTER",
+            "desc": "<p>Centrally located in the historic Ryrie Building, S&T at Yonge/Shuter is just a 30-second walk from the north exit of the Queen Street subway station and directly across from the Eaton Centre.</p>",
+            "btn_text": "VISIT S&T",
+            "btn_url": "https://sweatandtonic.com/",
+            "service_heading": "OFFERINGS INCLUDE:",
+            "service_1": "Yoga & Pilates",
+            "service_2": "HIIT",
+            "service_3": "Ride",
+            "service_4": "Tonic House",
+            "service_5": "Tonic Bar",
+            "service_6": "Sauna & Somadome"
+          }
+        },
+        "location_iCNHyN": {
+          "type": "location",
+          "disabled": true,
+          "settings": {
+            "title": "THE WELL",
+            "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Qorem ipsum dolor sit amet.</p>",
+            "btn_text": "",
+            "btn_url": "",
+            "service_heading": "Services Include:",
+            "service_1": "Service 1",
+            "service_2": "Service 2",
+            "service_3": "Service 3",
+            "service_4": "Service 4",
+            "service_5": "Service 5",
+            "service_6": "Service 6"
+          }
+        },
+        "location_B8mQQH": {
+          "type": "location",
+          "disabled": true,
+          "settings": {
+            "title": "THE WELL",
+            "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Qorem ipsum dolor sit amet.</p>",
+            "btn_text": "",
+            "btn_url": "",
+            "service_heading": "Services Include:",
+            "service_1": "Service 1",
+            "service_2": "Service 2",
+            "service_3": "Service 3",
+            "service_4": "Service 4",
+            "service_5": "Service 5",
+            "service_6": "Service 6"
+          }
+        }
+      },
+      "block_order": [
+        "location_yxkeNt",
+        "location_h939Va",
+        "location_iCNHyN",
+        "location_B8mQQH"
+      ],
+      "settings": {
+        "section_id": "locations",
+        "full_width": true,
+        "title": "LOCATIONS",
+        "content": "Explore all Sweat and Tonic locations and access the best of boutique fitness and wellness under one roof.",
+        "color_scheme": "",
+        "top_padding_remove": false,
+        "bottom_padding_remove": false
+      }
+    },
+    "global_image_banner_1_appf4n": {
+      "type": "global_image-banner-1",
+      "disabled": true,
+      "settings": {
+        "section_id": "about",
+        "desktop_image": "shopify://shop_images/Section_1_440f8a13-3b60-4fe1-8710-5c98608ab72a.png",
+        "mobile_image": "shopify://shop_images/Section_e5005f4b-abf6-4494-9493-0e6f5a07150a.png",
+        "overlay_opacity": 0,
+        "title": "INSIDE THE WORLD OF REFORMD",
+        "content": "Founded with the mission to unite movement, recovery, and connection, Sweat and Tonic redefines boutique wellness. From high-performance classes to immersive spaces, every detail is crafted to inspire.",
+        "btn_text": "Learn more",
+        "btn_url": "#"
       }
     }
   },
