@@ -799,7 +799,7 @@
         "816d62d0-da59-4074-9bf1-9c214ed815fe": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "JOIN US",
+            "button_label_1": "GET AN INTRO PACK",
             "button_link_1": "shopify://pages/pricing",
             "button_style": "link",
             "applies_color_scheme": true,
