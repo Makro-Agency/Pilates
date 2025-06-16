@@ -37,7 +37,7 @@
             "applies_color_scheme": true,
             "btn_text_clr": "#000000",
             "btn_hvr_text_clr": "#000000",
-            "btn_bg_clr": "#FEE4B1",
+            "btn_bg_clr": "#c79d5b",
             "btn_hvr_bg_clr": "#ffffff"
           }
         },
@@ -134,7 +134,7 @@
             "button_text_1": "SEE CLASS SCHEDULE",
             "button_url_1": "shopify://pages/reserve",
             "button_text_2": "OUR HIIT STUDIO",
-            "button_url_2": "shopify://pages/hiit-studio"
+            "button_url_2": "shopify://pages/studio-classes"
           }
         },
         "hit_box_YLXKDb": {
@@ -254,11 +254,12 @@
             "image": "shopify://shop_images/SweatandTonic_rewards_RoryNariko.jpg",
             "heading": "GET REWARDED",
             "heading_size": "h2",
-            "subheading": "From your first sweat to your 1,000th - unlock exclusive benefits when you reach major milestones with your Unlimited membership, 9 to 5 Sweat membership, or S&T credits. Celebrate your hard work with special treats (and some fun surprises along the way) →",
-            "button_label": "",
-            "link": "",
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
             "image_overlay_opacity": 50,
-            "color_scheme": "background-1"
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
           }
         },
         "slide_BzEpM4": {
@@ -267,11 +268,12 @@
             "image": "shopify://shop_images/SweatandTonic_rewards_toniccocktails.jpg",
             "heading": "100 CLASSES",
             "heading_size": "h2",
-            "subheading": "Redeem two complimentary cocktails / mocktails at Tonic House to celebrate with a friend! →",
-            "button_label": "",
-            "link": "",
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
             "image_overlay_opacity": 50,
-            "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae"
+            "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
+            "text_alignment_mobile": "center"
           }
         },
         "slide_GQAjmP": {
@@ -281,11 +283,12 @@
             "image": "shopify://shop_images/SweatandTonic_rewards_redlighttherapy.png",
             "heading": "300 CLASSES",
             "heading_size": "h2",
-            "subheading": "In our biohacking era - enjoy three complimentary S&T credits redeemable for red light therapy, compression therapy, pool deck, hot & cold therapy, classes, or Small Group Training. Save for yourself, or share with friends. →",
-            "button_label": "",
-            "link": "",
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
             "image_overlay_opacity": 50,
-            "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae"
+            "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
+            "text_alignment_mobile": "center"
           }
         },
         "slide_AAnpqc": {
@@ -294,11 +297,12 @@
             "image": "shopify://shop_images/500clubback.jpg",
             "heading": "500 CLASSES",
             "heading_size": "h2",
-            "subheading": "Good things come in fives: Receive 5 S&T credits redeemable for classes, the pool deck at Tonic Spa, or share with friends, and a $25 gift card redeemable at Tonic Bar or Tonic House. Celebrate with us in style - earn a collector's edition S&T crewneck, exclusive to 500 Club members. →",
-            "button_label": "",
-            "link": "",
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
             "image_overlay_opacity": 50,
-            "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae"
+            "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
+            "text_alignment_mobile": "center"
           }
         },
         "slide_WQqYLW": {
@@ -307,11 +311,12 @@
             "image": "shopify://shop_images/DSC03510.jpg",
             "heading": "CLUB 1,000",
             "heading_size": "h2",
-            "subheading": "Officially Sweat Royalty - unlock a complimentary one-month Unlimited membership, 48-hour priority class booking, and a custom-branded S&T weekender travel bag exclusive to Club 1000 members, loaded with goodies. (total value: $1,000) →",
-            "button_label": "EXPLORE MEMBERSHIPS",
-            "link": "shopify://pages/pricing",
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
             "image_overlay_opacity": 50,
-            "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae"
+            "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
+            "text_alignment_mobile": "center"
           }
         },
         "slide_4ATkJG": {
@@ -320,11 +325,12 @@
             "image": "shopify://shop_images/Tonic_Spa_Pool_Sweat_and_Tonic_fafe547d-eacd-419b-a747-0262c24bd602.png",
             "heading": "EVERY 1,000 CLASSES",
             "heading_size": "h2",
-            "subheading": "Get a complimentary one-month Unlimited membership and 10 credits redeemable for classes, the pool deck at Tonic Spa, or share it with friends, between 2,000 - 4,000 classes (with some sweet surprises to fuel you in between). →",
-            "button_label": "EXPLORE MEMBERSHIPS",
-            "link": "shopify://pages/pricing",
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
             "image_overlay_opacity": 30,
-            "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae"
+            "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
+            "text_alignment_mobile": "center"
           }
         },
         "slide_KqzqQY": {
@@ -333,11 +339,12 @@
             "image": "shopify://shop_images/pink-purple-smoke.jpg",
             "heading": "CLUB 5,000",
             "heading_size": "h2",
-            "subheading": "Be boundless with Canada's most exclusive 360 wellness membership - receive a complimentary one-month <a href=\"https://sweatandtonic.com/pages/club-transcend\" target=\"_blank\" title=\"https://sweatandtonic.com/pages/club-transcend\"><strong>Club Transcend</strong></a> membership. →",
-            "button_label": "EXPLORE MEMBERSHIPS",
-            "link": "shopify://pages/pricing",
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
             "image_overlay_opacity": 30,
-            "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae"
+            "color_scheme": "scheme-dd6951d4-635b-4651-b375-dc1e299d2cae",
+            "text_alignment_mobile": "center"
           }
         }
       },
@@ -636,7 +643,7 @@
             "btn_text_clr": "#000000",
             "btn_hvr_text_clr": "#000000",
             "btn_bg_clr": "#ffffff",
-            "btn_hvr_bg_clr": "#FEE4B1"
+            "btn_hvr_bg_clr": "#c79d5b"
           }
         },
         "486c1659-7943-4d3f-a46d-0d16c16aa358": {
@@ -726,7 +733,7 @@
       "settings": {
         "bg_color_left": "#26221b",
         "text_color_left": "#ffffff",
-        "sub_color_left": "#FEE4B1",
+        "sub_color_left": "#c79d5b",
         "subheading_left": "Ready to sweat?",
         "heading_left": "LET’S GET YOU IN",
         "text_left": "",

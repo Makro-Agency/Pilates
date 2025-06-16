@@ -47,7 +47,7 @@
             "detail": "<p>A Megaformer is a fitness machine with a moving carriage, static platforms, and springs for resistance with quick-release technology. It's similar to the reformer, but has more features and attachments than the traditional Pilates reformer, including platform lifts that allow for easier stabilization and impact of joints and less inflammation in connective tissues during and post-workout.. The Mega Pro is the latest Megaformer, and is considered to be the best of the past and future of the Megaformer series.</p>"
           }
         },
-        "6beaa2ad-e3e7-4b02-9db6-25c2cae1a7bc": {
+        "que_ans_ir7wiX": {
           "type": "que_ans",
           "settings": {
             "title": "Where is Reformd located?",
@@ -88,14 +88,22 @@
             "detail": "<p>You’ll be able to access Reformd in the S&T app, in the location drop-down. This means you only need one account to access products at both S&T and Reformd.</p><p>If you already have a Sweat and Tonic account, you’ll be able to book classes, make purchases, and manage your account at Reformd, using the same account you use for S&T, in the S&T app! </p>"
           }
         },
-        "d7696939-47e4-410d-9584-55d9659a7c55": {
+        "que_ans_nCV7JP": {
           "type": "que_ans",
           "settings": {
             "title": "What can I use credits for?",
             "detail": "<p>Credits, including the 3 for $60 intro pack, are valid for use at both S&T and Reformd! A credit can be used to book:</p><ul><li>A class at Reformd</li><li>A yoga, Pilates, Ride, or HIIT class at any S&T location</li><li>Small Group Training at Front/Spadina</li><li>Pool deck at Front/Spadina</li><li>Sauna session at Yonge/Shuter</li><li>Biohacking: red light therapy, compression therapy, private hot & cold therapy suite</li></ul><p>Credits activate at the time of purchase.</p>"
           }
         },
-        "03005134-1b24-4879-8a85-c338503355d3": {
+        "que_ans_prKExh": {
+          "type": "que_ans",
+          "disabled": true,
+          "settings": {
+            "title": "When does the pre-opening sale start?",
+            "detail": "<p>Our pre-opening sale will start on Thursday, April 17 at 9 AM (ET).</p>"
+          }
+        },
+        "que_ans_DkfcPE": {
           "type": "que_ans",
           "settings": {
             "title": "How do I purchase a membership / credits?",
@@ -123,14 +131,14 @@
             "detail": "<p>No, credits purchased during the Reformd pre-opening sale are valid only for classes at Reformd. However, regular-priced credits will be valid for use at Reformd and S&T.</p>"
           }
         },
-        "que_ans_prKExh": {
+        "4cdf833b-812d-4a9a-84a9-bc2b229a449d": {
           "type": "que_ans",
           "settings": {
             "title": "I’ve taken a class at S&T before. Can I purchase 3 for $60 intro pack?",
             "detail": "<p>No, the<strong> 3 for $60 intro pack</strong> is valid for first-timers only at both S&T and Reformd.</p>"
           }
         },
-        "13ea47b8-18dc-4449-adec-639f034e7805": {
+        "848afe71-f729-4582-a605-5eedb9841282": {
           "type": "que_ans",
           "settings": {
             "title": "If I have a Reformd Unlimited membership with no S&T membership, can I access facilities at S&T?",
@@ -178,7 +186,15 @@
             "detail": "<p>Your purchase will be processed immediately. Credits are valid for use at S&T and Reformd and activate at the time of purchase. Memberships and recurring credit packs will activate when Reformd opens, and your next payment will be charged at the start of your second billing month, after Reformd opens.</p>"
           }
         },
-        "que_ans_VzY3bt": {
+        "22e4de22-4b8c-4f02-a061-11408cf91e8a": {
+          "type": "que_ans",
+          "disabled": true,
+          "settings": {
+            "title": "Can I purchase a pre-opening sale membership or recurring credit pack, and delay the start date?",
+            "detail": "<p>No, you cannot delay your start date. Your membership or recurring credit pack will activate the day Reformd opens.</p>"
+          }
+        },
+        "7064720d-0420-40f1-803f-d9b0235d07ef": {
           "type": "que_ans",
           "settings": {
             "title": "Can I freeze my membership?",
@@ -375,6 +391,25 @@
       },
       "block_order": [
         "3c88c7a8-87e2-447f-853b-29fde4997cba",
+        "title_fqec8p",
+        "que_ans_bbxt94",
+        "que_ans_DBkNnb",
+        "que_ans_ir7wiX",
+        "que_ans_jwiCiH",
+        "ab3a0bf7-e7e2-4232-9cf4-65d41c889a85",
+        "83dfdfe3-9459-4c30-bc14-42e274ce06ba",
+        "title_W6aazN",
+        "que_ans_EePXQP",
+        "que_ans_nCV7JP",
+        "que_ans_prKExh",
+        "que_ans_DkfcPE",
+        "que_ans_G9aRwm",
+        "6beaa2ad-e3e7-4b02-9db6-25c2cae1a7bc",
+        "que_ans_3BAmnt",
+        "4cdf833b-812d-4a9a-84a9-bc2b229a449d",
+        "848afe71-f729-4582-a605-5eedb9841282",
+        "b847ba64-6c33-4d0d-9549-5cced3f8e822",
+        "que_ans_VzY3bt",
         "title_zYcA3w",
         "que_ans_G9aRwm",
         "que_ans_DkfcPE",
