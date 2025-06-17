@@ -141,7 +141,7 @@
   {% if template.name == 'page' or template.name == 'collection'  %}
     {% assign has_page_font = true %}
   {% endif %}
-  <body class="gradient pp--{{ has_page_font }} {% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %} template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} template--{{ template.suffix }}">
+  <body class=" {{ page.handle }} gradient pp--{{ has_page_font }} {% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %} template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} template--{{ template.suffix }}">
     <!--  -->
     {% comment %} <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBWHHMM"
@@ -258,7 +258,7 @@
 
     <div class="drawer-classes-btns sticky-classes-btns large-up-hide medium-hide">
       <a href="/pages/book-classes" class="button btn-small-width left-btn">book classes</a>
-      <a href="#" class="button btn-small-width right-btn">buy classes</a>
+      <a href="/pages/pricing" class="button btn-small-width right-btn">buy classes</a>
     </div>
 
     {% sections 'footer-group' %}
