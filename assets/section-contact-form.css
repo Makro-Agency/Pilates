@@ -364,6 +364,7 @@
     width: 563.346px;
     height: 923.113px;
     transform: rotate(-120.037deg);
+    display:none; 
   }
 
   .sec-contact-form:before {
