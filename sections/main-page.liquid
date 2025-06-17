@@ -19,6 +19,11 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  {% if page.handle == "book-classes" %}
+   .book-classes .main-page-title.page-title{
+    display:none; 
+   }
+  {% endif %}
 {%- endstyle -%}
 
 <div class="page-width _page-width--narrow section-{{ section.id }}-padding">

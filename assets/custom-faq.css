@@ -9,7 +9,7 @@
     color:rgb(255, 255, 255, 1);
 } */
 .template--faq .mainFaq .faq-sLink .link:hover{ color:#fee4b1; }
-.template--faq .mainFaq .faq-sLink .link{padding-bottom: 16px;letter-spacing: 0.02em;padding-top:0; line-height:100%; color:#fff; font-weight:400;   }
+.template--faq .mainFaq .faq-sLink .link{padding-bottom: 16px;letter-spacing: 0.02em;padding-top:0; line-height:100%; color:#fff; font-weight:450;   }
 .mainFaq .faq-sLink .link:hover, main.dark--true .faq-sLink .link.active{ color:#fee4b1; }
 .mainFaq main.dark--true .faq-sLink .link.active{color:#fee4b1;}
 .mainFaq .f-sCon--item h4{font-weight: 400;font-size: 20px;line-height: 100%;letter-spacing: 0;text-transform: uppercase;}

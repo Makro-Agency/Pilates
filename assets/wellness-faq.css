@@ -314,8 +314,8 @@
 	}
 	.wellness-faq>.padding-sections:before {
 		filter: blur(100px);
-		right: -77%;
-		top: 18%;
+		right: -288px; /* -77%; */
+		top: 407px;  /* 18%; */
 		width: 1058.361px;
 		height: 766.573px;
 		transform: rotate(-113.331deg);
