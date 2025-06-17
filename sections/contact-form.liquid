@@ -44,7 +44,7 @@
         {%- if form.posted_successfully? -%}
           <h2 class="form-status _uppercase h5 form-status-list form__message" tabindex="-1" autofocus>
             {% render 'icon-success' %}
-            {{ 'templates.contact.form.post_success' | t }}
+            {{ section.settings.form_message }}
           </h2>
         {%- elsif form.errors -%}
           <div class="form__message hidden">
@@ -260,6 +260,12 @@
       "id": "heading",
       "default": "Contact form",
       "label": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "form_message",
+      "default": "Thanks for contacting us. We'll get back to you as soon as possible.",
+      "label": "Contact Message"
     },
     {
       "type": "select",
