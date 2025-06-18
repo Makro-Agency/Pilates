@@ -399,9 +399,22 @@
         <a href="{{ section.settings.link_btn_2 | default: '#' }}" class="button btn-small-width button--secondary">{{ section.settings.buy_btn_2 }} {% render 'icon-left-arrow', type: 1 %}</a>
         {%- endif -%}
       </div>
+
     </div>
   </header>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
+
+{% comment %} <div class="header-btn-wrap small-hide medium-hide">{%- if section.settings.buy_btn_1 != blank -%}
+  <a href="{{ section.settings.link_btn_1 | default: '#' }}" class="button btn-small-width button--secondary">{{ section.settings.buy_btn_1 }} {% render 'icon-left-arrow', type: 1 %}</a>
+  {%- endif -%}
+  {%- if section.settings.buy_btn_2 != blank -%}
+  <a href="{{ section.settings.link_btn_2 | default: '#' }}" class="button btn-small-width button--secondary">{{ section.settings.buy_btn_2 }} {% render 'icon-left-arrow', type: 1 %}</a>
+  {%- endif -%}
+</div> {% endcomment %}
+<div class="drawer-classes-btns sticky-classes-btns large-up-hide medium-hide">
+  <a href="/pages/book-classes" class="button btn-small-width left-btn">book classes</a>
+  <a href="/pages/pricing" class="button btn-small-width right-btn">buy classes</a>
+</div>
 
 {%- if settings.cart_type == "notification" -%}
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}
