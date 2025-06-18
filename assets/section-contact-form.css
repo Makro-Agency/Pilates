@@ -226,7 +226,7 @@
   letter-spacing: 0;
 }
 
-.sec-contact-form .contact .leftBGPart:before {
+.sec-contact-form .contact .leftBGPart:before,.sec-contact-form .BGdata:before {
   position: absolute;
   content: "";
   display: block;
@@ -240,10 +240,33 @@
   top: 50%;
 }
 
+.sec-contact-form .contact .leftBGPart:before{
+  display: none;
+}
+
+.sec-contact-form .BGdata{
+  display: block;
+}
+
 .sec-contact-form {
   position: relative;
   overflow: hidden;
 }
+
+.shopify-section.sec-contact-form:before,.shopify-section.sec-contact-form:after{
+  display: none;
+}
+
+.sec-contact-form .sec-contact-form{
+  position: absolute;
+  top:0;
+  left: 0;
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
 /* .sec-contact-form { overflow: visible;} */
 .sec-contact-form:before {
   position: absolute;
@@ -344,7 +367,7 @@
     margin-bottom: 15px;
   }
 
-  .sec-contact-form .contact .leftBGPart:before {
+  .sec-contact-form .contact .leftBGPart:before,.sec-contact-form .BGdata:before {
     background: radial-gradient(50% 50% at 50% 50%, #FF4F86 0%, #FF8059 80%);
     opacity: 0.4;
     filter: blur(100px);
@@ -379,13 +402,17 @@
 }
 
 @media screen and (max-width: 749px) {
-  .sec-contact-form .contact .leftBGPart:before {
+  .sec-contact-form .contact .leftBGPart:before,.sec-contact-form .BGdata:before {
     background-size: 70.5px;
   }
   .template--private-training .sec-contact-form::after {
     opacity: 0.2;
     height: 700px;
     top:0;
+  }
+
+  .rightContactPart:before{
+    opacity:0;
   }
 
 }

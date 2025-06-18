@@ -399,9 +399,17 @@
         <a href="{{ section.settings.link_btn_2 | default: '#' }}" class="button btn-small-width button--secondary">{{ section.settings.buy_btn_2 }} {% render 'icon-left-arrow', type: 1 %}</a>
         {%- endif -%}
       </div>
+
     </div>
   </header>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
+
+{%- if section.settings.buy_btn_1 != blank or section.settings.buy_btn_2 != blank -%}
+<div class="drawer-classes-btns sticky-classes-btns large-up-hide medium-hide">
+  {%- if section.settings.buy_btn_1 != blank -%}<a href="{{ section.settings.link_btn_1 | default: '#' }}" class="button btn-small-width left-btn">{{ section.settings.buy_btn_1 }}</a>{%- endif -%}
+  {%- if section.settings.buy_btn_2 != blank -%}<a href="{{ section.settings.link_btn_2 | default: '#' }}" class="button btn-small-width right-btn">{{ section.settings.buy_btn_2 }}</a>{%- endif -%}
+</div>
+{%- endif -%}
 
 {%- if settings.cart_type == "notification" -%}
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}
