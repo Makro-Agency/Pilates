@@ -150,64 +150,14 @@
       "team": {
         "type": "team",
         "blocks": {
-          "image_gVPpVt": {
+          "image_YCmzME": {
             "type": "image",
             "settings": {
-              "title": "Emily Lau",
+              "title": "Alison Raeya",
               "image": "shopify://shop_images/EEA_9383_1_1.png",
-              "name": "Emily Lau",
-              "sp_tag": "Lagree Level 2",
-              "url": "shopify://metaobjects/teammember/emily-lau"
-            }
-          },
-          "image_YWE9ya": {
-            "type": "image",
-            "settings": {
-              "title": "Sasha Ignatenko",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
-              "name": "Sasha Ignatenko",
+              "name": "Alison Raeya",
               "sp_tag": "Lagree",
-              "url": "shopify://metaobjects/teammember/sasha-ignatenko"
-            }
-          },
-          "image_rxYWLG": {
-            "type": "image",
-            "settings": {
-              "title": "Natalie Kwong",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
-              "name": "Natalie Kwong",
-              "sp_tag": "Lagree",
-              "url": "shopify://metaobjects/teammember/natalie-kwong"
-            }
-          },
-          "image_RAJbgn": {
-            "type": "image",
-            "settings": {
-              "title": "Blair Myers",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
-              "name": "Blair Myers",
-              "sp_tag": "Lagree",
-              "url": "shopify://metaobjects/teammember/blair-myers"
-            }
-          },
-          "image_9ATUb6": {
-            "type": "image",
-            "settings": {
-              "title": "Rachel Schick",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
-              "name": "Rachel Schick",
-              "sp_tag": "Lagree",
-              "url": "shopify://metaobjects/teammember/rachel-schick"
-            }
-          },
-          "image_DKbaBh": {
-            "type": "image",
-            "settings": {
-              "title": "Jessica Pordel",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
-              "name": "Jessica Pordel",
-              "sp_tag": "Lagree",
-              "url": "shopify://metaobjects/teammember/jessica-pordel"
+              "url": "shopify://metaobjects/teammember/alison-raeya"
             }
           },
           "image_chyCtf": {
@@ -220,6 +170,56 @@
               "url": "shopify://metaobjects/teammember/brendan-bornstein"
             }
           },
+          "image_RAJbgn": {
+            "type": "image",
+            "settings": {
+              "title": "Blair Myers",
+              "image": "shopify://shop_images/EEA_9383_1_1.png",
+              "name": "Blair Myers",
+              "sp_tag": "Lagree",
+              "url": "shopify://metaobjects/teammember/blair-myers"
+            }
+          },
+          "image_gVPpVt": {
+            "type": "image",
+            "settings": {
+              "title": "Emily Lau",
+              "image": "shopify://shop_images/EEA_9383_1_1.png",
+              "name": "Emily Lau",
+              "sp_tag": "Lagree Level 2",
+              "url": "shopify://metaobjects/teammember/emily-lau"
+            }
+          },
+          "image_DKbaBh": {
+            "type": "image",
+            "settings": {
+              "title": "Jessica Pordel",
+              "image": "shopify://shop_images/EEA_9383_1_1.png",
+              "name": "Jessica Pordel",
+              "sp_tag": "Lagree",
+              "url": "shopify://metaobjects/teammember/jessica-pordel"
+            }
+          },
+          "image_4kGk4h": {
+            "type": "image",
+            "settings": {
+              "title": "Jordan Scholl",
+              "image": "shopify://shop_images/EEA_9383_1_1.png",
+              "name": "Jordan Scholl",
+              "sp_tag": "Lagree",
+              "url": "shopify://metaobjects/teammember/jordan-scholl"
+            }
+          },
+          "image_xm3TJA": {
+            "type": "image",
+            "settings": {
+              "title": "Katie Holbrow",
+              "image": "shopify://shop_images/EEA_9383_1_1.png",
+              "name": "Katie Holbrow",
+              "sp_tag": "Lagree",
+              "url": "shopify://metaobjects/teammember/katie-holbrow"
+            }
+          },
           "image_DCmyPW": {
             "type": "image",
             "settings": {
@@ -228,6 +228,16 @@
               "name": "Kelly Kent",
               "sp_tag": "Lagree",
               "url": "shopify://metaobjects/teammember/kelly-kent"
+            }
+          },
+          "image_g8XQg6": {
+            "type": "image",
+            "settings": {
+              "title": "Katie Kunst",
+              "image": "shopify://shop_images/EEA_9383_1_1.png",
+              "name": "Katie Kunst",
+              "sp_tag": "Lagree",
+              "url": "shopify://metaobjects/teammember/katie-kunst"
             }
           },
           "image_DzFepc": {
@@ -250,14 +260,14 @@
               "url": "shopify://metaobjects/teammember/megan-van-der-baars"
             }
           },
-          "image_xm3TJA": {
+          "image_rxYWLG": {
             "type": "image",
             "settings": {
-              "title": "Katie Holbrow",
+              "title": "Natalie Kwong",
               "image": "shopify://shop_images/EEA_9383_1_1.png",
-              "name": "Katie Holbrow",
+              "name": "Natalie Kwong",
               "sp_tag": "Lagree",
-              "url": "shopify://metaobjects/teammember/katie-holbrow"
+              "url": "shopify://metaobjects/teammember/natalie-kwong"
             }
           },
           "image_XmEYAY": {
@@ -270,34 +280,24 @@
               "url": "shopify://metaobjects/teammember/rachael-crumb"
             }
           },
-          "image_YCmzME": {
+          "image_9ATUb6": {
             "type": "image",
             "settings": {
-              "title": "Alison Raeya",
+              "title": "Rachel Schick",
               "image": "shopify://shop_images/EEA_9383_1_1.png",
-              "name": "Alison Raeya",
+              "name": "Rachel Schick",
               "sp_tag": "Lagree",
-              "url": "shopify://metaobjects/teammember/alison-raeya"
+              "url": "shopify://metaobjects/teammember/rachel-schick"
             }
           },
-          "image_4kGk4h": {
+          "image_YWE9ya": {
             "type": "image",
             "settings": {
-              "title": "Jordan Scholl",
+              "title": "Sasha Ignatenko",
               "image": "shopify://shop_images/EEA_9383_1_1.png",
-              "name": "Jordan Scholl",
+              "name": "Sasha Ignatenko",
               "sp_tag": "Lagree",
-              "url": "shopify://metaobjects/teammember/jordan-scholl"
-            }
-          },
-          "image_g8XQg6": {
-            "type": "image",
-            "settings": {
-              "title": "Katie Kunst",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
-              "name": "Katie Kunst",
-              "sp_tag": "Lagree",
-              "url": "shopify://metaobjects/teammember/katie-kunst"
+              "url": "shopify://metaobjects/teammember/sasha-ignatenko"
             }
           },
           "74496099-8006-4518-b546-161b3f820c0c": {
@@ -312,21 +312,21 @@
           }
         },
         "block_order": [
-          "image_gVPpVt",
-          "image_YWE9ya",
-          "image_rxYWLG",
-          "image_RAJbgn",
-          "image_9ATUb6",
-          "image_DKbaBh",
+          "image_YCmzME",
           "image_chyCtf",
+          "image_RAJbgn",
+          "image_gVPpVt",
+          "image_DKbaBh",
+          "image_4kGk4h",
+          "image_xm3TJA",
           "image_DCmyPW",
+          "image_g8XQg6",
           "image_DzFepc",
           "image_HmccTf",
-          "image_xm3TJA",
+          "image_rxYWLG",
           "image_XmEYAY",
-          "image_YCmzME",
-          "image_4kGk4h",
-          "image_g8XQg6",
+          "image_9ATUb6",
+          "image_YWE9ya",
           "74496099-8006-4518-b546-161b3f820c0c"
         ],
         "settings": {
