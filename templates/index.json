@@ -69,7 +69,7 @@
       ],
       "settings": {
         "allow_transparent_header": true,
-        "image": "shopify://shop_images/S-T-REFORMD_001.jpg",
+        "video": "shopify://files/videos/S&T Visualizer V4 - WEB.mp4",
         "video_url": "",
         "image_overlay_opacity": 60,
         "desktop_content_position": "middle-center",
