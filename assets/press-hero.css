@@ -138,4 +138,11 @@
   .press-news.section-padding {
     padding-top: 80px;
   }
+
+  .template--press .banner:not(.banner--stacked)[allow-transparent-header] {
+    padding-top: calc(var(--header-height, 56px));
+  }
+  .template--press .banner:not(.banner--stacked)[allow-transparent-header] .banner__box {
+    margin-top: 0;
+  }
 }
