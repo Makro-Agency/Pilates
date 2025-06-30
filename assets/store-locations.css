@@ -214,4 +214,11 @@
   .store-locations-item .service_line{
     width: 100%;
   }
+  .store-locations-item:first-child .multicolumn-card__info_wraper {
+    margin-left: 0;
+    border-bottom-width: 0;
+  }
+  .store-locations-item .multicolumn-card__services {        
+    border-width: 1px 0 0;
+  }
 }
