@@ -28,13 +28,13 @@
       "type": "global_hero-banner",
       "settings": {
         "allow_transparent_header": true,
-        "desktop_image": "shopify://shop_images/Hero.png",
-        "mobile_image": "shopify://shop_images/Hero-mobile.png",
-        "overlay_opacity": 51,
+        "desktop_image": "shopify://shop_images/Reformd_Opening_High_Res_44.jpg",
+        "mobile_image": "shopify://shop_images/Reformd_Opening_High_Res_44.jpg",
+        "overlay_opacity": 25,
         "countdown_title": "Pre-opening sale: launching April, 10",
         "countdown_content": "Introducing the world's highest capacity Lagree Method™ studio, powered by Sweat and Tonic. Coming to The Well at Front/Spadina in spring 2025.",
-        "sale_title": "GRAND OPENING: JUNE 21",
-        "sale_content": "Introducing the world's highest capacity Lagree Method™ studio, powered by Sweat and Tonic. Coming to The Well at Front/Spadina.",
+        "sale_title": "SHAKE. SWEAT. SORE.",
+        "sale_content": "Introducing the world's highest capacity Lagree Method™ studio, powered by Sweat and Tonic. Now open at The Well at Front/Spadina.",
         "show_btn": false,
         "btn_text": "Buy S&T credits",
         "btn_url": "",
@@ -833,6 +833,7 @@
         },
         "faq_PwDFGb": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "WHEN IS REFORMD OPENING?",
             "ans": "<p>Our grand opening will be on Saturday, June 21, 2025.</p>"
@@ -861,6 +862,7 @@
         },
         "faq_Nz8aJU": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "If I purchase a membership or credit pack before Reformd opens, when will it be activated / when will my monthly billing begin?",
             "ans": "<p>Your purchase will be processed immediately. Credits are valid for use at S&T and Reformd and activate at the time of purchase. Memberships and recurring credit packs will activate when Reformd opens, and your next payment will be charged at the start of your second billing month, after Reformd opens.</p>"
@@ -869,8 +871,8 @@
         "faq_j6hX6y": {
           "type": "faq",
           "settings": {
-            "question": "When will the class schedule be available? When can I start booking classes?",
-            "ans": "<p>Our class schedule will be released in the weeks leading up to our opening date. Booking opens on Saturday, June 14 at 5 PM for Unlimited members and Sunday at 5 PM for everyone else! Make sure to sign up for our newsletter and follow Reformd on Instagram for the latest updates.</p>"
+            "question": "When do new class schedules get released?",
+            "ans": "<p>Our class schedule opens for booking up to two weeks in advance, every Saturday at 5 PM for Unlimited members, and Sunday at 5 PM for everyone else.</p>"
           }
         }
       },
