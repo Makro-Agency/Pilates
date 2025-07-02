@@ -174,7 +174,7 @@
             "type": "image",
             "settings": {
               "title": "Blair Myers",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
+              "image": "shopify://shop_images/RFORMD-Sweat-and-Tonic-Blair.png",
               "name": "Blair Myers",
               "sp_tag": "Lagree",
               "url": "shopify://metaobjects/teammember/blair-myers"
@@ -184,7 +184,7 @@
             "type": "image",
             "settings": {
               "title": "Emily Lau",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
+              "image": "shopify://shop_images/RFORMD-Sweat-and-Tonic-Emily.png",
               "name": "Emily Lau",
               "sp_tag": "Lagree Level 2",
               "url": "shopify://metaobjects/teammember/emily-lau"
@@ -192,6 +192,7 @@
           },
           "image_DKbaBh": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "title": "Jessica Pordel",
               "image": "shopify://shop_images/EEA_9383_1_1.png",
@@ -204,7 +205,7 @@
             "type": "image",
             "settings": {
               "title": "Jordan Scholl",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
+              "image": "shopify://shop_images/RFORMD-Sweat-and-Tonic-Jordan.png",
               "name": "Jordan Scholl",
               "sp_tag": "Lagree",
               "url": "shopify://metaobjects/teammember/jordan-scholl"
@@ -214,37 +215,37 @@
             "type": "image",
             "settings": {
               "title": "Katie Holbrow",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
+              "image": "shopify://shop_images/RFORMD-Sweat-and-Tonic-Katie-C.png",
               "name": "Katie Holbrow",
               "sp_tag": "Lagree",
               "url": "shopify://metaobjects/teammember/katie-holbrow"
-            }
-          },
-          "image_DCmyPW": {
-            "type": "image",
-            "settings": {
-              "title": "Kelly Kent",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
-              "name": "Kelly Kent",
-              "sp_tag": "Lagree",
-              "url": "shopify://metaobjects/teammember/kelly-kent"
             }
           },
           "image_g8XQg6": {
             "type": "image",
             "settings": {
               "title": "Katie Kunst",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
+              "image": "shopify://shop_images/RFORMD-Sweat-and-Tonic-Katie.png",
               "name": "Katie Kunst",
               "sp_tag": "Lagree",
               "url": "shopify://metaobjects/teammember/katie-kunst"
+            }
+          },
+          "image_DCmyPW": {
+            "type": "image",
+            "settings": {
+              "title": "Kelly Kent",
+              "image": "shopify://shop_images/RFORMD-Sweat-and-Tonic-Kelly.png",
+              "name": "Kelly Kent",
+              "sp_tag": "Lagree",
+              "url": "shopify://metaobjects/teammember/kelly-kent"
             }
           },
           "image_DzFepc": {
             "type": "image",
             "settings": {
               "title": "Lisa Damla",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
+              "image": "shopify://shop_images/RFORMD-Sweat-and-Tonic-Lisa.png",
               "name": "Lisa Damla",
               "sp_tag": "Lagree",
               "url": "shopify://metaobjects/teammember/lisa-damla"
@@ -254,7 +255,7 @@
             "type": "image",
             "settings": {
               "title": "Megan van der Baars",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
+              "image": "shopify://shop_images/RFORMD-Sweat-and-Tonic-Megan.png",
               "name": "Megan van der Baars",
               "sp_tag": "",
               "url": "shopify://metaobjects/teammember/megan-van-der-baars"
@@ -264,7 +265,7 @@
             "type": "image",
             "settings": {
               "title": "Natalie Kwong",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
+              "image": "shopify://shop_images/RFORMD-Sweat-and-Tonic-Natalie.png",
               "name": "Natalie Kwong",
               "sp_tag": "Lagree",
               "url": "shopify://metaobjects/teammember/natalie-kwong"
@@ -274,7 +275,7 @@
             "type": "image",
             "settings": {
               "title": "Rachael Crumb",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
+              "image": "shopify://shop_images/RFORMD-Sweat-and-Tonic-Rachael-Crumb.png",
               "name": "Rachael Crumb",
               "sp_tag": "Lagree",
               "url": "shopify://metaobjects/teammember/rachael-crumb"
@@ -284,7 +285,7 @@
             "type": "image",
             "settings": {
               "title": "Rachel Schick",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
+              "image": "shopify://shop_images/RFORMD-Sweat-and-Tonic-Rachel-Schick.png",
               "name": "Rachel Schick",
               "sp_tag": "Lagree",
               "url": "shopify://metaobjects/teammember/rachel-schick"
@@ -294,7 +295,7 @@
             "type": "image",
             "settings": {
               "title": "Sasha Ignatenko",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
+              "image": "shopify://shop_images/RFORMD-Sweat-and-Tonic-Sasha.png",
               "name": "Sasha Ignatenko",
               "sp_tag": "Lagree",
               "url": "shopify://metaobjects/teammember/sasha-ignatenko"
@@ -304,7 +305,7 @@
             "type": "image",
             "settings": {
               "title": "Victoria Nigro",
-              "image": "shopify://shop_images/EEA_9383_1_1.png",
+              "image": "shopify://shop_images/RFORMD-Sweat-and-Tonic-Victoria.png",
               "name": "Victoria Nigro",
               "sp_tag": "Lagree Instructor",
               "url": "shopify://metaobjects/teammember/victoria-nigro"
@@ -319,8 +320,8 @@
           "image_DKbaBh",
           "image_4kGk4h",
           "image_xm3TJA",
-          "image_DCmyPW",
           "image_g8XQg6",
+          "image_DCmyPW",
           "image_DzFepc",
           "image_HmccTf",
           "image_rxYWLG",
