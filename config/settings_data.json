@@ -251,6 +251,16 @@
               "url": "shopify://metaobjects/teammember/lisa-damla"
             }
           },
+          "image_aRVC6x": {
+            "type": "image",
+            "settings": {
+              "title": "Maddy Cassidy",
+              "image": "shopify://shop_images/RFORMD-Sweat-and-Tonic-Maddy.png",
+              "name": "Maddy Cassidy",
+              "sp_tag": "Lagree, Pilates, Yoga",
+              "url": "shopify://metaobjects/teammember/maddy-cassidy"
+            }
+          },
           "image_HmccTf": {
             "type": "image",
             "settings": {
@@ -323,6 +333,7 @@
           "image_g8XQg6",
           "image_DCmyPW",
           "image_DzFepc",
+          "image_aRVC6x",
           "image_HmccTf",
           "image_rxYWLG",
           "image_XmEYAY",
