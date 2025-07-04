@@ -301,6 +301,16 @@
               "url": "shopify://metaobjects/teammember/rachel-schick"
             }
           },
+          "image_XQNxtz": {
+            "type": "image",
+            "settings": {
+              "title": "Rory Bray",
+              "image": "shopify://shop_images/REFORMD-Sweat-and-Tonic-Rory.png",
+              "name": "Rory Bray",
+              "sp_tag": "Lagree, Pilates, Yoga, HIIT, Ride",
+              "url": "shopify://metaobjects/teammember/rory-bray"
+            }
+          },
           "image_YWE9ya": {
             "type": "image",
             "settings": {
@@ -338,6 +348,7 @@
           "image_rxYWLG",
           "image_XmEYAY",
           "image_9ATUb6",
+          "image_XQNxtz",
           "image_YWE9ya",
           "74496099-8006-4518-b546-161b3f820c0c"
         ],
